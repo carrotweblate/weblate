@@ -12,6 +12,7 @@
     "gridsome": "^0.7.20",
     "gridsome-plugin-gtm": "^0.1.1",
     "gridsome-plugin-pwa": "^0.0.18",
+    "jquery": "^3.5.1",
     "node-sass": "^4.14.1",
     "sass-loader": "^10.0.1",
     "vue-read-progress": "^1.0.4"

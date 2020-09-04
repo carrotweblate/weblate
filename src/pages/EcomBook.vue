@@ -35,6 +35,10 @@
 
 <script>
 	import axios from 'axios'
+	import jQuery from 'jquery'
+
+	window.jQuery = jQuery
+	window.$ = jQuery
 
 	export default {
 		data() {
@@ -80,7 +84,11 @@
 					{ href: this.$page.allTildaFiles.edges[32].node.css, rel: 'stylesheet'}
 				],
 				script: [
-					{ src: 'https://code.jquery.com/jquery-1.12.4.min.js' }, //jquery
+					// { 
+					// 	src: 'https://code.jquery.com/jquery-1.12.4.min.js',
+					// 	integrity: 'sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=',
+					// 	crossorigin: 'anonymous'
+					// }, //jquery
 					//{ src: this.$page.allTildaFiles.edges[21].node.js }, //jquery
 					{ src: this.$page.allTildaFiles.edges[20].node.js },
 					{ src: this.$page.allTildaFiles.edges[19].node.js },
