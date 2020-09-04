@@ -1,0 +1,53 @@
+footer {
+	color: #333;
+
+	.footer-nav {
+		border-top: 1px solid $light-grey;
+		border-bottom: 1px solid $light-grey;
+	}
+
+	.apps-nav {
+		svg {
+			position: relative;
+		}
+		.windows svg , .android svg {
+			top: -1px;
+		}
+		.ios svg {
+			top: -2px;
+		}
+	}
+
+	.navbar-text {
+		font-weight: bold;
+	}
+
+	.nav-link {
+		padding: 4px 0;
+		color: #333;
+
+		&:hover, &:hover path {
+			color: $blue-link;
+			fill: $blue-link;
+		}
+	}
+
+	@media (max-width: 575.98px) {
+		.social-nav .navbar-text , .apps-nav .navbar-text {
+			width: 100%;
+		}
+		.apps-nav svg {
+			display: block;
+			width: 100%;
+
+		}
+	}
+
+	@media (min-width: 1200px) {
+		.social-nav {
+			position: relative;
+			left: -0.25rem;
+		}
+	}
+
+}

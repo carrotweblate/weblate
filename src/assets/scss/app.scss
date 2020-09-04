@@ -1,0 +1,90 @@
+//Колонки
+$grid-gutter-width: 40px;
+//Оформление кнопок и ссылок
+$primary: #ff892a;
+.btn-primary {
+    color: #fff !important;
+}
+
+$link-hover-decoration: none;
+@import '~bootstrap/scss/bootstrap.scss';
+@import '~bootstrap-vue/src/index.scss';
+
+$blue-link: #467AFF;
+$grey-text: #9A9A9A;
+$light-grey: #F2F2F2;
+
+//Подключаем шрифты
+@font-face {
+    font-family: 'Stag Sans Black';
+    src: url('../font/StagSans-Black.woff2') format('woff2'), url('../font/StagSans-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.page {
+    padding-top: 88px;
+    margin-bottom: 100px;
+    @media (max-width: 575.98px) {
+        padding-top: 100px;
+        margin-bottom: 100px;
+    }
+}
+
+.font12px {
+    font-size: 0.750rem;
+    line-height: 1.4rem;
+}
+
+.font14px {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+}
+
+.font17px {
+    font-size: 1.063rem;
+    line-height: 1.8rem;
+}
+.grey-text {
+    color: $grey-text;
+}
+
+a {
+    color: $blue-link;
+}
+
+h1 {
+    font-family: 'Stag Sans Black';
+}
+
+h2 , .h2,
+h3 , .h3,
+h4 , .h4 {
+    font-weight: 600;
+}
+
+.breadcrumb {
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    * {
+        color: $grey-text;
+    }
+}
+
+//Верхняя навигация
+@import 'navbar.scss';
+//Подвал
+@import 'footer.scss';
+//Статья блога
+@import 'article.scss';

@@ -1,0 +1,19 @@
+{
+  "name": "carrotquest.io",
+  "private": true,
+  "scripts": {
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore"
+  },
+  "dependencies": {
+    "axios": "^0.20.0",
+    "bootstrap-vue": "^2.16.0",
+    "gridsome": "^0.7.20",
+    "gridsome-plugin-gtm": "^0.1.1",
+    "gridsome-plugin-pwa": "^0.0.18",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^10.0.1",
+    "vue-read-progress": "^1.0.4"
+  }
+}
