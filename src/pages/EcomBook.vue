@@ -67,7 +67,11 @@
 					{ href: this.$page.allTildaFiles.edges[32].node.css, rel: 'stylesheet'}
 				],
 				script: [
-					{ src: this.$page.allTildaFiles.edges[21].node.js }, //jquery
+					{ 
+						src: 'https://code.jquery.com/jquery-1.12.4.min.js', 
+						integrity: 'sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=',
+						crossorigin: 'anonymous'
+					},
 					{ src: this.$page.allTildaFiles.edges[0].node.js },
 					{ src: this.$page.allTildaFiles.edges[1].node.js },
 					{ src: this.$page.allTildaFiles.edges[2].node.js },
@@ -88,7 +92,8 @@
 					{ src: this.$page.allTildaFiles.edges[17].node.js },
 					{ src: this.$page.allTildaFiles.edges[18].node.js },
 					{ src: this.$page.allTildaFiles.edges[19].node.js },
-					{ src: this.$page.allTildaFiles.edges[20].node.js }
+					{ src: this.$page.allTildaFiles.edges[20].node.js },
+					//{ src: this.$page.allTildaFiles.edges[21].node.js }, //jquery
 				]
 			}
 		},
@@ -105,10 +110,19 @@
 
 				//Отмена отправки форм
 				setTimeout(function(){
-					document.querySelector('form').addEventListener('submit', event => {
+					document.querySelector('#form54773744').addEventListener('submit', event => {
 						event.preventDefault()
-						// actual logic, e.g. validate the form
-						console.log('Form submission cancelled.')
+						
+						var email = document.querySelector('#form54773744 input[name="email"]').value
+						carrotquest.track("клик - скачать книгу для ecommerce", {
+							'Email': email
+						});
+						carrotquest.identify([
+							{"op": "update_or_create", "key": "$email", "value": email}
+						]);
+						dataLayer.push({ event: 'UAevent', eventCategory: 'leads', eventAction: 'email', eventLabel: location.host + location.pathname })
+						//fbq('trackCustom', 'get_demo', {page: location.pathname})
+
 					})
 				}, 0)
 
