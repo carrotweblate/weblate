@@ -80,28 +80,29 @@
 					{ href: this.$page.allTildaFiles.edges[32].node.css, rel: 'stylesheet'}
 				],
 				script: [
-					{ src: this.$page.allTildaFiles.edges[21].node.js }, //jquery
-					{ src: this.$page.allTildaFiles.edges[0].node.js },
-					{ src: this.$page.allTildaFiles.edges[1].node.js },
-					{ src: this.$page.allTildaFiles.edges[2].node.js },
-					{ src: this.$page.allTildaFiles.edges[3].node.js },
-					{ src: this.$page.allTildaFiles.edges[4].node.js },
-					{ src: this.$page.allTildaFiles.edges[5].node.js },
-					{ src: this.$page.allTildaFiles.edges[6].node.js },
-					{ src: this.$page.allTildaFiles.edges[7].node.js },
-					//{ src: this.$page.allTildaFiles.edges[8].node.js }, //forms
-					//{ src: this.$page.allTildaFiles.edges[9].node.js }, //bootstrap
-					{ src: this.$page.allTildaFiles.edges[10].node.js },
-					{ src: this.$page.allTildaFiles.edges[11].node.js },
-					{ src: this.$page.allTildaFiles.edges[12].node.js },
-					{ src: this.$page.allTildaFiles.edges[13].node.js },
-					{ src: this.$page.allTildaFiles.edges[14].node.js },
-					{ src: this.$page.allTildaFiles.edges[15].node.js },
-					{ src: this.$page.allTildaFiles.edges[16].node.js },
-					{ src: this.$page.allTildaFiles.edges[17].node.js },
-					{ src: this.$page.allTildaFiles.edges[18].node.js },
-					{ src: this.$page.allTildaFiles.edges[19].node.js },
+					{ src: 'https://code.jquery.com/jquery-1.12.4.min.js' }, //jquery
+					//{ src: this.$page.allTildaFiles.edges[21].node.js }, //jquery
 					{ src: this.$page.allTildaFiles.edges[20].node.js },
+					{ src: this.$page.allTildaFiles.edges[19].node.js },
+					{ src: this.$page.allTildaFiles.edges[18].node.js },
+					{ src: this.$page.allTildaFiles.edges[17].node.js },
+					{ src: this.$page.allTildaFiles.edges[16].node.js },
+					{ src: this.$page.allTildaFiles.edges[15].node.js },
+					{ src: this.$page.allTildaFiles.edges[14].node.js },
+					{ src: this.$page.allTildaFiles.edges[13].node.js },
+					{ src: this.$page.allTildaFiles.edges[12].node.js },
+					{ src: this.$page.allTildaFiles.edges[11].node.js },
+					{ src: this.$page.allTildaFiles.edges[10].node.js },
+					//{ src: this.$page.allTildaFiles.edges[9].node.js }, //bootstrap
+					//{ src: this.$page.allTildaFiles.edges[8].node.js }, //forms
+					{ src: this.$page.allTildaFiles.edges[7].node.js },
+					{ src: this.$page.allTildaFiles.edges[6].node.js },
+					{ src: this.$page.allTildaFiles.edges[5].node.js },
+					{ src: this.$page.allTildaFiles.edges[4].node.js },
+					{ src: this.$page.allTildaFiles.edges[3].node.js },
+					{ src: this.$page.allTildaFiles.edges[2].node.js },
+					{ src: this.$page.allTildaFiles.edges[1].node.js },
+					{ src: this.$page.allTildaFiles.edges[0].node.js }
 				]
 			}
 		},
@@ -139,14 +140,15 @@
 					const anchors = document.querySelectorAll('.tilda a[href="#"]')
 					for (let anchor of anchors) {
 						anchor.addEventListener("click", function(e) {
-							e.preventDefault();
+							e.preventDefault()
 
 							const blockID = anchor.getAttribute("href")
-
 							document.querySelector(blockID).scrollIntoView({
 								behavior: "smooth",
 								block: "center"
 							})
+
+							return false
 						})
 					}
 				}, 0)
