@@ -1,6 +1,11 @@
 <template>
 	<Layout>
 
+		<!-- Прогрес бар чтения -->
+		<ClientOnly>
+			<read-progress color="#717171" height="2px" :shadow="false"></read-progress>
+		</ClientOnly>
+
 		<div class="tilda" v-html="html" />
 
 	</Layout>
@@ -42,6 +47,14 @@
 			}
 		},
 
+		//Прогресс бар
+		components: {
+			ReadProgress: () =>
+			import("vue-read-progress")
+				.then(m => m.default)
+				.catch()
+		},
+
 		//Делаем в HEAD
 		metaInfo() {
 			return {
@@ -67,11 +80,7 @@
 					{ href: this.$page.allTildaFiles.edges[32].node.css, rel: 'stylesheet'}
 				],
 				script: [
-					{ 
-						src: 'https://code.jquery.com/jquery-1.12.4.min.js', 
-						integrity: 'sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=',
-						crossorigin: 'anonymous'
-					},
+					{ src: this.$page.allTildaFiles.edges[21].node.js }, //jquery
 					{ src: this.$page.allTildaFiles.edges[0].node.js },
 					{ src: this.$page.allTildaFiles.edges[1].node.js },
 					{ src: this.$page.allTildaFiles.edges[2].node.js },
@@ -93,7 +102,6 @@
 					{ src: this.$page.allTildaFiles.edges[18].node.js },
 					{ src: this.$page.allTildaFiles.edges[19].node.js },
 					{ src: this.$page.allTildaFiles.edges[20].node.js },
-					//{ src: this.$page.allTildaFiles.edges[21].node.js }, //jquery
 				]
 			}
 		},
@@ -124,6 +132,23 @@
 						//fbq('trackCustom', 'get_demo', {page: location.pathname})
 
 					})
+				}, 0)
+
+				//Плавное перемещение по ссылке
+				setTimeout(function(){
+					const anchors = document.querySelectorAll('.tilda a[href="#"]')
+					for (let anchor of anchors) {
+						anchor.addEventListener("click", function(e) {
+							e.preventDefault();
+
+							const blockID = anchor.getAttribute("href")
+
+							document.querySelector(blockID).scrollIntoView({
+								behavior: "smooth",
+								block: "center"
+							})
+						})
+					}
 				}, 0)
 
 			} catch (error) {
