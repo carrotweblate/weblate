@@ -1,10 +1,8 @@
 <template>
 	<div>
 		<Navbar />
-
-		<b-container class="page">
-			<slot />
-		</b-container>
+		
+		<slot />
 
 		<Footer />
 	</div>

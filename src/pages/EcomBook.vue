@@ -9,13 +9,9 @@
 <style lang="scss">
 	#t-header, #t-footer {
 		display: none;
-	}	
-	.container, .container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
-		width: 100%;
-		padding-right: 20px;
-		padding-left: 20px;
-		margin-right: auto;
-		margin-left: auto;
+	}
+	*, *::before, *::after {
+		box-sizing: border-box !important;
 	}
 </style>
 
@@ -80,7 +76,7 @@
 					{ src: this.$page.allTildaFiles.edges[5].node.js },
 					{ src: this.$page.allTildaFiles.edges[6].node.js },
 					{ src: this.$page.allTildaFiles.edges[7].node.js },
-					{ src: this.$page.allTildaFiles.edges[8].node.js },
+					//{ src: this.$page.allTildaFiles.edges[8].node.js }, //forms
 					//{ src: this.$page.allTildaFiles.edges[9].node.js }, //bootstrap
 					{ src: this.$page.allTildaFiles.edges[10].node.js },
 					{ src: this.$page.allTildaFiles.edges[11].node.js },
@@ -92,13 +88,13 @@
 					{ src: this.$page.allTildaFiles.edges[17].node.js },
 					{ src: this.$page.allTildaFiles.edges[18].node.js },
 					{ src: this.$page.allTildaFiles.edges[19].node.js },
-					{ src: this.$page.allTildaFiles.edges[20].node.js },
+					{ src: this.$page.allTildaFiles.edges[20].node.js }
 				]
 			}
 		},
 
-		//Берём данные страницы по API Tilda
 		async mounted () {
+			//Берём данные страницы по API Tilda
 			try {
 				const results = await axios.get(
 					'https://api.tildacdn.info/v1/getpage/?publickey=h6wlwdtglx70dzkz1fnn&secretkey=cz7a318b3jpkqm6nzz4l&pageid=' + this.pageId
@@ -107,13 +103,18 @@
 				this.metaTitle = results.data.result.title
 				this.metaDescription = results.data.result.descr
 
-				
+				//Отмена отправки форм
+				setTimeout(function(){
+					document.querySelector('form').addEventListener('submit', event => {
+						event.preventDefault()
+						// actual logic, e.g. validate the form
+						console.log('Form submission cancelled.')
+					})
+				}, 0)
 
-				console.log(this.$page.allTildaFiles.edges)
 			} catch (error) {
 				console.log(error)
 			}
 		}
-
 	}
 </script>
