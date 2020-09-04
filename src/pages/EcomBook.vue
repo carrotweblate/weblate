@@ -113,6 +113,9 @@
 		},
 
 		async mounted () {
+			window.jQuery = jQuery
+			window.$ = jQuery
+
 			//Берём данные страницы по API Tilda
 			try {
 				const results = await axios.get(
