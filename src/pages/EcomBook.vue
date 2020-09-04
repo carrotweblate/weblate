@@ -37,9 +37,6 @@
 	import axios from 'axios'
 	import jQuery from 'jquery'
 
-	window.jQuery = jQuery
-	window.$ = jQuery
-
 	export default {
 		data() {
 			return {
