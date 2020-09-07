@@ -1,13 +1,14 @@
 <template>
 	<Layout>
-
-		<!-- Прогрес бар чтения -->
 		<ClientOnly>
+
+			<!-- Прогрес бар чтения -->
 			<read-progress color="#717171" height="2px" :shadow="false"></read-progress>
+
+			<!-- Страница из тильды -->
+			<div class="tilda" v-html="html" />
+
 		</ClientOnly>
-
-		<div class="tilda" v-html="html" />
-
 	</Layout>
 </template>
 
@@ -35,7 +36,6 @@
 
 <script>
 	import axios from 'axios'
-	import jQuery from 'jquery'
 
 	export default {
 		data() {
@@ -81,12 +81,12 @@
 					{ href: this.$page.allTildaFiles.edges[32].node.css, rel: 'stylesheet'}
 				],
 				script: [
-					// { 
-					// 	src: 'https://code.jquery.com/jquery-1.12.4.min.js',
-					// 	integrity: 'sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=',
-					// 	crossorigin: 'anonymous'
-					// }, //jquery
-					//{ src: this.$page.allTildaFiles.edges[21].node.js }, //jquery
+					{ 
+						src: 'https://code.jquery.com/jquery-1.12.4.min.js',
+						integrity: 'sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=',
+						crossorigin: 'anonymous'
+					}, //jquery
+					// { src: this.$page.allTildaFiles.edges[21].node.js }, //jquery
 					{ src: this.$page.allTildaFiles.edges[20].node.js },
 					{ src: this.$page.allTildaFiles.edges[19].node.js },
 					{ src: this.$page.allTildaFiles.edges[18].node.js },
@@ -113,8 +113,6 @@
 		},
 
 		async mounted () {
-			window.jQuery = jQuery
-			window.$ = jQuery
 
 			//Берём данные страницы по API Tilda
 			try {
@@ -124,6 +122,8 @@
 				this.html = results.data.result.html
 				this.metaTitle = results.data.result.title
 				this.metaDescription = results.data.result.descr
+				window.jQuery = jQuery
+				window.$ = jQuery
 			} catch (error) {
 				console.log(error)
 			}
