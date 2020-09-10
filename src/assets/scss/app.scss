@@ -1,5 +1,6 @@
 //Колонки
 $grid-gutter-width: 40px;
+
 //Оформление кнопок и ссылок
 $primary: #ff892a;
 .btn-primary {
@@ -7,6 +8,7 @@ $primary: #ff892a;
 }
 
 $link-hover-decoration: none;
+
 @import '~bootstrap/scss/bootstrap.scss';
 @import '~bootstrap-vue/src/index.scss';
 

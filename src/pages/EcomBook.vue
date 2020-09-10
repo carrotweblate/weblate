@@ -6,7 +6,7 @@
 			<read-progress color="#717171" height="2px" :shadow="false"></read-progress>
 
 			<!-- Страница из тильды -->
-			<div class="tilda" v-html="html" />
+			<div class="tilda" v-html="this.$page.allTildaPages.edges[0].node.html" />
 
 		</ClientOnly>
 	</Layout>
@@ -31,7 +31,20 @@
 				}
 			}
 		}
+		allTildaPages {
+			edges {
+				node {
+					id
+					title
+					description
+					cover
+					alias
+					html
+				}
+			}
+		}
 	}
+	
 </page-query>
 
 <script>
@@ -40,10 +53,6 @@
 	export default {
 		data() {
 			return {
-				pageId: '2833995',  //ID страницы в Тильде
-				html: null,
-				metaTitle: null,
-				metaDescription: null,
 				cssFiles: [],
 			}
 		},
@@ -51,20 +60,20 @@
 		//Прогресс бар
 		components: {
 			ReadProgress: () =>
-			import("vue-read-progress")
-				.then(m => m.default)
-				.catch()
+				import("vue-read-progress")
+					.then(m => m.default)
+					.catch()
 		},
 
 		//Делаем в HEAD
 		metaInfo() {
 			return {
-				title: this.metaTitle,
+				title: this.$page.allTildaPages.edges[0].node.title,
 				meta: [
 					{
 						key: 'description',
 						name: 'description',
-						content: this.metaDescription
+						content: this.$page.allTildaPages.edges[0].node.description
 					}
 				],
 				link: [
@@ -112,21 +121,7 @@
 			}
 		},
 
-		async mounted () {
-
-			//Берём данные страницы по API Tilda
-			try {
-				const results = await axios.get(
-					'https://api.tildacdn.info/v1/getpage/?publickey=h6wlwdtglx70dzkz1fnn&secretkey=cz7a318b3jpkqm6nzz4l&pageid=' + this.pageId
-				)
-				this.html = results.data.result.html
-				this.metaTitle = results.data.result.title
-				this.metaDescription = results.data.result.descr
-				window.jQuery = jQuery
-				window.$ = jQuery
-			} catch (error) {
-				console.log(error)
-			}
+		mounted () {
 
 			//Отмена отправки форм
 			setTimeout(function(){

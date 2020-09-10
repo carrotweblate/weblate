@@ -8,25 +8,48 @@
 const axios = require('axios')
 
 module.exports = function (api) {
-  //API from Tilda: Скрипты
+	//API from Tilda Files
 	api.loadSource(async actions => {
 		const { data } = await axios.get(
-			"https://api.tildacdn.info/v1/getproject/?publickey=h6wlwdtglx70dzkz1fnn&secretkey=cz7a318b3jpkqm6nzz4l&projectid=62329"
+			'https://api.tildacdn.info/v1/getproject/?publickey=h6wlwdtglx70dzkz1fnn&secretkey=cz7a318b3jpkqm6nzz4l&projectid=62329'
 		)
 		const collection = actions.addCollection('tildaFiles')
 		for (const item of data.result.css) {
-			collection.addNode({css: item});
+			collection.addNode({css: item})
 		}
 		for (const item of data.result.js) {
-			collection.addNode({js: item});
+			collection.addNode({js: item})
 		}
-  })
-  
-  api.loadSource(({ addCollection }) => {
-    // Use the Data Store API here: https://gridsome.org/docs/data-store-api/
-  })
+	})
 
-  api.createPages(({ createPage }) => {
-    // Use the Pages API here: https://gridsome.org/docs/pages-api/
-  })
+	//API from Tilda: Список страниц
+	api.loadSource(async actions => {
+		const { data } = await axios.get(
+			'https://api.tildacdn.info/v1/getpageslist/?publickey=h6wlwdtglx70dzkz1fnn&secretkey=cz7a318b3jpkqm6nzz4l&projectid=62329'
+		)
+		const collection = actions.addCollection('tildaPages')
+		for (const item of data.result) {
+			if (item.id == '2833995') {
+				const { data } = await axios.get(
+					'https://api.tildacdn.info/v1/getpage/?publickey=h6wlwdtglx70dzkz1fnn&secretkey=cz7a318b3jpkqm6nzz4l&pageid=' + item.id
+				)
+				collection.addNode({
+					id: item.id,
+					title: item.title,
+					description: item.descr,
+					cover: item.img,
+					alias: item.alias,
+					html: data.result.html
+				})
+			}
+		}
+	})
+  
+	api.loadSource(({ addCollection }) => {
+	// Use the Data Store API here: https://gridsome.org/docs/data-store-api/
+	})
+
+	api.createPages(({ createPage }) => {
+	// Use the Pages API here: https://gridsome.org/docs/pages-api/
+	})
 }
