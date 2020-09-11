@@ -2,7 +2,7 @@
 	<b-navbar toggleable="lg" :class="{'pt-2 pb-2': scrolled, 'pt-3 pb-3 pt-md-4 pb-md-4': !scrolled}" v-scroll="handleScroll">
 
 		<!-- Логотип -->
-		<g-link to="https://www.carrotquest.io/">
+		<g-link to="/">
 			<g-image src="~/assets/images/cq_logo.svg" width="170" height="35" class="logo ml-2 ml-md-3" alt="Dashly" />
 		</g-link>
 
@@ -89,7 +89,7 @@
 						},
 						{
 							title: 'Email-маркетинг',
-							url: '/email-marketing'
+							url: '/email-marketing/'
 						},
 						{
 							title: 'Pop-up окна',
@@ -122,7 +122,7 @@
 						},
 						{
 							title: 'Интернет-магазинам и e‑commerce',
-							to: '/ecommerce'
+							to: '/ecommerce/'
 						},
 						{
 							title: 'Внедрение для крупных компаний',

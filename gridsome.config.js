@@ -51,4 +51,8 @@ module.exports = {
 			}
 		}
 	],
+
+	templates: {
+		Tilda: '/:slug',
+	}
 }

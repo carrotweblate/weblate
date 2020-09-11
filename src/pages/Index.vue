@@ -2,7 +2,7 @@
 	<Layout>
 		<b-container class="page">
 		
-			<g-link to="/ecom-book/">Книга Ecom</g-link>
+			<a href="/ecom-book/">Книга Ecom</a>
 
 		</b-container>
 	</Layout>

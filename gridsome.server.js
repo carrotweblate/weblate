@@ -27,9 +27,12 @@ module.exports = function (api) {
 		const { data } = await axios.get(
 			'https://api.tildacdn.info/v1/getpageslist/?publickey=h6wlwdtglx70dzkz1fnn&secretkey=cz7a318b3jpkqm6nzz4l&projectid=62329'
 		)
-		const collection = actions.addCollection('tildaPages')
+		const collection = actions.addCollection('Tilda')
 		for (const item of data.result) {
-			if (item.id == '2833995') {
+			if (
+				item.id == '2833995' || 
+				item.id == '9970780'
+			) {
 				const { data } = await axios.get(
 					'https://api.tildacdn.info/v1/getpage/?publickey=h6wlwdtglx70dzkz1fnn&secretkey=cz7a318b3jpkqm6nzz4l&pageid=' + item.id
 				)
@@ -38,7 +41,7 @@ module.exports = function (api) {
 					title: item.title,
 					description: item.descr,
 					cover: item.img,
-					alias: item.alias,
+					slug: item.alias,
 					html: data.result.html
 				})
 			}
