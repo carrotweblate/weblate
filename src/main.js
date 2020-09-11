@@ -11,24 +11,30 @@ import '~/assets/scss/app.scss'
 import DefaultLayout from '~/layouts/Default.vue'
 
 
-export default function(Vue, { router, head, isClient, appOptions }) {
+export default function(Vue, { head }) {
 
-    //Bootstrap
-    Vue.use(BootstrapVue)
+	//Общая для всех страниц META
+	head.meta.push(
+		{ property: "article:publisher", content: "https://www.facebook.com/carrotquest/" },
+		{ property: "og:locale", content: "ru_RU" },
+	)
 
-    //Базовая разметка
-    Vue.component('Layout', DefaultLayout)
+	//Bootstrap
+	Vue.use(BootstrapVue)
 
-    //v-scroll
-    Vue.directive('scroll', {
-        inserted: function(el, binding) {
-            let f = function(evt) {
-                if (binding.value(evt, el)) {
-                    window.removeEventListener('scroll', f)
-                }
-            }
-            window.addEventListener('scroll', f)
-        }
-    })
+	//Базовая разметка
+	Vue.component('Layout', DefaultLayout)
+
+	//v-scroll
+	Vue.directive('scroll', {
+		inserted: function(el, binding) {
+			let f = function(evt) {
+				if (binding.value(evt, el)) {
+					window.removeEventListener('scroll', f)
+				}
+			}
+			window.addEventListener('scroll', f)
+		}
+	})
 
 }

@@ -1,48 +1,51 @@
 <template>
-	<b-navbar toggleable="lg" :class="{'pt-2 pb-2': scrolled, 'pt-3 pb-3 pt-md-4 pb-md-4': !scrolled}" v-scroll="handleScroll">
-
-		<!-- Логотип -->
-		<g-link to="/">
-			<g-image src="~/assets/images/cq_logo.svg" width="170" height="35" class="logo ml-2 ml-md-3" alt="Dashly" />
-		</g-link>
-
-		<!-- Мобильное меню гамбургер -->
-		<b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
+	<header>
 		
-		<b-collapse is-nav id="nav_collapse">
+		<b-navbar toggleable="lg" :class="{'pt-2 pb-2': scrolled, 'pt-3 pb-3 pt-md-4 pb-md-4': !scrolled}" v-scroll="handleScroll">
 
-			<!-- Выпадающее меню -->
-			<b-navbar-nav class="ml-auto">
-				<template v-for="( item , index ) in topMenu">
+			<!-- Логотип -->
+			<g-link to="/">
+				<g-image src="~/assets/images/cq_logo.svg" width="170" height="35" class="logo ml-2 ml-md-3" alt="Dashly" />
+			</g-link>
 
-					<b-nav-item v-if="!item.subLinks" :href="item.to" :key="index" class="mr-1">
-						{{ item.title }}
-					</b-nav-item>
+			<!-- Мобильное меню гамбургер -->
+			<b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
+			
+			<b-collapse is-nav id="nav_collapse">
 
-					<b-nav-item-dropdown hover v-else-if="item.subLinks" :text="item.title" :key="index" class="mr-1">
-						<b-dropdown-item v-for="( subLink , index ) in item.subLinks" :href="subLink.to" :key="index">
-							{{ subLink.title }}
-						</b-dropdown-item>
-					</b-nav-item-dropdown>
-					
-				</template>
-			</b-navbar-nav>
+				<!-- Выпадающее меню -->
+				<b-navbar-nav class="ml-auto">
+					<template v-for="( item , index ) in topMenu">
 
-			<!-- Кнопки -->
-			<b-button variant="primary" href="/panel/register/" class="ml-1 mr-1 px-2 ml-xl-3 mr-xl-3 px-xl-4">
-				Зарегистрироваться
-			</b-button>
-			<b-button variant="outline" href="/panel/login/">
-				Войти
-			</b-button>
+						<b-nav-item v-if="!item.subLinks" :href="item.to" :key="index" class="mr-1">
+							{{ item.title }}
+						</b-nav-item>
 
-		</b-collapse>
+						<b-nav-item-dropdown hover v-else-if="item.subLinks" :text="item.title" :key="index" class="mr-1">
+							<b-dropdown-item v-for="( subLink , index ) in item.subLinks" :href="subLink.to" :key="index">
+								{{ subLink.title }}
+							</b-dropdown-item>
+						</b-nav-item-dropdown>
+						
+					</template>
+				</b-navbar-nav>
 
-		<!-- Подложка -->
-		<div class="blur"></div>
+				<!-- Кнопки -->
+				<b-button variant="primary" href="/panel/register/" class="ml-1 mr-1 px-2 ml-xl-3 mr-xl-3 px-xl-4">
+					Зарегистрироваться
+				</b-button>
+				<b-button variant="outline" href="/panel/login/">
+					Войти
+				</b-button>
 
-	</b-navbar>
+			</b-collapse>
 
+			<!-- Подложка -->
+			<div class="blur"></div>
+
+		</b-navbar>
+
+	</header>
 </template>
 
 <script>
