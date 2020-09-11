@@ -2,9 +2,6 @@
 	<Layout>
 		<ClientOnly>
 
-			<!-- Прогрес бар чтения -->
-			<read-progress color="#ff892a" height="2px" :shadow="false"></read-progress>
-
 			<!-- Страница из тильды -->
 			<div class="tilda" v-html="$page.tilda.html" />
 
@@ -47,14 +44,6 @@
 			return {
 				cssFiles: [],
 			}
-		},
-
-		//Прогресс бар
-		components: {
-			ReadProgress: () =>
-				import("vue-read-progress")
-					.then(m => m.default)
-					.catch()
 		},
 
 		//Делаем в HEAD

@@ -1,5 +1,10 @@
 <template>
 	<div>
+		<ClientOnly>
+			<!-- Прогрес бар чтения -->
+			<read-progress color="#ff892a" height="2px" :shadow="false"></read-progress>
+		</ClientOnly>
+
 		<Navbar />
 		
 		<slot />
@@ -16,7 +21,13 @@
 	export default {
 		components: {
 			Navbar,
-			Footer
+			Footer,
+
+			//Прогресс бар
+			ReadProgress: () =>
+				import("vue-read-progress")
+					.then(m => m.default)
+					.catch()
 		}
 	};
 </script>
