@@ -1,15 +1,37 @@
+@mixin keyframes($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+        @content;
+    }
+    @-moz-keyframes #{$animation-name} {
+        @content;
+    }
+    @keyframes #{$animation-name} {
+        @content;
+    }
+}
+
+@mixin animation($str) {
+    -webkit-animation: #{$str};
+    -moz-animation: #{$str};
+    -ms-animation: #{$str};
+    -o-animation: #{$str};
+    animation: #{$str};
+}
+
+@mixin transition($args) {
+    -webkit-transition: $args;
+    -moz-transition: $args;
+    -ms-transition: $args;
+    -o-transition: $args;
+    transition: $args;
+}
+
 .resources {
-    margin-bottom: $step12;
-    @media ($largeTabletsMax) {
-        margin-bottom: $step9;
-    }
-    @media ($phonesMax) {
-        margin-bottom: $step6;
-    }
+    margin-bottom: 1500px;
 
     .resource__wrapper {
-        margin-top: $step6;
-        margin-bottom: $step2;
+        margin-top: 48px;
+        margin-bottom: 16px;
         text-align: center;
         cursor: pointer;
 
@@ -74,7 +96,7 @@
             text-transform: uppercase;
             font-size: 12px;
             color: #A4A4A4;
-            margin-bottom: $step1;
+            margin-bottom: 8px;
         }
 
         .title {
@@ -116,8 +138,8 @@
         border-radius: 5px;
         background-color: transparent;
         border: 1px solid #FF8246;
-        padding: $step2 $step3;
-        margin: $step6 0 0;
+        padding: 16px 24px;
+        margin: 48px 0 0;
         display: inline-block;
         position: relative;
         @include transition(all .2s ease);
@@ -129,19 +151,11 @@
     }
 
     .substrible {
-        margin-top: $step12;
-        margin-bottom: $step16;
+        margin-top: 8px;
+        margin-bottom: 8px;
         text-align: center;
-        @media ($largeTabletsMax) {
-            margin-top: $step9;
-            margin-bottom: $step13;
-        }
-        @media ($phonesMax) {
-            margin-top: $step6;
-            margin-bottom: $step12;
-        }
         p {
-            margin-bottom: $step3;
+            margin-bottom: 24px;
         }
         form {
             display: inline-flex;
@@ -151,11 +165,11 @@
             
             .input-field {
                 border: 0;
-                padding: $step2 $step3;
+                padding: 16px 24px;
                 min-width: 280px;
             }
             .link-button_filled {
-                padding: $step2 $step3 !important;
+                padding: 16px 24px !important;
             }
             .input-field::placeholder {
                 color: #C4C4C4 !important;
@@ -173,7 +187,7 @@
                     box-shadow: 0px 3px 10px rgba(9, 29, 100, 0.1);
                 }
                 .input-field {
-                    margin-bottom: $step2;
+                    margin-bottom: 16px;
                 }
             }
             
@@ -197,31 +211,14 @@
         
         .input-field {
             border: 0;
-            padding: $step2 $step3;
+            padding: 16px 24px;
             min-width: 280px;
         }
         .link-button_filled {
-            padding: $step2 $step3 !important;
+            padding: 16px 24px !important;
         }
         .input-field::placeholder {
             color: #C4C4C4 !important;
         }
-    }
-    
-    @media ($largeTabletsMax) {    
-        form {
-            box-shadow: none;
-            .input-field,
-            .link-button_filled {
-                width: 100%;
-                max-width: 100%;
-                border-radius: 5px !important;
-                box-shadow: 0px 3px 10px rgba(9, 29, 100, 0.1);
-            }
-            .input-field {
-                margin-bottom: $step2;
-            }
-        }
-        
     }
 }
