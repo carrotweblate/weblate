@@ -17,7 +17,7 @@
 					</p>
 					<form class="library__form form-row__form form" action="javascript: void(0);">
 						<input type="email" autocomplete="on" class="input-field form__field form__field__right-button" required name="email" placeholder="Введите электронную почту" />
-						<input type="submit" value="Подписаться" class="link-button link-button_filled form__button form__button__left-input" />
+						<input type="submit" value="Подписаться" class="btn btn-primary" />
 					</form>
 				</div> 
 			</div>
@@ -75,6 +75,9 @@
 				</div>
 			</div>
 		</b-container>
+
+		//Книги
+		<b-container class="books">
 
 	</Layout>
 </template>
