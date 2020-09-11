@@ -16,11 +16,12 @@ $blue-link: #467AFF;
 $grey-text: #9A9A9A;
 $light-grey: #F2F2F2;
 
+
+
 //Подключаем шрифты
 @font-face {
     font-family: 'Stag Sans Black';
-    src: url('../font/StagSans-Black.woff2') format('woff2'), url('../font/StagSans-Black.woff') format('woff');
-    font-weight: 900;
+    src: url('../font/StagSansLCTTMedium.woff') format('woff'), url('../font/StagSansLCTTMedium.woff') format('woff');
     font-style: normal;
     font-display: swap;
 }
@@ -65,7 +66,7 @@ a {
     color: $blue-link;
 }
 
-h1 {
+h1 , .h1 {
     font-family: 'Stag Sans Black';
 }
 
@@ -84,9 +85,15 @@ h4 , .h4 {
     }
 }
 
+
+
+
+
 //Верхняя навигация
 @import 'navbar.scss';
+
 //Подвал
 @import 'footer.scss';
+
 //Статья блога
-@import 'article.scss';
+//@import 'article.scss';

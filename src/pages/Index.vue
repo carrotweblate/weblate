@@ -1,16 +1,10 @@
 <template>
-	<Layout>
-		<b-container class="page">
-		
-			<g-link to="/ecom-book/">Книга Ecom</g-link>
+	<Layout class="page">
+		<b-container>
 
 		</b-container>
 	</Layout>
 </template>
-
-<style lang="scss">
-
-</style>
 
 <script>
 	export default {
@@ -39,7 +33,7 @@
 				link: [
 					{
 						rel: 'canonical',
-						href: 'https://www.carrotquest.io/'
+						href: 'https://cq-test.ru/'
 					}
 				]
 			}

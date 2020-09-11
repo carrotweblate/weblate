@@ -22,5 +22,10 @@
 </script>
 
 <style lang="scss">
-	
+	.t-zoomer__wrapper {
+		display: none;
+	}
+	.t-zoomer__show .t-zoomer__wrapper {
+		display: block;
+	}
 </style>

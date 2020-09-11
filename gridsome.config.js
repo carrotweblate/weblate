@@ -21,15 +21,15 @@ module.exports = {
 	},
 
 	plugins: [
-		// {
-		// 	use: 'gridsome-plugin-gtm',
-		// 	options: {
-		// 		//id: 'GTM-PHNG63V',  //CQ
-		// 		id: 'GTM-TKFL867',  //Пустой
-		// 		enabled: true,
-		// 		debug: false
-		// 	}
-		// },
+		{
+			use: 'gridsome-plugin-gtm',
+			options: {
+				//id: 'GTM-PHNG63V',  //CQ
+				id: 'GTM-TKFL867',  //Пустой
+				enabled: true,
+				debug: false
+			}
+		},
 		{
 			use: 'gridsome-plugin-pwa',
 			options: {
@@ -37,7 +37,7 @@ module.exports = {
 				disableServiceWorker: false,
 				serviceWorkerPath: 'service-worker.js',
 				cachedFileTypes: 'js,json,css,html,png,jpg,jpeg,svg,gif',
-				disableTemplatedUrls: false, // Optional
+				disableTemplatedUrls: true, // Optional
 
 				// Manifest Options (https://developer.mozilla.org/en-US/docs/Web/Manifest)
 				manifestPath: 'manifest.json',
