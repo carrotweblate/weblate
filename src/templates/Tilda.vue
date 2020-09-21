@@ -1,11 +1,7 @@
 <template>
 	<Layout>
-		<ClientOnly>
-
-			<!-- Страница из тильды -->
-			<div class="tilda" v-html="$page.tilda.html" />
-
-		</ClientOnly>
+		<!-- Страница из тильды -->
+		<div class="tilda" v-html="$page.tilda.html" />
 	</Layout>
 </template>
 
