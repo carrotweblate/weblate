@@ -1,11 +1,6 @@
 <template>
 	<div>
-		<ClientOnly>
-			<!-- Прогрес бар чтения -->
-			<read-progress color="#ff892a" height="2px" :shadow="false"></read-progress>
-		</ClientOnly>
-
-		<Navbar />
+		<Header />
 		
 		<slot />
 
@@ -15,12 +10,12 @@
 
 
 <script>
-	import Navbar from '~/components/Navbar.vue'
+	import Header from '~/components/Header/Header.vue'
 	import Footer from '~/components/Footer/Footer.vue'
 
 	export default {
 		components: {
-			Navbar,
+			Header,
 			Footer,
 
 			//Прогресс бар

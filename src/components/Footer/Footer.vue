@@ -142,7 +142,7 @@
 						},
 						{
 							title: 'Email-маркетинг',
-							url: '/email-marketing'
+							url: '/email-marketing/'
 						},
 						{
 							title: 'Pop-up окна',
@@ -179,7 +179,7 @@
 						},
 						{
 							title: 'Интернет-магазинам и e‑commerce',
-							to: '/ecommerce'
+							to: '/ecommerce/'
 						},
 						{
 							title: 'Внедрение для крупных компаний',
@@ -215,12 +215,16 @@
 							to: 'https://help.carrotquest.io/'
 						},
 						{
-							title: 'Интеграции',
-							to: '/integration/'
+							title: 'Видеотур по сервису',
+							to: '/videotour/'
 						},
 						{
 							title: 'API разработчикам',
 							to: '/developers/'
+						},
+						{
+							title: 'Интеграции',
+							to: '/integration/'
 						},
 						{
 							title: 'Status page',
@@ -233,15 +237,15 @@
 					subLinks: [
 						{
 							title: 'Клиенты и отзывы',
-							to: '/cases/'
+							to: '/cases/#rec50789322'
 						},
 						{
 							title: 'Вакансии',
-							to: '/library/'
+							to: '/vacancy/'
 						},
 						{
 							title: 'Оферта и политика',
-							to: '/cases/'
+							to: '/terms-and-policies/'
 						},
 						{
 							title: 'Партнерам',

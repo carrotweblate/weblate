@@ -5,7 +5,7 @@
 
 			<!-- Логотип -->
 			<g-link to="/">
-				<g-image src="~/assets/images/cq_logo.svg" width="170" height="35" class="logo ml-2 ml-md-3" alt="Dashly" />
+				<g-image src="~/components/Header/logo.svg" width="170" height="35" class="logo ml-2 ml-md-3" alt="Dashly" />
 			</g-link>
 
 			<!-- Мобильное меню гамбургер -->
@@ -44,6 +44,11 @@
 			<div class="blur"></div>
 
 		</b-navbar>
+
+		<ClientOnly>
+			<!-- Прогрес бар чтения -->
+			<read-progress color="#ff892a" height="2px" :shadow="false"></read-progress>
+		</ClientOnly>
 
 	</header>
 </template>
@@ -133,6 +138,13 @@
 				this.lastPosition = window.scrollY;
 				// this.scrolled = window.scrollY > 250;
 			}
+		},
+		components: {
+			//Прогресс бар
+			ReadProgress: () =>
+				import("vue-read-progress")
+					.then(m => m.default)
+					.catch()
 		},
 		data: () => ({
 			limitPosition: 500,

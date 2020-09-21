@@ -58,17 +58,16 @@
 					}
 				],
 				link: [
-					{ href: this.$page.allTildaFiles.edges[22].node.css, rel: 'stylesheet'},
-					{ href: this.$page.allTildaFiles.edges[23].node.css, rel: 'stylesheet'},
-					{ href: this.$page.allTildaFiles.edges[24].node.css, rel: 'stylesheet'},
-					{ href: this.$page.allTildaFiles.edges[25].node.css, rel: 'stylesheet'},
-					{ href: this.$page.allTildaFiles.edges[26].node.css, rel: 'stylesheet'},
-					{ href: this.$page.allTildaFiles.edges[27].node.css, rel: 'stylesheet'},
-					{ href: this.$page.allTildaFiles.edges[28].node.css, rel: 'stylesheet'},
-					{ href: this.$page.allTildaFiles.edges[29].node.css, rel: 'stylesheet'},
-					{ href: this.$page.allTildaFiles.edges[30].node.css, rel: 'stylesheet'},
 					{ href: this.$page.allTildaFiles.edges[31].node.css, rel: 'stylesheet'},
-					{ href: this.$page.allTildaFiles.edges[32].node.css, rel: 'stylesheet'}
+					{ href: this.$page.allTildaFiles.edges[30].node.css, rel: 'stylesheet'},
+					{ href: this.$page.allTildaFiles.edges[29].node.css, rel: 'stylesheet'},
+					{ href: this.$page.allTildaFiles.edges[28].node.css, rel: 'stylesheet'},
+					{ href: this.$page.allTildaFiles.edges[27].node.css, rel: 'stylesheet'},
+					{ href: this.$page.allTildaFiles.edges[26].node.css, rel: 'stylesheet'},
+					{ href: this.$page.allTildaFiles.edges[25].node.css, rel: 'stylesheet'},
+					{ href: this.$page.allTildaFiles.edges[24].node.css, rel: 'stylesheet'},
+					{ href: this.$page.allTildaFiles.edges[23].node.css, rel: 'stylesheet'},
+					{ href: this.$page.allTildaFiles.edges[22].node.css, rel: 'stylesheet'},					
 				],
 				script: [
 					{ 

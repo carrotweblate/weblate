@@ -30,8 +30,9 @@ module.exports = function (api) {
 		const collection = actions.addCollection('Tilda')
 		for (const item of data.result) {
 			if (
-				item.id == '2833995' || 
-				item.id == '9970780'
+				item.id == '2833995' || 	//Книга Ecom
+				item.id == '2883968' ||		//Оферта и политика
+				item.id == '6101216' 		//Вакансии
 			) {
 				const { data } = await axios.get(
 					'https://api.tildacdn.info/v1/getpage/?publickey=h6wlwdtglx70dzkz1fnn&secretkey=cz7a318b3jpkqm6nzz4l&pageid=' + item.id
