@@ -29,17 +29,19 @@ module.exports = function (api) {
 		)
 		const collection = actions.addCollection('Tilda')
 		for (const item of data.result) {
-			const { data } = await axios.get(
-				'https://api.tildacdn.info/v1/getpage/?publickey=h6wlwdtglx70dzkz1fnn&secretkey=cz7a318b3jpkqm6nzz4l&pageid=' + item.id
-			)
-			collection.addNode({
-				id: item.id,
-				title: item.title,
-				description: item.descr,
-				cover: item.img,
-				slug: item.alias,
-				html: data.result.html
-			})
+			if ( item.id != '312699' ) {
+				const { data } = await axios.get(
+					'https://api.tildacdn.info/v1/getpage/?publickey=h6wlwdtglx70dzkz1fnn&secretkey=cz7a318b3jpkqm6nzz4l&pageid=' + item.id
+				)
+				collection.addNode({
+					id: item.id,
+					title: item.title,
+					description: item.descr,
+					cover: item.img,
+					slug: item.alias,
+					html: data.result.html
+				})
+			}
 		}
 	})
   
