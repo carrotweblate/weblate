@@ -53,51 +53,29 @@
 						content: this.$page.tilda.description
 					}
 				],
-				link: [
-					{ href: this.$page.allTildaFiles.edges[31].node.css, rel: 'stylesheet'},
-					{ href: this.$page.allTildaFiles.edges[30].node.css, rel: 'stylesheet'},
-					{ href: this.$page.allTildaFiles.edges[29].node.css, rel: 'stylesheet'},
-					{ href: this.$page.allTildaFiles.edges[28].node.css, rel: 'stylesheet'},
-					{ href: this.$page.allTildaFiles.edges[27].node.css, rel: 'stylesheet'},
-					{ href: this.$page.allTildaFiles.edges[26].node.css, rel: 'stylesheet'},
-					{ href: this.$page.allTildaFiles.edges[25].node.css, rel: 'stylesheet'},
-					{ href: this.$page.allTildaFiles.edges[24].node.css, rel: 'stylesheet'},
-					{ href: this.$page.allTildaFiles.edges[23].node.css, rel: 'stylesheet'},
-					{ href: this.$page.allTildaFiles.edges[22].node.css, rel: 'stylesheet'},					
-				],
 				script: [
-					{ 
-						src: 'https://code.jquery.com/jquery-1.12.4.min.js',
-						integrity: 'sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=',
-						crossorigin: 'anonymous'
-					}, //jquery
-					//{ src: this.$page.allTildaFiles.edges[21].node.js }, //jquery
-					{ src: this.$page.allTildaFiles.edges[20].node.js },
-					{ src: this.$page.allTildaFiles.edges[19].node.js },
-					{ src: this.$page.allTildaFiles.edges[18].node.js },
-					{ src: this.$page.allTildaFiles.edges[17].node.js },
-					{ src: this.$page.allTildaFiles.edges[16].node.js },
-					{ src: this.$page.allTildaFiles.edges[15].node.js },
-					{ src: this.$page.allTildaFiles.edges[14].node.js },
-					{ src: this.$page.allTildaFiles.edges[13].node.js },
-					{ src: this.$page.allTildaFiles.edges[12].node.js },
-					{ src: this.$page.allTildaFiles.edges[11].node.js },
-					{ src: this.$page.allTildaFiles.edges[10].node.js },
-					// { src: this.$page.allTildaFiles.edges[9].node.js }, //bootstrap
-					// { src: this.$page.allTildaFiles.edges[8].node.js }, //forms
-					{ src: this.$page.allTildaFiles.edges[7].node.js },
-					{ src: this.$page.allTildaFiles.edges[6].node.js },
-					{ src: this.$page.allTildaFiles.edges[5].node.js },
-					{ src: this.$page.allTildaFiles.edges[4].node.js },
-					{ src: this.$page.allTildaFiles.edges[3].node.js },
-					{ src: this.$page.allTildaFiles.edges[2].node.js },
-					{ src: this.$page.allTildaFiles.edges[1].node.js },
 					{ src: this.$page.allTildaFiles.edges[0].node.js }
 				]
 			}
 		},
 
 		mounted () {
+
+			//Подгружаем стили и скрипты тильды
+			for ( var value of this.$page.allTildaFiles.edges.reverse() ) {
+				if (value.node.css) {
+					let tildaCss = document.createElement("link")
+					tildaCss.setAttribute('rel', 'stylesheet')
+					tildaCss.setAttribute('href', value.node.css)
+					document.head.appendChild(tildaCss)
+				} else {
+					if ( value.node.js != this.$page.allTildaFiles.edges[0].node.js ) {
+						let tildaScript = document.createElement("script")
+						tildaScript.setAttribute('src', value.node.js)
+						document.head.appendChild(tildaScript)
+					}
+				}
+			}
 
 			//Отмена отправки форм
 			// setTimeout(function(){
@@ -117,23 +95,23 @@
 			// 	})
 			// }, 0)
 
-			// //Плавное перемещение по ссылке
-			// setTimeout(function(){
-			// 	const anchors = document.querySelectorAll('.tilda a[href="#"]')
-			// 	for (let anchor of anchors) {
-			// 		anchor.addEventListener("click", function(e) {
-			// 			e.preventDefault()
+			//Плавное перемещение по ссылке
+			setTimeout(function(){
+				const anchors = document.querySelectorAll('.tilda a[href="#"]')
+				for (let anchor of anchors) {
+					anchor.addEventListener("click", function(e) {
+						e.preventDefault()
 
-			// 			const blockID = anchor.getAttribute("href")
-			// 			document.querySelector(blockID).scrollIntoView({
-			// 				behavior: "smooth",
-			// 				block: "center"
-			// 			})
+						const blockID = anchor.getAttribute("href")
+						document.querySelector(blockID).scrollIntoView({
+							behavior: "smooth",
+							block: "center"
+						})
 
-			// 			return false
-			// 		})
-			// 	}
-			// }, 0)
+						return false
+					})
+				}
+			}, 0)
 		}
 	}
 </script>
