@@ -16,13 +16,7 @@
 	export default {
 		components: {
 			Header,
-			Footer,
-
-			//Прогресс бар
-			ReadProgress: () =>
-				import("vue-read-progress")
-					.then(m => m.default)
-					.catch()
+			Footer
 		}
 	};
 </script>

@@ -50,9 +50,5 @@ module.exports = {
 				icon: './static/favicon.png'
 			}
 		}
-	],
-
-	templates: {
-		Tilda: '/:slug',
-	}
+	]
 }

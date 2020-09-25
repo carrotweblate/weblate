@@ -28,21 +28,27 @@ module.exports = function (api) {
 			'https://api.tildacdn.info/v1/getpageslist/?publickey=h6wlwdtglx70dzkz1fnn&secretkey=cz7a318b3jpkqm6nzz4l&projectid=62329'
 		)
 		const collection = actions.addCollection('Tilda')
-		for (const item of data.result) {
-			if ( item.id != '312699' ) {
-				const { data } = await axios.get(
-					'https://api.tildacdn.info/v1/getpage/?publickey=h6wlwdtglx70dzkz1fnn&secretkey=cz7a318b3jpkqm6nzz4l&pageid=' + item.id
-				)
-				collection.addNode({
-					id: item.id,
-					title: item.title,
-					description: item.descr,
-					cover: item.img,
-					slug: item.alias,
-					html: data.result.html
-				})
+		api.createManagedPages(async ({ createPage }) => {
+			for (const item of data.result) {
+				if ( item.id != '312699' ) {
+					const { data } = await axios.get(
+						'https://api.tildacdn.info/v1/getpage/?publickey=h6wlwdtglx70dzkz1fnn&secretkey=cz7a318b3jpkqm6nzz4l&pageid=' + item.id
+					)
+					createPage({
+						path: `/${item.alias}`,
+						component: './src/templates/Tilda.vue',
+						context: {
+							id: item.id,
+							title: item.title,
+							description: item.descr,
+							cover: item.img,
+							slug: item.alias,
+							html: data.result.html
+						}
+					})
+				}
 			}
-		}
+		})
 	})
   
 	api.loadSource(({ addCollection }) => {

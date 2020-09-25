@@ -1,7 +1,7 @@
 <template>
 	<Layout>
 		<!-- Страница из тильды -->
-		<div class="tilda" v-html="$page.tilda.html" />
+		<div class="tilda" v-html="$context.html" /> 
 	</Layout>
 </template>
 
@@ -15,14 +15,7 @@
 </style>
 
 <page-query>
-	query tilda ($id: ID!) {
-		tilda(id: $id) {
-			title
-			description
-			cover
-			slug
-			html
-		}
+	query {
 		allTildaFiles {
 			edges {
 				node {
@@ -45,12 +38,12 @@
 		//Делаем в HEAD
 		metaInfo() {
 			return {
-				title: this.$page.tilda.title,
+				title: this.$context.title,
 				meta: [
 					{
 						key: 'description',
 						name: 'description',
-						content: this.$page.tilda.description
+						content: this.$context.description
 					}
 				],
 				script: [
