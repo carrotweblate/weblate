@@ -1,8 +1,10 @@
 <template>
 	<Layout class="page">
-		<b-container>
 
+		<b-container class="hero">
+		
 		</b-container>
+
 	</Layout>
 </template>
 
