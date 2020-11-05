@@ -30,6 +30,13 @@
 			<b-row>
 				<b-col col cols="12" class="post__image mt-4 mb-5">
 					<img :src="$context.featuredImage" />
+
+					<!-- <g-image
+						placeholder="data:image/svg+xml,......." or a URL to a super small image
+						src="https://url.to/large-image.jpg"
+						srcset="https://url.to/medium-image.jpg 480w, https://url.to/large-image.jpg 800w"
+						sizes="(max-width: 600px) 480px, 800px"
+					/> -->
 				</b-col>
 			</b-row>
 
@@ -68,7 +75,7 @@
 
 				</b-col>
 				<b-col col lg="6">
-					
+
 				</b-col>
 			</b-row>
 		
