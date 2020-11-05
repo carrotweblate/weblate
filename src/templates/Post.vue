@@ -9,7 +9,7 @@
 					<b-breadcrumb class="font20px d-none d-md-flex">
 						<b-breadcrumb-item href="/">Главная</b-breadcrumb-item>
 						<b-breadcrumb-item href="/blog/">Блог</b-breadcrumb-item>
-						<b-breadcrumb-item :to="$context.cslug" :text="$context.category" />
+						<b-breadcrumb-item :href="$context.cslug" :text="$context.category" />
 					</b-breadcrumb>
 				</b-col>
 			</b-row>
@@ -30,21 +30,12 @@
 			<b-row>
 				<b-col col cols="12" class="post__image mt-4 mb-5">
 					<img :src="$context.featuredImage" />
-
-					<!-- <g-image
-						placeholder="data:image/svg+xml,......." or a URL to a super small image
-						src="https://url.to/large-image.jpg"
-						srcset="https://url.to/medium-image.jpg 480w, https://url.to/large-image.jpg 800w"
-						sizes="(max-width: 600px) 480px, 800px"
-					/> -->
 				</b-col>
 			</b-row>
 
 			<!-- Текст статьи -->
 			<b-row>
-				<b-col col lg="8" class="font20px post__text" 
-					v-html="$context.content"
-				/>
+				<b-col col lg="8" class="font20px post__text" v-html="$context.content" />
 				<b-col col cols="4" class="post__info d-none d-lg-block">
 					<div class="post__info__contents">
 						Содержание:
@@ -72,7 +63,7 @@
 			<!-- Текст статьи -->
 			<b-row class="video_and_registration">
 				<b-col col lg="6">
-
+					
 				</b-col>
 				<b-col col lg="6">
 

@@ -29,7 +29,7 @@ module.exports = {
 				id: 'GTM-PHNG63V',  //CQ
 				// id: 'GTM-TKFL867',  //Пустой
 				enabled: true,
-				debug: false
+				debug: true
 			}
 		},
 		{
@@ -44,7 +44,7 @@ module.exports = {
 				// Manifest Options (https://developer.mozilla.org/en-US/docs/Web/Manifest)
 				manifestPath: 'manifest.json',
 				title: 'Carrot quest',
-				startUrl: 'https://www.carrotquest.io/',
+				startUrl: 'https://www.carrotquest.io/blog/article/',
 				display: 'standalone',
 				statusBarStyle: 'default',
 				themeColor: '#ff892a',

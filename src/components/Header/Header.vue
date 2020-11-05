@@ -245,7 +245,7 @@
 		}),
 		mounted () {
 			//Блог или нет
-			if (document.location.href.search('/blog/')!=-1){
+			if (document.location.href.search('/blog/') != -1){
 				this.isPost = true
 			}
 
