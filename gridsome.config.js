@@ -24,8 +24,8 @@ module.exports = {
 		{
 			use: 'gridsome-plugin-gtm',
 			options: {
-				//id: 'GTM-PHNG63V',  //CQ
-				id: 'GTM-TKFL867',  //Пустой
+				id: 'GTM-PHNG63V',  //CQ
+				// id: 'GTM-TKFL867',  //Пустой
 				enabled: true,
 				debug: false
 			}
@@ -42,7 +42,7 @@ module.exports = {
 				// Manifest Options (https://developer.mozilla.org/en-US/docs/Web/Manifest)
 				manifestPath: 'manifest.json',
 				title: 'Carrot quest',
-				startUrl: 'https://cq-test.ru/',
+				startUrl: 'https://www.carrotquest.io/',
 				display: 'standalone',
 				statusBarStyle: 'default',
 				themeColor: '#ff892a',
