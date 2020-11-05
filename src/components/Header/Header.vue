@@ -1,44 +1,82 @@
 <template>
 	<header>
 		
-		<b-navbar toggleable="lg" :class="{'pt-2 pb-2': scrolled, 'pt-3 pb-3 pt-md-4 pb-md-4': !scrolled}" v-scroll="handleScroll">
+		<b-navbar toggleable="lg" :class="{'pt-2 pb-2': scrolled, 'pt-3 pb-3 pt-md-4 pb-md-4': !scrolled, 'hideHeader': hideHeader, '': !hideHeader}" v-scroll="handleScroll">
 
-			<!-- Логотип -->
-			<g-link to="/">
-				<g-image src="~/components/Header/logo.svg" width="170" height="35" class="logo ml-2 ml-md-3" alt="Dashly" />
-			</g-link>
+			<!-- Страницы сайта -->
+			<template v-if="!(this.isPost)">
+				<!-- Логотип -->
+				<g-link to="/">
+					<g-image src="~/components/Header/logo.svg" width="170" height="35" class="logo ml-2 ml-md-3" alt="Carrot blog" />
+				</g-link>
 
-			<!-- Мобильное меню гамбургер -->
-			<b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
-			
-			<b-collapse is-nav id="nav_collapse">
+				<!-- Мобильное меню гамбургер -->
+				<b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
+				
+				<b-collapse is-nav id="nav_collapse">
 
-				<!-- Выпадающее меню -->
-				<b-navbar-nav class="ml-auto">
-					<template v-for="( item , index ) in topMenu">
+					<!-- Выпадающее меню -->
+					<b-navbar-nav class="ml-auto">
+						<template v-for="( item , index ) in topMenu">
 
-						<b-nav-item v-if="!item.subLinks" :href="item.to" :key="index" class="mr-1">
-							{{ item.title }}
-						</b-nav-item>
+							<b-nav-item v-if="!item.subLinks" :href="item.to" :key="index" class="mr-1">
+								{{ item.title }}
+							</b-nav-item>
 
-						<b-nav-item-dropdown hover v-else-if="item.subLinks" :text="item.title" :key="index" class="mr-1">
-							<b-dropdown-item v-for="( subLink , index ) in item.subLinks" :href="subLink.to" :key="index">
-								{{ subLink.title }}
-							</b-dropdown-item>
-						</b-nav-item-dropdown>
-						
-					</template>
-				</b-navbar-nav>
+							<b-nav-item-dropdown hover v-else-if="item.subLinks" :text="item.title" :key="index" class="mr-1">
+								<b-dropdown-item v-for="( subLink , index ) in item.subLinks" :href="subLink.to" :key="index">
+									{{ subLink.title }}
+								</b-dropdown-item>
+							</b-nav-item-dropdown>
+							
+						</template>
+					</b-navbar-nav>
 
-				<!-- Кнопки -->
-				<b-button variant="primary" href="/panel/register/" class="ml-1 mr-1 px-2 ml-xl-3 mr-xl-3 px-xl-4">
-					Зарегистрироваться
-				</b-button>
-				<b-button variant="outline" href="/panel/login/">
-					Войти
-				</b-button>
+					<!-- Кнопки -->
+					<b-button variant="primary" href="/panel/register/" class="ml-1 mr-1 px-2 ml-xl-3 mr-xl-3 px-xl-4">
+						Зарегистрироваться
+					</b-button>
+					<b-button variant="outline" href="/panel/login/">
+						Войти
+					</b-button>
+				</b-collapse>
+			</template>
 
-			</b-collapse>
+			<!-- Страницы блога -->
+			<template v-else>
+				<!-- Логотип -->
+				<g-link to="/blog/">
+					<g-image src="~/components/Header/blogLogo.svg" width="170" height="35" class="logo ml-2 ml-md-3" alt="Carrot quest" />
+				</g-link>
+
+				<!-- Мобильное меню гамбургер -->
+				<b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
+				
+				<b-collapse is-nav id="nav_collapse">
+
+					<!-- Выпадающее меню -->
+					<b-navbar-nav class="ml-auto">
+						<template v-for="( item , index ) in blogMenu">
+
+							<b-nav-item v-if="!item.subLinks" :href="item.to" :key="index" class="mr-1">
+								{{ item.title }}
+							</b-nav-item>
+
+							<b-nav-item-dropdown hover v-else-if="item.subLinks" :text="item.title" :key="index" class="mr-1">
+								<b-dropdown-item v-for="( subLink , index ) in item.subLinks" :href="subLink.to" :key="index">
+									{{ subLink.title }}
+								</b-dropdown-item>
+							</b-nav-item-dropdown>
+							
+						</template>
+					</b-navbar-nav>
+
+					<!-- Кнопки -->
+					<b-button variant="primary" href="/panel/register/" class="ml-1 mr-1 px-2 ml-xl-3 mr-xl-3 px-xl-4">
+						Подключить Carrot quest
+					</b-button>
+				</b-collapse>
+			</template>
 
 			<!-- Подложка -->
 			<div class="blur"></div>
@@ -53,90 +91,23 @@
 	</header>
 </template>
 
-<style lang="scss">
-	.navbar {
-		border-bottom: 1px solid #f3f3f3;
-		position: fixed;
-		left: 0;
-		right: 0;
-		top: 0;
-		z-index: 100;
-		transition: 0.35s all cubic-bezier(0.175, 0.885, 0.320, 1.275);
-
-		a,
-		ul,
-		button,
-		#nav_collapse {
-			position: relative;
-			z-index: 3;
-			&:focus-within {
-				outline: none !important;
-			}
-		}
-
-		.logo {
-			position: relative;
-			top: -2px;
-		}
-
-		.nav-link {
-			color: #000 !important;
-		}
-
-		.dropdown-toggle::after {
-			width: 5px;
-			height: 5px;
-			margin-left: 0.5em;
-			border: none;
-			border-left: 1px solid #333;
-			border-bottom: 1px solid #333;
-			transform: rotate(-45deg);outline: none !important;
-		}
-
-		.dropdown-item {
-			padding: 0.5rem 1rem;
-		}
-
-		.navbar-toggler {
-			border-color: transparent;
-		}
-		
-		.blur {
-			background-color: rgba(255, 255, 255, 0.90);
-			backdrop-filter: blur(10px);
-			box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			left: 0;
-			right: 0;
-			z-index: 1;
-		}
-	}
-
-	@media (max-width: 1199.98px) {
-		.navbar {
-			font-size: 0.875em;
-		}
-	}
-</style>
-
 <script>
 	export default {
 		methods: {
 			handleScroll() {
-				if (this.lastPosition < window.scrollY && this.limitPosition < window.scrollY) {
-					this.scrolled = true;
+				if (this.lastPosition < window.scrollY && this.limitPosition+550 < window.scrollY) {
+					this.hideHeader = true;
 					// move up!
 				} 
 				
 				if (this.lastPosition > window.scrollY) {
-					this.scrolled = false;
+					this.scrolled = true;
+					this.hideHeader = false;
 					// move down
 				}
 				
 				this.lastPosition = window.scrollY;
-				// this.scrolled = window.scrollY > 250;
+				this.scrolled = window.scrollY > this.limitPosition;
 			}
 		},
 		components: {
@@ -147,9 +118,11 @@
 					.catch()
 		},
 		data: () => ({
+			lastPosition: 0,
 			limitPosition: 500,
       		scrolled: false,
-			lastPosition: 0,
+			hideHeader: false,
+			isPost: false,
 			topMenu: [
 				{
 					title: 'Инструменты',
@@ -258,7 +231,38 @@
 					title: 'Партнерам',
 					to: '/partner/'
 				}
+			],
+			blogMenu: [
+				{
+					title: 'Кейсы',
+					to: '/cases/'
+				},
+				{
+					title: 'Библиотека',
+					to: '/library/'
+				}
 			]
 		}),
+		mounted () {
+			//Блог или нет
+			if (document.location.href.search('/blog/')!=-1){
+				this.isPost = true
+			}
+
+			//Плавное перемещение по ссылке
+			setTimeout(function(){
+				const anchors = document.querySelectorAll('a[href*="#"]')
+				for (let anchor of anchors) {
+					anchor.addEventListener("click", function(e) {
+						e.preventDefault()
+						const blockID = anchor.getAttribute("href")
+						document.querySelector(blockID).scrollIntoView({
+							behavior: "smooth",
+							block: "start"
+						})
+					})
+				}
+			}, 0)
+		}
 	}
 </script>

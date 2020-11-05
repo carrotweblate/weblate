@@ -73,7 +73,7 @@
 						<b-nav-text class="mr-4">
 							Скачайте приложение:
 						</b-nav-text>
-						<b-nav-item class="p-1 windows" href="https://files.carrotquest.io/apps/CarrotSetup-v5.2.exe" target="_blank" rel="noopener noreferrer">
+						<b-nav-item class="p-1 windows" href="https://files.carrotquest.io/desktop-app/carrotquest.exe" target="_blank" rel="noopener noreferrer">
 							<svg class="mr-1 mb-1" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M0 3.4L9.8 2V11.5H0V3.4Z" fill="#333333"/>
 								<path d="M9.8 12.6V22L0 20.7V12.5L9.8 12.6Z" fill="#333333"/>

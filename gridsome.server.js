@@ -8,7 +8,7 @@
 const axios = require('axios')
 
 module.exports = function (api) {
-	//API from Tilda Files
+	// API from Tilda Files
 	api.loadSource(async actions => {
 		const { data } = await axios.get(
 			'https://api.tildacdn.info/v1/getproject/?publickey=h6wlwdtglx70dzkz1fnn&secretkey=cz7a318b3jpkqm6nzz4l&projectid=62329'
@@ -30,24 +30,94 @@ module.exports = function (api) {
 		const collection = actions.addCollection('Tilda')
 		api.createManagedPages(async ({ createPage }) => {
 			for (const item of data.result) {
-				if ( item.id != '312699' ) {
+				if ( ( item.id != '312699' ) && ( item.id == '14671222' ) ) {
 					const { data } = await axios.get(
 						'https://api.tildacdn.info/v1/getpage/?publickey=h6wlwdtglx70dzkz1fnn&secretkey=cz7a318b3jpkqm6nzz4l&pageid=' + item.id
 					)
-					createPage({
-						path: `/${item.alias}`,
-						component: './src/templates/Tilda.vue',
-						context: {
-							id: item.id,
-							title: item.title,
-							description: item.descr,
-							cover: item.img,
-							slug: item.alias,
-							html: data.result.html
-						}
-					})
+					if ( item.alias ) {
+						createPage({
+							path: `/${item.alias}`,
+							component: './src/templates/Tilda.vue',
+							context: {
+								id: item.id,
+								title: item.title,
+								description: item.descr,
+								cover: item.img,
+								slug: item.alias,
+								html: data.result.html
+							}
+						})
+					} else {
+						createPage({
+							path: `/${item.filename}`,
+							component: './src/templates/Tilda.vue',
+							context: {
+								id: item.id,
+								title: item.title,
+								description: item.descr,
+								cover: item.img,
+								slug: item.filename,
+								html: data.result.html
+							}
+						})
+					}
 				}
 			}
+		})
+	})
+
+	//API from Wordpress: Список постов
+	api.createPages(async ({ graphql, createPage }) =>{
+		// Use the Pages API here: https://gridsome.org/docs/pages-api
+		const { data } = await graphql(`
+			query {
+				posts{
+					nodes{
+						id
+						slug
+						categories {
+							nodes {
+								name
+								slug
+							}
+						}
+						title
+						metacontent { 
+							contents
+							description 
+						}
+						featuredImage { node { mediaDetails { sizes { sourceUrl } } } }
+						content
+						seo {
+							metaDesc
+							title
+						}
+					}
+				}
+			}
+		`)
+		data.posts.nodes.forEach(function(node, index){
+			createPage({
+				path: `/blog/${node.slug}-2`,
+				component: './src/templates/Post.vue',
+				context: {
+					id: node.id,
+					slug: node.slug,
+					category: node.categories.nodes[0].name,
+					cslug: '/blog/' + node.categories.nodes[0].slug + '/', 
+					featuredImage: node.featuredImage.node.mediaDetails.sizes[1].sourceUrl,
+
+					title: node.title,
+					description: node.metacontent.description,
+					contents: node.metacontent.contents,
+					content: node.content,
+
+					seo: {
+						title: node.seo.title,
+						description: node.seo.metaDesc,
+					}
+				}
+			})
 		})
 	})
   

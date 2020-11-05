@@ -49,6 +49,23 @@ module.exports = {
 				backgroundColor: '#ffffff',
 				icon: './static/favicon.png'
 			}
-		}
+		},
+		{
+			use: 'gridsome-source-graphql',
+			options: {
+			url: 'https://www.carrrot.biz/blog/graphql',
+				fieldName: 'wp',
+				typeName: 'wpTypes',
+			},
+		},
+		// {
+		// 	use: '@noxify/gridsome-plugin-remote-image',
+		// 	options: {
+		// 		'typeName' : 'wpTypes',
+		// 		'sourceField': 'sourceUrl',
+		// 		'targetField': 'downloadedSrc',
+		// 		'targetPath': './src/assets/remoteImages'
+		// 	}
+		// },
 	]
 }

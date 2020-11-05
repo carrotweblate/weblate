@@ -2,7 +2,11 @@
 	<Layout class="page">
 
 		<b-container class="hero">
-		
+			<br>
+			<br>
+			<g-link to="/blog/kak-sdelat-email-rassylku-2/">Тестовая статья</g-link>
+			<br>
+			<g-link to="/growthhacks/">Гроусхакерная</g-link>
 		</b-container>
 
 	</Layout>
@@ -10,12 +14,6 @@
 
 <script>
 	export default {
-		data() {
-				return {
-					info: null
-				}
-		},
-
 		//Делаем в HEAD
 		metaInfo() {
 			return {
@@ -28,8 +26,7 @@
 					},
 					{
 						property: "og:image",
-						content:
-						'https://www.carrotquest.io/img/cover.gif'
+						content: 'https://www.carrotquest.io/img/cover.gif'
 					},
 				],
 				link: [
