@@ -84,7 +84,39 @@ module.exports = function (api) {
 						title
 						metacontent { 
 							contents
-							description 
+							description
+							related {
+								article1Pic {
+									mediaDetails {
+									  	sizes {
+											sourceUrl
+										}
+									}
+								}
+								article1Category
+								article1Title
+								article1Url
+								article2Pic {
+									mediaDetails {
+										sizes {
+											sourceUrl
+										}
+									}
+								  }
+								article2Category
+								article2Title
+								article2Url
+								article3Category
+								article3Title
+								article3Url
+								article3Pic {
+								  mediaDetails {
+										sizes {
+											sourceUrl
+										}
+								  	}
+								}
+							}
 						}
 						featuredImage { node { mediaDetails { sizes { sourceUrl } } } }
 						content
@@ -115,7 +147,28 @@ module.exports = function (api) {
 					seo: {
 						title: node.seo.title,
 						description: node.seo.metaDesc,
-					}
+					},
+
+					more: [
+						{ 
+							url: node.metacontent.related.article1Url,
+							pic: 'background-image: url(' + node.metacontent.related.article1Pic.mediaDetails.sizes[0].sourceUrl + ')',
+							category: node.metacontent.related.article1Category,
+							title: node.metacontent.related.article1Title
+						},
+						{
+							url: node.metacontent.related.article2Url,
+							pic: 'background-image: url(' + node.metacontent.related.article2Pic.mediaDetails.sizes[0].sourceUrl + ')',
+							category: node.metacontent.related.article2Category,
+							title: node.metacontent.related.article2Title
+						},
+						{
+							url: node.metacontent.related.article3Url,
+							pic: 'background-image: url(' + node.metacontent.related.article3Pic.mediaDetails.sizes[0].sourceUrl + ')',
+							category: node.metacontent.related.article3Category,
+							title: node.metacontent.related.article3Title
+						},
+					]
 				}
 			})
 		})

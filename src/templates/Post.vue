@@ -60,25 +60,39 @@
 				</b-col>
 			</b-row>
 
-			<!-- Баннер с видео -->
-			<b-row class="video_and_registration">
-				<b-col col lg="6">
-					
+			<b-row class="post__more">
+				<b-col cols="12" class="h2 mb-5">
+					Так же читайте
 				</b-col>
-				<b-col col lg="6">
+				<template v-for="( item , index ) in $context.more">
 
-				</b-col>
+					<b-col cols="12" lg="6" xl="4" :key="index" class="mb-5">
+						<a :href="item.url" class="post__more__box" :style="item.pic"></a>
+						<span v-text="item.category" class="font12px lightgrey-text mt-4 mb-3"/>
+						<a :href="item.url" class="h3">
+							{{ item.title }}
+						</a>
+					</b-col>
+					
+				</template>
 			</b-row>
-		
+
 		</b-container>
+
+		<VideoRegistration />
 
 	</Layout>
 </template>
 
 <script>
 	import '~/assets/scss/blog/post.scss'
+	import VideoRegistration from '~/components/VideoRegistration/VideoRegistration.vue'
 
 	export default {
+		components: {
+			VideoRegistration
+		},
+
 		//Делаем в HEAD
 		metaInfo() {
 			return {

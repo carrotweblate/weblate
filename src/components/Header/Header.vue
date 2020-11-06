@@ -45,7 +45,7 @@
 			<!-- Страницы блога -->
 			<template v-else>
 				<!-- Логотип -->
-				<g-link to="/blog/">
+				<g-link href="/blog/">
 					<g-image src="~/components/Header/blogLogo.svg" width="170" height="35" class="logo ml-2 ml-md-3" alt="Carrot quest" />
 				</g-link>
 

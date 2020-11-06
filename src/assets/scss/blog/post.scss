@@ -1,15 +1,18 @@
 .post {
 	padding-top: 120px;
 
+	//Хлебные крошки
 	.breadcrumb {
 		margin-bottom: 45px;
 	}
 
+	//Обложка
 	&__image img {
 		border-radius: 5px;
 		max-width: 100%;
 	}
 
+	//Оглавление и авторы
 	&__info {
 		&__contents {
 			margin-bottom: 72px;
@@ -41,6 +44,7 @@
 		}
 	}
 
+	//Текст статьи
 	&__text {
 		h2 , h3 , h4 , p , ol , ul {
 			margin-bottom: 2rem;
@@ -91,6 +95,27 @@
 	
 		.radius-5px img {
 			border-radius: 5px;
+		}
+	}
+
+	//Так же читайте
+	&__more {
+		margin-top: 6rem;
+		margin-bottom: 6rem;
+		&__box {
+			display: block;
+			overflow: hidden;
+			border-radius: 5px;
+			height: 220px;
+			background-position: center;
+			background-size: cover;
+		}
+		span {
+			text-transform: uppercase;
+			display: block;
+		}
+		a {
+			color: #000;
 		}
 	}
 }
