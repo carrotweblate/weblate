@@ -7,6 +7,7 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
+    "@mavrin/remark-typograf": "^2.1.6",
     "@noxify/gridsome-plugin-remote-image": "^1.2.0",
     "axios": "^0.20.0",
     "bootstrap-vue": "^2.17.3",
@@ -16,6 +17,7 @@
     "gridsome-source-graphql": "^1.0.2",
     "jquery": "^3.5.1",
     "node-sass": "^4.14.1",
+    "remark": "^13.0.0",
     "sass-loader": "^10.0.1",
     "vue-read-progress": "^1.0.4"
   }

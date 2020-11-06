@@ -1,7 +1,9 @@
 <template>
 	<Layout>
+
 		<!-- Страница из тильды -->
 		<div class="tilda" v-html="$context.html" /> 
+
 	</Layout>
 </template>
 
@@ -9,8 +11,11 @@
 	#t-header, #t-footer {
 		display: none;
 	}
-	*, *::before, *::after {
+	* , *::before , *::after {
 		box-sizing: border-box !important;
+	}
+	.tilda {
+		overflow: hidden;
 	}
 </style>
 
@@ -28,6 +33,8 @@
 </page-query>
 
 <script>
+	import $ from 'jquery';  // подключаем jQuery
+
 	export default {
 		data() {
 			return {
@@ -51,7 +58,6 @@
 				]
 			}
 		},
-
 		mounted () {
 
 			//Подгружаем стили и скрипты тильды
@@ -70,23 +76,6 @@
 				}
 			}
 
-			//Отмена отправки форм
-			// setTimeout(function(){
-			// 	document.querySelector('#form54773744').addEventListener('submit', event => {
-			// 		event.preventDefault()
-					
-			// 		var email = document.querySelector('#form54773744 input[name="email"]').value
-			// 		carrotquest.track("клик - скачать книгу для ecommerce", {
-			// 			'Email': email
-			// 		});
-			// 		carrotquest.identify([
-			// 			{"op": "update_or_create", "key": "$email", "value": email}
-			// 		]);
-			// 		dataLayer.push({ event: 'UAevent', eventCategory: 'leads', eventAction: 'email', eventLabel: location.host + location.pathname })
-			// 		//fbq('trackCustom', 'get_demo', {page: location.pathname})
-
-			// 	})
-			// }, 0)
 		}
 	}
 </script>
