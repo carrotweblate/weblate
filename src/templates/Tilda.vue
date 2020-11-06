@@ -36,6 +36,11 @@
 	import $ from 'jquery';  // подключаем jQuery
 
 	export default {
+		mounted() {
+			window.$ = require('jquery')
+			window.jQuery = require('jquery');
+		},
+		
 		data() {
 			return {
 				cssFiles: [],
