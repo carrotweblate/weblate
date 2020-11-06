@@ -36,11 +36,6 @@
 	import $ from 'jquery';  // подключаем jQuery
 
 	export default {
-		mounted() {
-			window.$ = require('jquery')
-			window.jQuery = require('jquery');
-		},
-		
 		data() {
 			return {
 				cssFiles: [],
@@ -64,6 +59,8 @@
 			}
 		},
 		mounted () {
+			window.$ = require('jquery')
+			window.jQuery = require('jquery');
 
 			//Подгружаем стили и скрипты тильды
 			for ( var value of this.$page.allTildaFiles.edges.reverse() ) {
