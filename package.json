@@ -15,7 +15,6 @@
     "gridsome-plugin-gtm": "^0.1.1",
     "gridsome-plugin-pwa": "^0.0.18",
     "gridsome-source-graphql": "^1.0.2",
-    "jquery": "^3.5.1",
     "node-sass": "^4.14.1",
     "remark": "^13.0.0",
     "sass-loader": "^10.0.1",

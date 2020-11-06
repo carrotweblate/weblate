@@ -87,7 +87,6 @@
 </template>
 
 <script>
-	import jQuery from 'jquery';  // подключаем jQuery
 	import '~/assets/scss/blog/post.scss'
 	import VideoRegistration from '~/components/VideoRegistration/VideoRegistration.vue'
 
@@ -144,7 +143,7 @@
 				link: [
 					{
 						rel: 'canonical',
-						href: 'https://www.carrotquest.io/blog/' + this.$context.slug.replace('-2', '/')
+						href: 'https://www.carrotquest.io/blog/' + this.$context.slug
 					}
 				]
 			}

@@ -33,8 +33,6 @@
 </page-query>
 
 <script>
-	import $ from 'jquery';  // подключаем jQuery
-
 	export default {
 		data() {
 			return {
@@ -59,9 +57,6 @@
 			}
 		},
 		mounted () {
-			window.$ = require('jquery')
-			window.jQuery = require('jquery');
-
 			//Подгружаем стили и скрипты тильды
 			for ( var value of this.$page.allTildaFiles.edges.reverse() ) {
 				if (value.node.css) {
@@ -77,7 +72,6 @@
 					}
 				}
 			}
-
 		}
 	}
 </script>
