@@ -243,7 +243,7 @@
 				}
 			]
 		}),
-		created () {
+		mounted () {
 			//Скрипт Carrot quest
 			(function() {
 				function Build(name, args) {
@@ -274,8 +274,7 @@
 			if (document.location.href.search('/blog/') != -1){
 				this.isPost = true
 			}
-		},
-		mounted () {
+
 			//Плавное перемещение по ссылке
 			setTimeout(function(){
 				const anchors = document.querySelectorAll('a[href*="#"]')

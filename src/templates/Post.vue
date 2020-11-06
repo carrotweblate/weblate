@@ -60,7 +60,7 @@
 				</b-col>
 			</b-row>
 
-			<!-- Текст статьи -->
+			<!-- Баннер с видео -->
 			<b-row class="video_and_registration">
 				<b-col col lg="6">
 					
