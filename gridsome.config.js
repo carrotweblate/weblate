@@ -29,7 +29,7 @@ module.exports = {
 				id: 'GTM-PHNG63V',  //CQ
 				// id: 'GTM-TKFL867',  //Пустой
 				enabled: true,
-				debug: true
+				debug: false
 			}
 		},
 		{
