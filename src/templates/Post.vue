@@ -97,8 +97,7 @@
 		},
 
 		mounted() {
-			window.$ = require('jquery')
-			window.jQuery = require('jquery');
+			window.jQuery = $;
 		},
 
 		//Делаем в HEAD
