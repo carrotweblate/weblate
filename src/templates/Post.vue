@@ -85,12 +85,18 @@
 </template>
 
 <script>
+	import $ from 'jquery';  // подключаем jQuery
 	import '~/assets/scss/blog/post.scss'
 	import VideoRegistration from '~/components/VideoRegistration/VideoRegistration.vue'
 
 	export default {
 		components: {
 			VideoRegistration
+		},
+
+		mounted() {
+			window.$ = require('jquery')
+			window.jQuery = require('jquery');
 		},
 
 		//Делаем в HEAD
