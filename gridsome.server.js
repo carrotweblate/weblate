@@ -136,6 +136,9 @@ module.exports = function (api) {
 			pageHTML = pageHTML.split('https://www.carrotquest.io/blog/wp-content/uploads/').join('https://cdn-www.carrotquest.io/blog/wp-content/uploads/')
 			//Lazyload
 			pageHTML = pageHTML.split('<img src').join('<img loading="lazy" src')
+			//PRE
+			pageHTML = pageHTML.split('<code><').join('<code>&lt;')
+			pageHTML = pageHTML.split('></code>').join('&gt;</code>')
 			
 			createPage({
 				path: `/blog/${node.slug}-2`,
