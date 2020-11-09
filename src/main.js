@@ -19,6 +19,12 @@ export default function(Vue, { head }) {
 		{ property: "og:locale", content: "ru_RU" },
 	)
 
+	// Add an external JavaScript before the closing </body> tag
+	head.script.push({
+		src: 'https://code.jquery.com/jquery-3.4.1.min.js',
+		body: true
+	})
+
 	//Bootstrap
 	Vue.use(BootstrapVue)
 
