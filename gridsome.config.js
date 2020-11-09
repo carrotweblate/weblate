@@ -23,15 +23,15 @@ module.exports = {
 	},
 
 	plugins: [
-		{
-			use: 'gridsome-plugin-gtm',
-			options: {
-				// id: 'GTM-PHNG63V',  //CQ
-				id: 'GTM-TKFL867',  //Пустой
-				enabled: true,
-				debug: false
-			}
-		},
+		// {
+		// 	use: 'gridsome-plugin-gtm',
+		// 	options: {
+		// 		// id: 'GTM-PHNG63V',  //CQ
+		// 		id: 'GTM-TKFL867',  //Пустой
+		// 		enabled: true,
+		// 		debug: false
+		// 	}
+		// },
 		{
 			use: 'gridsome-plugin-pwa',
 			options: {
