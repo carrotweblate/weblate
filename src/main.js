@@ -19,10 +19,12 @@ export default function(Vue, { head }) {
 		{ property: "og:locale", content: "ru_RU" },
 	)
 
-	// Add an external JavaScript before the closing </body> tag
+	// Добавляем jQuery и CQ
 	head.script.push({
-		src: 'https://code.jquery.com/jquery-3.4.1.min.js',
-		body: true
+		src: '/assets/js/jquery-3.5.1.min.js' , type: 'application/javascript' , charset: 'utf-8'
+	})
+	head.script.push({
+		src: '/assets/js/cq.js' , type: 'application/javascript' , charset: 'utf-8'
 	})
 
 	//Bootstrap
