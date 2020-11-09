@@ -19,7 +19,6 @@
         for (var i = 0; i < m.length; i++) carrotquest[m[i]] = Build(m[i]);
     }
 })();
-
 carrotquest.connect('100-675e2c8860097948c325b680f4da');
 carrotquest.track('Зашел на лендинг', {
     'URL': location.href
@@ -39,4 +38,4 @@ carrotquest.track('Зашел на лендинг', {
     j.src =
         'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
     f.parentNode.insertBefore(j, f);
-})(window, document, 'script', 'dataLayer', 'GTM-TKFL867');
+})(window, document, 'script', 'dataLayer', 'GTM-PHNG63V');
