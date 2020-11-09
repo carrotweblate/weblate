@@ -135,7 +135,7 @@ module.exports = function (api) {
 			//CDN для ресурсов
 			pageHTML = pageHTML.split('https://www.carrotquest.io/blog/wp-content/uploads/').join('https://cdn-www.carrotquest.io/blog/wp-content/uploads/')
 			//Lazyload
-			pageHTML = pageHTML.split('<img src').join('<img v-lazysizes :data-src')
+			pageHTML = pageHTML.split('<img src').join('<img loading="lazy" class="lazyload" data-src')
 			
 			createPage({
 				path: `/blog/${node.slug}-2`,
