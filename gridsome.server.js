@@ -131,6 +131,12 @@ module.exports = function (api) {
 			}
 		`)
 		data.posts.nodes.forEach(function(node, index){
+			var pageHTML = node.content;
+			//CDN для ресурсов
+			pageHTML = pageHTML.split('https://www.carrotquest.io/blog/wp-content/uploads/').join('https://cdn-www.carrotquest.io/blog/wp-content/uploads/')
+			//Lazyload
+			pageHTML = pageHTML.split('<img src').join('<img v-lazysizes :data-src')
+			
 			createPage({
 				path: `/blog/${node.slug}-2`,
 				component: './src/templates/Post.vue',
@@ -146,7 +152,7 @@ module.exports = function (api) {
 					description: node.metacontent.description,
 					contents: node.metacontent.contents,
 					author: node.metacontent.author,
-					content: node.content,
+					content: pageHTML,
 
 					seo: {
 						title: node.seo.title,

@@ -71,12 +71,15 @@
 <script>
 	import '~/assets/scss/blog/post.scss'
 	import VideoRegistration from '~/components/VideoRegistration/VideoRegistration.vue'
+	import vueLazysizes from 'vue-lazysizes';
 
 	export default {
 		components: {
 			VideoRegistration
 		},
-
+		directives: {
+			lazysizes: vueLazysizes
+		},
 		//Делаем в HEAD
 		metaInfo() {
 			return {
