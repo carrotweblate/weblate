@@ -21,10 +21,10 @@ export default function(Vue, { head }) {
 
 	// Добавляем jQuery и CQ
 	head.script.push({
-		src: '/assets/js/jquery-3.5.1.min.js' , type: 'application/javascript' , charset: 'utf-8'
+		src: '/blog/article/assets/js/jquery-3.5.1.min.js' , type: 'application/javascript' , charset: 'utf-8'
 	})
 	head.script.push({
-		src: '/assets/js/cq.js' , type: 'application/javascript' , charset: 'utf-8'
+		src: '/blog/article/assets/js/cq.js' , type: 'application/javascript' , charset: 'utf-8'
 	})
 	
 
