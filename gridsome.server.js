@@ -82,9 +82,11 @@ module.exports = function (api) {
 							}
 						}
 						title
-						metacontent { 
+						metacontent {
+							author
 							contents
 							description
+							time
 							related {
 								article1Pic {
 									mediaDetails {
@@ -136,12 +138,14 @@ module.exports = function (api) {
 					id: node.id,
 					slug: node.slug,
 					category: node.categories.nodes[0].name,
+					time: node.metacontent.time,
 					cslug: '/blog/' + node.categories.nodes[0].slug + '/', 
 					featuredImage: node.featuredImage.node.mediaDetails.sizes[1].sourceUrl,
 
 					title: node.title,
 					description: node.metacontent.description,
 					contents: node.metacontent.contents,
+					author: node.metacontent.author,
 					content: node.content,
 
 					seo: {

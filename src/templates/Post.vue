@@ -1,87 +1,69 @@
 <template>
 	<Layout class="post">
-		<ClientOnly>
-			<b-container>
+		<b-container>
 
-				<!-- Хлебные крошки -->
-				<b-row>
-					<b-col>
-						<b-breadcrumb class="font20px d-none d-md-flex">
-							<b-breadcrumb-item href="/">Главная</b-breadcrumb-item>
-							<b-breadcrumb-item href="/blog/">Блог</b-breadcrumb-item>
-							<b-breadcrumb-item :href="$context.cslug" :text="$context.category" />
-						</b-breadcrumb>
+			<!-- Хлебные крошки -->
+			<b-row>
+				<b-col>
+					<b-breadcrumb class="font20px d-none d-md-flex">
+						<b-breadcrumb-item href="/">Главная</b-breadcrumb-item>
+						<b-breadcrumb-item href="/blog/">Блог</b-breadcrumb-item>
+						<b-breadcrumb-item :href="$context.cslug" :text="$context.category" />
+					</b-breadcrumb>
+				</b-col>
+			</b-row>
+
+			<!-- Заголовок и описание -->
+			<b-row>
+				<b-col col xl="8">
+					<h1 class="post__title" v-html="$context.title" />
+					<div class="font20px lightgrey-text my-4">
+						<span class="mr-5">Время чтения: {{ $context.time }}</span>
+						<span>21.09.2020</span>
+					</div>
+					<div class="post__description font24px" v-html="$context.description" />
+				</b-col>
+			</b-row>
+
+			<!-- Изображение записи -->
+			<b-row>
+				<b-col col cols="12" class="post__image mt-4 mb-5">
+					<img :src="$context.featuredImage" />
+				</b-col>
+			</b-row>
+
+			<!-- Текст статьи -->
+			<b-row>
+				<b-col col lg="8" class="font20px post__text" v-html="$context.content" />
+				<b-col col cols="4" class="post__info d-none d-lg-block">
+					<div class="post__info__contents">
+						Содержание:
+						<div class="mt-4" v-html="$context.contents" />
+					</div>
+					<div class="font20px" v-html="$context.author" />
+				</b-col>
+			</b-row>
+
+			<b-row class="post__more">
+				<b-col cols="12" class="h2 mb-5">
+					Что еще читать по теме:
+				</b-col>
+				<template v-for="( item , index ) in $context.more">
+
+					<b-col cols="12" lg="6" xl="4" :key="index" class="mb-5">
+						<a :href="item.url" class="post__more__box" :style="item.pic"></a>
+						<span v-text="item.category" class="font12px lightgrey-text mt-4 mb-3"/>
+						<a :href="item.url" class="h3">
+							{{ item.title }}
+						</a>
 					</b-col>
-				</b-row>
+					
+				</template>
+			</b-row>
 
-				<!-- Заголовок и описание -->
-				<b-row>
-					<b-col col xl="8">
-						<h1 class="post__title" v-html="$context.title" />
-						<div class="font20px lightgrey-text my-4">
-							<span class="mr-5">Время чтения: 59 минуты</span>
-							<span>21.09.2020</span>
-						</div>
-						<div class="post__description font24px" v-html="$context.description" />
-					</b-col>
-				</b-row>
+		</b-container>
 
-				<!-- Изображение записи -->
-				<b-row>
-					<b-col col cols="12" class="post__image mt-4 mb-5">
-						<img :src="$context.featuredImage" />
-					</b-col>
-				</b-row>
-
-				<!-- Текст статьи -->
-				<b-row>
-					<b-col col lg="8" class="font20px post__text" v-html="$context.content" />
-					<b-col col cols="4" class="post__info d-none d-lg-block">
-						<div class="post__info__contents">
-							Содержание:
-							<div class="mt-4" v-html="$context.contents" />
-						</div>
-						<div class="mb-5 font20px">
-							<g-image src="~/assets/images/blog/masha.png" alt="Мария Бурдина" />
-							<p>
-							<b>Записала</b>
-							</p>
-							<p>Мария Бурдина</p>
-							<p class="grey-text">Рассказываю интересные истории в блоге</p>
-						</div>
-						<div class="font20px">
-							<g-image src="~/assets/images/blog/olya.png" alt="Оля Кузеванова" />
-							<p>
-							<b>Нарисовала</b>
-							</p>
-							<p>Оля Кузеванова</p>
-							<p class="grey-text">Иллюстрирую блог Carrot quest</p>
-						</div>
-					</b-col>
-				</b-row>
-
-				<b-row class="post__more">
-					<b-col cols="12" class="h2 mb-5">
-						Так же читайте
-					</b-col>
-					<template v-for="( item , index ) in $context.more">
-
-						<b-col cols="12" lg="6" xl="4" :key="index" class="mb-5">
-							<a :href="item.url" class="post__more__box" :style="item.pic"></a>
-							<span v-text="item.category" class="font12px lightgrey-text mt-4 mb-3"/>
-							<a :href="item.url" class="h3">
-								{{ item.title }}
-							</a>
-						</b-col>
-						
-					</template>
-				</b-row>
-
-			</b-container>
-
-			<VideoRegistration />
-
-		</ClientOnly>
+		<VideoRegistration />
 
 	</Layout>
 </template>
