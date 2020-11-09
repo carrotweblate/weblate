@@ -26,6 +26,7 @@ export default function(Vue, { head }) {
 	head.script.push({
 		src: '/assets/js/cq.js' , type: 'application/javascript' , charset: 'utf-8'
 	})
+	
 
 	//Bootstrap
 	Vue.use(BootstrapVue)
