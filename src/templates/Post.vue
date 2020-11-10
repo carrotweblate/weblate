@@ -15,7 +15,7 @@
 
 			<!-- Заголовок и описание -->
 			<b-row>
-				<b-col col xl="8">
+				<b-col col xl="9">
 					<h1 class="post__title" v-html="$context.title" />
 					<div class="font20px lightgrey-text my-4">
 						<span class="mr-5">Время чтения: {{ $context.time }}</span>
@@ -40,7 +40,7 @@
 						Содержание:
 						<div class="mt-4" v-html="$context.contents" />
 					</div>
-					<div class="font20px" v-html="$context.author" />
+					<div class="post__authors" v-html="$context.author" />
 				</b-col>
 			</b-row>
 

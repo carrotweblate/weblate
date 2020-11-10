@@ -34,15 +34,18 @@
 				
 			}
 		}
+		
+	}
+	&__authors {
 		img {
 			display: block;
 			width: 80px;
 			height: inherit;
 			border-radius: 50%;
-			margin-bottom: 0.5rem;
+			margin-bottom: 1rem;
 		}
 		p {
-			margin-bottom: 0;
+			margin-bottom: 1rem;
 		}
 	}
 
@@ -288,9 +291,6 @@
 					width: 47% !important;
 					margin-bottom: 15px !important;
 					border-right: 1px solid #ccc;
-				}
-				.site {
-					margin-right: 6% !important;
 				}
 			}
 		}
