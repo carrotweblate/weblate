@@ -44,6 +44,8 @@
 				</b-col>
 			</b-row>
 
+			<BannerSobirayte />
+
 			<b-row class="post__more">
 				<b-col cols="12" class="h2 mb-5">
 					Что еще читать по теме:
@@ -71,10 +73,12 @@
 <script>
 	import '~/assets/scss/blog/post.scss'
 	import VideoRegistration from '~/components/VideoRegistration/VideoRegistration.vue'
+	import BannerSobirayte from '~/components/BannerSobirayte/BannerSobirayte.vue'
 
 	export default {
 		components: {
-			VideoRegistration
+			VideoRegistration,
+			BannerSobirayte
 		},
 		//Делаем в HEAD
 		metaInfo() {
