@@ -16,7 +16,7 @@
 				<b-collapse is-nav id="nav_collapse">
 
 					<!-- Выпадающее меню -->
-					<b-navbar-nav class="ml-auto">
+					<b-navbar-nav class="ml-auto mt-3 mt-lg-0">
 						<template v-for="( item , index ) in topMenu">
 
 							<b-nav-item v-if="!item.subLinks" :href="item.to" :key="index" class="mr-1">
@@ -33,10 +33,10 @@
 					</b-navbar-nav>
 
 					<!-- Кнопки -->
-					<b-button variant="primary" href="/panel/register/" class="ml-1 mr-1 px-2 ml-xl-3 mr-xl-3 px-xl-4">
+					<b-button variant="primary" href="/panel/register/" class="ml-0 mt-3 mr-1 px-2 ml-xl-3 mt-lg-0 mr-xl-3 px-xl-4">
 						Зарегистрироваться
 					</b-button>
-					<b-button variant="outline" href="/panel/login/">
+					<b-button variant="outline" href="/panel/login/" class="mt-3 mt-lg-0">
 						Войти
 					</b-button>
 				</b-collapse>
@@ -55,7 +55,7 @@
 				<b-collapse is-nav id="nav_collapse">
 
 					<!-- Выпадающее меню -->
-					<b-navbar-nav class="ml-auto">
+					<b-navbar-nav class="ml-auto mt-3 mt-lg-0">
 						<template v-for="( item , index ) in blogMenu">
 
 							<b-nav-item v-if="!item.subLinks" :href="item.to" :key="index" class="mr-1">
@@ -72,7 +72,7 @@
 					</b-navbar-nav>
 
 					<!-- Кнопки -->
-					<b-button variant="primary" href="/panel/register/" class="ml-1 mr-1 px-2 ml-xl-3 mr-xl-3 px-xl-4">
+					<b-button variant="primary" href="/panel/register/" class="ml-0 mt-3 mr-1 px-2 ml-xl-3 mt-lg-0 mr-xl-3 px-xl-4">
 						Подключить Carrot quest
 					</b-button>
 				</b-collapse>

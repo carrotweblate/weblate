@@ -313,7 +313,7 @@
 				margin-bottom: 50px;
 			}
 			.lidform-universal {
-				padding: 20px 0;
+				padding: 20px;
 				background-image: none !important;
 			}
 			.lidform-universal br {
@@ -322,7 +322,7 @@
 			.lidform-universal-right-pic {
 				right: 0 !important;
 				img {
-					position: relative;
+					position: relative !important;
 					max-width: 100%;
 					margin: 0 auto;
 					bottom: -20px;
