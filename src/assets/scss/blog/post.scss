@@ -184,14 +184,14 @@
 			}
 			p {
 				font-size: 24px;
-				line-height: 1.2em;
+				line-height: 2.5rem;
 				margin: 0 0 1.5rem;
 				position: relative;
 				z-index: 2;
 				font-weight: bold;
 			}
 			.banner-universal-pic {
-				position: initial;
+				position: relative;
 				min-height: 140px;
 				z-index: 1;
 				.vglnk , .vglnk * {
@@ -201,7 +201,7 @@
 					display: block;
 					position: absolute;
 					bottom: 0;
-					right: 0;
+					left: 100px;
 					max-width: max-content;
 				}
 			}
