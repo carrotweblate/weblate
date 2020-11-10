@@ -67,6 +67,28 @@
 				}
 			}
 		}
+		.wp-block-table , .entry-content {
+			width: 100%;
+			margin-bottom: 2rem;
+			table {
+				width: 100%;
+			}
+			tbody tr:hover {
+				background: #F4F6FD !important;
+			}
+			td , th {
+				padding: 8px !important;
+				word-break: normal;
+				border: 1px solid #D5DDF3;
+				vertical-align: top;
+			}
+			tr:first-child {
+				font-weight: bold;
+			}
+			tr:nth-child(2n) {
+				background: #FBFCFF !important;
+			}
+		}
 		blockquote.wp-block-quote {
 			font-size: 1.75rem;
 			line-height: 2.625rem;
@@ -91,7 +113,7 @@
 				font-style: italic;
 			}
 		}
-		.size-full img , .size-full figcaption {
+		.alignwide img , .alignwide figcaption {
 			@media (min-width: 1200px) { max-width: 1100px; }
 		}
 
@@ -133,4 +155,188 @@
 			color: #000;
 		}
 	}
+
+	//Банеры
+	.banner-universal-container {
+		margin-top: 3rem;
+		margin-bottom: 3rem;
+		max-width: 1100px;
+
+		.banner-universal {
+			background-repeat: no-repeat;
+			border-radius: 5px;
+			padding: 0 40px;
+			cursor: pointer;
+			position: relative;
+			min-height: 140px;
+			.row {
+				// max-width: 720px;
+				// margin: 0 auto;
+				position: relative;
+			}
+			p {
+				font-size: 24px;
+				line-height: 1.2em;
+				margin: 0 0 1.5rem;
+				position: relative;
+				z-index: 2;
+				font-weight: bold;
+			}
+			.banner-universal-pic {
+				position: initial;
+				min-height: 140px;
+				z-index: 1;
+				.vglnk , .vglnk * {
+					display: none !important;
+				}
+				img {
+					display: block;
+					position: absolute;
+					bottom: 0;
+					right: 0;
+					max-width: max-content;
+				}
+			}
+			.banner-universal-pic.order-md-first img {
+				right: auto;
+				left: 0;
+			}
+		}
+	}
+	.editor-block-list__block-edit .banner-universal-pic.order-md-first img {
+		right: 0;
+		left: auto;
+	}
+	@media (max-width: 576px) {
+		.banner-universal-container {
+			margin-top: 2rem;
+			margin-bottom: 2rem;
+		}
+		.banner-universal {
+			padding: 0;
+			
+		}
+		.banner-universal p {
+			padding: 1rem 0;
+		}
+		.banner-universal-pic img {
+			position: relative;
+			max-width: 100%;
+			margin: 0 auto;
+		}
+	}
+	@media (max-width: 768px) {
+		.banner-universal {
+			background-image: none !important; 
+		}
+	}
+	@media (min-width: 1200px) {
+		.banner-universal-container {
+			width: 1100px;
+		}
+	}
+
+	//Универсальные лидформы
+	.lidform-universal-container {
+		margin-top: 3rem;
+		margin-bottom: 3rem;
+		max-width: 1100px;
+
+		.lidform-universal {
+			background-repeat: no-repeat;
+			border-radius: 5px;
+			padding:  40px;
+			position: relative;
+			min-height: 140px;
+			max-width: 1100px;
+			margin: 0 auto;
+			.row {
+				// max-width: 720px;
+				// margin: 0 auto;
+			}
+			p , h5 {
+				line-height: 1.2em;
+				margin: 0;
+				font-weight: bold;
+			}
+			.lidform-universal-right-pic img {
+				display: block;
+				position: absolute;
+				bottom: -40px;
+				right: 0;
+				max-width: max-content;
+			}
+			.form-begin {
+				margin-top: 10px;
+				display: flex;
+				.input {
+					padding: 10px;
+					width: 60%;
+					border-radius: 5px 0 0 5px;
+					border-right: none;
+				}
+				.button {
+					border-radius: 0 5px 5px 0;
+				}
+			}
+			.form-begin_site {
+				flex-wrap: wrap;
+				input {
+					border-radius: 5px !important;
+				}
+				.input {
+					width: 47% !important;
+					margin-bottom: 15px !important;
+					border-right: 1px solid #ccc;
+				}
+				.site {
+					margin-right: 6% !important;
+				}
+			}
+		}
+	
+		@media (max-width: 767px) {
+			.form-begin {
+				flex-wrap: wrap;
+				input {
+					width: 100% !important;
+					margin-bottom: 10px;
+					border-radius: 5px !important;
+				}
+				.input {
+					width: 100% !important;
+					margin-right: 0 !important;
+				}
+			}
+			.lidform-universal-container {
+				margin-top: 50px;
+				margin-bottom: 50px;
+			}
+			.lidform-universal {
+				padding: 20px 0;
+				background-image: none !important;
+			}
+			.lidform-universal br {
+				display: none;
+			}
+			.lidform-universal-right-pic {
+				right: 0 !important;
+				img {
+					position: relative;
+					max-width: 100%;
+					margin: 0 auto;
+					bottom: -20px;
+					max-height: 180px;
+				}
+			}
+		}
+	}
+
+	@media (min-width: 1200px) {
+		.lidform-universal-container {
+			width: 1100px;
+		}
+	}
+
+
 }

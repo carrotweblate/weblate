@@ -8,7 +8,7 @@
 					<a v-b-modal.youtubeCQ class="videoRegistration__play">
 						<g-image class="videoRegistration__bg" src="~/components/VideoRegistration/bg.png" width="680" alt="Видео" />
 					</a>
-					<b-modal id="youtubeCQ" size="xl" hide-header="true" hide-footer="true">
+					<b-modal id="youtubeCQ" size="xl" hide-header hide-footer>
 						<b-embed
 							type="iframe"
 							aspect="16by9"
