@@ -24,7 +24,7 @@ export default function(Vue, { head }) {
 		src: 'https://code.jquery.com/jquery-3.5.1.slim.min.js' , integrity: 'sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=' , crossorigin: 'anonymous'
 	})
 	head.script.push({
-		src: '/assets/js/cq.js' , type: 'application/javascript' , charset: 'utf-8'
+		src: 'https://www.carrotquest.io/blog/article/assets/js/cq.js' , type: 'application/javascript' , charset: 'utf-8'
 	})
 	
 
