@@ -55,7 +55,7 @@
 					<b-col cols="12" lg="6" xl="4" :key="index" class="mb-5">
 						<a :href="item.url" class="post__more__box" :style="item.pic"></a>
 						<span v-text="item.category" class="font12px lightgrey-text mt-4 mb-3"/>
-						<a :href="item.url" class="h3">
+						<a :href="item.url" class="h4">
 							{{ item.title }}
 						</a>
 					</b-col>
