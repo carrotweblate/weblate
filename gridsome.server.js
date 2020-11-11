@@ -139,6 +139,8 @@ module.exports = function (api) {
 			//PRE
 			pageHTML = pageHTML.split('<code><').join('<code>&lt;')
 			pageHTML = pageHTML.split('></code>').join('&gt;</code>')
+			//Carrot quest
+			pageHTML = pageHTML.split('Carrot quest').join('Carrot&nbsp;quest')
 			
 			createPage({
 				path: `/blog/${node.slug}-2`,
