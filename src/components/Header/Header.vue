@@ -152,10 +152,6 @@
 							url: '/pop-up/'
 						},
 						{
-							title: 'Web Push уведомления',
-							url: '/web-push'
-						},
-						{
 							title: 'Автоматизация воронки',
 							url: '/automation-marketing'
 						},

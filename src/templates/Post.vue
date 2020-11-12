@@ -80,6 +80,7 @@
 			VideoRegistration,
 			BannerSobirayte
 		},
+		
 		//Делаем в HEAD
 		metaInfo() {
 			return {

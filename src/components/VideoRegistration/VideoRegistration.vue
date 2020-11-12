@@ -23,23 +23,7 @@
 						Инструменты Carrot quest помогают увеличить продажи на&nbsp;сайтах 
 						без привлечения нового трафика и&nbsp;обеспечивать лучший поддержки пользователей
 					</p>
-					<b-form v-on:submit.prevent="registration">
-						<b-input-group>
-							<b-form-input 
-								placeholder="Введите ваш e-mail" 
-								type="email" 
-								required
-								v-model="email"
-								class="p-4"
-							/>
-							<b-input-group-append>
-								<b-button type="submit" variant="primary">Начать бесплатно</b-button>
-							</b-input-group-append>
-						</b-input-group>
-					</b-form>
-					<p class="mt-3">
-						14 дней бесплатно. Регистрируйтесь
-					</p>
+					<Registration text="14 дней бесплатно. Регистрируйтесь" />
 				</b-col>
 			</b-row>
 		</b-container>
@@ -49,18 +33,11 @@
 
 <script>
 	import '~/components/VideoRegistration/VideoRegistration.scss'
+	import Registration from '~/components/Forms/Registration.vue'
 
 	export default {
-		data: function() {
-			return {
-				email: ''
-			};
+		components: {
+			Registration
 		},
-		methods: {
-			registration () {
-				window.open("https://carrotquest.io/panel/register/?email=" + this.email);
-				this.email = ""
-			}
-		}
 	}
 </script>

@@ -69,5 +69,8 @@ module.exports = {
 		// 		'targetPath': './src/assets/remoteImages'
 		// 	}
 		// },
-	]
+	],
+	chainWebpack: config => {
+		config.resolve.alias.set('@images', '@/assets/images')
+	},
 }
