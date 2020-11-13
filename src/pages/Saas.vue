@@ -13,7 +13,7 @@
 						:tabs="[
 							{
 								title: 'Вы увеличите число квалифицированных лидов с сайта с помощью поп-апов и чат-бота',
-								pic: '/assets/video/components/MegaTabs/1.mp4'
+								pic: 'https://cdn-www.carrotquest.io/assets/video/components/MegaTabs/1.mp4'
 							},
 							{
 								title: 'Больше пользователей поймут ваш сервис и вернутся к использованию. С помощью емейл-сценариев, поп-ап окошек и бизнес-чата',
