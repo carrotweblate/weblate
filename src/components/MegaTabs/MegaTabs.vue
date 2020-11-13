@@ -12,10 +12,11 @@
 		<b-row class="d-none d-lg-flex">
 			<b-col>
 				<b-tabs pills vertical end nav-wrapper-class="col-4">
-					<b-tab v-for="item in tabs" :key="item.title" :title="item.title" lazy>
+					<b-tab v-for="item in tabs" :key="item.title" :title="item.title">
 						<!-- Видео -->
 						<b-embed v-if="item.pic.search('mp4') > 0"
 							type="video" 
+							aspect="4by3"
 							autoplay loop muted playsinline
 							>
 							<source :src="item.pic" type="video/mp4">

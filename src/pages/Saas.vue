@@ -13,7 +13,7 @@
 						:tabs="[
 							{
 								title: 'Вы увеличите число квалифицированных лидов с сайта с помощью поп-апов и чат-бота',
-								pic: 'https://www.carrotquest.io/blog/article/assets/video/components/MegaTabs/1.mp4'
+								pic: '/assets/video/components/MegaTabs/1.mp4'
 							},
 							{
 								title: 'Больше пользователей поймут ваш сервис и вернутся к использованию. С помощью емейл-сценариев, поп-ап окошек и бизнес-чата',
@@ -183,6 +183,6 @@
 <style lang="scss">
 	.blue {
 		margin-bottom: 9rem;
-		background-color: #F7F7FC;
+		background-color: #f9f9fc;
 	}
 </style>

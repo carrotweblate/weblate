@@ -1,8 +1,7 @@
 .MegaTabs {
-	margin-bottom: 10rem;
-
+	
 	.h1 {
-		@media (min-width: 768px) {
+		@media (min-width: 768px) { 
 			text-align: center;
 		}
 	}
@@ -42,8 +41,10 @@
 				}
 				@media (min-width: 1200px) {
 					padding: 1.5rem;
+					padding-right: 3rem;
 					&.active {
 						padding-left: 3rem;
+						padding-right: 1.5rem;
 						&::before {
 							content: "←";
 							position: absolute;

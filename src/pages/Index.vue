@@ -4,11 +4,17 @@
 		<b-container class="hero">
 			<br>
 			<br>
-			<g-link to="/saas/">Saas</g-link>
-			<br>
-			<g-link to="/blog/kak-sdelat-email-rassylku-2/">Тестовая статья</g-link>
-			<br>
-			<g-link to="/growthhacks/">Гроусхакерная</g-link>
+			
+			<p>
+				<g-link to="/saas/">Saas</g-link>
+			</p>
+			<p>
+				<g-link to="/blog/kak-sdelat-email-rassylku-2/">Тестовая статья</g-link>
+			</p>
+			<p>
+				<g-link to="/case21shop/">Тестовая тильда</g-link>
+			</p>
+			
 		</b-container>
 
 	</Layout>
