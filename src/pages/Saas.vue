@@ -138,15 +138,20 @@
 
 			</b-container>
 		</div>
+
+		<Cases />
+
 	</Layout>
 </template>
 
 <script>
 	import MegaTabs from '~/components/MegaTabs/MegaTabs.vue'
+	import Cases from '~/components/Cases/Cases.vue'
 
 	export default {
 		components: {
-			MegaTabs
+			MegaTabs,
+			Cases
 		},
 
 		//Делаем в HEAD
@@ -177,6 +182,7 @@
 
 <style lang="scss">
 	.blue {
+		margin-bottom: 9rem;
 		background-color: #F7F7FC;
 	}
 </style>
