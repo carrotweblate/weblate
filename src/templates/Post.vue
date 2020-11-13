@@ -116,7 +116,7 @@
 					},
 					{
 						property: 'og:url',
-						content: 'https://www.carrotquest.io/blog/kak-sdelat-email-rassylku/'
+						content: 'https://www.carrotquest.io/blog/' + this.$context.slug + '-2/'
 					},
 					{ property: 'og:site_name', content: 'Блог Carrot quest' },
 					{
