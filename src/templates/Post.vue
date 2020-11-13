@@ -116,7 +116,7 @@
 					},
 					{
 						property: 'og:url',
-						content: 'https://www.carrotquest.io/blog/' + this.$context.slug + '-2/'
+						content: 'https://www.carrotquest.io/blog/' + this.$context.slug
 					},
 					{ property: 'og:site_name', content: 'Блог Carrot quest' },
 					{
