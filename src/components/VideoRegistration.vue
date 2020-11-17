@@ -24,7 +24,7 @@
 							Инструменты Carrot quest помогают увеличить продажи на&nbsp;сайтах 
 							без привлечения нового трафика и&nbsp;обеспечивать лучший поддержки пользователей
 						</p>
-						<Registration text="14 дней бесплатно. Регистрируйтесь" />
+						<RegistrationForm text="14 дней бесплатно. Регистрируйтесь" />
 					</b-col>
 				</b-row>
 			</b-container>
@@ -36,11 +36,11 @@
 
 
 <script>
-	import Registration from '~/components/Forms/Registration.vue'
+	import RegistrationForm from '~/components/Forms/RegistrationForm.vue'
 
 	export default {
 		components: {
-			Registration
+			RegistrationForm
 		},
 	}
 </script>

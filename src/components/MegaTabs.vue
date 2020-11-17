@@ -29,7 +29,7 @@
 					</b-tab>
 					<template v-if="more" #tabs-end>
 						<div class="more">
-							<a href="more.href" v-text="more.text" />
+							<a :href="more.href" v-text="more.text" />
 						</div>
 					</template>
 				</b-tabs>
@@ -75,7 +75,7 @@
 					Инструменты для этих задач
 				</div>
 			</b-col>
-			<b-col cols="6" lg="3" v-for="item in instruments" :key="item.title" class="mt-5 mt-lg-4">
+			<b-col cols="6" lg="3" v-for="item in instruments" :key="item.title" class="mt-4 mt-md-5 mt-lg-4">
 				<a :href="item.href" class="box">
 					<g-image
 						:src="require(`!!assets-loader?width=160&height=96&fit=contain&background=#fff!@/assets/images/components/${item.pic}`)"
@@ -210,6 +210,14 @@
 				i {
 					font-style: normal;
 					color: #FF6600;
+				}
+				@media (max-width: 575.98px) {
+					font-size: 0.875rem;
+					line-height: 1.5rem;
+					img {
+						width: 100%;
+						height: initial;
+					}
 				}
 			}
 			

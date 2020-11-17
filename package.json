@@ -18,7 +18,6 @@
     "node-sass": "^4.14.1",
     "remark": "^13.0.0",
     "sass-loader": "^10.0.1",
-    "vue-lazysizes": "^1.0.5",
     "vue-read-progress": "^1.0.4"
   }
 }
