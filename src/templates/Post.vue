@@ -72,7 +72,7 @@
 
 <script>
 	import '~/assets/scss/blog/post.scss'
-	import VideoRegistration from '~/components/VideoRegistration/VideoRegistration.vue'
+	import VideoRegistration from '~/components/VideoRegistration.vue'
 	import BannerSobirayte from '~/components/BannerSobirayte/BannerSobirayte.vue'
 
 	export default {

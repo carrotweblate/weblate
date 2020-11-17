@@ -23,10 +23,8 @@
 						</b-embed>
 						<!-- Изображение -->
 						<g-image v-else
-							:src="require(`!!assets-loader!@/assets/images/components/MegaTabs/${item.pic}`)"
+							:src="require(`!!assets-loader?width=720&height=540&fit=contain&background=#f9f9fc!@/assets/images/components/${item.pic}`)"
 							:alt="item.title"
-							width="720"
-							height="540"
 						/>
 					</b-tab>
 					<template v-if="more" #tabs-end>
@@ -58,10 +56,8 @@
 							<!-- Изображение -->
 							<g-image
 								v-else
-								:src="require(`!!assets-loader!@/assets/images/components/MegaTabs/${item.pic}`)"
+								:src="require(`!!assets-loader?width=540&height=540&fit=contain&background=#fff!@/assets/images/components/${item.pic}`)"
 								:alt="item.title"
-								width="540"
-								height="540"
 							/>
 						</b-collapse>
 					</b-card>
@@ -82,11 +78,8 @@
 			<b-col cols="6" lg="3" v-for="item in instruments" :key="item.title" class="mt-5 mt-lg-4">
 				<a :href="item.href" class="box">
 					<g-image
-						:src="require(`!!assets-loader!@/assets/images/components/MegaTabs/${item.pic}`)"
+						:src="require(`!!assets-loader?width=160&height=96&fit=contain&background=#fff!@/assets/images/components/${item.pic}`)"
 						:alt="item.title.replace('<i>', '').replace('</i>', '')"
-						width="130"
-						height="130"
-						fit="contain"
 					/>
 					<div class="title" v-html="item.title" />
 				</a>
@@ -96,9 +89,9 @@
 	</b-container>
 </template>
 
-<script>
-	import '~/components/MegaTabs/MegaTabs.scss'
 
+
+<script>
 	export default {
 		props: {
 			title: String,
@@ -108,3 +101,120 @@
 		}
 	}
 </script>
+
+
+
+<style lang="scss">
+	.MegaTabs {
+		
+		.h1 {
+			@media (min-width: 768px) { 
+				text-align: center;
+			}
+		}
+
+		.tabs {
+			.tab-pane {
+				height: 540px;
+				text-align: center;
+				img , video {
+					max-width: 100%;
+					max-height: 540px;
+				}
+			}
+		
+			.nav {
+				.nav-item {
+					&:first-child .nav-link {
+						border-radius: 5px 5px 0 0;
+					}
+					&:last-of-type .nav-link {
+						border-radius: 0 0 5px 5px;
+						border-bottom: 0;
+					}
+				}
+				.nav-link {
+					border-radius: 0;
+					border-bottom: 1px solid #EEE;
+					background-color: #fff;
+					color: #000;
+					transition: all 150ms cubic-bezier(0, 0, 0.2, 1);
+					&:hover {
+						color: #FF6600;
+					}
+					&.active {
+						background-color: #FF6600;
+						color: #fff;
+					}
+					@media (min-width: 1200px) {
+						padding: 1.5rem;
+						padding-right: 3rem;
+						&.active {
+							padding-left: 3rem;
+							padding-right: 1.5rem;
+							&::before {
+								content: "←";
+								position: absolute;
+								margin-left: -1.5rem;
+							}
+						}
+					}
+				}
+			}
+			
+			
+		}
+
+		.accordion {
+			img , video {
+				max-width: 100%;
+			}
+			.btn {
+				color: #000;
+				background-color: #fff;
+				border: 0;
+				border-radius: 0;
+			}
+			.btn.not-collapsed {
+				background-color: #FF6600;
+				color: #fff;
+			}
+		}
+
+		.more {
+			margin-top: 2rem;
+			& a::after {
+				content: "→";
+				margin-left: 0.5rem;
+			}
+			@media (min-width: 1200px) {
+				margin-top: 2.5rem;
+			}
+		}
+
+		.instruments {
+			margin-top: 3.5rem;
+			a {
+				display: block;
+				padding: 2rem 1rem 1.5rem;
+				background-color: #fff;
+				border-radius: 5px;
+				text-align: center;
+				color: #000;
+				height: 100%;
+				img {
+					width: auto;
+					height: 96px;
+					margin-bottom: 1.5rem;
+				}
+				i {
+					font-style: normal;
+					color: #FF6600;
+				}
+			}
+			
+		}
+		
+		
+	}
+</style>

@@ -13,7 +13,7 @@
 						:tabs="[
 							{
 								title: 'Вы увеличите число квалифицированных лидов с сайта с помощью поп-апов и чат-бота',
-								pic: 'https://cdn-www.carrotquest.io/assets/video/components/MegaTabs/1.mp4'
+								pic: '/assets/video/components/1.mp4'
 							},
 							{
 								title: 'Больше пользователей поймут ваш сервис и вернутся к использованию. С помощью емейл-сценариев, поп-ап окошек и бизнес-чата',
@@ -138,20 +138,24 @@
 
 			</b-container>
 		</div>
-
+		
 		<Cases />
+
+		<Consultation />
 
 	</Layout>
 </template>
 
 <script>
-	import MegaTabs from '~/components/MegaTabs/MegaTabs.vue'
+	import MegaTabs from '~/components/MegaTabs.vue'
 	import Cases from '~/components/Cases/Cases.vue'
+	import Consultation from '~/components/Consultation.vue'
 
 	export default {
 		components: {
 			MegaTabs,
-			Cases
+			Cases,
+			Consultation
 		},
 
 		//Делаем в HEAD
