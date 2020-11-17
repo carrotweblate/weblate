@@ -70,10 +70,24 @@
 						</b-row>
 					</b-tab>
 					<b-tab title="Недвижимость и строительство" lazy>
-						
+						<b-row class="mt-4 mt-lg-5">
+							<Case 
+								number="На 40%" 
+								logo='skyshop.svg'
+								title="выросла конверсия сайта"
+								text="
+									<p>
+										Carrot quest помогает сайту жилого квартала бизнес-класса «Нагорный» увеличивать конверсию на сайте за счет поп-апов. Конверсия сайта выросла с 0.85% до 1,2%.
+									</p>
+								" 
+								href="/blog/case-nagorniy/" 
+							/>
+						</b-row>
 					</b-tab>
 					<b-tab title="Услуги и консалтинг" lazy>
-						
+						<b-row class="mt-4 mt-lg-5">
+
+						</b-row>
 					</b-tab>
 				</b-tabs>
 			</b-col>

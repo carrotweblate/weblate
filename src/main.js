@@ -19,6 +19,12 @@ export default function(Vue, { head }) {
 		{ property: "og:locale", content: "ru_RU" },
 	)
 
+	//Подключаем Open Sans
+	head.link.push(
+		{ rel: "preconnect", href: "https://fonts.gstatic.com" },
+		{ rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" },
+	)	
+
 	// Добавляем jQuery и CQ
 	head.script.push({
 		src: 'https://code.jquery.com/jquery-3.5.1.slim.min.js' , integrity: 'sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=' , crossorigin: 'anonymous'
@@ -26,7 +32,6 @@ export default function(Vue, { head }) {
 	head.script.push({
 		src: 'https://www.carrotquest.io/blog/article/assets/js/cq.js' , type: 'application/javascript' , charset: 'utf-8'
 	})
-	
 
 	//Bootstrap
 	Vue.use(BootstrapVue)

@@ -20,8 +20,8 @@ $light-grey: #C4C4C4;
 
 //Подключаем шрифты
 @font-face {
-	font-family: 'Stag Sans Black';
-	src: url('../font/StagSansLCTTMedium.woff') format('woff'), url('../font/StagSansLCTTMedium.woff') format('woff');
+	font-family: 'Stag Sans';
+	src: url('/assets/font/StagSansLCTTMedium.woff') format('woff'), url('/assets/font/StagSansLCTTMedium.woff') format('woff');
 	font-style: normal;
 	font-display: swap;
 }
@@ -35,8 +35,23 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 
-* {
+a {
 	outline: none;
+}
+
+textarea:focus, 
+textarea.form-control:focus, 
+input.form-control:focus, 
+input[type=text]:focus, 
+input[type=password]:focus, 
+input[type=email]:focus, 
+input[type=number]:focus, 
+[type=text].form-control:focus, 
+[type=password].form-control:focus, 
+[type=email].form-control:focus, 
+[type=tel].form-control:focus, 
+[contenteditable].form-control:focus {
+	box-shadow: inset 0 -1px 0 #ddd;
 }
 
 .async-hide { 
@@ -99,7 +114,7 @@ a.box {
 }
 
 h1 , .h1 , h2 , .h2 , h3 , .h3 , h4 , .h4{
-	font-family: 'Stag Sans Black';
+	font-family: 'Stag Sans';
 }
 
 .breadcrumb {
