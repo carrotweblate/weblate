@@ -1,9 +1,9 @@
 <template>
 
 	<!-- Кейс -->
-	<b-col cols="12" lg="6">
+	<b-col cols="12" lg="6" class="mb-4">
 		<a :href="href" class="box">
-			<b-row class="mb-4 align-items-center">
+			<b-row class="align-items-center">
 				<div class="col-7">
 					<div class="font24px number" v-html="number" />
 					<div class="font20px title" v-html="title" />
@@ -15,7 +15,6 @@
 					/>
 				</div>
 			</b-row>
-			
 			<div class="description" v-html="text" />
 			<div class="link">Подробнее</div>
 		</a>

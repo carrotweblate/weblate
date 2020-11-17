@@ -30,28 +30,8 @@ html {
 	scroll-behavior: smooth;
 	font-size: 16px;
 }
-
 body {
 	font-family: 'Open Sans', sans-serif;
-}
-
-a {
-	outline: none;
-}
-
-textarea:focus, 
-textarea.form-control:focus, 
-input.form-control:focus, 
-input[type=text]:focus, 
-input[type=password]:focus, 
-input[type=email]:focus, 
-input[type=number]:focus, 
-[type=text].form-control:focus, 
-[type=password].form-control:focus, 
-[type=email].form-control:focus, 
-[type=tel].form-control:focus, 
-[contenteditable].form-control:focus {
-	box-shadow: inset 0 -1px 0 #ddd;
 }
 
 .async-hide { 
@@ -99,8 +79,12 @@ input[type=number]:focus,
 	color: $light-grey;
 }
 
+
+
+//Ссылки
 a {
 	color: $blue-link;
+	outline: none;
 }
 a.box {
 	position: relative;
@@ -115,18 +99,16 @@ a.box {
 
 h1 , .h1 , h2 , .h2 , h3 , .h3 , h4 , .h4{
 	font-family: 'Stag Sans';
-}
-
-.breadcrumb {
-	padding: 0;
-	margin: 0;
-	background: transparent;
-
-	.breadcrumb-item + .breadcrumb-item::before {
-		content: "→" !important;
+	@media (max-width: 767.98px) {
+		br {
+			display: none;
+		}
 	}
 }
 
+
+
+//Формы
 form {
 	.input-group {
 		max-width: 480px;
@@ -148,12 +130,51 @@ form {
 .form-begin_site .input-group {
 	max-width: inherit;
 }
+textarea:focus, 
+textarea.form-control:focus, 
+input.form-control:focus, 
+input[type=text]:focus, 
+input[type=password]:focus, 
+input[type=email]:focus, 
+input[type=number]:focus, 
+[type=text].form-control:focus, 
+[type=password].form-control:focus, 
+[type=email].form-control:focus, 
+[type=tel].form-control:focus, 
+[contenteditable].form-control:focus {
+	box-shadow: inset 0 -1px 0 #ddd;
+}
 
+
+
+//Навигация
+.outline-tabs {
+	.nav-pills .nav-link {
+		border: 1px solid #fff;
+		background-color: #fff !important;
+		border-radius: 21px;
+		&.active {
+			border: 1px solid #FF6600;
+			color: #FF6600;
+		}
+	}
+}
+.breadcrumb {
+	padding: 0;
+	margin: 0;
+	background: transparent;
+
+	.breadcrumb-item + .breadcrumb-item::before {
+		content: "→" !important;
+	}
+}
 
 
 
 //Верхняя навигация
 @import '~/components/Header/Header.scss';
+
+
 
 //Подвал
 @import '~/components/Footer/Footer.scss';

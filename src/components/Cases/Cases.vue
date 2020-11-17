@@ -1,7 +1,7 @@
 <template>
 
 	<!-- Кейсы -->
-	<b-container class="Cases">
+	<b-container class="Cases outline-tabs">
 		<b-row >
 			<b-col col-12 lg="9">
 				<div class="h2">
@@ -73,7 +73,7 @@
 						<b-row class="mt-4 mt-lg-5">
 							<Case 
 								number="На 40%" 
-								logo='skyshop.svg'
+								logo='nagorniy.svg'
 								title="выросла конверсия сайта"
 								text="
 									<p>
@@ -82,11 +82,46 @@
 								" 
 								href="/blog/case-nagorniy/" 
 							/>
+							<Case 
+								number="78%" 
+								logo='SPK.png'
+								title="конверсия в лида"
+								text="
+									<p>
+										«СтройПанельКомплект» (СПК)
+									</p>
+									<p>
+										Carrot quest помогает автоматизировать маркетинг. Настроены сценарий с поп-апами: при попытке ухода с сайта, для сбора телефонов, после заявки на сайте, в ночное время.
+									</p>
+								" 
+								href="/blog/kejs-avtomatizacii-uvelichivaem-konversiyu-v-lida-v-sfere-nedvizhimosti-na-78/" 
+							/>
 						</b-row>
 					</b-tab>
 					<b-tab title="Услуги и консалтинг" lazy>
 						<b-row class="mt-4 mt-lg-5">
-
+							<Case 
+								number="на 25%" 
+								logo='teatr-teatr.svg'
+								title="увеличили конверсию в покупку"
+								text="
+									<p>
+										Carrot quest помогает Театру-Театру квалифицировать и собирать лидов. 1676 пользователей оставили данные о своих предпочтениях. 3809 клиентов совершили повторные покупки.
+									</p>
+								" 
+								href="/blog/case-teatr/" 
+							/>
+							<Case 
+								number="78%" 
+								logo='introvert.png'
+								title="конверсия в лида"
+								text="
+									<p>
+										Carrot quest помогает собирать с помощью сценариев Лидов. Около половины Лидов на сайте собрано с помощью Carrot quest.
+									</p>
+								" 
+								href="/blog/case-nagorniy/" 
+							/>
 						</b-row>
 					</b-tab>
 				</b-tabs>

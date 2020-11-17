@@ -149,6 +149,8 @@
 			bg="#EAEAFC"
 		/>
 
+		<Integrations />
+
 	</Layout>
 </template>
 
@@ -156,12 +158,14 @@
 	import MegaTabs from '~/components/MegaTabs.vue'
 	import Cases from '~/components/Cases/Cases.vue'
 	import Consultation from '~/components/Consultation.vue'
+	import Integrations from '~/components/Integrations.vue'
 
 	export default {
 		components: {
 			MegaTabs,
 			Cases,
-			Consultation
+			Consultation,
+			Integrations
 		},
 
 		//Делаем в HEAD
