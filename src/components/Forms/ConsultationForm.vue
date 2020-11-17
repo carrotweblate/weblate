@@ -64,8 +64,10 @@
 					{"op": "update_or_create", "key": "$name", "value": this.name},
 					{"op": "update_or_create", "key": "$email", "value": this.email}
 				]);
+
 				dataLayer.push({ event: 'UAevent', eventCategory: 'leads', eventAction: 'demo', eventLabel: location.host + location.pathname })
 				fbq('trackCustom', 'get_demo', {page: location.pathname})
+
 				carrotquest.track("Заполнил форму на демо", {
 					'phone': this.phone,
 					'email': this.email,
