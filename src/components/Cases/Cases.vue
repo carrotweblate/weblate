@@ -147,7 +147,6 @@
 			color: #000;
 			padding: 1rem 1rem 3.5rem;
 			border-radius: 5px;
-			box-shadow: 0 3px 10px rgba(0,0,0,.1);
 			height: 100%;
 			.number {
 				color: #FF6600;

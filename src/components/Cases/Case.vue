@@ -2,7 +2,7 @@
 
 	<!-- Кейс -->
 	<b-col cols="12" lg="6" class="mb-4">
-		<a :href="href" class="box">
+		<a :href="href" class="box box-shadow">
 			<b-row class="align-items-center">
 				<div class="col-7">
 					<div class="font24px number" v-html="number" />

@@ -14,7 +14,7 @@
 				</b-input-group-append>
 			</b-input-group>
 		</b-form>
-		<p class="mt-3">
+		<p v-if="text" class="mt-3">
 			{{ text }}
 		</p>
 	</div>
