@@ -235,134 +235,155 @@
 </script>
 
 <style lang="scss">
-	.page-saas .hero {
-		background: #EAEAFC;
-		overflow: hidden;
-		.row {
-			position: relative;
-			z-index: 10;
-		}
-		&__bg {
-			position: absolute;
-			z-index: 5;
-			width: 1900px;
-			top: 5%;
-			bottom: 0;
-			left: 50%;
-			margin-left: -950px;
-			@media (min-width: 1900px) {
-				width: 100%;
+	.page-saas {
+		.hero {
+			background: #EAEAFC;
+			overflow: hidden;
+			.row {
+				position: relative;
+				z-index: 10;
+			}
+			&__bg {
+				position: absolute;
+				z-index: 5;
+				width: 1900px;
+				top: 5%;
+				bottom: 0;
+				left: 50%;
+				margin-left: -950px;
+				@media (min-width: 1900px) {
+					width: 100%;
+					left: 0;
+					margin-left: 0;
+				}
+			}
+			&__girl {
+				position: absolute;
+				z-index: 4;
+				top: 195px;
+				left: 50%;
+				margin-left: -130px;
+				animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+				animation-delay: 600ms;
+				@keyframes slide-top {
+					0% {
+						transform: translateY(0);
+					}
+					100% {
+						transform: translateY(-105px);
+					}
+				}
+			}
+			&__guy {
+				position: absolute;
+				z-index: 7;
+				bottom: 0;
+				left: 50%;
+				margin-left: -130px;
+			}
+			&__message-1 {
+				position: absolute;
+				z-index: 8;
+				bottom: 410px;
+				left: 50%;
+				margin-left: -24px;
+				animation: slide-fwd-right 8s infinite cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+				animation-delay: 1500ms;
+				@keyframes slide-fwd-right {
+					0% {
+						transform: scale(0.5) translateX(0);
+						opacity: 0;
+					}
+					5% {
+						transform: scale(1) translateX(100px);
+						opacity: 1;
+						scale: 1;
+					}
+					80% {
+						transform: scale(1) translateX(100px);
+						opacity: 1;
+					}
+					85% {
+						transform: scale(1) translateX(100px);
+						opacity: 0;
+					}
+					100% {
+						opacity: 0;
+					}
+				}
+			}
+			&__message-2 {
+				position: absolute;
+				z-index: 8;
+				bottom: 310px;
+				left: 50%;
+				margin-left: 100px;
+				animation: slide-fwd-left 8s infinite cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+				animation-delay: 2000ms;
+				@keyframes slide-fwd-left {
+					0% {
+						transform: scale(0.5) translateX(0);
+						opacity: 0;
+					}
+					5% {
+						transform: scale(1) translateX(-100px);
+						opacity: 1;
+						scale: 1;
+					}
+					80% {
+						transform: scale(1) translateX(-100px);
+						opacity: 1;
+					}
+					85% {
+						transform: scale(1) translateX(-100px);
+						opacity: 0;
+					}
+					100% {
+						opacity: 0;
+					}
+				}
+			}
+			&__flower-left {
+				position: absolute;
+				z-index: 6;
+				bottom: 0;
 				left: 0;
-				margin-left: 0;
 			}
-		}
-		&__girl {
-			position: absolute;
-			z-index: 4;
-			top: 195px;
-			left: 50%;
-			margin-left: -130px;
-			animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-			animation-delay: 600ms;
-			@keyframes slide-top {
-				0% {
-					transform: translateY(0);
-				}
-				100% {
-					transform: translateY(-105px);
-				}
+			&__flower-right {
+				position: absolute;
+				z-index: 6;
+				bottom: -7px;
+				right: -40px;
 			}
-		}
-		&__guy {
-			position: absolute;
-			z-index: 7;
-			bottom: 0;
-			left: 50%;
-			margin-left: -130px;
-		}
-		&__message-1 {
-			position: absolute;
-			z-index: 8;
-			bottom: 410px;
-			left: 50%;
-			margin-left: -24px;
-			animation: slide-fwd-right 8s infinite cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-			animation-delay: 1500ms;
-			@keyframes slide-fwd-right {
-				0% {
-					transform: scale(0.5) translateX(0);
-					opacity: 0;
-				}
-				5% {
-					transform: scale(1) translateX(100px);
-					opacity: 1;
-					scale: 1;
-				}
-				80% {
-					transform: scale(1) translateX(100px);
-					opacity: 1;
-				}
-				85% {
-					transform: scale(1) translateX(100px);
-					opacity: 0;
-				}
-				100% {
-					opacity: 0;
-				}
-			}
-		}
-		&__message-2 {
-			position: absolute;
-			z-index: 8;
-			bottom: 310px;
-			left: 50%;
-			margin-left: 100px;
-			animation: slide-fwd-left 8s infinite cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-			animation-delay: 2000ms;
-			@keyframes slide-fwd-left {
-				0% {
-					transform: scale(0.5) translateX(0);
-					opacity: 0;
-				}
-				5% {
-					transform: scale(1) translateX(-100px);
-					opacity: 1;
-					scale: 1;
-				}
-				80% {
-					transform: scale(1) translateX(-100px);
-					opacity: 1;
-				}
-				85% {
-					transform: scale(1) translateX(-100px);
-					opacity: 0;
-				}
-				100% {
-					opacity: 0;
-				}
-			}
-		}
-		&__flower-left {
-			position: absolute;
-			z-index: 6;
-			bottom: 0;
-			left: 0;
 			@media (max-width: 1439.98px) {
-				opacity: 0.2;
+				&__guy {
+					width: 700px;
+					margin-left: 0;
+				}
+				&__flower-left {
+					width: 300px;
+					opacity: 0.2;
+				}
+				&__flower-right {
+					width: 200px;
+					opacity: 0.5;
+				}
+				&__message-1 {
+					bottom: 310px;
+				}
+				&__message-2 {
+					bottom: 220px;
+				}
+				&__girl {
+					width: 180px;
+					margin-left: -50px;
+					top: 255px
+				}
 			}
 		}
-		&__flower-right {
-			position: absolute;
-			z-index: 6;
-			bottom: -7px;
-			right: -40px;
-			@media (max-width: 1439.98px) {
-				opacity: 0.5;
-			}
+		.blue {
+			margin-bottom: 9rem;
+			background-color: #F5F6FE;
 		}
-	}
-	.blue {
-		margin-bottom: 9rem;
-		background-color: #F5F6FE;
 	}
 </style>
