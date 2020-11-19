@@ -1,7 +1,7 @@
 <template>
 	<Layout class="page">
 
-		<b-container class="hero">
+		<b-container>
 			<br>
 			<br>
 			

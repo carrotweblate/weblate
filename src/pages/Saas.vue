@@ -1,5 +1,5 @@
 <template>
-	<Layout class="page">
+	<Layout class="page page-saas">
 		<div class="blue">
 			<div class="hero">
 				<b-container>
@@ -211,7 +211,7 @@
 		//Делаем в HEAD
 		metaInfo() {
 			return {
-				title: 'Автоматизация маркетинга для SaaS',
+				title: 'Сервис увеличения продаж для SAAS: больше конверсия сайта, больше ретеншн, меньше отток клиентов',
 				meta: [
 					{
 						key: 'description',
@@ -235,7 +235,7 @@
 </script>
 
 <style lang="scss">
-	.hero {
+	.page-saas .hero {
 		background: #EAEAFC;
 		overflow: hidden;
 		.row {

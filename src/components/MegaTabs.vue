@@ -4,7 +4,7 @@
 		<!-- Заголовок блока -->
 		<b-row class="justify-content-center">
 			<b-col cols="12" lg="10" xl="9">
-				<div class="h1 mb-5" v-html="title" />
+				<h2 class="h1 mb-5" v-html="title" />
 			</b-col>
 		</b-row>
 
@@ -71,9 +71,9 @@
 		<!-- Инструменты для этих задач -->
 		<b-row v-if="instruments" class="instruments">
 			<b-col cols="12">
-				<div class="h2">
+				<h3 class="h2">
 					Инструменты для этих задач
-				</div>
+				</h3>
 			</b-col>
 			<b-col cols="6" lg="3" v-for="item in instruments" :key="item.title" class="mt-4 mt-md-5 mt-lg-4">
 				<a :href="item.href" class="box">

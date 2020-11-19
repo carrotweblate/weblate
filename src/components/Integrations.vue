@@ -1,90 +1,92 @@
 <template>
+	<ClientOnly>
 
-	<!-- Кейсы -->
-	<b-container class="Integrations outline-tabs">
-		<b-row >
-			<b-col col-12 lg="9">
-				<div class="h2 mb-4">
-					Сервисы должны работать вместе. <br>
-					<a href="/integration/">Интегрируйте</a> их с Carrot quest
-				</div>
-				<p>
-					Более 30 готовых интеграций. Открытый API для web, iOS и Android
-				</p>
-			</b-col>
-		</b-row>
-		<b-row>
-			<b-col>
-				<b-tabs pills class="mt-3 mt-lg-4 mb-3">
-					<b-tab title="CMS и CRM" active lazy>
-						<b-row class="mt-4">
-							<b-col class="d-flex flex-wrap">
-								<a href="/integration/1C_bitrix/" class="Integrations__logo bitrix1c"></a>
-								<a href="/integration/insales/" class="Integrations__logo insales"></a>
-								<a href="/integration/opencart/" class="Integrations__logo opencart"></a>
-								<a href="/integration/prestashop/" class="Integrations__logo prestashop"></a>
-								<a href="/integration/wordpress/" class="Integrations__logo wordpress"></a>
-								<a href="/integration/amocrm/" class="Integrations__logo amocrm"></a>
-								<a href="/integration/bitrix24/" class="Integrations__logo bitrix24"></a>
-								<a href="/integration/retailcrm/" class="Integrations__logo retailcrm"></a>
-							</b-col>
-						</b-row>
-					</b-tab>
-					<b-tab title="Коммуникации" lazy>
-						<b-row class="mt-4">
-							<b-col class="d-flex flex-wrap">
-								<a href="https://help.carrotquest.io/article/171" class="Integrations__logo email"></a>
-								<a href="/integration/facebook/" class="Integrations__logo facebook"></a>
-								<a href="/integration/yandex_dialogs/" class="Integrations__logo yandex_dialogs"></a>
-								<a href="/integration/vk/" class="Integrations__logo vk"></a>
-								<a href="/integration/telegram/" class="Integrations__logo telegram"></a>
-								<a href="/integration/viber/" class="Integrations__logo viber"></a>
-								<a href="/integration/slack/" class="Integrations__logo slack_chat"></a>
-								<a href="https://help.carrotquest.io/article/158/" class="Integrations__logo zendesk"></a>
-								<a href="https://help.carrotquest.io/article/166/" class="Integrations__logo omnidesk"></a>
-								<a href="https://help.carrotquest.io/article/163/" class="Integrations__logo usedesk"></a>
-								<a href="https://help.carrotquest.io/article/1129/" class="Integrations__logo calendly"></a>
-							</b-col>
-						</b-row>
-					</b-tab>
-					<b-tab title="Аналитика" lazy>
-						<b-row class="mt-4">
-							<b-col class="d-flex flex-wrap">
-								<a href="https://help.carrotquest.io/article/147" class="Integrations__logo google_analytics"></a>
-								<a href="https://help.carrotquest.io/article/146" class="Integrations__logo mixpanel"></a>
-								<a href="https://help.carrotquest.io/article/145" class="Integrations__logo roistat"></a>
-								<a href="https://help.carrotquest.io/article/144" class="Integrations__logo yandex_metrica"></a>
-							</b-col>
-						</b-row>
-					</b-tab>
-					<b-tab title="Лиды из лидформ" lazy>
-						<b-row class="mt-4">
-							<b-col class="d-flex flex-wrap">
-								<a class="Integrations__logo facebook_leads"></a>
-								<a class="Integrations__logo mytarget"></a>
-								<a href="https://help.carrotquest.io/article/141/" class="Integrations__logo sendsay"></a>
-								<a class="Integrations__logo vk_forms"></a>
-							</b-col>
-						</b-row>
-					</b-tab>
-					<b-tab title="Своими руками" lazy>
-						<b-row class="mt-4">
-							<b-col class="d-flex flex-wrap">
-								<a href="/developers/" class="Integrations__logo api"></a>
-								<a class="Integrations__logo dialogflow"></a>
-								<a class="Integrations__logo lambdascript"></a>
-								<a class="Integrations__logo jsscript"></a>
-								<a class="Integrations__logo webhook"></a>
-								<a href="https://help.carrotquest.io/article/361/" class="Integrations__logo zapier"></a>
-							</b-col>
-						</b-row>
-					</b-tab>
-				</b-tabs>
-				<a href="/integration/">Посмотрите все интеграции</a>
-			</b-col>
-		</b-row>
-	</b-container>
+		<!-- Интеграции -->
+		<b-container class="Integrations outline-tabs">
+			<b-row >
+				<b-col col-12 lg="9">
+					<div class="h2 mb-4">
+						Сервисы должны работать вместе. <br>
+						<a href="/integration/">Интегрируйте</a> их с Carrot quest
+					</div>
+					<p>
+						Более 30 готовых интеграций. Открытый API для web, iOS и Android
+					</p>
+				</b-col>
+			</b-row>
+			<b-row>
+				<b-col>
+					<b-tabs pills class="mt-3 mt-lg-4 mb-3">
+						<b-tab title="CMS и CRM" active lazy>
+							<b-row class="mt-4">
+								<b-col class="d-flex flex-wrap">
+									<a href="/integration/1C_bitrix/" class="Integrations__logo bitrix1c"></a>
+									<a href="/integration/insales/" class="Integrations__logo insales"></a>
+									<a href="/integration/opencart/" class="Integrations__logo opencart"></a>
+									<a href="/integration/prestashop/" class="Integrations__logo prestashop"></a>
+									<a href="/integration/wordpress/" class="Integrations__logo wordpress"></a>
+									<a href="/integration/amocrm/" class="Integrations__logo amocrm"></a>
+									<a href="/integration/bitrix24/" class="Integrations__logo bitrix24"></a>
+									<a href="/integration/retailcrm/" class="Integrations__logo retailcrm"></a>
+								</b-col>
+							</b-row>
+						</b-tab>
+						<b-tab title="Коммуникации" lazy>
+							<b-row class="mt-4">
+								<b-col class="d-flex flex-wrap">
+									<a href="https://help.carrotquest.io/article/171" class="Integrations__logo email"></a>
+									<a href="/integration/facebook/" class="Integrations__logo facebook"></a>
+									<a href="/integration/yandex_dialogs/" class="Integrations__logo yandex_dialogs"></a>
+									<a href="/integration/vk/" class="Integrations__logo vk"></a>
+									<a href="/integration/telegram/" class="Integrations__logo telegram"></a>
+									<a href="/integration/viber/" class="Integrations__logo viber"></a>
+									<a href="/integration/slack/" class="Integrations__logo slack_chat"></a>
+									<a href="https://help.carrotquest.io/article/158/" class="Integrations__logo zendesk"></a>
+									<a href="https://help.carrotquest.io/article/166/" class="Integrations__logo omnidesk"></a>
+									<a href="https://help.carrotquest.io/article/163/" class="Integrations__logo usedesk"></a>
+									<a href="https://help.carrotquest.io/article/1129/" class="Integrations__logo calendly"></a>
+								</b-col>
+							</b-row>
+						</b-tab>
+						<b-tab title="Аналитика" lazy>
+							<b-row class="mt-4">
+								<b-col class="d-flex flex-wrap">
+									<a href="https://help.carrotquest.io/article/147" class="Integrations__logo google_analytics"></a>
+									<a href="https://help.carrotquest.io/article/146" class="Integrations__logo mixpanel"></a>
+									<a href="https://help.carrotquest.io/article/145" class="Integrations__logo roistat"></a>
+									<a href="https://help.carrotquest.io/article/144" class="Integrations__logo yandex_metrica"></a>
+								</b-col>
+							</b-row>
+						</b-tab>
+						<b-tab title="Лиды из лидформ" lazy>
+							<b-row class="mt-4">
+								<b-col class="d-flex flex-wrap">
+									<a class="Integrations__logo facebook_leads"></a>
+									<a class="Integrations__logo mytarget"></a>
+									<a href="https://help.carrotquest.io/article/141/" class="Integrations__logo sendsay"></a>
+									<a class="Integrations__logo vk_forms"></a>
+								</b-col>
+							</b-row>
+						</b-tab>
+						<b-tab title="Своими руками" lazy>
+							<b-row class="mt-4">
+								<b-col class="d-flex flex-wrap">
+									<a href="/developers/" class="Integrations__logo api"></a>
+									<a class="Integrations__logo dialogflow"></a>
+									<a class="Integrations__logo lambdascript"></a>
+									<a class="Integrations__logo jsscript"></a>
+									<a class="Integrations__logo webhook"></a>
+									<a href="https://help.carrotquest.io/article/361/" class="Integrations__logo zapier"></a>
+								</b-col>
+							</b-row>
+						</b-tab>
+					</b-tabs>
+					<a href="/integration/">Посмотрите все интеграции</a>
+				</b-col>
+			</b-row>
+		</b-container>
 
+	</ClientOnly>
 </template>
 
 <script>

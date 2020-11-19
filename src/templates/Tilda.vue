@@ -1,21 +1,23 @@
 <template>
 	<Layout>
 
-		<!-- Страница из тильды -->
-		<div class="tilda" v-html="$context.html" /> 
+		<ClientOnly>
+			<!-- Страница из тильды -->
+			<div class="tilda" v-html="$context.html" /> 
+		</ClientOnly>
 
 	</Layout>
 </template>
 
 <style lang="scss">
-	#t-header, #t-footer {
-		display: none;
-	}
-	* , *::before , *::after {
-		box-sizing: border-box !important;
-	}
 	.tilda {
 		overflow: hidden;
+		#t-header, #t-footer {
+			display: none;
+		}
+		* , *::before , *::after {
+			box-sizing: border-box !important;
+		}
 	}
 </style>
 
