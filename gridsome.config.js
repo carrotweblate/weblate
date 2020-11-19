@@ -6,7 +6,7 @@
 
 module.exports = {
 
-	pathPrefix: '/blog/article/',
+	// pathPrefix: '/blog/article/',
 
 	siteName: 'Carrot quest',
 	titleTemplate: "%s — Carrot quest",
@@ -32,26 +32,26 @@ module.exports = {
 				debug: false
 			}
 		},
-		// {
-		// 	use: 'gridsome-plugin-pwa',
-		// 	options: {
-		// 		// Service Worker Options
-		// 		disableServiceWorker: false,
-		// 		serviceWorkerPath: 'service-worker.js',
-		// 		cachedFileTypes: 'js,json,css,html,png,jpg,jpeg,svg,gif',
-		// 		disableTemplatedUrls: true, // Optional
+		{
+			use: 'gridsome-plugin-pwa',
+			options: {
+				// Service Worker Options
+				disableServiceWorker: false,
+				serviceWorkerPath: 'service-worker.js',
+				cachedFileTypes: 'js,json,css,html,png,jpg,jpeg,svg,gif',
+				disableTemplatedUrls: false, // Optional
 
-		// 		// Manifest Options (https://developer.mozilla.org/en-US/docs/Web/Manifest)
-		// 		manifestPath: 'manifest.json',
-		// 		title: 'Carrot quest',
-		// 		startUrl: 'https://www.carrotquest.io/blog/article/',
-		// 		display: 'standalone',
-		// 		statusBarStyle: 'default',
-		// 		themeColor: '#ff892a',
-		// 		backgroundColor: '#ffffff',
-		// 		icon: './static/favicon.png'
-		// 	}
-		// },
+				// Manifest Options (https://developer.mozilla.org/en-US/docs/Web/Manifest)
+				manifestPath: 'manifest.json',
+				title: 'Carrot quest',
+				startUrl: 'https://www.carrotquest.io/blog/article/',
+				display: 'standalone',
+				statusBarStyle: 'default',
+				themeColor: '#f60',
+				backgroundColor: '#ffffff',
+				icon: './static/favicon.png'
+			}
+		},
 		// {
 		// 	use: 'gridsome-plugin-pwa',
 		// 	options: {
