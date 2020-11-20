@@ -70,7 +70,7 @@
 					if ( value.node.js != this.$page.allTildaFiles.edges[0].node.js ) {
 						let tildaScript = document.createElement("script")
 						tildaScript.src = value.node.js
-						tildaScript.async = false
+						tildaScript.setAttribute('defer' , '')
 						document.head.appendChild(tildaScript)
 					}
 				}
