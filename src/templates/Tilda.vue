@@ -15,9 +15,9 @@
 		#t-header, #t-footer {
 			display: none;
 		}
-		* , *::before , *::after {
-			box-sizing: border-box !important;
-		}
+	}
+	* , *::before , *::after {
+		box-sizing: border-box !important;
 	}
 </style>
 
@@ -69,7 +69,8 @@
 				} else {
 					if ( value.node.js != this.$page.allTildaFiles.edges[0].node.js ) {
 						let tildaScript = document.createElement("script")
-						tildaScript.setAttribute('src', value.node.js)
+						tildaScript.src = value.node.js
+						tildaScript.async = false
 						document.head.appendChild(tildaScript)
 					}
 				}
