@@ -1,10 +1,8 @@
 <template>
 	<Layout>
 
-		<ClientOnly>
-			<!-- Страница из тильды -->
-			<div class="tilda" v-html="$context.html" /> 
-		</ClientOnly>
+		<!-- Страница из тильды -->
+		<div class="tilda" v-html="$context.html" />
 
 	</Layout>
 </template>
@@ -52,9 +50,6 @@
 						name: 'description',
 						content: this.$context.description
 					}
-				],
-				script: [
-					{ src: this.$page.allTildaFiles.edges[0].node.js }
 				]
 			}
 		},
@@ -67,7 +62,7 @@
 					tildaCss.setAttribute('href', value.node.css)
 					document.head.appendChild(tildaCss)
 				} else {
-					if ( value.node.js != this.$page.allTildaFiles.edges[0].node.js ) {
+					if ( value.node.js ) {
 						let tildaScript = document.createElement("script")
 						tildaScript.src = value.node.js
 						tildaScript.setAttribute('defer' , '')
