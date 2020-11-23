@@ -10,7 +10,7 @@
 				</div>
 				<div class="col-5 logo">
 					<img
-						:src="'/assets/images/logos/' + logo"
+						:src="'/blog/article/assets/images/logos/' + logo"
 						:alt="title"
 					/>
 				</div>
