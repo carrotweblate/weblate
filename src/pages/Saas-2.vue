@@ -4,9 +4,9 @@
 			<div class="hero">
 				<b-container>
 					<b-row class="align-items-center">
-						<b-col md="8" lg="6">
+						<b-col lg="6">
 							<h1>
-								Превратите своих пользователей в довольных клиентов
+								Превратите своих пользователей в довольных клиентов
 							</h1>
 							<p class="py-3">
 								Carrot quest — это сервис, который решит ваши задачи поддержки пользователей, удержания клиентов и поиска инсайтов о вашем онлайн-продукте
@@ -33,7 +33,7 @@
 						:tabs="[
 							{
 								title: 'Вы увеличите число квалифицированных лидов с сайта с помощью поп-апов и чат-бота',
-								pic: '/assets/video/components/1.mp4'
+								pic: 'https://www.carrotquest.io/blog/article/assets/video/components/1.mp4'
 							},
 							{
 								title: 'Больше пользователей поймут ваш сервис и вернутся к использованию. С помощью емейл-сценариев, поп-ап окошек и бизнес-чата',
@@ -220,7 +220,7 @@
 					},
 					{
 						property: "og:image",
-						content: 'https://www.carrotquest.io/blog/article/assets/images/cover/saas.jpg'
+						content: '/assets/images/cover/saas.jpg'
 					},
 				],
 				link: [

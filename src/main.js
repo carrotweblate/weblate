@@ -27,10 +27,10 @@ export default function(Vue, { head }) {
 
 	// Добавляем jQuery и CQ
 	head.script.push({
-		src: 'https://code.jquery.com/jquery-3.5.1.min.js' , integrity: 'sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=' , crossorigin: 'anonymous'
+		src: 'https://code.jquery.com/jquery-3.5.1.min.js'
 	})
 	head.script.push({
-		src: 'blog/article/assets/js/cq.js' , type: 'application/javascript' , charset: 'utf-8'
+		src: '/blog/article/assets/js/cq.js'
 	})
 
 	//Bootstrap

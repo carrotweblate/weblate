@@ -22,7 +22,7 @@
 				</b-col>
 				<b-col cols="12" md="6" xl="3">
 					<b-form-input 
-						placeholder="E-mail" 
+						placeholder="Email" 
 						type="email" 
 						required
 						v-model="email"

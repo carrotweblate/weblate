@@ -21,7 +21,7 @@
 					},
 					{
 						property: "og:image",
-						content: 'https://www.carrotquest.io/blog/article/assets/images/cover/automation-marketing.jpg'
+						content: '/assets/images/cover/automation-marketing.jpg'
 					},
 				],
 				link: [

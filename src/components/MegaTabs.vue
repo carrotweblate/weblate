@@ -4,7 +4,7 @@
 		<!-- Заголовок блока -->
 		<b-row class="justify-content-center">
 			<b-col cols="12" lg="10" xl="9">
-				<h2 class="h1 mb-5" v-html="title" />
+				<h2 class="h1 mb-3 mb-md-5" v-html="title" />
 			</b-col>
 		</b-row>
 
@@ -36,32 +36,28 @@
 			</b-col> 
 		</b-row>
 
-		<!-- Аккардеон -->
-		<b-row class="d-lg-none">
+		<!-- Блоки на мобиле -->
+		<b-row class="d-lg-none mobile">
 			<b-col cols="12">
-				<div class="accordion" role="tablist">
-					<b-card no-body v-for="(item , index) in tabs" :key="item.title" :title="item.title">
-						<div role="tab">
-							<b-button block v-b-toggle="'accordion-' + index" v-html="item.title" class="p-3" />
-						</div>
-						<b-collapse :id="'accordion-' + index" visible accordion="my-accordion" role="tabpanel" class="p-5">
-							<!-- Видео -->
-							<b-embed
-								v-if="item.pic.search('mp4') > 0"
-								type="video" 
-								autoplay loop muted playsinline
-								>
-								<source :src="item.pic" type="video/mp4">
-							</b-embed>
-							<!-- Изображение -->
-							<g-image
-								v-else
-								:src="require(`!!assets-loader?width=540&height=540&fit=contain&background=#fff!@/assets/images/components/${item.pic}`)"
-								:alt="item.title"
-							/>
-						</b-collapse>
-					</b-card>
-				</div>
+				<b-card no-body v-for="item in tabs" :key="item.title" :title="item.title">
+					<b-card-text>
+						<div class="title p-2" v-html="item.title" />
+						<!-- Видео -->
+						<b-embed
+							v-if="item.pic.search('mp4') > 0"
+							type="video" 
+							autoplay loop muted playsinline
+							>
+							<source :src="item.pic" type="video/mp4">
+						</b-embed>
+						<!-- Изображение -->
+						<g-image
+							v-else
+							:src="require(`!!assets-loader?width=540&height=400&fit=contain&background=#fff!@/assets/images/components/${item.pic}`)"
+							:alt="item.title"
+						/>
+					</b-card-text>
+				</b-card>
 				<div v-if="more" class="more">
 					<a :href="more.href" v-text="more.text" />
 				</div>
@@ -75,7 +71,7 @@
 					Инструменты для этих задач
 				</h3>
 			</b-col>
-			<b-col cols="6" lg="3" v-for="item in instruments" :key="item.title" class="mt-4 mt-md-5 mt-lg-4">
+			<b-col lg="3" v-for="item in instruments" :key="item.title" class="mt-4 mt-md-5 mt-lg-4">
 				<a :href="item.href" class="box">
 					<g-image
 						:src="require(`!!assets-loader?width=160&height=96&fit=contain&background=#fff!@/assets/images/components/${item.pic}`)"
@@ -165,24 +161,24 @@
 			
 		}
 
-		.accordion {
+		.mobile {
+			.card {
+				margin-bottom: 24px;
+			}
 			img , video {
+				display: block;
 				max-width: 100%;
+				margin: 0 auto;
 			}
-			.btn {
-				color: #000;
-				background-color: #fff;
-				border: 0;
-				border-radius: 0;
-			}
-			.btn.not-collapsed {
+			.title {
+				border-radius: 5px 5px 0 0;
 				background-color: #FF6600;
 				color: #fff;
 			}
 		}
 
 		.more {
-			margin-top: 2rem;
+			margin-top: 1rem;
 			& a::after {
 				content: "→";
 				margin-left: 0.5rem;
@@ -214,10 +210,6 @@
 				@media (max-width: 575.98px) {
 					font-size: 0.875rem;
 					line-height: 1.5rem;
-					img {
-						width: 100%;
-						height: initial;
-					}
 				}
 			}
 			

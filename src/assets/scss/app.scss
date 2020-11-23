@@ -18,14 +18,8 @@ $light-grey: #C4C4C4;
 
 
 
-//Подключаем шрифты
-@font-face {
-	font-family: 'Stag Sans';
-	src: url('https://www.carrotquest.io/blog/article/assets/font/StagSansLCTTMedium.woff') format('woff'), url('https://www.carrotquest.io/blog/article/assets/font/StagSansLCTTMedium.woff') format('woff');
-	font-style: normal;
-	font-display: swap;
-}
 
+//Страницы
 html {
 	scroll-behavior: smooth;
 	font-size: 16px;
@@ -33,19 +27,17 @@ html {
 body {
 	font-family: 'Open Sans', sans-serif;
 }
-
 .async-hide { 
 	opacity: 0 !important
 }
-
 .page {
 	padding-top: 5.5rem;
-	.container , .hero{
+	.container , .hero {
 		margin-bottom: 10rem;
 	}
 	@media (max-width: 767.98px) {
 		padding-top: 4.5rem;
-		.container {
+		.container , .hero {
 			margin-bottom: 5rem;
 		}
 	}
@@ -60,6 +52,15 @@ body {
 	}
 }
 
+
+
+//Шрифты
+@font-face {
+	font-family: 'Stag Sans';
+	src: url('/blog/article/assets/font/StagSansLCTTMedium.woff') format('woff'), url('/blog/article/assets/font/StagSansLCTTMedium.woff') format('woff');
+	font-style: normal;
+	font-display: swap;
+}
 .font12px {
 	font-size: 0.750rem;
 	line-height: 1.4rem;
@@ -74,11 +75,11 @@ body {
 }
 .font20px {
 	font-size: 1.25rem;
-	line-height: 2rem;
+	line-height: 1.8rem;
 }
 .font24px {
 	font-size: 1.5rem;
-	line-height: 2.5rem;
+	line-height: 2rem;
 }
 
 .grey-text {
@@ -109,9 +110,15 @@ a.box {
 	}
 }
 
-h1 , .h1 , h2 , .h2 , h3 , .h3 , h4 , .h4{
+h1 , .h1 , h2 , .h2 , h3 , .h3 , h4 , .h4 {
 	font-family: 'Stag Sans';
-	@media (max-width: 767.98px) {
+}
+@media (max-width: 767.98px) {
+	h1 , .h1 , h2 , .h2 {
+		font-size: 1.5rem;
+		line-height: 2rem;
+	}
+	h1 , .h1 , h2 , .h2 , h3 , .h3 , h4 , .h4 {
 		br {
 			display: none;
 		}

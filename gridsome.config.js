@@ -36,67 +36,39 @@ module.exports = {
 			use: 'gridsome-plugin-pwa',
 			options: {
 				// Service Worker Options
-				disableServiceWorker: true,
+				disableServiceWorker: false,
 				serviceWorkerPath: 'service-worker.js',
 				cachedFileTypes: 'js,json,css,html,png,jpg,jpeg,svg,gif',
-				disableTemplatedUrls: false, // Optional
-
+				disableTemplatedUrls: false,       // Optional
+	
 				// Manifest Options (https://developer.mozilla.org/en-US/docs/Web/Manifest)
 				manifestPath: 'manifest.json',
 				title: 'Carrot quest',
-				startUrl: 'https://www.carrotquest.io/',
+				// startUrl: '/',
+				startUrl: '/',
 				display: 'standalone',
 				statusBarStyle: 'default',
 				themeColor: '#f60',
 				backgroundColor: '#ffffff',
-				icon: './static/favicon.png'
+				icon: './static/favicon.png',
+				shortName: 'Carrot quest',              // Optional
+				description: 'Инструменты для увеличения продаж на сайтах без привлечения нового трафика',// Optional
+				categories: ['business'],          // Optional
+				lang: 'ru-Ru',                      // Optional
+				dir: 'auto',                        // Optional
+				maskableIcon: true,                 // Optional
+	
+				// Standard Meta Tags
+				svgFavicon: 'favicon.svg',          // Optional. Requires favicon.ico fallback
+	
+				// Microsoft Windows Meta Tags
+				msTileColor: '#666600',             // Optional
+	
+				// Apple MacOS Meta Tags
+				appleMaskIcon: 'favicon.svg',       // Optional
+				appleMaskIconColor: '#666600',      // Optional
 			}
 		},
-		// {
-		// 	use: 'gridsome-plugin-pwa',
-		// 	options: {
-		// 		// Service Worker Options
-		// 		disableServiceWorker: false,
-		// 		serviceWorkerPath: 'service-worker.js',
-		// 		cachedFileTypes: 'js,json,css,html,png,jpg,jpeg,svg,gif',
-		// 		disableTemplatedUrls: false,       // Optional
-	
-		// 		// Manifest Options (https://developer.mozilla.org/en-US/docs/Web/Manifest)
-		// 		manifestPath: 'manifest.json',
-		// 		title: 'Carrot quest',
-		// 		// startUrl: '/',
-		// 		startUrl: '/blog/article/',
-		// 		display: 'standalone',
-		// 		statusBarStyle: 'default',
-		// 		themeColor: '#f60',
-		// 		backgroundColor: '#ffffff',
-		// 		icon: '',
-		// 		shortName: 'Carrot quest',              // Optional
-		// 		description: 'Инструменты для увеличения продаж на сайтах без привлечения нового трафика',// Optional
-		// 		categories: ['business'],          // Optional
-		// 		lang: 'ru-Ru',                      // Optional
-		// 		dir: 'auto',                        // Optional
-		// 		maskableIcon: true,                 // Optional
-		// 		screenshots: [                      // Optional
-		// 			{
-		// 				src: 'src/screenshot1.png',
-		// 				sizes: '1280x720',
-		// 				type: 'image/png',
-		// 			},
-		// 		]
-		// 		gcmSenderId: undefined,             // Optional
-	
-		// 		// Standard Meta Tags
-		// 		svgFavicon: 'favicon.svg',          // Optional. Requires favicon.ico fallback
-	
-		// 		// Microsoft Windows Meta Tags
-		// 		msTileColor: '#666600',             // Optional
-	
-		// 		// Apple MacOS Meta Tags
-		// 		appleMaskIcon: 'favicon.svg',       // Optional
-		// 		appleMaskIconColor: '#666600',      // Optional
-		// 	}
-		// },
 		{
 			use: 'gridsome-source-graphql',
 			options: {

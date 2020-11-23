@@ -11,28 +11,28 @@
 				</b-col>
 			</b-row>
 			<b-row>
-				<b-col lg="6">
+				<b-col lg="6" class="Study__videocourse">
 					<a href="/videocourse-online-sales/" class="box box-shadow font20px">
 						<span>Видеокурс по продукту</span>
-						<g-image src="@/assets/images/components/study-videocourse.png" width="450" alt="Видеокурс по продукту" class="mt-4" />
+						<g-image src="@/assets/images/components/study-videocourse.png" width="450" alt="Видеокурс по продукту" />
 					</a>
 				</b-col>
-				<b-col lg="6">
+				<b-col lg="6" class="Study__help">
 					<a href="https://help.carrotquest.io/" class="box box-shadow font20px">
 						<span>Удобная база знаний с ответами на все вопросы</span>
-						<g-image src="@/assets/images/components/study-help.png" width="500" alt="Удобная база знаний с ответами на все вопросы" class="mt-4" />
+						<g-image src="@/assets/images/components/study-help.png" width="500" alt="Удобная база знаний с ответами на все вопросы" />
 					</a>
 				</b-col>
-				<b-col lg="6">
+				<b-col lg="6" class="Study__library">
 					<a href="/library/" class="box box-shadow font20px">
 						<span>Библиотека с полезными материалами и книгами</span>
 						<g-image src="@/assets/images/components/study-library.png" width="470" alt="Библиотека с полезными материалами и книгами" />
 					</a>
 				</b-col>
-				<b-col lg="6">
+				<b-col lg="6" class="Study__cases">
 					<a href="/cases/" class="box box-shadow font20px">
 						<span>Кейсы по использованию продукта</span>
-						<g-image src="@/assets/images/components/study-cases.png" width="400" alt="Кейсы по использованию продукта" style="margin-top: 4.5rem" />
+						<g-image src="@/assets/images/components/study-cases.png" width="400" alt="Кейсы по использованию продукта" />
 					</a>
 				</b-col>
 			</b-row>
@@ -49,6 +49,13 @@
 
 <style lang="scss">
 	.Study {
+		&__videocourse img , &__help img{
+			margin-top: 3rem;
+			border-radius: 5px;
+		}
+		&__cases img {
+			margin-top: 4.5rem;
+		}
 		.box {
 			margin-top: 40px;
 			color: #000;
@@ -62,6 +69,21 @@
 			}
 			img {
 				position: absolute;
+			}
+		}
+		@media (max-width: 767.98px) {
+			&__videocourse .box {
+				margin-top: 20px;
+			}
+			.box {
+				height: 320px;
+				span {
+					width: 100%;
+				}
+				img {
+					margin-top: 0;
+					left: 100px
+				}
 			}
 		}
 	}

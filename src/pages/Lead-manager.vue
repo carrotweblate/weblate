@@ -21,7 +21,7 @@
 					},
 					{
 						property: "og:image",
-						content: 'https://www.carrotquest.io/blog/article/assets/images/cover/lead-manager.jpg'
+						content: '/assets/images/cover/lead-manager.jpg'
 					},
 				],
 				link: [

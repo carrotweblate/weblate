@@ -3,7 +3,7 @@
 	<!-- Кейс -->
 	<b-col cols="12" lg="6" class="mb-4">
 		<a :href="href" class="box box-shadow">
-			<b-row class="align-items-center">
+			<b-row class="align-items-center mb-4">
 				<div class="col-7">
 					<div class="font24px number" v-html="number" />
 					<div class="font20px title" v-html="title" />
