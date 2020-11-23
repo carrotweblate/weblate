@@ -13,7 +13,6 @@
 			<b-col>
 				<b-tabs pills vertical end nav-wrapper-class="col-4">
 					<b-tab v-for="item in tabs" :key="item.title" :title="item.title">
-						{{ item.pic.search('mp4') }}
 						<!-- Видео -->
 						<b-embed v-if="item.pic.search('mp4') > 0"
 							type="video" 
@@ -40,9 +39,10 @@
 		<!-- Блоки на мобиле -->
 		<b-row class="d-lg-none mobile">
 			<b-col cols="12">
-				<b-card no-body v-for="item in tabs" :key="item.title" :title="item.title">
+				<b-card no-body v-for="item in tabs" :key="item.title">
 					<b-card-text>
 						<div class="title p-2" v-html="item.title" />
+
 						<!-- Видео -->
 						<b-embed v-if="item.pic.search('mp4') > 0"
 							type="video" 
@@ -50,11 +50,13 @@
 							>
 							<source :src="item.pic" type="video/mp4">
 						</b-embed>
+
 						<!-- Изображение -->
 						<g-image v-else
-							:src="require(`!!assets-loader?width=540&height=400&fit=contain&background=#ffffff!@/assets/images/components/${item.pic}`)"
+							:src="require(`!!assets-loader?width=400&height=350&fit=contain&background=#ffffff!@/assets/images/components/${item.pic}`)"
 							:alt="item.title"
 						/>
+						
 					</b-card-text>
 				</b-card>
 				<div v-if="more" class="more">
