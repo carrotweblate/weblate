@@ -6,7 +6,7 @@
 
 module.exports = {
 
-	// pathPrefix: '/blog/article/',
+	pathPrefix: '/blog/article/',
 
 	siteName: 'Carrot quest',
 	titleTemplate: "%s — Carrot quest",
@@ -36,7 +36,7 @@ module.exports = {
 			use: 'gridsome-plugin-pwa',
 			options: {
 				// Service Worker Options
-				disableServiceWorker: false,
+				disableServiceWorker: true,
 				serviceWorkerPath: 'service-worker.js',
 				cachedFileTypes: 'js,json,css,html,png,jpg,jpeg,svg,gif',
 				disableTemplatedUrls: false, // Optional
