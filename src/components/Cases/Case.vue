@@ -10,7 +10,7 @@
 				</div>
 				<div class="col-5 logo">
 					<img
-						:src="'/blog/article/assets/images/logos/' + logo"
+						:src="'https://www.carrotquest.io/blog/article/assets/images/logos/' + logo"
 						:alt="title"
 					/>
 				</div>

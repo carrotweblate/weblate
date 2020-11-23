@@ -103,7 +103,7 @@
 			width: 150px;
 			height: 50px;
 			margin: 0.5rem  1rem 0.5rem 0;
-			background: url(/assets/images/logos/integrations.png) no-repeat; 
+			background: url(https://www.carrotquest.io/blog/article/assets/images/logos/integrations.png) no-repeat; 
 			background-position: center;
 		}
 

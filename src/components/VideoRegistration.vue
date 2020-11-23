@@ -7,7 +7,7 @@
 				<b-row >
 					<b-col col-12 lg="6">
 						<a v-b-modal.youtubeCQ class="VideoRegistration__play">
-							<g-image class="VideoRegistration__bg" src="~/assets/images/components/VideoAbout.png" width="680" alt="Видео" />
+							<g-image class="VideoRegistration__bg" src="@/assets/images/components/VideoAbout.png" width="680" alt="Видео" />
 						</a>
 						<b-modal id="youtubeCQ" size="xl" hide-header hide-footer>
 							<b-embed
