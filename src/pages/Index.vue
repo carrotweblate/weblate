@@ -46,7 +46,7 @@
 				link: [
 					{
 						rel: 'canonical',
-						href: 'https://cq-test.ru/'
+						href: 'https://www.carrotquest.io/'
 					}
 				]
 			}

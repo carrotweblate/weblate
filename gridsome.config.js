@@ -44,7 +44,7 @@ module.exports = {
 				// Manifest Options (https://developer.mozilla.org/en-US/docs/Web/Manifest)
 				manifestPath: 'manifest.json',
 				title: 'Carrot quest',
-				startUrl: 'https://www.carrotquest.io/blog/article/',
+				startUrl: 'https://www.carrotquest.io/',
 				display: 'standalone',
 				statusBarStyle: 'default',
 				themeColor: '#f60',
