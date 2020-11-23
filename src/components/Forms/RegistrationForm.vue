@@ -3,7 +3,7 @@
 		<b-form v-on:submit.prevent="registration">
 			<b-input-group>
 				<b-form-input 
-					placeholder="Введите ваш e-mail" 
+					placeholder="Введите ваш email" 
 					type="email" 
 					required
 					v-model="email"
