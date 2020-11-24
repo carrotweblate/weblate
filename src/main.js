@@ -30,7 +30,7 @@ export default function(Vue, { head }) {
 		src: 'https://code.jquery.com/jquery-3.5.1.min.js'
 	})
 	head.script.push({
-		src: 'https://www.carrotquest.io/blog/article/assets/js/cq.js'
+		src: '/assets/js/cq.js'
 	})
 
 	//Bootstrap
