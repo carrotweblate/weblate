@@ -170,7 +170,7 @@
 					subLinks: [
 						{
 							title: 'Продуктовым компаниям и SAAS',
-							to: '/saas'
+							to: '/saas/'
 						},
 						{
 							title: 'Интернет-магазинам и e‑commerce',
