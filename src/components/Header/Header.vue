@@ -6,7 +6,7 @@
 			<!-- Страницы сайта -->
 			<template v-if="!(this.isPost)">
 				<!-- Логотип -->
-				<g-link to="/">
+				<g-link href="/">
 					<g-image src="~/components/Header/logo.svg" width="170" height="35" class="logo ml-2 ml-md-3" alt="Carrot blog" />
 				</g-link>
 
