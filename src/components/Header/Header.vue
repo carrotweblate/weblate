@@ -252,10 +252,12 @@
 					anchor.addEventListener("click", function(e) {
 						e.preventDefault()
 						const blockID = anchor.getAttribute("href")
-						document.querySelector(blockID).scrollIntoView({
-							behavior: "smooth",
-							block: "start"
-						})
+						if ( blockID != '#' ) {
+							document.querySelector(blockID).scrollIntoView({
+								behavior: "smooth",
+								block: "start"
+							})
+						}
 					})
 				}
 			}, 0)

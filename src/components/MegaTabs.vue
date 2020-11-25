@@ -19,6 +19,7 @@
 							aspect="4by3"
 							autoplay loop muted playsinline
 							>
+							<source :src="item.pic.replace('mp4','webm')" type="video/webp">
 							<source :src="item.pic" type="video/mp4">
 						</b-embed>
 						<!-- Изображение -->
@@ -44,8 +45,10 @@
 						<!-- Видео -->
 						<b-embed v-if="item.pic.search('mp4') > 0"
 							type="video" 
+							aspect="4by3"
 							autoplay loop muted playsinline
 							>
+							<source :src="item.pic.replace('mp4','webm')" type="video/webp">
 							<source :src="item.pic" type="video/mp4">
 						</b-embed>
 						<!-- Изображение -->
