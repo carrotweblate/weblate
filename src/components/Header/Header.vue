@@ -6,9 +6,9 @@
 			<!-- Страницы сайта -->
 			<template v-if="!(this.isPost)">
 				<!-- Логотип -->
-				<g-link href="/">
+				<a href="/">
 					<g-image src="~/components/Header/logo.svg" width="170" height="35" class="logo ml-2 ml-md-3" alt="Carrot blog" />
-				</g-link>
+				</a>
 
 				<!-- Мобильное меню гамбургер -->
 				<b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
