@@ -30,9 +30,6 @@ export default function(Vue, { head }) {
 		src: 'https://code.jquery.com/jquery-3.5.1.min.js'
 	})
 	head.script.push({
-		src: '/assets/js/cq.js'
-	})
-	head.script.push({
 		src: '/blog/article/assets/js/cq.js'
 	})
 
