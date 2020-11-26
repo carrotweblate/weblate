@@ -1,5 +1,5 @@
 <template>
-	<Layout class="page">
+	<Layout class="page page-library">
 
 		<!-- Главный экран -->
 		<b-container class="hero">

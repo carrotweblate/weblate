@@ -1,5 +1,5 @@
 <template>
-	<Layout class="page">
+	<Layout class="page page-index">
 
 		<b-container>
 			<br>
