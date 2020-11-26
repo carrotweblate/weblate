@@ -259,7 +259,7 @@
 			&__girl {
 				position: absolute;
 				z-index: 4;
-				top: 220px;
+				top: 35%;
 				left: 50%;
 				margin-left: -130px;
 				animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -269,7 +269,7 @@
 						transform: translateY(0);
 					}
 					100% {
-						transform: translateY(-105px);
+						transform: translateY(-80%);
 					}
 				}
 			}
@@ -376,7 +376,6 @@
 				&__girl {
 					width: 180px;
 					margin-left: -70px;
-					top: 170px
 				}
 			}
 		}
