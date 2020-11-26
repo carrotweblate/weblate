@@ -32,6 +32,10 @@ footer {
 		}
 	}
 
+	a::after {
+		display: none !important;
+	}
+
 	@media (max-width: 575.98px) {
 		.social-nav .navbar-text , .apps-nav .navbar-text {
 			width: 100%;
