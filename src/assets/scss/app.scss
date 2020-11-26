@@ -96,6 +96,19 @@ a {
 	color: $blue-link;
 	outline: none;
 }
+a[target='_blank'] {
+	position: relative;
+	&::after {
+		display: block;
+		content: ' ';
+		background: top left no-repeat url("data:image/svg+xml,%3Csvg width='13' height='12' viewBox='0 0 13 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.5 7.5L12 1M12 1H8.5M12 1V4.5' stroke='%23FF8246'/%3E%3Cpath d='M5.5 3H1V11.5H10V8.5' stroke='%23FF8246'/%3E%3C/svg%3E%0A");
+		width: 13px;
+		height: 13px;
+		position: absolute;
+		top: 4px;
+		right: -20px;
+	}
+}
 a.box {
 	position: relative;
 	display: block;

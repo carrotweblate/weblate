@@ -142,23 +142,23 @@
 						},
 						{
 							title: 'Email-маркетинг',
-							url: '/email-marketing/'
+							to: '/email-marketing/'
 						},
 						{
 							title: 'Pop-up окна',
-							url: '/pop-up/'
+							to: '/pop-up/'
 						},
 						{
 							title: 'Автоматизация воронки',
-							url: '/automation-marketing'
+							to: '/automation-marketing'
 						},
 						{
 							title: 'А/Б тесты автосообщений',
-							url: '/ab-tests/'
+							to: '/ab-tests/'
 						},
 						{
 							title: 'SDK для Android и iOS',
-							url: '/sdk/'
+							to: '/sdk/'
 						}
 					]
 				},
