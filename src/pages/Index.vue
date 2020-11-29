@@ -20,6 +20,9 @@
 			<p>
 				<g-link to="/case21shop/">Тестовая тильда</g-link>
 			</p>
+			<p>
+				<g-link to="/qualification-guide/">Гайд</g-link>
+			</p>
 			
 		</b-container>
 
