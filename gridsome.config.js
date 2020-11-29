@@ -53,20 +53,6 @@ module.exports = {
 				icon: './static/favicon.png',
 				shortName: 'Carrot quest',              // Optional
 				description: 'Инструменты для увеличения продаж на сайтах без привлечения нового трафика',// Optional
-				categories: ['business'],          // Optional
-				lang: 'ru-Ru',                      // Optional
-				dir: 'auto',                        // Optional
-				maskableIcon: true,                 // Optional
-	
-				// Standard Meta Tags
-				svgFavicon: 'favicon.svg',          // Optional. Requires favicon.ico fallback
-	
-				// Microsoft Windows Meta Tags
-				msTileColor: '#666600',             // Optional
-	
-				// Apple MacOS Meta Tags
-				appleMaskIcon: 'favicon.svg',       // Optional
-				appleMaskIconColor: '#666600',      // Optional
 			}
 		},
 		{
