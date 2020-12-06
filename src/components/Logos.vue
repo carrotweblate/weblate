@@ -1,47 +1,19 @@
 <template>
-	<ClientOnly>
-		<b-container class="Logos">
-			<b-row>
-				<b-col cols="12">
-					<Carousel
-						:items="3"
-						:autoplay="true" 
-						:autoplayTimeout="4000"
-						:autoplayHoverPause="true"
-						:loop="true"
-						:margin="40"
-						:stagePadding="0"
-						:nav="false" 
-						:dots="false"
-						class="d-lg-none"
-					>	
-						<template v-for="item in logos">
-							<img :src="'/assets/images/logos/' + item.pic" :alt="item.pic" :key="item.pic" />
-						</template>
-						
+	
+	<b-container class="Logos">
+		<b-row>
+			<b-col cols="12">
+				<ClientOnly>
+					<Carousel :perPageCustom="[[768, 3], [1024, 6]]">
+						<slide v-for="item in logos" :key="item.pic">
+							<img :src="'/assets/images/logos/' + item.pic" :alt="item.pic" />
+						</slide>
 					</Carousel>
-
-					<Carousel
-						:items="6"
-						:autoplay="true" 
-						:autoplayTimeout="4000"
-						:autoplayHoverPause="true"
-						:loop="true"
-						:margin="80"
-						:stagePadding="0"
-						:nav="false" 
-						:dots="false"
-						class="d-none d-lg-block"
-					>	
-						<template v-for="item in logos">
-							<img :src="'/assets/images/logos/' + item.pic" :alt="item.pic" :key="item.pic" />
-						</template>
-						
-					</Carousel>
-				</b-col>
-			</b-row>
-		</b-container>
-	</ClientOnly>
+				</ClientOnly>
+			</b-col>
+		</b-row>
+	</b-container>
+	
 </template>
 
 
@@ -50,8 +22,12 @@
 	export default {
 		components: {
 			Carousel: () =>
-			import ("vue-owl-carousel2")
+				import ('vue-carousel')
 				.then(m => m.Carousel)
+				.catch(),
+			Slide: () =>
+				import ('vue-carousel')
+				.then(m => m.Slide)
 				.catch()
 		},
 		data() {
@@ -104,16 +80,17 @@
 <style lang="scss">
 	.Logos {
 		img {
+			width: 100%;
 			transition: all .2s ease;
 			filter: grayscale(100%);
 			&:hover {
 				filter: grayscale(0);
 			}
 		}
-		.owl-stage-outer {
+		.VueCarousel-wrapper {
 			overflow: inherit !important;
 		}
-		.owl-stage {
+		.VueCarousel-slide {
 			display: flex;
 			align-items: center;
 		}

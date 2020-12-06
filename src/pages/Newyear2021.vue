@@ -385,6 +385,7 @@
 			&__box {
 				padding: 20px;
 				height: 100%;
+				min-height: 9rem;
 				border-radius: 5px;
 			}
 		}
