@@ -20,7 +20,7 @@
 				</b-row>
 				
 				<!-- Фоновое изображение -->
-				<g-image class="hero__pic" src="@/assets/images/newyear2021/hero.png" width="1980" height="804" alt="Новогодний фон" />
+				<g-image class="hero__pic" src="@/assets/images/newyear2021/hero.png" width="1980" height="804" alt=" " />
 				
 			</b-container>
 		</div>

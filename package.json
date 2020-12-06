@@ -18,8 +18,7 @@
     "node-sass": "^4.14.1",
     "remark": "^13.0.0",
     "sass-loader": "^10.0.1",
-    "vue-carousel": "^0.18.0",
-    "vue-owl-carousel2": "^2.0.7",
+    "vue-horizontal-list": "^1.2.0",
     "vue-read-progress": "^1.0.4"
   }
 }
