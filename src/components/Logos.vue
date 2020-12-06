@@ -13,7 +13,6 @@
 						:stagePadding="0"
 						:nav="false" 
 						:dots="false"
-						:smartSpeed="1500"
 						class="d-lg-none"
 					>	
 						<template v-for="item in logos">
@@ -32,7 +31,6 @@
 						:stagePadding="0"
 						:nav="false" 
 						:dots="false"
-						:smartSpeed="1500"
 						class="d-none d-lg-block"
 					>	
 						<template v-for="item in logos">
@@ -49,10 +47,13 @@
 
 
 <script>
-	import Carousel from 'vue-owl-carousel2'
-
 	export default {
-		components: { Carousel },
+		components: {
+			Carousel: () =>
+			import ("vue-owl-carousel2")
+				.then(m => m.Carousel)
+				.catch()
+		},
 		data() {
 			return {
 				logos: [
