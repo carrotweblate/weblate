@@ -17,6 +17,17 @@
 		components: {
 			Header,
 			Footer
+		},
+		mounted () {
+			// Ищем ссылки для открытия чата
+			if ( document.querySelector('[href="#open-chat"]') ) {
+				document.querySelectorAll('[href="#open-chat"]').forEach(function(item) {
+					item.addEventListener('click', function(e) {
+						e.preventDefault()
+						carrotquest.open()
+					})
+				})
+			}
 		}
 	};
 </script>

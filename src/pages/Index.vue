@@ -4,10 +4,6 @@
 		<b-container>
 			<br>
 			<br>
-			
-			<p>
-				<g-link to="/saas/">Saas</g-link>
-			</p>
 			<p>
 				<g-link to="/lead-manager/">eCRM</g-link>
 			</p>

@@ -15,15 +15,15 @@
 						</b-col>
 					</b-row>
 					<!-- Фоновое изображение -->
-					<g-image class="hero__guy d-none d-lg-block" src="@/assets/images/saas/hero__guy.png" width="926" immediate blur="5" />
-					<g-image class="hero__flower-left" src="@/assets/images/saas/hero__flower-left.png" width="500" />
-					<g-image class="hero__flower-right" src="@/assets/images/saas/hero__flower-right.png" width="276" />
-					<g-image class="hero__message-1 d-none d-lg-block" src="@/assets/images/saas/hero__message-1.png" width="328" immediate blur="5" />
-					<g-image class="hero__message-2 d-none d-lg-block" src="@/assets/images/saas/hero__message-2.png" width="332" immediate blur="5" />
+					<g-image class="hero__guy d-none d-lg-block" src="@/assets/images/saas/hero__guy.png" width="926" immediate blur="5" alt="Клиент на раслабоне" title="Клиент на раслабоне" />
+					<g-image class="hero__flower-left" src="@/assets/images/saas/hero__flower-left.png" width="500" alt="Левый куст" />
+					<g-image class="hero__flower-right" src="@/assets/images/saas/hero__flower-right.png" width="276" alt="Правый куст" />
+					<g-image class="hero__message-1 d-none d-lg-block" src="@/assets/images/saas/hero__message-1.png" width="328" immediate blur="5" alt="Сообщение" />
+					<g-image class="hero__message-2 d-none d-lg-block" src="@/assets/images/saas/hero__message-2.png" width="332" immediate blur="5" alt="Сообщение" />
 					<svg class="hero__bg" width="1919" height="736" viewBox="0 0 1919 736" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path d="M233.5 18.7373C107 41.2373 27.9995 127.237 0.499512 169.737L0.999514 735.237H1919V0.237312C1901.5 -5.26269 1755 86.7373 1660.5 89.2373C1566 91.7373 1481 44.7373 1406 45.7373C1331 46.7373 1265 58.7373 1180 120.737C1095 182.737 1070.5 220.737 921 230.237C771.5 239.737 510.062 -30.4537 233.5 18.7373Z" fill="#F5F6FE"/>
 					</svg>
-					<g-image class="hero__girl d-none d-lg-block" src="@/assets/images/saas/hero__girl.png" width="258" immediate blur="5" />
+					<g-image class="hero__girl d-none d-lg-block" src="@/assets/images/saas/hero__girl.png" width="258" immediate blur="5" alt="Девушка из поддержки клиентов" title="Девушка из поддержки клиентов" />
 				</b-container>
 			</div>
 			<b-container>

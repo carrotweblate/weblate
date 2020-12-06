@@ -5,7 +5,7 @@
 		<b-container>
 			<b-col class="Consultation" :style=" 'background-color: ' + bg ">
 				<b-row class="align-items-center justify-content-center">
-					<b-col cols="8" md="6" lg="4">
+					<b-col cols="8" lg="4" class="mb-5">
 						<g-image
 							:src="require(`!!assets-loader?width=280!@/assets/images/components/${pic}`)"
 							:alt="alt"
@@ -66,7 +66,7 @@
 		img {
 			max-width: 100%;
 		}
-		@media (max-width: 575.98px) {
+		@media (max-width: 767.98px) {
 			padding: 2rem 20px;
 			a:first-child {
 				display: block;
