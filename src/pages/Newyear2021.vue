@@ -236,6 +236,7 @@
 			]"
 		/>
 
+		<Logos />
 
 		<Consultation 
 			title="Запишитесь на бесплатную демонстрацию сервиса" 
@@ -243,19 +244,21 @@
 			pic="medium-snegurochka.png"
 			alt="Снегурочка"
 			bg="#FFEAD2"
-		/>
+		/>		
 
 	</Layout>
 </template>
 
 <script>
 	import FAQ from '~/components/FAQ.vue'
+	import Logos from '~/components/Logos.vue'
 	import Consultation from '~/components/Consultation.vue'
 
 	export default {
 		components: {
 			Consultation,
-			FAQ
+			FAQ,
+			Logos
 		},
 
 		//Делаем в HEAD
@@ -280,10 +283,6 @@
 					}
 				]
 			}
-		},
-
-		mounted () {
-			
 		}
 	}	
 </script>
