@@ -42,7 +42,7 @@
 							<p>
 								<a href="/price/">Посчитать тариф со&nbsp;скидкой</a>
 							</p>
-							<b-button href="#" variant="primary">Купить годовую подписку со&nbsp;скидкой прямо сейчас!</b-button>
+							<b-button href="/panel/toapp/subscription" variant="primary">Купить годовую подписку со&nbsp;скидкой прямо сейчас!</b-button>
 						</div>
 					</div>
 				</b-col>
