@@ -12,7 +12,7 @@
 		<b-row>
 			<b-col cols="12" v-for="(item , index ) in items" :key="index">
 				<div class="FAQ__box mt-2">
-					<b-button v-b-toggle="'answer-' + index">{{ item.question }}</b-button>
+					<b-button v-b-toggle="'answer-' + index" v-html="item.question" />
 					<b-collapse :id="'answer-' + index">
 						<div class="FAQ__box__answer" v-html="item.answer" />
 					</b-collapse>
