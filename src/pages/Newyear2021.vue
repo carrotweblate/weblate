@@ -4,8 +4,8 @@
 		<div class="blue hero">
 			<b-container>
 				<b-row class="justify-content-center">
-					<b-col lg="8">
-						<div class="title h3 text-center mt-5">
+					<b-col xl="9">
+						<div class="hero__title h2 text-center">
 							До 31 декабря скидка 40% при подписке на год.<br>
 							Активируйте подписку сразу или по сертификату<br>
 							до конца следующего года
@@ -178,6 +178,14 @@
 		</b-container>
 
 
+		<Contacts 
+			title="Есть вопросы? Обращайтесь"
+			pic="newyear2021/small-snegurochkaBookPro.png"
+			alt="СнегурочкаБук Про"
+			bg="#FFEAD2"
+		/>
+
+
 		<FAQ 
 			title="Вопросы, которые у вас могут быть:"
 			:items="[
@@ -250,12 +258,14 @@
 </template>
 
 <script>
+	import Contacts from '~/components/Contacts.vue'
 	import FAQ from '~/components/FAQ.vue'
 	import Logos from '~/components/Logos.vue'
 	import Consultation from '~/components/Consultation.vue'
 
 	export default {
 		components: {
+			Contacts,
 			Consultation,
 			FAQ,
 			Logos
@@ -305,6 +315,9 @@
 			.row {
 				position: relative;
 				z-index: 10;
+			}
+			&__title {
+				margin-top: 6rem;
 			}
 			&__price {
 				height: auto;
@@ -435,6 +448,9 @@
 		@media (max-width: 1399.98px) {
 			.hero {
 				height: 600px;
+				&__title {
+					margin-top: 4rem;
+				}
 				&__pic {
 					width: 1477px;
 					height: 600px;
