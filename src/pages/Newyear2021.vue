@@ -21,6 +21,7 @@
 				
 				<!-- Фоновое изображение -->
 				<g-image class="hero__pic" src="@/assets/images/newyear2021/hero.png" width="1980" height="804" alt=" " />
+				<g-image class="hero__snow" src="@/assets/images/newyear2021/hero__snow.png" width="1980" height="804" alt=" " />
 				
 			</b-container>
 		</div>
@@ -274,7 +275,7 @@
 		//Делаем в HEAD
 		metaInfo() {
 			return {
-				title: 'Инструменты для увеличения продаж на сайтах без привлечения нового трафика',
+				title: 'Только до 1 января. Скидки на Carrot quest – 40% при покупке годовой подписки. 🤘 🎄',
 				meta: [
 					{
 						key: 'description',
@@ -304,7 +305,7 @@
 		overflow: hidden;
 		.blue {
 			margin-bottom: 9rem;
-			background-color: #F5F6FE;
+			background-color: #EEEDFD;
 		}
 
 		//Главный экран
@@ -330,6 +331,15 @@
 				left: 50%;
 				margin-left: -990px;
 			}
+			&__snow {
+				position: absolute;
+				z-index: 6;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
+
 		}
 
 		//Скидки
@@ -455,6 +465,12 @@
 					width: 1477px;
 					height: 600px;
 					margin-left: -738px;
+				}
+				&__snow {
+					width: 1477px;
+					height: 600px;
+					margin-left: -738px;
+					left: 50%;
 				}
 			}
 		}
