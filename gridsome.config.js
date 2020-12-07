@@ -6,7 +6,7 @@
 
 module.exports = {
 
-	// pathPrefix: '/blog/article/',
+	pathPrefix: '/blog/article/',
 
 	siteName: 'Carrot quest',
 	titleTemplate: "%s — Carrot quest",
