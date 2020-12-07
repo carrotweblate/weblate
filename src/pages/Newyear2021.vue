@@ -5,7 +5,7 @@
 			<b-container>
 				<b-row class="justify-content-center">
 					<b-col xl="9">
-						<div class="hero__title h2 text-center">
+						<div class="hero__title h2 text-md-center">
 							До&nbsp;31&nbsp;декабря скидка&nbsp;40% при подписке на&nbsp;год.<br>
 							Активируйте подписку сразу или по&nbsp;сертификату<br>
 							до&nbsp;конца следующего года
@@ -14,13 +14,13 @@
 				</b-row>
 
 				<b-row class="hero__price">
-					<b-col class="text-center">
+					<b-col class="text-md-center">
 						<a href="/price/">Посмотреть тарифы с&nbsp;новогодней скидкой</a>
 					</b-col>
 				</b-row>
 				
 				<!-- Фоновое изображение -->
-				<g-image class="hero__pic" src="@/assets/images/newyear2021/hero.png" width="1980" height="804" alt=" " />
+				<g-image class="hero__pic d-none d-md-block" src="@/assets/images/newyear2021/hero.png" width="1980" height="804" alt=" " />
 				<g-image class="hero__snow" src="@/assets/images/newyear2021/hero__snow.png" width="1980" height="804" alt=" " />
 				
 			</b-container>
@@ -139,7 +139,7 @@
 					</div>
 				</b-col>
 			</b-row>
-			<b-row>
+			<b-row class="font20px">
 				<b-col md="6" lg="4">
 					<div class="details__box" style="background-color: #FFF1E5;">
 						Сертификат можно купить 📅 с&nbsp;7&nbsp;декабря до&nbsp;31&nbsp;декабря 2020 года
@@ -284,7 +284,7 @@
 					},
 					{
 						property: "og:image",
-						content: 'https://www.carrotquest.io/img/cover.gif'
+						content: '/assets/images/cover/newyear2021.jpg'
 					},
 				],
 				link: [
@@ -318,7 +318,7 @@
 				z-index: 10;
 			}
 			&__title {
-				margin-top: 6rem;
+				margin-top: 5rem;
 			}
 			&__price {
 				height: auto;
@@ -344,14 +344,21 @@
 
 		//Скидки
 		.sale {
+			margin-top: -3rem;
 			&__box {
+				position: relative;
 				background-color: #F8F8FF;
 				border-radius: 5px;
-				padding: 20px;
 				height: 100%;
+				padding: 2rem 2rem 4.5rem 2rem;
 				&__pic {
 					display: block;
 					margin: 0 auto;
+				}
+				.btn {
+					position: absolute;
+					bottom: 2rem;
+					max-width: 100%;
 				}
 			}
 		}
@@ -390,7 +397,7 @@
 				position: absolute;
 				&-1 {
 					left: 0;
-					margin-left: -60px; 
+					margin-left: -100px; 
 				}
 				&-2 {
 					right: 0;
@@ -408,12 +415,28 @@
 			&__box {
 				padding: 20px;
 				height: 100%;
-				min-height: 9rem;
+				min-height: 12rem;
 				border-radius: 5px;
 			}
 		}
 
+		.Contacts , .FAQ {
+			margin-top: -3rem;
+		}
+
 		@media (max-width: 767.98px) {
+			.hero {
+				height: auto !important;
+				min-height: auto !important;
+				padding-bottom: 4rem;
+				&__snow {
+					top: inherit;
+					bottom: 0;
+				}
+				&__price {
+					margin-top: 1rem;
+				}
+			}
 			.sale__box__pic {
 				width: auto;
 				height: 160px;
@@ -442,12 +465,19 @@
 					margin-left: -20px !important;
 				}
 			}
+			.sale__box {
+				padding-bottom: 2rem;
+				.btn {
+					position: relative !important;
+					bottom: 0;
+				}
+			}
 		}
 		@media (max-width: 1199.98px) {
 			.instruction__pic {
 				&-1 {
 					left: 0;
-					margin-left: -130px; 
+					margin-left: -170px; 
 				}
 				&-2 {
 					right: 0;

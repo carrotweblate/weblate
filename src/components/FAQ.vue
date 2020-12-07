@@ -12,7 +12,9 @@
 		<b-row>
 			<b-col cols="12" v-for="(item , index ) in items" :key="index">
 				<div class="FAQ__box mt-2">
-					<b-button v-b-toggle="'answer-' + index" v-html="item.question" />
+					<b-button v-b-toggle="'answer-' + index">
+						<span v-html="item.question" />
+					</b-button>
 					<b-collapse :id="'answer-' + index">
 						<div class="FAQ__box__answer" v-html="item.answer" />
 					</b-collapse>
@@ -105,7 +107,12 @@
 				transform: rotate(135deg);
 			}
 			&__answer {
+				
 				padding: 0.1rem 1rem;
+			}
+			.btn span , &__answer {
+				max-width: 720px;
+				display: inline-block;
 			}
 		}
 	}

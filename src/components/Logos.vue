@@ -57,9 +57,9 @@
 						responsive: [
 							{ end: 576, size: 3 },
 							{ start: 576, end: 768, size: 4 },
-							{ start: 768, end: 1200, size: 5 },
-							{ start: 1200, end: 1980, size: 6 },
-							{ start: 1980, end: 2440, size: 9 },
+							{ start: 768, end: 1200, size: 6 },
+							{ start: 1200, end: 1980, size: 8 },
+							{ start: 1980, end: 2440, size: 12 },
 							{ size: 12 },
 						],
 					}"
