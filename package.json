@@ -3,6 +3,7 @@
   "private": true,
   "scripts": {
     "build": "gridsome build",
+    "public": "gridsome build && rm -r dist-public && mv dist dist-public",
     "develop": "gridsome develop",
     "explore": "gridsome explore"
   },

@@ -29,7 +29,7 @@
 		<!-- Скидки -->
 		<b-container class="sale">
 			<b-row>
-				<b-col lg="6" class="mb-5 mb-lg-0">
+				<b-col id="sale" lg="6" class="mb-5 mb-lg-0">
 					<div class="sale__box">
 						<g-image class="sale__box__pic mb-4" src="@/assets/images/newyear2021/sale-1.png" width="281" height="264" alt="Подписка на 12 месяцев с удвоенной скидкой − 40%" />
 						<div class="sale__box__title h3 mb-3">
@@ -46,7 +46,7 @@
 						</div>
 					</div>
 				</b-col>
-				<b-col lg="6">
+				<b-col id="certificate" lg="6">
 					<div class="sale__box">
 						<g-image class="sale__box__pic mb-4" src="@/assets/images/newyear2021/sale-2.png" width="314" height="264" alt="Сертификат на годовую подписку по новогодней цене" />
 						<div class="sale__box__title h3 mb-3">
