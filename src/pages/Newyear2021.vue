@@ -67,7 +67,7 @@
 		</b-container>
 
 		<!-- Инструкции -->
-		<b-container class="instruction">
+		<b-container id="instruction" class="instruction">
 			<b-row class="justify-content-center">
 
 				<g-image class="instruction__bg instruction__bg-1 d-none d-lg-block" src="@/assets/images/newyear2021/bg-1.png" width="223" height="438" alt="Ice Clcik" />
