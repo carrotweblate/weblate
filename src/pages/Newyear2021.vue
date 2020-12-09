@@ -294,6 +294,22 @@
 					}
 				]
 			}
+		},
+		mounted () {
+			// Ищем ссылки для открытия чата
+			if ( document.querySelector('[href="#open-chat"]') ) {
+				document.querySelectorAll('[href="#open-chat"]').forEach(function(item) {
+					item.addEventListener('click', function(e) {
+						e.preventDefault()
+						carrotquest.open()
+						function sayHi() {
+							$('#carrot-messenger-frame').contents().find('#carrotquest-messenger-reply-textarea').html('Я хочу сертификат на годовую подписку по акции')
+							$('#carrot-messenger-frame').contents().find('#carrotquest-messenger-reply-button').click()
+						}
+						setTimeout(sayHi, 1000);
+					})
+				})
+			}
 		}
 	}	
 </script>
