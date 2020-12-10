@@ -1,6 +1,21 @@
 <template>
 	<Layout class="page automation-marketing-page">
 
+		<!-- Регистрация -->
+		<b-container>
+			<b-col class="p-4" style="background-color: #FFF3E6; border-radius: 5px;">
+				<b-row class="align-items-center justify-content-center">
+					<b-col lg="6">
+						<g-image src="@/assets/images/components/medium-1.png" width="494" alt="Регистрация в сервисе" title="Поехали!" style="max-width: 100%" />
+					</b-col>
+					<b-col lg="6">
+						<div class="h1 mb-4">Регистрация в сервисе</div>
+						<RegistrationForm text="14 дней бесплатно" />
+					</b-col>
+				</b-row>
+			</b-col>
+		</b-container>
+
 		<!-- Собирай -->
 		<b-container class="collect">
 			<b-row>
