@@ -145,23 +145,23 @@
 						},
 						{
 							title: 'Email-маркетинг',
-							url: '/email-marketing/'
+							to: '/email-marketing/'
 						},
 						{
 							title: 'Pop-up окна',
-							url: '/pop-up/'
+							to: '/pop-up/'
 						},
 						{
 							title: 'Автоматизация воронки',
-							url: '/automation-marketing'
+							to: '/automation-marketing'
 						},
 						{
 							title: 'А/Б тесты автосообщений',
-							url: '/ab-tests/'
+							to: '/ab-tests/'
 						},
 						{
 							title: 'SDK для Android и iOS',
-							url: '/sdk/'
+							to: '/sdk/'
 						}
 					]
 				},
@@ -244,42 +244,6 @@
 			if (document.location.href.search('/blog/') != -1){
 				this.isPost = true
 			}
-
-			//Антифликер
-			function expRedirect() {
-				switch(location.pathname) {
-					case '/blog/40-email-newsletters/': location.href = 'https://www.carrotquest.io/blog/40-email-newsletters-2/';
-					break;
-					case '/blog/kak-sdelat-email-rassylku/': location.href = 'https://www.carrotquest.io/blog/kak-sdelat-email-rassylku-2/';
-					break;
-					case '/blog/onboarding-chto-eto/': location.href = 'https://www.carrotquest.io/blog/onboarding-chto-eto-2/';
-					break;
-					case '/blog/obzor-servisov-email-rassylok/': location.href = 'https://www.carrotquest.io/blog/obzor-servisov-email-rassylok-2/';
-					break;
-					case '/blog/index-nps/': location.href = 'https://www.carrotquest.io/blog/index-nps-2/';
-					break;
-					case '/blog/formula-roi/': location.href = 'https://www.carrotquest.io/blog/formula-roi-2/';
-					break;
-					case '/blog/ltv-lifetime-value-schitaem/': location.href = 'https://www.carrotquest.io/blog/ltv-lifetime-value-schitaem-2/';
-					break;
-					default: true;
-				};
-			};
-			if (localStorage.getItem('group')) {
-				if (localStorage.getItem('group') == 'test') {
-					expRedirect();
-				};
-			}
-			else {
-				if (Math.random() <= 0.5) {
-					localStorage.setItem('group', 'test');
-					expRedirect();
-				}
-				else {
-					localStorage.setItem('group', 'control');
-				};
-			}
-
 		}
 	}
 </script>

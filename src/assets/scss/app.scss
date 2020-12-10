@@ -91,6 +91,28 @@ body {
 
 
 
+//Заголовки
+h1 , .h1 , h2 , .h2 , h3 , .h3 , h4 , .h4 {
+	font-family: 'Stag Sans';
+}
+@media (max-width: 767.98px) {
+	h1 , .h1 , h2 , .h2 {
+		font-size: 1.5rem;
+		line-height: 2rem;
+	}
+	h3 , .h3 , h4 , .h4 {
+		font-size: 1.25rem;
+		line-height: 1.8rem;
+	}
+	h1 , .h1 , h2 , .h2 , h3 , .h3 , h4 , .h4 {
+		br {
+			display: none;
+		}
+	}
+}
+
+
+
 //Ссылки
 a {
 	color: $blue-link;
@@ -120,21 +142,6 @@ a.box {
 	&:hover {
 		top: -5px;
 		box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
-	}
-}
-
-h1 , .h1 , h2 , .h2 , h3 , .h3 , h4 , .h4 {
-	font-family: 'Stag Sans';
-}
-@media (max-width: 767.98px) {
-	h1 , .h1 , h2 , .h2 {
-		font-size: 1.5rem;
-		line-height: 2rem;
-	}
-	h1 , .h1 , h2 , .h2 , h3 , .h3 , h4 , .h4 {
-		br {
-			display: none;
-		}
 	}
 }
 
