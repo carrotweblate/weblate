@@ -87,6 +87,9 @@
 				border: none;
 				padding: 0.75rem 1rem;
 				font-weight: bold;
+				span {
+					padding-right: 1.5rem;
+				}
 				&::after {
 					content: " ";
 					display: block;
@@ -107,7 +110,6 @@
 				transform: rotate(135deg);
 			}
 			&__answer {
-				
 				padding: 0.1rem 1rem;
 			}
 			.btn span , &__answer {
