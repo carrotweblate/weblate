@@ -5,6 +5,8 @@
 		<slot />
 
 		<Footer />
+
+		<!-- <Balcony /> -->
 	</div>
 </template>
 
@@ -12,11 +14,13 @@
 <script>
 	import Header from '~/components/Header/Header.vue'
 	import Footer from '~/components/Footer/Footer.vue'
+	import Balcony from '~/components/Balcony.vue'
 
 	export default {
 		components: {
 			Header,
-			Footer
+			Footer,
+			Balcony
 		},
 		mounted () {
 			// Ищем ссылки для открытия чата

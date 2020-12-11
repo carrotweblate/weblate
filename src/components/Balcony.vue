@@ -1,0 +1,166 @@
+<template>
+	<ClientOnly>
+
+		<div id="balcony"  class="balcony">
+			<div class="container">
+				<span id="ad__close">×</span>
+				<div class="row">
+					<div class="col-7">
+						<div class="balcony__show">
+							<h2>
+								Получите бесплатно карту сценариев для вашего бизнеса
+							</h2>
+							<p>
+								Выберите карту и введите почту. Мы пришлем вам ее бесплатно
+							</p>
+							<div class="checkbox__buttons">
+								<div class="checkbox__container">
+									<label for="checkbox_1" class="checkbox__label">
+										<input id="checkbox_1" name="map" type="radio" value="saas" checked>
+										<span class="checkbox__custom"></span>
+										<span class="checkbox__title">SaaS-сервис</span>
+									</label>
+									<label for="checkbox_2" class="checkbox__label">
+										<input id="checkbox_2" name="map" type="radio" value="ecom">
+										<span class="checkbox__custom"></span>
+										<span class="checkbox__title">e&#8209;commerce</span>
+									</label>
+									<label for="checkbox_3" class="checkbox__label">
+										<input id="checkbox_3" name="map" type="radio" value="b2c">
+										<span class="checkbox__custom"></span>
+										<span class="checkbox__title">B2C</span>
+									</label>
+									<label for="checkbox_4" class="checkbox__label">
+										<input id="checkbox_4" name="map" type="radio" value="недвижимости">
+										<span class="checkbox__custom"></span>
+										<span class="checkbox__title">Недвижимость</span>
+									</label>
+								</div>
+
+								<form class="form">
+									<input type="email" class="input-field form__field form__field__right-button" required name="email" placeholder="Электронная почта" />
+									<input type="submit" value="Получить бесплатно" class="link-button link-button_filled form__button form__button__left-input" />
+								</form>
+							</div>
+						</div>
+						<h2 class="balcony__hidden">
+							Спасибо! Мы уже отправили всё на почту
+						</h2>
+					</div>
+					<div class="col-5">
+						<img class="balcony__pic lazyload" src="https://www.carrotquest.io/knowledge-base/img/general/ru/header/map.png" alt="map" />
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</ClientOnly>
+</template>
+
+<script>
+	export default {
+
+	}
+</script>
+
+<style lang="scss">
+	.balcony {
+		position: fixed;
+		bottom: 0; left: 0; right: 0;
+		z-index: 12;
+		display: none;
+		padding-top: 48px;
+		padding-bottom : 64px;
+		background: #F8F8FF;
+		box-shadow: 0px -5px 20px rgba(0, 0, 0, 0.05);
+
+		.container {
+			position: relative;
+			margin-bottom: 0;
+		}
+		#ad__close {
+			top: -38px;
+			right: 12px;
+		}
+
+		&__pic {
+			box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+			max-width: 100%;
+		}
+
+		.checkbox__container {
+			display: flex;
+			flex-wrap: wrap;
+
+			label {
+				margin-right: 32px;
+			}
+			label:last-child {
+				margin-right: 0;
+			}
+			input[type=checkbox] , input[type=radio] {
+				position: absolute;
+				visibility: hidden;
+			}
+
+			.checkbox__custom {
+				display: inline-block;
+				width: 16px;
+				height: 16px;
+				background: #FFFFFF;
+				border: 1px solid #FF8246;
+				border-radius: 50%;
+				margin-right: 8px;
+				position: relative;
+			}
+			input:checked ~ .checkbox__custom {
+				&::before {
+					content: "";
+					width: 8px;
+					height: 8px;
+					display: block;
+					background: #FF8246;
+					border-radius: 50%;
+					position: absolute;
+					top: 3px;
+					left: 3px;
+				}
+			}
+			.checkbox__title {
+				position: relative;
+				top: -2px;
+				cursor: pointer;
+			}
+		}
+
+		form {
+			margin-top: 16px;
+			display: flex;
+			box-shadow: 0px 3px 10px rgba(9, 29, 100, 0.1);
+			float: left;
+			.input-field {
+				border: 0;
+				padding: 16px 24px;
+			}
+			.link-button_filled {
+				padding: 16px 24px !important;
+			}
+			.input-field::placeholder {
+				color: #C4C4C4 !important;
+			}
+			@media (max-width: 991.98px) {
+				.input-field,
+				.link-button_filled {
+					width: 100%;
+					max-width: 100%;
+				}
+			}
+		}
+
+		.balcony__hidden {
+			clear: both;
+			display: none;
+		}
+		
+	}
+</style>

@@ -32,8 +32,7 @@ export default function(Vue, { head }) {
 
 	})
 	head.script.push({
-		// src: '/blog/article/assets/js/cq.js',
-		src: '/assets/js/cq.js',
+		src: 'https://www.carrotquest.io/blog/article/assets/js/cq.js',
 		rel: 'preload'
 	})
 
