@@ -5,21 +5,11 @@
 			<br>
 			<br>
 			<p>
-				<g-link to="/lead-manager/">eCRM</g-link>
-			</p>
-			<p>
-				<g-link to="/automation-marketing/">Автоматизация</g-link>
-			</p>
-			<p>
-				<g-link to="/blog/kak-sdelat-email-rassylku-2/">Тестовая статья</g-link>
-			</p>
-			<p>
-				<g-link to="/case21shop/">Тестовая тильда</g-link>
+				<g-link to="/automation-marketing-2/">Автоматизация</g-link>
 			</p>
 			<p>
 				<g-link to="/qualification-guide/">Гайд</g-link>
-			</p>
-			
+			</p>			
 		</b-container>
 
 	</Layout>

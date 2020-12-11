@@ -7,7 +7,7 @@
 			<template v-if="!(this.isPost)">
 				<!-- Логотип -->
 				<a href="/">
-					<g-image src="~/components/Header/ny_carrotquest_logo.png" width="236" height="35" class="logo ml-2 ml-md-3" alt="Carrot blog" />
+					<g-image src="~/components/Header/ny_carrotquest_logo.png" width="193" height="35" class="logo ml-2 ml-md-3" alt="Carrot blog" />
 				</a>
 
 				<!-- Мобильное меню гамбургер -->
