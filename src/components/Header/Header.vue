@@ -17,7 +17,7 @@
 				<b-navbar-nav class="ml-auto mt-3 mt-lg-0">
 					<template v-for="( item , index ) in topMenu">
 
-						<b-nav-item v-if="!item.subLinks" :href="item.to" :key="index" class="mr-1">
+						<b-nav-item v-if="!item.subLinks" :href="item.href" :key="index" class="mr-1">
 							{{ item.title }}
 						</b-nav-item>
 
