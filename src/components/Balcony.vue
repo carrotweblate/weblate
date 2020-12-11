@@ -36,10 +36,13 @@
 										<span class="checkbox__title">Недвижимость</span>
 									</label>
 								</div>
-
 								<form class="form">
-									<input type="email" class="input-field form__field form__field__right-button" required name="email" placeholder="Электронная почта" />
-									<input type="submit" value="Получить бесплатно" class="link-button link-button_filled form__button form__button__left-input" />
+									<div role="group" class="input-group">
+										<input name="email" type="email" placeholder="Электронная почта" required="required" aria-required="true" class="p-4 form-control">
+										<div class="input-group-append">
+											<button type="submit" class="btn px-4 btn-primary">Получить бесплатно</button>
+										</div>
+									</div>
 								</form>
 							</div>
 						</div>
@@ -59,11 +62,21 @@
 
 <script>
 	export default {
-
+		components: {
+			
+		},
 	}
 </script>
 
 <style lang="scss">
+	#ad__close {
+		position: absolute;
+		padding: 0 8px;
+		font-size: 32px;
+		right: 4px;
+		top: 12px;
+		cursor: pointer;
+	}
 	.balcony {
 		position: fixed;
 		bottom: 0; left: 0; right: 0;
