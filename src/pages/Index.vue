@@ -5,6 +5,9 @@
 			<br>
 			<br>
 			<p>
+				<g-link to="/newyear2021/">2021</g-link>
+			</p>
+			<p>
 				<g-link to="/automation-marketing-2/">Автоматизация</g-link>
 			</p>
 			<p>

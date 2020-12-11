@@ -334,7 +334,7 @@
 				z-index: 10;
 			}
 			&__title {
-				margin-top: 5rem;
+				margin-top: 6rem;
 			}
 			&__price {
 				height: auto;
@@ -343,7 +343,7 @@
 			&__pic {
 				position: absolute;
 				z-index: 5;
-				top: 0;
+				bottom: 0;
 				left: 50%;
 				margin-left: -990px;
 			}
