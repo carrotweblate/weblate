@@ -74,7 +74,7 @@
 				</b-col>
 
 				<!-- Для SaaS и B2B -->
-				<b-col lg="6">
+				<b-col lg="6" class="mt-5 mt-lg-0">
 					<b-row>
 						<b-col cols="12">
 							<h3 class="font17px">
@@ -928,7 +928,7 @@
 					left: 20%;
 				}
 			}
-			.collect {
+			.tasks , .collect {
 				.col-6 {
 					margin-top: 10px;
 					margin-bottom: 10px;
