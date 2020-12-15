@@ -6,10 +6,10 @@
 				<b-row class="align-items-center">
 					<b-col lg="6">
 						<h1>
-							Автоматизируйте маркетинг, превратите посетителей в покупателей
+							Автоматизируйте маркетинг, превратите посетителей в&nbsp;покупателей
 						</h1>
 						<p class="py-3">
-							С помощью поп-апов, чат-бота, и email-рассылок автоматизируйте воронку и увеличивайте продажи
+							С&nbsp;помощью поп-апов, чат-бота, и&nbsp;email-рассылок автоматизируйте воронку и&nbsp;увеличивайте продажи
 						</p>
 						<RegistrationForm />
 					</b-col>
@@ -35,14 +35,14 @@
 					<b-row>
 						<b-col cols="12">
 							<h3 class="font17px">
-								Для eCommerce и B2C
+								Для eCommerce и&nbsp;B2C
 							</h3>
 						</b-col>
 						<b-col cols="6">
 							<div class="tasks__box tasks__box-ecom text-center">
 								<g-image class="tasks__box__pic mb-4" src="@/assets/images/components/small-13.png" height="90" fit="inside" alt="Увеличение конверсии в лиды" />
 								<p>
-									Увеличение конверсии в лиды
+									Увеличение конверсии в&nbsp;лиды
 								</p>
 							</div>
 						</b-col>
@@ -50,7 +50,7 @@
 							<div class="tasks__box tasks__box-ecom text-center">
 								<g-image class="tasks__box__pic mb-4" src="@/assets/images/components/small-15.png" height="90" fit="inside" alt="Увеличение конверсии в заказы" />
 								<p>
-									Увеличение конверсии в заказы
+									Увеличение конверсии в&nbsp;заказы
 								</p>
 							</div>
 						</b-col>
@@ -78,7 +78,7 @@
 					<b-row>
 						<b-col cols="12">
 							<h3 class="font17px">
-								Для SaaS и B2B
+								Для SaaS и&nbsp;B2B
 							</h3>
 						</b-col>
 						<b-col cols="6" class="h-50">
@@ -124,7 +124,7 @@
 			<b-row>
 				<b-col lg="10" xl="8">
 					<h2>
-						Анализируйте эффективность автосообщений и проводите А/В тесты
+						Анализируйте эффективность автосообщений и&nbsp;проводите А/В тесты
 					</h2>
 				</b-col>
 			</b-row>
@@ -135,14 +135,14 @@
 							<b-row class="mt-4 mt-md-5">
 								
 								<!-- Зашёл на сайт -->
-								<b-col cols="12" lg class="pipeline__step pipeline__step-1 mb-5 mb-lg-0">
+								<b-col cols="12" lg class="pipeline__step pipeline__step-saas mb-5 mb-lg-0">
 									<div class="text-lg-center">
 										<p>
 											<b class="font16px d-none d-lg-inline">
-												Зашёл на сайт
+												Зашёл на&nbsp;сайт
 											</b>
 											<b class="h2 d-lg-none">
-												Зашёл на сайт
+												Зашёл на&nbsp;сайт
 											</b>
 										</p>
 										<p class="pipeline__step__number">
@@ -153,23 +153,23 @@
 									<p>
 										<b class="font16px">
 											Лид-бот
-										</b><br>
+										</b> <br>
 										<span class="font14px grey-text">
-											вовлекайте пользователя в диалог и соберите контакты
+											вовлекайте пользователя в&nbsp;диалог и&nbsp;соберите контакты
 										</span>
 									</p>
 									<p>
 										<b class="font16px">
 											Поп-ап
-										</b><br>
+										</b> <br>
 										<span class="font14px grey-text">
-											соберите контакты и постройте велкам серии
+											соберите контакты и&nbsp;постройте велкам серии
 										</span>
 									</p>
 									<p>
 										<b class="font16px">
 											Онлайн-чат
-										</b><br>
+										</b> <br>
 										<span class="font14px grey-text">
 											помогите пользователю зарегистрироваться
 										</span>
@@ -195,17 +195,17 @@
 									<p>
 										<b class="font16px">
 											Серия писем
-										</b><br>
+										</b> <br>
 										<span class="font14px grey-text">
-											постройте welcom-серии, верните в продукт
+											постройте welcom-серии, верните в&nbsp;продукт
 										</span>
 									</p>
 									<p>
 										<b class="font16px">
 											Лид-бот
-										</b><br>
+										</b> <br>
 										<span class="font14px grey-text">
-											помогите зарегистрироваться и подобрать нужные инструменты в сервисе
+											помогите зарегистрироваться и&nbsp;подобрать нужные инструменты в&nbsp;сервисе
 										</span>
 									</p>
 								</b-col>
@@ -229,23 +229,23 @@
 									<p>
 										<b class="font16px">
 											Лид-бот
-										</b><br>
+										</b> <br>
 										<span class="font14px grey-text">
-											помогите  разобраться в продукте, настройте онбординг
+											помогите разобраться в&nbsp;продукте, настройте онбординг
 										</span>
 									</p>
 									<p>
 										<b class="font16px">
 											Онлайн-чат
-										</b><br>
+										</b> <br>
 										<span class="font14px grey-text">
-											помогите пользователю разобраться в продукте
+											помогите пользователю разобраться в&nbsp;продукте
 										</span>
 									</p>
 									<p>
 										<b class="font16px">
 											Поп-ап
-										</b><br>
+										</b> <br>
 										<span class="font14px grey-text">
 											настройте онбординг пользователя, покажите полезные функции
 										</span>
@@ -253,9 +253,9 @@
 									<p>
 										<b class="font16px">
 											Серия писем
-										</b><br>
+										</b> <br>
 										<span class="font14px grey-text">
-											помогите узнать о продукте, возвращайте в продукт
+											помогите узнать о&nbsp;продукте, возвращайте в&nbsp;продукт
 										</span>
 									</p>
 								</b-col>
@@ -279,7 +279,7 @@
 									<p>
 										<b class="font16px">
 											Лид-бот
-										</b><br>
+										</b> <br>
 										<span class="font14px grey-text">
 											помогите выбрать тариф
 										</span>
@@ -287,17 +287,17 @@
 									<p>
 										<b class="font16px">
 											Онлайн-чат
-										</b><br>
+										</b> <br>
 										<span class="font14px grey-text">
-											помогите пользователю с оплатой
+											помогите пользователю с&nbsp;оплатой
 										</span>
 									</p>
 									<p>
 										<b class="font16px">
 											Серия писем
-										</b><br>
+										</b> <br>
 										<span class="font14px grey-text">
-											возвращайте в продукт, напоминайте о продукте
+											возвращайте в&nbsp;продукт, напоминайте о&nbsp;продукте
 										</span>
 									</p>
 								</b-col>
@@ -321,7 +321,7 @@
 									<p>
 										<b class="font16px">
 											Онлайн-чат
-										</b><br>
+										</b> <br>
 										<span class="font14px grey-text">
 											помогайте успеху пользователя
 										</span>
@@ -329,17 +329,17 @@
 									<p>
 										<b class="font16px">
 											Серия писем
-										</b><br>
+										</b> <br>
 										<span class="font14px grey-text">
-											делитесь обновлениями о продукте
+											делитесь обновлениями о&nbsp;продукте
 										</span>
 									</p>
 									<p>
 										<b class="font16px">
 											Лид-бот
-										</b><br>
+										</b> <br>
 										<span class="font14px grey-text">
-											собирайте обратную связь, рассказывайте про обновления и платные функции
+											собирайте обратную связь, рассказывайте про обновления и&nbsp;платные функции
 										</span>
 									</p>
 								</b-col>
@@ -350,8 +350,202 @@
 								</b-col>
 							</b-row>
 						</b-tab>
-						<b-tab title="Воронка для eCommerce" lazy>
 
+
+						<b-tab title="Воронка для eCommerce" lazy>
+							<b-row class="mt-4 mt-md-5">
+								
+								<!-- Зашёл на сайт -->
+								<b-col cols="12" lg class="pipeline__step pipeline__step-ecom mb-5 mb-lg-0">
+									<div class="text-lg-center">
+										<p>
+											<b class="font16px d-none d-lg-inline">
+												Зашёл на&nbsp;сайт
+											</b>
+											<b class="h2 d-lg-none">
+												Зашёл на&nbsp;сайт
+											</b>
+										</p>
+										<p class="pipeline__step__number">
+											+60%<br>
+											<span class="font14px">лидов</span>
+										</p>
+									</div>
+									<p>
+										<b class="font16px">
+											Лид-бот
+										</b> <br>
+										<span class="font14px grey-text">
+											квалифицируйте и&nbsp;соберите email
+										</span>
+									</p>
+									<p>
+										<b class="font16px">
+											Поп-ап
+										</b> <br>
+										<span class="font14px grey-text">
+											предложите скидку и&nbsp;соберите email
+										</span>
+									</p>
+								</b-col>
+
+								<!-- Посмотрел товары -->
+								<b-col cols="12" lg class="pipeline__step pipeline__step-2 mb-5 mb-lg-0">
+									<div class="text-lg-center">
+										<p>
+											<b class="font16px d-none d-lg-inline">
+												Посмотрел товары
+											</b>
+											<b class="h2 d-lg-none">
+												Посмотрел товары
+											</b>
+										</p>
+										<p class="pipeline__step__number">
+											+30%<br>
+											<span class="font14px">лидов</span>
+										</p>
+									</div>
+									<p>
+										<b class="font16px">
+											Лид-бот
+										</b> <br>
+										<span class="font14px grey-text">
+											предлагайте ответы на&nbsp;частые вопросы, а&nbsp;сложные переводитена оператора
+										</span>
+									</p>
+									<p>
+										<b class="font16px">
+											Поп-ап
+										</b> <br>
+										<span class="font14px grey-text">
+											оперативно проконсультируйте насчёт товара
+										</span>
+									</p>
+								</b-col>
+
+								<!-- Добавил товары в корзину -->
+								<b-col cols="12" lg class="pipeline__step pipeline__step-3 mb-5 mb-lg-0">
+									<div class="text-lg-center">
+										<p>
+											<b class="font16px d-none d-lg-inline" style="position: relative; top: 0.9rem; line-height: 1.1rem; display: block !important;">
+												Добавил товары в&nbsp;корзину
+											</b>
+											<b class="h2 d-lg-none">
+												Добавил товары в&nbsp;корзину
+											</b>
+										</p>
+										<p class="pipeline__step__number">
+											+15%<br>
+											<span class="font14px">лидов</span>
+										</p>
+									</div>
+									<p>
+										<b class="font16px">
+											Лид-бот
+										</b> <br>
+										<span class="font14px grey-text">
+											помогайте оформить заказ
+										</span>
+									</p>
+									<p>
+										<b class="font16px">
+											Поп-ап с&nbsp;товарами
+										</b> <br>
+										<span class="font14px grey-text">
+											верните пользователя к&nbsp;покупке
+										</span>
+									</p>
+									<p>
+										<b class="font16px">
+											Онлайн-чат
+										</b> <br>
+										<span class="font14px grey-text">
+											помогайте оформить заказ
+										</span>
+									</p>
+								</b-col>
+
+								<!-- Оформил заказ -->
+								<b-col cols="12" lg class="pipeline__step pipeline__step-4 mb-5 mb-lg-0">
+									<div class="text-lg-center">
+										<p>
+											<b class="font16px d-none d-lg-inline">
+												Оформил заказ
+											</b>
+											<b class="h2 d-lg-none">
+												Оформил заказ
+											</b>
+										</p>
+										<p class="pipeline__step__number">
+											+25%<br>
+											<span class="font14px">продаж</span>
+										</p>
+									</div>
+									<p>
+										<b class="font16px">
+											Автозвонок
+										</b> <br>
+										<span class="font14px grey-text">
+											подтвердите заказ и&nbsp;уточните данные
+										</span>
+									</p>
+									<p>
+										<b class="font16px">
+											СМС
+										</b> <br>
+										<span class="font14px grey-text">
+											напомните о&nbsp;товарах
+										</span>
+									</p>
+									<p>
+										<b class="font16px">
+											Серия писем
+										</b> <br>
+										<span class="font14px grey-text">
+											напомните о&nbsp;забытых товарах
+										</span>
+									</p>
+								</b-col>
+
+								<!-- Оплатил заказ -->
+								<b-col cols="12" lg class="pipeline__step pipeline__step-5">
+									<div class="text-lg-center">
+										<p>
+											<b class="font16px d-none d-lg-inline">
+												Оплатил заказ
+											</b>
+											<b class="h2 d-lg-none">
+												Оплатил заказ
+											</b>
+										</p>
+										<p class="pipeline__step__number">
+											+10%<br>
+											<span class="font14px">повторных продаж</span>
+										</p>
+									</div>
+									<p>
+										<b class="font16px">
+											Письмо
+										</b> <br>
+										<span class="font14px grey-text">
+											покажите новые товары, обзоры и&nbsp;продавайте повторно
+										</span>
+									</p>
+									<p>
+										<b class="font16px">
+											СМС
+										</b> <br>
+										<span class="font14px grey-text">
+											расскажите о&nbsp;поступленииновых товаров
+										</span>
+									</p>
+								</b-col>
+							</b-row>
+							<b-row class="d-none d-lg-block">
+								<b-col>
+									<g-image class="pipeline__all" src="@/assets/images/automation-marketing/pipeline-ecom.png" width="1100" alt="Шаги" />
+								</b-col>
+							</b-row>
 						</b-tab>
 					</b-tabs>
 				</b-col>
@@ -363,11 +557,11 @@
 			<b-row>
 				<b-col lg="10" xl="8">
 					<h2 class="mb-3 mb-lg-4">
-						Автоматизация маркетинга основана на данных о действиях пользователя
+						Автоматизация маркетинга основана на&nbsp;данных о&nbsp;действиях пользователя
 					</h2>
 					<p class="mb-3 mb-lg-4">
-						Ваша команда увидит каждую мелочь о клиенте. Это помогает успешно закрывать сделки 
-						и решать вопросы. Собирайте данные, чтобы улучшить автоматизацию маркетинга
+						Ваша команда увидит каждую мелочь о&nbsp;клиенте. Это помогает успешно закрывать сделки 
+						и&nbsp;решать вопросы. Собирайте данные, чтобы улучшить автоматизацию маркетинга
 					</p>
 				</b-col>
 			</b-row>
@@ -383,10 +577,10 @@
 			<b-col class="p-4" style="background-color: #FFF3E6; border-radius: 5px;">
 				<b-row class="align-items-center justify-content-center">
 					<b-col lg="6">
-						<g-image src="@/assets/images/components/medium-1.png" width="494" alt="Регистрация в сервисе" title="Поехали!" style="max-width: 100%" />
+						<g-image src="@/assets/images/components/medium-1.png" width="494" alt="Регистрация в сервисе" title="Поехали!" style="max-width: 100%" />
 					</b-col>
 					<b-col lg="6">
-						<div class="h1 mb-4">Регистрация в сервисе</div>
+						<div class="h1 mb-4">Регистрация в&nbsp;сервисе</div>
 						<RegistrationForm text="14 дней бесплатно" />
 					</b-col>
 				</b-row>
@@ -417,7 +611,7 @@
 				<b-col cols="6" lg="4">
 					<a href="/online-consultant/" class="collect__box box text-center p-4">
 						<p>
-							Через чат на сайте
+							Через чат на&nbsp;сайте
 						</p>
 						<g-image src="@/assets/images/automation-marketing/collect-2.svg" height="158" />
 					</a>
@@ -441,7 +635,7 @@
 				<b-col cols="6" lg="4">
 					<div class="collect__box text-center p-4">
 						<p>
-							Sms и звонки
+							Sms и&nbsp;звонки
 						</p>
 						<g-image src="@/assets/images/automation-marketing/collect-5.svg" height="158" />
 					</div>
@@ -454,7 +648,7 @@
 			<b-row>
 				<b-col lg="10" xl="8">
 					<h2 class="mb-3 mb-lg-4">
-						Автоматизируйте продажи с помощью триггерных сообщений, основанных на действиях пользователей
+						Автоматизируйте продажи с&nbsp;помощью триггерных сообщений, основанных на&nbsp;действиях пользователей
 					</h2>
 				</b-col>
 			</b-row>
@@ -464,7 +658,7 @@
 						Подготовьте чат-сообщение, поп-ап, письмо, лид-бота или что-то более хитрое
 					</div>
 					<p>
-						Настраивайте разные типы сообщений, с персонализацией, с классным дизайном, с возможностью выбрать из десятка шаблонов. 
+						Настраивайте разные типы сообщений, с&nbsp;персонализацией, с&nbsp;классным дизайном, с&nbsp;возможностью выбрать из&nbsp;десятка шаблонов. 
 					</p>
 					<g-image class="automation__box__pic-small automation__box__pic-small-1 d-none d-xl-block" src="@/assets/images/components/small-7.png" width="200" />
 				</b-col>
@@ -509,7 +703,7 @@
 						Результаты автоматизации
 					</div>
 					<p>
-						Подробная статистика по каждому сообщению поможет контролировать и улучшать результаты автоматизации маркетинга
+						Подробная статистика по&nbsp;каждому сообщению поможет контролировать и&nbsp;улучшать результаты автоматизации маркетинга
 					</p>
 					<g-image class="automation__box__pic-small automation__box__pic-small-4 d-none d-xl-block" src="@/assets/images/components/small-8.png" width="200" />
 				</b-col>
@@ -524,7 +718,7 @@
 			<b-row>
 				<b-col lg="10" xl="8">
 					<h2>
-						Анализируйте эффективность автосообщений и проводите А/В тесты
+						Анализируйте эффективность автосообщений и&nbsp;проводите А/В тесты
 					</h2>
 				</b-col>
 			</b-row>
@@ -551,8 +745,8 @@
 				</b-col>
 			</b-row>
 		</b-container>
-        
-        <Integrations />
+
+<Integrations />
 
 		<Cases />
 
@@ -563,10 +757,10 @@
 			<b-col class="p-4" style="background-color: #FFF3E6; border-radius: 5px;">
 				<b-row class="align-items-center justify-content-center">
 					<b-col lg="6">
-						<g-image src="@/assets/images/components/medium-2.png" width="494" alt="Регистрация в сервисе" title="Поехали!" style="max-width: 100%" />
+						<g-image src="@/assets/images/components/medium-2.png" width="494" alt="Регистрация в сервисе" title="Поехали!" style="max-width: 100%" />
 					</b-col>
 					<b-col lg="6">
-						<div class="h1 mb-4">Регистрация в сервисе</div>
+						<div class="h1 mb-4">Регистрация в&nbsp;сервисе</div>
 						<RegistrationForm text="14 дней бесплатно" />
 					</b-col>
 				</b-row>
@@ -662,6 +856,7 @@
 			}
 			&__all {
 				position: absolute;
+				z-index: -1;
 				bottom: 140px;
 				max-width: 920px !important;
 			}
@@ -755,9 +950,12 @@
 			}
 			.pipeline {
 				&__step {
-					&-1 {
+					&-saas {
 						padding-bottom: 450px;
-					} 
+					}
+					&-ecom {
+						padding-bottom: 450px;
+					}
 					.text-lg-center {
 						position: absolute;
 						bottom: 0;
@@ -775,8 +973,11 @@
 			}
 			.pipeline {
 				&__step {
-					&-1 {
+					&-saas {
 						padding-bottom: 420px;
+					}
+					&-ecom {
+						padding-bottom: 395px;
 					}
 				}
 				&__all {
