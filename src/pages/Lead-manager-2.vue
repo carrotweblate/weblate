@@ -11,7 +11,7 @@
 						<RegistrationForm text="14 дней бесплатно. Регистрируйтесь" />
 					</b-col>
 				</b-row>
-				<g-image class="hero__pic d-none d-lg-block" src="~/assets/images/lead-manager/hero.png" width="1005" alt=" " />
+				<g-image class="hero__pic d-none d-lg-block" src="~/assets/images/lead-manager/hero.png" srcset="~/assets/images/lead-manager/hero.png"  width="1005" alt=" " />
 				<g-image class="hero__pic d-lg-none" src="~/assets/images/lead-manager/hero-mobile.png" width="800" alt=" " />
 			</b-container>
 		</div>
@@ -67,15 +67,15 @@
 						:tabs="[
 							{
 								title: 'Базовые события, такие как посещение страниц и клики на элементы, можно настроить без программистов',
-								pic: '/assets/video/components/1.mp4'
+								pic: '14.png'
 							},
 							{
 								title: 'Используйте инструменты коммуникаций, чтобы собирать инсайты',
-								pic: '2.png'
+								pic: '12.png'
 							},
 							{
 								title: 'Если вам недостаточно стандартных способов сбора данных, воспользуйтесь инструментами для разработчиков',
-								pic: '3.png'
+								pic: '13.png'
 							}
 						]"
 					/>
@@ -84,6 +84,24 @@
 		</div>
 
 		<Integrations />
+
+		<div class="blue">
+			<b-container>
+				<b-row class="analize">
+					<b-col lg="4" class="order-lg-2">
+						<h2 class="mb-3 mb-lg-4">
+							Анализируйте данные и используйте инсайты для роста ваших метрик
+						</h2>
+						<p>
+							После идентификации пользователей собранные данные можно использовать для анализа поведения пользователей в воронках, запуска персонализированных триггерных сообщений и передачи в другие сервисы
+						</p>
+					</b-col>
+					<b-col lg="8">
+						<g-image src="~/assets/images/components/medium-3.png" width="720" />
+					</b-col>
+				</b-row>
+			</b-container>
+		</div>
 
 		<Cases />
 
@@ -177,6 +195,14 @@
 
 		.collect {
 			padding-top: 6rem;
+		}
+
+		.analize {
+			padding-top: 6rem;
+			padding-bottom: 6rem;
+			img {
+				max-width: 100%;
+			}
 		}
 
 		.blue {

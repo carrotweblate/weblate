@@ -27,7 +27,7 @@ export default function(Vue, { head }) {
 
 	// Добавляем jQuery и CQ
 	head.script.push({
-		src: 'https://static.tildacdn.com/js/jquery-1.10.2.min.js',
+		src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js',
 		rel: 'preload'
 
 	})
