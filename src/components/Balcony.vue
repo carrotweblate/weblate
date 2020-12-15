@@ -2,10 +2,10 @@
 	<ClientOnly>
 
 		<div id="balcony"  class="balcony">
-			<div class="container">
+			<b-container>
 				<span id="ad__close">×</span>
-				<div class="row">
-					<div class="col-7">
+				<b-row>
+					<b-col cols="7">
 						<div class="balcony__show">
 							<h2>
 								Получите бесплатно карту сценариев для вашего бизнеса
@@ -49,12 +49,12 @@
 						<h2 class="balcony__hidden">
 							Спасибо! Мы уже отправили всё на почту
 						</h2>
-					</div>
-					<div class="col-5">
+					</b-col>
+					<b-col cols="5">
 						<img class="balcony__pic lazyload" src="https://www.carrotquest.io/knowledge-base/img/general/ru/header/map.png" alt="map" />
-					</div>
-				</div>
-			</div>
+					</b-col>
+				</b-row>
+			</b-container>
 		</div>
 
 	</ClientOnly>
@@ -125,6 +125,7 @@
 				border-radius: 50%;
 				margin-right: 8px;
 				position: relative;
+				cursor: pointer;
 			}
 			input:checked ~ .checkbox__custom {
 				&::before {

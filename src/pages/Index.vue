@@ -11,6 +11,9 @@
 				<g-link to="/automation-marketing-2/">Автоматизация</g-link>
 			</p>
 			<p>
+				<g-link to="/lead-manager-2/">eCRM</g-link>
+			</p>
+			<p>
 				<g-link to="/qualification-guide/">Гайд</g-link>
 			</p>			
 		</b-container>

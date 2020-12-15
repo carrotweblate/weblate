@@ -11,11 +11,11 @@
 						<p class="py-3">
 							С&nbsp;помощью поп-апов, чат-бота, и&nbsp;email-рассылок автоматизируйте воронку и&nbsp;увеличивайте продажи
 						</p>
-						<RegistrationForm />
+						<RegistrationForm text="14 дней бесплатно. Регистрируйтесь" />
 					</b-col>
 				</b-row>
 				<g-image class="hero__pic d-none d-lg-block" src="@/assets/images/automation-marketing/hero.png" width="909" alt=" " />
-				<g-image class="hero__pic d-lg-none" src="@/assets/images/automation-marketing/hero-mobile.png" width="909" alt=" " />
+				<g-image class="hero__pic d-lg-none" src="@/assets/images/automation-marketing/hero-mobile.png" width="800" alt=" " />
 			</b-container>
 		</div>
 
@@ -567,7 +567,7 @@
 			</b-row>
 			<b-row>
 				<b-col>
-					<g-image src="@/assets/images/automation-marketing/data.png" width="1100" alt="Автоматизация маркетинга основана на данных о действиях пользователя" />
+					<g-image src="@/assets/images/components/11.png" width="1100" alt="Автоматизация маркетинга основана на данных о действиях пользователя" />
 				</b-col>
 			</b-row>
 		</b-container>
@@ -746,7 +746,7 @@
 			</b-row>
 		</b-container>
 
-<Integrations />
+		<Integrations />
 
 		<Cases />
 
