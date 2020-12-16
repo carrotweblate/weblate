@@ -157,7 +157,7 @@
 					},
 					{
 						property: "og:image",
-						content: '/assets/images/cover/lead-manager.jpg'
+						content: '/assets/images/cover/lead-manager.png'
 					},
 				],
 				link: [

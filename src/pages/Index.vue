@@ -14,6 +14,9 @@
 				<g-link to="/lead-manager-2/">eCRM</g-link>
 			</p>
 			<p>
+				<g-link to="/introduction-carrotquest-2/">Внедрение</g-link>
+			</p>
+			<p>
 				<g-link to="/qualification-guide/">Гайд</g-link>
 			</p>			
 		</b-container>
