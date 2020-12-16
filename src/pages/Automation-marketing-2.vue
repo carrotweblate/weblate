@@ -816,9 +816,7 @@
 
 <style lang="scss">
 	.automation-marketing-page {
-
 		.hero {
-			overflow: hidden;
 			&__pic {
 				position: absolute;
 				top: -50px;

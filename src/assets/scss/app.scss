@@ -31,6 +31,7 @@ body {
 	opacity: 0 !important
 }
 .page {
+	overflow: hidden;
 	padding-top: 5.5rem;
 	.container , .container-fluid , .hero{
 		margin-bottom: 10rem;
@@ -52,14 +53,14 @@ body {
 	}
 }
 .retina {
-	display: none;
+	display: none !important;
 }
 @media (-webkit-min-device-pixel-ratio: 2) , (min-resolution: 192dpi) { 
     .retina {
-		display: inherit;
+		display: block !important;
 	}
 	.no-retina {
-		display: none;
+		display: none !important;
 	}
 }
 
