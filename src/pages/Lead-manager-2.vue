@@ -12,7 +12,7 @@
 					</b-col>
 				</b-row>
 				<g-image class="hero__pic d-none d-lg-block no-retina" src="~/assets/images/lead-manager/hero.png" srcset="~/assets/images/lead-manager/hero.png"  width="1005" alt=" " />
-				<g-image class="hero__pic d-none d-lg-block retina" src="~/assets/images/lead-manager/hero.png" srcset="~/assets/images/lead-manager/hero.png"  width="2010" alt=" " style="max-width: 1005" />
+				<g-image class="hero__pic d-none d-lg-block retina" src="~/assets/images/lead-manager/hero.png" srcset="~/assets/images/lead-manager/hero.png"  width="2010" alt=" " style="max-width: 1005px;" />
 				<g-image class="hero__pic d-lg-none" src="~/assets/images/lead-manager/hero-mobile.png" width="800" alt=" " />
 			</b-container>
 		</div>
