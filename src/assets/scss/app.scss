@@ -51,6 +51,17 @@ body {
 		}
 	}
 }
+.retina {
+	display: none;
+}
+@media (-webkit-min-device-pixel-ratio: 2) , (min-resolution: 192dpi) { 
+    .retina {
+		display: inherit;
+	}
+	.no-retina {
+		display: none;
+	}
+}
 
 
 

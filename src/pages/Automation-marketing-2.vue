@@ -14,7 +14,8 @@
 						<RegistrationForm text="14 дней бесплатно. Регистрируйтесь" />
 					</b-col>
 				</b-row>
-				<g-image class="hero__pic d-none d-lg-block" src="@/assets/images/automation-marketing/hero.png" width="909" alt=" " />
+				<g-image class="hero__pic d-none d-lg-block no-retina" src="@/assets/images/automation-marketing/hero.png" width="909" alt=" " />
+				<g-image class="hero__pic d-none d-lg-block retina" src="@/assets/images/automation-marketing/hero.png" width="1818" alt=" " style="max-width: 909px;" />
 				<g-image class="hero__pic d-lg-none" src="@/assets/images/automation-marketing/hero-mobile.png" width="800" alt=" " />
 			</b-container>
 		</div>
