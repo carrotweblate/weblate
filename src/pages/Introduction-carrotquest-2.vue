@@ -1,5 +1,5 @@
 <template>
-	<Layout class="page automation-marketing-page">
+	<Layout class="page introduction-carrotquest-page">
 
 		<div class="blue">
 			<div class="hero">
@@ -209,7 +209,7 @@
 </script>
 
 <style lang="scss">
-	.automation-marketing-page {
+	.introduction-carrotquest {
 		.hero {
 			&__pic {
 				position: absolute;
