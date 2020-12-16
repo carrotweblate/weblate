@@ -1,791 +1,185 @@
 <template>
 	<Layout class="page automation-marketing-page">
 
-		<div class="hero">
-			<b-container>
-				<b-row class="align-items-center">
-					<b-col lg="6">
-						<h1>
-							Автоматизируйте маркетинг, превратите посетителей в&nbsp;покупателей
-						</h1>
-						<p class="py-3">
-							С&nbsp;помощью поп-апов, чат-бота, и&nbsp;email-рассылок автоматизируйте воронку и&nbsp;увеличивайте продажи
-						</p>
-						<RegistrationForm text="14 дней бесплатно. Регистрируйтесь" />
-					</b-col>
-				</b-row>
-				<g-image class="hero__pic d-none d-lg-block no-retina" src="@/assets/images/automation-marketing/hero.png" width="909" alt=" " />
-				<g-image class="hero__pic d-none d-lg-block retina" src="@/assets/images/automation-marketing/hero.png" width="1818" alt=" " style="max-width: 909px;" />
-				<g-image class="hero__pic d-lg-none" src="@/assets/images/automation-marketing/hero-mobile.png" width="800" alt=" " />
-			</b-container>
+		<div class="blue">
+			<div class="hero">
+				<b-container>
+					<b-row class="align-items-center">
+						<b-col lg="6">
+							<h1>
+								Внедрим Carrot quest  в ваш бизнес
+							</h1>
+							<p class="py-3">
+								Разработаем и реализуемстратегии коммуникациис вашими пользователями.Увеличимконверсию  на каждомэтапе воронки
+							</p>
+							<b-button href="123" variant="primary" class="px-4">Отправить заявку на внедрение</b-button>
+						</b-col>
+					</b-row>
+					<g-image class="hero__pic d-none d-lg-block no-retina" src="@/assets/images/introduction-carrotquest/hero.png" width="436" alt=" " />
+					<g-image class="hero__pic d-none d-lg-block retina" src="@/assets/images/introduction-carrotquest/hero.png" width="872" alt=" " style="max-width: 436px;" />
+				</b-container>
+			</div>
 		</div>
 
-		<!-- Решает задачи -->
-		<b-container class="tasks outline-tabs">
+		<!-- Трудности -->
+		<b-container class="hard">
+			<b-row>
+				<b-col lg="10" xl="8">
+					<h2 class="h1">
+						С какими трудностями сталкиваются компании в организации онлайн-продаж:
+					</h2>
+				</b-col>
+			</b-row>
+			<b-row class="font20px">
+				<b-col md="6" lg="4">
+					<div class="hard__box" style="background-color: #FFF1E5;">
+						Оборот трафика увеличивается, а прибыль нет 🤔
+					</div>
+				</b-col>
+				<b-col md="6" lg="4">
+					<div class="hard__box" style="background-color: #EDEDFD;">
+						Менеджеры тратят много времени на квалификацию пользователей и 👻 нецелевых клиентов 
+					</div>
+				</b-col>
+				<b-col md="6" lg="4">
+					<div class="hard__box" style="background-color: #FEE6EC;">
+						Клиенты 😾 не возвращаются за повторными покупками
+					</div>
+				</b-col>
+				<b-col md="6" lg="4">
+					<div class="hard__box" style="background-color: #F0FDF0;">
+						Конверсия в заявку или в первую 📦 покупку не растет
+					</div>
+				</b-col>
+				<b-col md="6" lg="4">
+					<div class="hard__box" style="background-color: #FEF8EA;">
+						Пользователи не всегда завершают регистрацию 🔥 или оформляют заказ
+					</div>
+				</b-col>
+			</b-row>
+			<b-row>
+				<b-col lg="10" xl="8" class="mt-4">
+					<p>
+						Решение этих узких мест в процессах поможет вам зарабатывать больше денег и вывести компанию на новый уровень
+					</p>
+				</b-col>
+			</b-row>
+		</b-container>
+
+		<!-- Как мы решаем эти задачи -->
+		<b-container class="success">
 			<b-row class="mb-4">
-				<b-col lg="10" xl="8">
-					<h2>
-						Aвтоматизация маркетинга решает задачи
+				<b-col cols="12">
+					<h2 class="h1">
+						Как мы решаем эти задачи
 					</h2>
 				</b-col>
 			</b-row>
-			<b-row>
-
-				<!-- Для eCommerce и B2C -->
-				<b-col lg="6">
-					<b-row>
-						<b-col cols="12">
-							<h3 class="font17px">
-								Для eCommerce и&nbsp;B2C
-							</h3>
-						</b-col>
-						<b-col cols="6">
-							<div class="tasks__box tasks__box-ecom text-center">
-								<g-image class="tasks__box__pic mb-4" src="@/assets/images/components/small-13.png" height="90" fit="inside" alt="Увеличение конверсии в лиды" />
-								<p>
-									Увеличение конверсии в&nbsp;лиды
-								</p>
-							</div>
-						</b-col>
-						<b-col cols="6">
-							<div class="tasks__box tasks__box-ecom text-center">
-								<g-image class="tasks__box__pic mb-4" src="@/assets/images/components/small-15.png" height="90" fit="inside" alt="Увеличение конверсии в заказы" />
-								<p>
-									Увеличение конверсии в&nbsp;заказы
-								</p>
-							</div>
-						</b-col>
-						<b-col cols="6">
-							<div class="tasks__box tasks__box-ecom text-center">
-								<g-image class="tasks__box__pic mb-4" src="@/assets/images/components/small-16.png" height="90" fit="inside" alt="Увеличение количества первых покупок" />
-								<p>
-									Увеличение количества первых покупок
-								</p>
-							</div>
-						</b-col>
-						<b-col cols="6">
-							<div class="tasks__box tasks__box-ecom text-center">
-								<g-image class="tasks__box__pic mb-4" src="@/assets/images/components/small-17.png" height="90" fit="inside" alt="Увеличение количества первых покупок" />
-								<p>
-									Увеличение количества повторных покупок
-								</p>
-							</div>
-						</b-col>
-					</b-row>
-				</b-col>
-
-				<!-- Для SaaS и B2B -->
-				<b-col lg="6" class="mt-5 mt-lg-0">
-					<b-row>
-						<b-col cols="12">
-							<h3 class="font17px">
-								Для SaaS и&nbsp;B2B
-							</h3>
-						</b-col>
-						<b-col cols="6" class="h-50">
-							<div class="tasks__box tasks__box-saas text-center">
-								<g-image class="tasks__box__pic mb-4" src="@/assets/images/components/small-12.png" height="90" fit="inside" alt="Увеличение LTV" />
-								<p>
-									Увеличение LTV
-									<br><br>
-								</p>
-							</div>
-						</b-col>
-						<b-col cols="6">
-							<div class="tasks__box tasks__box-saas text-center">
-								<g-image class="tasks__box__pic mb-4" src="@/assets/images/components/small-18.png" height="90" fit="inside" alt="Увеличение ретеншн" />
-								<p>
-									Увеличение ретеншн
-								</p>
-							</div>
-						</b-col>
-						<b-col cols="6">
-							<div class="tasks__box tasks__box-saas text-center">
-								<g-image class="tasks__box__pic mb-4" src="@/assets/images/components/small-14.png" width="120" height="90" fit="contain" background="#F8F8FF" alt="Увеличение количества регистраций" />
-								<p>
-									Увеличение количества регистраций
-								</p>
-							</div>
-						</b-col>
-						<b-col cols="6">
-							<div class="tasks__box tasks__box-saas text-center">
-								<g-image class="tasks__box__pic mb-4" src="@/assets/images/components/small-19.png" width="120" height="90" fit="contain" background="#F8F8FF"  alt="Оптимизация онбординга пользователей" />
-								<p>
-									Оптимизация онбординга пользователей
-								</p>
-							</div>
-						</b-col>
-					</b-row>
-				</b-col>
-			</b-row>
-		</b-container>
-
-		<!-- Автоваронка -->
-		<b-container class="pipeline outline-tabs">
-			<b-row>
-				<b-col lg="10" xl="8">
-					<h2>
-						Анализируйте эффективность автосообщений и&nbsp;проводите А/В тесты
-					</h2>
-				</b-col>
-			</b-row>
-			<b-row>
-				<b-col cols-12>
-					<b-tabs pills class="mt-3 mt-lg-4">
-						<b-tab title="Воронка для SaaS" active lazy>
-							<b-row class="mt-4 mt-md-5">
-								
-								<!-- Зашёл на сайт -->
-								<b-col cols="12" lg class="pipeline__step pipeline__step-saas mb-5 mb-lg-0">
-									<div class="text-lg-center">
-										<p>
-											<b class="font16px d-none d-lg-inline">
-												Зашёл на&nbsp;сайт
-											</b>
-											<b class="h2 d-lg-none">
-												Зашёл на&nbsp;сайт
-											</b>
-										</p>
-										<p class="pipeline__step__number">
-											+60%<br>
-											<span class="font14px">лидов</span>
-										</p>
-									</div>
-									<p>
-										<b class="font16px">
-											Лид-бот
-										</b> <br>
-										<span class="font14px grey-text">
-											вовлекайте пользователя в&nbsp;диалог и&nbsp;соберите контакты
-										</span>
-									</p>
-									<p>
-										<b class="font16px">
-											Поп-ап
-										</b> <br>
-										<span class="font14px grey-text">
-											соберите контакты и&nbsp;постройте велкам серии
-										</span>
-									</p>
-									<p>
-										<b class="font16px">
-											Онлайн-чат
-										</b> <br>
-										<span class="font14px grey-text">
-											помогите пользователю зарегистрироваться
-										</span>
-									</p>
-								</b-col>
-
-								<!-- Зарегистрировался -->
-								<b-col cols="12" lg class="pipeline__step pipeline__step-2 mb-5 mb-lg-0">
-									<div class="text-lg-center">
-										<p>
-											<b class="font16px d-none d-lg-inline">
-												Зарегистрировался
-											</b>
-											<b class="h2 d-lg-none">
-												Зарегистрировался
-											</b>
-										</p>
-										<p class="pipeline__step__number">
-											+30%<br>
-											<span class="font14px">лидов</span>
-										</p>
-									</div>
-									<p>
-										<b class="font16px">
-											Серия писем
-										</b> <br>
-										<span class="font14px grey-text">
-											постройте welcom-серии, верните в&nbsp;продукт
-										</span>
-									</p>
-									<p>
-										<b class="font16px">
-											Лид-бот
-										</b> <br>
-										<span class="font14px grey-text">
-											помогите зарегистрироваться и&nbsp;подобрать нужные инструменты в&nbsp;сервисе
-										</span>
-									</p>
-								</b-col>
-
-								<!-- Активировался -->
-								<b-col cols="12" lg class="pipeline__step pipeline__step-3 mb-5 mb-lg-0">
-									<div class="text-lg-center">
-										<p>
-											<b class="font16px d-none d-lg-inline">
-												Активировался
-											</b>
-											<b class="h2 d-lg-none">
-												Активировался
-											</b>
-										</p>
-										<p class="pipeline__step__number">
-											+15%<br>
-											<span class="font14px">лидов</span>
-										</p>
-									</div>
-									<p>
-										<b class="font16px">
-											Лид-бот
-										</b> <br>
-										<span class="font14px grey-text">
-											помогите разобраться в&nbsp;продукте, настройте онбординг
-										</span>
-									</p>
-									<p>
-										<b class="font16px">
-											Онлайн-чат
-										</b> <br>
-										<span class="font14px grey-text">
-											помогите пользователю разобраться в&nbsp;продукте
-										</span>
-									</p>
-									<p>
-										<b class="font16px">
-											Поп-ап
-										</b> <br>
-										<span class="font14px grey-text">
-											настройте онбординг пользователя, покажите полезные функции
-										</span>
-									</p>
-									<p>
-										<b class="font16px">
-											Серия писем
-										</b> <br>
-										<span class="font14px grey-text">
-											помогите узнать о&nbsp;продукте, возвращайте в&nbsp;продукт
-										</span>
-									</p>
-								</b-col>
-
-								<!-- Оплатил подписку -->
-								<b-col cols="12" lg class="pipeline__step pipeline__step-4 mb-5 mb-lg-0">
-									<div class="text-lg-center">
-										<p>
-											<b class="font16px d-none d-lg-inline">
-												Оплатил подписку
-											</b>
-											<b class="h2 d-lg-none">
-												Оплатил подписку
-											</b>
-										</p>
-										<p class="pipeline__step__number">
-											+25%<br>
-											<span class="font14px">продаж</span>
-										</p>
-									</div>
-									<p>
-										<b class="font16px">
-											Лид-бот
-										</b> <br>
-										<span class="font14px grey-text">
-											помогите выбрать тариф
-										</span>
-									</p>
-									<p>
-										<b class="font16px">
-											Онлайн-чат
-										</b> <br>
-										<span class="font14px grey-text">
-											помогите пользователю с&nbsp;оплатой
-										</span>
-									</p>
-									<p>
-										<b class="font16px">
-											Серия писем
-										</b> <br>
-										<span class="font14px grey-text">
-											возвращайте в&nbsp;продукт, напоминайте о&nbsp;продукте
-										</span>
-									</p>
-								</b-col>
-
-								<!-- Оплатил повторно -->
-								<b-col cols="12" lg class="pipeline__step pipeline__step-5">
-									<div class="text-lg-center">
-										<p>
-											<b class="font16px d-none d-lg-inline">
-												Оплатил повторно
-											</b>
-											<b class="h2 d-lg-none">
-												Оплатил повторно
-											</b>
-										</p>
-										<p class="pipeline__step__number">
-											+10%<br>
-											<span class="font14px">повторных продаж</span>
-										</p>
-									</div>
-									<p>
-										<b class="font16px">
-											Онлайн-чат
-										</b> <br>
-										<span class="font14px grey-text">
-											помогайте успеху пользователя
-										</span>
-									</p>
-									<p>
-										<b class="font16px">
-											Серия писем
-										</b> <br>
-										<span class="font14px grey-text">
-											делитесь обновлениями о&nbsp;продукте
-										</span>
-									</p>
-									<p>
-										<b class="font16px">
-											Лид-бот
-										</b> <br>
-										<span class="font14px grey-text">
-											собирайте обратную связь, рассказывайте про обновления и&nbsp;платные функции
-										</span>
-									</p>
-								</b-col>
-							</b-row>
-							<b-row class="d-none d-lg-block">
-								<b-col>
-									<g-image class="pipeline__all" src="@/assets/images/automation-marketing/pipeline-saas.png" width="1100" alt="Шаги" />
-								</b-col>
-							</b-row>
-						</b-tab>
-
-
-						<b-tab title="Воронка для eCommerce" lazy>
-							<b-row class="mt-4 mt-md-5">
-								
-								<!-- Зашёл на сайт -->
-								<b-col cols="12" lg class="pipeline__step pipeline__step-ecom mb-5 mb-lg-0">
-									<div class="text-lg-center">
-										<p>
-											<b class="font16px d-none d-lg-inline">
-												Зашёл на&nbsp;сайт
-											</b>
-											<b class="h2 d-lg-none">
-												Зашёл на&nbsp;сайт
-											</b>
-										</p>
-										<p class="pipeline__step__number">
-											+60%<br>
-											<span class="font14px">лидов</span>
-										</p>
-									</div>
-									<p>
-										<b class="font16px">
-											Лид-бот
-										</b> <br>
-										<span class="font14px grey-text">
-											квалифицируйте и&nbsp;соберите email
-										</span>
-									</p>
-									<p>
-										<b class="font16px">
-											Поп-ап
-										</b> <br>
-										<span class="font14px grey-text">
-											предложите скидку и&nbsp;соберите email
-										</span>
-									</p>
-								</b-col>
-
-								<!-- Посмотрел товары -->
-								<b-col cols="12" lg class="pipeline__step pipeline__step-2 mb-5 mb-lg-0">
-									<div class="text-lg-center">
-										<p>
-											<b class="font16px d-none d-lg-inline">
-												Посмотрел товары
-											</b>
-											<b class="h2 d-lg-none">
-												Посмотрел товары
-											</b>
-										</p>
-										<p class="pipeline__step__number">
-											+30%<br>
-											<span class="font14px">лидов</span>
-										</p>
-									</div>
-									<p>
-										<b class="font16px">
-											Лид-бот
-										</b> <br>
-										<span class="font14px grey-text">
-											предлагайте ответы на&nbsp;частые вопросы, а&nbsp;сложные переводитена оператора
-										</span>
-									</p>
-									<p>
-										<b class="font16px">
-											Поп-ап
-										</b> <br>
-										<span class="font14px grey-text">
-											оперативно проконсультируйте насчёт товара
-										</span>
-									</p>
-								</b-col>
-
-								<!-- Добавил товары в корзину -->
-								<b-col cols="12" lg class="pipeline__step pipeline__step-3 mb-5 mb-lg-0">
-									<div class="text-lg-center">
-										<p>
-											<b class="font16px d-none d-lg-inline" style="position: relative; top: 0.9rem; line-height: 1.1rem; display: block !important;">
-												Добавил товары в&nbsp;корзину
-											</b>
-											<b class="h2 d-lg-none">
-												Добавил товары в&nbsp;корзину
-											</b>
-										</p>
-										<p class="pipeline__step__number">
-											+15%<br>
-											<span class="font14px">лидов</span>
-										</p>
-									</div>
-									<p>
-										<b class="font16px">
-											Лид-бот
-										</b> <br>
-										<span class="font14px grey-text">
-											помогайте оформить заказ
-										</span>
-									</p>
-									<p>
-										<b class="font16px">
-											Поп-ап с&nbsp;товарами
-										</b> <br>
-										<span class="font14px grey-text">
-											верните пользователя к&nbsp;покупке
-										</span>
-									</p>
-									<p>
-										<b class="font16px">
-											Онлайн-чат
-										</b> <br>
-										<span class="font14px grey-text">
-											помогайте оформить заказ
-										</span>
-									</p>
-								</b-col>
-
-								<!-- Оформил заказ -->
-								<b-col cols="12" lg class="pipeline__step pipeline__step-4 mb-5 mb-lg-0">
-									<div class="text-lg-center">
-										<p>
-											<b class="font16px d-none d-lg-inline">
-												Оформил заказ
-											</b>
-											<b class="h2 d-lg-none">
-												Оформил заказ
-											</b>
-										</p>
-										<p class="pipeline__step__number">
-											+25%<br>
-											<span class="font14px">продаж</span>
-										</p>
-									</div>
-									<p>
-										<b class="font16px">
-											Автозвонок
-										</b> <br>
-										<span class="font14px grey-text">
-											подтвердите заказ и&nbsp;уточните данные
-										</span>
-									</p>
-									<p>
-										<b class="font16px">
-											СМС
-										</b> <br>
-										<span class="font14px grey-text">
-											напомните о&nbsp;товарах
-										</span>
-									</p>
-									<p>
-										<b class="font16px">
-											Серия писем
-										</b> <br>
-										<span class="font14px grey-text">
-											напомните о&nbsp;забытых товарах
-										</span>
-									</p>
-								</b-col>
-
-								<!-- Оплатил заказ -->
-								<b-col cols="12" lg class="pipeline__step pipeline__step-5">
-									<div class="text-lg-center">
-										<p>
-											<b class="font16px d-none d-lg-inline">
-												Оплатил заказ
-											</b>
-											<b class="h2 d-lg-none">
-												Оплатил заказ
-											</b>
-										</p>
-										<p class="pipeline__step__number">
-											+10%<br>
-											<span class="font14px">повторных продаж</span>
-										</p>
-									</div>
-									<p>
-										<b class="font16px">
-											Письмо
-										</b> <br>
-										<span class="font14px grey-text">
-											покажите новые товары, обзоры и&nbsp;продавайте повторно
-										</span>
-									</p>
-									<p>
-										<b class="font16px">
-											СМС
-										</b> <br>
-										<span class="font14px grey-text">
-											расскажите о&nbsp;поступленииновых товаров
-										</span>
-									</p>
-								</b-col>
-							</b-row>
-							<b-row class="d-none d-lg-block">
-								<b-col>
-									<g-image class="pipeline__all" src="@/assets/images/automation-marketing/pipeline-ecom.png" width="1100" alt="Шаги" />
-								</b-col>
-							</b-row>
-						</b-tab>
-					</b-tabs>
-				</b-col>
-			</b-row>
-		</b-container>
-
-		<!-- Данные действий пользователя -->
-		<b-container class="data">
-			<b-row>
-				<b-col lg="10" xl="8">
-					<h2 class="mb-3 mb-lg-4">
-						Автоматизация маркетинга основана на&nbsp;данных о&nbsp;действиях пользователя
-					</h2>
-					<p class="mb-3 mb-lg-4">
-						Ваша команда увидит каждую мелочь о&nbsp;клиенте. Это помогает успешно закрывать сделки 
-						и&nbsp;решать вопросы. Собирайте данные, чтобы улучшить автоматизацию маркетинга
-					</p>
-				</b-col>
-			</b-row>
-			<b-row>
-				<b-col>
-					<video type="video" autoplay loop muted playsinline>
-						<source src="/assets/video/components/3.webm" type="video/webm">
-						<source src="/assets/video/components/3.mp4" type="video/mp4">
-					</video>
-				</b-col>
-			</b-row>
-		</b-container>
-
-		<!-- Регистрация -->
-		<b-container>
-			<b-col class="p-4" style="background-color: #FFF3E6; border-radius: 5px;">
-				<b-row class="align-items-center justify-content-center">
-					<b-col lg="6">
-						<g-image src="@/assets/images/components/medium-1.png" width="494" alt="Регистрация в сервисе" title="Поехали!" style="max-width: 100%" />
-					</b-col>
-					<b-col lg="6">
-						<div class="h1 mb-4">Регистрация в&nbsp;сервисе</div>
-						<RegistrationForm text="14 дней бесплатно" />
-					</b-col>
-				</b-row>
-			</b-col>
-		</b-container>
-
-		<!-- Собирай -->
-		<b-container class="collect">
-			<b-row>
-				<b-col lg="10" xl="8">
-					<h2 class="mb-3 mb-lg-4">
-						Собирайте все способы коммуникации вместе
-					</h2>
+			<b-row class="mb-5">
+				<b-col lg="4" class="order-lg-1">
+					<h3 class="h4">
+						Собираем данные о пользователях
+					</h3>
 					<p>
-						Инструменты для автоматизации маркетинга
+						В специальной CRM для онлайн-бизнеса в реальном времени сохраняется каждый лид с вашего сайта, со всей историей его действий и коммуникаций с ним, используйте это для дальнейшего общения
 					</p>
+				</b-col>
+				<b-col lg="8" class="order-lg-2">
+					<g-image src="@/assets/images/introduction-carrotquest/1.png" width="720" alt="Собираем данные о пользователях" />
+				</b-col>
+			</b-row>
+			<b-row class="mb-5">
+				<b-col lg="4" class="order-lg-2">
+					<h3 class="h4">
+						Увеличиваемконверсиюна 20-100% с помощью поп-апов
+					</h3>
+					<ul>
+						<li>Эффективность зависит от ниши и текущей проработки форм лидогенерации</li>
+						<li>Не показываем одному пользователю несколько поп-апов за раз. Показываем  тогда, когда это актуально и эффективно.</li>
+						<li>Следим, чтобы поп-апы не снижали поведенческие метрики (процент отказов, время первой сессии, глубина просмотров)</li>
+						<li>Проводим А/Б тесты офферов в поп-апах, чтобы увеличить конверсию</li>
+						<li>Стилизуем под ваш дизайн</li>
+					</ul>
+				</b-col>
+				<b-col lg="8" class="order-lg-1">
+					<g-image src="@/assets/images/introduction-carrotquest/2.png" width="720" alt="Увеличиваемконверсиюна 20-100% с помощью поп-апов" />
+				</b-col>
+			</b-row>
+			<b-row class="mb-5">
+				<b-col lg="4" class="order-lg-1">
+					<h3 class="h4">
+						Поднимаем ретеншн и повторные визиты с помощью триггерных рассылок
+					</h3>
+					<ul>
+						<li>Так настроим триггерное письмо, чтобы оно пришло в нужный момент и подходило под запрос пользователя. Это увеличит Open Rate и Click Rate.</li>
+						<li>Вставляем в письма блоки с похожими/рекомендованными товарами при наличии их на сайте</li>
+						<li>Увеличиваем выручку от email-канала за счет тестирования разных гипотез и А/Б тестов</li>
+					</ul>
+				</b-col>
+				<b-col lg="8" class="order-lg-2">
+					<g-image src="@/assets/images/introduction-carrotquest/3.png" width="720" alt="Поднимаем ретеншн и повторные визиты с помощью триггерных рассылок" />
+				</b-col>
+			</b-row>
+			<b-row class="mb-5">
+				<b-col lg="4" class="order-lg-2">
+					<h3 class="h4">
+						Настраиваем бизнес-чат на вашем сайте и обучаем команду менеджеров
+					</h3>
+					<p>
+						Продавайте с помощью онлайн-чата на сайте, консультируйте клиентов о товарах и услугах
+					</p>
+					<ul>
+						<li>Помогаем объединить все каналы коммуникаций в одном месте</li>
+						<li>Используем триггерные автосообщения в чате для повышения конверсии в начало диалога</li>
+						<li>Консультируем по внедрению чата в компанию, учитывая бизнес-процессы</li>
+					</ul>
+				</b-col>
+				<b-col lg="8" class="order-lg-1">
+					<g-image src="@/assets/images/introduction-carrotquest/4.png" width="720" alt="Настраиваем бизнес-чат на вашем сайте и обучаем команду менеджеров" />
 				</b-col>
 			</b-row>
 			<b-row>
-				<b-col cols="6" lg="4">
-					<a href="/pop-up/" class="collect__box box text-center p-4">
-						<p>
-							Поп-ап окна
-						</p>
-						<g-image src="@/assets/images/automation-marketing/collect-1.svg" height="158" />
-					</a>
+				<b-col lg="4" class="order-lg-1">
+					<h3 class="h4">
+						Увеличиваем количество качественных лидов с помощью квалифицирующего лид-бота
+					</h3>
+					<ul>
+						<li>Увеличиваем конверсию в лида на 20-100% в зависимости от ниши (по аналогии с поп-апами)</li>
+						<li>Настраиваем лид-бот кампанию для квалификации по различным сегментам</li>
+					</ul>
+					<b-button href="123" variant="primary" class="px-4">Хочу решить эту задачу</b-button>
 				</b-col>
-				<b-col cols="6" lg="4">
-					<a href="/online-consultant/" class="collect__box box text-center p-4">
-						<p>
-							Через чат на&nbsp;сайте
-						</p>
-						<g-image src="@/assets/images/automation-marketing/collect-2.svg" height="158" />
-					</a>
-				</b-col>
-				<b-col cols="6" lg="4">
-					<a href="/email-marketing/" class="collect__box box text-center p-4">
-						<p>
-							Email-рассылка
-						</p>
-						<g-image src="@/assets/images/automation-marketing/collect-3.svg" height="158" />
-					</a>
-				</b-col>
-				<b-col cols="6" lg="4">
-					<a href="/chatbot/" class="collect__box box text-center p-4">
-						<p>
-							Чат-бот
-						</p>
-						<g-image src="@/assets/images/automation-marketing/collect-4.svg" height="158" />
-					</a>
-				</b-col>
-				<b-col cols="6" lg="4">
-					<div class="collect__box text-center p-4">
-						<p>
-							Sms и&nbsp;звонки
-						</p>
-						<g-image src="@/assets/images/automation-marketing/collect-5.svg" height="158" />
-					</div>
+				<b-col lg="8" class="order-lg-2">
+					<g-image src="@/assets/images/introduction-carrotquest/5.png" width="720" alt="Увеличиваем количество качественных лидов с помощью квалифицирующего лид-бота" />
 				</b-col>
 			</b-row>
 		</b-container>
 
-		<!-- Автоматизируй -->
-		<b-container class="automation">
-			<b-row>
-				<b-col lg="10" xl="8">
-					<h2 class="mb-3 mb-lg-4">
-						Автоматизируйте продажи с&nbsp;помощью триггерных сообщений, основанных на&nbsp;действиях пользователей
-					</h2>
-				</b-col>
-			</b-row>
-			<b-row class="automation__box">
-				<b-col class="order-lg-2">
-					<div class="h4 mt-lg-5">
-						Подготовьте чат-сообщение, поп-ап, письмо, лид-бота или что-то более хитрое
-					</div>
-					<p>
-						Настраивайте разные типы сообщений, с&nbsp;персонализацией, с&nbsp;классным дизайном, с&nbsp;возможностью выбрать из&nbsp;десятка шаблонов. 
-					</p>
-					<g-image class="automation__box__pic-small automation__box__pic-small-1 d-none d-xl-block" src="@/assets/images/components/small-7.png" width="200" />
-				</b-col>
-				<b-col cols="12" lg="8" class="order-lg-1">
-					<g-image class="automation__box__pic" src="@/assets/images/automation-marketing/automation-1.png" width="760" />
-				</b-col>
-			</b-row>
-			<b-row class="automation__box">
-				<b-col class="order-lg-2">
-					<div class="h4 mt-lg-5">
-						Выберите триггер, событие/время
-					</div>
-					<p>
-						Один или несколько триггеров запускают автоматическое сообщение
-					</p>
-					<p>
-						Таймаут для отложенной отправки сообщения
-					</p>
-					<g-image class="automation__box__pic-small automation__box__pic-small-2 d-none d-xl-block" src="@/assets/images/components/small-10.png" width="150" />
-				</b-col>
-				<b-col cols="12" lg="8" class="order-lg-1">
-					<g-image class="automation__box__pic" src="@/assets/images/automation-marketing/automation-2.png" width="760" />
-				</b-col>
-			</b-row>
-			<b-row class="automation__box">
-				<b-col class="order-lg-2">
-					<div class="h4 mt-lg-5">
-						Определите аудиторию
-					</div>
-					<p>
-						Определение аудитории, которой показывать автоматическое сообщение
-					</p>
-					<g-image class="automation__box__pic-small automation__box__pic-small-3 d-none d-xl-block" src="@/assets/images/components/small-11.png" width="150" />
-				</b-col>
-				<b-col cols="12" lg="8" class="order-lg-1">
-					<g-image class="automation__box__pic" src="@/assets/images/automation-marketing/automation-3.png" width="760" />
-				</b-col>
-			</b-row>
-			<b-row class="automation__box">
-				<b-col class="order-lg-2">
-					<div class="h4 mt-lg-5">
-						Результаты автоматизации
-					</div>
-					<p>
-						Подробная статистика по&nbsp;каждому сообщению поможет контролировать и&nbsp;улучшать результаты автоматизации маркетинга
-					</p>
-					<g-image class="automation__box__pic-small automation__box__pic-small-4 d-none d-xl-block" src="@/assets/images/components/small-8.png" width="200" />
-				</b-col>
-				<b-col cols="12" lg="8" class="order-lg-1">
-					<g-image class="automation__box__pic" src="@/assets/images/automation-marketing/automation-4.png" width="760" />
-				</b-col>
-			</b-row>
-		</b-container>
+		
 
-		<!-- Анализируй -->
-		<b-container class="analize outline-tabs">
-			<b-row>
-				<b-col lg="10" xl="8">
-					<h2>
-						Анализируйте эффективность автосообщений и&nbsp;проводите А/В тесты
-					</h2>
-				</b-col>
-			</b-row>
-			<b-row>
-				<b-col cols-12>
-					<b-tabs pills class="mt-3 mt-lg-4">
-						<b-tab title="Воронки" active lazy>
-							<div class="analize__box p-4 p-md-5 mt-4 text-center">
-								<p class="pb-2">
-									Постройте воронку своего бизнеса, чтобы найти узкие места
-								</p>
-								<g-image src="@/assets/images/automation-marketing/analize-1.png" width="760" height="617" />
-							</div>
-						</b-tab>
-						<b-tab title="А/Б тесты" lazy>
-							<div class="analize__box p-4 p-md-5 mt-4 text-center">
-								<p>
-									Постройте воронку своего бизнеса, чтобы найти узкие места
-								</p>
-								<g-image src="@/assets/images/automation-marketing/analize-2.png" width="760" height="617" />
-							</div>
-						</b-tab>
-					</b-tabs>
-				</b-col>
-			</b-row>
-		</b-container>
-
-		<Integrations />
+		<Pipeline title="Автоворонка увеличивает конверсию на каждом этапе" />
 
 		<Cases />
 
 		<Study />
-
-		<!-- Регистрация -->
-		<b-container>
-			<b-col class="p-4" style="background-color: #FFF3E6; border-radius: 5px;">
-				<b-row class="align-items-center justify-content-center">
-					<b-col lg="6">
-						<g-image src="@/assets/images/components/medium-2.png" width="494" alt="Регистрация в сервисе" title="Поехали!" style="max-width: 100%" />
-					</b-col>
-					<b-col lg="6">
-						<div class="h1 mb-4">Регистрация в&nbsp;сервисе</div>
-						<RegistrationForm text="14 дней бесплатно" />
-					</b-col>
-				</b-row>
-			</b-col>
-		</b-container>
+		
+		<Logos />
 
 	</Layout>
 </template>
 
 <script>
-	import RegistrationForm from '~/components/Forms/RegistrationForm.vue'
+	import Pipeline 		from '~/components/Pipeline.vue'
 	import Cases 			from '~/components/Cases/Cases.vue'
-	import Integrations 	from '~/components/Integrations.vue'
 	import Study 			from '~/components/Study.vue'
+	import Logos 			from '~/components/Logos.vue'
 
 	export default {
 		components: {
-			RegistrationForm,
+			Pipeline,
 			Cases,
-			Integrations,
-			Study
+			Study,
+			Logos
 		},
 
 		//Делаем в HEAD
@@ -819,181 +213,44 @@
 		.hero {
 			&__pic {
 				position: absolute;
-				top: -50px;
-				left: 50%;
-				z-index: -1;
+				z-index: 0;
+				top: 50%;
+				left: 60%;
+				margin-top: -222px;
 			}
 		}
-
-		.tasks {
-			.col-6 {
-				margin-top: 20px;
-				margin-bottom: 20px;
+		
+		.hard {
+			.col-md-6 {
+				margin-top: 1.5rem;
+				margin-bottom: 1rem;
 			}
 			&__box {
-				border-radius: 5px;
+				padding: 20px;
 				height: 100%;
-				padding: 20px 10px 5px 10px;
-				&-ecom {
-					background-color: #FFF7EC;
-				}
-				&-saas {
-					background-color: #F8F8FF;
-				}
+				min-height: 12rem;
+				border-radius: 5px;
 			}
 		}
 
-		.pipeline {
+		.success {
 			img {
 				max-width: 100%;
-			}
-			&__step {
-				position: relative;
-				
-				&__number {
-					color: #FF6600;
-					font-size: 32px;
-					line-height: 1.8rem;
-				}
-			}
-			&__all {
-				position: absolute;
-				z-index: -1;
-				bottom: 140px;
-				max-width: 920px !important;
-			}
-		}
-
-		.data {
-			video {
-				max-width: 100%;
 				border-radius: 5px;
 			}
 		}
 
-		.collect {
-			.col-6 {
-				margin-top: 20px;
-				margin-bottom: 20px;
-			}
-			&__box {
-				background-color: #F8F8FF;
-				border-radius: 5px;
-				height: 100%;
-				img {
-					max-width: 100%;
-				}
-			}
-		}
-
-		.automation {
-			&__box {
-				margin-bottom: 6rem;
-				&__pic {
-					border-radius: 5px;
-					max-width: 100%;
-				}
-				&__pic-small {
-					float: right;
-					margin-top: 3rem;
-				}
-			}
-		}
-
-		.analize {
-			&__box {
-				background-color: #F8F8FF;
-				border-radius: 5px;
-				img {
-					max-width: 100%;
-				}
-			}
+		.blue {
+			background-color: #F5F6FE;
 		}
 
 		@media (max-width: 575.98px) {
-			.tasks {
-				&__box {
-					img {
-						width: inherit;
-						height: 60px;
-					}
-					p {
-						font-size: 0.875rem;
-						line-height: 1.5rem;
-					}
-				}
-			}
+			
 		}
 		@media (max-width: 767.98px) {
-			.hero {
-				&__pic {
-					left: 20%;
-				}
-			}
-			.tasks , .collect {
-				.col-6 {
-					margin-top: 10px;
-					margin-bottom: 10px;
-					padding-left: 10px;
-					padding-right: 10px;
-				}
-			}
-			.automation {
-				&__box {
-					margin-bottom: 3rem;
-				}
-			}
-		}
-		@media (min-width: 992px) {
-			.hero {
-				&__pic {
-					left: 30%;
-				}
-			}
-			.pipeline {
-				&__step {
-					&-saas {
-						padding-bottom: 450px;
-					}
-					&-ecom {
-						padding-bottom: 450px;
-					}
-					.text-lg-center {
-						position: absolute;
-						bottom: 0;
-						width: calc(100% - 30px);
-						margin-left: -20px;
-					}
-				}
-			}
-		}
-		@media (min-width: 1200px) {
-			.hero {
-				&__pic {
-					left: 40%;
-				}
-			}
-			.pipeline {
-				&__step {
-					&-saas {
-						padding-bottom: 420px;
-					}
-					&-ecom {
-						padding-bottom: 395px;
-					}
-				}
-				&__all {
-					left: 20px;
-					max-width: 100% !important;
-				}
-			}
-		}
-		@media (min-width: 1440px) {
-			.hero {
-				&__pic {
-					top: 20px;
-					left: 50%;
-				}
+			.hard .col-md-6 {
+				margin-top: 1rem;
+				margin-bottom: 0.5rem;
 			}
 		}
 	}

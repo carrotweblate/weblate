@@ -31,7 +31,8 @@
 			<b-row>
 				<b-col id="sale" lg="6" class="mb-5 mb-lg-0">
 					<div class="sale__box">
-						<g-image class="sale__box__pic mb-4" src="@/assets/images/newyear2021/sale-1.png" width="281" height="264" alt="Подписка на 12 месяцев с удвоенной скидкой − 40%" />
+						<g-image class="sale__box__pic mb-4 no-retina" src="@/assets/images/newyear2021/sale-1.png" width="281" height="264" alt="Подписка на 12 месяцев с удвоенной скидкой − 40%" />
+						<g-image class="sale__box__pic mb-4 retina" src="@/assets/images/newyear2021/sale-1.png" width="562" height="528" alt="Подписка на 12 месяцев с удвоенной скидкой − 40%" style="max-width: 281px;" />
 						<div class="sale__box__title h3 mb-3">
 							Подписка на&nbsp;12&nbsp;месяцев с&nbsp;удвоенной скидкой &minus; 40% 
 						</div>
@@ -48,7 +49,8 @@
 				</b-col>
 				<b-col id="certificate" lg="6">
 					<div class="sale__box">
-						<g-image class="sale__box__pic mb-4" src="@/assets/images/newyear2021/sale-2.png" width="314" height="264" alt="Сертификат на годовую подписку по новогодней цене" />
+						<g-image class="sale__box__pic mb-4 no-retina" src="@/assets/images/newyear2021/sale-2.png" width="314" height="264" alt="Сертификат на годовую подписку по новогодней цене" />
+						<g-image class="sale__box__pic mb-4 retina" src="@/assets/images/newyear2021/sale-2.png" width="628" height="528" alt="Сертификат на годовую подписку по новогодней цене" style="max-width: 314px;" />
 						<div class="sale__box__title h3 mb-3">
 							Сертификат на&nbsp;годовую подписку по&nbsp;новогодней цене
 						</div>
@@ -131,6 +133,7 @@
 			</b-row>
 		</b-container>
 
+		<!-- Важные детали -->
 		<b-container class="details">
 			<b-row>
 				<b-col cols="12">
