@@ -209,7 +209,7 @@
 </script>
 
 <style lang="scss">
-	.introduction-carrotquest {
+	.introduction-carrotquest-page {
 		.hero {
 			&__pic {
 				position: absolute;
