@@ -210,7 +210,7 @@
 		}
 
 		.blue {
-			background-color: #EAEAFC;
+			background-color: #F5F6FE;
 		}
 
 		@media (min-width: 992px) {

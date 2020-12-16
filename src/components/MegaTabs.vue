@@ -24,7 +24,7 @@
 						</b-embed>
 						<!-- Изображение -->
 						<g-image v-else
-							:src="require(`!!assets-loader?width=720&height=540&fit=contain&background=#F5F6FE!@/assets/images/components/${item.pic}`)"
+							:src="require(`!!assets-loader?width=720&height=540&fit=contain&background=transparent!@/assets/images/components/${item.pic}`)"
 							:alt="item.title"
 						/>
 					</b-tab>
