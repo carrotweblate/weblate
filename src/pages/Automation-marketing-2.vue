@@ -567,7 +567,10 @@
 			</b-row>
 			<b-row>
 				<b-col>
-					<g-image src="@/assets/images/components/11.png" width="1100" alt="Автоматизация маркетинга основана на данных о действиях пользователя" />
+					<video type="video" autoplay loop muted playsinline>
+						<source src="/assets/video/components/3.webm" type="video/webm">
+						<source src="/assets/video/components/3.mp4" type="video/mp4">
+					</video>
 				</b-col>
 			</b-row>
 		</b-container>
@@ -863,7 +866,7 @@
 		}
 
 		.data {
-			img {
+			video {
 				max-width: 100%;
 				border-radius: 5px;
 			}
