@@ -508,11 +508,11 @@
 					</ul>
 				</b-col>
 				<b-col lg="4" class="mb-5 mb-lg-0 order-lg-4">
-					<a href="/docs/map-ecom.pdf">
+					<a href="/assets/docs/map-ecom.pdf">
 						<g-image class="mb-3 no-retina" src="@/assets/images/components/map-ecom.png" width="340" alt="Для интернет-магазинов" />
 						<g-image class="mb-3 retina" src="@/assets/images/components/map-ecom.png" width="680" alt="Для интернет-магазинов" />
 					</a>
-					<a href="/docs/map-ecom.pdf">
+					<a href="/assets/docs/map-ecom.pdf">
 						<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M18 18L24 24" stroke="#FF6600"/>
 							<circle cx="9.5" cy="9.5" r="9" stroke="#FF6600"/>
@@ -535,11 +535,11 @@
 					</ul>
 				</b-col>
 				<b-col lg="4" class="mb-5 mb-lg-0 order-lg-5">
-					<a href="/docs/map-saas.pdf">
+					<a href="/assets/docs/map-saas.pdf">
 						<g-image class="mb-3 no-retina" src="@/assets/images/components/map-saas.png" width="340" alt="Для онлайн-сервисов" />
 						<g-image class="mb-3 retina" src="@/assets/images/components/map-saas.png" width="680" alt="Для онлайн-сервисов" />
 					</a>
-					<a href="@/docs/map-saas.pdf">
+					<a href="/assets/docs/map-saas.pdf">
 						<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M18 18L24 24" stroke="#FF6600"/>
 							<circle cx="9.5" cy="9.5" r="9" stroke="#FF6600"/>
@@ -561,11 +561,11 @@
 					</ul>
 				</b-col>
 				<b-col lg="4" class="order-lg-6">
-					<a href="/docs/map-ecom-bot.pdf">
+					<a href="/assets/docs/map-ecom-bot.pdf">
 						<g-image class="mb-3 no-retina" src="@/assets/images/components/map-ecom-bot.png" width="340" alt="Для интернет-магазинов с использованием чат-бота на сайте" />
 						<g-image class="mb-3 retina" src="@/assets/images/components/map-ecom-bot.png" width="680" alt="Для интернет-магазинов с использованием чат-бота на сайте" />
 					</a>
-					<a href="/docs/map-ecom-bot.pdf">
+					<a href="/assets/docs/map-ecom-bot.pdf">
 						<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M18 18L24 24" stroke="#FF6600"/>
 							<circle cx="9.5" cy="9.5" r="9" stroke="#FF6600"/>
