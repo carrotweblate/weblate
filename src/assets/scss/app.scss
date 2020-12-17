@@ -159,6 +159,30 @@ a.box {
 
 
 
+//Списки
+.text {
+	ul {
+		padding-left: 1rem;
+		li {
+			margin: 0.5rem 0;
+			list-style-type: none;
+			&::before {
+				display: block;
+				position: absolute;
+				content: " ";
+				width: 0.5rem;
+				height: 0.5rem;
+				background-color: #FF6600;
+				border-radius: 0.5rem;
+				margin-top: 0.55rem;
+				margin-left: -1rem;
+			}
+		}
+	}
+}
+
+
+
 //Формы
 form {
 	.input-group {
