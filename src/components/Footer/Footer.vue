@@ -153,7 +153,7 @@
 							to: '/automation-marketing'
 						},
 						{
-							title: 'А/Б тесты автосообщений',
+							title: 'А/Б тесты триггерных сообщений',
 							to: '/ab-tests/'
 						},
 						{

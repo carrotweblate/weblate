@@ -15,8 +15,8 @@
 							<b-button href="123" variant="primary" class="px-4">Отправить заявку на&nbsp;внедрение</b-button>
 						</b-col>
 					</b-row>
-					<g-image class="hero__pic d-none d-lg-block no-retina" src="@/assets/images/introduction-carrotquest/hero.png" width="436" quality="100" alt=" " />
-					<g-image class="hero__pic d-none d-lg-block retina" src="@/assets/images/introduction-carrotquest/hero.png" width="872" quality="100" alt=" " style="max-width: 436px;" />
+					<g-image class="hero__pic d-none d-lg-block no-retina" src="@/assets/images/introduction-carrotquest/hero.png" width="436" quality="100" alt="Hero" />
+					<g-image class="hero__pic d-none d-lg-block retina" src="@/assets/images/introduction-carrotquest/hero.png" width="872" quality="100" alt="Hero" style="max-width: 436px;" />
 				</b-container>
 			</div>
 		</div>
@@ -133,7 +133,7 @@
 					</p>
 					<ul>
 						<li>Помогаем объединить все каналы коммуникаций в&nbsp;одном месте</li>
-						<li>Используем триггерные автосообщения в&nbsp;чате для повышения конверсии в&nbsp;начало диалога</li>
+						<li>Используем триггерные сообщения в&nbsp;чате для повышения конверсии в&nbsp;начало диалога</li>
 						<li>Консультируем по&nbsp;внедрению чата в&nbsp;компанию, учитывая бизнес-процессы</li>
 					</ul>
 				</b-col>
@@ -391,12 +391,12 @@
 				<b-row class="plans__steps align-items-center">
 					<b-col>
 						<p>
-							Полная настройка автосообщений по&nbsp;сценариям
+							Полная настройка триггерных сообщений по&nbsp;сценариям
 						</p>
 					</b-col>
 					<b-col class="text-center">
 						<p>
-							До&nbsp;15&nbsp;автосообщений
+							До&nbsp;15&nbsp;триггерных сообщений
 						</p>
 					</b-col>
 					<b-col class="text-center">

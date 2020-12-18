@@ -6,7 +6,7 @@
 
 
 
-		<b-modal ref="open-modal-nte" hide-footer title="Получить гайд на email">
+		<b-modal ref="open-modal-nte" hide-footer title="Получить на email">
 			<b-form v-on:submit.prevent="download">
 				
 				<b-form-input 
@@ -35,7 +35,7 @@
 					type="submit" 
 					variant="primary" 
 					class="px-3 py-2 mt-4">
-					Скачать
+					Отправить
 				</b-button>
 				
 			</b-form>
@@ -69,7 +69,9 @@
 			return {
 				name: '',
 				phone: '',
-				email: ''
+				email: '',
+
+				event: ''
 			};
 		},
 		methods: {
@@ -88,7 +90,8 @@
 					'Email': this.email,
 					'url': location.host + location.pathname
 				})
-				carrotquest.track('Скачал гайд по квалификации с лендинга')
+				carrotquest.track(this.event)
+				console.log(this.event)
 
 				dataLayer.push({ event: 'UAevent', eventCategory: 'leads', eventAction: 'phone', eventLabel: location.host + location.pathname })
 				fbq('trackCustom', 'get_demo', {page: location.pathname})
@@ -123,8 +126,11 @@
 			if ( document.querySelector('a[href*="open-modal-nte"]') ) {
 				document.querySelectorAll('a[href*="open-modal-nte"]').forEach(function(item) {
 					item.addEventListener('click', function(e) {
-						e.preventDefault()
 						this.$refs['open-modal-nte'].show()
+
+						let addr = new URL(e.srcElement.href.replace('#open-modal-nte' , ''))
+						this.event = addr.searchParams.get('cqe')
+
 					}.bind(this))
 				}.bind(this))
 			}

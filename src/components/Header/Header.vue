@@ -117,7 +117,7 @@
 							href: '/automation-marketing'
 						},
 						{
-							title: 'А/Б тесты автосообщений',
+							title: 'А/Б тесты триггерных сообщений',
 							href: '/ab-tests/'
 						},
 						{

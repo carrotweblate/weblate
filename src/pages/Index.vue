@@ -18,7 +18,10 @@
 			</p>
 			<p>
 				<g-link to="/qualification-guide/">Гайд</g-link>
-			</p>			
+			</p>
+			<p>
+				<g-link to="/saas-book/">Книга SaaS</g-link>
+			</p>
 		</b-container>
 
 	</Layout>

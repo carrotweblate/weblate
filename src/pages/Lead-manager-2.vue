@@ -109,22 +109,78 @@
 
 		<Cases />
 
+		<!-- Логотипы по отрослям -->
+		<b-container class="logostabs outline-tabs">
+			<b-row>
+				<b-col lg="10" xl="8">
+					<h2>
+						Carrot quest полезен для разных сегментов бизнеса
+					</h2>
+				</b-col>
+			</b-row>
+			<b-row>
+				<b-col cols-12>
+					<b-tabs pills class="mt-3 mt-lg-4">
+						<b-tab title="eCommerce" active lazy>
+							<div class="logostabs__box mt-4">
+								<img src="/assets/images/logos/loreal.png" alt="loreal" />
+								<img src="/assets/images/logos/planeta-zdorovya.svg" alt="planeta-zdorovya" />
+								<img src="/assets/images/logos/armani-beauty.svg" alt="armani-beauty" />
+								<img src="/assets/images/logos/maria.svg" alt="maria" />
+								<img src="/assets/images/logos/lancome.png" alt="lancome" />
+								<img src="/assets/images/logos/aquafour.svg" alt="aquafour" />
+								<img src="/assets/images/logos/postel_deluxe.png" alt="postel_deluxe" />
+								<img src="/assets/images/logos/lancome.png" alt="lancome" />
+							</div>
+						</b-tab>
+						<b-tab title="SaaS" lazy>
+							<div class="logostabs__box mt-4">
+								<img src="/assets/images/logos/timepad.png" alt="timepad" />
+								<img src="/assets/images/logos/domru.svg" alt="domru" />
+								<img src="/assets/images/logos/instaplus.svg" alt="instaplus" />
+								<img src="/assets/images/logos/kontur.svg" alt="kontur" />
+								<img src="/assets/images/logos/Sape.png" alt="Sape" />
+							</div>
+						</b-tab>
+						<b-tab title="Автодилеры и недвижимость" lazy>
+							<div class="logostabs__box mt-4">
+								<img src="/assets/images/logos/samolet.svg" alt="samolet" />
+								<img src="/assets/images/logos/talan.png" alt="talan" />
+								<img src="/assets/images/logos/jaguar.svg" alt="jaguar" />
+								<img src="/assets/images/logos/avis-red.svg" alt="avis" />
+								<img src="/assets/images/logos/Land_Rover.svg" alt="Land_Rover" />
+							</div>
+						</b-tab>
+						<b-tab title="B2B, банки и страховые компании" lazy>
+							<div class="logostabs__box mt-4">
+								<img src="/assets/images/logos/modulbank.svg" alt="modulbank" />
+								<img src="/assets/images/logos/bank-spb.svg" alt="bank-spb" />
+								<img src="/assets/images/logos/R-broker.png" alt="R-broker" />
+								<img src="/assets/images/logos/bks.svg" alt="bks" />
+								<img src="/assets/images/logos/Pervofd.png" alt="__Pervofd___" />
+							</div>
+						</b-tab>
+					</b-tabs>
+				</b-col>
+			</b-row>
+		</b-container>
+
+		<Study />
+
 		<!-- Регистрация -->
 		<b-container>
 			<b-col class="p-4" style="background-color: #FFF3E6; border-radius: 5px;">
 				<b-row class="align-items-center justify-content-center">
 					<b-col lg="6">
-						<g-image src="~/assets/images/components/medium-2.png" width="494" alt="Регистрация в сервисе" title="Поехали!" style="max-width: 100%" />
+						<div class="h1 mb-4">Зарегистрируйтесь и&nbsp;получите 14&nbsp;дней бесплатно</div>
+						<RegistrationForm button="Зарегистрироваться" />
 					</b-col>
 					<b-col lg="6">
-						<div class="h1 mb-4">Регистрация в&nbsp;сервисе</div>
-						<RegistrationForm text="14 дней бесплатно" />
+						<g-image src="~/assets/images/components/medium-2.png" width="494" alt="Регистрация в сервисе" title="Поехали!" style="max-width: 100%" />
 					</b-col>
 				</b-row>
 			</b-col>
 		</b-container>
-
-		<Study />
 
 	</Layout>
 </template>
@@ -209,10 +265,26 @@
 			}
 		}
 
+		.logostabs {
+			img {
+				max-width: 140px;
+				max-height: 100px;
+				margin: 2rem 4rem 2rem 0;
+			}
+		}
+
 		.blue {
 			background-color: #F5F6FE;
 		}
 
+		@media (max-width: 575.98px) {
+			.logostabs {
+				img {
+					max-width: calc(50% - 2rem);
+					margin: 1rem;
+				}
+			}
+		}
 		@media (min-width: 992px) {
 			.hero {
 				&__pic {
@@ -231,7 +303,7 @@
 			.hero {
 				&__pic {
 					top: 0;
-					left: 50%;
+					left: 40%;
 				}
 			}
 		}

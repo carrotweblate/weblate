@@ -14,8 +14,8 @@
 						<RegistrationForm text="14 дней бесплатно. Регистрируйтесь" />
 					</b-col>
 				</b-row>
-				<g-image class="hero__pic d-none d-lg-block no-retina" src="@/assets/images/automation-marketing/hero.png" width="909" alt=" " />
-				<g-image class="hero__pic d-none d-lg-block retina" src="@/assets/images/automation-marketing/hero.png" width="1818" alt=" " style="max-width: 909px;" />
+				<g-image class="hero__pic d-none d-lg-block no-retina" src="@/assets/images/automation-marketing/hero.png" width="909" quality="100" alt="hero" />
+				<g-image class="hero__pic d-none d-lg-block retina" src="@/assets/images/automation-marketing/hero.png" width="1818" quality="100" style="max-width: 909px;" alt="hero" />
 				<g-image class="hero__pic d-lg-none" src="@/assets/images/automation-marketing/hero-mobile.png" width="800" alt=" " />
 			</b-container>
 		</div>
@@ -41,7 +41,8 @@
 						</b-col>
 						<b-col cols="6">
 							<div class="tasks__box tasks__box-ecom text-center">
-								<g-image class="tasks__box__pic mb-4" src="@/assets/images/components/small-13.png" height="90" fit="inside" alt="Увеличение конверсии в лиды" />
+								<g-image class="tasks__box__pic mb-4 no-retina" src="@/assets/images/components/small-13.png" height="90" fit="inside" alt="Увеличение конверсии в лиды" />
+								<g-image class="tasks__box__pic mb-4 retina" src="@/assets/images/components/small-13.png" height="180" style="max-height:90px;" fit="inside" alt="Увеличение конверсии в лиды" />
 								<p>
 									Увеличение конверсии в&nbsp;лиды
 								</p>
@@ -49,7 +50,8 @@
 						</b-col>
 						<b-col cols="6">
 							<div class="tasks__box tasks__box-ecom text-center">
-								<g-image class="tasks__box__pic mb-4" src="@/assets/images/components/small-15.png" height="90" fit="inside" alt="Увеличение конверсии в заказы" />
+								<g-image class="tasks__box__pic mb-4 no-retina" src="@/assets/images/components/small-15.png" height="90" fit="inside" alt="Увеличение конверсии в заказы" />
+								<g-image class="tasks__box__pic mb-4 retina" src="@/assets/images/components/small-15.png" height="180" style="max-height:90px;" fit="inside" alt="Увеличение конверсии в заказы" />
 								<p>
 									Увеличение конверсии в&nbsp;заказы
 								</p>
@@ -57,7 +59,8 @@
 						</b-col>
 						<b-col cols="6">
 							<div class="tasks__box tasks__box-ecom text-center">
-								<g-image class="tasks__box__pic mb-4" src="@/assets/images/components/small-16.png" height="90" fit="inside" alt="Увеличение количества первых покупок" />
+								<g-image class="tasks__box__pic mb-4 no-retina" src="@/assets/images/components/small-16.png" height="90" fit="inside" alt="Увеличение количества первых покупок" />
+								<g-image class="tasks__box__pic mb-4 retina" src="@/assets/images/components/small-16.png" height="180" style="max-height:90px;" fit="inside" alt="Увеличение количества первых покупок" />
 								<p>
 									Увеличение количества первых покупок
 								</p>
@@ -65,7 +68,8 @@
 						</b-col>
 						<b-col cols="6">
 							<div class="tasks__box tasks__box-ecom text-center">
-								<g-image class="tasks__box__pic mb-4" src="@/assets/images/components/small-17.png" height="90" fit="inside" alt="Увеличение количества первых покупок" />
+								<g-image class="tasks__box__pic mb-4 no-retina" src="@/assets/images/components/small-17.png" height="90" fit="inside" alt="Увеличение количества повторных покупок" />
+								<g-image class="tasks__box__pic mb-4 retina" src="@/assets/images/components/small-17.png" height="180" style="max-height:90px;" fit="inside" alt="Увеличение количества повторных покупок" />
 								<p>
 									Увеличение количества повторных покупок
 								</p>
@@ -84,7 +88,8 @@
 						</b-col>
 						<b-col cols="6" class="h-50">
 							<div class="tasks__box tasks__box-saas text-center">
-								<g-image class="tasks__box__pic mb-4" src="@/assets/images/components/small-12.png" height="90" fit="inside" alt="Увеличение LTV" />
+								<g-image class="tasks__box__pic mb-4 no-retina" src="@/assets/images/components/small-12.png" height="90" fit="inside" alt="Увеличение LTV" />
+								<g-image class="tasks__box__pic mb-4 retina" src="@/assets/images/components/small-12.png" height="180" style="max-height:90px;" fit="inside" alt="Увеличение LTV" />
 								<p>
 									Увеличение LTV
 									<br><br>
@@ -93,15 +98,17 @@
 						</b-col>
 						<b-col cols="6">
 							<div class="tasks__box tasks__box-saas text-center">
-								<g-image class="tasks__box__pic mb-4" src="@/assets/images/components/small-18.png" height="90" fit="inside" alt="Увеличение ретеншн" />
+								<g-image class="tasks__box__pic mb-4 no-retina" src="@/assets/images/components/small-18.png" height="90" fit="inside" alt="Увеличение Retention" />
+								<g-image class="tasks__box__pic mb-4 retina" src="@/assets/images/components/small-18.png" height="180" style="max-height:90px;" fit="inside" alt="Увеличение Retention" />
 								<p>
-									Увеличение ретеншн
+									Увеличение Retention
 								</p>
 							</div>
 						</b-col>
 						<b-col cols="6">
 							<div class="tasks__box tasks__box-saas text-center">
-								<g-image class="tasks__box__pic mb-4" src="@/assets/images/components/small-14.png" width="120" height="90" fit="contain" background="#F8F8FF" alt="Увеличение количества регистраций" />
+								<g-image class="tasks__box__pic mb-4 no-retina" src="@/assets/images/components/small-14.png" width="120" height="90" fit="contain" background="#F8F8FF" alt="Увеличение количества регистраций" />
+								<g-image class="tasks__box__pic mb-4 retina" src="@/assets/images/components/small-14.png" width="240" height="180" fit="contain" background="#F8F8FF" style="max-height:90px;" alt="Увеличение количества регистраций" />
 								<p>
 									Увеличение количества регистраций
 								</p>
@@ -109,7 +116,8 @@
 						</b-col>
 						<b-col cols="6">
 							<div class="tasks__box tasks__box-saas text-center">
-								<g-image class="tasks__box__pic mb-4" src="@/assets/images/components/small-19.png" width="120" height="90" fit="contain" background="#F8F8FF"  alt="Оптимизация онбординга пользователей" />
+								<g-image class="tasks__box__pic mb-4 no-retina" src="@/assets/images/components/small-19.png" width="120" height="90" fit="contain" background="#F8F8FF" alt="Оптимизация онбординга пользователей" />
+								<g-image class="tasks__box__pic mb-4 retina" src="@/assets/images/components/small-19.png" width="240" height="180" fit="contain" background="#F8F8FF" style="max-height:90px;" alt="Оптимизация онбординга пользователей" />
 								<p>
 									Оптимизация онбординга пользователей
 								</p>
@@ -121,7 +129,7 @@
 		</b-container>
 
 		<!-- Автоваронка -->
-		<Pipeline title="Анализируйте эффективность автосообщений и&nbsp;проводите А/В тесты" />
+		<Pipeline title="Анализируйте эффективность триггерных сообщений и&nbsp;проводите А/В тесты" />
 
 		<!-- Данные действий пользователя -->
 		<b-container class="data">
@@ -132,7 +140,7 @@
 					</h2>
 					<p class="mb-3 mb-lg-4">
 						Ваша команда увидит каждую мелочь о&nbsp;клиенте. Это помогает успешно закрывать сделки 
-						и&nbsp;решать вопросы. Собирайте данные, чтобы улучшить автоматизацию маркетинга
+						и&nbsp;решать вопросы пользователей. Собирайте данные, чтобы улучшить автоматизацию маркетинга
 					</p>
 				</b-col>
 			</b-row>
@@ -151,11 +159,11 @@
 			<b-col class="p-4" style="background-color: #FFF3E6; border-radius: 5px;">
 				<b-row class="align-items-center justify-content-center">
 					<b-col lg="6">
-						<g-image src="@/assets/images/components/medium-1.png" width="494" alt="Регистрация в сервисе" title="Поехали!" style="max-width: 100%" />
+						<g-image src="@/assets/images/components/medium-1.png" width="450" alt="Регистрация в сервисе" title="Поехали!" style="max-width: 100%" />
 					</b-col>
 					<b-col lg="6">
-						<h2 class="h1 mb-4">Регистрация в&nbsp;сервисе</h2>
-						<RegistrationForm text="14 дней бесплатно" />
+						<h2 class="h1 mb-4">Зарегистрируйтесь и&nbsp;получите 14&nbsp;дней бесплатно</h2>
+						<RegistrationForm button="Зарегистрироваться" />
 					</b-col>
 				</b-row>
 			</b-col>
@@ -165,12 +173,9 @@
 		<b-container class="collect">
 			<b-row>
 				<b-col lg="10" xl="8">
-					<h2 class="mb-3 mb-lg-4">
+					<h2>
 						Собирайте все способы коммуникации вместе
 					</h2>
-					<p>
-						Инструменты для автоматизации маркетинга
-					</p>
 				</b-col>
 			</b-row>
 			<b-row>
@@ -179,15 +184,15 @@
 						<p>
 							Поп-ап окна
 						</p>
-						<g-image src="@/assets/images/automation-marketing/collect-1.svg" height="158" />
+						<g-image src="@/assets/images/automation-marketing/collect-1.svg" height="158" alt="Поп-ап окна" />
 					</a>
 				</b-col>
 				<b-col cols="6" lg="4">
 					<a href="/online-consultant/" class="collect__box box text-center p-4">
 						<p>
-							Через чат на&nbsp;сайте
+							Онлайн-чат на&nbsp;сайте
 						</p>
-						<g-image src="@/assets/images/automation-marketing/collect-2.svg" height="158" />
+						<g-image src="@/assets/images/automation-marketing/collect-2.svg" height="158" alt="Онлайн-чат на сайте" />
 					</a>
 				</b-col>
 				<b-col cols="6" lg="4">
@@ -195,7 +200,7 @@
 						<p>
 							Email-рассылка
 						</p>
-						<g-image src="@/assets/images/automation-marketing/collect-3.svg" height="158" />
+						<g-image src="@/assets/images/automation-marketing/collect-3.svg" height="158" alt="Email-рассылка" />
 					</a>
 				</b-col>
 				<b-col cols="6" lg="4">
@@ -203,15 +208,15 @@
 						<p>
 							Чат-бот
 						</p>
-						<g-image src="@/assets/images/automation-marketing/collect-4.svg" height="158" />
+						<g-image src="@/assets/images/automation-marketing/collect-4.svg" height="158" alt="Чат-бот" />
 					</a>
 				</b-col>
 				<b-col cols="6" lg="4">
 					<div class="collect__box text-center p-4">
 						<p>
-							Sms и&nbsp;звонки
+							SMS и&nbsp;звонки
 						</p>
-						<g-image src="@/assets/images/automation-marketing/collect-5.svg" height="158" />
+						<g-image src="@/assets/images/automation-marketing/collect-5.svg" height="158" alt="SMS и&nbsp;звонки" />
 					</div>
 				</b-col>
 			</b-row>
@@ -229,15 +234,16 @@
 			<b-row class="automation__box">
 				<b-col class="order-lg-2">
 					<h3 class="h4 mt-lg-5">
-						Подготовьте чат-сообщение, поп-ап, письмо, лид-бота или что-то более хитрое
+						Подготовьте сообщения в&nbsp;чат, поп-ап, письмо, лид-бота или что-то более хитрое
 					</h3>
 					<p>
-						Настраивайте разные типы сообщений, с&nbsp;персонализацией, с&nbsp;классным дизайном, с&nbsp;возможностью выбрать из&nbsp;десятка шаблонов. 
+						Настраивайте разные типы сообщений, с&nbsp;персонализацией, с&nbsp;классным дизайном (с&nbsp;десятком готовых шаблонов).
 					</p>
 					<g-image class="automation__box__pic-small automation__box__pic-small-1 d-none d-xl-block" src="@/assets/images/components/small-7.png" width="200" />
 				</b-col>
 				<b-col cols="12" lg="8" class="order-lg-1">
-					<g-image class="automation__box__pic" src="@/assets/images/automation-marketing/automation-1.png" width="760" />
+					<g-image class="automation__box__pic no-retina" src="@/assets/images/automation-marketing/automation-1.png" width="760" quality="100" />
+					<g-image class="automation__box__pic retina" src="@/assets/images/automation-marketing/automation-1.png" width="1520" quality="100" />
 				</b-col>
 			</b-row>
 			<b-row class="automation__box">
@@ -246,7 +252,7 @@
 						Выберите триггер, событие/время
 					</h3>
 					<p>
-						Один или несколько триггеров запускают автоматическое сообщение
+						Один или несколько триггеров запускают триггерное сообщение
 					</p>
 					<p>
 						Таймаут для отложенной отправки сообщения
@@ -254,7 +260,8 @@
 					<g-image class="automation__box__pic-small automation__box__pic-small-2 d-none d-xl-block" src="@/assets/images/components/small-10.png" width="150" />
 				</b-col>
 				<b-col cols="12" lg="8" class="order-lg-1">
-					<g-image class="automation__box__pic" src="@/assets/images/automation-marketing/automation-2.png" width="760" />
+					<g-image class="automation__box__pic no-retina" src="@/assets/images/automation-marketing/automation-2.png" width="760" quality="100" />
+					<g-image class="automation__box__pic retina" src="@/assets/images/automation-marketing/automation-2.png" width="1520" quality="100" />
 				</b-col>
 			</b-row>
 			<b-row class="automation__box">
@@ -268,7 +275,8 @@
 					<g-image class="automation__box__pic-small automation__box__pic-small-3 d-none d-xl-block" src="@/assets/images/components/small-11.png" width="150" />
 				</b-col>
 				<b-col cols="12" lg="8" class="order-lg-1">
-					<g-image class="automation__box__pic" src="@/assets/images/automation-marketing/automation-3.png" width="760" />
+					<g-image class="automation__box__pic no-retina" src="@/assets/images/automation-marketing/automation-3.png" width="760" quality="100" />
+					<g-image class="automation__box__pic retina" src="@/assets/images/automation-marketing/automation-3.png" width="1520" quality="100" />
 				</b-col>
 			</b-row>
 			<b-row class="automation__box">
@@ -282,7 +290,8 @@
 					<g-image class="automation__box__pic-small automation__box__pic-small-4 d-none d-xl-block" src="@/assets/images/components/small-8.png" width="200" />
 				</b-col>
 				<b-col cols="12" lg="8" class="order-lg-1">
-					<g-image class="automation__box__pic" src="@/assets/images/automation-marketing/automation-4.png" width="760" />
+					<g-image class="automation__box__pic no-retina" src="@/assets/images/automation-marketing/automation-4.png" width="760" quality="100" />
+					<g-image class="automation__box__pic retina" src="@/assets/images/automation-marketing/automation-4.png" width="1520" quality="100" />
 				</b-col>
 			</b-row>
 		</b-container>
@@ -292,7 +301,7 @@
 			<b-row>
 				<b-col lg="10" xl="8">
 					<h2>
-						Анализируйте эффективность автосообщений и&nbsp;проводите А/В тесты
+						Анализируйте эффективность триггерных сообщений и&nbsp;проводите А/В тесты
 					</h2>
 				</b-col>
 			</b-row>
@@ -334,8 +343,8 @@
 						<g-image src="@/assets/images/components/medium-2.png" width="494" alt="Регистрация в сервисе" title="Поехали!" style="max-width: 100%" />
 					</b-col>
 					<b-col lg="6">
-						<div class="h1 mb-4">Регистрация в&nbsp;сервисе</div>
-						<RegistrationForm text="14 дней бесплатно" />
+						<div class="h1 mb-4">Запустите автоматизацию маркетинга.&nbsp;14&nbsp;дней бесплатно</div>
+						<RegistrationForm />
 					</b-col>
 				</b-row>
 			</b-col>
@@ -410,6 +419,9 @@
 				}
 				&-saas {
 					background-color: #F8F8FF;
+				}
+				img {
+					width: initial;
 				}
 			}
 		}
