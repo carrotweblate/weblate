@@ -98,7 +98,7 @@
 						},
 						{
 							title: 'eCRM',
-							href: '/lead-manager'
+							href: '/lead-manager/'
 						},
 						{
 							title: 'Онлайн-консультант',
@@ -114,7 +114,7 @@
 						},
 						{
 							title: 'Автоматизация воронки',
-							href: '/automation-marketing'
+							href: '/automation-marketing/'
 						},
 						{
 							title: 'А/Б тесты триггерных сообщений',

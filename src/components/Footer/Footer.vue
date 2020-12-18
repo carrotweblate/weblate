@@ -134,7 +134,7 @@
 						},
 						{
 							title: 'eCRM',
-							to: '/lead-manager'
+							to: '/lead-manager/'
 						},
 						{
 							title: 'Онлайн-консультант',
@@ -150,7 +150,7 @@
 						},
 						{
 							title: 'Автоматизация воронки',
-							to: '/automation-marketing'
+							to: '/automation-marketing/'
 						},
 						{
 							title: 'А/Б тесты триггерных сообщений',
