@@ -126,6 +126,8 @@
 			if ( document.querySelector('a[href*="open-modal-nte"]') ) {
 				document.querySelectorAll('a[href*="open-modal-nte"]').forEach(function(item) {
 					item.addEventListener('click', function(e) {
+						e.preventDefault();
+
 						this.$refs['open-modal-nte'].show()
 
 						let addr = new URL(e.srcElement.href.replace('#open-modal-nte' , ''))

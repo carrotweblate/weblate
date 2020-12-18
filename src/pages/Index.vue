@@ -22,6 +22,9 @@
 			<p>
 				<g-link to="/saas-book/">Книга SaaS</g-link>
 			</p>
+			<p>
+				<g-link to="/email-deliverability/">29 правил</g-link>
+			</p>
 		</b-container>
 
 	</Layout>
