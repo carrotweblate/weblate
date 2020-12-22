@@ -107,6 +107,7 @@
 					<p>
 						В&nbsp;специальной CRM для онлайн-бизнеса в&nbsp;реальном времени сохраняется каждый лид с&nbsp;вашего сайта, со&nbsp;всей историей его действий и&nbsp;коммуникаций с&nbsp;ним, используйте это для дальнейшего общения
 					</p>
+					<b-button v-on:click="showModal" href="#" variant="primary" class="px-4">Хочу решить эту задачу</b-button>
 				</b-col>
 				<b-col lg="8" class="order-lg-2">
 					<g-image src="@/assets/images/introduction-carrotquest/1.png" width="720" quality="100" class="no-retina" alt="Собираем данные о пользователях" />
@@ -125,6 +126,7 @@
 						<li>Проводим А/Б тесты офферов в&nbsp;поп-апах, чтобы увеличить конверсию</li>
 						<li>Стилизуем под ваш дизайн</li>
 					</ul>
+					<b-button v-on:click="showModal" href="#" variant="primary" class="px-4">Хочу решить эту задачу</b-button>
 				</b-col>
 				<b-col lg="8" class="order-lg-1">
 					<g-image src="@/assets/images/introduction-carrotquest/2.png" width="720" quality="100" class="no-retina" alt="Увеличиваемконверсиюна 20-100% с помощью поп-апов" />
@@ -141,6 +143,7 @@
 						<li>Вставляем в&nbsp;письма блоки с&nbsp;похожими/рекомендованными товарами при наличии их&nbsp;на&nbsp;сайте</li>
 						<li>Увеличиваем выручку от&nbsp;email-канала за&nbsp;счет тестирования разных гипотез и&nbsp;А/Б тестов</li>
 					</ul>
+					<b-button v-on:click="showModal" href="#" variant="primary" class="px-4">Хочу решить эту задачу</b-button>
 				</b-col>
 				<b-col lg="8" class="order-lg-2">
 					<g-image src="@/assets/images/introduction-carrotquest/3.png" width="720" quality="100" class="no-retina" alt="Поднимаем ретеншн и повторные визиты с помощью триггерных рассылок" />
@@ -160,6 +163,7 @@
 						<li>Используем триггерные сообщения в&nbsp;чате для повышения конверсии в&nbsp;начало диалога</li>
 						<li>Консультируем по&nbsp;внедрению чата в&nbsp;компанию, учитывая бизнес-процессы</li>
 					</ul>
+					<b-button v-on:click="showModal" href="#" variant="primary" class="px-4">Хочу решить эту задачу</b-button>
 				</b-col>
 				<b-col lg="8" class="order-lg-1">
 					<g-image src="@/assets/images/introduction-carrotquest/4.png" width="720" quality="100" class="no-retina" alt="Настраиваем бизнес-чат на вашем сайте и обучаем команду менеджеров" />
@@ -175,7 +179,7 @@
 						<li>Увеличиваем конверсию в&nbsp;лида на&nbsp;20-100% в&nbsp;зависимости от&nbsp;ниши (по&nbsp;аналогии с&nbsp;поп-апами)</li>
 						<li>Настраиваем лид-бот кампанию для квалификации по&nbsp;различным сегментам</li>
 					</ul>
-					<b-button href="/chatbot/" variant="primary" class="px-4">Хочу решить эту задачу</b-button>
+					<b-button v-on:click="showModal" href="#" variant="primary" class="px-4">Хочу решить эту задачу</b-button>
 				</b-col>
 				<b-col lg="8" class="order-lg-2">
 					<g-image src="@/assets/images/introduction-carrotquest/5.png" width="720" quality="100" class="no-retina" alt="Увеличиваем количество качественных лидов с помощью квалифицирующего лид-бота" />
