@@ -3,44 +3,6 @@
 	<b-container fluid class="Logos">
 		<b-row>
 			<b-col cols="12">
-				<!-- <ClientOnly>
-					<Carousel
-							:items="3"
-							:autoplay="true" 
-							:autoplayTimeout="4000"
-							:autoplayHoverPause="true"
-							:loop="true"
-							:margin="40"
-							:stagePadding="0"
-							:nav="false" 
-							:dots="false"
-							class="d-lg-none"
-					>	
-						<template v-for="item in logos">
-							<img :src="'/assets/images/logos/' + item.pic" :alt="item.pic" :key="item.pic" />
-						</template>
-
-					</Carousel>
-				</ClientOnly>
-				<ClientOnly>
-					<Carousel
-						:items="6"
-						:autoplay="true" 
-						:autoplayTimeout="4000"
-						:autoplayHoverPause="true"
-						:loop="true"
-						:margin="80"
-						:stagePadding="0"
-						:nav="false" 
-						:dots="false"
-						class="d-none d-lg-block"
-					>	
-						<template v-for="item in logos">
-							<img :src="'/assets/images/logos/' + item.pic" :alt="item.pic" :key="item.pic" />
-						</template>
-
-					</Carousel>
-				</ClientOnly> -->
 
 				<ClientOnly>
 					<vue-horizontal-list

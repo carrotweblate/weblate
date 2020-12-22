@@ -5,15 +5,33 @@
 			<div class="hero">
 				<b-container>
 					<b-row class="align-items-center">
-						<b-col lg="6">
+						<b-col lg="8">
 							<h1>
-								Внедрим Carrot quest в&nbsp;ваш бизнес
+								Внедрим автоматизацию маркетинга и&nbsp;продаж для вашего сайта на&nbsp;базе Carrot quest
 							</h1>
 							<p class="py-3">
 								Разработаем и&nbsp;реализуем стратегии коммуникации с&nbsp;вашими пользователями. Увеличим конверсию на&nbsp;каждом этапе воронки
 							</p>
-							<b-button href="123" variant="primary" class="px-4">Отправить заявку на&nbsp;внедрение</b-button>
+							<b-button v-on:click="showModal" href="#" variant="primary" class="px-4">Отправить заявку на&nbsp;внедрение</b-button>
 						</b-col>
+
+						<div class="d-none d-lg-block">
+							<b-col cols="12">
+								<h2>
+									Более 450 проектов запустили с&nbsp;2014 года
+								</h2>
+							</b-col>
+							<div class="hero__cases">
+								<Case v-for="item in cases" :key="item.logo"
+									:number="item.number" 
+									:logo='item.logo'
+									:title="item.title"
+									:text="item.text" 
+									:href="item.href" 
+								/>
+							</div>
+						</div>
+						
 					</b-row>
 					<g-image class="hero__pic d-none d-lg-block no-retina" src="@/assets/images/introduction-carrotquest/hero.png" width="436" quality="100" alt="Hero" />
 					<g-image class="hero__pic d-none d-lg-block retina" src="@/assets/images/introduction-carrotquest/hero.png" width="872" quality="100" alt="Hero" style="max-width: 436px;" />
@@ -66,6 +84,12 @@
 			</b-row>
 		</b-container>
 
+		<Contacts 
+			title="Хотите обсудить свой проект? Свяжитесь с нами"
+			bg="#FFEAD2"
+			consultation
+		/>
+
 		<!-- Как мы решаем эти задачи -->
 		<b-container class="success text">
 			<b-row class="mb-4">
@@ -92,7 +116,7 @@
 			<b-row class="mb-5">
 				<b-col lg="4" class="order-lg-2 mb-3">
 					<h3 class="h4 mb-3">
-						Увеличиваемконверсиюна 20-100% с&nbsp;помощью поп-апов
+						Увеличиваем конверсию на 20-100% с&nbsp;помощью поп-апов
 					</h3>
 					<ul>
 						<li>Эффективность зависит от&nbsp;ниши и&nbsp;текущей проработки форм лидогенерации</li>
@@ -227,6 +251,12 @@
 				</b-col>
 			</b-row>
 		</b-container>
+
+		<Contacts 
+			title="Хотите обсудить свой проект? Свяжитесь с нами"
+			bg="#FFEAD2"
+			consultation
+		/>
 
 		<Pipeline title="Автоворонка увеличивает конверсию на каждом этапе" />
 
@@ -461,7 +491,7 @@
 					<b-col></b-col>
 					<b-col class="text-center">
 						<p>
-							<b-button href="123" variant="primary" class="px-4">Отправить заявку</b-button>
+							<b-button v-on:click="showModal" href="#" variant="primary" class="px-4">Отправить заявку</b-button>
 						</p>
 						<p>
 							<b>Над проектом будут работать:</b> <br />
@@ -470,7 +500,7 @@
 					</b-col>
 					<b-col class="text-center">
 						<p>
-							<b-button href="123" variant="primary" class="px-4">Отправить заявку</b-button>
+							<b-button v-on:click="showModal" href="#" variant="primary" class="px-4">Отправить заявку</b-button>
 						</p>
 						<p>
 							<b>Над проектом будут работать:</b> <br />
@@ -584,18 +614,72 @@
 		
 		<Logos />
 
+		<Contacts 
+			title="Хотите обсудить свой проект? Свяжитесь с нами"
+			bg="#FFEAD2"
+			consultation
+		/>
+
+		<!-- Модалка для заявки на внедрение -->
+		<b-modal ref="open-modal-client" hide-footer title="Оставить заявку на внедрение">
+			<b-form v-on:submit.prevent="modalClient">
+				<b-form-input 
+					placeholder="Имя" 
+					type="text" 
+					required
+					v-model="modalName"
+					class="px-3 py-4"
+				/>
+				<b-form-input 
+					placeholder="Телефон" 
+					type="text" 
+					required
+					v-model="modalPhone"
+					class="px-3 py-4 mt-3"
+				/>
+				<b-form-input 
+					placeholder="Email" 
+					type="email" 
+					required
+					v-model="modalEmail"
+					class="px-3 py-4 mt-3"
+				/>
+				<b-form-input 
+					placeholder="Ваш сайт" 
+					type="text" 
+					required
+					v-model="modalSite"
+					class="px-3 py-4 mt-3"
+				/>
+				<b-button 
+					type="submit" 
+					variant="primary" 
+					class="px-3 py-2 mt-4">
+					Отправить
+				</b-button>
+			</b-form>
+		</b-modal>
+
+		<b-modal ref="suсcess" hide-header hide-footer>
+			Заявка отправлена, в&nbsp;ближайшее время мы&nbsp;свяжемся с&nbsp;вами.
+		</b-modal>
+
 	</Layout>
 </template>
 
 <script>
-	import Pipeline 		from '~/components/Pipeline.vue'
-	import Cases 			from '~/components/Cases/Cases.vue'
-	import Study 			from '~/components/Study.vue'
-	import Logos 			from '~/components/Logos.vue'
+	import Pipeline 			from '~/components/Pipeline.vue'
+	import Case 				from '~/components/Cases/Case.vue'
+	import Contacts 			from '~/components/Contacts.vue'
+	import Cases 				from '~/components/Cases/Cases.vue'
+	import Study 				from '~/components/Study.vue'
+	import Logos 				from '~/components/Logos.vue'
 
 	export default {
 		components: {
 			Pipeline,
+			Case,
+			Contacts,
 			Cases,
 			Study,
 			Logos
@@ -624,18 +708,143 @@
 				]
 			}
 		},
+
+		data() {
+    		return {
+				modalName: '',
+				modalPhone: '',
+				modalEmail: '',
+				modalSite: '',
+				cases: [
+					{ 
+						number: '200-250',
+						logo: 'modulbank.svg',
+						title: 'обращений в чат обрабатывают ежедневно',
+						text: '<p>Carrot quest помогает Модульбанку организовать поддержку и&nbsp;продажи через чат. Благодаря распределению диалогов и&nbsp;объединению каналов в&nbsp;одном месте команда Модульбанка снизила скорость первого ответа до&nbsp;10&nbsp;минут.</p>',
+						href: '/blog/kak-organizovana-sluzhba-podderzhki-v-modulbank-i-pochemu-oni-ne-boyatsya-davat-obeshhaniya-o-skorosti-otveta/'
+					},
+					{ 
+						number: 'На 30%' ,
+						logo: 'domru.svg',
+						title: 'увеличилась конверсия сайта',
+						text: '<p>Carrot&nbsp;quest помогает <a href="https://domru.ru">Дом.ru</a> собирать лиды и&nbsp;увеличивать продажи с&nbsp;помощью триггерных поп-апов, писем и&nbsp;пуш-уведомлений. В&nbsp;ходе работы внедрили больше 49&nbsp;сценариев, а&nbsp;количество заявок увеличилось на&nbsp;30%.</p>',
+						href: '/blog/kejs-kak-dom-ru-uvelichil-konversiyu-sajta-na-30-s-pomoshhyu-carrot-quest/'
+					},
+					{ 
+						number: '31,3%',
+						logo: 'skyshop.svg',
+						title: 'сделали заказ из рассылки с акциями SkyShop',
+						text: '<p>Carrot quest помогает SkyShop найти слабые стороны и пересмотреть способы работы с пользователями. После настройки ручной рассылки с акциями 31,3% пользователя сделали заказ. Еще 20564 пользовался оставили email в поп-апах.</p>',
+						href: '/blog/case_skyshop/'
+					},
+					{ 
+						number: 'На 40%',
+						logo: 'nagorniy.svg',
+						title: 'выросла конверсия сайта',
+						text: '<p>Carrot quest помогает сайту жилого квартала бизнес-класса «Нагорный» увеличивать конверсию на сайте за счет поп-апов. Конверсия сайта выросла с 0.85% до 1,2%.</p>',
+						href: '/blog/case-nagorniy/' 
+					},
+					{ 
+						number: 'на 25%',
+						logo: 'teatr-teatr.svg',
+						title: 'увеличили конверсию в покупку',
+						text: '<p>Carrot quest помогает Театру-Театру квалифицировать и собирать лидов. 1676 пользователей оставили данные о своих предпочтениях. 3809 клиентов совершили повторные покупки.</p>',
+						href: '/blog/case-teatr/' 
+					},
+					{ 
+						number: '78%',
+						logo: 'introvert.png',
+						title: 'конверсия в лида',
+						text: '<p>Carrot quest помогает собирать с помощью сценариев Лидов. Около половины Лидов на сайте собрано с помощью Carrot quest.</p>',
+						href: '/blog/case-nagorniy/' 
+					}
+				],
+			}
+		},
+
+		methods: {
+			showModal() {
+				// e.preventDefault()
+				this.$refs['open-modal-client'].show()
+			},
+			modalClient () {
+				carrotquest.identify([
+					{"op": "update_or_create", "key": "$phone", "value": this.modalPhone},
+					{"op": "update_or_create", "key": "$name", "value": this.modalName},
+					{"op": "update_or_create", "key": "$email", "value": this.modalEmail},
+					{"op": "update_or_create", "key": "Адрес сайта", "value": this.modalSite}
+				])
+				carrotquest.track('Отправил заявку на внедрение' , {
+					'Email': this.modalEmail,
+					'Адрес сайта': this.modalSite,
+					'Имя': this.modalName,
+					'Телефон': this.modalPhone
+				})
+
+				this.$refs['open-modal-client'].hide()
+				this.$refs['suсcess'].show()
+				setTimeout(() => {
+					this.$refs['suсcess'].hide()
+				}, 7000);
+			}
+		},
+
+		mounted() {
+			//Перемешиваем кейсы в HERO
+			this.cases = this.cases.sort(() => Math.random() - 0.5)
+		}
 	}	
 </script>
 
 <style lang="scss">
 	.introduction-carrotquest-page {
 		.hero {
+			min-height: 750px;
 			&__pic {
 				position: absolute;
 				z-index: 0;
-				top: 50%;
+				top: 20px;
 				left: 60%;
-				margin-top: -222px;
+			}
+			&__cases {
+				display: flex;
+				z-index: 1;
+				left: 0;
+				right: 0;
+				overflow-x: auto;
+  				scroll-snap-type: x mandatory;
+				scroll-behavior: smooth;
+ 				-webkit-overflow-scrolling: touch;
+				padding-top: 10px;
+				.box {
+					background-color: #FFF;
+					color: #000;
+					padding: 1rem 1rem 3.5rem;
+					border-radius: 5px;
+					height: 100%;
+				}
+				.row {
+					height: auto;
+				}
+				.col-lg-6 {
+					max-width: 570px;
+					scroll-snap-align: start;
+				}
+				.number {
+					color: #FF6600;
+				}
+				.logo {
+					text-align: right;
+					img {
+						max-width: 100%;
+						max-height: 50px;
+					}
+				}
+				.link {
+					position: absolute;
+					bottom: 1.5rem;
+					color: #FF6600;
+				}
 			}
 		}
 		
@@ -777,6 +986,13 @@
 			}
 		}
 		@media (min-width: 992px) {
+			.hero {
+				padding-bottom: 330px;
+				&__cases {
+					position: absolute;
+					justify-content: center;
+				}
+			}
 			.success {
 				.row.mb-5 {
 					margin-bottom: 6rem !important;

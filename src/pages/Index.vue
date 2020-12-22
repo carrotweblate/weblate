@@ -5,18 +5,6 @@
 			<br>
 			<br>
 			<p>
-				<g-link to="/newyear2021/">2021</g-link>
-			</p>
-			<p>
-				<g-link to="/automation-marketing-2/">Автоматизация</g-link>
-			</p>
-			<p>
-				<g-link to="/lead-manager-2/">eCRM</g-link>
-			</p>
-			<p>
-				<g-link to="/introduction-carrotquest-2/">Внедрение</g-link>
-			</p>
-			<p>
 				<g-link to="/qualification-guide/">Гайд</g-link>
 			</p>
 			<p>

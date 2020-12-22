@@ -3,17 +3,25 @@
 	<!-- Запрос консультации -->
 	<b-container>
 		<b-col class="Contacts" :style=" 'background-color: ' + bg ">
-			<b-row class="align-items-center py-5 py-xl-0">
-				<b-col cols="12" xl="3">
+			<b-row class="align-items-center py-5 py-xl-4">
+				<b-col v-if="pic" cols="12" xl="3">
 					<div class="h3" v-html="title" />
 				</b-col>
-				<b-col cols="6" xl="3" class="d-none d-xl-block">
+				<b-col v-else cols="12" xl="6">
+					<div class="h3" v-html="title" />
+					<div v-if="consultation" class="mt-3 mb-4 mb-lg-0">
+						<MiniConsultationForm />
+					</div>
+				</b-col>
+
+				<b-col v-if="pic" cols="6" xl="3" class="d-none d-xl-block">
 					<g-image
 						:src="require(`!!assets-loader?width=280!@/assets/images/${pic}`)"
 						:alt="alt"
 						:title="alt"
 					/>
 				</b-col>
+
 				<b-col cols="12" lg="8" xl="6">
 					<div class="Contacts__hrefs d-flex">
 						<div class="flex-grow-1 mt-3 mb-4 m-md-0">
@@ -62,8 +70,19 @@
 </template>
 
 <script>
+	import MiniConsultationForm from '~/components/Forms/MiniConsultationForm.vue'
+
 	export default {
-		props: [ 'title' , 'pic' , 'alt' , 'bg' ]
+		props: { 
+			title: String, 
+			pic: String, 
+			alt: String, 
+			bg: String, 
+			consultation: Boolean
+		},
+		components: {
+			MiniConsultationForm,
+		}
 	}
 </script>
 
