@@ -701,7 +701,7 @@
 					},
 					{
 						property: "og:image",
-						content: '/assets/images/cover/introduction-carrotquest.png'
+						content: 'https://www.carrotquest.io/assets/images/cover/introduction-carrotquest.png'
 					},
 				],
 				link: [

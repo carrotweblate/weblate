@@ -213,7 +213,7 @@
 					},
 					{
 						property: "og:image",
-						content: '/assets/images/cover/lead-manager.png'
+						content: 'https://www.carrotquest.io/assets/images/cover/lead-manager.png'
 					},
 				],
 				link: [

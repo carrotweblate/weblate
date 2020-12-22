@@ -287,7 +287,7 @@
 					},
 					{
 						property: "og:image",
-						content: '/assets/images/cover/newyear2021.jpg'
+						content: 'https://www.carrotquest.io/assets/images/cover/newyear2021.jpg'
 					},
 				],
 				link: [

@@ -216,7 +216,7 @@
 					},
 					{
 						property: "og:image",
-						content: '/assets/images/cover/saas.jpg'
+						content: 'https://www.carrotquest.io/assets/images/cover/saas.jpg'
 					},
 				],
 				link: [

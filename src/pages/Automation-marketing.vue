@@ -380,7 +380,7 @@
 					},
 					{
 						property: "og:image",
-						content: '/assets/images/cover/automation-marketing.png'
+						content: 'https://www.carrotquest.io/assets/images/cover/automation-marketing.png'
 					},
 				],
 				link: [
