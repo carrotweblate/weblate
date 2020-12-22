@@ -175,7 +175,7 @@
 						<li>Увеличиваем конверсию в&nbsp;лида на&nbsp;20-100% в&nbsp;зависимости от&nbsp;ниши (по&nbsp;аналогии с&nbsp;поп-апами)</li>
 						<li>Настраиваем лид-бот кампанию для квалификации по&nbsp;различным сегментам</li>
 					</ul>
-					<b-button href="123" variant="primary" class="px-4">Хочу решить эту задачу</b-button>
+					<b-button href="/chatbot/" variant="primary" class="px-4">Хочу решить эту задачу</b-button>
 				</b-col>
 				<b-col lg="8" class="order-lg-2">
 					<g-image src="@/assets/images/introduction-carrotquest/5.png" width="720" quality="100" class="no-retina" alt="Увеличиваем количество качественных лидов с помощью квалифицирующего лид-бота" />
@@ -271,7 +271,7 @@
 						Чтобы проанализировать запущенные сценарии, мы&nbsp;настроим аналитику. По&nbsp;каждому сценарию и&nbsp;по&nbsp;основным показателям сайта создадим воронки. 
 						Наглядность этих воронок поможет и&nbsp;дальше оценивать эффективность и&nbsp;защищать результаты перед коллегами и&nbsp;руководством.
 					</p>
-					<b-button href="123" variant="primary" class="px-4">Посмотреть пример отчета</b-button>
+					<!-- <b-button href="123" variant="primary" class="px-4">Посмотреть пример отчета</b-button> -->
 				</b-col>
 				<b-col lg="6">
 					<g-image src="@/assets/images/introduction-carrotquest/6.png" width="530" class="no-retina" alt="Что вы получаете после внедрения" />

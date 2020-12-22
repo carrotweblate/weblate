@@ -139,7 +139,7 @@
 						},
 						{
 							title: 'Внедрение для крупных компаний',
-							href: '/introduction-carrotquest'
+							href: '/introduction-carrotquest/'
 						}
 					]
 				},
