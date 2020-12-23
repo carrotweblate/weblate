@@ -806,7 +806,7 @@
 				position: absolute;
 				z-index: 0;
 				top: 50%;
-				left: 60%;
+				left: 64%;
 				margin-top: -222px;
 			}
 		}
