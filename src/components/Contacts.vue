@@ -3,7 +3,7 @@
 	<!-- Запрос консультации -->
 	<b-container>
 		<b-col class="Contacts" :style=" 'background-color: ' + bg ">
-			<b-row class="align-items-center py-5 py-xl-4">
+			<b-row class="align-items-center">
 				<b-col v-if="pic" cols="12" xl="3">
 					<div class="h3" v-html="title" />
 				</b-col>
@@ -24,7 +24,7 @@
 
 				<b-col cols="12" lg="8" xl="6">
 					<div class="Contacts__hrefs d-flex">
-						<div class="flex-grow-1 mt-3 mb-4 m-md-0">
+						<div class="flex-grow-1 mt-2 mb-3 m-md-0">
 							Позвоните по телефону:<br>
 							<a href="tel:+74951059169">+7 (495) 105 91 69</a>
 						</div>
@@ -88,6 +88,7 @@
 
 <style lang="scss">
 	.Contacts {
+		padding: 2.5rem;
 		border-radius: 5px;
 		img {
 			max-width: 100%;
@@ -97,6 +98,7 @@
 			text-align: center;
 		}
 		@media (max-width: 767.98px) {
+			padding: 1.25rem;
 			&__hrefs {
 				flex-wrap: wrap;
 				.flex-grow-1 {

@@ -44,6 +44,7 @@ module.exports = {
 				// Manifest Options (https://developer.mozilla.org/en-US/docs/Web/Manifest)
 				manifestPath: 'manifest.json',
 				title: 'Carrot quest',
+				
 				// startUrl: '/',
 				startUrl: '/',
 				display: 'standalone',
@@ -51,8 +52,8 @@ module.exports = {
 				themeColor: '#f60',
 				backgroundColor: '#ffffff',
 				icon: './static/favicon.png',
-				shortName: 'Carrot quest',              // Optional
-				description: 'Инструменты для увеличения продаж на сайтах без привлечения нового трафика',// Optional
+				shortName: 'Carrot quest', // Optional
+				description: 'Инструменты для увеличения продаж на сайтах без привлечения нового трафика', // Optional
 			}
 		},
 		{

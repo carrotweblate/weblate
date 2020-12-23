@@ -13,6 +13,9 @@
 			<p>
 				<g-link to="/email-deliverability/">29 правил</g-link>
 			</p>
+			<p>
+				<g-link to="/study-book/">Книга JTBD</g-link>
+			</p>
 		</b-container>
 
 	</Layout>

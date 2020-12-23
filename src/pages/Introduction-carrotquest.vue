@@ -16,7 +16,7 @@
 						</b-col>
 
 						<div class="d-none d-lg-block">
-							<b-col cols="12">
+							<b-col cols="12" class="mb-4">
 								<h2>
 									Более 450 проектов запустили с&nbsp;2014 года
 								</h2>
@@ -803,7 +803,6 @@
 <style lang="scss">
 	.introduction-carrotquest-page {
 		.hero {
-			min-height: 750px;
 			&__pic {
 				position: absolute;
 				z-index: 0;
@@ -923,7 +922,7 @@
 					bottom: -1px;
 					width: calc(100% - 30px);
 					content: " ";
-					border-bottom: 1px solid #E7EAEF;
+					border-bottom: 1px solid  rgba(0, 0, 0, 0.08);
 				}
 			}
 			&__steps:last-child::after {
@@ -991,7 +990,8 @@
 		}
 		@media (min-width: 992px) {
 			.hero {
-				padding-bottom: 330px;
+				min-height: 1000px;
+				padding-bottom: 24rem;
 				&__cases {
 					position: absolute;
 					justify-content: center;
