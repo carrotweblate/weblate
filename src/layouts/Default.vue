@@ -110,8 +110,8 @@
 			}
 
 			// Ищем ссылки для открытия модалок на скачивание файлов
-			if ( document.querySelector('a[href*="open-modal-download"]') ) {
-				document.querySelectorAll('a[href*="open-modal-download"]').forEach(function(item) {
+			if ( document.querySelector('a[href*="#open-modal-download"]') ) {
+				document.querySelectorAll('a[href*="#open-modal-download"]').forEach(function(item) {
 					item.addEventListener('click', function(e) {
 						e.preventDefault();
 

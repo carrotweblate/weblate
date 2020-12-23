@@ -14,29 +14,28 @@
 							</p>
 							<b-button v-on:click="showModal" href="#" variant="primary" class="px-4">Отправить заявку на&nbsp;внедрение</b-button>
 						</b-col>
-
-						<div class="d-none d-lg-block">
-							<b-col cols="12" class="mb-4">
-								<h2>
-									Более 450 проектов запустили с&nbsp;2014 года
-								</h2>
-							</b-col>
-							<div class="hero__cases">
-								<Case v-for="item in cases" :key="item.logo"
-									:number="item.number" 
-									:logo='item.logo'
-									:title="item.title"
-									:text="item.text" 
-									:href="item.href" 
-								/>
-							</div>
-						</div>
-						
 					</b-row>
 					<g-image class="hero__pic d-none d-lg-block no-retina" src="@/assets/images/introduction-carrotquest/hero.png" width="436" quality="100" alt="Hero" />
 					<g-image class="hero__pic d-none d-lg-block retina" src="@/assets/images/introduction-carrotquest/hero.png" width="872" quality="100" alt="Hero" style="max-width: 436px;" />
 				</b-container>
 			</div>
+
+			<b-container class="blue__cases d-none d-lg-block">
+				<b-col cols="12" class="mb-4">
+					<h2>
+						Более 450 проектов запустили с&nbsp;2014 года
+					</h2>
+				</b-col>
+				<div class="blue__cases__box">
+					<Case v-for="item in cases" :key="item.logo"
+						:number="item.number" 
+						:logo='item.logo'
+						:title="item.title"
+						:text="item.text" 
+						:href="item.href" 
+					/>
+				</div>
+			</b-container>
 		</div>
 
 		<!-- Трудности -->
@@ -806,18 +805,26 @@
 			&__pic {
 				position: absolute;
 				z-index: 0;
-				top: 20px;
+				top: 50%;
 				left: 60%;
+				margin-top: -222px;
 			}
-			&__cases {
+		}
+
+		.blue__cases {
+			margin-top: -6rem;
+			padding-bottom: 26rem;
+			&__box {
+				position: absolute;
+				justify-content: center;
 				display: flex;
 				z-index: 1;
 				left: 0;
 				right: 0;
 				overflow-x: auto;
-  				scroll-snap-type: x mandatory;
+				scroll-snap-type: x mandatory;
 				scroll-behavior: smooth;
- 				-webkit-overflow-scrolling: touch;
+				-webkit-overflow-scrolling: touch;
 				padding-top: 10px;
 				.box {
 					background-color: #FFF;
@@ -989,14 +996,6 @@
 			}
 		}
 		@media (min-width: 992px) {
-			.hero {
-				min-height: 1000px;
-				padding-bottom: 24rem;
-				&__cases {
-					position: absolute;
-					justify-content: center;
-				}
-			}
 			.success {
 				.row.mb-5 {
 					margin-bottom: 6rem !important;

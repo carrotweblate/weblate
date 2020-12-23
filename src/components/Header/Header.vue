@@ -21,7 +21,7 @@
 							{{ item.title }}
 						</b-nav-item>
 
-						<b-nav-item-dropdown hover v-else-if="item.subLinks" :text="item.title" :key="index" class="mr-1">
+						<b-nav-item-dropdown v-else :text="item.title" :key="index" class="mr-1">
 							<b-dropdown-item v-for="( subLink , index ) in item.subLinks" :href="subLink.href" :key="index">
 								{{ subLink.title }}
 							</b-dropdown-item>
