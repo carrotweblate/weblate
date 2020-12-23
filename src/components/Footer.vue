@@ -153,10 +153,6 @@
 							to: '/automation-marketing/'
 						},
 						{
-							title: 'А/Б тесты триггерных сообщений',
-							to: '/ab-tests/'
-						},
-						{
 							title: 'SDK для Android и iOS',
 							to: '/sdk/'
 						}

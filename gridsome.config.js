@@ -27,7 +27,7 @@ module.exports = {
 			use: 'gridsome-plugin-gtm',
 			options: {
 				id: 'GTM-PHNG63V',  //CQ
-				// id: 'GTM-TKFL867',  //Пустой
+				// id: 'GTM-NZKGGR3',  //Пустой
 				enabled: true,
 				debug: false
 			}

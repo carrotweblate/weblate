@@ -5,7 +5,7 @@
 
 			<!-- Логотип -->
 			<a href="/">
-				<g-image src="~/components/Header/ny_carrotquest_logo.png" width="386" height="70" class="logo ml-2 ml-md-3" style="max-width: 193px;" alt="Carrot blog" />
+				<g-image src="~/assets/images/components/ny_carrotquest_logo.png" width="386" height="70" class="logo ml-2 ml-md-3" style="max-width: 193px;" alt="Carrot blog" />
 			</a>
 
 			<!-- Мобильное меню гамбургер -->
@@ -20,7 +20,7 @@
 						<b-nav-item v-if="!item.subLinks" :href="item.href" :key="index" class="mr-1">
 							{{ item.title }}
 						</b-nav-item>
-
+						
 						<b-nav-item-dropdown v-else :text="item.title" :key="index" class="mr-1">
 							<b-dropdown-item v-for="( subLink , index ) in item.subLinks" :href="subLink.href" :key="index">
 								{{ subLink.title }}
@@ -115,10 +115,6 @@
 						{
 							title: 'Автоматизация воронки',
 							href: '/automation-marketing/'
-						},
-						{
-							title: 'А/Б тесты триггерных сообщений',
-							href: '/ab-tests/'
 						},
 						{
 							title: 'SDK для Android и iOS',
