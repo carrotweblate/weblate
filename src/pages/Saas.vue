@@ -15,7 +15,7 @@
 						</b-col>
 					</b-row>
 					<!-- Фоновое изображение -->
-					<g-image class="hero__guy d-none d-lg-block" src="@/assets/images/saas/hero__guy.png" width="926" immediate blur="5" alt="Клиент на раслабоне" title="Клиент на раслабоне" />
+					<g-image class="hero__guy d-none d-lg-block" src="@/assets/images/saas/hero__guy.png" width="1852" quality="100" immediate blur="5" alt="Клиент на раслабоне" title="Клиент на раслабоне" style="max-width: 926px;" />
 					<g-image class="hero__flower-left" src="@/assets/images/saas/hero__flower-left.png" width="500" alt="Левый куст" />
 					<g-image class="hero__flower-right" src="@/assets/images/saas/hero__flower-right.png" width="276" alt="Правый куст" />
 					<g-image class="hero__message-1 d-none d-lg-block" src="@/assets/images/saas/hero__message-1.png" width="328" immediate blur="5" alt="Сообщение" />
