@@ -25,16 +25,9 @@
 						<!-- Изображение -->
 						<template v-else>
 							<g-image
-								:src="require(`!!assets-loader?width=720&height=540&fit=contain&background=transparent!@/assets/images/components/${item.pic}`)"
-								:alt="item.title"
-								quality="100"
-								class="no-retina"
-							/>
-							<g-image
 								:src="require(`!!assets-loader?width=1440&height=1080&fit=contain&background=transparent!@/assets/images/components/${item.pic}`)"
 								:alt="item.title"
 								quality="100"
-								class="retina"
 							/>
 						</template>
 					</b-tab>

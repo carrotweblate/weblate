@@ -14,8 +14,7 @@
 						<RegistrationForm text="14 дней бесплатно. Регистрируйтесь" />
 					</b-col>
 				</b-row>
-				<g-image class="hero__pic d-none d-lg-block no-retina" src="@/assets/images/automation-marketing/hero.png" width="909" quality="100" alt="hero" />
-				<g-image class="hero__pic d-none d-lg-block retina" src="@/assets/images/automation-marketing/hero.png" width="1818" quality="100" style="max-width: 909px;" alt="hero" />
+				<g-image class="hero__pic d-none d-lg-block" src="@/assets/images/automation-marketing/hero.png" width="1818" quality="100" style="max-width: 909px;" alt="hero" />
 				<g-image class="hero__pic d-lg-none" src="@/assets/images/automation-marketing/hero-mobile.png" width="800" alt=" " />
 			</b-container>
 		</div>
@@ -41,8 +40,7 @@
 						</b-col>
 						<b-col cols="6">
 							<div class="tasks__box tasks__box-ecom text-center">
-								<g-image class="tasks__box__pic mb-4 no-retina" src="@/assets/images/components/small-13.png" height="90" fit="inside" alt="Увеличение конверсии в лиды" />
-								<g-image class="tasks__box__pic mb-4 retina" src="@/assets/images/components/small-13.png" height="180" style="max-height:90px;" fit="inside" alt="Увеличение конверсии в лиды" />
+								<g-image class="tasks__box__pic mb-4" src="@/assets/images/components/small-13.png" height="180" style="max-height:90px;" fit="inside" alt="Увеличение конверсии в лиды" />
 								<p>
 									Увеличение конверсии в&nbsp;лиды
 								</p>
@@ -50,8 +48,7 @@
 						</b-col>
 						<b-col cols="6">
 							<div class="tasks__box tasks__box-ecom text-center">
-								<g-image class="tasks__box__pic mb-4 no-retina" src="@/assets/images/components/small-15.png" height="90" fit="inside" alt="Увеличение конверсии в заказы" />
-								<g-image class="tasks__box__pic mb-4 retina" src="@/assets/images/components/small-15.png" height="180" style="max-height:90px;" fit="inside" alt="Увеличение конверсии в заказы" />
+								<g-image class="tasks__box__pic mb-4" src="@/assets/images/components/small-15.png" height="180" style="max-height:90px;" fit="inside" alt="Увеличение конверсии в заказы" />
 								<p>
 									Увеличение конверсии в&nbsp;заказы
 								</p>
@@ -59,8 +56,7 @@
 						</b-col>
 						<b-col cols="6">
 							<div class="tasks__box tasks__box-ecom text-center">
-								<g-image class="tasks__box__pic mb-4 no-retina" src="@/assets/images/components/small-16.png" height="90" fit="inside" alt="Увеличение количества первых покупок" />
-								<g-image class="tasks__box__pic mb-4 retina" src="@/assets/images/components/small-16.png" height="180" style="max-height:90px;" fit="inside" alt="Увеличение количества первых покупок" />
+								<g-image class="tasks__box__pic mb-4" src="@/assets/images/components/small-16.png" height="180" style="max-height:90px;" fit="inside" alt="Увеличение количества первых покупок" />
 								<p>
 									Увеличение количества первых покупок
 								</p>
@@ -68,8 +64,7 @@
 						</b-col>
 						<b-col cols="6">
 							<div class="tasks__box tasks__box-ecom text-center">
-								<g-image class="tasks__box__pic mb-4 no-retina" src="@/assets/images/components/small-17.png" height="90" fit="inside" alt="Увеличение количества повторных покупок" />
-								<g-image class="tasks__box__pic mb-4 retina" src="@/assets/images/components/small-17.png" height="180" style="max-height:90px;" fit="inside" alt="Увеличение количества повторных покупок" />
+								<g-image class="tasks__box__pic mb-4" src="@/assets/images/components/small-17.png" height="180" style="max-height:90px;" fit="inside" alt="Увеличение количества повторных покупок" />
 								<p>
 									Увеличение количества повторных покупок
 								</p>
@@ -88,8 +83,7 @@
 						</b-col>
 						<b-col cols="6" class="h-50">
 							<div class="tasks__box tasks__box-saas text-center">
-								<g-image class="tasks__box__pic mb-4 no-retina" src="@/assets/images/components/small-12.png" height="90" fit="inside" alt="Увеличение LTV" />
-								<g-image class="tasks__box__pic mb-4 retina" src="@/assets/images/components/small-12.png" height="180" style="max-height:90px;" fit="inside" alt="Увеличение LTV" />
+								<g-image class="tasks__box__pic mb-4" src="@/assets/images/components/small-12.png" height="180" style="max-height:90px;" fit="inside" alt="Увеличение LTV" />
 								<p>
 									Увеличение LTV
 									<br><br>
@@ -98,8 +92,7 @@
 						</b-col>
 						<b-col cols="6">
 							<div class="tasks__box tasks__box-saas text-center">
-								<g-image class="tasks__box__pic mb-4 no-retina" src="@/assets/images/components/small-18.png" height="90" fit="inside" alt="Увеличение Retention" />
-								<g-image class="tasks__box__pic mb-4 retina" src="@/assets/images/components/small-18.png" height="180" style="max-height:90px;" fit="inside" alt="Увеличение Retention" />
+								<g-image class="tasks__box__pic mb-4" src="@/assets/images/components/small-18.png" height="180" style="max-height:90px;" fit="inside" alt="Увеличение Retention" />
 								<p>
 									Увеличение Retention
 								</p>
@@ -107,8 +100,7 @@
 						</b-col>
 						<b-col cols="6">
 							<div class="tasks__box tasks__box-saas text-center">
-								<g-image class="tasks__box__pic mb-4 no-retina" src="@/assets/images/components/small-14.png" width="120" height="90" fit="contain" background="#F8F8FF" alt="Увеличение количества регистраций" />
-								<g-image class="tasks__box__pic mb-4 retina" src="@/assets/images/components/small-14.png" width="240" height="180" fit="contain" background="#F8F8FF" style="max-height:90px;" alt="Увеличение количества регистраций" />
+								<g-image class="tasks__box__pic mb-4" src="@/assets/images/components/small-14.png" width="240" height="180" fit="contain" background="#F8F8FF" style="max-height:90px;" alt="Увеличение количества регистраций" />
 								<p>
 									Увеличение количества регистраций
 								</p>
@@ -116,8 +108,7 @@
 						</b-col>
 						<b-col cols="6">
 							<div class="tasks__box tasks__box-saas text-center">
-								<g-image class="tasks__box__pic mb-4 no-retina" src="@/assets/images/components/small-19.png" width="120" height="90" fit="contain" background="#F8F8FF" alt="Оптимизация онбординга пользователей" />
-								<g-image class="tasks__box__pic mb-4 retina" src="@/assets/images/components/small-19.png" width="240" height="180" fit="contain" background="#F8F8FF" style="max-height:90px;" alt="Оптимизация онбординга пользователей" />
+								<g-image class="tasks__box__pic mb-4" src="@/assets/images/components/small-19.png" width="240" height="180" fit="contain" background="#F8F8FF" style="max-height:90px;" alt="Оптимизация онбординга пользователей" />
 								<p>
 									Оптимизация онбординга пользователей
 								</p>
@@ -242,8 +233,7 @@
 					<g-image class="automation__box__pic-small automation__box__pic-small-1 d-none d-xl-block" src="@/assets/images/components/small-7.png" width="200" />
 				</b-col>
 				<b-col cols="12" lg="8" class="order-lg-1">
-					<g-image class="automation__box__pic no-retina" src="@/assets/images/automation-marketing/automation-1.png" width="760" quality="100" />
-					<g-image class="automation__box__pic retina" src="@/assets/images/automation-marketing/automation-1.png" width="1520" quality="100" />
+					<g-image class="automation__box__pic" src="@/assets/images/automation-marketing/automation-1.png" width="1520" quality="100" />
 				</b-col>
 			</b-row>
 			<b-row class="automation__box">
@@ -260,8 +250,7 @@
 					<g-image class="automation__box__pic-small automation__box__pic-small-2 d-none d-xl-block" src="@/assets/images/components/small-10.png" width="150" />
 				</b-col>
 				<b-col cols="12" lg="8" class="order-lg-1">
-					<g-image class="automation__box__pic no-retina" src="@/assets/images/automation-marketing/automation-2.png" width="760" quality="100" />
-					<g-image class="automation__box__pic retina" src="@/assets/images/automation-marketing/automation-2.png" width="1520" quality="100" />
+					<g-image class="automation__box__pic" src="@/assets/images/automation-marketing/automation-2.png" width="1520" quality="100" />
 				</b-col>
 			</b-row>
 			<b-row class="automation__box">
@@ -275,8 +264,7 @@
 					<g-image class="automation__box__pic-small automation__box__pic-small-3 d-none d-xl-block" src="@/assets/images/components/small-11.png" width="150" />
 				</b-col>
 				<b-col cols="12" lg="8" class="order-lg-1">
-					<g-image class="automation__box__pic no-retina" src="@/assets/images/automation-marketing/automation-3.png" width="760" quality="100" />
-					<g-image class="automation__box__pic retina" src="@/assets/images/automation-marketing/automation-3.png" width="1520" quality="100" />
+					<g-image class="automation__box__pic" src="@/assets/images/automation-marketing/automation-3.png" width="1520" quality="100" />
 				</b-col>
 			</b-row>
 			<b-row class="automation__box">
@@ -290,8 +278,7 @@
 					<g-image class="automation__box__pic-small automation__box__pic-small-4 d-none d-xl-block" src="@/assets/images/components/small-8.png" width="200" />
 				</b-col>
 				<b-col cols="12" lg="8" class="order-lg-1">
-					<g-image class="automation__box__pic no-retina" src="@/assets/images/automation-marketing/automation-4.png" width="760" quality="100" />
-					<g-image class="automation__box__pic retina" src="@/assets/images/automation-marketing/automation-4.png" width="1520" quality="100" />
+					<g-image class="automation__box__pic" src="@/assets/images/automation-marketing/automation-4.png" width="1520" quality="100" />
 				</b-col>
 			</b-row>
 		</b-container>

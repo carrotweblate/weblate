@@ -15,8 +15,7 @@
 							<b-button v-on:click="showModal" href="#" variant="primary" class="px-4">Отправить заявку на&nbsp;внедрение</b-button>
 						</b-col>
 					</b-row>
-					<g-image class="hero__pic d-none d-lg-block no-retina" src="@/assets/images/introduction-carrotquest/hero.png" width="436" quality="100" alt="Hero" />
-					<g-image class="hero__pic d-none d-lg-block retina" src="@/assets/images/introduction-carrotquest/hero.png" width="872" quality="100" alt="Hero" style="max-width: 436px;" />
+					<g-image class="hero__pic d-none d-lg-block" src="@/assets/images/introduction-carrotquest/hero.png" width="872" quality="100" alt="Hero" style="max-width: 436px;" />
 				</b-container>
 			</div>
 
@@ -109,8 +108,7 @@
 					<b-button v-on:click="showModal" href="#" variant="primary" class="px-4">Хочу решить эту задачу</b-button>
 				</b-col>
 				<b-col lg="8" class="order-lg-2">
-					<g-image src="@/assets/images/introduction-carrotquest/1.png" width="720" quality="100" class="no-retina" alt="Собираем данные о пользователях" />
-					<g-image src="@/assets/images/introduction-carrotquest/1.png" width="1440" quality="100" class="retina" alt="Собираем данные о пользователях" />
+					<g-image src="@/assets/images/introduction-carrotquest/1.png" width="1440" quality="100" alt="Собираем данные о пользователях" />
 				</b-col>
 			</b-row>
 			<b-row class="mb-5">
@@ -128,8 +126,7 @@
 					<b-button v-on:click="showModal" href="#" variant="primary" class="px-4">Хочу решить эту задачу</b-button>
 				</b-col>
 				<b-col lg="8" class="order-lg-1">
-					<g-image src="@/assets/images/introduction-carrotquest/2.png" width="720" quality="100" class="no-retina" alt="Увеличиваемконверсиюна 20-100% с помощью поп-апов" />
-					<g-image src="@/assets/images/introduction-carrotquest/2.png" width="1440" quality="100" class="retina" alt="Увеличиваемконверсиюна 20-100% с помощью поп-апов" />
+					<g-image src="@/assets/images/introduction-carrotquest/2.png" width="1440" quality="100" alt="Увеличиваемконверсиюна 20-100% с помощью поп-апов" />
 				</b-col>
 			</b-row>
 			<b-row class="mb-5">
@@ -145,8 +142,7 @@
 					<b-button v-on:click="showModal" href="#" variant="primary" class="px-4">Хочу решить эту задачу</b-button>
 				</b-col>
 				<b-col lg="8" class="order-lg-2">
-					<g-image src="@/assets/images/introduction-carrotquest/3.png" width="720" quality="100" class="no-retina" alt="Поднимаем ретеншн и повторные визиты с помощью триггерных рассылок" />
-					<g-image src="@/assets/images/introduction-carrotquest/3.png" width="1440" quality="100" class="retina" alt="Поднимаем ретеншн и повторные визиты с помощью триггерных рассылок" />
+					<g-image src="@/assets/images/introduction-carrotquest/3.png" width="1440" quality="100" alt="Поднимаем ретеншн и повторные визиты с помощью триггерных рассылок" />
 				</b-col>
 			</b-row>
 			<b-row class="mb-5">
@@ -165,8 +161,7 @@
 					<b-button v-on:click="showModal" href="#" variant="primary" class="px-4">Хочу решить эту задачу</b-button>
 				</b-col>
 				<b-col lg="8" class="order-lg-1">
-					<g-image src="@/assets/images/introduction-carrotquest/4.png" width="720" quality="100" class="no-retina" alt="Настраиваем бизнес-чат на вашем сайте и обучаем команду менеджеров" />
-					<g-image src="@/assets/images/introduction-carrotquest/4.png" width="1440" quality="100" class="retina" alt="Настраиваем бизнес-чат на вашем сайте и обучаем команду менеджеров" />
+					<g-image src="@/assets/images/introduction-carrotquest/4.png" width="1440" quality="100" alt="Настраиваем бизнес-чат на вашем сайте и обучаем команду менеджеров" />
 				</b-col>
 			</b-row>
 			<b-row>
@@ -181,8 +176,7 @@
 					<b-button v-on:click="showModal" href="#" variant="primary" class="px-4">Хочу решить эту задачу</b-button>
 				</b-col>
 				<b-col lg="8" class="order-lg-2">
-					<g-image src="@/assets/images/introduction-carrotquest/5.png" width="720" quality="100" class="no-retina" alt="Увеличиваем количество качественных лидов с помощью квалифицирующего лид-бота" />
-					<g-image src="@/assets/images/introduction-carrotquest/5.png" width="1440" quality="100" class="retina" alt="Увеличиваем количество качественных лидов с помощью квалифицирующего лид-бота" />
+					<g-image src="@/assets/images/introduction-carrotquest/5.png" width="1440" quality="100" alt="Увеличиваем количество качественных лидов с помощью квалифицирующего лид-бота" />
 				</b-col>
 			</b-row>
 		</b-container>
@@ -277,8 +271,7 @@
 					<!-- <b-button href="123" variant="primary" class="px-4">Посмотреть пример отчета</b-button> -->
 				</b-col>
 				<b-col lg="6">
-					<g-image src="@/assets/images/introduction-carrotquest/6.png" width="530" class="no-retina" alt="Что вы получаете после внедрения" />
-					<g-image src="@/assets/images/introduction-carrotquest/6.png" width="1060" class="retina" alt="Что вы получаете после внедрения" />
+					<g-image src="@/assets/images/introduction-carrotquest/6.png" width="1060" alt="Что вы получаете после внедрения" />
 				</b-col>
 			</b-row>
 		</b-container>
@@ -295,8 +288,7 @@
 					</p>
 				</b-col>
 				<b-col lg="6" class="order-lg-1">
-					<g-image src="@/assets/images/introduction-carrotquest/7.png" width="530" class="no-retina" alt="Команда внедрения" />
-					<g-image src="@/assets/images/introduction-carrotquest/7.png" width="1060" class="retina" alt="Команда внедрения" />
+					<g-image src="@/assets/images/introduction-carrotquest/7.png" width="1060" alt="Команда внедрения" />
 				</b-col>
 			</b-row>
 		</b-container>
@@ -542,8 +534,7 @@
 				</b-col>
 				<b-col lg="4" class="mb-5 mb-lg-0 order-lg-4">
 					<a href="/assets/docs/map-ecom.pdf">
-						<g-image class="mb-3 no-retina" src="@/assets/images/components/map-ecom.png" width="340" alt="Для интернет-магазинов" />
-						<g-image class="mb-3 retina" src="@/assets/images/components/map-ecom.png" width="680" alt="Для интернет-магазинов" />
+						<g-image class="mb-3" src="@/assets/images/components/map-ecom.png" width="680" alt="Для интернет-магазинов" />
 					</a>
 					<a href="/assets/docs/map-ecom.pdf">
 						<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -569,8 +560,7 @@
 				</b-col>
 				<b-col lg="4" class="mb-5 mb-lg-0 order-lg-5">
 					<a href="/assets/docs/map-saas.pdf">
-						<g-image class="mb-3 no-retina" src="@/assets/images/components/map-saas.png" width="340" alt="Для онлайн-сервисов" />
-						<g-image class="mb-3 retina" src="@/assets/images/components/map-saas.png" width="680" alt="Для онлайн-сервисов" />
+						<g-image class="mb-3" src="@/assets/images/components/map-saas.png" width="680" alt="Для онлайн-сервисов" />
 					</a>
 					<a href="/assets/docs/map-saas.pdf">
 						<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -595,8 +585,7 @@
 				</b-col>
 				<b-col lg="4" class="order-lg-6">
 					<a href="/assets/docs/map-ecom-bot.pdf">
-						<g-image class="mb-3 no-retina" src="@/assets/images/components/map-ecom-bot.png" width="340" alt="Для интернет-магазинов с использованием чат-бота на сайте" />
-						<g-image class="mb-3 retina" src="@/assets/images/components/map-ecom-bot.png" width="680" alt="Для интернет-магазинов с использованием чат-бота на сайте" />
+						<g-image class="mb-3" src="@/assets/images/components/map-ecom-bot.png" width="680" alt="Для интернет-магазинов с использованием чат-бота на сайте" />
 					</a>
 					<a href="/assets/docs/map-ecom-bot.pdf">
 						<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
