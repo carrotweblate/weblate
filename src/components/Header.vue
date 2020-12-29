@@ -21,11 +21,32 @@
 							{{ item.title }}
 						</b-nav-item>
 						
-						<b-nav-item-dropdown v-else :text="item.title" :key="index" class="mr-1">
-							<b-dropdown-item v-for="( subLink , index ) in item.subLinks" :href="subLink.href" :key="index">
-								{{ subLink.title }}
-							</b-dropdown-item>
-						</b-nav-item-dropdown>
+						<template v-else>
+
+							<b-nav-item-dropdown v-if="!item.jobs" :text="item.title" :key="index" class="mr-1">
+								<b-dropdown-item v-for="( subLink , index ) in item.subLinks" :href="subLink.href" :key="index">
+									{{ subLink.title }}
+								</b-dropdown-item>
+							</b-nav-item-dropdown>
+
+							<b-nav-item-dropdown v-else :text="item.title" :key="index" class="hasmegamenu mr-1">
+								<b-dropdown-item v-for="( subLink , index ) in item.subLinks" :href="subLink.href" :key="index" class="d-xl-none">
+									{{ subLink.title }}
+								</b-dropdown-item>
+								<b-row class="megamenu d-none d-xl-flex">
+									<b-col v-for="( subLink , index ) in item.subLinks" :key="index" cols="4">
+										<p class="mb-4">
+											<a :href="subLink.href">
+												<b>{{ subLink.title }}</b>
+												<span v-html="subLink.job" class="font14px grey-text mt-1" />
+											</a>
+										</p>
+									</b-col>
+								</b-row>
+							</b-nav-item-dropdown>
+
+						</template>
+						
 						
 					</template>
 				</b-navbar-nav>
@@ -90,37 +111,46 @@
 					subLinks: [
 						{
 							title: 'Лид-бот',
-							href: '/chatbot/'
-						},
-						{
-							title: 'База знаний',
-							href: '/knowledge-base/'
-						},
-						{
-							title: 'eCRM',
-							href: '/lead-manager/'
+							href: '/chatbot/',
+							job: 'Собирайте больше квалифицированных лидов с&nbsp;сайта сайта без дополнительной нагрузки на&nbsp;ваших сотрудников'
 						},
 						{
 							title: 'Онлайн-консультант',
-							href: '/online-consultant/'
-						},
-						{
-							title: 'Email-маркетинг',
-							href: '/email-marketing/'
-						},
-						{
-							title: 'Pop-up окна',
-							href: '/pop-up/'
+							href: '/online-consultant/',
+							job: 'Повышайте продажи на&nbsp;сайте и&nbsp;улучшайте поддержку ваших клиентов'
 						},
 						{
 							title: 'Автоматизация воронки',
-							href: '/automation-marketing/'
+							href: '/automation-marketing/',
+							job: 'Увеличивайте конверсию воронки сайта с&nbsp;помощью цепочек сообщений (чат, чат-бот, поп-ап, письма)'
+						},
+						{
+							title: 'База знаний',
+							href: '/knowledge-base/',
+							job: 'Сокращает время ответа на&nbsp;вопрос и&nbsp;систематизирует для клиентов знания о&nbsp;вашем продукте'
+						},
+						{
+							title: 'Email-маркетинг',
+							href: '/email-marketing/',
+							job: 'Повышает эффективность рассылок за&nbsp;счет гибкой сегментации пользователей'
 						},
 						{
 							title: 'SDK для Android и iOS',
-							href: '/sdk/'
-						}
-					]
+							href: '/sdk/',
+							job: 'Добавляет функционал Carrot quest в&nbsp;ваше клиентское мобильное приложение'
+						},
+						{
+							title: 'Трекинг пользователей',
+							href: '/lead-manager/',
+							job: 'Собирает все данные о&nbsp;каждом пользователе, его действиях, заказах и&nbsp;коммуникациях'
+						},
+						{
+							title: 'Pop-up окна',
+							href: '/pop-up/',
+							job: 'Собирайте больше лидов и&nbsp;продаж благодаря гиперсегментации аудитории'
+						},
+					],
+					jobs: true
 				},
 				{
 					title: 'Решения',
@@ -137,7 +167,8 @@
 							title: 'Внедрение для крупных компаний',
 							href: '/introduction-carrotquest/'
 						}
-					]
+					],
+					jobs: false
 				},
 				{
 					title: 'Тарифы',
@@ -148,33 +179,41 @@
 					subLinks: [
 						{
 							title: 'Библиотека',
-							href: '/library/'
+							href: '/library/',
+							job: 'Книги, гайды, чек листы, видеокурсы. Скачивайте бесплатно'
 						},
 						{
-							title: 'Кейсы',
-							href: '/cases/'
+							title: 'Блог',
+							href: '/blog/',
+							job: 'О&nbsp;том, как разработчику интегрировать Carrot quest на&nbsp;сайт'
 						},
 						{
-							title: 'Гайды',
-							href: '/academy/usecases'
+							title: 'API',
+							href: '/developers/',
+							job: 'О&nbsp;том, как разработчику интегрировать Carrot quest на&nbsp;сайт'
 						},
 						{
-							title: 'Вебинары',
-							href: '/blog/webinars/'
-						},
-						{
-							title: 'База знаний Carrot quest',
-							href: 'https://help.carrotquest.io/'
+							title: 'Вебинары и подкасты',
+							href: '/blog/webinars/',
+							job: 'Более 30&nbsp;вебинаров и&nbsp;подкастов на&nbsp;темы про создание продуктов, маркетинг и&nbsp;growth hacking'
 						},
 						{
 							title: 'Интеграции',
-							href: '/integration/'
+							href: '/integration/',
+							job: 'Более 30&nbsp;готовых интеграций с&nbsp;CMS, CRM, аналитикой, мессенджерами, соц.сетями и&nbsp;другими сервисами'
 						},
 						{
-							title: 'API разработчикам',
-							href: '/developers/'
-						}
-					]
+							title: 'Кейсы',
+							href: '/cases/',
+							job: 'Более 60&nbsp;историй успеха наших клиентов'
+						},
+						{
+							title: 'База знаний',
+							href: 'https://help.carrotquest.io/',
+							job: 'О&nbsp;том, как работает Carrot quest и&nbsp;как его настроить (для продакта, маркетолога и&nbsp;разработчика)'
+						}						
+					],
+					jobs: true
 				},
 				{
 					title: 'Блог',
@@ -183,16 +222,6 @@
 				{
 					title: 'Партнерам',
 					href: '/partner/'
-				}
-			],
-			blogMenu: [
-				{
-					title: 'Кейсы',
-					href: '/cases/'
-				},
-				{
-					title: 'Библиотека',
-					href: '/library/'
 				}
 			]
 		}),
