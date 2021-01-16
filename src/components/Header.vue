@@ -5,7 +5,7 @@
 
 			<!-- Логотип -->
 			<a href="/">
-				<g-image src="~/assets/images/components/ny_carrotquest_logo.png" width="386" height="70" class="logo ml-2 ml-md-3" style="max-width: 193px;" alt="Carrot blog" />
+				<g-image src="~/assets/images/components/logo.svg" width="386" height="70" class="logo ml-2 ml-md-3" style="max-width: 193px;" alt="Carrot blog" />
 			</a>
 
 			<!-- Мобильное меню гамбургер -->
