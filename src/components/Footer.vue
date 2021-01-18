@@ -21,7 +21,7 @@
 							<b-nav-item href="tel:+74951059169">
 								+7 (495) 105-91-69
 							</b-nav-item>
-							<b-nav-item href="mail:support@carrotquest.io">
+							<b-nav-item href="mailto:support@carrotquest.io">
 								support@carrotquest.io
 							</b-nav-item>
 							<b-nav-item href="https://www.dashly.io/">
