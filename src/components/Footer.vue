@@ -208,7 +208,7 @@
 						},
 						{
 							title: 'API разработчикам',
-							to: '/developers/'
+							to: 'https://developers.carrotquest.io/'
 						},
 						{
 							title: 'Интеграции',

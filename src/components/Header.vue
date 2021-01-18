@@ -195,7 +195,7 @@
 						},
 						{
 							title: 'API',
-							href: '/developers/',
+							href: 'https://developers.carrotquest.io/',
 							job: 'О&nbsp;том, как разработчику интегрировать Carrot quest на&nbsp;сайт'
 						},
 						{
