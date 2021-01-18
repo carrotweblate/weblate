@@ -222,7 +222,7 @@
 				link: [
 					{
 						rel: 'canonical',
-						href: 'https://www.carrotquest.io/sass/'
+						href: 'https://www.carrotquest.io/saas/'
 					}
 				]
 			}
