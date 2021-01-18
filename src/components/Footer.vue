@@ -195,10 +195,6 @@
 							to: '/cases/'
 						},
 						{
-							title: 'Гайды',
-							to: '/academy/usecases'
-						},
-						{
 							title: 'Вебинары',
 							to: '/blog/webinars/'
 						},
@@ -229,7 +225,7 @@
 					subLinks: [
 						{
 							title: 'Клиенты и отзывы',
-							to: '/cases/#rec50789322'
+							to: '/cases/'
 						},
 						{
 							title: 'Вакансии',
