@@ -33,6 +33,13 @@
 						:text="item.text" 
 						:href="item.href" 
 					/>
+					<Case v-for="item in cases" :key="item.logo"
+						:number="item.number" 
+						:logo='item.logo'
+						:title="item.title"
+						:text="item.text" 
+						:href="item.href" 
+					/>
 				</div>
 			</b-container>
 		</div>
@@ -482,7 +489,7 @@
 						</p>
 					</b-col>
 				</b-row>
-				<b-row class="plans__steps">
+				<b-row class="plans__steps pt-4">
 					<b-col></b-col>
 					<b-col class="text-center">
 						<p>
@@ -803,6 +810,7 @@
 		.blue__cases {
 			margin-top: -6rem;
 			padding-bottom: 26rem;
+			
 			&__box {
 				position: absolute;
 				justify-content: center;
@@ -810,15 +818,21 @@
 				z-index: 1;
 				left: 0;
 				right: 0;
+				padding-top: 10px;
 				overflow-x: auto;
 				scroll-snap-type: x mandatory;
 				scroll-behavior: smooth;
 				-webkit-overflow-scrolling: touch;
-				padding-top: 10px;
+				-ms-overflow-style: none;  /* IE and Edge */
+				scrollbar-width: none;  /* Firefox */
+				&::-webkit-scrollbar {
+					display: none;
+				}
+					
 				.box {
 					background-color: #FFF;
 					color: #000;
-					padding: 1rem 1rem 3.5rem;
+					padding: 1.5rem 1.5rem 3.5rem;
 					border-radius: 5px;
 					height: 100%;
 				}
@@ -905,7 +919,7 @@
 				background-color: #fff;
 				border-radius: 10px;
 				width: calc(100% - 20px);
-				height: 1220px;
+				height: 1160px;
 				&-full {
 					border: 3px solid #FF6600;
 				}
@@ -976,7 +990,7 @@
 					line-height: 1.8rem;
 				}
 				&__box {
-					height: 1100px;
+					height: 1030px;
 				}
 				&__steps {
 					font-size: 0.875rem;
@@ -994,7 +1008,7 @@
 		@media (min-width: 1200px) {
 			.plans {
 				&__box {
-					height: 1100px;
+					height: 1060px;
 				}
 			}
 		}

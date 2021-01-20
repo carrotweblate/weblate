@@ -1,7 +1,7 @@
 <template>
 	<Layout class="page lead-manager-page">
 
-<div class="hero">
+		<div class="hero">
 			<b-container>
 				<b-row class="align-items-center">
 					<b-col lg="7">

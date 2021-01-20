@@ -31,10 +31,11 @@
 							/>
 						</template>
 					</b-tab>
-					<template v-if="more" #tabs-end>
-						<div class="more">
+					<template #tabs-end>
+						<div v-if="more" class="more mt-4">
 							<a :href="more.href" v-text="more.text" />
 						</div>
+						<div v-if="text" class="text mt-4" v-html="text" />
 					</template>
 				</b-tabs>
 			</b-col> 
@@ -44,14 +45,15 @@
 		<b-row class="d-lg-none mobile">
 			<b-col cols="12">
 				<b-card no-body v-for="item in tabs" :key="item.title">
-						<div class="title p-2" v-html="item.title" />
+					<div class="title p-2" v-html="item.title" />
+					<div class="p-3">
 						<!-- Видео -->
 						<b-embed v-if="item.pic.search('mp4') > 0"
 							type="video" 
 							aspect="4by3"
 							autoplay loop muted playsinline
 							>
-							<source :src="item.pic.replace('mp4','webm')" type="video/webp">
+							<source :src="item.pic.replace('mp4','webm')" type="video/webm">
 							<source :src="item.pic" type="video/mp4">
 						</b-embed>
 						<!-- Изображение -->
@@ -59,10 +61,12 @@
 							:src="require(`!!assets-loader?width=800&height=700&fit=contain&background=#ffffff!@/assets/images/components/${item.pic}`)"
 							:alt="item.title"
 						/>
+					</div>
 				</b-card>
 				<div v-if="more" class="more">
 					<a :href="more.href" v-text="more.text" />
 				</div>
+				<div v-if="text" class="text mt-4" v-html="text" />
 			</b-col>
 		</b-row>
 
@@ -94,7 +98,8 @@
 		props: {
 			title: String,
 			tabs: Array,
-			more: Array,
+			more: Object,
+			text: String,
 			instruments: Array
 		}
 	}
@@ -104,23 +109,20 @@
 
 <style lang="scss">
 	.MegaTabs {
-		
 		.h1 {
 			@media (min-width: 768px) { 
 				text-align: center;
 			}
 		}
-
 		.tabs {
 			.tab-pane {
 				height: 540px;
 				text-align: center;
 				img , video {
 					max-width: 100%;
-					max-height: 540px;
+					// max-height: 540px;
 				}
 			}
-		
 			.nav {
 				.nav-item {
 					&:first-child .nav-link {
@@ -145,7 +147,7 @@
 						color: #fff;
 					}
 					@media (min-width: 1200px) {
-						padding: 1.5rem;
+						padding: 1rem 1.5rem;
 						padding-right: 3rem;
 						&.active {
 							padding-left: 3rem;
@@ -159,8 +161,6 @@
 					}
 				}
 			}
-			
-			
 		}
 
 		.mobile {
@@ -180,13 +180,20 @@
 		}
 
 		.more {
-			margin-top: 1rem;
+			a {
+				display: block;
+				background-color: #fff;
+				padding: 1rem;
+				border-radius: 5px;
+				transition: all 150ms cubic-bezier(0, 0, 0.2, 1);
+				&:hover {
+					background-color: #FF6600;
+					color: #fff;
+				}
+			}
 			& a::after {
 				content: "→";
 				margin-left: 0.5rem;
-			}
-			@media (min-width: 1200px) {
-				margin-top: 2.5rem;
 			}
 		}
 
@@ -216,7 +223,13 @@
 			}
 			
 		}
-		
+		@media (max-width: 991.98px) {
+			.mobile .title {
+				color: #000;
+				border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+				background-color: #fff;
+			}
+		}
 		
 	}
 </style>

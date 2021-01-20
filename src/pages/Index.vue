@@ -1,13 +1,50 @@
 <template>
 	<Layout class="page page-index">
 
+		<div class="hero">
+			<b-container>
+				<b-row class="align-items-center">
+					<b-col lg="7">
+						<div class="hero__title">
+							<h1 class="h1 h1_1st">
+								Продавайте больше на том же объёме трафика с помощью онлайн-чата и автоматизации
+							</h1>
+							<div class="h1 h1_2nd">
+								Оптимизируйте поддержку пользователей, используя чат-ботов и базу знаний
+							</div>
+							<div class="h1 h1_3rd">
+								Сделайте менеджеров продаж и поддержку ближе к вашим клиентам в онлайне
+							</div>
+						</div>
+						<p class="py-3">
+							Инструменты Carrot quest помогают увеличить продажи на сайтах без привлечения нового трафика и обеспечить лучшую поддержку пользователей
+						</p>
+						<RegistrationForm text="14 дней бесплатно. Регистрируйтесь" />
+					</b-col>
+				</b-row>
+				
+				<div class="hero__bg">
+					<video autoplay loop muted playsinline class="d-none d-lg-block">
+						<source src="/assets/video/components/index-hero.webm" type="video/webm">
+						<source src="/assets/video/components/index-hero.mp4" type="video/mp4">
+					</video>
+					<svg class="d-lg-none" width="835" height="680" viewBox="0 0 835 680" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M729.839 140.08C705.697 41.511 606.221 -18.8239 507.652 5.31796L140.08 95.3452C41.5109 119.487 -18.8238 218.963 5.31796 317.532C29.4598 416.101 128.936 476.436 227.505 452.294L595.077 362.267C693.646 338.125 753.981 238.648 729.839 140.08Z" fill="#FFEEDB"></path>
+						<path d="M192.521 259.73C192.521 259.73 176.493 331.149 133.45 402.115C90.4077 473.081 49.0844 496.219 49.0844 496.219L239.047 449.693L192.521 259.73Z" fill="#FFEEDB"></path>
+						<path d="M211.124 566.133C191.528 486.123 240.503 405.376 320.513 385.779L618.879 312.702C698.889 293.106 779.635 342.081 799.232 422.091C818.828 502.101 769.853 582.848 689.843 602.444L391.478 675.521C311.468 695.118 230.721 646.143 211.124 566.133Z" fill="#E6E5FF"></path>
+						<path d="M642.549 450.412C642.549 450.412 680.917 495.857 738.582 530.831C796.246 565.806 834.712 566.963 834.712 566.963L680.355 604.768L642.549 450.412Z" fill="#E6E5FF"></path>
+					</svg>
+				</div>
+			</b-container>
+		</div>
+
 		<!-- Баннер с видео и цифрами -->
-		<section class="carrot-numbers">
+		<section class="video-numbers">
 			<b-container>
 				<b-row >
-					<b-col col-12 lg="8">
-						<a v-b-modal.youtubeCQ class="VideoNumbers__play">
-							<g-image class="VideoNumbers__bg" src="@/assets/images/components/VideoAbout.png" width="680" alt="Видео" />
+					<b-col col-12 lg="7" xl="8" class="mb-4 mb-lg-0 h-100">
+						<a v-b-modal.youtubeCQ class="video-numbers__play box">
+							<g-image src="@/assets/images/components/VideoAbout.png" width="1440" height="760" alt="Видео" />
 						</a>
 						<b-modal id="youtubeCQ" size="xl" hide-header hide-footer>
 							<b-embed
@@ -18,9 +55,9 @@
 							></b-embed>
 						</b-modal>
 					</b-col>
-					<b-col col-12 lg="4">
-						<div class="carrot-numbers__box">
-							<h3 class="h4">
+					<b-col col-12 lg="5" xl="4">
+						<div class="video-numbers__box p-4 h-100 text-lg-center">
+							<h3 class="h4 mb-4">
 								Наши клиенты получили:
 							</h3>
 			
@@ -31,7 +68,7 @@
 									:duration="2000"
 								/>
 							</p>
-							<p class="grey mt-1">Коммуникаций с клиентами</p>
+							<p class="grey-text mt-1 mb-4">Коммуникаций с клиентами</p>
 			
 							<p class="h2 mb-1">
 								<animated-number
@@ -40,7 +77,7 @@
 									:duration="2000"
 								/>
 							</p>
-							<p class="grey mt-1">Собранных лидов</p>
+							<p class="grey-text mt-1 mb-4">Собранных лидов</p>
 			
 							<p class="h2 mb-1">
 								<animated-number
@@ -49,30 +86,325 @@
 									:duration="2000"
 								/>
 							</p>
-							<p class="grey mt-1">Сайтов использующих Carrot quest</p>
+							<p class="grey-text mt-1">Сайтов использующих Carrot quest</p>
 						</div>
 					</b-col>
 				</b-row>
 			</b-container>
 		</section>
 
-		<b-container>
-			<br>
-			<br>
-			<p>
-				<g-link to="/study-book/">Книга JTBD</g-link>
-			</p>
+		<!-- Готовые решения -->
+		<section class="ready">
+			<b-container>
+				<b-row>
+					<b-col lg="9" xl="7">
+						<div class="h1">Готовые решения для разных типов бизнеса</div>
+					</b-col>
+				</b-row>
+				<b-row>
+					<b-col lg="4" class="mb-5 mb-lg-0">
+						<div class="box h-100">
+							<g-image src="@/assets/images/components/small-15.png" fit="contain" background="transparent" height="222" alt="Для интернет магазинов" class="mb-4" />
+							<div class="h5 mb-3">Для интернет-магазинов</div>
+							<ul>
+								<li>Увеличение количества лидов на том же трафике</li>
+								<li>Борьба с брошенными корзинами</li>
+								<li>Возвращение уходящих пользователей</li>
+								<li>Увеличение повторных продаж</li>
+							</ul>
+							<a href="/ecommerce/" class="btn btn-primary">Подробнее</a>
+						</div>
+					</b-col>
+					<b-col lg="4"  class="my-5 my-lg-0">
+						<div class="box h-100">
+							<g-image src="@/assets/images/components/small-24.png" fit="contain" background="transparent" height="222" alt="Для интернет сервисов (SaaS)" class="mb-4" />
+							<div class="h5 mb-3">Для онлайн-сервисов (SaaS)</div>
+							<ul>
+								<li>Увеличение количества лидов на том же трафике сайта</li>
+								<li>Организация поддержки пользователей</li>
+								<li>Вовлечение и удержание пользователей в продукте</li>
+								<li>Аналитика поведения пользователей в продукте и использования фичей</li>
+							</ul>
+							<g-link to="/saas/" class="btn btn-primary">Подробнее</g-link>
+						</div>
+					</b-col>
+					<b-col lg="4" class="mt-5 mt-lg-0">
+						<div class="box h-100">
+							<g-image src="@/assets/images/components/small-25.png" fit="contain" background="transparent" height="222" alt="Для крупных компаний" class="mb-4" />
+							<div class="h5 mb-3">Для крупных компаний</div>
+							<ul>
+								<li>Весь сервис без ограничений</li>
+								<li>Подключим нашего эксперта</li>
+								<li>Поделимся экспертизой по автоматизации маркетинга и построению процесса тестирования гипотез</li>
+								<li>Запустим гипотезы на увеличение конверсии на вашем сайте (на сбор лидов, на удержание клиентов, на возвращение клиентов)</li>
+							</ul>
+							<g-link to="/introduction-carrotquest/" class="btn btn-primary">Подробнее</g-link>
+						</div>
+					</b-col>
+				</b-row>
+			</b-container>
+		</section>
+
+		<Logos />
+
+		<section class="blue">
+			<b-container>
+				<b-row class="features">
+
+					<!-- Бизнес-чат — основной способ продаж и поддержки -->
+					<MegaTabs 
+						title="Бизнес-чат — основной способ продаж и поддержки клиентов"
+						:tabs="[
+							{
+								title: 'Начинайте диалог проактивно с высокой конверсией в ответ',
+								pic: '/assets/video/components/4.mp4'
+							},
+							{
+								title: 'Планируйте в онлайн-консультанте демонстрации и созвоны с клиентом',
+								pic: '/assets/video/components/5.mp4'
+							},
+							{
+								title: 'Устраивайте видеозвонки с клиентами в Zoom из онлайн-консультанта',
+								pic: '/assets/video/components/6.mp4'
+							},
+							{
+								title: 'Объединяйте каналы общения (почта, соцсети, мессенджеры), оставаясь в одном интерфейсе',
+								pic: '/assets/video/components/7.mp4'
+							}
+						]"
+						:more="{
+							href: '/online-consultant/', 
+							text: 'Подробнее про онлайн-консультант'
+						}"
+						text="
+							<p>
+								«147% — прирост конверсии в&nbsp;оплату благодаря общению с&nbsp;пользователями и&nbsp;автоматизации в&nbsp;веб-сервисе Instaplus.me» <a href=/blog/kejs-instaplus/>Читать кейс</a>
+							</p>
+							<p>
+								Михаил Ермачков <br>
+								CEO <a href=https://instaplus.me/ rel=nofollow target=_blank>Instaplus.me</a>
+							</p>
+						"
+					/>
+
+					<!-- Чат-бот сделает половину работы менеджеров -->
+					<MegaTabs 
+						title="Чат-бот и база знаний <br>сделают половину работы менеджеров"
+						:tabs="[
+							{
+								title: 'Чат-бот проведёт опрос пользователей и распределит на нужных менеджеров',
+								pic: '/assets/video/components/8.mp4'
+							},
+							{
+								title: 'Логика чат-бота настраивается за несколько минут без программистов',
+								pic: '11.png'
+							},
+							{
+								title: 'Модуль «База знаний» поможет менеджеру ответить на сложные вопросы',
+								pic: '/assets/video/components/9.mp4'
+							}
+						]"
+						:more="{
+							href:'/online-consultant/', 
+							text:'Подробнее про лид-бота'
+						}"
+						text="
+							<p>
+								«У нас выросли продажи на 29,61% за счет замены менеджеров на автоматизацию»
+								<a href=/blog/yagla-prodazhi/>Читать кейс</a>
+							</p>
+							<p>
+								Александр Алимов <br>
+								CEO & Founder в <a href=https://yagla.ru/ rel=nofollow target=_blank>yagla.ru</a>
+							</p>
+						"
+					/>
+
+					<!-- Поп-ап окна, чат-бот и триггерные письма -->
+					<MegaTabs 
+						title="Поп-ап окна, чат-бот и триггерные письма выжимают из вашего трафика максимум и автоматизируют продажи"
+						:tabs="[
+							{
+								title: 'Триггерные письма обучают вашему продукту, уменьшают количество брошенных заказов и возвращают клиентов',
+								pic: '15.png'
+							},
+							{
+								title: 'Триггерные поп-ап окна и чат-бот собирают лидов с вашего сайта в зависимости от поведения пользователя',
+								pic: '/assets/video/components/10.mp4'
+							}
+						]"
+						:more="{
+							href:'/automation-marketing/', 
+							text:'Подробнее про автоматизацию'
+						}"
+						text="
+							<p>
+								«Дом.ru увеличил конверсию сайта на 30% благодаря автоматизации и экспериментам» 
+								<a href=/blog/kejs-kak-dom-ru-uvelichil-konversiyu-sajta-na-30-s-pomoshhyu-carrot-quest/>Читать кейс</a>
+							</p>
+							<p>
+								Андрей Шубин <br>
+								Руководитель <a href=https://domru.ru/ target=_blank>Дом.ru Digital</a>
+							</p>
+						"
+					/>
+
+					<!-- Не потеряйте ни одного клиента в суматохе нового времени -->
+					<MegaTabs 
+						title="Не потеряйте ни одного клиента в суматохе нового времени"
+						:tabs="[
+							{
+								title: 'Сегментируйте всех собранных лидов в нашей eCRM, изучайте поведение клиентов, делайте email-рассылки',
+								pic: '/assets/video/components/11.mp4'
+							},
+							{
+								title: 'Анализируйте эффективность вашего сайта, автоматизации продаж и маркетинга',
+								pic: '16.png'
+							},
+							{
+								title: 'Интегрируйте сервис с вашими CRM, аналитикой и другими сервисами',
+								pic: '17.png'
+							}
+						]"
+						:more="{
+							href:'/lead-manager/', 
+							text:'Подробнее про сбор и сегментацию лидов'
+						}"
+						text="
+							<p>
+								«Мы в интернет-магазине SkyShop в 2,5 раза увеличили конверсию в заказ с помощью триггерных поп-апов, писем и чата»
+								<a href=/blog/case_skyshop/>Читать кейс</a>
+							</p>
+							<p>
+								Цепков Сергей <br>
+								Менеджер интернет-проектов <a href=https://skyshop.aeromar.ru/ rel=nofollow target=_blank>SkyShop</a>
+							</p>
+						"
+					/>
+				</b-row>
+			</b-container>
+		</section>
+
+		<Consultation 
+			title="Запишитесь на бесплатную демонстрацию сервиса" 
+			text="Мы познакомимся, определим ваши задачи, за 30 минут обучим продукту и&nbsp;🎁&nbsp;бесплатно настроим базовый сценарий сбора лидов на вашем сайте"
+			pic="medium-2.png"
+			alt="Девочка, живущая в сети"
+			bg="#fff3e6"
+		/>
+
+		<!-- Возможности платформы -->
+		<b-container class="functions">
+			<b-row>
+				<b-col lg="10" xl="8">
+					<h2>
+						Посмотрите подробнее возможности платформы Carrot&nbsp;quest
+					</h2>
+				</b-col>
+			</b-row>
+			<b-row>
+				<b-col cols="6" lg="3">
+					<a href="/online-consultant/" class="functions__box box text-center p-4">
+						<g-image src="@/assets/images/components/small-26.svg" height="158" alt="Онлайн-консультант" />
+						<p class="mt-3 mb-0">
+							Онлайн-консультант
+						</p>
+					</a>
+				</b-col>
+				<b-col cols="6" lg="3">
+					<a href="/knowledge-base/" class="functions__box box text-center p-4">
+						<g-image src="@/assets/images/components/small-27.svg" height="158" alt="База знаний" />
+						<p class="mt-3 mb-0">
+							База знаний
+						</p>
+					</a>
+				</b-col>
+				<b-col cols="6" lg="3">
+					<a href="/lead-manager/" class="functions__box box text-center p-4">
+						<g-image src="@/assets/images/components/small-28.svg" height="158" alt="eCRM" />
+						<p class="mt-3 mb-0">
+							eCRM
+						</p>
+					</a>
+				</b-col>
+				<b-col cols="6" lg="3">
+					<a href="/chatbot/" class="functions__box box text-center p-4">
+						<g-image src="@/assets/images/components/small-29.svg" height="158" alt="Чат-бот" />
+						<p class="mt-3 mb-0">
+							Чат-бот
+						</p>
+					</a>
+				</b-col>
+				<b-col cols="6" lg="3">
+					<a href="/pop-up/" class="functions__box box text-center p-4">
+						<g-image src="@/assets/images/components/small-30.svg" height="158" alt="Поп-ап окна" />
+						<p class="mt-3 mb-0">
+							Поп-ап окна
+						</p>
+					</a>
+				</b-col>
+				<b-col cols="6" lg="3">
+					<a href="/sdk/" class="functions__box box text-center p-4">
+						<g-image src="@/assets/images/components/small-31.svg" height="158" alt="SDK для iOS и Android" />
+						<p class="mt-3 mb-0">
+							SDK для iOS и Android
+						</p>
+					</a>
+				</b-col>
+				<b-col cols="6" lg="3">
+					<a href="/email-marketing/" class="functions__box box text-center p-4">
+						<g-image src="@/assets/images/components/small-32.svg" height="158" alt="Email-рассылки" />
+						<p class="mt-3 mb-0">
+							Email-рассылки
+						</p>
+					</a>
+				</b-col>
+			</b-row>
 		</b-container>
+
+		<Integrations />
+
+		<Cases />
+
+		<b-container>
+			<b-col class="p-4" style="background-color: #fff3e6; border-radius: 5px;">
+				<b-row class="align-items-center justify-content-center">
+					<b-col lg="6">
+						<g-image src="@/assets/images/components/10.png" width="494" alt="Регистрация в сервисе" title="Поехали!" style="max-width: 100%" />
+					</b-col>
+					<b-col lg="6">
+						<div class="h1 mb-4">Регистрация в сервисе</div>
+						<RegistrationForm text="14 дней бесплатно" />
+					</b-col>
+				</b-row>
+			</b-col>
+		</b-container>
+
+		<Study />
 
 	</Layout>
 </template>
 
 <script>
-	import AnimatedNumber from "animated-number-vue"
+	import AnimatedNumber 		from "animated-number-vue"
+	import Logos 				from '~/components/Logos.vue'
+	import MegaTabs 			from '~/components/MegaTabs.vue'
+	import Consultation 		from '~/components/Consultation.vue'
+	import Integrations 		from '~/components/Integrations.vue'
+	import Cases 				from '~/components/Cases/Cases.vue'
+	import RegistrationForm 	from '~/components/Forms/RegistrationForm.vue'
+	import Study 				from '~/components/Study.vue'
 
 	export default {
 		components: {
-			AnimatedNumber
+			AnimatedNumber,
+			Logos,
+			MegaTabs,
+			Consultation,
+			Integrations,
+			Cases,
+			RegistrationForm,
+			Study
 		},
 		data() {
 			return {
@@ -115,15 +447,100 @@
 
 <style lang="scss">
 	.page-index {
-		.VideoNumbers {
-
-			&__bg {
-				border-radius: 5px;
-				max-width: 100%;
+		.hero {
+			@keyframes h1_1st {
+				0%  { top: 0px; opacity:1; z-index:0;}
+				32% { top: 0px; opacity:1; z-index:0; }
+				33% { top: 0px; opacity: 0; z-index: 0; } 
+				99% { top: 0px; opacity: 0; z-index: 0; }
+				100%{ top: 0px; opacity: 1; }
+			}
+			@keyframes h1_2nd {
+				0%  { top: 0; opacity: 0; }
+				32% { top: 0px; opacity: 0; }
+				33% { top: 0; opacity: 1; }
+				65% { top: 0; opacity: 1; z-index: 0; }
+				66% { top: 0; opacity: 0; z-index: -1; }
+				100%{ top: 0; opacity: 0; z-index: 0; }
+			}
+			@keyframes h1_3rd {
+				0%  { top: 0; opacity: 0; }
+				65% { top: 0px; opacity: 0; }
+				66% { top: 0; opacity: 1; }
+				98% { top: 0; opacity: 1; }
+				99%{ top: 0; opacity: 0; z-index: -1; }
+				100%{ top: 0; opacity: 0; z-index: -1; }
 			}
 
+			.h1 {
+				position: absolute;
+				opacity: 1;
+				margin: 0;
+				top: 0;
+
+				&.h1_1st {
+					animation: h1_1st 18s linear infinite;
+				}
+				&.h1_2nd {
+					animation: h1_2nd 18s linear infinite;
+				}
+				&.h1_3rd {
+					animation: h1_3rd 18s linear infinite;
+				}
+			}
+			&__title { 
+				position: relative;
+				margin: 0 0 24px;
+				height: 8rem;
+			}
+			&__bg {
+				position: absolute;
+				z-index: -5;
+				top: 50%;
+				right: 50%;
+				margin-top: -460px;
+				margin-right: -750px;
+			}
+			@media (max-width: 1199.98px) {
+				&__bg {
+					margin-top: -360px;
+					margin-right: -680px;
+					video {
+						width: 800px;
+					}
+				}
+				&__title {
+					height: 11rem;
+				}
+			}
+			@media (max-width: 991.98px) {
+				&__title {
+					height: 8rem;
+				}
+			}
+			@media (max-width: 575.98px) {
+				&__bg {
+					margin-top: -560px;
+				}
+				&__title {
+					height: 6.5rem;
+				}
+				br {
+					display: none;
+				}
+			}
+		}
+
+		.video-numbers {
+			margin-top: -15rem;
 			&__play {
 				position: relative;
+				box-shadow: 0 5px 10px rgba(0,0,0,.1);
+				border-radius: 5px;
+				overflow: hidden;
+				img {
+					max-width: 100%;
+				}
 				&::after {
 					position: absolute;
 					top: 50%;
@@ -144,23 +561,87 @@
 					}
 				}
 			}
-
-			@media (max-width: 767.98px) {
-				.h1 {
-					font-size: 1.5rem;
+			&__box {
+				background-color: #fff;
+				border-radius: 5px;
+				box-shadow: 0 5px 10px rgba(0,0,0,.1);
+			}
+			@media (max-width: 1199.98px) {
+				margin-top: -8rem;
+				&__play {
+					img {
+						max-width: 569px;
+						height: 362px;
+					}
 				}
 			}
 			@media (max-width: 991.98px) {
-				.h1 {
-					font-size: 1.75rem;
+				
+				&__play {
+					img {
+						max-width: 100%;
+						height: auto;
+					}
+					&::after {
+						background-size: 90px 90px;
+					}
+					&:hover {
+						&::after {
+							background-size: 120px 120px;
+						}
+					}
 				}
 			}
-			@media (max-width: 1199.98px) {
-				.h1 {
-					font-size: 2rem;
-				}
+			@media (max-width: 767.98px) {
+				margin-top: 0;
 			}
 
 		}
+
+		.ready {
+			.box {
+				background: #FFFFFF;
+				box-shadow: 0 5px 10px rgba(0,0,0,.1);
+				border-radius: 5px;
+				padding: 1.5rem 1.25rem;
+			}
+			img {
+				display: block;
+				margin: -5rem auto 0;
+				width: auto;
+				height: 111px;
+			}
+			.h1 {
+				margin-bottom: 5rem;
+			}
+			ul {
+				padding: 0;
+				margin-bottom: 3.5rem;
+				li {
+					margin: 0;
+					margin-bottom: 8px;
+					padding-left: 1.5rem !important;
+					position: relative;
+					list-style: none;
+				}
+				li::before {
+					content: url("data:image/svg+xml,%3Csvg width='16' height='2' viewBox='0 0 16 2' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.640625 1.30469V0.117188H15.3594V1.30469H0.640625Z' fill='%23FF6600'/%3E%3C/svg%3E%0A") !important;
+					top: -4px !important;
+					left: 0;
+					position: absolute;
+				}
+			}
+			.btn {
+				position: absolute;
+				bottom: 20px;
+			}
+		}
+
+		.blue {
+			padding-top: 5rem;
+			background-color: #F5F6FE;
+		}
 	}
+
+	
 </style>
