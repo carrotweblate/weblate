@@ -7,17 +7,17 @@
 					<b-col lg="7">
 						<div class="hero__title">
 							<h1 class="h1 h1_1st">
-								Продавайте больше на том же объёме трафика с помощью онлайн-чата и автоматизации
+								Продавайте больше на&nbsp;том&nbsp;же объёме трафика с&nbsp;помощью онлайн-чата и&nbsp;автоматизации
 							</h1>
 							<div class="h1 h1_2nd">
-								Оптимизируйте поддержку пользователей, используя чат-ботов и базу знаний
+								Оптимизируйте поддержку пользователей, используя чат-ботов и&nbsp;базу знаний
 							</div>
 							<div class="h1 h1_3rd">
-								Сделайте менеджеров продаж и поддержку ближе к вашим клиентам в онлайне
+								Сделайте менеджеров продаж и&nbsp;поддержку ближе к&nbsp;вашим клиентам в&nbsp;онлайне
 							</div>
 						</div>
 						<p class="py-3">
-							Инструменты Carrot quest помогают увеличить продажи на сайтах без привлечения нового трафика и обеспечить лучшую поддержку пользователей
+							Инструменты Carrot quest помогают увеличить продажи на&nbsp;сайтах без привлечения нового трафика и&nbsp;обеспечить лучшую поддержку пользователей
 						</p>
 						<RegistrationForm text="14 дней бесплатно. Регистрируйтесь" />
 					</b-col>
@@ -68,7 +68,7 @@
 									:duration="2000"
 								/>
 							</p>
-							<p class="grey-text mt-1 mb-4">Коммуникаций с клиентами</p>
+							<p class="grey-text mt-1 mb-4">Коммуникаций с&nbsp;клиентами</p>
 			
 							<p class="h2 mb-1">
 								<animated-number
@@ -86,7 +86,7 @@
 									:duration="2000"
 								/>
 							</p>
-							<p class="grey-text mt-1">Сайтов использующих Carrot quest</p>
+							<p class="grey-text mt-1">Сайтов использующих Carrot quest</p>
 						</div>
 					</b-col>
 				</b-row>
@@ -107,12 +107,12 @@
 							<g-image src="@/assets/images/components/small-15.png" fit="contain" background="transparent" height="222" alt="Для интернет магазинов" class="mb-4" />
 							<div class="h5 mb-3">Для интернет-магазинов</div>
 							<ul>
-								<li>Увеличение количества лидов на том же трафике</li>
-								<li>Борьба с брошенными корзинами</li>
+								<li>Увеличение количества лидов на&nbsp;том&nbsp;же трафике</li>
+								<li>Борьба с&nbsp;брошенными корзинами</li>
 								<li>Возвращение уходящих пользователей</li>
 								<li>Увеличение повторных продаж</li>
 							</ul>
-							<a href="/ecommerce/" class="btn btn-primary">Подробнее</a>
+							<b-button href="/ecommerce/" variant="primary">Подробнее</b-button>
 						</div>
 					</b-col>
 					<b-col lg="4"  class="my-5 my-lg-0">
@@ -120,12 +120,12 @@
 							<g-image src="@/assets/images/components/small-24.png" fit="contain" background="transparent" height="222" alt="Для интернет сервисов (SaaS)" class="mb-4" />
 							<div class="h5 mb-3">Для онлайн-сервисов (SaaS)</div>
 							<ul>
-								<li>Увеличение количества лидов на том же трафике сайта</li>
+								<li>Увеличение количества лидов на&nbsp;том&nbsp;же трафике сайта</li>
 								<li>Организация поддержки пользователей</li>
-								<li>Вовлечение и удержание пользователей в продукте</li>
-								<li>Аналитика поведения пользователей в продукте и использования фичей</li>
+								<li>Вовлечение и&nbsp;удержание пользователей в&nbsp;продукте</li>
+								<li>Аналитика поведения пользователей в&nbsp;продукте и&nbsp;использования фичей</li>
 							</ul>
-							<g-link to="/saas/" class="btn btn-primary">Подробнее</g-link>
+							<b-button to="/saas/" variant="primary">Подробнее</b-button>
 						</div>
 					</b-col>
 					<b-col lg="4" class="mt-5 mt-lg-0">
@@ -135,10 +135,10 @@
 							<ul>
 								<li>Весь сервис без ограничений</li>
 								<li>Подключим нашего эксперта</li>
-								<li>Поделимся экспертизой по автоматизации маркетинга и построению процесса тестирования гипотез</li>
-								<li>Запустим гипотезы на увеличение конверсии на вашем сайте (на сбор лидов, на удержание клиентов, на возвращение клиентов)</li>
+								<li>Поделимся экспертизой по&nbsp;автоматизации маркетинга и&nbsp;построению процесса тестирования гипотез</li>
+								<li>Запустим гипотезы на&nbsp;увеличение конверсии на&nbsp;вашем сайте (на&nbsp;сбор лидов, на&nbsp;удержание клиентов, на&nbsp;возвращение клиентов)</li>
 							</ul>
-							<g-link to="/introduction-carrotquest/" class="btn btn-primary">Подробнее</g-link>
+							<b-button to="/introduction-carrotquest/" variant="primary">Подробнее</b-button>
 						</div>
 					</b-col>
 				</b-row>
@@ -174,11 +174,11 @@
 						]"
 						:more="{
 							href: '/online-consultant/', 
-							text: 'Подробнее про онлайн-консультант'
+							text: 'Подробнее про онлайн&#8209;консультант'
 						}"
 						text="
 							<p>
-								«147% — прирост конверсии в&nbsp;оплату благодаря общению с&nbsp;пользователями и&nbsp;автоматизации в&nbsp;веб-сервисе Instaplus.me» <a href=/blog/kejs-instaplus/>Читать кейс</a>
+								«147% — прирост конверсии в оплату благодаря общению с пользователями и автоматизации в веб-сервисе Instaplus.me» <a href=/blog/kejs-instaplus/>Читать кейс</a>
 							</p>
 							<p>
 								Михаил Ермачков <br>
@@ -205,7 +205,7 @@
 							}
 						]"
 						:more="{
-							href:'/online-consultant/', 
+							href:'/chatbot/', 
 							text:'Подробнее про лид-бота'
 						}"
 						text="
@@ -215,7 +215,7 @@
 							</p>
 							<p>
 								Александр Алимов <br>
-								CEO & Founder в <a href=https://yagla.ru/ rel=nofollow target=_blank>yagla.ru</a>
+								CEO & Founder в <a href=https://yagla.ru/ rel=nofollow target=_blank>yagla.ru</a>
 							</p>
 						"
 					/>
@@ -296,20 +296,20 @@
 		<!-- Возможности платформы -->
 		<b-container class="functions">
 			<b-row>
-				<b-col lg="10" xl="8">
+				<b-col lg="10" xl="8" class="mb-4">
 					<h2>
-						Посмотрите подробнее возможности платформы Carrot&nbsp;quest
+						Посмотрите подробнее возможности платформы Carrot quest
 					</h2>
 				</b-col>
 			</b-row>
 			<b-row>
 				<b-col cols="6" lg="3">
-					<a href="/online-consultant/" class="functions__box box text-center p-4">
+					<g-link to="/online-consultant/" class="functions__box box text-center p-4">
 						<g-image src="@/assets/images/components/small-26.svg" height="158" alt="Онлайн-консультант" />
 						<p class="mt-3 mb-0">
-							Онлайн-консультант
+							Онлайн&#8209;консультант
 						</p>
-					</a>
+					</g-link>
 				</b-col>
 				<b-col cols="6" lg="3">
 					<a href="/knowledge-base/" class="functions__box box text-center p-4">
@@ -347,7 +347,7 @@
 					<a href="/sdk/" class="functions__box box text-center p-4">
 						<g-image src="@/assets/images/components/small-31.svg" height="158" alt="SDK для iOS и Android" />
 						<p class="mt-3 mb-0">
-							SDK для iOS и Android
+							SDK для iOS и&nbsp;Android
 						</p>
 					</a>
 				</b-col>
@@ -373,7 +373,7 @@
 						<g-image src="@/assets/images/components/10.png" width="494" alt="Регистрация в сервисе" title="Поехали!" style="max-width: 100%" />
 					</b-col>
 					<b-col lg="6">
-						<div class="h1 mb-4">Регистрация в сервисе</div>
+						<div class="h1 mb-4">Регистрация в&nbsp;сервисе</div>
 						<RegistrationForm text="14 дней бесплатно" />
 					</b-col>
 				</b-row>
@@ -538,6 +538,7 @@
 				box-shadow: 0 5px 10px rgba(0,0,0,.1);
 				border-radius: 5px;
 				overflow: hidden;
+				height: 360px;
 				img {
 					max-width: 100%;
 				}
@@ -625,7 +626,7 @@
 					list-style: none;
 				}
 				li::before {
-					content: url("data:image/svg+xml,%3Csvg width='16' height='2' viewBox='0 0 16 2' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.640625 1.30469V0.117188H15.3594V1.30469H0.640625Z' fill='%23FF6600'/%3E%3C/svg%3E%0A") !important;
+					content: url("data:image/svg+xml,%3Csvg width='16' height='2' viewBox='0 0 16 2' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.640625 1.30469V0.117188H15.3594V1.30469H0.640625Z' fill='%23FF7C16'/%3E%3C/svg%3E%0A") !important;
 					top: -4px !important;
 					left: 0;
 					position: absolute;
@@ -634,6 +635,12 @@
 			.btn {
 				position: absolute;
 				bottom: 20px;
+			}
+		}
+
+		.functions {
+			img {
+				max-width: 100%;
 			}
 		}
 

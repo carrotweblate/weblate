@@ -545,10 +545,10 @@
 					</a>
 					<a href="/assets/docs/map-ecom.pdf">
 						<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M18 18L24 24" stroke="#FF6600"/>
-							<circle cx="9.5" cy="9.5" r="9" stroke="#FF6600"/>
-							<line x1="9.5" y1="5" x2="9.5" y2="14" stroke="#FF6600"/>
-							<line x1="5" y1="9.5" x2="14" y2="9.5" stroke="#FF6600"/>
+							<path d="M18 18L24 24" stroke="#FF7C16"/>
+							<circle cx="9.5" cy="9.5" r="9" stroke="#FF7C16"/>
+							<line x1="9.5" y1="5" x2="9.5" y2="14" stroke="#FF7C16"/>
+							<line x1="5" y1="9.5" x2="14" y2="9.5" stroke="#FF7C16"/>
 						</svg>
 						Посмотреть
 					</a>
@@ -571,10 +571,10 @@
 					</a>
 					<a href="/assets/docs/map-saas.pdf">
 						<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M18 18L24 24" stroke="#FF6600"/>
-							<circle cx="9.5" cy="9.5" r="9" stroke="#FF6600"/>
-							<line x1="9.5" y1="5" x2="9.5" y2="14" stroke="#FF6600"/>
-							<line x1="5" y1="9.5" x2="14" y2="9.5" stroke="#FF6600"/>
+							<path d="M18 18L24 24" stroke="#FF7C16"/>
+							<circle cx="9.5" cy="9.5" r="9" stroke="#FF7C16"/>
+							<line x1="9.5" y1="5" x2="9.5" y2="14" stroke="#FF7C16"/>
+							<line x1="5" y1="9.5" x2="14" y2="9.5" stroke="#FF7C16"/>
 						</svg>
 						Посмотреть
 					</a>
@@ -596,10 +596,10 @@
 					</a>
 					<a href="/assets/docs/map-ecom-bot.pdf">
 						<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M18 18L24 24" stroke="#FF6600"/>
-							<circle cx="9.5" cy="9.5" r="9" stroke="#FF6600"/>
-							<line x1="9.5" y1="5" x2="9.5" y2="14" stroke="#FF6600"/>
-							<line x1="5" y1="9.5" x2="14" y2="9.5" stroke="#FF6600"/>
+							<path d="M18 18L24 24" stroke="#FF7C16"/>
+							<circle cx="9.5" cy="9.5" r="9" stroke="#FF7C16"/>
+							<line x1="9.5" y1="5" x2="9.5" y2="14" stroke="#FF7C16"/>
+							<line x1="5" y1="9.5" x2="14" y2="9.5" stroke="#FF7C16"/>
 						</svg>
 						Посмотреть
 					</a>
@@ -844,7 +844,7 @@
 					scroll-snap-align: start;
 				}
 				.number {
-					color: #FF6600;
+					color: #FF7C16;
 				}
 				.logo {
 					text-align: right;
@@ -856,7 +856,7 @@
 				.link {
 					position: absolute;
 					bottom: 1.5rem;
-					color: #FF6600;
+					color: #FF7C16;
 				}
 			}
 		}
@@ -921,7 +921,7 @@
 				width: calc(100% - 20px);
 				height: 1160px;
 				&-full {
-					border: 3px solid #FF6600;
+					border: 3px solid #FF7C16;
 				}
 			}
 			&__steps {

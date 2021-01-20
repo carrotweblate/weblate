@@ -4,7 +4,7 @@
 		<b-navbar toggleable="lg" :class="{'pt-2 pb-2': scrolled, 'pt-3 pb-3 pt-md-4 pb-md-4': !scrolled, 'hideHeader': hideHeader, '': !hideHeader}" v-scroll="handleScroll">
 
 			<!-- Логотип -->
-			<g-link href="/">
+			<g-link to="/">
 				<g-image src="~/assets/images/components/logo.svg" width="386" height="70" class="logo ml-2 ml-md-3" style="max-width: 193px;" alt="Carrot blog" />
 			</g-link>
 

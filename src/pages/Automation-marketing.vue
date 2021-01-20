@@ -179,12 +179,12 @@
 					</a>
 				</b-col>
 				<b-col cols="6" lg="4">
-					<a href="/online-consultant/" class="collect__box box text-center p-4">
+					<g-link to="/online-consultant/" class="collect__box box text-center p-4">
 						<p>
 							Онлайн-чат на&nbsp;сайте
 						</p>
 						<g-image src="@/assets/images/automation-marketing/collect-2.svg" height="158" alt="Онлайн-чат на сайте" />
-					</a>
+					</g-link>
 				</b-col>
 				<b-col cols="6" lg="4">
 					<a href="/email-marketing/" class="collect__box box text-center p-4">

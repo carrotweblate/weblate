@@ -12,7 +12,10 @@
 		<b-row class="d-none d-lg-flex">
 			<b-col>
 				<b-tabs pills vertical end nav-wrapper-class="col-4">
-					<b-tab v-for="item in tabs" :key="item.title" :title="item.title">
+					<b-tab v-for="item in tabs" :key="item.title">
+						<template #title>
+							<span v-html="item.title" />
+						</template>
 						<!-- Видео -->
 						<b-embed v-if="item.pic.search('mp4') > 0"
 							type="video" 
@@ -33,7 +36,7 @@
 					</b-tab>
 					<template #tabs-end>
 						<div v-if="more" class="more mt-4">
-							<a :href="more.href" v-text="more.text" />
+							<a :href="more.href" v-html="more.text" />
 						</div>
 						<div v-if="text" class="text mt-4" v-html="text" />
 					</template>
@@ -116,11 +119,14 @@
 		}
 		.tabs {
 			.tab-pane {
-				height: 540px;
+				height: 560px;
 				text-align: center;
 				img , video {
+					width: auto;
+					height: auto;
 					max-width: 100%;
-					// max-height: 540px;
+					border-radius: 5px;
+					max-height: 560px;
 				}
 			}
 			.nav {
@@ -139,24 +145,33 @@
 					background-color: #fff;
 					color: #000;
 					transition: all 150ms cubic-bezier(0, 0, 0.2, 1);
+					span {
+						border-bottom: 1px dashed #FF7C16;
+					}
 					&:hover {
-						color: #FF6600;
+						color: #FF7C16;
+						span {
+							border-bottom: 1px dashed #fff;
+						}
 					}
 					&.active {
-						background-color: #FF6600;
+						background-color: #FF7C16;
 						color: #fff;
+						span {
+							border-bottom: 1px dashed #FF7C16;
+						}
 					}
 					@media (min-width: 1200px) {
 						padding: 1rem 1.5rem;
-						padding-right: 3rem;
+						// padding-right: 3rem;
 						&.active {
-							padding-left: 3rem;
+							// padding-left: 3rem;
 							padding-right: 1.5rem;
-							&::before {
-								content: "←";
-								position: absolute;
-								margin-left: -1.5rem;
-							}
+							// &::before {
+							// 	content: "←";
+							// 	position: absolute;
+							// 	margin-left: -1.5rem;
+							// }
 						}
 					}
 				}
@@ -174,7 +189,7 @@
 			}
 			.title {
 				border-radius: 5px 5px 0 0;
-				background-color: #FF6600;
+				background-color: #FF7C16;
 				color: #fff;
 			}
 		}
@@ -187,7 +202,7 @@
 				border-radius: 5px;
 				transition: all 150ms cubic-bezier(0, 0, 0.2, 1);
 				&:hover {
-					background-color: #FF6600;
+					background-color: #FF7C16;
 					color: #fff;
 				}
 			}
@@ -214,7 +229,7 @@
 				}
 				i {
 					font-style: normal;
-					color: #FF6600;
+					color: #FF7C16;
 				}
 				@media (max-width: 575.98px) {
 					font-size: 0.875rem;

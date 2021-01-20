@@ -455,7 +455,7 @@
 			position: relative;
 			
 			&__number {
-				color: #FF6600;
+				color: #FF7C16;
 				font-size: 32px;
 				line-height: 1.8rem;
 			}

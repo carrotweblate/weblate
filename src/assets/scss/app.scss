@@ -2,7 +2,7 @@
 $grid-gutter-width: 40px;
 
 //Оформление кнопок и ссылок
-$primary: #FF6600;
+$primary: #FF7C16;
 .btn-primary {
 	color: #fff !important;
 }
@@ -12,7 +12,7 @@ $link-hover-decoration: none;
 @import '~bootstrap/scss/bootstrap.scss';
 @import '~bootstrap-vue/src/index.scss';
 
-$blue-link: #FF6600;
+$blue-link: #FF7C16;
 $grey-text: #717171;
 $light-grey: #C4C4C4;
 
@@ -161,7 +161,7 @@ a.box {
 				content: " ";
 				width: 0.5rem;
 				height: 0.5rem;
-				background-color: #FF6600;
+				background-color: #FF7C16;
 				border-radius: 0.5rem;
 				margin-top: 0.55rem;
 				margin-left: -1rem;
@@ -221,8 +221,8 @@ input[type=number]:focus,
 		background-color: #fff !important;
 		border-radius: 21px;
 		&.active {
-			border: 1px solid #FF6600;
-			color: #FF6600;
+			border: 1px solid #FF7C16;
+			color: #FF7C16;
 		}
 	}
 }

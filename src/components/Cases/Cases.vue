@@ -151,7 +151,7 @@
 			border-radius: 5px;
 			height: 100%;
 			.number {
-				color: #FF6600;
+				color: #FF7C16;
 			}
 			.logo {
 				text-align: right;
@@ -163,7 +163,7 @@
 			.link {
 				position: absolute;
 				bottom: 1.5rem;
-				color: #FF6600;
+				color: #FF7C16;
 			}
 		}
 	}
