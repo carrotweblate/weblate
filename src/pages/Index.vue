@@ -1,7 +1,7 @@
 <template>
 	<Layout class="page page-index">
 
-		<div class="hero">
+		<section class="hero">
 			<b-container>
 				<b-row class="align-items-center">
 					<b-col lg="7">
@@ -25,8 +25,8 @@
 				
 				<div class="hero__bg">
 					<video autoplay loop muted playsinline class="d-none d-lg-block">
-						<source src="/assets/video/components/index-hero.webm" type="video/webm">
-						<source src="/assets/video/components/index-hero.mp4" type="video/mp4">
+						<source src="/assets/video/index/index-hero.webm" type="video/webm">
+						<source src="/assets/video/index/index-hero.mp4" type="video/mp4">
 					</video>
 					<svg class="d-lg-none" width="835" height="680" viewBox="0 0 835 680" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path d="M729.839 140.08C705.697 41.511 606.221 -18.8239 507.652 5.31796L140.08 95.3452C41.5109 119.487 -18.8238 218.963 5.31796 317.532C29.4598 416.101 128.936 476.436 227.505 452.294L595.077 362.267C693.646 338.125 753.981 238.648 729.839 140.08Z" fill="#FFEEDB"></path>
@@ -36,7 +36,7 @@
 					</svg>
 				</div>
 			</b-container>
-		</div>
+		</section>
 
 		<!-- Баннер с видео и цифрами -->
 		<section class="video-numbers">
@@ -639,8 +639,17 @@
 		}
 
 		.functions {
+			.box {
+				border-radius: 5px;
+			}
 			img {
 				max-width: 100%;
+			}
+			a {
+				color: #000;
+				&:hover {
+					color: #FF7C16;
+				}
 			}
 		}
 

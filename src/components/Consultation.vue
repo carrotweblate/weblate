@@ -1,7 +1,7 @@
 <template>
 
 	<!-- Запрос консультации -->
-	<b-container>
+	<b-container id="Consultation">
 		<b-col class="Consultation" :style=" 'background-color: ' + bg ">
 			<b-row class="align-items-center justify-content-center">
 				<b-col cols="8" lg="4" class="mb-5">
