@@ -50,6 +50,9 @@ body {
 		.container , .container-fluid , .hero {
 			margin-bottom: 5rem;
 		}
+		.hero {
+			max-height: initial;
+		}
 	}
 }
 

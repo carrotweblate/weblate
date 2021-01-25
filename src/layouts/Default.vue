@@ -70,9 +70,6 @@
 			};
 		},
 		methods: {
-			showModal() {
-				this.$refs['open-modal-download'].show()
-			},
 			modalDownload () {
 				carrotquest.identify([
 					{"op": "update_or_create", "key": "$phone", "value": this.modalPhone},
@@ -113,7 +110,7 @@
 			if ( document.querySelector('a[href*="#open-modal-download"]') ) {
 				document.querySelectorAll('a[href*="#open-modal-download"]').forEach(function(item) {
 					item.addEventListener('click', function(e) {
-						e.preventDefault();
+						e.preventDefault()
 
 						this.$refs['open-modal-download'].show()
 
@@ -125,7 +122,6 @@
 					}.bind(this))
 				}.bind(this))
 			}
-
 		}
 	};
 </script>

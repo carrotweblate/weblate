@@ -199,7 +199,6 @@
 			Integrations,
 			Study
 		},
-
 		//Делаем в HEAD
 		metaInfo() {
 			return {
@@ -273,7 +272,7 @@
 		}
 
 		.blue {
-			background-color: #F5F6FE;
+			background-color: #F3F3FF;
 		}
 
 		@media (max-width: 575.98px) {

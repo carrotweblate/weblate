@@ -807,7 +807,7 @@
 
 		.blue {
 			padding-top: 5rem;
-			background-color: #F5F6FE;
+			background-color: #F3F3FF;
 		}
 	}
 

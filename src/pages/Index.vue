@@ -255,7 +255,7 @@
 						:tabs="[
 							{
 								title: 'Сегментируйте всех собранных лидов в нашей eCRM, изучайте поведение клиентов, делайте email-рассылки',
-								pic: '/assets/video/components/11.mp4'
+								pic: '/assets/video/components/2.mp4'
 							},
 							{
 								title: 'Анализируйте эффективность вашего сайта, автоматизации продаж и маркетинга',
@@ -655,7 +655,7 @@
 
 		.blue {
 			padding-top: 5rem;
-			background-color: #F5F6FE;
+			background-color: #F3F3FF;
 		}
 	}
 

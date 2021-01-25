@@ -24,9 +24,7 @@
 				]
 			}
 		},
-		
 		mounted () {
-
 			//Подгружаем стили и скрипты тильды
 			for ( var value of this.$page.allTildaFiles.edges.reverse() ) {
 				if (value.node.css) {
@@ -43,7 +41,6 @@
 					}
 				}
 			}
-			
 		}
 	}
 </script>

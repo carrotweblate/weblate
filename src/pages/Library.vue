@@ -202,10 +202,59 @@
 			</b-container>
 		</section>
 
+		<!-- Полезные материалы -->
+		<section class="resources">
+			<b-container>
+				<b-row>
+					<b-col>
+						<h2>Полезные материалы</h2>
+					</b-col>
+				</b-row>
+				<b-row class="resources__row">
+					<template v-for="resource in results">
+						<b-col cols="6" lg="4"  class="resource" :key="resource.index">
+							<div class="resource__wrapper" v-on:click="modalResource(resource.event)">
+								<p class="tag grey-text mb-0" v-html=resource.type />
+								<div class="pic__wraper">
+									<img :if="resource.pic.url" :src="resource.pic.url" :alt="resource.title" loading="lazy">
+								</div>
+								<p class="title" v-html=resource.title />
+							</div>
+						</b-col>
+					</template>
+				</b-row>
+			</b-container>
+		</section>
+
+
+
+		<!-- Модалка для скачивания материалов -->
+		<b-modal ref="open-modal-resource" hide-footer title="Получить материал на email">
+			<b-form v-on:submit.prevent="modalDownloadResource">
+				<b-form-input 
+					placeholder="Email" 
+					type="email" 
+					required
+					v-model="modalEmail"
+					class="px-3 py-4 mt-3"
+				/>
+				<b-button 
+					type="submit" 
+					variant="primary" 
+					class="px-3 py-2 mt-4">
+					Получить
+				</b-button>
+			</b-form>
+		</b-modal>
+		<b-modal ref="suсcessDownload" hide-footer title="Всё успешно отправлено">
+			Проверьте свой email: {{modalEmail}}
+		</b-modal>
+
 	</Layout>
 </template>
 
 <script>
+	import axios from 'axios'
 	import SubscribeForm from '~/components/Forms/SubscribeForm.vue'
 
 	export default {
@@ -233,6 +282,49 @@
 						href: 'https://www.carrotquest.io/library/'
 					}
 				]
+			}
+		},
+		data() {
+    		return {
+				results: Array,
+				modalEmail: ''
+			}
+		},
+		async mounted() {
+			try {
+				axios.get('https://carrotquest.cdn.prismic.io/api/v2').then(ref => {
+					axios.get('https://carrotquest.cdn.prismic.io/api/v2/documents/search?ref=' + ref.data.refs[0].ref + '&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22X0ZSlRIAAPalRttu%22%29+%5D%5D').then(response => {
+						this.results = response.data.results[0].data.body[0].items.reverse()
+					})
+				})
+			} catch (error) {
+				console.log(error)
+			}
+		},
+		methods: {
+			modalResource (event) {
+				this.$refs['open-modal-resource'].show()
+				this.modalEvent = event
+			},
+			modalDownloadResource () {
+				carrotquest.identify([
+					{"op": "update_or_create", "key": "$email", "value": this.modalEmail},
+					{ doubleSubscribe: true }
+				]);
+				carrotquest.track("Заполнил форму на скачивание файлов", {
+					'Email': this.modalEmail,
+					'url': location.host + location.pathname
+				})
+				carrotquest.track('Скачал лид-магнит')
+				carrotquest.track(this.modalEvent, {
+					'source' : 'Библиотека'
+				})
+
+				this.$refs['open-modal-resource'].hide()
+				this.$refs['suсcessDownload'].show()
+				setTimeout(() => {
+					this.$refs['suсcessDownload'].hide()
+				}, 7000);
 			}
 		}
 	}
@@ -527,8 +619,121 @@
 					}
 				}
 			}
-			
+		}
 
+		.resources {
+			&__row {
+				margin-top: -2rem;
+			}
+			.resource__wrapper {
+				margin-top: 3rem;
+				margin-bottom: 1rem;
+				text-align: center;
+				color: #000;
+				.tag {
+					text-transform: uppercase;
+					font-size: 0.75rem;
+					color: #A4A4A4;
+				}
+				.title {
+					font-size: 1.25rem;
+				}
+				.pic__wraper {
+					position: relative;
+					display: inline-block;
+					margin: 1rem auto;
+					cursor: pointer;
+					&::before {
+						content: "";
+						display: block;
+						position: absolute;
+						background-color: #000;
+						width: 100%;
+						height: 100%;
+						z-index: 3;
+						opacity: 0;
+						top: 0; left: 0; right: 0; bottom: 0;
+						transition: all 150ms cubic-bezier(0, 0, 0.2, 1);
+						border-radius: 5px;
+					}
+					&::after {
+						content: url("data:image/svg+xml,%0A%3Csvg width='79' height='90' viewBox='0 0 79 90' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='39' cy='28' r='28' fill='%23FF8246'/%3E%3Cpath d='M32 30.1912L38.9391 37.1303L45.8783 30.1912' stroke='white'/%3E%3Cpath d='M39 37.1304L39 14' stroke='white'/%3E%3Cpath d='M31 42L47 42' stroke='white'/%3E%3Cpath d='M8.26953 73.002C6.70052 73.002 5.46029 73.526 4.54883 74.5742C3.64388 75.6159 3.19141 77.0449 3.19141 78.8613C3.19141 80.7298 3.6276 82.1751 4.5 83.1973C5.37891 84.2129 6.62891 84.7207 8.25 84.7207C9.24609 84.7207 10.3822 84.5417 11.6582 84.1836V85.6387C10.6686 86.0098 9.44792 86.1953 7.99609 86.1953C5.89323 86.1953 4.26888 85.5573 3.12305 84.2812C1.98372 83.0052 1.41406 81.1921 1.41406 78.8418C1.41406 77.3704 1.6875 76.0814 2.23438 74.9746C2.78776 73.8678 3.58203 73.015 4.61719 72.416C5.65885 71.8171 6.88281 71.5176 8.28906 71.5176C9.78646 71.5176 11.0951 71.791 12.2148 72.3379L11.5117 73.7637C10.431 73.2559 9.35026 73.002 8.26953 73.002ZM20.7695 75.2969H22.5469L17.9277 80.4629L22.9277 86H21.0332L16.1504 80.5801V86H14.5293V75.2969H16.1504V80.502L20.7695 75.2969ZM31.502 86L31.1797 84.4766H31.1016C30.5677 85.1471 30.0339 85.6029 29.5 85.8438C28.9727 86.0781 28.3118 86.1953 27.5176 86.1953C26.4564 86.1953 25.623 85.9219 25.0176 85.375C24.4186 84.8281 24.1191 84.0501 24.1191 83.041C24.1191 80.8796 25.8477 79.7467 29.3047 79.6426L31.1211 79.584V78.9199C31.1211 78.0801 30.9388 77.4616 30.5742 77.0645C30.2161 76.6608 29.64 76.459 28.8457 76.459C27.9538 76.459 26.9447 76.7324 25.8184 77.2793L25.3203 76.0391C25.8477 75.7526 26.4238 75.528 27.0488 75.3652C27.6803 75.2025 28.3118 75.1211 28.9434 75.1211C30.2194 75.1211 31.1634 75.4043 31.7754 75.9707C32.3939 76.5371 32.7031 77.4453 32.7031 78.6953V86H31.502ZM27.8398 84.8574C28.849 84.8574 29.64 84.5807 30.2129 84.0273C30.7923 83.474 31.082 82.6992 31.082 81.7031V80.7363L29.4609 80.8047C28.1719 80.8503 27.2409 81.0521 26.668 81.4102C26.1016 81.7617 25.8184 82.3118 25.8184 83.0605C25.8184 83.6465 25.9941 84.0924 26.3457 84.3984C26.7038 84.7044 27.2018 84.8574 27.8398 84.8574ZM37.4785 75.2969V79.2031C37.4785 80.4531 38.1914 81.0781 39.6172 81.0781C40.2096 81.0781 40.776 80.987 41.3164 80.8047C41.8568 80.6224 42.4688 80.3132 43.1523 79.877V75.2969H44.7734V86H43.1523V81.1562C42.4688 81.625 41.834 81.957 41.248 82.1523C40.6686 82.3411 40.0111 82.4355 39.2754 82.4355C38.2077 82.4355 37.3711 82.1556 36.7656 81.5957C36.1602 81.0358 35.8574 80.2773 35.8574 79.3203V75.2969H37.4785ZM54.8027 86L54.4805 84.4766H54.4023C53.8685 85.1471 53.3346 85.6029 52.8008 85.8438C52.2734 86.0781 51.6126 86.1953 50.8184 86.1953C49.7572 86.1953 48.9238 85.9219 48.3184 85.375C47.7194 84.8281 47.4199 84.0501 47.4199 83.041C47.4199 80.8796 49.1484 79.7467 52.6055 79.6426L54.4219 79.584V78.9199C54.4219 78.0801 54.2396 77.4616 53.875 77.0645C53.5169 76.6608 52.9408 76.459 52.1465 76.459C51.2546 76.459 50.2454 76.7324 49.1191 77.2793L48.6211 76.0391C49.1484 75.7526 49.7246 75.528 50.3496 75.3652C50.9811 75.2025 51.6126 75.1211 52.2441 75.1211C53.5202 75.1211 54.4642 75.4043 55.0762 75.9707C55.6947 76.5371 56.0039 77.4453 56.0039 78.6953V86H54.8027ZM51.1406 84.8574C52.1497 84.8574 52.9408 84.5807 53.5137 84.0273C54.0931 83.474 54.3828 82.6992 54.3828 81.7031V80.7363L52.7617 80.8047C51.4727 80.8503 50.5417 81.0521 49.9688 81.4102C49.4023 81.7617 49.1191 82.3118 49.1191 83.0605C49.1191 83.6465 49.2949 84.0924 49.6465 84.3984C50.0046 84.7044 50.5026 84.8574 51.1406 84.8574ZM66.5703 76.6836H63.0938V86H61.4727V76.6836H58.0352V75.2969H66.5703V76.6836ZM70.3105 79.7207H73.6113C76.3457 79.7207 77.7129 80.7266 77.7129 82.7383C77.7129 83.793 77.3548 84.6003 76.6387 85.1602C75.929 85.7201 74.8874 86 73.5137 86H68.6895V75.2969H70.3105V79.7207ZM70.3105 81.1172V84.6426H73.4355C74.2949 84.6426 74.9525 84.4928 75.4082 84.1934C75.8639 83.8939 76.0918 83.4414 76.0918 82.8359C76.0918 82.2435 75.8802 81.8105 75.457 81.5371C75.0404 81.2572 74.3503 81.1172 73.3867 81.1172H70.3105Z' fill='white'/%3E%3C/svg%3E%0A");
+						position: absolute;
+						top: 40%;
+						left: 50%;
+						margin-top: -45px;
+						margin-left: -40px;
+						z-index: 4;
+						opacity: 0;
+						transition: all 150ms cubic-bezier(0, 0, 0.2, 1);
+					}
+					img {
+						max-height: 216px;
+						box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+						display: block;
+						position: relative;
+						top: 0;
+						z-index: 2;
+						border-radius: 5px;
+					}
+					&:hover {
+						&::before {
+							opacity: 0.5;
+						}
+						&::after {
+							top: 50%;
+							opacity: 1;
+						}
+						img {
+							box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.3);
+						}
+					}
+					@media (hover: hover) {
+						&::before {
+							opacity: 0;
+						}
+						&::after {
+							opacity: 0;
+						}
+					}
+					@media (hover: none) {
+						&::after {
+							content: url("https://cdn-www.carrotquest.io/static/img/library/download_nohover.svg");
+							margin-top: -12px;
+							top: 50%;
+							opacity: 1;
+						}
+					}
+				}
+			}
+			@media (max-width: 767.98px) {
+				.resource__wrapper {
+					text-align: left;
+					.tag {
+						font-size: 11px;
+					}
+					.title {
+						font-size: 0.8rem;
+						font-weight: bold;
+					}
+					.pic__wraper {
+						margin: 0.5rem auto;
+						img {
+							max-height: 140px;
+						}
+					}
+				}
+			}
+			@media (max-width: 575.98px) {
+				.resource__wrapper {
+					.pic__wraper {
+						margin: 0.5rem auto;
+						img {
+							max-height: 110px;
+						}
+					}
+				}
+			}
 		}
 	}
 </style>
