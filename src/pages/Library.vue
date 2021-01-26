@@ -95,7 +95,7 @@
 				</b-row>
 				<b-row class="courses_row">
 					<b-col lg="6" class="course">
-						<g-link to="/videocourse-online-sales/" class="courses__wrapper d-block">
+						<a href="/videocourse-online-sales/" class="courses__wrapper d-block">
 							<g-image src="~/assets/images/library/courses_video.png" alt="Как увеличить продажи на том же трафике, используя инструменты Carrot quest" />
 							<div class="box">
 								<div class="h5">
@@ -107,11 +107,11 @@
 									email-рассылок и чат-бота, а также строить воронки и анализировать эффективность коммуникаций.
 								</p>
 							</div>
-						</g-link>
+						</a>
 					</b-col>
 
 					<b-col lg="6" class="course">
-						<g-link to="/transformsales-course-part1/" class="courses__wrapper d-block">
+						<a href="/transformsales-course-part1/" class="courses__wrapper d-block">
 							<g-image src="~/assets/images/library/courses_transformation.png" alt="Digital-трансформация маркетинга и продаж" />
 							<div class="box">
 								<div class="h5">
@@ -122,11 +122,11 @@
 									чтобы вы могли по-новому взаимодействовать с клиентами, поддерживать пользователей и увеличивать продажи без дополнительных бюджетов на маркетинг.
 								</p>
 							</div>
-						</g-link>
+						</a>
 					</b-col>
 
 					<b-col lg="6" class="course">
-						<g-link to="/marketing-course/" class="courses__wrapper d-block">
+						<a href="/marketing-course/" class="courses__wrapper d-block">
 							<g-image src="~/assets/images/library/courses_prodagi.png" alt="Маркетинг на сайте: как продать в 2 раза больше, не увеличивая трафик" />
 							<div class="box">
 								<div class="h5">
@@ -136,11 +136,11 @@
 									Этот курс — выжимка опыта, который мы получили за 5 лет внедрения автоворонок для 400 сайтов. Все рекомендации можно внедрить за неделю. Разработчик не понадобится 🙂
 								</p>
 							</div>
-						</g-link>
+						</a>
 					</b-col>
 
 					<b-col lg="6" class="course">
-						<g-link to="/kurs-email-marketing/" class="courses__wrapper d-block">
+						<a href="/kurs-email-marketing/" class="courses__wrapper d-block">
 							<g-image src="~/assets/images/library/courses_email.png" alt="Email-маркетинг за 8 шагов" />
 							<div class="box">
 								<div class="h5">
@@ -151,7 +151,7 @@
 									Вы узнаете, как настраивать коммуникацию с клиентами с помощью поп-апов, емейлов и онлайн-чата.
 								</p>
 							</div>
-						</g-link>
+						</a>
 					</b-col>
 				</b-row>
 			</b-container>
@@ -173,7 +173,7 @@
 				</b-row>
 				<b-row class="courses_row">
 					<b-col lg="6" class="course"> 
-						<g-link to="/support-guide/" class="courses__wrapper d-block">
+						<a href="/support-guide/" class="courses__wrapper d-block">
 							<g-image src="~/assets/images/library/gaid-po-podderzhke.png" alt="Гайд по поддержке пользователей" />
 							<div class="box">
 								<div class="h5">
@@ -183,10 +183,10 @@
 									Стратегия и цели в команде поддержки. Строим работу с обращениями, анализируем эффективность работы.
 								</p>
 							</div>
-						</g-link>
+						</a>
 					</b-col>
 					<b-col lg="6" class="course"> 
-						<g-link to="/qualification-guide/" class="courses__wrapper d-block">
+						<a href="/qualification-guide/" class="courses__wrapper d-block">
 							<g-image src="~/assets/images/library/guide_user.png" alt="Гайд по квалификации пользователей на сайте" />
 							<div class="box">
 								<div class="h5">
@@ -196,7 +196,7 @@
 									Вы узнаете, как построить процесс по оценке лидов с помощью чат-бота и лид-магнитов.
 								</p>
 							</div>
-						</g-link>
+						</a>
 					</b-col>
 				</b-row>
 			</b-container>
