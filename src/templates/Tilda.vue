@@ -49,7 +49,7 @@
 
 <style lang="scss">
 	.tilda {
-		overflow: hidden;
+		// overflow: hidden;
 		#t-header, #t-footer {
 			display: none;
 		}

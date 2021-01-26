@@ -768,10 +768,11 @@
 			},
 			modalClient () {
 				carrotquest.identify([
-					{"op": "update_or_create", "key": "$phone", "value": this.modalPhone},
-					{"op": "update_or_create", "key": "$name", "value": this.modalName},
-					{"op": "update_or_create", "key": "$email", "value": this.modalEmail},
-					{"op": "update_or_create", "key": "Адрес сайта", "value": this.modalSite}
+					{'op': 'update_or_create', 'key': '$phone', 'value': this.modalPhone},
+					{'op': 'update_or_create', 'key': '$name', 'value': this.modalName},
+					{'op': 'update_or_create', 'key': '$email', 'value': this.modalEmail},
+					{'op': 'update_or_create', 'key': 'Адрес сайта', 'value': this.modalSite},
+					{'Заявка': 'внедрение'}
 				])
 				carrotquest.track('Отправил заявку на внедрение' , {
 					'Email': this.modalEmail,
