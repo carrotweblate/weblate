@@ -95,7 +95,7 @@
 				</b-row>
 				<b-row class="courses_row">
 					<b-col lg="6" class="course">
-						<a href="/videocourse-online-sales/" class="courses__wrapper d-block">
+						<g-link to="/videocourse-online-sales/" class="courses__wrapper d-block">
 							<g-image src="~/assets/images/library/courses_video.png" alt="Как увеличить продажи на том же трафике, используя инструменты Carrot quest" />
 							<div class="box">
 								<div class="h5">
@@ -107,11 +107,11 @@
 									email-рассылок и чат-бота, а также строить воронки и анализировать эффективность коммуникаций.
 								</p>
 							</div>
-						</a>
+						</g-link>
 					</b-col>
 
 					<b-col lg="6" class="course">
-						<a href="/transformsales-course-part1/" class="courses__wrapper d-block">
+						<g-link to="/transformsales-course-part1/" class="courses__wrapper d-block">
 							<g-image src="~/assets/images/library/courses_transformation.png" alt="Digital-трансформация маркетинга и продаж" />
 							<div class="box">
 								<div class="h5">
@@ -122,7 +122,7 @@
 									чтобы вы могли по-новому взаимодействовать с клиентами, поддерживать пользователей и увеличивать продажи без дополнительных бюджетов на маркетинг.
 								</p>
 							</div>
-						</a>
+						</g-link>
 					</b-col>
 
 					<b-col lg="6" class="course">
@@ -173,7 +173,7 @@
 				</b-row>
 				<b-row class="courses_row">
 					<b-col lg="6" class="course"> 
-						<a href="/support-guide/" class="courses__wrapper d-block">
+						<g-link to="/support-guide/" class="courses__wrapper d-block">
 							<g-image src="~/assets/images/library/gaid-po-podderzhke.png" alt="Гайд по поддержке пользователей" />
 							<div class="box">
 								<div class="h5">
@@ -183,10 +183,10 @@
 									Стратегия и цели в команде поддержки. Строим работу с обращениями, анализируем эффективность работы.
 								</p>
 							</div>
-						</a>
+						</g-link>
 					</b-col>
 					<b-col lg="6" class="course"> 
-						<a href="/qualification-guide/" class="courses__wrapper d-block">
+						<g-link to="/qualification-guide/" class="courses__wrapper d-block">
 							<g-image src="~/assets/images/library/guide_user.png" alt="Гайд по квалификации пользователей на сайте" />
 							<div class="box">
 								<div class="h5">
@@ -196,7 +196,7 @@
 									Вы узнаете, как построить процесс по оценке лидов с помощью чат-бота и лид-магнитов.
 								</p>
 							</div>
-						</a>
+						</g-link>
 					</b-col>
 				</b-row>
 			</b-container>
