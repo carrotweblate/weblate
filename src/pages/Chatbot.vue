@@ -26,7 +26,7 @@
 		<!-- Зачем нужен лид-бот? -->
 		<section class="why">
 			<b-container>
-				<b-row class="justify-content-center">
+				<b-row>
 					<b-col>
 						<h2 class="mb-4 mb-lg-5">Зачем нужен лид-бот?</h2>
 					</b-col>
@@ -36,7 +36,7 @@
 						<div class="why__list__review h-100">
 							<p>Общение и&nbsp;брифование с&nbsp;каждым из&nbsp;входящим лидов занимает у&nbsp;аккаунта от&nbsp;15&nbsp;минут до&nbsp;часа, при этом далеко не&nbsp;каждый из&nbsp;лидов является целевым</p>
 							<div class="why__list__review__person">
-								<g-image src="@/assets/images/components/feedback-tatiana-zorina.png" width="96" alt="Татьяна Зорина" />
+								<g-image src="@/assets/images/components/feedback-tatiana-zorina.png" width="96" alt="Татьяна Зорина" class="mb-2" />
 								<p>
 									<b>Татьяна Зорина</b> <br>
 									Managing director <a href="https://rick.ai/" target="_blank" rel="noopener">Rick.ai</a>
@@ -48,7 +48,7 @@
 						<div class="why__list__review h-100">
 							<p>Менеджеры по&nbsp;продажам тратят&nbsp;70% времени на&nbsp;нецелевых лидов. Поэтому квалифицировать со&nbsp;стороны маркетинга важно</p>
 							<div class="why__list__review__person">
-								<g-image src="@/assets/images/components/feedback-nikita-dmitrievskiy.png" width="96" alt="Никита Дмитриевский" />
+								<g-image src="@/assets/images/components/feedback-nikita-dmitrievskiy.png" width="96" alt="Никита Дмитриевский" class="mb-2" />
 								<p>
 									<b>Никита Дмитриевский</b> <br>
 									Маркетолог образовательных программ &laquo;<a href="https://accelerator.iidf.ru/" target="_blank" rel="noopener">Акселератора ФРИИ</a>&raquo;
@@ -60,7 +60,7 @@
 						<div class="why__list__review h-100">
 							<p>Без дополнительных инструментов мы&nbsp;тратим 10-20&nbsp;минут, чтобы собрать первичную информацию о&nbsp;клиенте</p>
 							<div class="why__list__review__person">
-								<g-image src="@/assets/images/components/feedback-sokovnin-paver.png" width="96"  alt="Соковнин Павел" />
+								<g-image src="@/assets/images/components/feedback-sokovnin-paver.png" width="96"  alt="Соковнин Павел" class="mb-2" />
 								<p>
 									<b>Соковнин Павел</b> <br>
 									Head of&nbsp;Sales, Carrot quest
@@ -131,7 +131,7 @@
 			<b-container>
 				<b-row class="row justify-content-start ">
 					<b-col lg="10" xl="9">
-						<div class="h1">
+						<div class="h1 mb-4 mb-lg-5">
 							У&nbsp;нас есть сценарии для решения ваших задач
 						</div>
 					</b-col>
@@ -140,37 +140,105 @@
 					<b-row>
 						<b-col lg="4">
 							<div class="h5">Онлайн-сервис</div>
-							<ul>
-								<li :class="{ active : solutionIndex == 0 }">
+							<ul class="mb-4">
+								<li :class="{ active : solutionIndex == 0 }" class="my-2">
 									<b-link @click="solutionIndex=0">
 										Сценарий сбора лидов
 									</b-link>
-									<g-image src="@/assets/images/chatbot/solution-1.png" width="844" quality="100" alt="Сценарий сбора лидов" class="d-lg-none" />
+									<g-image src="@/assets/images/chatbot/solution-1.png" width="844" quality="100" alt="Сценарий сбора лидов" class="d-lg-none my-4" />
 								</li>
-								<li :class="{ active : solutionIndex == 1 }">
+								<li :class="{ active : solutionIndex == 1 }" class="my-2">
 									<b-link @click="solutionIndex=1">
 										Персональная работа с&nbsp;каждым сегментом клиентов
 									</b-link>
-									<g-image src="@/assets/images/chatbot/solution-2.png" width="844" quality="100" alt="Персональная работа с каждым сегментом клиентов" class="d-lg-none" />
+									<g-image src="@/assets/images/chatbot/solution-2.png" width="844" quality="100" alt="Персональная работа с каждым сегментом клиентов" class="d-lg-none my-4" />
 								</li>
-								<li :class="{ active : solutionIndex == 2 }">
+								<li :class="{ active : solutionIndex == 2 }" class="my-2">
 									<b-link @click="solutionIndex=2" >
 										Передаём в&nbsp;поддержку только сложные вопросы
 									</b-link>
-									<g-image src="@/assets/images/chatbot/solution-3.png" width="844" quality="100" alt="Передаём в поддержку только сложные вопросы" class="d-lg-none" />
+									<g-image src="@/assets/images/chatbot/solution-3.png" width="844" quality="100" alt="Передаём в поддержку только сложные вопросы" class="d-lg-none my-4" />
 								</li>
 							</ul>
+
+							<div class="h5">Интернет-магазин</div>
+							<ul class="mb-4">
+								<li :class="{ active : solutionIndex == 3 }" class="my-2">
+									<b-link @click="solutionIndex=3">
+										Собираем контакты и&nbsp;записываем на&nbsp;консультацию
+									</b-link>
+									<g-image src="@/assets/images/chatbot/solution-4.png" quality="100" alt="Собираем контакты и записываем на консультацию" class="d-lg-none my-4" />
+								</li>
+								<li :class="{ active : solutionIndex == 4 }" class="my-2">
+									<b-link @click="solutionIndex=4">
+										Сегментируем VIP клиентов
+									</b-link>
+									<g-image src="@/assets/images/chatbot/solution-5.png" quality="100" alt="Сегментируем VIP клиентов" class="d-lg-none my-4" />
+								</li>
+								<li :class="{ active : solutionIndex == 5 }" class="my-2">
+									<b-link @click="solutionIndex=5" >
+										Угадываем и&nbsp;отвечаем на&nbsp;самые частые вопросы
+									</b-link>
+									<g-image src="@/assets/images/chatbot/solution-6.png" quality="100" alt="Угадываем и отвечаем на самые частые вопросы" class="d-lg-none my-4" />
+								</li>
+							</ul>
+
+							<div class="h5">Консультации и услуги</div>
+							<ul>
+								<li :class="{ active : solutionIndex == 6 }" class="my-2">
+									<b-link @click="solutionIndex=6">
+										Собираем заявки
+									</b-link>
+									<g-image src="@/assets/images/chatbot/solution-7.png" quality="100" alt="Собираем заявки" class="d-lg-none my-4" />
+								</li>
+								<li :class="{ active : solutionIndex == 7 }" class="my-2">
+									<b-link @click="solutionIndex=7">
+										Собираем обратную связь после занятий
+									</b-link>
+									<g-image src="@/assets/images/chatbot/solution-8.png" quality="100" alt="Собираем обратную связь после занятий" class="d-lg-none my-4" />
+								</li>
+								<li :class="{ active : solutionIndex == 8 }" class="my-2">
+									<b-link @click="solutionIndex=8" >
+										Закрываем частотные вопросы
+									</b-link>
+									<g-image src="@/assets/images/chatbot/solution-9.png" quality="100" alt="Угадываем и отвечаем на самые частые вопросы" class="d-lg-none my-4" />
+								</li>
+							</ul>
+							<p class="my-4">
+								<i>Вы можете настроить сценарии любой длины и сложности, сочетая и усложняя базовые сценарии</i>
+							</p>
+							<b-button href="/panel/toapp/messages/chat-bot/" variant="primary">Подключить к&nbsp;своему сайту</b-button>
 						</b-col>
-						<b-col lg="8" class="d-none d-lg-flex align-items-center justify-content-center">
+						<b-col lg="8" class="d-none d-lg-flex justify-content-center py-5">
 							<b-tabs v-model="solutionIndex" no-nav-style>
-								<b-tab active>
-									<g-image src="@/assets/images/chatbot/solution-1.png" width="844" quality="100" alt="Сценарий сбора лидов" />
+								<b-tab active lazy>
+									<g-image src="@/assets/images/chatbot/solution-1.png" quality="100" alt="Сценарий сбора лидов" />
 								</b-tab>
 								<b-tab>
-									<g-image src="@/assets/images/chatbot/solution-2.png" width="844" quality="100" alt="Персональная работа с каждым сегментом клиентов" />
+									<g-image src="@/assets/images/chatbot/solution-2.png" quality="100" alt="Персональная работа с каждым сегментом клиентов" />
 								</b-tab>
 								<b-tab>
-									<g-image src="@/assets/images/chatbot/solution-3.png" width="844" quality="100" alt="Передаём в поддержку только сложные вопросы" />
+									<g-image src="@/assets/images/chatbot/solution-3.png" quality="100" alt="Передаём в поддержку только сложные вопросы" />
+								</b-tab>
+
+								<b-tab>
+									<g-image src="@/assets/images/chatbot/solution-4.png" quality="100" alt="Собираем контакты и записываем на консультацию" />
+								</b-tab>
+								<b-tab>
+									<g-image src="@/assets/images/chatbot/solution-5.png" quality="100" alt="Сегментируем VIP клиентов" />
+								</b-tab>
+								<b-tab>
+									<g-image src="@/assets/images/chatbot/solution-6.png" quality="100" alt="Передаём в поддержку только сложные вопросы" />
+								</b-tab>
+
+								<b-tab>
+									<g-image src="@/assets/images/chatbot/solution-7.png" quality="100" alt="Собираем заявки" />
+								</b-tab>
+								<b-tab>
+									<g-image src="@/assets/images/chatbot/solution-8.png" quality="100" alt="Собираем обратную связь после занятий" />
+								</b-tab>
+								<b-tab>
+									<g-image src="@/assets/images/chatbot/solution-9.png" quality="100" alt="Закрываем частотные вопросы" />
 								</b-tab>
 							</b-tabs>
 						</b-col>
@@ -178,6 +246,103 @@
 				</div>
 			</b-container>
 		</section>
+
+		<!-- Подписка в сервисе -->
+		<section style="background-color: #fff3e6;">
+			<b-container>
+				<b-col class="p-4 pb-lg-0">
+					<b-row class="align-items-center justify-content-center">
+						<b-col lg="4" class="d-none d-lg-block">
+							<g-image src="@/assets/images/components/medium-4.png" width="494" alt="Регистрация в сервисе" title="Поехали!" style="max-width: 100%" />
+						</b-col>
+						<b-col lg="8">
+							<div class="h4">Станьте экспертом по&nbsp;сбору и&nbsp;квалификации лидов</div>
+							<p class="mb-4">
+								Делимся лучшими методиками квалификации лидов в&nbsp;нашем гайде. Мы&nbsp;пришлём его на&nbsp;почту
+							</p>
+							<b-button href="#open-modal-download?title=Скачать гайд&amp;cqe=скачал гайд по квалификации" variant="primary">
+								Скачать гайд сейчас
+							</b-button>
+						</b-col>
+					</b-row>
+				</b-col>
+			</b-container>
+		</section>
+
+		<!-- Что еще умеет лид-бот -->
+		<section class="more">
+			<b-container>
+				<b-row>
+					<b-col>
+						<h2 class="mb-4 mb-lg-5">Что еще умеет лид-бот</h2>
+					</b-col>
+				</b-row>
+				<b-row class="more__list">
+					<b-col lg="4" class="mb-5">
+						<g-image src="@/assets/images/components/small-33.svg" alt="Добавляйте картинки и документы к сообщениям бота" class="mb-3" />
+						<p class="mb-0">
+							Добавляйте картинки и&nbsp;документы к&nbsp;сообщениям бота
+						</p>
+					</b-col>
+					<b-col lg="4" class="mb-5">
+						<g-image src="@/assets/images/components/small-34.svg" alt="Бот предлагает до 10 вариантов ответов пользователям" class="mb-3" />
+						<p class="mb-0">
+							Бот предлагает до&nbsp;10&nbsp;вариантов ответов пользователям
+						</p>
+					</b-col>
+					<b-col lg="4" class="mb-5">
+						<g-image src="@/assets/images/components/small-35.svg" alt="Автоматический сбор контактов" class="mb-3" />
+						<p class="mb-0">
+							Автоматический сбор контактов
+						</p>
+					</b-col>
+					<b-col lg="4" class="mb-5 mb-lg-0">
+						<g-image src="@/assets/images/components/small-36.svg" alt="Автоматическая запись на демо или созвон" class="mb-3" />
+						<p>
+							Автоматическая запись на&nbsp;демо или созвон
+						</p>
+						<b-badge variant="primary" class="px-3 py-2 text-white text-uppercase">Скоро</b-badge>
+					</b-col>
+					<b-col lg="4">
+						<g-image src="@/assets/images/components/small-37.svg" alt="Отправка статей из базы знаний" class="mb-3" />
+						<p>
+							Отправка статей из&nbsp;базы знаний
+						</p>
+						<b-badge variant="primary" class="px-3 py-2 text-white text-uppercase">Скоро</b-badge>
+					</b-col>
+				</b-row>
+			</b-container>
+		</section>
+
+		<FAQ 
+			title="Часто задаваемые вопросы"
+			:items="[
+				{
+					question: 'Что такое чат-бот?',
+					answer: 'Чат-бот&nbsp;&mdash; это функционал <a href=/online-consultant/>чата Carrot quest</a>, который автоматически задаёт вопросы посетителям вашего сайта и&nbsp;предлагает ответы в&nbsp;виде кнопок на&nbsp;выбор или поля для заполнения. В&nbsp;зависимости от&nbsp;ответа чат-бот задаёт следующий вопрос, отправляет форму или назначает диалог на&nbsp;оператора.'
+				},
+				{
+					question: 'Что может лид-бот?',
+					answer: '<ul><li>Отправлять пользователям текстовые сообщения по&nbsp;триггеру;</li><li>Предлагать до&nbsp;10&nbsp;вариантов ответа на&nbsp;каждое сообщение и&nbsp;совершатьследующие действия в&nbsp;зависимости от&nbsp;ответа;</li><li>Отправлять файлы и&nbsp;картинки;</li><li>Собирать контакты (имя, емейл, телефон) или спрашивать другие данные у&nbsp;клиентов;</li><li>Назначать диалог на&nbsp;конкретного оператора или в&nbsp;канал;</li><li>Наполнять карточку лида информацией на&nbsp;основе ответов на&nbsp;вопросы дляпоследующей сегментации и&nbsp;отправки триггерных сообщений;</li></ul><br>Какие возможности появятся в&nbsp;ближайшее время:<ul><li>Отправлять формы Calendly для самостоятельной записи на&nbsp;мероприятия;</li><li>Отправлять статьи из&nbsp;<a href=/knowledge-base/>базы знаний Carrot quest</a>.</li></ul>'
+				},
+				{
+					question: 'Как чат-бот может помочь моей компании?',
+					answer: 'Нет, этот чат-бот запускается, когда пользователь на&nbsp;сайте сделает целевое действие. Есликлиент первый напишет в&nbsp;чат, то&nbsp;бот ничего не&nbsp;ответит (но&nbsp;такой бот тожескоро появится).'
+				},
+				{
+					question: 'Как подключить лид-бота?',
+					answer: 'Если у&nbsp;вас на&nbsp;сайте установлен чат Carrot quest, дополнительного подключения чат-ботане&nbsp;требуется. Чтобы настроить чат-бота, вам не&nbsp;нужен программист, бот настраиваетсяне&nbsp;сложнее автосообщения.'
+				},
+				{
+					question: 'Сколько стоит лид-бот?',
+					answer: 'Чат бот подключается как дополнительный модуль к&nbsp;вашей основной подписке и&nbsp;стоит 2&nbsp;000&nbsp;₽ в&nbsp;месяц.'
+				}
+			]"
+			:button="{
+				text: 'Подключить к&nbsp;своему сайту',
+				href: '/panel/toapp/messages/chat-bot/'
+			}"
+		/>
 
 		<!-- Возможности платформы -->
 		<b-container class="functions">
@@ -252,11 +417,12 @@
 
 		<Logos />
 
+		<!-- Регистрация в сервисе -->
 		<b-container>
 			<b-col class="p-4" style="background-color: #fff3e6; border-radius: 5px;">
 				<b-row class="align-items-center justify-content-center">
 					<b-col lg="6">
-						<g-image src="@/assets/images/components/10.png" width="494" alt="Регистрация в сервисе" title="Поехали!" style="max-width: 100%" />
+						<g-image src="@/assets/images/components/10.png" width="494" alt="Регистрация в сервисе" title="Поехали!" class="mw-100" />
 					</b-col>
 					<b-col lg="6">
 						<div class="h1 mb-4">Регистрация в&nbsp;сервисе</div>
@@ -273,6 +439,7 @@
 
 <script>
 	import MegaTabs 			from '~/components/MegaTabs.vue'
+	import FAQ 					from '~/components/FAQ.vue'
 	import Cases 				from '~/components/Cases/Cases.vue'
 	import Logos 				from '~/components/Logos.vue'
 	import RegistrationForm 	from '~/components/Forms/RegistrationForm.vue'
@@ -281,6 +448,7 @@
 	export default {
 		components: {
 			MegaTabs,
+			FAQ,
 			Cases,
 			Logos,
 			RegistrationForm,
@@ -369,6 +537,7 @@
 		.solution {
 			.col-lg-4 {
 				padding-top: 2rem;
+				padding-bottom: 3rem;
 			}
 			ul {
 				padding: 0;
@@ -400,6 +569,12 @@
 				.col-lg-4 {
 					border-right: 1px solid #ECECEC;
 				}
+			}
+		}
+
+		.more {
+			img {
+				height: 64px;
 			}
 		}
 

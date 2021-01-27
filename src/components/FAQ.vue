@@ -12,14 +12,18 @@
 		<b-row>
 			<b-col cols="12" v-for="(item , index ) in items" :key="index">
 				<div class="FAQ__box mt-2">
-					<b-button v-b-toggle="'answer-' + index">
+					<b-button v-b-toggle="'answer-' + index" variant="link">
 						<span v-html="item.question" />
 					</b-button>
-					<b-collapse :id="'answer-' + index">
-						<div class="FAQ__box__answer" v-html="item.answer" />
+					<b-collapse :id="'answer-' + index" :visible="index==0" class="pb-3">
+						<div class="FAQ__box__answer text" v-html="item.answer" />
 					</b-collapse>
 				</div>
 			</b-col>
+		</b-row>
+
+		<b-row class="justify-content-center">
+			<b-button :href="button.href" variant="primary" class="mt-5" v-html="button.text" />
 		</b-row>
 		
 	</b-container>
@@ -31,7 +35,8 @@
 	export default {
 		props: {
 			title: String,
-			items: Array
+			items: Array,
+			button: Object
 		},
 
 		data() {
