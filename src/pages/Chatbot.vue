@@ -127,22 +127,56 @@
 		</section>
 
 		<!-- Сценарии для решения ваших задач -->
-		<section id="solution_app" class="solution">
-			<b-container class="container">
+		<section class="solution">
+			<b-container>
 				<b-row class="row justify-content-start ">
-					<b-col class="col-12 col-lg-10 col-xl-9">
+					<b-col lg="10" xl="9">
 						<div class="h1">
 							У&nbsp;нас есть сценарии для решения ваших задач
 						</div>
 					</b-col>
 				</b-row>
-			</b-container>
-			<div class="solution__box">
-				<b-container class="container">
-					<b-row class="row solution_nav">
+				<div class="solution__box">
+					<b-row>
+						<b-col lg="4">
+							<div class="h5">Онлайн-сервис</div>
+							<ul>
+								<li :class="{ active : solutionIndex == 0 }">
+									<b-link @click="solutionIndex=0">
+										Сценарий сбора лидов
+									</b-link>
+									<g-image src="@/assets/images/chatbot/solution-1.png" width="844" quality="100" alt="Сценарий сбора лидов" class="d-lg-none" />
+								</li>
+								<li :class="{ active : solutionIndex == 1 }">
+									<b-link @click="solutionIndex=1">
+										Персональная работа с&nbsp;каждым сегментом клиентов
+									</b-link>
+									<g-image src="@/assets/images/chatbot/solution-2.png" width="844" quality="100" alt="Персональная работа с каждым сегментом клиентов" class="d-lg-none" />
+								</li>
+								<li :class="{ active : solutionIndex == 2 }">
+									<b-link @click="solutionIndex=2" >
+										Передаём в&nbsp;поддержку только сложные вопросы
+									</b-link>
+									<g-image src="@/assets/images/chatbot/solution-3.png" width="844" quality="100" alt="Передаём в поддержку только сложные вопросы" class="d-lg-none" />
+								</li>
+							</ul>
+						</b-col>
+						<b-col lg="8" class="d-none d-lg-flex align-items-center justify-content-center">
+							<b-tabs v-model="solutionIndex" no-nav-style>
+								<b-tab active>
+									<g-image src="@/assets/images/chatbot/solution-1.png" width="844" quality="100" alt="Сценарий сбора лидов" />
+								</b-tab>
+								<b-tab>
+									<g-image src="@/assets/images/chatbot/solution-2.png" width="844" quality="100" alt="Персональная работа с каждым сегментом клиентов" />
+								</b-tab>
+								<b-tab>
+									<g-image src="@/assets/images/chatbot/solution-3.png" width="844" quality="100" alt="Передаём в поддержку только сложные вопросы" />
+								</b-tab>
+							</b-tabs>
+						</b-col>
 					</b-row>
-				</b-container>
-			</div>
+				</div>
+			</b-container>
 		</section>
 
 		<!-- Возможности платформы -->
@@ -279,7 +313,7 @@
 
 		data() {
 			return {
-				
+				solutionIndex: 0
 			}
 		}
 
@@ -328,6 +362,43 @@
 			@media (max-width: 1199.98px) {
 				.container {
 					border-radius: 0;
+				}
+			}
+		}
+
+		.solution {
+			.col-lg-4 {
+				padding-top: 2rem;
+			}
+			ul {
+				padding: 0;
+				li {
+					list-style: none;
+				}
+				img {
+					display: none;
+				}
+				.active a {
+					color: #000;
+				}
+				.active img {
+					display: block;
+				}
+			}
+			img {
+				max-width: 100%;
+			}
+			@media (min-width: 1200px) {
+				&__box {
+					position: relative;
+					left: -30px;
+					width: 1160px;
+					padding: 0 30px;
+					box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+					border-radius: 5px;
+				}
+				.col-lg-4 {
+					border-right: 1px solid #ECECEC;
 				}
 			}
 		}
