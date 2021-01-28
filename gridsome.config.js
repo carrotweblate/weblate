@@ -6,7 +6,7 @@
 
 module.exports = {
 
-	// pathPrefix: '/blog/article/',
+	pathPrefix: '/blog/article/',
 
 	siteName: 'Carrot quest',
 	titleTemplate: "%s — Carrot quest",
@@ -26,8 +26,7 @@ module.exports = {
 		{
 			use: 'gridsome-plugin-gtm',
 			options: {
-				id: 'GTM-PHNG63V',  //CQ
-				// id: 'GTM-NZKGGR3',  //Пустой
+				id: 'GTM-PHNG63V',
 				enabled: true,
 				debug: false
 			}
