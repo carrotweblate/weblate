@@ -3,8 +3,8 @@
   "private": true,
   "scripts": {
     "build": "gridsome build",
-    "public": "gridsome build && rm -r dist-public && cp dist dist-public",
-    "test": "gridsome build && rm -r dist-test && cp dist dist-test",
+    "public": "gridsome build && rm -r dist-public && cp -R dist dist-public",
+    "test": "gridsome build && rm -r dist-test && cp -R dist dist-test",
     "develop": "gridsome develop",
     "explore": "gridsome explore"
   },

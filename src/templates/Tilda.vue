@@ -36,7 +36,11 @@
 					if ( value.node.js ) {
 						let tildaScript = document.createElement("script")
 						tildaScript.src = value.node.js
-						tildaScript.setAttribute('defer' , '')
+						if (tildaScript.src.indexOf('jquery-1.10.2.min.js') >= 0) {
+							tildaScript.setAttribute('rel' , 'preload')
+						} else {
+							tildaScript.setAttribute('defer' , '')
+						}
 						document.head.appendChild(tildaScript)
 					}
 				}
