@@ -30,8 +30,12 @@ export default function(Vue, { head }) {
 	// 	src: 'https://static.tildacdn.com/js/jquery-1.10.2.min.js',
 	// 	rel: 'preload'
 	// })
+	// head.script.push({
+	// 	src: 'https://www.carrotquest.io/blog/article/assets/js/cq.js',
+	// 	rel: 'preload'
+	// })
 	head.script.push({
-		src: 'https://www.carrotquest.io/blog/article/assets/js/cq.js',
+		src: 'https://www.carrotquest.io/assets/js/cq.js',
 		rel: 'preload'
 	})
 
