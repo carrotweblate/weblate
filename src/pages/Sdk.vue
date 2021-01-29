@@ -1,3 +1,9 @@
+<template>
+	<Layout class="page page-sdk">
+
+    </Layout>
+</template>
+
 <script>
 //Код для sdk (ваще шляпа какая-то, часть удалиться, при переносе страницы на JAM сделаем)
 // if (location.href.indexOf('carrotquest.io/sdk') > 0 && typeof jQuery!='undefined') {
