@@ -2,14 +2,14 @@
 	<Layout class="page page-404">
 
 		<b-container>
-            <b-row>
-                <b-col class="pt-5">
-                    <h1>
-                        Страница не найдена
-                    </h1>
-                </b-col>
-            </b-row>
-        </b-container>
+			<b-row>
+				<b-col class="pt-5">
+					<h1>
+						Страница не найдена
+					</h1>
+				</b-col>
+			</b-row>
+		</b-container>
 
 	</Layout>
 </template>
@@ -20,7 +20,7 @@
 		//Делаем в HEAD
 		metaInfo() {
 			return {
-				title: 'Инструменты для увеличения продаж на сайтах без привлечения нового трафика',
+				title: '404 — Страница не найдена',
 				meta: [
 					{
 						key: 'description',
@@ -35,7 +35,7 @@
 				link: [
 					{
 						rel: 'canonical',
-						href: 'https://www.carrotquest.io/'
+						href: 'https://www.carrotquest.io/404/'
 					}
 				]
 			}

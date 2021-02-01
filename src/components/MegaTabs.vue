@@ -19,10 +19,10 @@
 						<!-- Видео -->
 						<b-embed v-if="item.pic.search('mp4') > 0"
 							type="video" 
-							aspect="4by3"
+							aspect="1by1"
 							autoplay loop muted playsinline
 							>
-							<source :src="item.pic.replace('mp4','webm')" type="video/webp">
+							<source :src="item.pic.replace('mp4','webm')" type="video/webm">
 							<source :src="item.pic" type="video/mp4">
 						</b-embed>
 						<!-- Изображение -->
@@ -53,7 +53,7 @@
 						<!-- Видео -->
 						<b-embed v-if="item.pic.search('mp4') > 0"
 							type="video" 
-							aspect="4by3"
+							aspect="1by1"
 							autoplay loop muted playsinline
 							>
 							<source :src="item.pic.replace('mp4','webm')" type="video/webm">
@@ -119,14 +119,14 @@
 		}
 		.tabs {
 			.tab-pane {
-				height: 560px;
+				height: 600px;
 				text-align: center;
 				img , video {
 					width: auto;
 					height: auto;
 					max-width: 100%;
 					border-radius: 5px;
-					max-height: 560px;
+					max-height: 600px;
 				}
 			}
 			.nav {
@@ -236,7 +236,6 @@
 					line-height: 1.5rem;
 				}
 			}
-			
 		}
 		@media (max-width: 991.98px) {
 			.mobile .title {

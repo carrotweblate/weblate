@@ -522,7 +522,7 @@
 		},
 
 		data() {
-    		return {
+			return {
 				designChatDark: false,
 			}
 		}

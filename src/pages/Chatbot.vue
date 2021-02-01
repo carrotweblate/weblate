@@ -358,7 +358,7 @@
 					<g-link to="/online-consultant/" class="functions__box box text-center p-4">
 						<g-image src="@/assets/images/components/small-26.svg" height="158" alt="Онлайн-консультант" />
 						<p class="mt-3 mb-0">
-							Онлайн&#8209;консультант
+							Онлайн‑консультант
 						</p>
 					</g-link>
 				</b-col>
@@ -371,28 +371,28 @@
 					</a>
 				</b-col>
 				<b-col cols="6" lg="3">
-					<a href="/lead-manager/" class="functions__box box text-center p-4">
+					<g-link to="/lead-manager/" class="functions__box box text-center p-4">
 						<g-image src="@/assets/images/components/small-28.svg" height="158" alt="eCRM" />
 						<p class="mt-3 mb-0">
 							eCRM
 						</p>
-					</a>
+					</g-link>
 				</b-col>
 				<b-col cols="6" lg="3">
-					<a href="/chatbot/" class="functions__box box text-center p-4">
+					<g-link to="/chatbot/" class="functions__box box text-center p-4">
 						<g-image src="@/assets/images/components/small-29.svg" height="158" alt="Чат-бот" />
 						<p class="mt-3 mb-0">
 							Чат-бот
 						</p>
-					</a>
+					</g-link>
 				</b-col>
 				<b-col cols="6" lg="3">
-					<a href="/pop-up/" class="functions__box box text-center p-4">
+					<g-link to="/pop-up/" class="functions__box box text-center p-4">
 						<g-image src="@/assets/images/components/small-30.svg" height="158" alt="Поп-ап окна" />
 						<p class="mt-3 mb-0">
 							Поп-ап окна
 						</p>
-					</a>
+					</g-link>
 				</b-col>
 				<b-col cols="6" lg="3">
 					<a href="/sdk/" class="functions__box box text-center p-4">

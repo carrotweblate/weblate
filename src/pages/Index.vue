@@ -174,7 +174,7 @@
 						]"
 						:more="{
 							href: '/online-consultant/', 
-							text: 'Подробнее про онлайн&#8209;консультант'
+							text: 'Подробнее про онлайн‑консультант'
 						}"
 						text="
 							<p>
@@ -307,7 +307,7 @@
 					<g-link to="/online-consultant/" class="functions__box box text-center p-4">
 						<g-image src="@/assets/images/components/small-26.svg" height="158" alt="Онлайн-консультант" />
 						<p class="mt-3 mb-0">
-							Онлайн&#8209;консультант
+							Онлайн‑консультант
 						</p>
 					</g-link>
 				</b-col>
@@ -577,7 +577,6 @@
 				}
 			}
 			@media (max-width: 991.98px) {
-				
 				&__play {
 					img {
 						max-width: 100%;

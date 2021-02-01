@@ -171,12 +171,12 @@
 			</b-row>
 			<b-row>
 				<b-col cols="6" lg="4">
-					<a href="/pop-up/" class="collect__box box text-center p-4">
+					<g-link to="/pop-up/" class="collect__box box text-center p-4">
 						<p>
 							Поп-ап окна
 						</p>
 						<g-image src="@/assets/images/automation-marketing/collect-1.svg" height="158" alt="Поп-ап окна" />
-					</a>
+					</g-link>
 				</b-col>
 				<b-col cols="6" lg="4">
 					<g-link to="/online-consultant/" class="collect__box box text-center p-4">
@@ -195,12 +195,12 @@
 					</a>
 				</b-col>
 				<b-col cols="6" lg="4">
-					<a href="/chatbot/" class="collect__box box text-center p-4">
+					<g-link to="/chatbot/" class="collect__box box text-center p-4">
 						<p>
 							Чат-бот
 						</p>
 						<g-image src="@/assets/images/automation-marketing/collect-4.svg" height="158" alt="Чат-бот" />
-					</a>
+					</g-link>
 				</b-col>
 				<b-col cols="6" lg="4">
 					<div class="collect__box text-center p-4">
