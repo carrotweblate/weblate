@@ -35,7 +35,7 @@
 								</svg>
 							</a><br>
 							<a href="https://m.me/carrotquest">
-								Фэйсбук
+								Фейсбук
 							</a>
 						</div>
 						<div class="mx-3">
