@@ -41,6 +41,39 @@
 			</b-form>
 		</b-modal>
 
+		<!-- Модалка для Вебинаров -->
+		<b-modal ref="open-modal-webinar" hide-footer title="Регистрация на вебинар">
+			<b-form v-on:submit.prevent="modalWebinar">
+				<b-form-input 
+					placeholder="Имя" 
+					type="text" 
+					required
+					v-model="modalName"
+					class="px-3 py-4"
+				/>
+				<b-form-input 
+					placeholder="Телефон" 
+					type="text" 
+					required
+					v-model="modalPhone"
+					class="px-3 py-4 mt-3"
+				/>
+				<b-form-input 
+					placeholder="Email" 
+					type="email" 
+					required
+					v-model="modalEmail"
+					class="px-3 py-4 mt-3"
+				/>
+				<b-button 
+					type="submit" 
+					variant="primary" 
+					class="px-3 py-2 mt-4">
+					Принять участие
+				</b-button>
+			</b-form>
+		</b-modal>
+
 		<b-modal ref="suсcessDownload" hide-footer title="Всё успешно отправлено">
 			Проверьте свой email: {{modalEmail}}
 		</b-modal>
@@ -66,7 +99,8 @@
 				modalName: '',
 				modalPhone: '',
 				modalEmail: '',
-				modalEvent: ''
+				modalEvent: '',
+				modalOpenUrl: ''
 			};
 		},
 		methods: {
@@ -117,6 +151,23 @@
 
 						this.modalTitle = addr.searchParams.get('title')
 						this.modalEvent = addr.searchParams.get('cqe')
+
+					}.bind(this))
+				}.bind(this))
+			}
+
+			// Ищем ссылки для открытия модалок для регистрации на вебинар
+			if ( document.querySelector('a[href*="#open-modal-webinar"]') ) {
+				document.querySelectorAll('a[href*="#open-modal-webinar"]').forEach(function(item) {
+					item.addEventListener('click', function(e) {
+						e.preventDefault()
+
+						this.$refs['open-modal-webinar'].show()
+
+						let addr = new URL(e.srcElement.href.replace('#open-modal-webinar' , ''))
+
+						this.modalEvent = addr.searchParams.get('cqe')
+						this.modalOpenUrl = addr.searchParams.get('url')
 
 					}.bind(this))
 				}.bind(this))

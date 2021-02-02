@@ -57,9 +57,9 @@
 		#t-header, #t-footer {
 			display: none;
 		}
-		* , *::before , *::after {
-			box-sizing: border-box !important;
-		}
+	}
+	* , *::before , *::after {
+		box-sizing: border-box !important;
 	}
 </style>
 

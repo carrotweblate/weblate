@@ -30,7 +30,7 @@ module.exports = function (api) {
 		const collection = actions.addCollection('Tilda')
 		api.createManagedPages(async ({ createPage }) => {
 			for (const item of data.result) {
-				if ( ( item.id != '312699' ) && ( item.id == '11937240' || item.id == '16075876' || item.id == '16080876' || item.id == '16083784' || item.id == '2833995' || item.id == '16218892' || item.id == '11880600' || item.id == '9970780' || item.id == '10518279' || item.id == '10714391' || item.id == '10714999' || item.id == '10715060') ) {
+				if ( ( item.id != '312699' ) && ( item.id == '11937240' || item.id == '16075876' || item.id == '16080876' || item.id == '16083784' || item.id == '2833995' || item.id == '16218892' || item.id == '11880600' || item.id == '9970780' || item.id == '10518279' || item.id == '10714391' || item.id == '10714999' || item.id == '10715060' || item.id == '15337194' ) ) {
 				//if ( item.id != '312699' ) {
 					const { data } = await axios.get(
 						'https://api.tildacdn.info/v1/getpage/?publickey=h6wlwdtglx70dzkz1fnn&secretkey=cz7a318b3jpkqm6nzz4l&pageid=' + item.id
