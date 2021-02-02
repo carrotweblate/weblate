@@ -261,32 +261,18 @@
 		components: {
 			SubscribeForm
 		},
-		//Делаем в HEAD
-		metaInfo() {
-			return {
-				title: 'Библиотека | Полезные материалы про маркетинг',
-				meta: [
-					{
-						key: 'description',
-						name: 'description',
-						content: 'Книги, шаблоны, карты и чек-листы, а также инсайты от экспертов Carrot quest для маркетологов и СЕО онлайн-продуктов. Подпишитесь, чтобы получать на почту.'
-					},
-					{
-						property: "og:image",
-						content: 'https://www.carrotquest.io/assets/images/cover/library.gif'
-					},
-				],
-				link: [
-					{
-						rel: 'canonical',
-						href: 'https://www.carrotquest.io/library/'
-					}
-				]
-			}
-		},
 		data() {
-    		return {
+			return {
+				//Делаем в HEAD
+				metaTitle: 'Библиотека – Полезные материалы про маркетинг',
+				metaDescription: 'Книги, шаблоны, карты и чек-листы, а также инсайты от экспертов Carrot quest для маркетологов и СЕО онлайн-продуктов. Подпишитесь, чтобы получать на почту',
+				metaCanonical: 'https://www.carrotquest.io/library/',
+				metaImage: 'https://www.carrotquest.io/assets/images/cover/library.gif',
+
+				//Загрузка ресурсов
 				results: Array,
+
+				//Скачивание файлов
 				modalEmail: ''
 			}
 		},

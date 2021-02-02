@@ -219,78 +219,59 @@
 			Logos,
 			Study
 		},
-		//Делаем в HEAD
-		metaInfo() {
-			return {
-				title: 'Поп-ап окна: эффективный инструмент коммуникации с пользователями',
-				meta: [
-					{
-						key: 'description',
-						name: 'description',
-						content: 'Получайте больше лидов и заявок с помощью триггерных всплывающих окон. Используйте pop up окна для сбора лидов, коммуникации с пользователями и оповещений о акциях'
-					},
-					{
-						property: "og:image",
-						content: 'https://www.carrotquest.io/assets/images/cover/pop-up.png'
-					},
-				],
-				link: [
-					{
-						rel: 'canonical',
-						href: 'https://www.carrotquest.io/pop-up/'
-					}
-				]
-			}
-		},
 		data() {
-    		return {
-				isActive: false
+			return {
+				//Делаем в HEAD
+				metaTitle: 'Поп-ап окна: эффективный инструмент коммуникации с пользователями',
+				metaDescription: 'Получайте больше лидов и заявок с помощью триггерных всплывающих окон. Используйте pop up окна для сбора лидов, коммуникации с пользователями и оповещений о акциях',
+				metaCanonical: 'https://www.carrotquest.io/pop-up/',
+				metaImage: 'https://www.carrotquest.io/assets/images/cover/pop-up.png',
 			}
 		},
 		methods: {
-            disableHrefs: function() {
-                var hrefs = document.querySelectorAll('.accordion-item a')
-                for (var i = 0; i < hrefs.length; i++) {
-                    hrefs[i].classList.remove('active')
-                }
-                var pics = document.querySelectorAll('.left_col__pop')
-                for (var i = 0; i < pics.length; i++) {
-                    pics[i].classList.remove('active')
-                }
-            },
-            accordion: function(element) {
-                var matches = document.querySelectorAll('.accordion-item-head')
-                for (var i = 0; i < matches.length; i++) {
-                    matches[i].classList.remove('active')
-                }
-                this.disableHrefs()
-                element.target.classList.toggle('active')
-                element.target.parentElement.querySelector('a').classList.toggle('active')
-                var pic = '#pop--' + element.target.parentElement.querySelector('a').dataset.show
-                document.querySelector('' + pic + '').classList.toggle('active')
-            },
-            change_pop: function(href) {
-                this.disableHrefs()
-                href.target.classList.toggle('active')
-                var pic = '#pop--' + href.target.dataset.show
-                document.querySelector('' + pic + '').classList.toggle('active')
-            },
-            next_pop: function(pop) {
+			disableHrefs: function() {
+				var hrefs = document.querySelectorAll('.accordion-item a')
+				for (var i = 0; i < hrefs.length; i++) {
+					hrefs[i].classList.remove('active')
+				}
+				var pics = document.querySelectorAll('.left_col__pop')
+				for (var i = 0; i < pics.length; i++) {
+					pics[i].classList.remove('active')
+				}
+			},
+			accordion: function(element) {
+				var matches = document.querySelectorAll('.accordion-item-head')
+				for (var i = 0; i < matches.length; i++) {
+					matches[i].classList.remove('active')
+				}
+				this.disableHrefs()
+				element.target.classList.toggle('active')
+				element.target.parentElement.querySelector('a').classList.toggle('active')
+				var pic = '#pop--' + element.target.parentElement.querySelector('a').dataset.show
+				document.querySelector('' + pic + '').classList.toggle('active')
+			},
+			change_pop: function(href) {
+				this.disableHrefs()
+				href.target.classList.toggle('active')
+				var pic = '#pop--' + href.target.dataset.show
+				document.querySelector('' + pic + '').classList.toggle('active')
+			},
+			next_pop: function(pop) {
 				const mq = window.matchMedia( "(min-width: 991.98px)" );
-                if (!mq.matches) {
-                    this.disableHrefs()
-                    var thisPop = pop.target.dataset.pop
-                    var pics = document.querySelectorAll('.left_col__pop')
-                    if (thisPop == pics.length) {
-                        thisPop = 0
-                    }
-                    for (var i = 0; i < pics.length; i++) {
-                        pics[thisPop].classList.add('active')
-                    }
-                }
-            },
+				if (!mq.matches) {
+					this.disableHrefs()
+					var thisPop = pop.target.dataset.pop
+					var pics = document.querySelectorAll('.left_col__pop')
+					if (thisPop == pics.length) {
+						thisPop = 0
+					}
+					for (var i = 0; i < pics.length; i++) {
+						pics[thisPop].classList.add('active')
+					}
+				}
+			},
 
-        }
+		}
 	}	
 </script>
 

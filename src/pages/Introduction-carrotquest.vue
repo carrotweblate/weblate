@@ -683,37 +683,15 @@
 			Study,
 			Logos
 		},
-
-		//Делаем в HEAD
-		metaInfo() {
-			return {
-				title: 'Внедрение автоматизации маркетинга',
-				meta: [
-					{
-						key: 'description',
-						name: 'description',
-                        content: 'Хотите полный комплекс инструментов Carrot quest? Мы готовы помочь вам увеличивать конверсию. Запустили уже более 20 проектов автоматизации маркетинга - станьте следующим.'
-					},
-					{
-						property: "og:image",
-						content: 'https://www.carrotquest.io/assets/images/cover/introduction-carrotquest.png'
-					},
-				],
-				link: [
-					{
-						rel: 'canonical',
-						href: 'https://www.carrotquest.io/introduction-carrotquest/'
-					}
-				]
-			}
-		},
-
 		data() {
-    		return {
-				modalName: '',
-				modalPhone: '',
-				modalEmail: '',
-				modalSite: '',
+			return {
+				//Делаем в HEAD
+				metaTitle: 'Внедрение автоматизации маркетинга',
+				metaDescription: 'Хотите полный комплекс инструментов Carrot quest? Мы готовы помочь вам увеличивать конверсию. Запустили уже более 20 проектов автоматизации маркетинга - станьте следующим',
+				metaCanonical: 'https://www.carrotquest.io/introduction-carrotquest/',
+				metaImage: 'https://www.carrotquest.io/assets/images/cover/introduction-carrotquest.png',
+
+				//Кейсы в Hero
 				cases: [
 					{ 
 						number: '200-250',
@@ -758,6 +736,12 @@
 						href: '/blog/case-nagorniy/' 
 					}
 				],
+
+				//Модалки для скачивания файлов
+				modalName: '',
+				modalPhone: '',
+				modalEmail: '',
+				modalSite: '',
 			}
 		},
 

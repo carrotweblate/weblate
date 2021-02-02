@@ -437,6 +437,7 @@
 	</Layout>
 </template>
 
+
 <script>
 	import MegaTabs 			from '~/components/MegaTabs.vue'
 	import FAQ 					from '~/components/FAQ.vue'
@@ -454,37 +455,18 @@
 			RegistrationForm,
 			Study
 		},
-
-		//Делаем в HEAD
-		metaInfo() {
-			return {
-				title: 'Чат-бот для бизнеса, конструктор ботов для сайта',
-				meta: [
-					{
-						key: 'description',
-						name: 'description',
-						content: 'Создание и разработка ботов для сайтов. С помощью нашего конструктора вы можете настроить, установить и бесплатно использовать чат-бота на сайте для своего бизнеса.'
-					},
-					{
-						property: "og:image",
-						content: 'https://www.carrotquest.io/assets/images/cover/chatbot.png'
-					},
-				],
-				link: [
-					{
-						rel: 'canonical',
-						href: 'https://www.carrotquest.io/chatbot/'
-					}
-				]
-			}
-		},
-
 		data() {
 			return {
+				//Делаем в HEAD
+				metaTitle: 'Чат-бот для бизнеса, конструктор ботов для сайта',
+				metaDescription: 'Создание и разработка ботов для сайтов. С помощью нашего конструктора вы можете настроить, установить и бесплатно использовать чат-бота на сайте для своего бизнеса',
+				metaCanonical: 'https://www.carrotquest.io/chatbot/',
+				metaImage: 'https://www.carrotquest.io/assets/images/cover/chatbot.png',
+				
+				//Сценарии, переключение
 				solutionIndex: 0
 			}
 		}
-
 	}	
 </script>
 

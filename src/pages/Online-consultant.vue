@@ -496,37 +496,18 @@
 			RegistrationForm,
 			Study
 		},
-
-		//Делаем в HEAD
-		metaInfo() {
-			return {
-				title: 'Онлайн-консультант для сайта',
-				meta: [
-					{
-						key: 'description',
-						name: 'description',
-						content: 'Онлайн-консультант для вашего сайта. Повышает конверсию и продажи. Установка за 10 минут. Попробуйте сейчас - 14 дней бесплатно.'
-					},
-					{
-						property: "og:image",
-						content: 'https://www.carrotquest.io/assets/images/cover/online-consultant.png'
-					},
-				],
-				link: [
-					{
-						rel: 'canonical',
-						href: 'https://www.carrotquest.io/online-consultant/'
-					}
-				]
-			}
-		},
-
 		data() {
 			return {
+				//Делаем в HEAD
+				metaTitle: 'Онлайн-консультант для сайта',
+				metaDescription: 'Онлайн-консультант для вашего сайта. Повышает конверсию и продажи. Установка за 10 минут. Попробуйте сейчас - 14 дней бесплатно',
+				metaCanonical: 'https://www.carrotquest.io/online-consultant/',
+				metaImage: 'https://www.carrotquest.io/assets/images/cover/online-consultant.png',
+
+				//Переключение дизайна
 				designChatDark: false,
 			}
 		}
-
 	}	
 </script>
 

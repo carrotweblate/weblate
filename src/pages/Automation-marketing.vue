@@ -327,7 +327,7 @@
 			<b-col class="p-4" style="background-color: #FFF3E6; border-radius: 5px;">
 				<b-row class="align-items-center justify-content-center">
 					<b-col lg="6">
-						<g-image src="@/assets/images/components/medium-2.png" width="494" alt="Регистрация в сервисе" title="Поехали!" style="max-width: 100%" />
+						<g-image src="@/assets/images/components/medium-2.png" width="494" alt="Регистрация в сервисе" title="Поехали!" class="mw-100" />
 					</b-col>
 					<b-col lg="6">
 						<div class="h1 mb-4">Запустите автоматизацию маркетинга.&nbsp;14&nbsp;дней бесплатно</div>
@@ -350,34 +350,20 @@
 	export default {
 		components: {
 			RegistrationForm,
+			Pipeline,
 			Cases,
 			Integrations,
 			Study
 		},
-
-		//Делаем в HEAD
-		metaInfo() {
+		data() {
 			return {
-				title: 'Автоматизация маркетинга и продаж',
-				meta: [
-					{
-						key: 'description',
-						name: 'description',
-                        content: 'Автоматизируйте маркетинг и продажи ✅  превратите посетителей своего сайта в покупателей, используя все инструменты коммуникации'
-					},
-					{
-						property: "og:image",
-						content: 'https://www.carrotquest.io/assets/images/cover/automation-marketing.png'
-					},
-				],
-				link: [
-					{
-						rel: 'canonical',
-						href: 'https://www.carrotquest.io/automation-marketing/'
-					}
-				]
+				//Делаем в HEAD
+				metaTitle: 'Автоматизация маркетинга и продаж',
+				metaDescription: 'Автоматизируйте маркетинг и продажи ✅  превратите посетителей своего сайта в покупателей, используя все инструменты коммуникации',
+				metaCanonical: 'https://www.carrotquest.io/automation-marketing/',
+				metaImage: 'https://www.carrotquest.io/assets/images/cover/automation-marketing.png',
 			}
-		},
+		}
 	}	
 </script>
 

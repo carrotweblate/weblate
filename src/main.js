@@ -16,7 +16,9 @@ export default function(Vue, { head }) {
 	//Общая для всех страниц META
 	head.meta.push(
 		{ property: "article:publisher", content: "https://www.facebook.com/carrotquest/" },
+		{ property: "fb:app_id", content: "1560479897573494" },
 		{ property: "og:locale", content: "ru_RU" },
+		{ property: "og:type", content: "website" },
 	)
 
 	//Подключаем Open Sans

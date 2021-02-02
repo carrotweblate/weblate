@@ -298,27 +298,13 @@
 			Cases,
 			Study
 		},
-		//Делаем в HEAD
-		metaInfo() {
+		data() {
 			return {
-				title: 'Решение для интернет-магазинов: виджет чата, чат бот, поп-ап окна и триггерные email-компании',
-				meta: [
-					{
-						key: 'description',
-						name: 'description',
-						content: 'Сервисы Carrot quest для повышения продаж в E-commerce — получайте от трафика максимум, сократите количество брошенных корзин, собирайте данные о клиентах'
-					},
-					{
-						property: "og:image",
-						content: 'https://www.carrotquest.io/assets/images/cover/ecommerce.png'
-					},
-				],
-				link: [
-					{
-						rel: 'canonical',
-						href: 'https://www.carrotquest.io/ecommerce/'
-					}
-				]
+				//Делаем в HEAD
+				metaTitle: 'Решение для интернет-магазинов: виджет чата, чат бот, поп-ап окна и триггерные email-компании',
+				metaDescription: 'Сервисы Carrot quest для повышения продаж в E-commerce — получайте от трафика максимум, сократите количество брошенных корзин, собирайте данные о клиентах',
+				metaCanonical: 'https://www.carrotquest.io/ecommerce/',
+				metaImage: 'https://www.carrotquest.io/assets/images/cover/ecommerce.png',
 			}
 		}
 	}	

@@ -199,29 +199,15 @@
 			Integrations,
 			Study
 		},
-		//Делаем в HEAD
-		metaInfo() {
+		data() {
 			return {
-				title: 'eCRM, собирайте данных о клиентах и используйте их для роста',
-				meta: [
-					{
-						key: 'description',
-						name: 'description',
-						content: 'eCRM от в Carrot quest: собирайте данные о каждом пользователе и сегментируйте их, добийтесь максимальной персонализации и повысьте конверсию.'
-					},
-					{
-						property: "og:image",
-						content: 'https://www.carrotquest.io/assets/images/cover/lead-manager.png'
-					},
-				],
-				link: [
-					{
-						rel: 'canonical',
-						href: 'https://www.carrotquest.io/lead-manager/'
-					}
-				]
+				//Делаем в HEAD
+				metaTitle: 'eCRM, собирайте данных о клиентах и используйте их для роста',
+				metaDescription: 'eCRM от в Carrot quest: собирайте данные о каждом пользователе и сегментируйте их, добийтесь максимальной персонализации и повысьте конверсию',
+				metaCanonical: 'https://www.carrotquest.io/lead-manager/',
+				metaImage: 'https://www.carrotquest.io/assets/images/cover/lead-manager.png',
 			}
-		},
+		}
 	}	
 </script>
 

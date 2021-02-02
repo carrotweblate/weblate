@@ -95,7 +95,6 @@
 			}
 		},
 		mounted () {
-
 			// Ищем ссылки для открытия чата
 			if ( document.querySelector('[href="#open-chat"]') ) {
 				document.querySelectorAll('[href="#open-chat"]').forEach(function(item) {
@@ -121,6 +120,41 @@
 
 					}.bind(this))
 				}.bind(this))
+			}
+		},
+		//Делаем в HEAD
+		metaInfo() {
+			return {
+				title: this.$parent.metaTitle,
+				meta: [
+					{
+						key: 'description',
+						name: 'description',
+						content: this.$parent.metaDescription
+					},
+					{
+						property: "og:url",
+						content: this.$parent.metaCanonical
+					},
+					{
+						property: "og:title",
+						content: this.$parent.metaTitle
+					},
+					{
+						property: "og:description",
+						content: this.$parent.metaDescription
+					},
+					{
+						property: "og:image",
+						content: this.$parent.metaImage
+					},
+				],
+				link: [
+					{
+						rel: 'canonical',
+						href: this.$parent.metaCanonical
+					}
+				]
 			}
 		}
 	};

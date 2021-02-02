@@ -408,6 +408,13 @@
 		},
 		data() {
 			return {
+				//Делаем в HEAD
+				metaTitle: 'Инструменты для увеличения продаж на сайтах без привлечения нового трафика',
+				metaDescription: 'Carrot quest — сервис для увеличения продаж, автоматизации маркетинга, улучшения коммуникации с клиентами ✔️онлайн-консультант ✔️чат-боты ✔️поп-ап окна ✔️триггерные письма ✔️eCRM',
+				metaCanonical: 'https://www.carrotquest.io/',
+				metaImage: 'https://www.carrotquest.io/assets/images/cover/index.gif',
+
+				//Бегущие числа
 				carrotNumbersCommunications: 758464786,
 				carrotNumbersLids: 94324071,
 				carrotNumbersSites: 9325
@@ -416,29 +423,6 @@
 		methods: {
 			formatToPrice(value) {
 				return `${value.toLocaleString('ru', {maximumFractionDigits: 0})}`;
-			}
-		},
-		//Делаем в HEAD
-		metaInfo() {
-			return {
-				title: 'Инструменты для увеличения продаж на сайтах без привлечения нового трафика',
-				meta: [
-					{
-						key: 'description',
-						name: 'description',
-						content: 'Carrot quest — сервис для увеличения продаж, автоматизации маркетинга, улучшения коммуникации с клиентами ✔️онлайн-консультант ✔️чат-боты ✔️поп-ап окна ✔️триггерные письма ✔️eCRM'
-					},
-					{
-						property: "og:image",
-						content: 'https://www.carrotquest.io/assets/images/cover/index.gif'
-					},
-				],
-				link: [
-					{
-						rel: 'canonical',
-						href: 'https://www.carrotquest.io/'
-					}
-				]
 			}
 		}
 	}	

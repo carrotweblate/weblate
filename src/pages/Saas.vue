@@ -203,30 +203,15 @@
 			Integrations,
 			Study
 		},
-
-		//Делаем в HEAD
-		metaInfo() {
+		data() {
 			return {
-				title: 'Сервис увеличения продаж для SAAS: больше конверсия сайта, больше ретеншн, меньше отток клиентов',
-				meta: [
-					{
-						key: 'description',
-						name: 'description',
-						content: 'Увеличьте продажи в своем SaaS сервисе с помощью автоматизации маркетинга ✅ Инструменты аналитики и триггерные сообщения для привлечения платящих клиентов'
-					},
-					{
-						property: "og:image",
-						content: 'https://www.carrotquest.io/assets/images/cover/saas.jpg'
-					},
-				],
-				link: [
-					{
-						rel: 'canonical',
-						href: 'https://www.carrotquest.io/saas/'
-					}
-				]
+				//Делаем в HEAD
+				metaTitle: 'Сервис увеличения продаж для SAAS: больше конверсия сайта, больше ретеншн, меньше отток клиентов',
+				metaDescription: 'Увеличьте продажи в своем SaaS сервисе с помощью автоматизации маркетинга ✅ Инструменты аналитики и триггерные сообщения для привлечения платящих клиентов',
+				metaCanonical: 'https://www.carrotquest.io/saas/',
+				metaImage: 'https://www.carrotquest.io/assets/images/cover/saas.jpg',
 			}
-		},
+		}
 	}	
 </script>
 
