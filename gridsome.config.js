@@ -31,30 +31,30 @@ module.exports = {
 				debug: false
 			}
 		},
-		// {
-		// 	use: 'gridsome-plugin-pwa',
-		// 	options: {
-		// 		// Service Worker Options
-		// 		disableServiceWorker: false,
-		// 		serviceWorkerPath: 'service-worker.js',
-		// 		cachedFileTypes: 'js,json,css,html,png,jpg,jpeg,svg,gif',
-		// 		disableTemplatedUrls: false,       // Optional
+		{
+			use: 'gridsome-plugin-pwa',
+			options: {
+				// Service Worker Options
+				disableServiceWorker: false,
+				serviceWorkerPath: 'service-worker.js',
+				cachedFileTypes: 'js,json,css,html,png,jpg,jpeg,svg,gif,webm,mp4',
+				disableTemplatedUrls: false,       // Optional
 	
-		// 		// Manifest Options (https://developer.mozilla.org/en-US/docs/Web/Manifest)
-		// 		manifestPath: 'manifest.json',
-		// 		title: 'Carrot quest',
+				// Manifest Options (https://developer.mozilla.org/en-US/docs/Web/Manifest)
+				manifestPath: 'manifest.json',
+				title: 'Carrot quest',
 				
-		// 		// startUrl: '/',
-		// 		startUrl: '/',
-		// 		display: 'standalone',
-		// 		statusBarStyle: 'default',
-		// 		themeColor: '#f60',
-		// 		backgroundColor: '#ffffff',
-		// 		icon: './static/favicon.png',
-		// 		shortName: 'Carrot quest', // Optional
-		// 		description: 'Инструменты для увеличения продаж на сайтах без привлечения нового трафика', // Optional
-		// 	}
-		// },
+				// startUrl: '/',
+				startUrl: '/',
+				display: 'standalone',
+				statusBarStyle: 'default',
+				themeColor: '#f60',
+				backgroundColor: '#ffffff',
+				icon: './static/favicon.png',
+				shortName: 'Carrot quest', // Optional
+				description: 'Инструменты для увеличения продаж на сайтах без привлечения нового трафика', // Optional
+			}
+		},
 		{
 			use: 'gridsome-source-graphql',
 			options: {
