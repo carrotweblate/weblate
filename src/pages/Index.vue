@@ -112,7 +112,7 @@
 								<li>Возвращение уходящих пользователей</li>
 								<li>Увеличение повторных продаж</li>
 							</ul>
-							<b-button href="/ecommerce/" variant="primary">Подробнее</b-button>
+							<b-button to="/ecommerce/" variant="primary">Подробнее</b-button>
 						</div>
 					</b-col>
 					<b-col lg="4"  class="my-5 my-lg-0">

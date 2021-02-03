@@ -8,6 +8,8 @@ module.exports = {
 
 	// pathPrefix: '/blog/article/',
 
+	prefetch: { mask: '^$', },
+
 	siteName: 'Carrot quest',
 	titleTemplate: "%s — Carrot quest",
 
