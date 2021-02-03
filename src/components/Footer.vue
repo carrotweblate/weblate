@@ -145,7 +145,7 @@
 							to: '/email-marketing/'
 						},
 						{
-							title: 'Pop-up окна',
+							title: 'Поп-ап окна',
 							to: '/pop-up/'
 						},
 						{

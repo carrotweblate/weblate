@@ -111,10 +111,10 @@
 				<b-row class="align-items-center justify-content-center tasks__about">
 					<b-col lg="8" xl="5" class="text-center">
 						<div class="h1 mb-4">
-							Какие задачи решают <span>pop-up окна</span>
+							Какие задачи решают <span>поп-ап окна</span>
 						</div>
 						<p>
-							Используйте конструктор pop-up окон, чтобы создать любое pop-up окно. Вам не нужно писать код - все можно сделать в сервисе
+							Используйте конструктор поп-ап окон, чтобы создать любое поп-ап окно. Вам не нужно писать код - все можно сделать в сервисе
 						</p>
 					</b-col>
 				</b-row>
@@ -143,6 +143,53 @@
 				</b-row>
 			</b-container>
 		</section>
+
+		<section class="scenario">
+			<b-container>
+				<b-row>
+					<b-col lg="6" class="mb-4">
+						<p class="h1 mb-4">
+							Настройте сценарий
+						</p>
+						<p class="mb-4">
+							Выберите настройки для показа поп-апа, которые будут точно соответствовать целевой аудитории. Выберите максимально целевой сегмент
+						</p>
+						<p>
+							<a href="#" @click="scenarioIndex=0" :class="{ 'font-weight-bold text-primary' : scenarioIndex == 0 }">Выберите триггер</a>
+						</p>
+						<p>
+							<a href="#" @click="scenarioIndex=1" :class="{ 'font-weight-bold text-primary' : scenarioIndex == 1 }">Определите сегмент</a>
+						</p>
+					</b-col>
+					<b-col lg="6">
+						<g-image src="@/assets/images/pop-up/scripts-1.png" quality="100" class="mw-100 scenario__pics" :class="{ active : scenarioIndex == 0 }" alt="Выберите триггер" />
+						<g-image src="@/assets/images/pop-up/scripts-2.png" quality="100" class="mw-100 scenario__pics" :class="{ active : scenarioIndex == 1 }" alt="Определите сегмент" />
+					</b-col>
+				</b-row>
+			</b-container>
+		</section>
+
+		<!-- Вся информация о лидах, их действиях на сайте и история общения -->
+		<b-container class="information">
+			<b-row>
+				<b-col lg="10" xl="8">
+					<h2 class="mb-3 mb-lg-4">
+						Создайте поп-ап
+					</h2>
+					<p class="mb-3 mb-lg-4">
+						Добавляйте кнопки, поля ввода, картинки, меняйте размер
+					</p>
+				</b-col>
+			</b-row>
+			<b-row>
+				<b-col>
+					<b-embed type="video" aspect="16by9" controls playsinline>
+						<source src="/assets/video/pop-up/edit.webm" type="video/webm">
+						<source src="/assets/video/pop-up/edit.mp4" type="video/mp4">
+					</b-embed>
+				</b-col>
+			</b-row>
+		</b-container>
 
 		<section class="analitics">  
 			<b-container>
@@ -226,6 +273,9 @@
 				metaDescription: 'Получайте больше лидов и заявок с помощью триггерных всплывающих окон. Используйте pop up окна для сбора лидов, коммуникации с пользователями и оповещений о акциях',
 				metaCanonical: 'https://www.carrotquest.io/pop-up/',
 				metaImage: 'https://www.carrotquest.io/assets/images/cover/pop-up.png',
+
+				//Сценарии
+				scenarioIndex: 0
 			}
 		},
 		methods: {
@@ -409,6 +459,23 @@
 					top: 30px;
 					right: 35px;
 				}
+			}
+		}
+
+		.scenario {
+			&__pics {
+				position: relative;
+			}
+			&__pics.active {
+				position: relative;
+				right: -10px;
+				z-index: 2;
+			}
+			&__pics:not(.active) {
+				position: absolute;
+				top: 10px;
+				left: 10px;
+				z-index: 1;
 			}
 		}
 
