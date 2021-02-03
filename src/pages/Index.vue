@@ -112,7 +112,7 @@
 								<li>Возвращение уходящих пользователей</li>
 								<li>Увеличение повторных продаж</li>
 							</ul>
-							<b-button to="/ecommerce/" variant="primary">Подробнее</b-button>
+							<b-button href="/ecommerce/" variant="primary">Подробнее</b-button>
 						</div>
 					</b-col>
 					<b-col lg="4"  class="my-5 my-lg-0">
@@ -125,7 +125,7 @@
 								<li>Вовлечение и&nbsp;удержание пользователей в&nbsp;продукте</li>
 								<li>Аналитика поведения пользователей в&nbsp;продукте и&nbsp;использования фичей</li>
 							</ul>
-							<b-button to="/saas/" variant="primary">Подробнее</b-button>
+							<b-button href="/saas/" variant="primary">Подробнее</b-button>
 						</div>
 					</b-col>
 					<b-col lg="4" class="mt-5 mt-lg-0">
@@ -138,7 +138,7 @@
 								<li>Поделимся экспертизой по&nbsp;автоматизации маркетинга и&nbsp;построению процесса тестирования гипотез</li>
 								<li>Запустим гипотезы на&nbsp;увеличение конверсии на&nbsp;вашем сайте (на&nbsp;сбор лидов, на&nbsp;удержание клиентов, на&nbsp;возвращение клиентов)</li>
 							</ul>
-							<b-button to="/introduction-carrotquest/" variant="primary">Подробнее</b-button>
+							<b-button href="/introduction-carrotquest/" variant="primary">Подробнее</b-button>
 						</div>
 					</b-col>
 				</b-row>
@@ -304,12 +304,12 @@
 			</b-row>
 			<b-row>
 				<b-col cols="6" lg="3">
-					<g-link to="/online-consultant/" class="functions__box box text-center p-4">
+					<a href="/online-consultant/" class="functions__box box text-center p-4">
 						<g-image src="@/assets/images/components/small-26.svg" height="158" alt="Онлайн-консультант" />
 						<p class="mt-3 mb-0">
 							Онлайн‑консультант
 						</p>
-					</g-link>
+					</a>
 				</b-col>
 				<b-col cols="6" lg="3">
 					<a href="/knowledge-base/" class="functions__box box text-center p-4">
