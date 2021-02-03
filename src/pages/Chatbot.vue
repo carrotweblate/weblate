@@ -6,7 +6,7 @@
 				<b-row class="align-items-center">
 					<b-col lg="6" class="order-2 order-lg-1 d-none d-lg-block">
 						<video autoplay="autoplay" loop="loop" muted="muted" playsinline="" class="embed-responsive-item">
-							<source src="/assets/video/components/8.webm" type="video/webp">
+							<source src="/assets/video/components/8.webm" type="video/webm">
 							<source src="/assets/video/components/8.mp4" type="video/mp4">
 						</video>
 					</b-col>

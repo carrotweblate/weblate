@@ -11,8 +11,8 @@
 						<RegistrationForm text="14 дней бесплатно. Регистрируйтесь" />
 					</b-col>
 				</b-row>
-				<g-image class="hero__pic d-none d-lg-block" src="~/assets/images/lead-manager/hero.png" srcset="~/assets/images/lead-manager/hero.png"  width="2010" alt=" " style="max-width: 1005px;" />
-				<g-image class="hero__pic d-lg-none" src="~/assets/images/lead-manager/hero-mobile.png" width="800" alt=" " />
+				<g-image class="hero__pic d-none d-lg-block" src="@/assets/images/lead-manager/hero.png" width="2010" alt=" " style="max-width: 1005px;" />
+				<g-image class="hero__pic d-lg-none" src="@/assets/images/lead-manager/hero-mobile.png" width="800" alt=" " />
 			</b-container>
 		</div>
 
@@ -50,7 +50,7 @@
 						Поиск и&nbsp;гибкая сегментация по&nbsp;свойствам и&nbsp;событиям пользователей поможет выделить только нужный сегмент для рассылки или выгрузки
 					</p>
 					<div class="d-none d-xl-block text-right mt-5">
-						<g-image src="~/assets/images/components/small-1.png" width="180" />
+						<g-image src="@/assets/images/components/small-1.png" width="180" />
 					</div>
 				</b-col>
 				<b-col lg="8">
@@ -100,7 +100,7 @@
 						</p>
 					</b-col>
 					<b-col lg="8">
-						<g-image src="~/assets/images/components/medium-3.png" width="720" />
+						<g-image src="@/assets/images/components/medium-3.png" width="720" />
 					</b-col>
 				</b-row>
 			</b-container>
@@ -175,7 +175,7 @@
 						<RegistrationForm button="Зарегистрироваться" />
 					</b-col>
 					<b-col lg="6">
-						<g-image src="~/assets/images/components/medium-2.png" width="494" alt="Регистрация в сервисе" title="Поехали!" style="max-width: 100%" />
+						<g-image src="@/assets/images/components/medium-2.png" width="494" alt="Регистрация в сервисе" title="Поехали!" style="max-width: 100%" />
 					</b-col>
 				</b-row>
 			</b-col>
@@ -185,11 +185,11 @@
 </template>
 
 <script>
-	import RegistrationForm from '~/components/Forms/RegistrationForm.vue'
-	import MegaTabs 		from '~/components/MegaTabs.vue'
-	import Cases 			from '~/components/Cases/Cases.vue'
-	import Integrations 	from '~/components/Integrations.vue'
-	import Study 			from '~/components/Study.vue'
+	import RegistrationForm from '@/components/Forms/RegistrationForm.vue'
+	import MegaTabs 		from '@/components/MegaTabs.vue'
+	import Cases 			from '@/components/Cases/Cases.vue'
+	import Integrations 	from '@/components/Integrations.vue'
+	import Study 			from '@/components/Study.vue'
 
 	export default {
 		components: {
