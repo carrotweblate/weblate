@@ -16,30 +16,26 @@
 						<b-tab title="Онлайн-сервисы" active lazy>
 							<b-row class="mt-4 mt-lg-5">
 								<Case 
-									number="200-250" 
-									logo='modulbank.svg'
-									title="обращений в чат обрабатывают ежедневно"
+									number="29,45%" 
+									logo='instaplus.svg'
+									title="зарегистрировались из приветственного письма"
 									text="
 										<p>
-											Carrot quest помогает Модульбанку организовать поддержку и&nbsp;продажи через чат. 
-											Благодаря распределению диалогов и&nbsp;объединению каналов в&nbsp;одном месте команда 
-											Модульбанка снизила скорость первого ответа до&nbsp;10&nbsp;минут.
+											Carrot quest помогает маркетологам сервиса Instaplus привлечь пользователей, активировать в регистрацию и оплату. Благодаря сценариям Carrot quest конверсия в оплату увеличилась на 25,3%.
 										</p>
 									" 
-									href="/blog/kak-organizovana-sluzhba-podderzhki-v-modulbank-i-pochemu-oni-ne-boyatsya-davat-obeshhaniya-o-skorosti-otveta/" 
+									href="/blog/case-instaplus/" 
 								/>
 								<Case 
-									number="На 30%" 
-									logo="domru.svg"
-									title="увеличилась конверсия сайта"
+									number="19,3%" 
+									logo="mofy.svg"
+									title="всех заказов принес Carrot quest"
 									text='
 										<p>
-											Carrot&nbsp;quest помогает <a href="https://domru.ru">Дом.ru</a> собирать лиды и&nbsp;увеличивать продажи с&nbsp;помощью 
-											триггерных поп-апов, писем и&nbsp;пуш-уведомлений. В&nbsp;ходе работы внедрили больше 49&nbsp;сценариев, 
-											а&nbsp;количество заявок увеличилось на&nbsp;30%.
+											Маркетологи сервиса Mofy.life собирают контакты пользователей и мотивируют сделать заказ с помощью персонализированных поп-апов и писем со скидками и полезными материалами.
 										</p>
 									'
-									href="/blog/kejs-kak-dom-ru-uvelichil-konversiyu-sajta-na-30-s-pomoshhyu-carrot-quest/" 
+									href="/blog/case-mofylife/" 
 								/>
 							</b-row>
 						</b-tab>
@@ -58,30 +54,30 @@
 									href="/blog/case_skyshop/" 
 								/>
 								<Case 
-									number="На 28%" 
-									logo="vlastah.png"
-									title="выросли продажи"
+									number="40%" 
+									logo="Boxmarket.jpg"
+									title="всех заказов получают благодаря сценариям Carrot quest"
 									text='
 										<p>
-											Carrot quest помогает «В ластах» возвращать клиента к просмотру товаров, увеличивает время нахождения на сайте и повышает продажи.
+											В оптовом интернет-магазине одежды BoxMarket с помощью Carrot quest собирают лиды и работают с брошенными корзинами. Из тех, кто прочитал письмо о брошенной корзине, 24% сделали заказ.
 										</p>
 									'
-									href="/blog/kejs-nastraivaem-lidogeneraciyu-v-internet-magazine-i-podnimaem-prodazhi-na-28/" 
+									href="/blog/broshennaya-korzina-v-b2b-kejs/" 
 								/>
 							</b-row>
 						</b-tab>
 						<b-tab title="Недвижимость и строительство" lazy>
 							<b-row class="mt-4 mt-lg-5">
 								<Case 
-									number="На 40%" 
-									logo='nagorniy.svg'
-									title="выросла конверсия сайта"
+									number="4%" 
+									logo='pzsp.png'
+									title="конверсия в заявку из ручной рассылки"
 									text="
 										<p>
-											Carrot quest помогает сайту жилого квартала бизнес-класса «Нагорный» увеличивать конверсию на сайте за счет поп-апов. Конверсия сайта выросла с 0.85% до 1,2%.
+											Carrot quest помогает ПЗСП собрать лидов с помощью цепочек автосообщений, а потом с этим лидами работают с помощью персонализированных рассылок.
 										</p>
 									" 
-									href="/blog/case-nagorniy/" 
+									href="/blog/cepochki-soobshhenij-v-17-raz-effektivnee/" 
 								/>
 								<Case 
 									number="78%" 
@@ -113,15 +109,15 @@
 									href="/blog/case-teatr/" 
 								/>
 								<Case 
-									number="78%" 
-									logo='introvert.png'
-									title="конверсия в лида"
+									number="7,3%" 
+									logo='astykzhan.png'
+									title="сделали заказ из приветственного письма"
 									text="
 										<p>
-											Carrot quest помогает собирать с помощью сценариев Лидов. Около половины Лидов на сайте собрано с помощью Carrot quest.
+											Carrot quest помогает сервису доставки еды «Астыкжан Экспресс» увеличить конверсию в заказ с помощью сбора лидов и работы с брошенными заказами. Конверсия в заказ увеличилась до 9,37%.
 										</p>
 									" 
-									href="/blog/case-nagorniy/" 
+									href="/blog/case-astykzhan/" 
 								/>
 							</b-row>
 						</b-tab>

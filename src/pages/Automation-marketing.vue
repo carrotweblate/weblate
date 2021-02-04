@@ -175,7 +175,7 @@
 						<p>
 							Поп-ап окна
 						</p>
-						<g-image src="@/assets/images/automation-marketing/collect-1.svg" height="158" alt="Поп-ап окна" />
+						<g-image src="@/assets/images/components/small-41.svg" height="158" alt="Поп-ап окна" />
 					</g-link>
 				</b-col>
 				<b-col cols="6" lg="4">
@@ -183,23 +183,23 @@
 						<p>
 							Онлайн-чат на&nbsp;сайте
 						</p>
-						<g-image src="@/assets/images/automation-marketing/collect-2.svg" height="158" alt="Онлайн-чат на сайте" />
+						<g-image src="@/assets/images/components/small-44.svg" height="158" alt="Онлайн-чат на сайте" />
 					</g-link>
 				</b-col>
 				<b-col cols="6" lg="4">
-					<a href="/email-marketing/" class="collect__box box text-center p-4">
+					<g-link to="/email-marketing/" class="collect__box box text-center p-4">
 						<p>
 							Email-рассылка
 						</p>
-						<g-image src="@/assets/images/automation-marketing/collect-3.svg" height="158" alt="Email-рассылка" />
-					</a>
+						<g-image src="@/assets/images/components/small-40.svg" height="158" alt="Email-рассылка" />
+					</g-link>
 				</b-col>
 				<b-col cols="6" lg="4">
 					<g-link to="/chatbot/" class="collect__box box text-center p-4">
 						<p>
 							Чат-бот
 						</p>
-						<g-image src="@/assets/images/automation-marketing/collect-4.svg" height="158" alt="Чат-бот" />
+						<g-image src="@/assets/images/components/small-39.svg" height="158" alt="Чат-бот" />
 					</g-link>
 				</b-col>
 				<b-col cols="6" lg="4">
@@ -207,7 +207,7 @@
 						<p>
 							SMS и&nbsp;звонки
 						</p>
-						<g-image src="@/assets/images/automation-marketing/collect-5.svg" height="158" alt="SMS и&nbsp;звонки" />
+						<g-image src="@/assets/images/components/small-42.svg" height="158" alt="SMS и&nbsp;звонки" style="position: relative; right: -30px;" />
 					</div>
 				</b-col>
 			</b-row>

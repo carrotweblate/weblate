@@ -171,6 +171,19 @@ a.box {
 			}
 		}
 	}
+	ol {
+		padding-left: 0;
+		counter-reset: item; 
+		li {
+			margin: 0.5rem 0;
+			list-style-type: none;
+			&:before {
+				content: counter(item) ". ";
+				counter-increment: item;
+				color: $primary;
+			}
+		}
+	}
 }
 
 
@@ -224,8 +237,8 @@ input[type=number]:focus,
 		background-color: #fff !important;
 		border-radius: 21px;
 		&.active {
-			border: 1px solid #FF7C16;
-			color: #FF7C16;
+			border: 1px solid $primary;
+			color: $primary;
 		}
 	}
 }
