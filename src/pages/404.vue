@@ -1,15 +1,24 @@
 <template>
 	<Layout class="page page-404">
 
-		<b-container>
-			<b-row>
-				<b-col class="pt-5">
-					<h1>
-						Страница не найдена
-					</h1>
-				</b-col>
-			</b-row>
-		</b-container>
+		<div class="hero">
+			<b-container>
+				<b-row class="align-items-center">
+					<b-col lg="4">
+						<g-image src="@/assets/images/components/medium-6.png" width="680" quality="100" class="mw-100 d-none d-lg-block" alt="Что-то пошло не так." title="Бип-пип-пуап" />
+					</b-col>
+					<b-col lg="8">
+						<h1>
+							Что-то пошло не так.<br>
+							Этой страницы не существует
+						</h1>
+						<p class="py-3">
+							Перейдите на <g-link to="/">главную страницу</g-link>, или напишите в чат в правом нижнем углу
+						</p>
+					</b-col>
+				</b-row>
+			</b-container>
+		</div>
 
 	</Layout>
 </template>
@@ -31,5 +40,9 @@
 
 
 <style lang="scss">
-
+	.page-404 {
+		.hero {
+			background-color: #F3F3FF;
+		}
+	}
 </style>

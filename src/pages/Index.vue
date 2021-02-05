@@ -578,6 +578,9 @@
 			}
 			@media (max-width: 767.98px) {
 				margin-top: 0;
+				&__play {
+					height: auto;
+				}
 			}
 
 		}

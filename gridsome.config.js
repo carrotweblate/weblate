@@ -8,9 +8,9 @@ module.exports = {
 
 	// pathPrefix: '/blog/article/',
 
-	prefetch: {
-		mask: '^$', // Отключаем подгрузку страниц
-	},
+	// prefetch: {
+	// 	mask: '^$', // Отключаем подгрузку страниц
+	// },
 
 	siteName: 'Carrot quest',
 	titleTemplate: "%s — Carrot quest",
