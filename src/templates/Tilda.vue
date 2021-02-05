@@ -22,6 +22,12 @@
 			}
 		},
 		beforeMount () {
+			//Делаем в HEAD
+			this.metaTitle = this.$context.title
+			this.metaDescription = this.$context.description
+			this.metaCanonical = 'https://www.carrotquest.io/' + this.$context.slug
+			this.metaImage = this.$context.cover
+
 			//Подгружаем стили и скрипты тильды
 			for ( var value of this.$page.allTildaFiles.edges.reverse() ) {
 				if ( ( value.node.js ) && (value.node.js.indexOf('jquery-1.10.2.min.js') >= 0) ) {
@@ -31,6 +37,9 @@
 					document.head.appendChild(tildaScript)
 				}
 			}
+		},
+		mounted() {
+			//Подгружаем стили и скрипты тильды
 			for ( var value of this.$page.allTildaFiles.edges.reverse() ) {
 				if (value.node.css) {
 					let tildaCss = document.createElement("link")
@@ -48,13 +57,6 @@
 					}
 				}
 			}
-		},
-		mounted() {
-			//Делаем в HEAD
-			this.metaTitle = this.$context.title
-			this.metaDescription = this.$context.description
-			this.metaCanonical = 'https://www.carrotquest.io/' + this.$context.slug
-			this.metaImage = this.$context.cover
 
 			//Копируем массив тильды для удаления
 			this.tilda = this.$page.allTildaFiles.edges
