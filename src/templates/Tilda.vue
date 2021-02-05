@@ -24,12 +24,10 @@
 		beforeMount () {
 			//Подгружаем стили и скрипты тильды
 			for ( var value of this.$page.allTildaFiles.edges.reverse() ) {
-				if ( value.node.js ) {
+				if ( ( value.node.js ) && (value.node.js.indexOf('jquery-1.10.2.min.js') >= 0) ) {
 					let tildaScript = document.createElement("script")
 					tildaScript.src = value.node.js
-					if (tildaScript.src.indexOf('jquery-1.10.2.min.js') >= 0) {
-						tildaScript.setAttribute('rel' , 'preload')
-					}
+					tildaScript.setAttribute('rel' , 'preload')
 					document.head.appendChild(tildaScript)
 				}
 			}

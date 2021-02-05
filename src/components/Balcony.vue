@@ -7,7 +7,7 @@
 				<b-row>
 					<b-col cols="7">
 						<div class="balcony__show">
-							<h2>
+							<h2 class="mb-4">
 								Получите бесплатно карту сценариев для вашего бизнеса
 							</h2>
 							<p>
@@ -51,7 +51,7 @@
 						</h2>
 					</b-col>
 					<b-col cols="5">
-						<img class="balcony__pic lazyload" src="https://www.carrotquest.io/knowledge-base/img/general/ru/header/map.png" alt="map" />
+						<g-image class="mb-3 mw-100" src="@/assets/images/components/map-saas.png" width="870" alt="Для онлайн-сервисов" />
 					</b-col>
 				</b-row>
 			</b-container>
