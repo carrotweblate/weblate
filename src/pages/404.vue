@@ -4,8 +4,8 @@
 		<div class="hero">
 			<b-container>
 				<b-row class="align-items-center">
-					<b-col lg="4">
-						<g-image src="@/assets/images/components/medium-6.png" width="680" quality="100" class="mw-100 d-none d-lg-block" alt="Что-то пошло не так." title="Бип-пип-пуап" />
+					<b-col lg="4" class="d-none d-lg-block">
+						<g-image src="@/assets/images/components/medium-6.png" width="680" quality="100" class="mw-100" alt="Что-то пошло не так." title="Бип-пип-пуап" />
 					</b-col>
 					<b-col lg="8">
 						<h1>

@@ -9,67 +9,67 @@ const axios = require('axios')
 
 module.exports = function (api) {
 	// API from Tilda Files
-	api.loadSource(async actions => {
-		const { data } = await axios.get(
-			'https://api.tildacdn.info/v1/getproject/?publickey=h6wlwdtglx70dzkz1fnn&secretkey=cz7a318b3jpkqm6nzz4l&projectid=62329'
-		)
-		const collection = actions.addCollection('tildaFiles')
-		for (const item of data.result.css) {
-			collection.addNode({css: item})
-		}
-		for (const item of data.result.js) {
-			collection.addNode({js: item})
-		}
-	})
+	// api.loadSource(async actions => {
+	// 	const { data } = await axios.get(
+	// 		'https://api.tildacdn.info/v1/getproject/?publickey=h6wlwdtglx70dzkz1fnn&secretkey=cz7a318b3jpkqm6nzz4l&projectid=62329'
+	// 	)
+	// 	const collection = actions.addCollection('tildaFiles')
+	// 	for (const item of data.result.css) {
+	// 		collection.addNode({css: item})
+	// 	}
+	// 	for (const item of data.result.js) {
+	// 		collection.addNode({js: item})
+	// 	}
+	// })
 
 	// API from Tilda: Список страниц
-	api.loadSource(async actions => {
-		const { data } = await axios.get(
-			'https://api.tildacdn.info/v1/getpageslist/?publickey=h6wlwdtglx70dzkz1fnn&secretkey=cz7a318b3jpkqm6nzz4l&projectid=62329'
-		)
-		const collection = actions.addCollection('Tilda')
-		api.createManagedPages(async ({ createPage }) => {
-			for (const item of data.result) {
-				if ( 
-					( item.id != '312699' ) && ( item.id == '11937240' || item.id == '16075876' || item.id == '16080876' || item.id == '16083784' || item.id == '2833995' || item.id == '16218892' || item.id == '11880600' || item.id == '10518279' || item.id == '10714391' || item.id == '10714999' || item.id == '10715060' || item.id == '15337194'
-					//Интеграции
-					|| item.id == '9970780' || item.id == '11191195' || item.id == '11193030' || item.id == '11193800' || item.id == '11195611'
-				) ) {
-				//if ( item.id != '312699' ) {
-					const { data } = await axios.get(
-						'https://api.tildacdn.info/v1/getpage/?publickey=h6wlwdtglx70dzkz1fnn&secretkey=cz7a318b3jpkqm6nzz4l&pageid=' + item.id
-					)
-					if ( item.alias ) {
-						createPage({
-							path: `/${item.alias}`,
-							component: './src/templates/Tilda.vue',
-							context: {
-								id: item.id,
-								title: item.title,
-								description: item.descr,
-								cover: item.img,
-								slug: item.alias,
-								html: data.result.html
-							}
-						})
-					} else {
-						createPage({
-							path: `/${item.filename}`,
-							component: './src/templates/Tilda.vue',
-							context: {
-								id: item.id,
-								title: item.title,
-								description: item.descr,
-								cover: item.img,
-								slug: item.filename,
-								html: data.result.html
-							}
-						})
-					}
-				}
-			}
-		})
-	})
+	// api.loadSource(async actions => {
+	// 	const { data } = await axios.get(
+	// 		'https://api.tildacdn.info/v1/getpageslist/?publickey=h6wlwdtglx70dzkz1fnn&secretkey=cz7a318b3jpkqm6nzz4l&projectid=62329'
+	// 	)
+	// 	const collection = actions.addCollection('Tilda')
+	// 	api.createManagedPages(async ({ createPage }) => {
+	// 		for (const item of data.result) {
+	// 			if ( 
+	// 				( item.id != '312699' ) && ( item.id == '11937240' || item.id == '16075876' || item.id == '16080876' || item.id == '16083784' || item.id == '2833995' || item.id == '16218892' || item.id == '11880600' || item.id == '10518279' || item.id == '10714391' || item.id == '10714999' || item.id == '10715060' || item.id == '15337194'
+	// 				//Интеграции
+	// 				|| item.id == '9970780' || item.id == '11191195' || item.id == '11193030' || item.id == '11193800' || item.id == '11195611'
+	// 			) ) {
+	// 			//if ( item.id != '312699' ) {
+	// 				const { data } = await axios.get(
+	// 					'https://api.tildacdn.info/v1/getpage/?publickey=h6wlwdtglx70dzkz1fnn&secretkey=cz7a318b3jpkqm6nzz4l&pageid=' + item.id
+	// 				)
+	// 				if ( item.alias ) {
+	// 					createPage({
+	// 						path: `/${item.alias}`,
+	// 						component: './src/templates/Tilda.vue',
+	// 						context: {
+	// 							id: item.id,
+	// 							title: item.title,
+	// 							description: item.descr,
+	// 							cover: item.img,
+	// 							slug: item.alias,
+	// 							html: data.result.html
+	// 						}
+	// 					})
+	// 				} else {
+	// 					createPage({
+	// 						path: `/${item.filename}`,
+	// 						component: './src/templates/Tilda.vue',
+	// 						context: {
+	// 							id: item.id,
+	// 							title: item.title,
+	// 							description: item.descr,
+	// 							cover: item.img,
+	// 							slug: item.filename,
+	// 							html: data.result.html
+	// 						}
+	// 					})
+	// 				}
+	// 			}
+	// 		}
+	// 	})
+	// })
 
 	// //API from Wordpress: Список постов
 	// api.createPages(async ({ graphql, createPage }) =>{
