@@ -57,7 +57,171 @@
 			</b-container>
 		</section>
 
+		<section class="cards">
+			<b-container>
+				<b-row>
+					<b-col>
+						<div class="h2 mb-4 mb-lg-5">
+							Варианты партнерства
+						</div>
+					</b-col>
+				</b-row>
+				<b-row class="cards__list-cards list-cards">
+					<b-col xl="4" class="mb-5 mb-xl-0">
+						<article class="list-cards__card">
+							<span>Шаг 1</span>
+							<div class="h3 my-3">Реферальный партнер</div>
+							<p class="list-cards__desc">Вознаграждение&nbsp;&mdash; 10% от&nbsp;платежей приведенных клиентов</p>
+						</article>
+						<article class="list-cards__advatages d-flex justify-content-between flex-column text">
+							<ul>
+								<li>Вы&nbsp;&mdash; делитесь ссылкой 
+								на&nbsp;подключение продукта. 
+								Мы&nbsp;&mdash; делимся выручкой от&nbsp;клиента.</li>
+								<li>Если клиент подключится по&nbsp;вашей ссылке, мы&nbsp;будем выплачивать&nbsp;10% 
+								от&nbsp;его платежей за&nbsp;все время, пока 
+								он&nbsp;платит.</li>
+								<li>Вы&nbsp;так&nbsp;же можете самостоятельно 
+								настроить инструменты Carrot quest 
+								вашему клиенту. И&nbsp;договориться 
+								как вам удобно.</li>
+							</ul>
+							<div class="list-cards__links">
+								<b-button href="/partner/register/" variant="primary" class="mb-3">Стать реферальным партнером</b-button>
+								<p class="list-cards__referral-note">Действуем на основании <a target="_blank" rel="noopener" href="https://www.carrotquest.io/blog/wp-content/uploads/2020/11/Шаблон-Реферальный-договор.docx">реферального договора</a></p>
+							</div>
+						</article>
+					</b-col>
+					<b-col xl="4" class="mb-5 mb-xl-0">
+						<article class="list-cards__card">
+						<span>Шаг 2</span>
+						<div class="h3 my-3">Официальный партнер</div>
+						<p class="list-cards__desc">
+							Вы&nbsp;зарабатываете от&nbsp;30&nbsp;000 
+							до&nbsp;150&nbsp;000&nbsp;р.&nbsp;за&nbsp;каждого клиента 
+							за&nbsp;внедрение сервиса
+							<br>
+							<br>
+							+ 20% процентов за&nbsp;продление подписки клиентом ежемесячно
+						</p>
+						</article>
+						<article class="list-cards__advatages d-flex justify-content-between flex-column text">
+						<ul>
+							<li>Предоставляем скидку на&nbsp;решения Carrot quest от&nbsp;20% в&nbsp;зависимости  
+							от&nbsp;выбранного тарифа и&nbsp;срока оплаты.</li>
+							<li>Обучаем всех партнеров, знакомим 
+							и&nbsp;помогаем повышать качество внедрения инструментов Carrot quest для ваших клиентов.</li>
+						</ul>
+						<div class="list-cards__links">
+							<b-button href="/partner/register/" variant="primary" class="mb-3">Стать официальным партнером</b-button>
+							<p class="list-cards__referral-note">Действуем на основании <a target="_blank" rel="noopener" href="https://www.carrotquest.io/blog/wp-content/uploads/2020/11/Шаблон-Партнёрский-договор.doc">лицензионного соглашения</a></p>
+						</div>
+						</article>
+					</b-col>
+					<b-col xl="4">
+						<article class="list-cards__card">
+							<span>Шаг 3</span>
+							<div class="h3 my-3">Сертифицированный партнер</div>
+							<p class="list-cards__desc">
+								Вы&nbsp;зарабатываете от&nbsp;30&nbsp;000 
+								до&nbsp;150&nbsp;000&nbsp;р.&nbsp;за&nbsp;каждого клиента за&nbsp;внедрение сервиса
+								<br>
+								<br>
+								+ 20% процентов за&nbsp;продление подписки клиентом ежемесячно
+							</p>
+						</article>
+						<article class="list-cards__advatages d-flex justify-content-between flex-column text">
+							<ul>
+								<li>Предоставляем скидку на&nbsp;решения Carrot quest&nbsp;20% 
+								в&nbsp;зависимости от&nbsp;выбранного 
+								тарифа и&nbsp;срока оплаты.</li>
+								<li>Обучаем всех партнеров, знакомим 
+								и&nbsp;помогаем повышать качество внедрения инструментов Carrot quest для ваших клиентов.</li>
+								<li>Продвигаем успешные кейсы внедрения от&nbsp;партнеров в&nbsp;нашем блоге и&nbsp;на&nbsp;внешних ресурсах. 
+								Лиды, из&nbsp;аудитории этих кейсов отправляются напрямую партнерам.</li>
+								<li>Заявки на&nbsp;внедрение автоматизации маркетинга, которые поступают 
+								в&nbsp;Carrot quest, передаем сертифицированным партнерам.</li>
+							</ul>
+							<div class="list-cards__links">
+								<b-button href="/partner/register/" variant="primary" class="mb-3">Подтвердить статус</b-button>
+								<p class="list-cards__referral-note">Действуем на основании <a target="_blank" rel="noopener" href="https://www.carrotquest.io/blog/wp-content/uploads/2020/11/Шаблон-Партнёрский-договор.doc">лицензионного соглашения</a></p>
+							</div>
+						</article>
+					</b-col>
+				</b-row>
+			</b-container>
+		</section>
+
 		<Study />
+
+		<section class="partners">
+			<b-container>
+				<b-row>
+						<div class="col-12">
+							<div class="h2 mb-4 mb-lg-5">
+								Партнеры Carrot&nbsp;quest
+							</div>
+						</div>
+				</b-row>
+				<b-row>
+					<ul class="partners__list">
+						<li class="partners__list__item">
+							<figure class="partners__list__sprite partners__list__sprite_registratura"></figure>
+						</li>
+						<li class="partners__list__item">
+							<figure class="partners__list__sprite partners__list__sprite_ingate"></figure>
+						</li>
+						<li class="partners__list__item">
+							<figure class="partners__list__sprite partners__list__sprite_sintez"></figure>
+						</li>
+						<li class="partners__list__item">
+							<figure class="partners__list__sprite partners__list__sprite_profitator"></figure>
+						</li>
+						<li class="partners__list__item">
+							<figure class="partners__list__sprite partners__list__sprite_email-sold"></figure>
+						</li>
+						<li class="partners__list__item">
+							<figure class="partners__list__sprite partners__list__sprite_soft-form"></figure>
+						</li>
+						<li class="partners__list__item">
+							<figure class="partners__list__sprite partners__list__sprite_intr"></figure>
+						</li>
+						<li class="partners__list__item">
+							<figure class="partners__list__sprite partners__list__sprite_xpage"></figure>
+						</li>
+						<li class="partners__list__item">
+							<figure class="partners__list__sprite partners__list__sprite_future-bit"></figure>
+						</li>
+						<li class="partners__list__item">
+							<figure class="partners__list__sprite partners__list__sprite_flame"></figure>
+						</li>
+						<li class="partners__list__item">
+							<figure class="partners__list__sprite partners__list__sprite_biarch"></figure>
+						</li>
+						<li class="partners__list__item">
+							<figure class="partners__list__sprite partners__list__sprite_s-media"></figure>
+						</li>
+						<li class="partners__list__item">
+							<figure class="partners__list__sprite partners__list__sprite_biz-mail"></figure>
+						</li>
+						<li class="partners__list__item">
+							<figure class="partners__list__sprite partners__list__sprite_allure"></figure>
+						</li>
+						<li class="partners__list__item">
+							<figure class="partners__list__sprite partners__list__sprite_cxema"></figure>
+						</li>
+						<li class="partners__list__item">
+							<figure class="partners__list__sprite partners__list__sprite_techart"></figure>
+						</li>
+						<li class="partners__list__item">
+							<a href="https://internetactive.ru/?utm_source=carrot_partnet&utm_medium=cpc&utm_campaign=partner" target="_blank" rel="nofollow">
+								<figure class="partners__list__sprite partners__list__sprite_internetactive"></figure>
+							</a>
+						</li>
+					</ul>
+				</b-row>
+			</b-container>
+		</section>
 
 		<FAQ 
 			title="Часто задаваемые вопросы"
@@ -116,12 +280,10 @@
 		<section class="connect">    
 			<b-container>
 				<b-row>
-					<b-col lg="3">
-						<figure class="connect__photo-inner">
-							<g-image src="@/assets/images/partner/IvanKomаrov.jpg" quality="100" alt="Иван Комаров" title="Привет!" />
-						</figure>
+					<b-col cols="6" md="3">
+						<g-image src="@/assets/images/partner/IvanKomаrov.png" class="mw-100" quality="100" alt="Иван Комаров" title="Привет!" />
 					</b-col>
-					<b-col class="text">
+					<b-col md="9" class="text mt-4 mt-md-0">
 						<p class="h3">Иван Комаров, руководитель направления по&nbsp;работе с&nbsp;партнерами</p>
 						<p>
 							Отвечу на&nbsp;ваши вопросы, помогу с&nbsp;документами, подскажу по&nbsp;сервису или передам вопрос разработчикам
@@ -173,18 +335,142 @@
 			background-color: #fef8ea;
 		}
 
+		.cards {
+			.h3 {
+				margin-top: 10px;
+			}
+			.list-cards {
+				display:flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				&__card {
+					padding: 1rem;
+					background: #F8F8FF;
+					border-radius: 5px 5px 0px 0px;
+					height: 305px;
+				}
+				&__desc {
+					color: #128A12;
+					font-weight: bold;
+				}
+				&__advatages {
+					border: 1px solid #E7EBF4;
+					border-radius: 0px 0px 5px 5px;
+					border-top: none;
+					padding: 1rem;
+					height: 660px;
+				}
+				&__referral-note {
+					font-size: 14px;
+					color: #A4A4A4;
+					a {
+						color: #A4A4A4;
+						text-decoration: underline;
+					}
+				}
+			}
+			@media (max-width: 1199.98px) {
+				.list-cards {
+					&__card , &__advatages {
+						height: initial;
+					}
+				}
+			}
+		}
+
+		.partners {
+			&__list {
+				display: flex;
+				flex-wrap: wrap;
+				&__item {
+					height: 100px;
+					margin: 0 20px;
+					list-style: none;
+					:last-child {
+						margin-bottom: 0;
+					}
+				}
+				&__sprite {
+					height: 66px;
+					overflow: hidden;
+					background-image: url(../assets/images/partner/partners.png);
+					background-repeat: no-repeat;
+					&_registratura {
+						width: 148px;
+						background-position: -20px 10px;
+					}
+					&_ingate {
+						width: 163px;
+						background-position: -25px -60px;
+					}
+					&_sintez {
+						width: 284px;
+						background-position: -24px -122px;
+					}
+					&_profitator {
+						width: 168px;
+						background-position: -30px -186px;
+					}
+					&_email-sold {
+						width: 134px;
+						background-position: -18px -270px;
+					}
+					&_soft-form {
+						width: 132px;
+						background-position: -33px -368px;
+					}
+					&_intr {
+						width: 154px;
+						background-position: -30px -440px;
+					}
+					&_xpage {
+						width: 130px;
+						background-position: -28px -508px;
+					}
+					&_future-bit {
+						width: 102px;
+						background-position: -28px -580px;
+					}
+					&_flame {
+						width: 50px;
+						background-position: -26px -665px;
+					}
+					&_biarch {
+						width: 84px;
+						background-position: -32px -755px;
+					}
+					&_s-media {
+						width: 56px;
+						background-position: -30px -825px;
+					}
+					&_biz-mail {
+						width: 122px;
+						background-position: -30px -904px;
+					}
+					&_allure {
+						width: 100px;
+						background-position: -30px -988px;
+					}
+					&_cxema {
+						width: 131px;
+						background-position: -30px -1064px;
+					}
+					&_techart {
+						width: 185px;
+						background-position: -23px -1135px;
+					}
+					&_internetactive {
+						width: 66px;
+						background-position: -23px -1219px;
+					}
+				}
+			}
+		}
+
 		.connect {
-			&__photo-inner {
-				width: 240px;
-				height: 240px;
+			img {
 				overflow: hidden;
 				border-radius: 50%;
-			}
-			&__photo {
-				width: 426px;
-				margin-top: -77px;
-				margin-left: -130px;
-				transform: scale(0.83);
 			}
 		}
 	}
