@@ -14,8 +14,8 @@
 						<p class="pt-3 pb-4">
 							Зарабатывайте за каждое внедрение Carrot quest от 50 000 до 200 000 рублей в месяц или получайте дополнительный доход от реферальной программы
 						</p>
-						<b-button href="/partner/register/" variant="primary" class="mr-4">Стать партнером</b-button>
-						<b-button href="/partner/direct/" variant="outline-primary">Партнерский логин</b-button>
+						<b-button href="https://carrotquest.io/partner/register/" variant="primary" class="mr-4">Стать партнером</b-button>
+						<b-button href="https://carrotquest.io/partner/direct/" variant="outline-primary">Партнерский логин</b-button>
 					</b-col>
 				</b-row>
 			</b-container>
@@ -87,7 +87,7 @@
 								как вам удобно.</li>
 							</ul>
 							<div class="list-cards__links">
-								<b-button href="/partner/register/" variant="primary" class="mb-3">Стать реферальным партнером</b-button>
+								<b-button href="https://carrotquest.io/partner/register/" variant="primary" class="mb-3">Стать реферальным партнером</b-button>
 								<p class="list-cards__referral-note">Действуем на основании <a target="_blank" rel="noopener" href="https://www.carrotquest.io/blog/wp-content/uploads/2020/11/Шаблон-Реферальный-договор.docx">реферального договора</a></p>
 							</div>
 						</article>
@@ -113,7 +113,7 @@
 							и&nbsp;помогаем повышать качество внедрения инструментов Carrot quest для ваших клиентов.</li>
 						</ul>
 						<div class="list-cards__links">
-							<b-button href="/partner/register/" variant="primary" class="mb-3">Стать официальным партнером</b-button>
+							<b-button href="https://carrotquest.io/partner/register/" variant="primary" class="mb-3">Стать официальным партнером</b-button>
 							<p class="list-cards__referral-note">Действуем на основании <a target="_blank" rel="noopener" href="https://www.carrotquest.io/blog/wp-content/uploads/2020/11/Шаблон-Партнёрский-договор.doc">лицензионного соглашения</a></p>
 						</div>
 						</article>
@@ -143,7 +143,7 @@
 								в&nbsp;Carrot quest, передаем сертифицированным партнерам.</li>
 							</ul>
 							<div class="list-cards__links">
-								<b-button href="/partner/register/" variant="primary" class="mb-3">Подтвердить статус</b-button>
+								<b-button href="https://carrotquest.io/partner/register/" variant="primary" class="mb-3">Подтвердить статус</b-button>
 								<p class="list-cards__referral-note">Действуем на основании <a target="_blank" rel="noopener" href="https://www.carrotquest.io/blog/wp-content/uploads/2020/11/Шаблон-Партнёрский-договор.doc">лицензионного соглашения</a></p>
 							</div>
 						</article>
@@ -273,7 +273,7 @@
 			]"
 			:button="{
 				text: 'Стать партнером',
-				href: '/partner/register/'
+				href: 'https://carrotquest.io/partner/register/'
 			}"
 		/>
 
