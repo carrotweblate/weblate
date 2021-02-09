@@ -22,6 +22,7 @@
     "remark": "^13.0.0",
     "sass-loader": "^10.0.1",
     "vue-horizontal-list": "^1.2.0",
-    "vue-read-progress": "^1.0.4"
+    "vue-read-progress": "^1.0.4",
+    "webpack-bundle-analyzer": "^4.4.0"
   }
 }

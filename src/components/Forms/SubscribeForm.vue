@@ -23,7 +23,7 @@
 				</b-input-group>
 			</b-form>
 		</div>
-		<b-modal ref="suсcessDownload" hide-footer title="Подписка оформлена">
+		<b-modal ref="suсcessSubscribe" hide-footer title="Подписка оформлена">
 			Проверьте свой email: {{email}}
 		</b-modal>
 	</div>
@@ -32,11 +32,13 @@
 <script>
 	export default {
 		props: [
-			'button'
+			'button',
+			'event'
 		],
 		data: function() {
 			return {
-				email: ''
+				email: '',
+				event: ''
 			};
 		},
 		methods: {
@@ -50,14 +52,16 @@
 					{"op": "update_or_create", "key": "$email", "value": this.email},
 					{ doubleSubscribe: true }
 				])
-				carrotquest.track('Подписался на библиотеку')
+				if ( this.event != '' ) {
+					carrotquest.track(this.event)
+				}
 
 				dataLayer.push({ event: 'UAevent', eventCategory: 'leads', eventAction: 'email', eventLabel: location.host + location.pathname });
 				fbq('trackCustom', 'get_lead', {page: location.pathname})
 
-				this.$refs['suсcessDownload'].show()
+				this.$refs['suсcessSubscribe'].show()
 				setTimeout(() => {
-					this.$refs['suсcessDownload'].hide()
+					this.$refs['suсcessSubscribe'].hide()
 					this.email = ''
 				}, 7000);
 

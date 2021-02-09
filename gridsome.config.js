@@ -4,9 +4,12 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
+// const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
+//   .BundleAnalyzerPlugin
+
 module.exports = {
 
-	// pathPrefix: '/blog/article/',
+	// pathPrefix: '/https://cdn-www.carrotquest.io/',
 
 	// prefetch: {
 	// 	mask: '^$', // Отключаем подгрузку страниц
@@ -59,14 +62,14 @@ module.exports = {
 				description: 'Инструменты для увеличения продаж на сайтах без привлечения нового трафика', // Optional
 			}
 		},
-		{
-			use: 'gridsome-source-graphql',
-			options: {
-			url: 'https://www.carrrot.biz/blog/graphql',
-				fieldName: 'wp',
-				typeName: 'wpTypes',
-			},
-		},
+		// {
+		// 	use: 'gridsome-source-graphql',
+		// 	options: {
+		// 	url: 'https://www.carrrot.biz/blog/graphql',
+		// 		fieldName: 'wp',
+		// 		typeName: 'wpTypes',
+		// 	},
+		// },
 		// {
 		// 	use: '@noxify/gridsome-plugin-remote-image',
 		// 	options: {
@@ -80,5 +83,8 @@ module.exports = {
 	
 	chainWebpack: config => {
 		config.resolve.alias.set('@images', '@/assets/images')
+		// config
+		// 	.plugin('BundleAnalyzerPlugin')
+		// 	.use(BundleAnalyzerPlugin, [{ analyzerMode: 'static' }])
 	}
 }

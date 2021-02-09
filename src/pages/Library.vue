@@ -15,7 +15,7 @@
 						<p>
 							Подпишитесь, чтобы получать еженедельный дайджест Carrot&nbsp;quest
 						</p>
-						<SubscribeForm />
+						<SubscribeForm event="Подписался на библиотеку" />
 					</b-col> 
 				</b-row>
 

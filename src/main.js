@@ -36,13 +36,13 @@ export default function(Vue, { head }) {
 	// 	src: 'https://www.carrotquest.io/blog/article/assets/js/cq.js',
 	// 	rel: 'preload'
 	// })
-	head.script.push({
+	head.script.push({ 
 		src: 'https://www.carrotquest.io/assets/js/cq.js',
 		rel: 'preload'
 	})
 
 	//Bootstrap
-	Vue.use(BootstrapVue)
+	Vue.use(BootstrapVue) 
 
 	//Базовая разметка
 	Vue.component('Layout', DefaultLayout)
