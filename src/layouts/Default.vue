@@ -43,7 +43,7 @@
 
 		<!-- Модалка для Вебинаров -->
 		<b-modal ref="open-modal-webinar" hide-footer title="Регистрация на вебинар">
-			<b-form v-on:submit.prevent="modalWebinar">
+			<b-form v-on:click.once="modalWebinarStart" v-on:submit.prevent="modalWebinar">
 				<b-form-input 
 					placeholder="Имя" 
 					type="text" 
@@ -104,6 +104,7 @@
 			};
 		},
 		methods: {
+			//Скачивание файлов
 			modalDownload () {
 				carrotquest.identify([
 					{"op": "update_or_create", "key": "$phone", "value": this.modalPhone},
@@ -119,13 +120,39 @@
 				carrotquest.track(this.modalEvent)
 
 				dataLayer.push({ event: 'UAevent', eventCategory: 'leads', eventAction: 'phone', eventLabel: location.host + location.pathname })
-				fbq('trackCustom', 'get_demo', {page: location.pathname})
+				fbq('trackCustom', 'get_lead', {page: location.pathname})
 
 				this.$refs['open-modal-download'].hide()
 				this.$refs['suсcessDownload'].show()
 				setTimeout(() => {
 					this.$refs['suсcessDownload'].hide()
 				}, 7000);
+			},
+			
+			//Регистрация на вебинар
+			modalWebinarStart() {
+				carrotquest.track('webinar_form_started')
+			},
+			modalWebinar () {
+				carrotquest.identify([
+					{"op": "update_or_create", "key": "$phone", "value": this.modalPhone},
+					{"op": "update_or_create", "key": "$name", "value": this.modalName},
+					{"op": "update_or_create", "key": "$email", "value": this.modalEmail}
+				]);
+				carrotquest.track( 'webinar_' + this.modalTitle , {
+					'Телефон': this.modalPhone,
+					'Имя': this.modalName,
+					'Email': this.modalEmail,
+					'url': location.host + location.pathname
+				})
+				carrotquest.track('webinar_form_finished')
+
+				dataLayer.push({ event: 'UAevent', eventCategory: 'leads', eventAction: 'phone', eventLabel: location.host + location.pathname })
+				fbq('trackCustom', 'get_webinar', {page: location.pathname})
+
+				this.$refs['open-modal-webinar'].hide()
+
+				window.open( this.modalOpenUrl + '?cq_event=webinar_bonus_landing_opened' + '&from=webinar-' + this.modalTitle , '_self' )
 			}
 		},
 		mounted () {
@@ -139,19 +166,27 @@
 				})
 			}
 
+			// Ищем ссылки для записи на демо
+			if ( document.querySelector('a[href*="#open-demo-pop-up"]') ) {
+				document.querySelectorAll('a[href*="#open-demo-pop-up"]').forEach(function(item) {
+					item.addEventListener('click', function(e) {
+						e.preventDefault()
+						carrotquest.track('Записаться на демо через поп-ап');
+					}.bind(this))
+				}.bind(this))
+			}
+
 			// Ищем ссылки для открытия модалок на скачивание файлов
 			if ( document.querySelector('a[href*="#open-modal-download"]') ) {
 				document.querySelectorAll('a[href*="#open-modal-download"]').forEach(function(item) {
 					item.addEventListener('click', function(e) {
 						e.preventDefault()
-
 						this.$refs['open-modal-download'].show()
 
 						let addr = new URL(e.srcElement.href.replace('#open-modal-download' , ''))
 
 						this.modalTitle = addr.searchParams.get('title')
 						this.modalEvent = addr.searchParams.get('cqe')
-
 					}.bind(this))
 				}.bind(this))
 			}
@@ -161,14 +196,13 @@
 				document.querySelectorAll('a[href*="#open-modal-webinar"]').forEach(function(item) {
 					item.addEventListener('click', function(e) {
 						e.preventDefault()
-
 						this.$refs['open-modal-webinar'].show()
 
 						let addr = new URL(e.srcElement.href.replace('#open-modal-webinar' , ''))
 
-						this.modalEvent = addr.searchParams.get('cqe')
+						this.modalTitle = addr.searchParams.get('title')
 						this.modalOpenUrl = addr.searchParams.get('url')
-
+						carrotquest.track('webinar_form_open')
 					}.bind(this))
 				}.bind(this))
 			}
@@ -184,24 +218,29 @@
 						content: this.$parent.metaDescription
 					},
 					{
+						key: 'og:url',
 						property: "og:url",
 						content: this.$parent.metaCanonical
 					},
 					{
+						key: "og:title",
 						property: "og:title",
 						content: this.$parent.metaTitle
 					},
 					{
+						key: "og:description",
 						property: "og:description",
 						content: this.$parent.metaDescription
 					},
 					{
+						key: "og:image",
 						property: "og:image",
 						content: this.$parent.metaImage
 					},
 				],
 				link: [
 					{
+						key: "canonical",
 						rel: 'canonical',
 						href: this.$parent.metaCanonical
 					}

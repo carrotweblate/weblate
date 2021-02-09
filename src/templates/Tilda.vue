@@ -8,26 +8,51 @@
 </template>
 
 
+
+
 <script>
 	export default {
-		data() {
+		//Делаем в HEAD
+		metaInfo() {
 			return {
-				//Делаем в HEAD
-				metaTitle: '',
-				metaDescription: '',
-				metaCanonical: '',
-				metaImage: '',
-
-				tilda: ''
+				title: this.$context.title,
+				meta: [
+					{
+						key: 'description',
+						name: 'description',
+						content: this.$context.description
+					},
+					{
+						key: 'og:url',
+						property: "og:url",
+						content: 'https://www.carrotquest.io/' + this.$context.slug
+					},
+					{
+						key: "og:title",
+						property: "og:title",
+						content: this.$context.title
+					},
+					{
+						key: "og:description",
+						property: "og:description",
+						content: this.$context.description
+					},
+					{	
+						key: "og:image",
+						property: "og:image",
+						content: this.$context.cover
+					},
+				],
+				link: [
+					{
+						key: "canonical",
+						rel: 'canonical',
+						href: 'https://www.carrotquest.io/' + this.$context.slug
+					}
+				]
 			}
 		},
 		beforeMount () {
-			//Делаем в HEAD
-			this.metaTitle = this.$context.title
-			this.metaDescription = this.$context.description
-			this.metaCanonical = 'https://www.carrotquest.io/' + this.$context.slug
-			this.metaImage = this.$context.cover
-
 			//Подгружаем стили и скрипты тильды
 			for ( var value of this.$page.allTildaFiles.edges.reverse() ) {
 				if ( ( value.node.js ) && (value.node.js.indexOf('jquery-1.10.2.min.js') >= 0) ) {
@@ -80,7 +105,7 @@
 
 <style lang="scss">
 	.page-tilda {
-		// overflow: hidden;
+		overflow: hidden;
 		#t-header, #t-footer {
 			display: none;
 		}

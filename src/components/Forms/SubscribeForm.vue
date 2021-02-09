@@ -1,26 +1,31 @@
 <template>
-	<div class="SubscribeForm">
-		<b-form v-on:submit.prevent="subscribe">
-			<b-input-group>
-				<b-form-input 
-					placeholder="Почта" 
-					type="email" 
-					required
-					v-model="email"
-					class="p-4"
-				/>
-				<b-input-group-append>
-					<b-button type="submit" variant="primary" class="px-4">
-						<template v-if="button">
-							{{ button }}
-						</template>
-						<template v-else>
-							Подписаться
-						</template>
-					</b-button>
-				</b-input-group-append>
-			</b-input-group>
-		</b-form>
+	<div>
+		<div class="SubscribeForm">
+			<b-form v-on:submit.prevent="subscribe">
+				<b-input-group>
+					<b-form-input 
+						placeholder="Почта" 
+						type="email" 
+						required
+						v-model="email"
+						class="p-4"
+					/>
+					<b-input-group-append>
+						<b-button type="submit" variant="primary" class="px-4">
+							<template v-if="button">
+								{{ button }}
+							</template>
+							<template v-else>
+								Подписаться
+							</template>
+						</b-button>
+					</b-input-group-append>
+				</b-input-group>
+			</b-form>
+		</div>
+		<b-modal ref="suсcessDownload" hide-footer title="Подписка оформлена">
+			Проверьте свой email: {{email}}
+		</b-modal>
 	</div>
 </template>
 
@@ -36,8 +41,27 @@
 		},
 		methods: {
 			subscribe () {
-				alert('Подписался' + this.email + '')
-				this.email = ""
+				carrotquest.identify({
+					'$email': this.email
+				},{ 
+					doubleSubscribe: true
+				})
+				carrotquest.identify([
+					{"op": "update_or_create", "key": "$email", "value": this.email},
+					{ doubleSubscribe: true }
+				])
+				carrotquest.track('Подписался на библиотеку')
+
+				dataLayer.push({ event: 'UAevent', eventCategory: 'leads', eventAction: 'email', eventLabel: location.host + location.pathname });
+				fbq('trackCustom', 'get_lead', {page: location.pathname})
+
+				this.$refs['suсcessDownload'].show()
+				setTimeout(() => {
+					this.$refs['suсcessDownload'].hide()
+					this.email = ''
+				}, 7000);
+
+				
 			}
 		}
 	}
