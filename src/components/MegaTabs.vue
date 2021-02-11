@@ -26,13 +26,15 @@
 							<source :src="item.pic" type="video/mp4">
 						</b-embed>
 						<!-- Изображение -->
-						<template v-else>
-							<!-- <img
-								:src="require(`!!assets-loader?width=1440&height=1080&fit=contain&background=transparent!@/assets/images/components/${item.pic}`)"
-								:alt="item.title"
-								quality="100"
-							/> -->
-						</template>
+						<!-- <g-image v-else
+							:src="require(`!!assets-loader?width=1440&height=1080&fit=contain&background=transparent!@/assets/images/components/${item.pic}`)"
+							:alt="item.title"
+							quality="100"
+						/> -->
+						<img v-else
+							:src="'https://res.cloudinary.com/carrotquest/image/upload/v1613043845/components/' + item.pic"
+							:alt="item.title"
+						/>
 					</b-tab>
 					<template #tabs-end>
 						<div v-if="more" class="more mt-4">
@@ -60,10 +62,14 @@
 							<source :src="item.pic" type="video/mp4">
 						</b-embed>
 						<!-- Изображение -->
-						<!-- <img v-else
-							:src="require(`!!assets-loader?width=800&height=700&fit=contain&background=#ffffff!@/assets/images/components/${item.pic}`)"
+						<!-- <g-image v-else
+							:src="require(`!!assets-loader?width=800&height=700&fit=contain&background=transparent!@/assets/images/components/${item.pic}`)"
 							:alt="item.title"
 						/> -->
+						<img v-else
+							:src="'https://res.cloudinary.com/carrotquest/image/upload/c_fit,h_700,w_800/v1613043845/components/' + item.pic"
+							:alt="item.title"
+						/>
 					</div>
 				</b-card>
 				<div v-if="more" class="more">
@@ -82,10 +88,14 @@
 			</b-col>
 			<b-col lg="3" v-for="item in instruments" :key="item.title" class="mt-4 mt-md-5 mt-lg-4">
 				<a :href="item.href" class="box">
-					<!-- <img
-						:src="require(`!!assets-loader?width=160&height=96&fit=contain&background=#fff!@/assets/images/components/${item.pic}`)"
+					<!-- <g-image
+						:src="require(`!!assets-loader?width=160&height=96&fit=contain&background=transparent!@/assets/images/components/${item.pic}`)"
 						:alt="item.title.replace('<i>', '').replace('</i>', '')"
 					/> -->
+					<img
+						:src="'https://res.cloudinary.com/carrotquest/image/upload/c_pad,h_96,w_160/v1613043845/components/' + item.pic"
+						:alt="item.title.replace('<i>', '').replace('</i>', '')"
+					/>
 					<div class="title" v-html="item.title" />
 				</a>
 			</b-col>

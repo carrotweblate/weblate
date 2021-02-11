@@ -21,25 +21,12 @@ export default function(Vue, { head }) {
 		{ property: "og:type", content: "website" },
 	)
 
-	//Подключаем Open Sans
+	//Подключаем Шрифты
 	head.link.push(
-		{ rel: "preconnect", href: "https://fonts.gstatic.com" },
-		{ rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" },
-	)	
-
-	// Добавляем jQuery и CQ
-	// head.script.push({
-	// 	src: 'https://static.tildacdn.com/js/jquery-1.10.2.min.js',
-	// 	rel: 'preload'
-	// })
-	// head.script.push({
-	// 	src: 'https://www.carrotquest.io/blog/article/assets/js/cq.js',
-	// 	rel: 'preload'
-	// })
-	// head.script.push({ 
-	// 	src: 'https://www.carrotquest.io/assets/js/cq.js',
-	// 	rel: 'preload'
-	// })
+		{ rel: "preconnect", 	href: "https://fonts.gstatic.com" },
+		{ rel: "stylesheet", 	href: "https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" },
+		{ rel: "preload", 		href: "/assets/font/Stag%20Sans-Medium-Web.woff", as: "font", type: "font/woff", crossorigin:"anonymous" }
+	)
 
 	//Bootstrap
 	Vue.use(BootstrapVue) 

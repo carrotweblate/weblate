@@ -13,15 +13,6 @@
 						<MiniConsultationForm />
 					</div>
 				</b-col>
-
-				<b-col v-if="pic" cols="6" xl="3" class="d-none d-xl-block">
-					<!-- <img
-						:src="require(`!!assets-loader?width=280!@/assets/images/${pic}`)"
-						:alt="alt"
-						:title="alt"
-					/> -->
-				</b-col>
-
 				<b-col cols="12" lg="8" xl="6">
 					<div class="Contacts__hrefs d-flex">
 						<div class="flex-grow-1 mt-2 mb-3 m-md-0">
@@ -74,9 +65,7 @@
 
 	export default {
 		props: { 
-			title: String, 
-			pic: String, 
-			alt: String, 
+			title: String,
 			bg: String, 
 			consultation: Boolean
 		},

@@ -5,11 +5,9 @@
 		<b-col class="Consultation" :style=" 'background-color: ' + bg ">
 			<b-row class="align-items-center justify-content-center">
 				<b-col cols="8" lg="4" class="mb-5">
-					<!-- <img
-						:src="require(`!!assets-loader?width=280!@/assets/images/components/${pic}`)"
-						:alt="alt"
-						:title="alt"
-					/> -->
+					<g-image v-if="pic == 'medium-1.png'" src="@/assets/images/components/medium-1.png" width="552" :alt="alt" :title="alt" class="mw-100" />
+					<g-image v-if="pic == 'medium-2.png'" src="@/assets/images/components/medium-2.png" width="552" :alt="alt" :title="alt" class="mw-100" />
+					<g-image v-if="pic == 'medium-3.png'" src="@/assets/images/components/medium-3.png" width="552" :alt="alt" :title="alt" class="mw-100" />
 				</b-col>
 				<b-col cols="12" lg="8">
 					<div class="h1 mb-4" v-html="title" />
@@ -46,12 +44,14 @@
 				</b-col>
 			</b-row>
 		</b-col>
+
 	</b-container>
 
 </template>
 
 <script>
 	import ConsultationForm from '~/components/Forms/ConsultationForm.vue'
+
 	export default {
 		components: {
 			ConsultationForm
@@ -64,9 +64,6 @@
 	.Consultation {
 		border-radius: 5px;
 		padding: 4.5rem 6rem;
-		img {
-			max-width: 100%;
-		}
 		@media (max-width: 767.98px) {
 			padding: 2rem 20px;
 			a:first-child {

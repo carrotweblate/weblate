@@ -41,6 +41,39 @@
 			</b-form>
 		</b-modal>
 
+		<!-- Модалка для ссылок и файлов -->
+		<b-modal ref="open-modal-url" hide-footer :title="modalTitle">
+			<b-form v-on:submit.prevent="modalUrl">
+				<b-form-input 
+					placeholder="Имя" 
+					type="text" 
+					required
+					v-model="modalName"
+					class="px-3 py-4"
+				/>
+				<b-form-input 
+					placeholder="Телефон" 
+					type="text" 
+					required
+					v-model="modalPhone"
+					class="px-3 py-4 mt-3"
+				/>
+				<b-form-input 
+					placeholder="Email" 
+					type="email" 
+					required
+					v-model="modalEmail"
+					class="px-3 py-4 mt-3"
+				/>
+				<b-button 
+					type="submit" 
+					variant="primary" 
+					class="px-3 py-2 mt-4">
+					Отправить
+				</b-button>
+			</b-form>
+		</b-modal>
+
 		<!-- Модалка для Вебинаров -->
 		<b-modal ref="open-modal-webinar" hide-footer title="Регистрация на вебинар">
 			<b-form v-on:click.once="modalWebinarStart" v-on:submit.prevent="modalWebinar">
@@ -79,7 +112,9 @@
 		</b-modal>
 
 	</div>
+	
 </template>
+
 
 
 <script>
@@ -127,6 +162,28 @@
 				setTimeout(() => {
 					this.$refs['suсcessDownload'].hide()
 				}, 7000);
+			},
+
+			//Открытие страницы
+			modalUrl () {
+				carrotquest.identify([
+					{"op": "update_or_create", "key": "$phone", "value": this.modalPhone},
+					{"op": "update_or_create", "key": "$name", "value": this.modalName},
+					{"op": "update_or_create", "key": "$email", "value": this.modalEmail}
+				]);
+				carrotquest.track("Заполнил форму на скачивание файлов", {
+					'Телефон': this.modalPhone,
+					'Имя': this.modalName,
+					'Email': this.modalEmail,
+					'url': location.host + location.pathname
+				})
+				carrotquest.track(this.modalEvent)
+
+				dataLayer.push({ event: 'UAevent', eventCategory: 'leads', eventAction: 'phone', eventLabel: location.host + location.pathname })
+				fbq('trackCustom', 'get_lead', {page: location.pathname})
+
+				this.$refs['open-modal-url'].hide()
+				window.open( this.modalOpenUrl , '_blank' )
 			},
 			
 			//Регистрация на вебинар
@@ -191,6 +248,22 @@
 				}.bind(this))
 			}
 
+			// Ищем ссылки для открытия модалок на переход или открытие файлов
+			if ( document.querySelector('a[href*="#open-modal-url"]') ) {
+				document.querySelectorAll('a[href*="#open-modal-url"]').forEach(function(item) {
+					item.addEventListener('click', function(e) {
+						e.preventDefault()
+						this.$refs['open-modal-url'].show()
+
+						let addr = new URL(e.srcElement.href.replace('#open-modal-url' , ''))
+
+						this.modalTitle = addr.searchParams.get('title')
+						this.modalEvent = addr.searchParams.get('cqe')
+						this.modalOpenUrl = addr.searchParams.get('url')
+					}.bind(this))
+				}.bind(this))
+			}
+
 			// Ищем ссылки для открытия модалок для регистрации на вебинар
 			if ( document.querySelector('a[href*="#open-modal-webinar"]') ) {
 				document.querySelectorAll('a[href*="#open-modal-webinar"]').forEach(function(item) {
@@ -217,6 +290,7 @@
 					}.bind(this))
 				}.bind(this))
 			}
+
 		},
 		//Делаем в HEAD
 		metaInfo() {
