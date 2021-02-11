@@ -109,6 +109,9 @@
 		#t-header, #t-footer {
 			display: none;
 		}
+		.t-video-lazyload {
+			height: 300px;
+		}
 	}
 	* , :before , :after {
 		box-sizing: border-box !important;

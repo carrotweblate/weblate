@@ -15,11 +15,11 @@
 				</b-col>
 
 				<b-col v-if="pic" cols="6" xl="3" class="d-none d-xl-block">
-					<g-image
+					<!-- <img
 						:src="require(`!!assets-loader?width=280!@/assets/images/${pic}`)"
 						:alt="alt"
 						:title="alt"
-					/>
+					/> -->
 				</b-col>
 
 				<b-col cols="12" lg="8" xl="6">

@@ -27,11 +27,11 @@
 						</b-embed>
 						<!-- Изображение -->
 						<template v-else>
-							<g-image
+							<!-- <img
 								:src="require(`!!assets-loader?width=1440&height=1080&fit=contain&background=transparent!@/assets/images/components/${item.pic}`)"
 								:alt="item.title"
 								quality="100"
-							/>
+							/> -->
 						</template>
 					</b-tab>
 					<template #tabs-end>
@@ -60,10 +60,10 @@
 							<source :src="item.pic" type="video/mp4">
 						</b-embed>
 						<!-- Изображение -->
-						<g-image v-else
+						<!-- <img v-else
 							:src="require(`!!assets-loader?width=800&height=700&fit=contain&background=#ffffff!@/assets/images/components/${item.pic}`)"
 							:alt="item.title"
-						/>
+						/> -->
 					</div>
 				</b-card>
 				<div v-if="more" class="more">
@@ -82,10 +82,10 @@
 			</b-col>
 			<b-col lg="3" v-for="item in instruments" :key="item.title" class="mt-4 mt-md-5 mt-lg-4">
 				<a :href="item.href" class="box">
-					<g-image
+					<!-- <img
 						:src="require(`!!assets-loader?width=160&height=96&fit=contain&background=#fff!@/assets/images/components/${item.pic}`)"
 						:alt="item.title.replace('<i>', '').replace('</i>', '')"
-					/>
+					/> -->
 					<div class="title" v-html="item.title" />
 				</a>
 			</b-col>

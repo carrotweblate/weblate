@@ -5,11 +5,11 @@
 		<b-col class="Consultation" :style=" 'background-color: ' + bg ">
 			<b-row class="align-items-center justify-content-center">
 				<b-col cols="8" lg="4" class="mb-5">
-					<g-image
+					<!-- <img
 						:src="require(`!!assets-loader?width=280!@/assets/images/components/${pic}`)"
 						:alt="alt"
 						:title="alt"
-					/>
+					/> -->
 				</b-col>
 				<b-col cols="12" lg="8">
 					<div class="h1 mb-4" v-html="title" />

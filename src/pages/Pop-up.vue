@@ -328,7 +328,7 @@
 
 <style lang="scss">
 	.page-pop-up {
-		background: url('../assets/images/pop-up/hero_bg.svg') 50% -50px no-repeat;
+		background: url('/assets/images/pop-up/hero_bg.svg') 50% -50px no-repeat;
 		.pop_ups_accordeon {
 			margin-top: -15rem;
 			.left_col__bg {

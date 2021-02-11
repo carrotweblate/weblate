@@ -4,8 +4,8 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
-// const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
-//   .BundleAnalyzerPlugin
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
+  .BundleAnalyzerPlugin
 
 module.exports = {
 
@@ -18,16 +18,16 @@ module.exports = {
 	siteName: 'Carrot quest',
 	titleTemplate: "%s — Carrot quest",
 
-	transformers: {
-		remark: {
-			externalLinksTarget: '_blank',
-			externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
-			anchorClassName: 'icon icon-link',
-			plugins: [
-				['@mavrin/remark-typograf',	{ 'locale': ['ru'] }]
-			]
-		}
-	},
+	// transformers: {
+	// 	remark: {
+	// 		externalLinksTarget: '_blank',
+	// 		externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
+	// 		anchorClassName: 'icon icon-link',
+	// 		plugins: [
+	// 			['@mavrin/remark-typograf',	{ 'locale': ['ru'] }]
+	// 		]
+	// 	}
+	// },
 
 	plugins: [
 		{
@@ -45,23 +45,33 @@ module.exports = {
 				disableServiceWorker: false,
 				serviceWorkerPath: 'service-worker.js',
 				cachedFileTypes: 'js,json,css,html,png,jpg,jpeg,svg,gif,webm,mp4',
-				disableTemplatedUrls: false,       // Optional
+				disableTemplatedUrls: false,
 	
 				// Manifest Options (https://developer.mozilla.org/en-US/docs/Web/Manifest)
 				manifestPath: 'manifest.json',
 				title: 'Carrot quest',
-				
-				// startUrl: '/',
+				description: 'Инструменты для увеличения продаж на сайтах без привлечения нового трафика',
+				shortName: 'CQ',
 				startUrl: '/',
 				display: 'standalone',
 				statusBarStyle: 'default',
-				themeColor: '#f60',
+				themeColor: '#FF7C16',
 				backgroundColor: '#ffffff',
-				icon: './static/favicon.png',
-				shortName: 'Carrot quest', // Optional
-				description: 'Инструменты для увеличения продаж на сайтах без привлечения нового трафика', // Optional
+				icon: '/static/favicon.png',
+				maskableIcon: true,
+				svgFavicon: '/static/favicon.svg',
+				appleMaskIcon: '/static/favicon.svg',
+            	appleMaskIconColor: '#ffffff',
 			}
 		},
+		{
+			use: '@gridsome/plugin-critical',
+			options: {
+				paths: ['/'],
+				width: 1300,
+				height: 900
+			}
+		}
 		// {
 		// 	use: 'gridsome-source-graphql',
 		// 	options: {
@@ -81,10 +91,10 @@ module.exports = {
 		// },
 	],
 	
-	chainWebpack: config => {
-		config.resolve.alias.set('@images', '@/assets/images')
-		// config
-		// 	.plugin('BundleAnalyzerPlugin')
-		// 	.use(BundleAnalyzerPlugin, [{ analyzerMode: 'static' }])
-	}
+	// chainWebpack: config => {
+	// 	config.resolve.alias.set('@images', '@/assets/images')
+	// 	config
+	// 		.plugin('BundleAnalyzerPlugin')
+	// 		.use(BundleAnalyzerPlugin, [{ analyzerMode: 'static' }])
+	// }
 }

@@ -206,6 +206,17 @@
 					}.bind(this))
 				}.bind(this))
 			}
+
+			// Ищем ссылки на получение награды
+			if ( document.querySelector('a[href*="https://t.me/cq_webinar_test_bot"]') ) {
+				document.querySelectorAll('a[href*="https://t.me/cq_webinar_test_bot"]').forEach(function(item) {
+					item.addEventListener('click', function(e) {
+						e.preventDefault()
+						carrotquest.track('webinar_bonus_requested')
+						window.open( e.srcElement.href , '_self' )
+					}.bind(this))
+				}.bind(this))
+			}
 		},
 		//Делаем в HEAD
 		metaInfo() {

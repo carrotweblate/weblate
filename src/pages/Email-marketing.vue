@@ -787,7 +787,7 @@
 				position: relative;
 				z-index: 1;
 				img {
-					background: #eeeeee url(../assets/images/email-marketing/solution-bg.png) no-repeat;
+					background: #eeeeee url(/assets/images/email-marketing/solution-bg.png) no-repeat;
 					background-size: 100% auto;
 					padding: 120px 12% 0;
 				}
@@ -894,7 +894,7 @@
 			}
 			&__box__pic {
 				width: 100%;
-				background: #eeeeee url(../assets/images/email-marketing/solution-bg.png) no-repeat;
+				background: #eeeeee url(/assets/images/email-marketing/solution-bg.png) no-repeat;
 				background-size: 100% auto;
 				padding: 80px 12% 40px;
 				margin-bottom: 2rem;

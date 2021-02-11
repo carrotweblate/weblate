@@ -9,6 +9,7 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
+    "@gridsome/plugin-critical": "^0.2.0",
     "@mavrin/remark-typograf": "^2.1.6",
     "@noxify/gridsome-plugin-remote-image": "^1.2.0",
     "animated-number-vue": "^1.0.0",

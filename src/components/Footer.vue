@@ -215,6 +215,10 @@
 							to: '/integration/'
 						},
 						{
+							title: 'Тестдрайв',
+							to: '/testdrive/'
+						},
+						{
 							title: 'Status page',
 							to: 'https://status.carrotquest.io/'
 						}

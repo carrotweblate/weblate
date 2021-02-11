@@ -2,7 +2,7 @@
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 
 //Bootstrap
-import BootstrapVue from 'bootstrap-vue'
+import BootstrapVue from 'bootstrap-vue' 
 
 //Общие стили
 import '~/assets/scss/app.scss'
@@ -36,10 +36,10 @@ export default function(Vue, { head }) {
 	// 	src: 'https://www.carrotquest.io/blog/article/assets/js/cq.js',
 	// 	rel: 'preload'
 	// })
-	head.script.push({ 
-		src: 'https://www.carrotquest.io/assets/js/cq.js',
-		rel: 'preload'
-	})
+	// head.script.push({ 
+	// 	src: 'https://www.carrotquest.io/assets/js/cq.js',
+	// 	rel: 'preload'
+	// })
 
 	//Bootstrap
 	Vue.use(BootstrapVue) 
