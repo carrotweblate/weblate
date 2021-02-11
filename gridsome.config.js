@@ -57,10 +57,10 @@ module.exports = {
 				statusBarStyle: 'default',
 				themeColor: '#FF7C16',
 				backgroundColor: '#ffffff',
-				icon: '/static/favicon.png',
+				icon: './static/favicon.png',
 				maskableIcon: true,
-				svgFavicon: '/static/favicon.svg',
-				appleMaskIcon: '/static/favicon.svg',
+				svgFavicon: './static/favicon.svg',
+				appleMaskIcon: './static/favicon.svg',
             	appleMaskIconColor: '#ffffff',
 			}
 		},
