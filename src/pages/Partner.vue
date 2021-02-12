@@ -393,7 +393,7 @@
 				&__sprite {
 					height: 66px;
 					overflow: hidden;
-					background-image: url(/assets/images/partner/partners.png);
+					background-image: url(../assets/images/partner/partners.png);
 					background-repeat: no-repeat;
 					&_registratura {
 						width: 148px;

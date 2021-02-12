@@ -1,5 +1,5 @@
 <template>
-	<Layout class="page page-marketing-course">
+	<Layout class="page page-kurs-email-marketing">
 
 		<section class="hero">
 			<b-container>
@@ -7,14 +7,14 @@
 					<b-col lg="8">
 						<span>Курс</span>
 						<h1 class="mt-3 mb-4">
-							Маркетинг на сайте:
-							<br> как продать в 2 раза больше, 
-							<br> не увеличивая трафик
+							Email-маркетинг за 8 шагов:<br>
+							все, что нужно знать<br>
+							для быстрого старта
 						</h1>
 						<p class="mb-5">
-							5 писем-инструкций с кейсами. Бесплатно!
+							Новые уроки 2 раза в неделю у вас в почте. Бесплатно!
 						</p>
-						<b-button href="#open-modal-download?title=Получить курс «Маркетинг на сайте»&amp;cqe=Записался на курс по маркетингу с лендинга" variant="primary">
+						<b-button href="#open-modal-download?title=Получить курс «Email-маркетинг за 8 шагов»&amp;cqe=Записался на email-курс с лэндинга" variant="primary">
 							Получить курс
 						</b-button>
 					</b-col>
@@ -27,7 +27,7 @@
 				<b-row class="with_lines">
 					<b-col lg="6" class="mb-5">
 						<h2 class="orange">
-							Проверенные рекомендации 
+							Вы узнаете:
 						</h2>
 						<p>
 							Этот курс — выжимка опыта, который мы получили за 5 лет внедрения автоворонок для 400 сайтов
@@ -98,7 +98,7 @@
 				</b-row>
 				<b-row>
 					<b-col>
-						<b-button href="#open-modal-download?title=Получить курс «Маркетинг на сайте»&amp;cqe=Записался на курс по маркетингу с лендинга" variant="primary">
+						<b-button href="#open-modal-download?title=Получить курс «Email-маркетинг за 8 шагов»&amp;cqe=Записался на email-курс с лэндинга" variant="primary">
 							Получить курс
 						</b-button>
 					</b-col>
@@ -115,10 +115,10 @@
 		data() {
 			return {
 				//Делаем в HEAD
-				metaTitle: 'Курс | Маркетинг на сайте: как продать в 2 раза больше, не увеличивая трафик',
-				metaDescription: '5 писем-инструкций с кейсами. Бесплатно! Курс - Маркетинг на сайте: как продать в 2 раза больше, не увеличивая трафик',
-				metaCanonical: 'https://www.carrotquest.io/marketing-course/',
-				metaImage: 'https://www.carrotquest.io/assets/images/cover/marketing-course.png',
+				metaTitle: 'Курс | «Email-маркетинг за 8 шагов»',
+				metaDescription: '8 уроков в формате email-рассылки: теория, примеры из практики, видео',
+				metaCanonical: 'https://www.carrotquest.io/kurs-email-marketing/',
+				metaImage: 'https://www.carrotquest.io/assets/images/cover/kurs-email-marketing.png',
 			}
 		}
 	}	
@@ -126,45 +126,12 @@
 
 
 <style lang="scss">
-	.page-marketing-course {
-		background: #1E1D29 url(../assets/images/marketing-course/hero-bg.png) top center no-repeat;
-		
-		section {
-			color: #fff;
-		}
+	.page-kurs-email-marketing {
+		background: #FF8484 url(../assets/images/kurs-email-marketing/hero-bg.png) top center no-repeat; 
 
 		.about {
-			.with_lines {
-				h2 {
-					position: relative;
-					display: inline-block;
-				}
-				h2::after {
-					content: "";
-					border-bottom: 2px solid #FFF;
-					display: block;
-					position: absolute;
-					left: 0;
-					right: 0;
-				}
-				h2.orange::after {
-					border-color: #F6813E;
-				}
-				h2.purple::after {
-					border-color: #467AFF;
-				}
-				h2.yellow::after {
-					border-color: #F0B41B;
-				}
-			}
 		}
 
-		footer {
-			.navbar-text , .nav-link , path {
-				color: #fff;
-				fill: #fff;
-			}
-		}
 
 		@media (max-width: 991.98px) {
 			background-position: top left;
