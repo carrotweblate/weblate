@@ -13,7 +13,150 @@
 			</b-container>
 		</div>
 
+		<!-- Дополнительные модули -->
+		<section class="extention">
+			<b-container>
+				<b-row>
+					<div class="col-12">
+						<h2 class="mb-4 mb-lg-5">
+							Дополнительные модули
+						</h2>
+					</div>
+				</b-row>
+				<b-row>
+					<b-col md="6" lg="4">
+						<div class="extention__box">
+							<div class="d-flex align-items-center">
+								<g-image src="@/assets/images/components/small-2.png" alt="Чат-боты" width="74" height="60" />
+								<h4>
+									Лид-бот
+								</h4>
+							</div>
+							<p>
+								Собирайте больше квалифицированных лидов с сайта 24/7 без дополнительной нагрузки на ваших сотрудников.
+								<g-link to="/chatbot/" target="_blank">Подробнее</g-link>
+							</p>
+							<div class="price">
+								<div class="f20">
+									<b>2 000 ₽ </b>в месяц
+								</div>
+								<a href="/panel/toAPP/subscription" class="btn">Подключить</a>
+							</div>
+						</div>
+					</b-col>
+					<b-col md="6" lg="4">
+						<div class="extention__box">
+							<div class="d-flex align-items-center">
+								<g-image src="@/assets/images/components/small-20.png" alt="Конструктор писем" width="74" height="60" />
+								<h4>
+									Конструктор писем
+								</h4>
+							</div>
+							<p>
+								Визуальный конструктор писем, чтобы быстро создавать рассылки.
+								<a data-fancybox href="https://www.youtube.com/watch?v=d7qvOIjIJ2U">Подробнее</a>
+							</p>
+							<div class="price">
+								<div class="f20">
+									<b>1 000 ₽ </b>в месяц
+								</div>
+								<a href="/panel/toAPP/subscription" class="btn">Попробовать бесплатно</a>
+							</div>
+						</div>
+					</b-col>
+					<b-col md="6" lg="4">
+						<div class="extention__box">
+							<div class="d-flex align-items-center">
+								<g-image src="@/assets/images/components/small-23.png" alt="Статистика диалогов и операторов" width="74" height="60" />
+								<h4>
+									Статистика диалогов и операторов
+								</h4>
+							</div>
+							<p>
+								Когда надо оптимизировать работу операторов, используйте данные для принятия решений: Анализ загрузки операторов, скорость работы команды, статистика запросов, распределение диалогов по времени и т.д.
+								<a href="/blog/zhiznenno-vazhnye-metriki-sluzhby-podderzhki-kotorye-stoit-nachat-izmeryat-uzhe-segodnya/" target="_blank" rel="noopener">Подробнее</a>
+							</p>
+							<div class="price">
+								<div class="f20">
+									<b>1 000 ₽ </b>в месяц
+								</div>
+								<a href="/panel/toAPP/conversations/statistics" class="btn">Попробовать бесплатно</a>
+							</div>
+						</div>
+					</b-col>
+					<b-col md="6" lg="4">
+						<div class="extention__box">
+							<div class="d-flex align-items-center">
+								<g-image src="@/assets/images/components/small-6.png" alt="База знаний Pro" width="74" height="60" />
+								<h4>
+									База знаний Pro
+								</h4>
+							</div>
+							<ul>
+								<li>Неограниченное количество статей</li>
+								<li>Скрытие статей от поисковых систем</li>
+								<li>Возможность добавить счётчики Google Analytics и Яндекс.Метрики</li>
+								<li>Возможность отключить «работает на Carrot quest»</li>
+							</ul>
+							<g-link to="/knowledge-base/" target="_blank" rel="noopener">Подробнее</g-link>
+							<div class="price">
+								<div class="f20">
+									<b>2 000 ₽ </b>в месяц
+								</div>
+								<a href="/panel/toAPP/knowledge-base/" class="btn">Подключить</a>
+							</div>
+						</div>
+					</b-col>
+					<b-col md="6" lg="4">
+						<div class="extention__box">
+							<div class="d-flex align-items-center">
+								<g-image src="@/assets/images/components/small-46.png" alt="Отключение бренда Carrot quest" width="74" height="60" />
+								<h4>
+									Отключение бренда Carrot quest
+								</h4>
+							</div>
+							<ul>
+								<li>Брендирование чата без упоминания Carrot quest</li>
+								<li>Брендирование писем без упоминания Carrot quest</li>
+							</ul>
+							<div class="price">
+								<div class="f20">
+									<b>1 000 ₽ </b>в месяц
+								</div>
+								<a href="/panel/toAPP/subscription" class="btn">Попробовать бесплатно</a>
+							</div>
+						</div>
+					</b-col>
+					<b-col md="6" lg="4">
+						<div class="extention__box">
+							<div class="d-flex align-items-center">
+								<g-image src="@/assets/images/components/small-4.png" alt="Дополнительный пакет писем" width="74" height="60" />
+								<h4>
+									Дополнительный пакет из 1 000 писем
+								</h4>
+							</div>
+							<p>
+								Если вы активно используете рассылки и отправляете больше писем, чем предусмотрено тарифом, то объем рассылки будет 
+								увеличен автоматически по цене 50 ₽ за каждую тысячу отправленных писем.
+							</p>
+							<div class="price">
+								<div class="f20">
+									<b>50 ₽ </b>за 1000 писем
+								</div>
+							</div>
+						</div>
+					</b-col>
+				</b-row>
+			</b-container>
+		</section>
 
+		<Contacts 
+			title="Не знаете какой тариф выбрать? Свяжитесь с нами"
+			bg="#FFEAD2"
+			consultation
+		/>
+
+		<!-- Все возможности сервиса -->
 		<section class="all_features">
 			<b-container>
 				<b-row>
@@ -141,7 +284,7 @@
 		<Consultation 
 			title="Запишитесь на бесплатную демонстрацию сервиса" 
 			text="Мы познакомимся, определим ваши задачи, за 30 минут обучим продукту и&nbsp;🎁&nbsp;бесплатно настроим базовый сценарий сбора лидов на вашем сайте"
-			pic="medium-2.png"
+			pic="medium-3.png"
 			alt="Девочка, живущая в сети"
 			bg="#fff3e6"
 		/>
@@ -150,11 +293,13 @@
 </template>
 
 <script>
+	import Contacts 		from '~/components/Contacts.vue'
 	import FAQ 				from '~/components/FAQ.vue'
 	import Consultation 	from '~/components/Consultation.vue'
 
 	export default {
 		components: {
+			Contacts,
 			FAQ,
 			Consultation
 		},
@@ -177,6 +322,69 @@
 			background-color: #F3F3FF;
 		}
 
+		.extention {
+			&__box {
+				box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+				border-radius: 5px;
+				padding: 20px 20px 110px;
+				position: relative;
+				height: 100%;
+				font-size: 15px;
+				.icon {
+					float: left;
+					margin-right: 1rem;
+					margin-bottom: 1rem;
+				}
+				h4 {
+					margin-top: -8px;
+					font-weight: 400;
+				}
+				ul {
+					clear: both;
+				}
+				p {
+					margin-bottom: 0;
+					clear: both;
+				}
+				.price {
+					position: absolute;
+					bottom: 1.5rem;
+					overflow: hidden;
+					font-family: 'PT Sans', sans-serif !important;
+					a {
+						margin: 0.5rem 0 0;
+						display: inline-block;
+					}
+					.btn {
+						color: #000;
+						border: 1px solid #FF6600;
+						border-radius: 5px;
+						padding: 0.5rem 1.5rem 0.4rem;
+						display: table;
+						background: #fff;
+						transition: all 150ms cubic-bezier(0, 0, 0.2, 1);
+						&:hover {
+							color: #fff;
+							background: #FF6600;
+						}
+					}
+				}
+				.price_without_button {
+					padding-bottom: 58px;
+				}
+				&.last {
+					border: none;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					padding: 0;
+					img {
+						max-width: 100%;
+					}
+				}
+			}
+		}
+
 		.all_features {
 			ul {
 				margin-bottom: 2rem;
@@ -185,6 +393,17 @@
 					padding-bottom: 0.5rem;
 					&:last-child {
 						border-bottom: 0;
+					}
+					&::before {
+						content: "";
+						width: 9px;
+						height: 5px;
+						border: 1px solid #333;
+						background-color: transparent;
+						border-top: none;
+						border-right: none;
+						transform: rotate(-45deg);
+						margin-top: 0.5rem;
 					}
 				}
 			}
