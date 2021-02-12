@@ -22,7 +22,7 @@
 			</b-col>
 		</b-row>
 
-		<b-row class="justify-content-center">
+		<b-row v-if="button" class="justify-content-center">
 			<b-button :href="button.href" variant="primary" class="mt-5" v-html="button.text" />
 		</b-row>
 		

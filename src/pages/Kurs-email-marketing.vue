@@ -14,91 +14,44 @@
 						<p class="mb-5">
 							Новые уроки 2 раза в неделю у вас в почте. Бесплатно!
 						</p>
-						<b-button href="#open-modal-download?title=Получить курс «Email-маркетинг за 8 шагов»&amp;cqe=Записался на email-курс с лэндинга" variant="primary">
+						<b-button href="#open-modal-download?title=Получить курс «Email-маркетинг за 8 шагов»&amp;cqe=Записался на email-курс с лэндинга" variant="primary" class="py-3 px-5">
 							Получить курс
 						</b-button>
 					</b-col>
 				</b-row>
+				<g-image src="@/assets/images/kurs-email-marketing/hero-left.png" alt="Дерево слева" class="d-none d-md-block hero__bg_left" />
+				<g-image src="@/assets/images/kurs-email-marketing/hero-right.png" alt="Дерево справа" class="hero__bg_right" />
 			</b-container>
 		</section>
 
 		<section class="about text">
 			<b-container>
-				<b-row class="with_lines">
+				<b-row>
 					<b-col lg="6" class="mb-5">
-						<h2 class="orange">
+						<h2 class="mb-4">
 							Вы узнаете:
 						</h2>
-						<p>
-							Этот курс — выжимка опыта, который мы получили за 5 лет внедрения автоворонок для 400 сайтов
-						</p>
-					</b-col>
-					<b-col lg="6" class="mb-5">
-						<h2 class="purple">
-							Эффективно
-						</h2>
-						<p>
-							Внедрение этих сценариев увеличивает конверсию в продажу на 25%
-						</p>
-					</b-col>
-				</b-row>
-				<b-row class="with_lines">
-					<b-col lg="6" class="mb-5">
-						<h2 class="yellow">
-							Быстро
-						</h2>
-						<p>
-							Все рекомендации можно внедрить за неделю. Разработчик не понадобится :)
-						</p>
-					</b-col>
-					<b-col lg="6" class="mb-5">
-						<h2 class="white">
-							Коротко
-						</h2>
-						<p>
-							Вам не придется смотреть часовые вебинары. Мы подготовили короткие, но информативные письма, которые можно читать где и когда удобно
-						</p>
-					</b-col>
-				</b-row>
-				<b-row>
-					<b-col md="10" xl="8" class="mb-5">
-						<h2>
-							Вы сможете:
-						</h2>
 						<ul>
-							<li>
-								Построить автоворонку на сайте от посещения до покупки
-							</li>
-							<li>
-								Настроить коммуникацию с клиентами с помощью поп-апов, емейлов и онлайн-чата
-							</li>
-							<li>
-								Использовать проверенные сценарии для онлайн-магазинов, saas-сервисов, b2b и недвижимости
-							</li>
+							<li>Как создать письмо без разработчиков и магии</li>
+							<li>4 способа для быстрого (и легального!) сбора базы</li>
+							<li>Как не попасть в спам</li>
+							<li>Как запустить триггерные цепочки писем</li>
+							<li>За какими метриками следить</li>
 						</ul>
 					</b-col>
-				</b-row>
-				<b-row>
-					<b-col md="10" xl="8" class="mb-5">
-						<h2>
-							Подойдёт всем, кто:
+					<b-col lg="6" class="mb-5">
+						<h2 class="mb-4">
+							Курс подойдет всем, кто:
 						</h2>
 						<ul>
-							<li>
-								Хочет продавать больше на том же количестве клиентов
-							</li>
-							<li>
-								Мечтает автоматизировать продажи
-							</li>
-							<li>
-								Работает над повышением LTV своих клиентов
-							</li>
+							<li>Хочет запустить email-рассылки, но ничего об этом не знает</li>
+							<li>Уже работает с письмами, но не видит результата</li>
 						</ul>
 					</b-col>
 				</b-row>
 				<b-row>
 					<b-col>
-						<b-button href="#open-modal-download?title=Получить курс «Email-маркетинг за 8 шагов»&amp;cqe=Записался на email-курс с лэндинга" variant="primary">
+						<b-button href="#open-modal-download?title=Получить курс «Email-маркетинг за 8 шагов»&amp;cqe=Записался на email-курс с лэндинга" variant="primary" class="py-3 px-5">
 							Получить курс
 						</b-button>
 					</b-col>
@@ -127,14 +80,71 @@
 
 <style lang="scss">
 	.page-kurs-email-marketing {
-		background: #FF8484 url(../assets/images/kurs-email-marketing/hero-bg.png) top center no-repeat; 
+		background: #FF8484 url(../assets/images/kurs-email-marketing/hero-bg.png) no-repeat;
+		background-position-y: 90px;
+		background-position-x: 30%;
 
-		.about {
+		.hero {
+			.row {
+				position: relative;
+				z-index: 2;
+			}
+			&__bg_right,
+			&__bg_left {
+				position: absolute;
+				top: 0;
+				right: 50%;
+				z-index: 0;
+			}
+			&__bg_left {
+				top: 0;
+				width: 564px;
+				height: 593px;
+				margin: 0;
+				right: auto;
+				left: 0;
+			}
+			&__bg_right {
+				top: 0;
+				width: 620px;
+				height: 579px;
+				margin: 0;
+				right: 0;
+			}
+		}
+		
+
+		.btn-primary {
+			background-color: #F0E045;
+			border: 0;
+			color: black !important;
+			&:hover {
+				background-color: #FFE700;
+			}
 		}
 
+		.text ul li::before {
+			background-color: #fff;
+		}
+
+		footer .nav-item a:hover {
+			color: #fff !important;
+		}
 
 		@media (max-width: 991.98px) {
-			background-position: top left;
+			background-position-y: 70px;
+			background-position-x: left;
+			.hero {
+				&__bg_left {
+					left: -20px;
+				}
+				&__bg_right {
+					right: -50px;
+				}
+			}
+		}
+		@media (min-width: 1980px) {
+			background-position-x: right;
 		}
 
 	}

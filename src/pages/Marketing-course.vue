@@ -14,7 +14,7 @@
 						<p class="mb-5">
 							5 писем-инструкций с кейсами. Бесплатно!
 						</p>
-						<b-button href="#open-modal-download?title=Получить курс «Маркетинг на сайте»&amp;cqe=Записался на курс по маркетингу с лендинга" variant="primary">
+						<b-button href="#open-modal-download?title=Получить курс «Маркетинг на сайте»&amp;cqe=Записался на курс по маркетингу с лендинга" variant="primary" class="py-3 px-5">
 							Получить курс
 						</b-button>
 					</b-col>
@@ -26,7 +26,7 @@
 			<b-container>
 				<b-row class="with_lines">
 					<b-col lg="6" class="mb-5">
-						<h2 class="orange">
+						<h2 class="orange mb-4">
 							Проверенные рекомендации 
 						</h2>
 						<p>
@@ -34,7 +34,7 @@
 						</p>
 					</b-col>
 					<b-col lg="6" class="mb-5">
-						<h2 class="purple">
+						<h2 class="purple mb-4">
 							Эффективно
 						</h2>
 						<p>
@@ -44,7 +44,7 @@
 				</b-row>
 				<b-row class="with_lines">
 					<b-col lg="6" class="mb-5">
-						<h2 class="yellow">
+						<h2 class="yellow mb-4">
 							Быстро
 						</h2>
 						<p>
@@ -52,7 +52,7 @@
 						</p>
 					</b-col>
 					<b-col lg="6" class="mb-5">
-						<h2 class="white">
+						<h2 class="white mb-4">
 							Коротко
 						</h2>
 						<p>
@@ -62,7 +62,7 @@
 				</b-row>
 				<b-row>
 					<b-col md="10" xl="8" class="mb-5">
-						<h2>
+						<h2 class="mb-4">
 							Вы сможете:
 						</h2>
 						<ul>
@@ -80,7 +80,7 @@
 				</b-row>
 				<b-row>
 					<b-col md="10" xl="8" class="mb-5">
-						<h2>
+						<h2 class="mb-4">
 							Подойдёт всем, кто:
 						</h2>
 						<ul>
@@ -98,7 +98,7 @@
 				</b-row>
 				<b-row>
 					<b-col>
-						<b-button href="#open-modal-download?title=Получить курс «Маркетинг на сайте»&amp;cqe=Записался на курс по маркетингу с лендинга" variant="primary">
+						<b-button href="#open-modal-download?title=Получить курс «Маркетинг на сайте»&amp;cqe=Записался на курс по маркетингу с лендинга" variant="primary" class="py-3 px-5">
 							Получить курс
 						</b-button>
 					</b-col>
@@ -127,7 +127,7 @@
 
 <style lang="scss">
 	.page-marketing-course {
-		background: #1E1D29 url(../assets/images/marketing-course/hero-bg.png) top center no-repeat;
+		background: #1E1D29 url(../assets/images/marketing-course/hero.png) 50% 90px no-repeat;
 		
 		section {
 			color: #fff;
@@ -164,10 +164,14 @@
 				color: #fff;
 				fill: #fff;
 			}
+			.nav-link:hover {
+				color: #F6813E;
+			}
 		}
 
 		@media (max-width: 991.98px) {
-			background-position: top left;
+			background-position-y: 70px;
+			background-position-x: left;
 		}
 
 	}
