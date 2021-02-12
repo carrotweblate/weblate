@@ -65,6 +65,18 @@
 					v-model="modalEmail"
 					class="px-3 py-4 mt-3"
 				/>
+				<b-form-input 
+					placeholder="Компания" 
+					type="text"
+					v-model="modalCompany"
+					class="px-3 py-4 mt-3"
+				/>
+				<b-form-input 
+					placeholder="Должность" 
+					type="text"
+					v-model="modalRole"
+					class="px-3 py-4 mt-3"
+				/>
 				<b-button 
 					type="submit" 
 					variant="primary" 
@@ -134,6 +146,8 @@
 				modalName: '',
 				modalPhone: '',
 				modalEmail: '',
+				modalCompany: '',
+				modalRole: '',
 				modalEvent: '',
 				modalOpenUrl: ''
 			};
@@ -175,6 +189,8 @@
 					'Телефон': this.modalPhone,
 					'Имя': this.modalName,
 					'Email': this.modalEmail,
+					'Компания': this.modalCompany,
+					'Должность': this.modalRole,
 					'url': location.host + location.pathname
 				})
 				carrotquest.track(this.modalEvent)
