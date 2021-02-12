@@ -297,8 +297,8 @@
 			}
 
 			// Ищем ссылки на получение награды
-			if ( document.querySelector('a[href*="https://t.me/CQ_Webinar_Revenue_Bot"]') ) {
-				document.querySelectorAll('a[href*="https://t.me/CQ_Webinar_Revenue_Bot"]').forEach(function(item) {
+			if ( document.querySelector('a[href*="tg://resolve?domain=CQ_Webinar_Revenue_Bot&start=ml11"]') ) {
+				document.querySelectorAll('a[href*="tg://resolve?domain=CQ_Webinar_Revenue_Bot&start=ml11"]').forEach(function(item) {
 					item.addEventListener('click', function(e) {
 						e.preventDefault()
 						carrotquest.track('webinar_bonus_requested')
