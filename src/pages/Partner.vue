@@ -1,5 +1,5 @@
 <template>
-	<Layout class="page page-partner">
+	<Layout :header="true" :footer="true"  class="page page-partner">
 
 		<section class="hero">
 			<b-container>

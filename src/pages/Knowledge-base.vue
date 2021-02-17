@@ -1,5 +1,5 @@
 <template>
-	<Layout class="page page-knowledge-base">
+	<Layout :header="true" :footer="true"  class="page page-knowledge-base">
 
 		<section class="hero blue">
 			<b-container>

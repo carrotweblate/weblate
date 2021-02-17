@@ -1,5 +1,5 @@
 <template>
-	<Layout class="page page-sdk">
+	<Layout :header="true" :footer="true"  class="page page-sdk">
 
 		<div class="hero blue">
 			<b-container>

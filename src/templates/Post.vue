@@ -1,5 +1,5 @@
 <template>
-	<Layout class="post">
+	<Layout :header="true" :footer="true"  class="post">
 		<b-container>
 
 			<!-- Хлебные крошки -->

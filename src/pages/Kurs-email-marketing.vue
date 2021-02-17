@@ -1,5 +1,5 @@
 <template>
-	<Layout class="page page-kurs-email-marketing">
+	<Layout :header="true" :footer="true"  class="page page-kurs-email-marketing">
 
 		<section class="hero">
 			<b-container>

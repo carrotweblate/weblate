@@ -1,5 +1,5 @@
 <template>
-	<Layout class="page lead-manager-page">
+	<Layout :header="true" :footer="true"  class="page lead-manager-page">
 
 		<div class="hero">
 			<b-container>

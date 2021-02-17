@@ -1,5 +1,5 @@
 <template>
-	<Layout class="page page-library">
+	<Layout :header="true" :footer="true"  class="page page-library">
 
 		<section  class="hero">
 			<b-container>
@@ -52,21 +52,30 @@
 				</b-row>
 				<b-row>
 					<b-col lg="6">
+						<g-link to="/product-research-book/" class="books__wrapper d-block">
+							<p class="font20px">
+								Как проводить исследования, результаты которых пойдут в бэклог, а не в стол<br><br>
+							</p>
+							<span>Посмотреть главу из книги</span>
+							<g-image src="~/assets/images/library/book_product-research.png" width="380" quality="100" alt="Полное руководство по коммуникациям и автоматизации воронки пользователей в интернет-магазинах" />
+						</g-link>
+					</b-col>
+					<b-col lg="6">
+						<g-link to="/saas-book/" class="books__wrapper d-block">
+							<p class="font20px">
+								Самый подробный гайд по автоматизации маркетинга для продакт-маркетологов и CEO онлайн-продуктов
+							</p>
+							<span>Посмотреть книгу</span>
+							<g-image src="~/assets/images/library/book_scripts.png" width="384" quality="100" alt="Самый подробный гайд по автоматизации маркетинга для продакт-маркетологов и CEO онлайн-продуктов" />
+						</g-link>
+					</b-col>
+					<b-col lg="6">
 						<g-link to="/ecom-book/" class="books__wrapper d-block">
 							<p class="font20px">
 								Полное руководство по коммуникациям и автоматизации воронки пользователей в интернет-магазинах
 							</p>
 							<span>Посмотреть книгу</span>
 							<g-image src="~/assets/images/library/book_ecom.png" width="360" quality="100" alt="Полное руководство по коммуникациям и автоматизации воронки пользователей в интернет-магазинах" />
-						</g-link>
-					</b-col>
-					<b-col lg="6">
-						<g-link to="/saas-book/" class="books__wrapper peach d-block">
-							<p class="font20px">
-								Самый подробный гайд по автоматизации маркетинга для продакт-маркетологов и CEO онлайн-продуктов
-							</p>
-							<span>Посмотреть книгу</span>
-							<g-image src="~/assets/images/library/book_scripts.png" width="384" quality="100" alt="Самый подробный гайд по автоматизации маркетинга для продакт-маркетологов и CEO онлайн-продуктов" />
 						</g-link>
 					</b-col>
 					<b-col lg="6">
@@ -502,7 +511,7 @@
 			margin-top: -10rem;
 
 			&__wrapper {
-				background-color: #ECF9EC;
+				background-color: #F8F8FF;
 				padding: 3rem 2rem;
 				margin-bottom: 40px;
 				text-align: center;
@@ -514,9 +523,7 @@
 				position: relative;
 				top: 0;
 				transition: all 150ms cubic-bezier(0, 0, 0.2, 1);
-				&.peach {
-					background-color: #FFF0E5;
-				}
+				box-shadow: 0px 4px 10px rgba(79, 79, 170, 0.25);
 				&:hover {
 					top: -8px;
 					box-shadow: 0px 4px 20px rgba(79, 79, 170, 0.25);

@@ -1,5 +1,5 @@
 <template>
-	<Layout>
+	<Layout :header="true" :footer="true" >
 
 		<!-- Страница из тильды -->
 		<div class="page-tilda" v-html="$context.html" />

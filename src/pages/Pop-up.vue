@@ -1,5 +1,5 @@
 <template>
-	<Layout class="page page-pop-up">
+	<Layout :header="true" :footer="true"  class="page page-pop-up">
 
 		<section class="hero">
 			<b-container>

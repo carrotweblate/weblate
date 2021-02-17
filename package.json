@@ -1,29 +1,26 @@
 {
-  "name": "carrotquest.io",
-  "private": true,
-  "scripts": {
-    "build": "gridsome build",
-    "public": "gridsome build && rm -r dist-public && cp -R dist dist-public",
-    "test": "gridsome build && rm -r dist-test && cp -R dist dist-test",
-    "develop": "gridsome develop",
-    "explore": "gridsome explore"
-  },
-  "dependencies": {
-    "@gridsome/plugin-critical": "^0.2.0",
-    "@mavrin/remark-typograf": "^2.1.6",
-    "@noxify/gridsome-plugin-remote-image": "^1.2.0",
-    "animated-number-vue": "^1.0.0",
-    "axios": "^0.21.1",
-    "bootstrap-vue": "^2.17.3",
-    "gridsome": "^0.7.21",
-    "gridsome-plugin-gtm": "^0.1.1",
-    "gridsome-plugin-pwa": "^0.0.18",
-    "gridsome-source-graphql": "^1.0.2",
-    "node-sass": "^4.14.1",
-    "remark": "^13.0.0",
-    "sass-loader": "^10.0.1",
-    "vue-horizontal-list": "^1.2.0",
-    "vue-read-progress": "^1.0.4",
-    "webpack-bundle-analyzer": "^4.4.0"
-  }
+	"name": "carrotquest.io",
+	"private": true,
+	"scripts": {
+		"build": "gridsome build",
+		"public": "gridsome build && rm -r dist-public && cp -R dist dist-public",
+		"test": "gridsome build && rm -r dist-test && cp -R dist dist-test",
+		"develop": "gridsome develop",
+		"explore": "gridsome explore"
+	},
+	"dependencies": {
+		"@gridsome/plugin-critical": "^0.2.0",
+		"animated-number-vue": "^1.0.0",
+		"axios": "^0.21.1",
+		"bootstrap-vue": "^2.17.3",
+		"gridsome": "^0.7.21",
+		"gridsome-plugin-gtm": "^0.1.1",
+		"gridsome-plugin-pwa": "^0.0.18",
+		"gridsome-source-graphql": "^1.0.2",
+		"node-sass": "^4.14.1",
+		"sass-loader": "^10.0.1",
+		"vue-horizontal-list": "^1.2.0",
+		"vue-read-progress": "^1.0.4",
+		"webpack-bundle-analyzer": "^4.4.0"
+	}
 }

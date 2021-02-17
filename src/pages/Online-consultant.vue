@@ -1,5 +1,5 @@
 <template>
-	<Layout class="page page-online-consultant">
+	<Layout :header="true" :footer="true"  class="page page-online-consultant">
 
 		<div class="hero blue">
 			<b-container>

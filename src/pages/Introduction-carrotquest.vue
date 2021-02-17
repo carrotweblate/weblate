@@ -1,5 +1,5 @@
 <template>
-	<Layout class="page introduction-carrotquest-page">
+	<Layout :header="true" :footer="true"  class="page introduction-carrotquest-page">
 
 		<div class="blue">
 			<div class="hero">

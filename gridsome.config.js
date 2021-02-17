@@ -18,17 +18,6 @@ module.exports = {
 	siteName: 'Carrot quest',
 	titleTemplate: "%s — Carrot quest",
 
-	// transformers: {
-	// 	remark: {
-	// 		externalLinksTarget: '_blank',
-	// 		externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
-	// 		anchorClassName: 'icon icon-link',
-	// 		plugins: [
-	// 			['@mavrin/remark-typograf',	{ 'locale': ['ru'] }]
-	// 		]
-	// 	}
-	// },
-
 	plugins: [
 		{
 			use: 'gridsome-plugin-gtm',
@@ -64,21 +53,21 @@ module.exports = {
             	appleMaskIconColor: '#ffffff',
 			}
 		},
-		// {
-		// 	use: '@gridsome/plugin-critical',
-		// 	options: {
-		// 		paths: ['/'],
-		// 		width: 1300,
-		// 		height: 900
-		// 	}
-		// }
+		{
+			use: '@gridsome/plugin-critical',
+			options: {
+				paths: ['/'],
+				width: 1300,
+				height: 900
+			}
+		},
 		// {
 		// 	use: 'gridsome-source-graphql',
 		// 	options: {
-		// 	url: 'https://www.carrrot.biz/blog/graphql',
+		// 	url: 'https://www.carrotquest.io/blog/graphql',
 		// 		fieldName: 'wp',
 		// 		typeName: 'wpTypes',
-		// 	},
+		// 	}
 		// },
 		// {
 		// 	use: '@noxify/gridsome-plugin-remote-image',

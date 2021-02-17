@@ -1,5 +1,5 @@
 //Колонки
-$grid-gutter-width: 40px;
+$grid-gutter-width: 2.5rem;
 
 //Оформление кнопок и ссылок
 $primary: #FF7C16;
@@ -25,9 +25,9 @@ $link-hover-decoration: none;
 @import "~bootstrap/scss/buttons";
 // @import "~bootstrap/scss/transitions";
 @import "~bootstrap/scss/dropdown";
-// @import "~bootstrap/scss/button-group";
+@import "~bootstrap/scss/button-group";
 @import "~bootstrap/scss/input-group";
-// @import "~bootstrap/scss/custom-forms";
+@import "~bootstrap/scss/custom-forms";
 @import "~bootstrap/scss/nav";
 @import "~bootstrap/scss/navbar";
 // @import "~bootstrap/scss/card";
@@ -42,7 +42,7 @@ $link-hover-decoration: none;
 @import "~bootstrap/scss/close";
 // @import "~bootstrap/scss/toasts";
 @import "~bootstrap/scss/modal";
-// @import "~bootstrap/scss/tooltip";
+@import "~bootstrap/scss/tooltip";
 // @import "~bootstrap/scss/popover";
 // @import "~bootstrap/scss/carousel";
 // @import "~bootstrap/scss/spinners";
@@ -87,7 +87,7 @@ $link-hover-decoration: none;
 		// @import "~bootstrap-vue/src/components/table/index";
 		// @import "~bootstrap-vue/src/components/time/index";
 		// @import "~bootstrap-vue/src/components/toast/index";
-		// @import "~bootstrap-vue/src/components/tooltip/index";
+		@import "~bootstrap-vue/src/components/tooltip/index";
 // Include custom SCSS for icons
 //@import "~bootstrap-vue/src/icons/index";
 
@@ -305,6 +305,9 @@ input[type=number]:focus,
 [type=tel].form-control:focus, 
 [contenteditable].form-control:focus {
 	box-shadow: inset 0 -1px 0 #ddd;
+}
+.btn-outline-primary:hover {
+	color: #FFF;
 }
 
 

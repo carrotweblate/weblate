@@ -1,5 +1,5 @@
 <template>
-	<Layout class="page page-chatbot">
+	<Layout :header="true" :footer="true"  class="page page-chatbot">
 
 		<div class="hero blue">
 			<b-container>

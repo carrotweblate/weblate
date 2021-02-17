@@ -1,15 +1,15 @@
 <template>
-	<Layout class="page automation-marketing-page">
+	<Layout :header="true" :footer="true"  class="page automation-marketing-page">
 
 		<div class="hero">
 			<b-container>
 				<b-row class="align-items-center">
 					<b-col lg="6">
 						<h1>
-							Автоматизируйте маркетинг, превратите посетителей в&nbsp;покупателей
+							Автоматизируйте маркетинг, превратите посетителей в покупателей
 						</h1>
 						<p class="py-3">
-							С&nbsp;помощью поп-апов, чат-бота, и&nbsp;email-рассылок автоматизируйте воронку и&nbsp;увеличивайте продажи
+							С помощью поп-апов, чат-бота, и email-рассылок автоматизируйте воронку и увеличивайте продажи
 						</p>
 						<RegistrationForm text="14 дней бесплатно. Регистрируйтесь" />
 					</b-col>
@@ -35,14 +35,14 @@
 					<b-row>
 						<b-col cols="12">
 							<h3 class="font17px">
-								Для eCommerce и&nbsp;B2C
+								Для eCommerce и B2C
 							</h3>
 						</b-col>
 						<b-col cols="6">
 							<div class="tasks__box tasks__box-ecom text-center">
 								<g-image class="tasks__box__pic mb-4" src="@/assets/images/components/small-13.png" height="180" style="max-height:90px;" fit="inside" alt="Увеличение конверсии в лиды" />
 								<p>
-									Увеличение конверсии в&nbsp;лиды
+									Увеличение конверсии в лиды
 								</p>
 							</div>
 						</b-col>
@@ -50,7 +50,7 @@
 							<div class="tasks__box tasks__box-ecom text-center">
 								<g-image class="tasks__box__pic mb-4" src="@/assets/images/components/small-15.png" height="180" style="max-height:90px;" fit="inside" alt="Увеличение конверсии в заказы" />
 								<p>
-									Увеличение конверсии в&nbsp;заказы
+									Увеличение конверсии в заказы
 								</p>
 							</div>
 						</b-col>
@@ -78,7 +78,7 @@
 					<b-row>
 						<b-col cols="12">
 							<h3 class="font17px">
-								Для SaaS и&nbsp;B2B
+								Для SaaS и B2B
 							</h3>
 						</b-col>
 						<b-col cols="6" class="h-50">
@@ -127,11 +127,11 @@
 			<b-row>
 				<b-col lg="10" xl="8">
 					<h2 class="mb-3 mb-lg-4">
-						Автоматизация маркетинга основана на&nbsp;данных о&nbsp;действиях пользователя
+						Автоматизация маркетинга основана на данных о действиях пользователя
 					</h2>
 					<p class="mb-3 mb-lg-4">
-						Ваша команда увидит каждую мелочь о&nbsp;клиенте. Это помогает успешно закрывать сделки 
-						и&nbsp;решать вопросы пользователей. Собирайте данные, чтобы улучшить автоматизацию маркетинга
+						Ваша команда увидит каждую мелочь о клиенте. Это помогает успешно закрывать сделки 
+						и решать вопросы пользователей. Собирайте данные, чтобы улучшить автоматизацию маркетинга
 					</p>
 				</b-col>
 			</b-row>

@@ -1,10 +1,10 @@
 <template>
 	<div>
-		<Header />
+		<Header v-if="header" />
 		
 		<slot />
 
-		<Footer />
+		<Footer v-if="footer" />
 
 		<Balcony />
 
@@ -68,12 +68,14 @@
 				<b-form-input 
 					placeholder="Компания" 
 					type="text"
+					required
 					v-model="modalCompany"
 					class="px-3 py-4 mt-3"
 				/>
 				<b-form-input 
 					placeholder="Должность" 
 					type="text"
+					required
 					v-model="modalRole"
 					class="px-3 py-4 mt-3"
 				/>
@@ -140,6 +142,7 @@
 			Footer,
 			Balcony
 		},
+		props: ['header','footer'],
 		data: function() {
 			return {
 				modalTitle: 'Получить на email',
@@ -178,12 +181,13 @@
 				}, 7000);
 			},
 
-			//Открытие страницы
+			//Открытие страницы (книга)
 			modalUrl () {
 				carrotquest.identify([
 					{"op": "update_or_create", "key": "$phone", "value": this.modalPhone},
 					{"op": "update_or_create", "key": "$name", "value": this.modalName},
-					{"op": "update_or_create", "key": "$email", "value": this.modalEmail}
+					{"op": "update_or_create", "key": "$email", "value": this.modalEmail},
+					{"op": "update_or_create", "key": "Источник", "value": "Книга продуктовые исследования"}
 				]);
 				carrotquest.track("Заполнил форму на скачивание файлов", {
 					'Телефон': this.modalPhone,
@@ -193,7 +197,14 @@
 					'Должность': this.modalRole,
 					'url': location.host + location.pathname
 				})
-				carrotquest.track(this.modalEvent)
+				carrotquest.track(this.modalEvent, {
+					'Телефон': this.modalPhone,
+					'Имя': this.modalName,
+					'Email': this.modalEmail,
+					'Компания': this.modalCompany,
+					'Должность': this.modalRole,
+					'url': location.host + location.pathname
+				})
 
 				dataLayer.push({ event: 'UAevent', eventCategory: 'leads', eventAction: 'phone', eventLabel: location.host + location.pathname })
 				fbq('trackCustom', 'get_lead', {page: location.pathname})

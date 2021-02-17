@@ -1,5 +1,5 @@
 <template>
-	<Layout class="page page-ecommerce">
+	<Layout :header="true" :footer="true"  class="page page-ecommerce">
 
 		<section class="hero blue">
 			<b-container>

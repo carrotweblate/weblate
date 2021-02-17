@@ -1,5 +1,5 @@
 <template>
-	<Layout class="page page-saas">
+	<Layout :header="true" :footer="true"  class="page page-saas">
 		<div class="blue">
 			<div class="hero">
 				<b-container>

@@ -1,5 +1,5 @@
 <template>
-	<Layout class="page page-index">
+	<Layout :header="true" :footer="true"  class="page page-index">
 
 		<section class="hero">
 			<b-container>
@@ -115,7 +115,7 @@
 							<b-button href="/ecommerce/" variant="primary">Подробнее</b-button>
 						</div>
 					</b-col>
-					<b-col lg="4"  class="my-5 my-lg-0">
+					<b-col lg="4" class="mb-5 mb-lg-0">
 						<div class="box h-100">
 							<g-image src="@/assets/images/components/small-24.png" fit="contain" background="transparent" height="222" alt="Для интернет сервисов (SaaS)" class="mb-4" />
 							<div class="h5 mb-3">Для онлайн-сервисов (SaaS)</div>
@@ -128,7 +128,7 @@
 							<b-button href="/saas/" variant="primary">Подробнее</b-button>
 						</div>
 					</b-col>
-					<b-col lg="4" class="mt-5 mt-lg-0">
+					<b-col lg="4">
 						<div class="box h-100">
 							<g-image src="@/assets/images/components/small-25.png" fit="contain" background="transparent" height="222" alt="Для крупных компаний" class="mb-4" />
 							<div class="h5 mb-3">Для крупных компаний</div>
