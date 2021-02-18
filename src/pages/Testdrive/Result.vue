@@ -1,5 +1,5 @@
 <template>
-	<Layout :header="true" :footer="true" class="page page-testdrive">
+	<Layout :header="true" :footer="true" class="page page-testdrive-result">
 
 		<div class="hero">
 			<b-container>
@@ -135,7 +135,7 @@
 				console.log(this.openUrl)
 				let iframe = document.createElement('iframe') 
 				iframe.id = 'fit__site__iframe'
-				iframe.src = 'https://www.carrotquest.io/testdrive/result?site='  + this.openUrl
+				iframe.src = 'https://www.carrotquest.io/testdrive/frame/?site='  + this.openUrl
 				document.getElementById('fit__site').appendChild(iframe)
 				carrotquest.track('Тестдрайв - сайт загрузился')
 				function onCarrotReady() {
@@ -150,7 +150,7 @@
 
 
 <style lang="scss">
-	.page-testdrive {
+	.page-testdrive-result {
 		.hero {
 			background-color: #F8F8FF;
 			min-height: 1000px;
@@ -208,8 +208,6 @@
 				width: 1158px;
 				height: 668px;
 				border-radius: 0 0 5px 5px;
-				background-color: #333;
-
 				iframe {
 					width: 100%;
 					height: 100%;
