@@ -19,21 +19,25 @@
 			}
 		},
 		created: function () {
-			//Достаём урл
-			var search = location.search.substr(1)
-				.split('&')
-				.reduce(function(res, a) {
-					var t = a.split('=');
-					res[decodeURIComponent(t[0])] = t.length == 1 ? null : decodeURIComponent(t[1]);
-					return res;
-				}, {});
-			this.searchSite = search.site
-			if (!!this.searchSite.search('http')) {
-				if (!this.searchSite.search('http://')) {
-					this.searchSite = this.searchSite.replace('http://','https://')
-				} else {
-					this.searchSite = 'https://' + this.searchSite
+			try {
+				//Достаём урл
+				var search = location.search.substr(1)
+					.split('&')
+					.reduce(function(res, a) {
+						var t = a.split('=');
+						res[decodeURIComponent(t[0])] = t.length == 1 ? null : decodeURIComponent(t[1]);
+						return res;
+					}, {});
+				this.searchSite = search.site
+				if (!!this.searchSite.search('http')) {
+					if (!this.searchSite.search('http://')) {
+						this.searchSite = this.searchSite.replace('http://','https://')
+					} else {
+						this.searchSite = 'https://' + this.searchSite
+					}
 				}
+			} catch (error) {
+				console.log(error)
 			}
 		},
 		//Грузим изображение
