@@ -62,29 +62,17 @@
 							</h3>
 			
 							<p class="h2 mb-1 counter">
-								<animated-number
-									:value="carrotNumbersCommunications"
-									:formatValue="formatToPrice"
-									:duration="2000"
-								/>
+								758 464 786
 							</p>
 							<p class="grey-text mt-1 mb-4">Коммуникаций с&nbsp;клиентами</p>
 			
 							<p class="h2 mb-1">
-								<animated-number
-									:value="carrotNumbersLids"
-									:formatValue="formatToPrice"
-									:duration="2000"
-								/>
+								94 324 071
 							</p>
 							<p class="grey-text mt-1 mb-4">Собранных лидов</p>
 			
 							<p class="h2 mb-1">
-								<animated-number
-									:value="carrotNumbersSites"
-									:formatValue="formatToPrice"
-									:duration="2000"
-								/>
+								9 325
 							</p>
 							<p class="grey-text mt-1">Сайтов использующих Carrot quest</p>
 						</div>
@@ -386,7 +374,6 @@
 </template>
 
 <script>
-	import AnimatedNumber 		from "animated-number-vue"
 	import Logos 				from '~/components/Logos.vue'
 	import MegaTabs 			from '~/components/MegaTabs.vue'
 	import Consultation 		from '~/components/Consultation.vue'
@@ -397,7 +384,6 @@
 
 	export default {
 		components: {
-			AnimatedNumber,
 			Logos,
 			MegaTabs,
 			Consultation,
@@ -644,6 +630,5 @@
 			background-color: #F3F3FF;
 		}
 	}
-
 	
 </style>

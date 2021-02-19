@@ -476,7 +476,6 @@
 </template>
 
 <script>
-	import AnimatedNumber 		from "animated-number-vue"
 	import Logos 				from '~/components/Logos.vue'
 	import MegaTabs 			from '~/components/MegaTabs.vue'
 	import Consultation 		from '~/components/Consultation.vue'
@@ -487,7 +486,6 @@
 
 	export default {
 		components: {
-			AnimatedNumber,
 			Logos,
 			MegaTabs,
 			Consultation,
