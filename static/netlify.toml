@@ -1,0 +1,5 @@
+[[redirects]]
+	from = "/test"
+	to = "/test-2"
+	status = 301
+	force = true

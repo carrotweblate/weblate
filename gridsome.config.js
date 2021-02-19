@@ -8,17 +8,11 @@
 //   .BundleAnalyzerPlugin
 
 module.exports = {
-
-	// pathPrefix: '/https://cdn-www.carrotquest.io/',
-
-	// prefetch: {
-	// 	mask: '^$', // Отключаем подгрузку страниц
-	// },
-
 	siteName: 'Carrot quest',
 	titleTemplate: "%s — Carrot quest",
 
 	plugins: [
+		//GTM
 		{
 			use: 'gridsome-plugin-gtm',
 			options: {
@@ -27,6 +21,7 @@ module.exports = {
 				debug: false
 			}
 		},
+		//PWA
 		{
 			use: 'gridsome-plugin-pwa',
 			options: {
@@ -48,11 +43,12 @@ module.exports = {
 				backgroundColor: '#ffffff',
 				icon: './static/favicon.png',
 				maskableIcon: true,
-				svgFavicon: './static/favicon.svg',
-				appleMaskIcon: './static/favicon.svg',
+				svgFavicon: '/favicon.svg',
+				appleMaskIcon: '/favicon.svg',
             	appleMaskIconColor: '#ffffff',
 			}
 		},
+		//Critical CSS
 		{
 			use: '@gridsome/plugin-critical',
 			options: {
@@ -82,6 +78,8 @@ module.exports = {
 	
 	chainWebpack: config => {
 		// config.resolve.alias.set('@images', '@/assets/images')
+		
+		//Анализ размера билда
 		// config
 		// 	.plugin('BundleAnalyzerPlugin')
 		// 	.use(BundleAnalyzerPlugin, [{ analyzerMode: 'static' }])

@@ -66,10 +66,10 @@
 					class="px-3 py-4 mt-3"
 				/>
 				<b-form-input 
-					placeholder="Компания" 
+					placeholder="Сайт" 
 					type="text"
 					required
-					v-model="modalCompany"
+					v-model="modalSite"
 					class="px-3 py-4 mt-3"
 				/>
 				<b-form-input 
@@ -149,10 +149,11 @@
 				modalName: '',
 				modalPhone: '',
 				modalEmail: '',
-				modalCompany: '',
+				modalSite: '',
 				modalRole: '',
 				modalEvent: '',
-				modalOpenUrl: ''
+				modalOpenUrl: '',
+				modealSend: false
 			};
 		},
 		methods: {
@@ -183,34 +184,42 @@
 
 			//Открытие страницы (книга)
 			modalUrl () {
-				carrotquest.identify([
-					{"op": "update_or_create", "key": "$phone", "value": this.modalPhone},
-					{"op": "update_or_create", "key": "$name", "value": this.modalName},
-					{"op": "update_or_create", "key": "$email", "value": this.modalEmail},
-					{"op": "update_or_create", "key": "Источник", "value": "Книга продуктовые исследования"}
-				]);
-				carrotquest.track("Заполнил форму на скачивание файлов", {
-					'Телефон': this.modalPhone,
-					'Имя': this.modalName,
-					'Email': this.modalEmail,
-					'Компания': this.modalCompany,
-					'Должность': this.modalRole,
-					'url': location.host + location.pathname
-				})
-				carrotquest.track(this.modalEvent, {
-					'Телефон': this.modalPhone,
-					'Имя': this.modalName,
-					'Email': this.modalEmail,
-					'Компания': this.modalCompany,
-					'Должность': this.modalRole,
-					'url': location.host + location.pathname
-				})
+				if (!this.modealSend) {
+					carrotquest.identify([
+						{"op": "update_or_create", "key": "$phone", "value": this.modalPhone},
+						{"op": "update_or_create", "key": "$name", "value": this.modalName},
+						{"op": "update_or_create", "key": "$email", "value": this.modalEmail},
+						{"op": "update_or_create", "key": "Адрес сайта", "value": this.modalSite},
+						{"op": "update_or_create", "key": "Источник", "value": "Книга продуктовые исследования"}
+					]);
+					carrotquest.track("Заполнил форму на скачивание файлов", {
+						'Телефон': this.modalPhone,
+						'Имя': this.modalName,
+						'Email': this.modalEmail,
+						'Сайт': this.modalSite,
+						'Должность': this.modalRole,
+						'url': location.host + location.pathname
+					})
+					carrotquest.track(this.modalEvent, {
+						'Телефон': this.modalPhone,
+						'Имя': this.modalName,
+						'Email': this.modalEmail,
+						'Сайт': this.modalSite,
+						'Должность': this.modalRole,
+						'url': location.host + location.pathname
+					})
 
-				dataLayer.push({ event: 'UAevent', eventCategory: 'leads', eventAction: 'phone', eventLabel: location.host + location.pathname })
-				fbq('trackCustom', 'get_lead', {page: location.pathname})
+					dataLayer.push({ event: 'UAevent', eventCategory: 'leads', eventAction: 'phone', eventLabel: location.host + location.pathname })
+					fbq('trackCustom', 'get_lead', {page: location.pathname})
+
+					this.modealSend = !this.modealSend
+				}
 
 				this.$refs['open-modal-url'].hide()
-				window.open( this.modalOpenUrl , '_blank' )
+				this.$refs['suсcessDownload'].show()
+				setTimeout(() => {
+					this.$refs['suсcessDownload'].hide()
+				}, 7000);
 			},
 			
 			//Регистрация на вебинар
