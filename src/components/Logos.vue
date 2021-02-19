@@ -17,7 +17,7 @@
 							speed: 3000,
 						},
 						responsive: [
-							{ end: 576, size: 3 },
+							{ end: 576, size: 2 },
 							{ start: 576, end: 768, size: 4 },
 							{ start: 768, end: 1200, size: 6 },
 							{ start: 1200, end: 1980, size: 8 },

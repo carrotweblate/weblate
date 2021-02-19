@@ -50,7 +50,7 @@
 		<b-row class="d-lg-none mobile">
 			<b-col cols="12">
 				<b-card no-body v-for="item in tabs" :key="item.title">
-					<div class="title p-2" v-html="item.title" />
+					<div class="h4 p-3 mb-0" v-html="item.title" />
 					<div class="p-3">
 						<!-- Видео -->
 						<b-embed v-if="item.pic.search('mp4') > 0"
@@ -190,17 +190,17 @@
 
 		.mobile {
 			.card {
-				margin-bottom: 24px;
+				margin-bottom: 1.5rem;
+				background-color: #fff;
+				border-radius: 5px;
 			}
 			img , video {
 				display: block;
 				max-width: 100%;
 				margin: 0 auto;
 			}
-			.title {
-				border-radius: 5px 5px 0 0;
-				background-color: #FF7C16;
-				color: #fff;
+			.h4 {
+				border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 			}
 		}
 
@@ -246,14 +246,6 @@
 					line-height: 1.5rem;
 				}
 			}
-		}
-		@media (max-width: 991.98px) {
-			.mobile .title {
-				color: #000;
-				border-bottom: 1px solid rgba(0, 0, 0, 0.125);
-				background-color: #fff;
-			}
-		}
-		
+		}		
 	}
 </style>
