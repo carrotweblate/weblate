@@ -85,7 +85,7 @@
 
 		<Logos />
 
-		<section class="blue d-none d-md-block">
+		<section class="blue">
 			<b-container>
 				<b-row class="features">
 
