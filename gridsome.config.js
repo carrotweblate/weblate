@@ -13,14 +13,14 @@ module.exports = {
 
 	plugins: [
 		//GTM
-		{
-			use: 'gridsome-plugin-gtm',
-			options: {
-				id: 'GTM-PHNG63V',
-				enabled: true,
-				debug: false
-			}
-		},
+		// {
+		// 	use: 'gridsome-plugin-gtm',
+		// 	options: {
+		// 		id: 'GTM-PHNG63V',
+		// 		enabled: true,
+		// 		debug: false
+		// 	}
+		// },
 		//PWA
 		{
 			use: 'gridsome-plugin-pwa',
