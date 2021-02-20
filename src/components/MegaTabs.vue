@@ -12,7 +12,7 @@
 		<b-row class="d-none d-lg-flex">
 			<b-col>
 				<b-tabs pills vertical end nav-wrapper-class="col-4">
-					<b-tab v-for="item in tabs" :key="item.title">
+					<b-tab v-for="item in tabs" :key="item.title" lazy>
 						<template #title>
 							<span v-html="item.title" />
 						</template>

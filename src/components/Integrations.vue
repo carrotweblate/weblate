@@ -81,7 +81,7 @@
 							</b-row>
 						</b-tab>
 					</b-tabs>
-					<a href="/integration/">Посмотрите все интеграции</a>
+					<g-link to="/integration/">Посмотрите все интеграции</g-link>
 				</b-col>
 			</b-row>
 		</b-container>
@@ -105,6 +105,11 @@
 			margin: 0.5rem  1rem 0.5rem 0;
 			background: url(/assets/images/logos/integrations.png) no-repeat; 
 			background-position: center;
+		}
+		.h2 {
+			a {
+				color: #000;
+			}
 		}
 
 		.bitrix1c {
