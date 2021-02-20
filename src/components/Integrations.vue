@@ -81,7 +81,9 @@
 							</b-row>
 						</b-tab>
 					</b-tabs>
-					<g-link to="/integration/">Посмотрите все интеграции</g-link>
+					<template #tabs-end>
+						<g-link to="/integration/">Посмотрите все интеграции</g-link>
+					</template>
 				</b-col>
 			</b-row>
 		</b-container>
