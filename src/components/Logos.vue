@@ -115,113 +115,113 @@
 					},
 					{ 
 						pic: 'k50_logo.svg',
-						width: '___',
-						height: '___'
+						width: '150',
+						height: '150'
 					},
 					{ 
 						pic: 'kontur.svg',
-						width: '___',
-						height: '___'
+						width: '150',
+						height: '150'
 					},
 					{ 
 						pic: 'loreal.svg',
-						width: '___',
-						height: '___'
+						width: '150',
+						height: '150'
 					},
 					{ 
 						pic: 'maria.svg',
-						width: '___',
-						height: '___'
+						width: '150',
+						height: '150'
 					},
 					{ 
 						pic: 'planeta-zdorovya.svg',
-						width: '___',
-						height: '___'
+						width: '150',
+						height: '150'
 					},
 					{ 
 						pic: 'popmechanic.png',
-						width: '___',
-						height: '___'
+						width: '370',
+						height: '90'
 					},
 					{ 
 						pic: 'Sape.png',
-						width: '___',
-						height: '___'
+						width: '350',
+						height: '179'
 					},
 					{ 
 						pic: 'skillfactory.svg',
-						width: '___',
-						height: '___'
+						width: '150',
+						height: '150'
 					},
 					{ 
 						pic: 'softline.svg',
-						width: '___',
-						height: '___'
+						width: '150',
+						height: '150'
 					},
 					{ 
 						pic: 'talan.png',
-						width: '___',
-						height: '___'
+						width: '504',
+						height: '360'
 					},
 					{
 						pic: 'timepad.png',
-						width: '___',
-						height: '___'
+						width: '1667',
+						height: '834'
 					},
 					{ 
 						pic: 'tooligram.svg',
-						width: '___',
-						height: '___'
+						width: '150',
+						height: '150'
 					},
 					{ 
 						pic: 'uralsib.svg',
-						width: '___',
-						height: '___'
+						width: '150',
+						height: '150'
 					},
 					{ 
 						pic: 'westfalika.svg',
-						width: '___',
-						height: '___'
+						width: '150',
+						height: '150'
 					},
 					{ 
 						pic: 'wikium.svg',
-						width: '___',
-						height: '___'
+						width: '150',
+						height: '150'
 					},
 					{
 						pic: 'yagla.png',
-						width: '___',
-						height: '___'
+						width: '550',
+						height: '200'
 					},
 					{ 
-						pic: 'geekbrains.png',
-						width: '___',
-						height: '___'
+						pic: 'geekbrains.svg',
+						width: '150',
+						height: '150'
 					},
 					{ 
-						pic: 'kontur.png',
-						width: '___',
-						height: '___'
+						pic: 'kontur.svg',
+						width: '150',
+						height: '150'
 					},
 					{ 
 						pic: 'marquiz.png',
-						width: '___',
-						height: '___'
+						width: '386',
+						height: '119'
 					},
 					{ 
 						pic: 'cscart.png',
-						width: '___',
-						height: '___'
+						width: '494',
+						height: '120'
 					},
 					{ 
 						pic: 'progressme.png',
-						width: '___',
-						height: '___'
+						width: '402',
+						height: '94'
 					},
 					{ 
 						pic: 'R-broker.png',
-						width: '___',
-						height: '___'
+						width: '165',
+						height: '56'
 					},
 				]
 			}
@@ -238,6 +238,7 @@
 	.Logos {
 		img {
 			width: calc(100% - 40px);
+			height: auto;
 			transition: all .2s ease;
 			filter: grayscale(100%);
 			&:hover {
