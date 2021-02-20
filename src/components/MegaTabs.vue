@@ -18,12 +18,14 @@
 						</template>
 						<!-- Видео -->
 						<b-embed v-if="item.pic.search('mp4') > 0"
+							v-b-visible.once="callback"
 							type="video" 
 							aspect="1by1"
 							autoplay loop muted playsinline
+							loading="lazy"
 							>
-							<source :src="item.pic.replace('mp4','webm')" type="video/webm">
-							<source :src="item.pic" type="video/mp4">
+							<source v-if="visible" :src="item.pic.replace('mp4','webm')" type="video/webm">
+							<source v-if="visible" :src="item.pic" type="video/mp4">
 						</b-embed>
 						<!-- Изображение -->
 						<!-- <g-image v-else
@@ -34,6 +36,7 @@
 						<img v-else
 							:src="'https://res.cloudinary.com/carrotquest/image/upload/v1613043845/components/' + item.pic"
 							:alt="item.title"
+							loading="lazy"
 						/>
 					</b-tab>
 					<template #tabs-end>
@@ -69,6 +72,7 @@
 						<img v-else
 							:src="'https://res.cloudinary.com/carrotquest/image/upload/c_fit,h_700,w_800/v1613043845/components/' + item.pic"
 							:alt="item.title"
+							loading="lazy"
 						/>
 					</div>
 				</b-card>
@@ -95,6 +99,7 @@
 					<img
 						:src="'https://res.cloudinary.com/carrotquest/image/upload/c_pad,h_96,w_160/v1613043845/components/' + item.pic"
 						:alt="item.title.replace('<i>', '').replace('</i>', '')"
+						loading="lazy"
 					/>
 					<div class="title" v-html="item.title" />
 				</a>
@@ -114,6 +119,18 @@
 			more: Object,
 			text: String,
 			instruments: Array
+		},
+		data() {
+			return {
+				visible: false
+			}
+		},
+		methods: {
+			callback(visible) {
+				if (visible) {
+					this.visible = true
+				}
+			}
 		}
 	}
 </script>
