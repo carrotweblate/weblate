@@ -27,7 +27,7 @@
 					}"
 					>
 						<template v-slot:default="{item}">
-							<img :src="'/assets/images/logos/' + item.pic" :alt="item.pic" :key="item.pic" />
+							<img :src="'/assets/images/logos/' + item.pic" :width="item.width" :height="item.height" :alt="item.pic" :key="item.pic" />
 						</template>
 					</vue-horizontal-list>
 				</ClientOnly>
@@ -58,39 +58,171 @@
 					}
 				},
 				logos: [
-					{ pic: 'aquafour.svg' },
-					{ pic: 'armani-beauty.svg' },
-					{ pic: 'avis-white.svg' },
-					{ pic: 'bank-spb.svg' },
-					{ pic: 'bks.svg' },
-					{ pic: 'domru.svg' },
-					{ pic: 'elama.png' },
-					{ pic: 'gant.svg' },
-					{ pic: 'geekbrains.svg' },
-					{ pic: 'insales.svg' },
-					{ pic: 'instaplus.svg' },
-					{ pic: 'k50_logo.svg' },
-					{ pic: 'kontur.svg' },
-					{ pic: 'loreal.svg' },
-					{ pic: 'maria.svg' },
-					{ pic: 'planeta-zdorovya.svg' },
-					{ pic: 'popmechanic.png' },
-					{ pic: 'Sape.png' },
-					{ pic: 'skillfactory.svg' },
-					{ pic: 'softline.svg' },
-					{ pic: 'talan.png' },
-					{ pic: 'timepad.png' },
-					{ pic: 'tooligram.svg' },
-					{ pic: 'uralsib.svg' },
-					{ pic: 'westfalika.svg' },
-					{ pic: 'wikium.svg' },
-					{ pic: 'yagla.png' },
-					{ pic: 'geekbrains.png' },
-					{ pic: 'kontur.png' },
-					{ pic: 'marquiz.png' },
-					{ pic: 'cscart.png' },
-					{ pic: 'progressme.png' },
-					{ pic: 'R-broker.png' },
+					{ 
+						pic: 'aquafour.svg',
+						width: '365',
+						height: '68'
+					},
+					{ 
+						pic: 'armani-beauty.svg',
+						width: '328',
+						height: '140'
+					},
+					{ 
+						pic: 'avis-white.svg',
+						width: '589',
+						height: '180'
+					},
+					{ 
+						pic: 'bank-spb.svg',
+						width: '632',
+						height: '127'
+					},
+					{ 
+						pic: 'bks.svg',
+						width: '527',
+						height: '189'
+					},
+					{ 
+						pic: 'domru.svg',
+						width: '70',
+						height: '70'
+					},
+					{ 
+						pic: 'elama.png',
+						width: '832',
+						height: '264'
+					},
+					{ 
+						pic: 'gant.svg',
+						width: '50',
+						height: '50'
+					},
+					{ 
+						pic: 'geekbrains.svg',
+						width: '100',
+						height: '43'
+					},
+					{ 
+						pic: 'insales.svg',
+						width: '185',
+						height: '62'
+					},
+					{ 
+						pic: 'instaplus.svg',
+						width: '135',
+						height: '50'
+					},
+					{ 
+						pic: 'k50_logo.svg',
+						width: '___',
+						height: '___'
+					},
+					{ 
+						pic: 'kontur.svg',
+						width: '___',
+						height: '___'
+					},
+					{ 
+						pic: 'loreal.svg',
+						width: '___',
+						height: '___'
+					},
+					{ 
+						pic: 'maria.svg',
+						width: '___',
+						height: '___'
+					},
+					{ 
+						pic: 'planeta-zdorovya.svg',
+						width: '___',
+						height: '___'
+					},
+					{ 
+						pic: 'popmechanic.png',
+						width: '___',
+						height: '___'
+					},
+					{ 
+						pic: 'Sape.png',
+						width: '___',
+						height: '___'
+					},
+					{ 
+						pic: 'skillfactory.svg',
+						width: '___',
+						height: '___'
+					},
+					{ 
+						pic: 'softline.svg',
+						width: '___',
+						height: '___'
+					},
+					{ 
+						pic: 'talan.png',
+						width: '___',
+						height: '___'
+					},
+					{
+						pic: 'timepad.png',
+						width: '___',
+						height: '___'
+					},
+					{ 
+						pic: 'tooligram.svg',
+						width: '___',
+						height: '___'
+					},
+					{ 
+						pic: 'uralsib.svg',
+						width: '___',
+						height: '___'
+					},
+					{ 
+						pic: 'westfalika.svg',
+						width: '___',
+						height: '___'
+					},
+					{ 
+						pic: 'wikium.svg',
+						width: '___',
+						height: '___'
+					},
+					{
+						pic: 'yagla.png',
+						width: '___',
+						height: '___'
+					},
+					{ 
+						pic: 'geekbrains.png',
+						width: '___',
+						height: '___'
+					},
+					{ 
+						pic: 'kontur.png',
+						width: '___',
+						height: '___'
+					},
+					{ 
+						pic: 'marquiz.png',
+						width: '___',
+						height: '___'
+					},
+					{ 
+						pic: 'cscart.png',
+						width: '___',
+						height: '___'
+					},
+					{ 
+						pic: 'progressme.png',
+						width: '___',
+						height: '___'
+					},
+					{ 
+						pic: 'R-broker.png',
+						width: '___',
+						height: '___'
+					},
 				]
 			}
 		},
