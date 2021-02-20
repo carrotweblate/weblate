@@ -91,7 +91,7 @@
 
 		<Contacts 
 			title="Хотите обсудить свой проект? Свяжитесь с нами"
-			bg="#FFEAD2"
+			bg="#FFF3E6"
 			consultation
 		/>
 
@@ -258,7 +258,7 @@
 
 		<Contacts 
 			title="Хотите обсудить свой проект? Свяжитесь с нами"
-			bg="#FFEAD2"
+			bg="#FFF3E6"
 			consultation
 		/>
 
@@ -615,7 +615,7 @@
 
 		<Contacts 
 			title="Хотите обсудить свой проект? Свяжитесь с нами"
-			bg="#FFEAD2"
+			bg="#FFF3E6"
 			consultation
 		/>
 

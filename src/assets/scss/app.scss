@@ -338,6 +338,11 @@ input[type=number]:focus,
 			border-top: 1px dashed #fff;
 		}
 	}
+	.nav-pills .nav-item-all {
+		padding: 0.5rem 0 0.5rem 0.5rem;
+		position: absolute;
+		right: 1.25rem;
+	}
 }
 .breadcrumb {
 	padding: 0;

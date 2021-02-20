@@ -57,12 +57,13 @@
 					<div class="p-3">
 						<!-- Видео -->
 						<b-embed v-if="item.pic.search('mp4') > 0"
+							v-b-visible.once="callback"
 							type="video" 
 							aspect="1by1"
 							autoplay loop muted playsinline
 							>
-							<source :src="item.pic.replace('mp4','webm')" type="video/webm">
-							<source :src="item.pic" type="video/mp4">
+							<source v-if="visible" :src="item.pic.replace('mp4','webm')" type="video/webm">
+							<source v-if="visible" :src="item.pic" type="video/mp4">
 						</b-embed>
 						<!-- Изображение -->
 						<!-- <g-image v-else

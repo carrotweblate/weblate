@@ -73,7 +73,7 @@
 					</b-col>
 				</b-row>
 				<b-row>
-					<b-col md="6" xl="4" offset-xl="2" class="mb-5">
+					<b-col md="6" xl="4" offset-xl="2" class="mb-3 mb-md-5">
 						<b-row class="align-items-center">
 							<b-col cols="3" md="4">
 								<svg width="97" height="81" viewBox="0 0 97 81" fill="none" xmlns="http://www.w3.org/2000/svg" class="mw-100">
@@ -94,7 +94,7 @@
 							</b-col>
 						</b-row>
 					</b-col>
-					<b-col md="6" xl="4" class="mb-5">
+					<b-col md="6" xl="4" class="mb-3 mb-md-5">
 						<b-row class="align-items-center">
 							<b-col cols="3" md="4">
 								<svg width="103" height="82" viewBox="0 0 103 82" fill="none" xmlns="http://www.w3.org/2000/svg" class="mw-100">
@@ -118,7 +118,7 @@
 							</b-col>
 						</b-row>
 					</b-col>
-					<b-col md="6" xl="4" offset-xl="2" class="mb-5 mb-lg-0">
+					<b-col md="6" xl="4" offset-xl="2" class="mb-3 mb-lg-0">
 						<b-row class="align-items-center">
 							<b-col cols="3" md="4">
 								<svg width="97" height="82" viewBox="0 0 97 82" fill="none" xmlns="http://www.w3.org/2000/svg" class="mw-100">

@@ -473,9 +473,10 @@
 			}
 			&__pics:not(.active) {
 				position: absolute;
-				top: 10px;
+				top: 20px;
 				left: 10px;
 				z-index: 1;
+				width: calc( 100% - 2.5rem );
 			}
 		}
 

@@ -311,14 +311,14 @@
 
 		<!-- Сравните сервисы для email‑рассылок -->
 		<section >
-			<b-container style="background-color: #303030; border-radius: 5px;">
+			<b-container style="background-color: #FFF3E6; border-radius: 5px;">
 				<b-col class="p-4 pb-lg-0">
 					<b-row class="align-items-center justify-content-center">
 						<b-col lg="4" class="d-none d-lg-block">
 							<g-image src="@/assets/images/components/medium-4.png" width="494" alt="Регистрация в сервисе" title="Поехали!" class="mw-100" />
 						</b-col>
 						<b-col lg="8">
-							<div class="h3 mb-4 text-white">Сравните сервисы для email‑рассылок</div>
+							<div class="h3 mb-4">Сравните сервисы для email‑рассылок</div>
 							<b-button href="#open-modal-download?title=Скачать файл сравнения&amp;cqe=Скачал обзор сервисов рассылок" variant="primary">
 								Скачать файл сравнения
 							</b-button>
@@ -339,37 +339,37 @@
 					</b-col>
 				</b-row>
 				<b-row>
-					<b-col cols="6" lg="4">
+					<b-col cols="12" md="6" lg="4">
 						<g-link to="/lead-manager/" class="data__box box text-center p-4">
 							<p>С полей и форм на вашем сайте</p>
 							<g-image class="data__box__pic" src="@/assets/images/components/small-43.svg" alt="С полей и форм на вашем сайте" />
 						</g-link>
 					</b-col>
-					<b-col cols="6" lg="4">
+					<b-col cols="12" md="6" lg="4">
 						<g-link to="/chatbot/" class="data__box box text-center p-4">
 							<p>С помощью чат-бота</p>
 							<g-image class="data__box__pic" src="@/assets/images/components/small-39.svg" alt="С помощью чат-бота" />
 						</g-link>
 					</b-col>
-					<b-col cols="6" lg="4">
+					<b-col cols="12" md="6" lg="4">
 						<g-link to="/online-consultant/" class="data__box box text-center p-4">
 							<p>Через чат</p>
 							<g-image class="data__box__pic" src="@/assets/images/components/small-44.svg" alt="Через чат" />
 						</g-link>
 					</b-col>
-					<b-col cols="6" lg="4">
+					<b-col cols="12" md="6" lg="4">
 						<g-link to="/pop-up/" class="data__box box text-center p-4">
 							<p>С помощью поп-ап окон</p>
 							<g-image class="data__box__pic" src="@/assets/images/components/small-41.svg" alt="Используйте поп-ап окна для сбора дополнительных контактов" />
 						</g-link>
 					</b-col>
-					<b-col cols="6" lg="4">
+					<b-col cols="12" md="6" lg="4">
 						<g-link to="/integration/" class="data__box box text-center p-4">
 							<p>Carrot quest легко соединяется с вашими инструментами через интеграции и по API</p>
 							<g-image class="data__box__pic" src="@/assets/images/components/small-45.png" alt="Carrot quest легко соединяется с вашими инструментами через интеграции и по API" />
 						</g-link>
 					</b-col>
-					<b-col cols="6" lg="4">
+					<b-col cols="12" md="6" lg="4">
 						<div class="case">
 							<div class="case__box">
 								<p class="mb-0">
@@ -915,7 +915,7 @@
 		}
 
 		.data {
-			.col-6 {
+			.col-md-6 {
 				margin-top: 20px;
 				margin-bottom: 20px;
 			}
