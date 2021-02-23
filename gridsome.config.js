@@ -13,50 +13,50 @@ module.exports = {
 
 	plugins: [
 		//GTM
-		// {
-		// 	use: 'gridsome-plugin-gtm',
-		// 	options: {
-		// 		id: 'GTM-PHNG63V',
-		// 		enabled: true,
-		// 		debug: false
-		// 	}
-		// },
+		{
+			use: 'gridsome-plugin-gtm',
+			options: {
+				id: 'GTM-PHNG63V',
+				enabled: true,
+				debug: false
+			}
+		},
 		//PWA
-		// {
-		// 	use: 'gridsome-plugin-pwa',
-		// 	options: {
-		// 		// Service Worker Options
-		// 		disableServiceWorker: false,
-		// 		serviceWorkerPath: 'service-worker.js',
-		// 		cachedFileTypes: 'js,json,css,html,png,jpg,jpeg,svg,gif,webm,mp4',
-		// 		disableTemplatedUrls: false,
+		{
+			use: 'gridsome-plugin-pwa',
+			options: {
+				// Service Worker Options
+				disableServiceWorker: false,
+				serviceWorkerPath: 'service-worker.js',
+				cachedFileTypes: 'js,json,css,html,png,jpg,jpeg,svg,gif,webm,mp4',
+				disableTemplatedUrls: false,
 	
-		// 		// Manifest Options (https://developer.mozilla.org/en-US/docs/Web/Manifest)
-		// 		manifestPath: 'manifest.json',
-		// 		title: 'Carrot quest',
-		// 		description: 'Инструменты для увеличения продаж на сайтах без привлечения нового трафика',
-		// 		shortName: 'CQ',
-		// 		startUrl: '/',
-		// 		display: 'standalone',
-		// 		statusBarStyle: 'default',
-		// 		themeColor: '#FF7C16',
-		// 		backgroundColor: '#ffffff',
-		// 		icon: '/favicon.png',
-		// 		maskableIcon: true,
-		// 		svgFavicon: '/favicon.svg',
-		// 		appleMaskIcon: '/favicon.svg',
-        //     	appleMaskIconColor: '#ffffff',
-		// 	}
-		// },
+				// Manifest Options (https://developer.mozilla.org/en-US/docs/Web/Manifest)
+				manifestPath: 'manifest.json',
+				title: 'Carrot quest',
+				description: 'Инструменты для увеличения продаж на сайтах без привлечения нового трафика',
+				shortName: 'CQ',
+				startUrl: '/',
+				display: 'standalone',
+				statusBarStyle: 'default',
+				themeColor: '#FF7C16',
+				backgroundColor: '#ffffff',
+				icon: '/favicon.png',
+				maskableIcon: true,
+				svgFavicon: '/favicon.svg',
+				appleMaskIcon: '/favicon.svg',
+            	appleMaskIconColor: '#ffffff',
+			}
+		},
 		//Critical CSS
-		// {
-		// 	use: '@gridsome/plugin-critical',
-		// 	options: {
-		// 		paths: ['/'],
-		// 		width: 1300,
-		// 		height: 900
-		// 	}
-		// },
+		{
+			use: '@gridsome/plugin-critical',
+			options: {
+				paths: ['/'],
+				width: 1300,
+				height: 900
+			}
+		},
 		// {
 		// 	use: 'gridsome-source-graphql',
 		// 	options: {
