@@ -5,7 +5,7 @@
 			<b-container>
 				<b-row>
 					<b-col lg="8">
-						<div class="h2 my-5">
+						<div class="h2 mt-5 mb-3 mb-lg-5">
 							Мы помогаем онлайн-бизнесу общаться с клиентами и увеличивать их число
 						</div>
 					</b-col>
@@ -437,7 +437,7 @@
 
 		<Contacts 
 			title="Не знаете какой тариф выбрать? Свяжитесь с нами"
-			bg="#FFEAD2"
+			bg="#FFF3E6"
 			consultation
 		/>
 

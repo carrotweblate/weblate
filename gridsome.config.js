@@ -41,7 +41,7 @@ module.exports = {
 				statusBarStyle: 'default',
 				themeColor: '#FF7C16',
 				backgroundColor: '#ffffff',
-				icon: './static/favicon.png',
+				icon: '/favicon.png',
 				maskableIcon: true,
 				svgFavicon: '/favicon.svg',
 				appleMaskIcon: '/favicon.svg',

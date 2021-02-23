@@ -121,7 +121,13 @@
 								/>
 							</b-row>
 						</b-tab>
+						<template #tabs-end>
+							<g-link to="/cases/" class="nav-item-all d-none d-xl-block">Посмотрите все кейсы</g-link>
+						</template>
 					</b-tabs>
+					<g-link to="/cases/" class="d-xl-none">
+						Посмотрите все кейсы
+					</g-link>
 				</b-col>
 			</b-row>
 		</b-container>
@@ -160,6 +166,11 @@
 				position: absolute;
 				bottom: 1.5rem;
 				color: #FF7C16;
+			}
+		}
+		.h2 {
+			a {
+				color: #000;
 			}
 		}
 	}

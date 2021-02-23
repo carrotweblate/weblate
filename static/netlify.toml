@@ -1,3 +1,5 @@
+/blog/*  https://carrotquest.io/blog/:splat  200
+
 [[redirects]]
 	from = "/test"
 	to = "/test-2"

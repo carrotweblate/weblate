@@ -7,7 +7,7 @@
 				<b-col col-12 lg="9">
 					<div class="h2 mb-4">
 						Сервисы должны работать вместе. <br>
-						<a href="/integration/">Интегрируйте</a> их с Carrot quest
+						<g-link to="/integration/">Интегрируйте</g-link> их с Carrot quest
 					</div>
 					<p>
 						Более 30 готовых интеграций. Открытый API для web, iOS и Android
@@ -80,8 +80,13 @@
 								</b-col>
 							</b-row>
 						</b-tab>
+						<template #tabs-end>
+							<g-link to="/integration/" class="nav-item-all d-none d-xl-block">Посмотрите все интеграции</g-link>
+						</template>
 					</b-tabs>
-					<a href="/integration/">Посмотрите все интеграции</a>
+					<g-link to="/integration/" class="d-xl-none">
+						Посмотрите все интеграции
+					</g-link>
 				</b-col>
 			</b-row>
 		</b-container>
@@ -105,6 +110,11 @@
 			margin: 0.5rem  1rem 0.5rem 0;
 			background: url(/assets/images/logos/integrations.png) no-repeat; 
 			background-position: center;
+		}
+		.h2 {
+			a {
+				color: #000;
+			}
 		}
 
 		.bitrix1c {

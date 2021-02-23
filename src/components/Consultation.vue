@@ -4,7 +4,7 @@
 	<b-container id="Consultation">
 		<b-col class="Consultation" :style=" 'background-color: ' + bg ">
 			<b-row class="align-items-center justify-content-center">
-				<b-col cols="8" lg="4" class="mb-5">
+				<b-col cols="8" lg="4" class="mb-5 d-none d-lg-block">
 					<g-image v-if="pic == 'medium-1.png'" src="@/assets/images/components/medium-1.png" width="552" :alt="alt" :title="alt" class="mw-100" />
 					<g-image v-if="pic == 'medium-2.png'" src="@/assets/images/components/medium-2.png" width="552" :alt="alt" :title="alt" class="mw-100" />
 					<g-image v-if="pic == 'medium-3.png'" src="@/assets/images/components/medium-3.png" width="552" :alt="alt" :title="alt" class="mw-100" />
