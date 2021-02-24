@@ -43,8 +43,8 @@ module.exports = {
 				backgroundColor: '#ffffff',
 				icon: './static/favicon.png',
 				maskableIcon: true,
-				svgFavicon: 'favicon.svg',
-				appleMaskIcon: 'favicon.svg',
+				svgFavicon: 'https://www.carrotquest.io/favicon.svg',
+				appleMaskIcon: 'https://www.carrotquest.io/favicon.svg',
             	appleMaskIconColor: '#ffffff',
 			}
 		},
