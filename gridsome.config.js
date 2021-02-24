@@ -57,18 +57,18 @@ module.exports = {
 				height: 900
 			}
 		},
-		// {
-		// 	use: 'gridsome-source-graphql',
-		// 	options: {
-		// 	url: 'https://www.carrotquest.io/blog/graphql',
-		// 		fieldName: 'wp',
-		// 		typeName: 'wpTypes',
-		// 	}
-		// },
+		{
+			use: 'gridsome-source-graphql',
+			options: {
+			url: 'https://www.carrotquest.io/blog/graphql',
+				fieldName: 'wp',
+				typeName: 'WordPress',
+			}
+		},
 		// {
 		// 	use: '@noxify/gridsome-plugin-remote-image',
 		// 	options: {
-		// 		'typeName' : 'wpTypes',
+		// 		'typeName' : 'WordPress',
 		// 		'sourceField': 'sourceUrl',
 		// 		'targetField': 'downloadedSrc',
 		// 		'targetPath': './src/assets/remoteImages'

@@ -348,9 +348,15 @@ input[type=number]:focus,
 	padding: 0;
 	margin: 0;
 	background: transparent;
-
-	.breadcrumb-item + .breadcrumb-item::before {
-		content: "→" !important;
+	.breadcrumb-item:first-child {
+		list-style: none;
+	}
+	.breadcrumb-item:not(:first-child) {
+		margin-left: 2rem;
+		padding-left: 0.85rem;
+		&::marker {
+			content: "→";
+		}
 	}
 }
 

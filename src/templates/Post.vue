@@ -7,7 +7,7 @@
 				<b-col>
 					<b-breadcrumb class="font20px d-none d-md-flex">
 						<b-breadcrumb-item href="/">Главная</b-breadcrumb-item>
-						<b-breadcrumb-item href="/blog/">Блог</b-breadcrumb-item>
+						<b-breadcrumb-item href="/blogtest/">Блог</b-breadcrumb-item>
 						<b-breadcrumb-item :href="$context.cslug" :text="$context.category" />
 					</b-breadcrumb>
 				</b-col>
@@ -16,7 +16,7 @@
 			<!-- Заголовок и описание -->
 			<b-row>
 				<b-col col xl="9">
-					<h1 class="post__title" v-html="$context.title" />
+					<h1 class="post__title" v-html="$page.post.title" />
 					<div class="font20px lightgrey-text my-4">
 						<span class="mr-5">Время чтения: {{ $context.time }}</span>
 						<span>21.09.2020</span>
@@ -28,17 +28,17 @@
 			<!-- Изображение записи -->
 			<b-row>
 				<b-col col cols="12" class="post__image mt-4 mb-5">
-					<img :src="$context.featuredImage" />
+					<img :src="$page.post.featuredImage.node.mediaItemUrl" />
 				</b-col>
 			</b-row>
 
 			<!-- Текст статьи -->
 			<b-row>
-				<b-col col xl="8" class="font20px post__text" v-html="$context.content" />
+				<b-col col xl="8" class="font20px post__text" v-html="$page.post.content" />
 				<b-col col cols="4" class="post__info d-none d-xl-block">
 					<div class="post__info__contents">
 						Содержание:
-						<div class="mt-4" v-html="$context.contents" />
+						<div class="mt-4" v-html="$page.post.contents" />
 					</div>
 					<div class="post__authors" v-html="$context.author" />
 				</b-col>
@@ -46,7 +46,7 @@
 
 			<BannerSobirayte />
 
-			<b-row class="post__more">
+			<!-- <b-row class="post__more">
 				<b-col cols="12" class="h2 mb-5">
 					Что еще читать по теме:
 				</b-col>
@@ -61,7 +61,7 @@
 					</b-col>
 					
 				</template>
-			</b-row>
+			</b-row> -->
 
 		</b-container>
 
@@ -70,8 +70,24 @@
 	</Layout>
 </template>
 
+
+<page-query>
+	query Post ($databaseId: ID!){
+		post(idType: DATABASE_ID, id: $databaseId) {
+			title
+			featuredImage {
+				node {
+					mediaItemUrl
+				}
+			}
+			content
+		}
+	}
+</page-query>
+
+
 <script>
-	import '~/assets/scss/blog/post.scss'
+	import '~/assets/scss/post.scss'
 	import VideoRegistration from '~/components/VideoRegistration.vue'
 	import BannerSobirayte from '~/components/BannerSobirayte/BannerSobirayte.vue'
 
@@ -80,59 +96,45 @@
 			VideoRegistration,
 			BannerSobirayte
 		},
-		
 		//Делаем в HEAD
 		metaInfo() {
 			return {
-				title: this.$context.seo.title,
+				title: post.title,
 				meta: [
 					{
+						key: 'description',
 						name: 'description',
-						content: this.$context.seo.description
-					},
-
-					{
-						property: 'article:publisher',
-						content: 'https://www.facebook.com/carrotquest/'
+						content: this.$context.description
 					},
 					{
-						property: 'article:published_time',
-						content: '2020-05-20T05:24:56+00:00'
+						key: 'og:url',
+						property: "og:url",
+						content: 'https://www.carrotquest.io/' + this.$context.slug
 					},
 					{
-						property: 'article:modified_time',
-						content: '2020-06-11T04:44:33+00:00'
-					},
-
-					{ property: 'og:locale', content: 'ru_RU' },
-					{ property: 'og:type', content: 'article' },
-					{
-						property: 'og:title',
-						content: this.$context.seo.title,
+						key: "og:title",
+						property: "og:title",
+						content: $page.post.title
 					},
 					{
-						property: 'og:description',
-						content: this.$context.seo.description
+						key: "og:description",
+						property: "og:description",
+						content: this.$context.description
 					},
-					{
-						property: 'og:url',
-						content: 'https://www.carrotquest.io/blog/' + this.$context.slug + '/'
+					{	
+						key: "og:image",
+						property: "og:image",
+						content: this.$context.cover
 					},
-					{ property: 'og:site_name', content: 'Блог Carrot quest' },
-					{
-						property: 'og:image',
-						content: this.$context.featuredImage
-					},
-					{ property: 'og:image:width', content: '1202' },
-					{ property: 'og:image:height', content: '634' },
 				],
 				link: [
 					{
+						key: "canonical",
 						rel: 'canonical',
-						href: 'https://www.carrotquest.io/blog/' + this.$context.slug + '/'
+						href: 'https://www.carrotquest.io/' + this.$context.slug
 					}
 				]
 			}
-		}
+		},
 	}	
 </script>
