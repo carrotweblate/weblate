@@ -80,7 +80,7 @@ module.exports = function (api) {
 			allSettings {
 				readingSettingsPostsPerPage
 			}
-			posts(first: 999) {
+			posts(first: 9) {
 				edges {
 					node {
 						slug
@@ -124,7 +124,7 @@ module.exports = function (api) {
 				path: `/blogtest/${node.slug}`,
 				component: './src/templates/Post.vue',
 				context: {
-					databaseId: node.databaseId
+					databaseId: node.databaseId,
 				}
 			})
 		})

@@ -96,45 +96,5 @@
 			VideoRegistration,
 			BannerSobirayte
 		},
-		//Делаем в HEAD
-		metaInfo() {
-			return {
-				title: post.title,
-				meta: [
-					{
-						key: 'description',
-						name: 'description',
-						content: this.$context.description
-					},
-					{
-						key: 'og:url',
-						property: "og:url",
-						content: 'https://www.carrotquest.io/' + this.$context.slug
-					},
-					{
-						key: "og:title",
-						property: "og:title",
-						content: $page.post.title
-					},
-					{
-						key: "og:description",
-						property: "og:description",
-						content: this.$context.description
-					},
-					{	
-						key: "og:image",
-						property: "og:image",
-						content: this.$context.cover
-					},
-				],
-				link: [
-					{
-						key: "canonical",
-						rel: 'canonical',
-						href: 'https://www.carrotquest.io/' + this.$context.slug
-					}
-				]
-			}
-		},
 	}	
 </script>

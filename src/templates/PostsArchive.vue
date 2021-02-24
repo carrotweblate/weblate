@@ -11,31 +11,31 @@
 </template>
 
 <page-query>
-query ($offset: Int, $perPage: Int) {
-	posts(where: {offsetPagination: {offset: $offset, size: $perPage}}) {
-		edges {
-			node {
-				title
-				slug
-				databaseId
-				categories {
-					edges {
-						node {
-							name
-							slug
+	query ($offset: Int, $perPage: Int) {
+		posts(where: {offsetPagination: {offset: $offset, size: $perPage}}) {
+			edges {
+				node {
+					title
+					slug
+					databaseId
+					categories {
+						edges {
+							node {
+								name
+								slug
+							}
 						}
 					}
-				}
-				excerpt(format: RENDERED)
-				featuredImage {
-					node {
-						sourceUrl(size: MEDIUM_LARGE)
+					excerpt(format: RENDERED)
+					featuredImage {
+						node {
+							sourceUrl(size: MEDIUM_LARGE)
+						}
 					}
 				}
 			}
 		}
 	}
-}
 </page-query>
 
 <script>
