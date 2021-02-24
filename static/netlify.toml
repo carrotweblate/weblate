@@ -5,3 +5,9 @@
 	to = "/test-2"
 	status = 301
 	force = true
+
+[[redirects]]
+	from = "/blog"
+	to = "/blogtest"
+	status = 301
+	force = true
