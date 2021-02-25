@@ -80,7 +80,7 @@ module.exports = function (api) {
 			allSettings {
 				readingSettingsPostsPerPage
 			}
-			posts(first: 99999) {
+			posts(where: { orderby: { field: DATE, order: DESC } }, first: 20) {
 				edges {
 					node {
 						slug

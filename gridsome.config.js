@@ -77,6 +77,8 @@ module.exports = {
 	],
 	
 	chainWebpack: config => {
+		config.mode('development')
+
 		// config.resolve.alias.set('@images', '@/assets/images')
 		
 		//Анализ размера билда
