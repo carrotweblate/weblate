@@ -10,7 +10,7 @@
 module.exports = {
 	siteName: 'Carrot quest',
 	titleTemplate: "%s — Carrot quest",
-	pathPrefix: 'https://cdn-www.carrotquest.io',
+	pathPrefix: 'cdn',
 
 	plugins: [
 		//GTM
