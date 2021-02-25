@@ -60,9 +60,13 @@ module.exports = {
 		{
 			use: 'gridsome-source-graphql',
 			options: {
-			url: 'https://www.carrotquest.io/blog/graphql',
+				url: 'https://www.carrotquest.io/blog/graphql',
 				fieldName: 'wp',
 				typeName: 'WordPress',
+				headers: {
+					'Content-Type': 'application/json',
+					Accept: 'application/json'
+				},
 			}
 		},
 		// {

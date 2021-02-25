@@ -80,11 +80,12 @@ module.exports = function (api) {
 			allSettings {
 				readingSettingsPostsPerPage
 			}
-			posts(where: { orderby: { field: DATE, order: DESC } }, first: 20) {
+			posts(where: { orderby: { field: DATE, order: DESC } }, first: 200) {
 				edges {
 					node {
 						slug
 						databaseId
+						content
 					}
 				}
 			}
@@ -125,6 +126,7 @@ module.exports = function (api) {
 				component: './src/templates/Post.vue',
 				context: {
 					databaseId: node.databaseId,
+					content: node.content,
 				}
 			})
 		})

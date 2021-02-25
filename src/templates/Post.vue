@@ -34,7 +34,7 @@
 
 			<!-- Текст статьи -->
 			<b-row>
-				<b-col col xl="8" class="font20px post__text" v-html="$page.post.content" />
+				<b-col col xl="8" class="font20px post__text" v-html="$context.content" />
 				<b-col col cols="4" class="post__info d-none d-xl-block">
 					<div class="post__info__contents">
 						Содержание:
@@ -80,7 +80,6 @@
 					mediaItemUrl
 				}
 			}
-			content
 		}
 	}
 </page-query>
