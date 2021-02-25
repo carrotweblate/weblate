@@ -2,7 +2,7 @@
 	"name": "carrotquest.io",
 	"private": true,
 	"scripts": {
-		"build": "gridsome build",
+		"build": "gridsome build && find ./dist -type f -name '*.html' -print0 | xargs -0 sed -i '' 's#/http#http#g'",
 		"public": "gridsome build && rm -r dist-public && cp -R dist dist-public",
 		"test": "gridsome build && rm -r dist-test && cp -R dist dist-test",
 		"develop": "gridsome develop",

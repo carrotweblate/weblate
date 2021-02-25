@@ -10,6 +10,7 @@
 module.exports = {
 	siteName: 'Carrot quest',
 	titleTemplate: "%s — Carrot quest",
+	pathPrefix: 'https://cdn-www.carrotquest.io',
 
 	plugins: [
 		//GTM
@@ -57,18 +58,19 @@ module.exports = {
 				height: 900
 			}
 		},
-		{
-			use: 'gridsome-source-graphql',
-			options: {
-				url: 'https://www.carrotquest.io/blog/graphql',
-				fieldName: 'wp',
-				typeName: 'WordPress',
-				headers: {
-					'Content-Type': 'application/json',
-					Accept: 'application/json'
-				},
-			}
-		},
+		// //Подключаемся к Блогу
+		// {
+		// 	use: 'gridsome-source-graphql',
+		// 	options: {
+		// 		url: 'https://www.carrotquest.io/blog/graphql',
+		// 		fieldName: 'wp',
+		// 		typeName: 'WordPress',
+		// 		headers: {
+		// 			'Content-Type': 'application/json',
+		// 			Accept: 'application/json'
+		// 		},
+		// 	}
+		// },
 		// {
 		// 	use: '@noxify/gridsome-plugin-remote-image',
 		// 	options: {

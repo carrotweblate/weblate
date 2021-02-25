@@ -74,92 +74,92 @@ module.exports = function (api) {
 	// 	})
 	// })
 
-	//Wordpress
-	api.createPages(async ({ graphql, createPage }) => {
-		const { data } = await graphql(`{
-			allSettings {
-				readingSettingsPostsPerPage
-			}
-			posts(where: { orderby: { field: DATE, order: DESC } }, first: 200) {
-				edges {
-					node {
-						databaseId
-						slug
-						title
-						content
-						seo {
-							canonical
-							title
-							metaDesc
-							opengraphImage {
-								mediaItemUrl
-							}
-						}
-					}
-				}
-			}
-			categories {
-				edges {
-					node {
-						databaseId
-						slug
-						name
-					}
-				}
-			}
-		}`)
-		const perPage = data.allSettings.readingSettingsPostsPerPage;
-		const totalNumberOfPosts = data.posts.edges.length;
-		const numberOfPagesForPagination = Math.ceil(totalNumberOfPosts / perPage);
+	// //Wordpress
+	// api.createPages(async ({ graphql, createPage }) => {
+	// 	const { data } = await graphql(`{
+	// 		allSettings {
+	// 			readingSettingsPostsPerPage
+	// 		}
+	// 		posts(where: { orderby: { field: DATE, order: DESC } }, first: 200) {
+	// 			edges {
+	// 				node {
+	// 					databaseId
+	// 					slug
+	// 					title
+	// 					content
+	// 					seo {
+	// 						canonical
+	// 						title
+	// 						metaDesc
+	// 						opengraphImage {
+	// 							mediaItemUrl
+	// 						}
+	// 					}
+	// 				}
+	// 			}
+	// 		}
+	// 		categories {
+	// 			edges {
+	// 				node {
+	// 					databaseId
+	// 					slug
+	// 					name
+	// 				}
+	// 			}
+	// 		}
+	// 	}`)
+	// 	const perPage = data.allSettings.readingSettingsPostsPerPage;
+	// 	const totalNumberOfPosts = data.posts.edges.length;
+	// 	const numberOfPagesForPagination = Math.ceil(totalNumberOfPosts / perPage);
 		
-		// Pagination 
-		for (let i = 0; i < numberOfPagesForPagination; i++) {
-			createPage({
-				path: (i === 0) ? `/blogtest/` : `/blogtest/page/${i + 1}/`,
-				component: './src/templates/PostsArchive.vue',
-				context: {
-					offset: parseInt(i * perPage),
-					perPage: parseInt(perPage),
-					pageInfo: {
-						currentPage: parseInt(i + 1),
-						total: parseInt(totalNumberOfPosts),
-					}
-				}
-			})
-		}
+	// 	// Pagination 
+	// 	for (let i = 0; i < numberOfPagesForPagination; i++) {
+	// 		createPage({
+	// 			path: (i === 0) ? `/blogtest/` : `/blogtest/page/${i + 1}/`,
+	// 			component: './src/templates/PostsArchive.vue',
+	// 			context: {
+	// 				offset: parseInt(i * perPage),
+	// 				perPage: parseInt(perPage),
+	// 				pageInfo: {
+	// 					currentPage: parseInt(i + 1),
+	// 					total: parseInt(totalNumberOfPosts),
+	// 				}
+	// 			}
+	// 		})
+	// 	}
 
-		// Single Post 
-		data.posts.edges.forEach(({ node }) => {
-			createPage({
-				path: `/blogtest/${node.slug}/`,
-				component: './src/templates/Post.vue',
-				context: {
-					databaseId: node.databaseId,
-					slug: node.slug,
-					content: node.content,
-					seo: {
-						canonical: node.seo.canonical,
-						title: node.seo.title,
-						description: node.seo.metaDesc,
-						cover: node.seo.opengraphImage.mediaItemUrl,
-					}
-				}
-			})
-		})
+	// 	// Single Post 
+	// 	data.posts.edges.forEach(({ node }) => {
+	// 		createPage({
+	// 			path: `/blogtest/${node.slug}/`,
+	// 			component: './src/templates/Post.vue',
+	// 			context: {
+	// 				databaseId: node.databaseId,
+	// 				slug: node.slug,
+	// 				content: node.content,
+	// 				seo: {
+	// 					canonical: node.seo.canonical,
+	// 					title: node.seo.title,
+	// 					description: node.seo.metaDesc,
+	// 					cover: node.seo.opengraphImage.mediaItemUrl,
+	// 				}
+	// 			}
+	// 		})
+	// 	})
 
-		// Categories Pages
-		data.categories.edges.forEach(({ node }) => {
-			console.log(`Creating Category Page: /blogtest/${node.slug}/`);
-			createPage({
-			path: `/blogtest/${node.slug}`,
-			component: './src/templates/CategoriesArchive.vue',
-				context: {
-					databaseId: node.databaseId,
-					name: node.name
-				}
-			})
-		})
-	})
+	// 	// Categories Pages
+	// 	data.categories.edges.forEach(({ node }) => {
+	// 		console.log(`Creating Category Page: /blogtest/${node.slug}/`);
+	// 		createPage({
+	// 		path: `/blogtest/${node.slug}`,
+	// 		component: './src/templates/CategoriesArchive.vue',
+	// 			context: {
+	// 				databaseId: node.databaseId,
+	// 				name: node.name
+	// 			}
+	// 		})
+	// 	})
+	// })
 
 	// //API from Wordpress: Список постов
 	// api.createPages(async ({ graphql, createPage }) =>{
