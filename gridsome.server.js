@@ -83,18 +83,27 @@ module.exports = function (api) {
 			posts(where: { orderby: { field: DATE, order: DESC } }, first: 200) {
 				edges {
 					node {
-						slug
 						databaseId
+						slug
+						title
 						content
+						seo {
+							canonical
+							title
+							metaDesc
+							opengraphImage {
+								mediaItemUrl
+							}
+						}
 					}
 				}
 			}
 			categories {
 				edges {
 					node {
+						databaseId
 						slug
 						name
-						databaseId
 					}
 				}
 			}
@@ -106,7 +115,7 @@ module.exports = function (api) {
 		// Pagination 
 		for (let i = 0; i < numberOfPagesForPagination; i++) {
 			createPage({
-				path: (i === 0) ? `/blogtest/` : `/blogtest/page/${i + 1}`,
+				path: (i === 0) ? `/blogtest/` : `/blogtest/page/${i + 1}/`,
 				component: './src/templates/PostsArchive.vue',
 				context: {
 					offset: parseInt(i * perPage),
@@ -122,18 +131,25 @@ module.exports = function (api) {
 		// Single Post 
 		data.posts.edges.forEach(({ node }) => {
 			createPage({
-				path: `/blogtest/${node.slug}`,
+				path: `/blogtest/${node.slug}/`,
 				component: './src/templates/Post.vue',
 				context: {
 					databaseId: node.databaseId,
+					slug: node.slug,
 					content: node.content,
+					seo: {
+						canonical: node.seo.canonical,
+						title: node.seo.title,
+						description: node.seo.metaDesc,
+						cover: node.seo.opengraphImage.mediaItemUrl,
+					}
 				}
 			})
 		})
 
 		// Categories Pages
 		data.categories.edges.forEach(({ node }) => {
-			console.log(`Creating Category Page: /blogtest/${node.slug}`);
+			console.log(`Creating Category Page: /blogtest/${node.slug}/`);
 			createPage({
 			path: `/blogtest/${node.slug}`,
 			component: './src/templates/CategoriesArchive.vue',

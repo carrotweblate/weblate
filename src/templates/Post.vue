@@ -91,6 +91,46 @@
 	import BannerSobirayte from '~/components/BannerSobirayte/BannerSobirayte.vue'
 
 	export default {
+		//Делаем в HEAD
+		metaInfo() {
+			return {
+				title: this.$context.seo.title,
+				meta: [
+					{
+						key: 'description',
+						name: 'description',
+						content: this.$context.description
+					},
+					{
+						key: 'og:url',
+						property: "og:url",
+						content: 'https://www.carrotquest.io/blog/' + this.$context.slug
+					},
+					{
+						key: "og:title",
+						property: "og:title",
+						content: this.$context.title
+					},
+					{
+						key: "og:description",
+						property: "og:description",
+						content: this.$context.description
+					},
+					{	
+						key: "og:image",
+						property: "og:image",
+						content: this.$context.cover
+					},
+				],
+				link: [
+					{
+						key: "canonical",
+						rel: 'canonical',
+						href: 'https://www.carrotquest.io/' + this.$context.slug
+					}
+				]
+			}
+		},
 		components: {
 			VideoRegistration,
 			BannerSobirayte
