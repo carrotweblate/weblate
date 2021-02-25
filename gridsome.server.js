@@ -80,7 +80,7 @@ module.exports = function (api) {
 			allSettings {
 				readingSettingsPostsPerPage
 			}
-			posts(first: 9) {
+			posts(first: 99999) {
 				edges {
 					node {
 						slug
@@ -150,21 +150,21 @@ module.exports = function (api) {
 	// 		query {
 	// 			posts{
 	// 				nodes{
-	// 					id
-	// 					slug
-	// 					seo {
-	// 						canonical
-	// 						title
-	// 						metaDesc
-	// 					}
-	// 					categories {
-	// 						nodes {
-	// 							name
-	// 							slug
-	// 						}
-	// 					}
-	// 					title
-	// 					featuredImage { node { mediaDetails { sizes { sourceUrl } } } }
+						// id
+						// slug
+						// seo {
+						// 	canonical
+						// 	title
+						// 	metaDesc
+						// }
+						// categories {
+						// 	nodes {
+						// 		name
+						// 		slug
+						// 	}
+						// }
+						// title
+						// featuredImage { node { mediaDetails { sizes { sourceUrl } } } }
 	// 				}
 	// 			}
 	// 		}
