@@ -301,7 +301,7 @@
 		data() {
 			return {
 				//Делаем в HEAD
-				metaTitle: 'Решение для интернет-магазинов: виджет чата, чат бот, поп-ап окна и триггерные email-компании',
+				metaTitle: 'Решение для интернет-магазинов: виджет чата, чат-бот, поп-ап окна и триггерные email-компании',
 				metaDescription: 'Сервисы Carrot quest для повышения продаж в E-commerce — получайте от трафика максимум, сократите количество брошенных корзин, собирайте данные о клиентах',
 				metaCanonical: 'https://www.carrotquest.io/ecommerce/',
 				metaImage: 'https://www.carrotquest.io/assets/images/cover/ecommerce.png',
