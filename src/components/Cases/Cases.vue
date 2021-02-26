@@ -129,9 +129,9 @@
 							<g-link to="/cases/" class="nav-item-all d-none d-xl-block">Посмотрите все кейсы</g-link>
 						</template>
 					</b-tabs>
-					<g-link to="/cases/" class="d-xl-none">
+					<a href="/cases/" class="d-xl-none">
 						Посмотрите все кейсы
-					</g-link>
+					</a>
 				</b-col>
 			</b-row>
 		</b-container>

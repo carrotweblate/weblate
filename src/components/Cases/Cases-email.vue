@@ -122,7 +122,7 @@
 							</b-row>
 						</b-tab>
 						<template #tabs-end>
-							<g-link to="/cases/" class="nav-item-all d-none d-xl-block">Посмотрите все кейсы</g-link>
+							<a href="/cases/" class="nav-item-all d-none d-xl-block">Посмотрите все кейсы</a>
 						</template>
 					</b-tabs>
 					<g-link to="/cases/" class="d-xl-none">
