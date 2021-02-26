@@ -319,7 +319,7 @@
 							</div>
 							<p>
 								Собирайте больше квалифицированных лидов с сайта 24/7 без дополнительной нагрузки на ваших сотрудников.
-								<g-link href="/chatbot/" target="_blank">Подробнее</g-link>
+								<g-link to="/chatbot/" target="_blank">Подробнее</g-link>
 							</p>
 							<div class="price">
 								<div class="font20px">
@@ -359,7 +359,7 @@
 							</div>
 							<p>
 								Когда надо оптимизировать работу операторов, используйте данные для принятия решений: Анализ загрузки операторов, скорость работы команды, статистика запросов, распределение диалогов по времени и т.д.
-								<a href="/blog/zhiznenno-vazhnye-metriki-sluzhby-podderzhki-kotorye-stoit-nachat-izmeryat-uzhe-segodnya/" target="_blank" rel="noopener">Подробнее</a>
+								<g-link to="/blog/zhiznenno-vazhnye-metriki-sluzhby-podderzhki-kotorye-stoit-nachat-izmeryat-uzhe-segodnya/" target="_blank" rel="noopener">Подробнее</g-link>
 							</p>
 							<div class="price">
 								<div class="font20px">
@@ -383,7 +383,7 @@
 								<li>Возможность добавить счётчики Google Analytics и Яндекс.Метрики</li>
 								<li>Возможность отключить « работает на Carrot quest »</li>
 							</ul>
-							<g-link href="/knowledge-base/" target="_blank" rel="noopener">Подробнее</g-link>
+							<g-link to="/knowledge-base/" target="_blank" rel="noopener">Подробнее</g-link>
 							<div class="price">
 								<div class="font20px">
 									<b>2 000 ₽ </b>в месяц

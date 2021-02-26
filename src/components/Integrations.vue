@@ -7,7 +7,7 @@
 				<b-col col-12 lg="9">
 					<div class="h2 mb-4">
 						Сервисы должны работать вместе. <br>
-						<g-link href="/integration/">Интегрируйте</g-link> их с Carrot quest
+						<g-link to="/integration/">Интегрируйте</g-link> их с Carrot quest
 					</div>
 					<p>
 						Более 30 готовых интеграций. Открытый API для web, iOS и Android
@@ -20,14 +20,14 @@
 						<b-tab title="CMS и CRM" active lazy>
 							<b-row class="mt-4">
 								<b-col class="d-flex flex-wrap">
-									<a href="/integration/1C_bitrix/" class="Integrations__logo bitrix1c"></a>
-									<a href="/integration/insales/" class="Integrations__logo insales"></a>
-									<a href="/integration/opencart/" class="Integrations__logo opencart"></a>
-									<a href="/integration/prestashop/" class="Integrations__logo prestashop"></a>
-									<a href="/integration/wordpress/" class="Integrations__logo wordpress"></a>
-									<a href="/integration/amocrm/" class="Integrations__logo amocrm"></a>
-									<a href="/integration/bitrix24/" class="Integrations__logo bitrix24"></a>
-									<a href="/integration/retailcrm/" class="Integrations__logo retailcrm"></a>
+									<g-link to="/integration/1C_bitrix/" class="Integrations__logo bitrix1c"></g-link>
+									<g-link to="/integration/insales/" class="Integrations__logo insales"></g-link>
+									<g-link to="/integration/opencart/" class="Integrations__logo opencart"></g-link>
+									<g-link to="/integration/prestashop/" class="Integrations__logo prestashop"></g-link>
+									<g-link to="/integration/wordpress/" class="Integrations__logo wordpress"></g-link>
+									<g-link to="/integration/amocrm/" class="Integrations__logo amocrm"></g-link>
+									<g-link to="/integration/bitrix24/" class="Integrations__logo bitrix24"></g-link>
+									<g-link to="/integration/retailcrm/" class="Integrations__logo retailcrm"></g-link>
 								</b-col>
 							</b-row>
 						</b-tab>
@@ -35,12 +35,12 @@
 							<b-row class="mt-4">
 								<b-col class="d-flex flex-wrap">
 									<a href="https://help.carrotquest.io/article/171" class="Integrations__logo email"></a>
-									<a href="/integration/facebook/" class="Integrations__logo facebook"></a>
-									<a href="/integration/yandex_dialogs/" class="Integrations__logo yandex_dialogs"></a>
-									<a href="/integration/vk/" class="Integrations__logo vk"></a>
-									<a href="/integration/telegram/" class="Integrations__logo telegram"></a>
-									<a href="/integration/viber/" class="Integrations__logo viber"></a>
-									<a href="/integration/slack/" class="Integrations__logo slack_chat"></a>
+									<g-link to="/integration/facebook/" class="Integrations__logo facebook"></g-link>
+									<g-link to="/integration/yandex_dialogs/" class="Integrations__logo yandex_dialogs"></g-link>
+									<g-link to="/integration/vk/" class="Integrations__logo vk"></g-link>
+									<g-link to="/integration/telegram/" class="Integrations__logo telegram"></g-link>
+									<g-link to="/integration/viber/" class="Integrations__logo viber"></g-link>
+									<g-link to="/integration/slack/" class="Integrations__logo slack_chat"></g-link>
 									<a href="https://help.carrotquest.io/article/158/" class="Integrations__logo zendesk"></a>
 									<a href="https://help.carrotquest.io/article/166/" class="Integrations__logo omnidesk"></a>
 									<a href="https://help.carrotquest.io/article/163/" class="Integrations__logo usedesk"></a>
@@ -71,7 +71,7 @@
 						<b-tab title="Своими руками" lazy>
 							<b-row class="mt-4">
 								<b-col class="d-flex flex-wrap">
-									<a href="/developers/" class="Integrations__logo api"></a>
+									<g-link to="/developers/" class="Integrations__logo api"></g-link>
 									<a class="Integrations__logo dialogflow"></a>
 									<a class="Integrations__logo lambdascript"></a>
 									<a class="Integrations__logo jsscript"></a>
@@ -81,10 +81,10 @@
 							</b-row>
 						</b-tab>
 						<template #tabs-end>
-							<g-link href="/integration/" class="nav-item-all d-none d-xl-block">Посмотрите все интеграции</g-link>
+							<g-link to="/integration/" class="nav-item-all d-none d-xl-block">Посмотрите все интеграции</g-link>
 						</template>
 					</b-tabs>
-					<g-link href="/integration/" class="d-xl-none">
+					<g-link to="/integration/" class="d-xl-none">
 						Посмотрите все интеграции
 					</g-link>
 				</b-col>

@@ -540,10 +540,10 @@
 					</ul>
 				</b-col>
 				<b-col lg="4" class="mb-5 mb-lg-0 order-lg-4">
-					<a href="/assets/docs/map-ecom.pdf">
+					<g-link to="/assets/docs/map-ecom.pdf">
 						<g-image class="mb-3" src="@/assets/images/components/map-ecom.png" width="680" alt="Для интернет-магазинов" />
-					</a>
-					<a href="/assets/docs/map-ecom.pdf">
+					</g-link>
+					<g-link to="/assets/docs/map-ecom.pdf">
 						<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M18 18L24 24" stroke="#FF7C16"/>
 							<circle cx="9.5" cy="9.5" r="9" stroke="#FF7C16"/>
@@ -551,7 +551,7 @@
 							<line x1="5" y1="9.5" x2="14" y2="9.5" stroke="#FF7C16"/>
 						</svg>
 						Посмотреть
-					</a>
+					</g-link>
 				</b-col>
 
 				<b-col lg="4" class="order-lg-2">
@@ -566,10 +566,10 @@
 					</ul>
 				</b-col>
 				<b-col lg="4" class="mb-5 mb-lg-0 order-lg-5">
-					<a href="/assets/docs/map-saas.pdf">
+					<g-link to="/assets/docs/map-saas.pdf">
 						<g-image class="mb-3" src="@/assets/images/components/map-saas.png" width="680" alt="Для онлайн-сервисов" />
-					</a>
-					<a href="/assets/docs/map-saas.pdf">
+					</g-link>
+					<g-link to="/assets/docs/map-saas.pdf">
 						<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M18 18L24 24" stroke="#FF7C16"/>
 							<circle cx="9.5" cy="9.5" r="9" stroke="#FF7C16"/>
@@ -577,7 +577,7 @@
 							<line x1="5" y1="9.5" x2="14" y2="9.5" stroke="#FF7C16"/>
 						</svg>
 						Посмотреть
-					</a>
+					</g-link>
 				</b-col>
 
 				<b-col lg="4" class="order-lg-3">
@@ -591,10 +591,10 @@
 					</ul>
 				</b-col>
 				<b-col lg="4" class="order-lg-6">
-					<a href="/assets/docs/map-ecom-bot.pdf">
+					<g-link to="/assets/docs/map-ecom-bot.pdf">
 						<g-image class="mb-3" src="@/assets/images/components/map-ecom-bot.png" width="680" alt="Для интернет-магазинов с использованием чат-бота на сайте" />
-					</a>
-					<a href="/assets/docs/map-ecom-bot.pdf">
+					</g-link>
+					<g-link to="/assets/docs/map-ecom-bot.pdf">
 						<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M18 18L24 24" stroke="#FF7C16"/>
 							<circle cx="9.5" cy="9.5" r="9" stroke="#FF7C16"/>
@@ -602,7 +602,7 @@
 							<line x1="5" y1="9.5" x2="14" y2="9.5" stroke="#FF7C16"/>
 						</svg>
 						Посмотреть
-					</a>
+					</g-link>
 				</b-col>
 			</b-row>
 		</b-container>

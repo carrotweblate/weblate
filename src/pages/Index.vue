@@ -242,60 +242,60 @@
 			</b-row>
 			<b-row>
 				<b-col cols="6" lg="3">
-					<a href="/online-consultant/" class="functions__box box text-center p-4">
+					<g-link to="/online-consultant/" class="functions__box box text-center p-4">
 						<g-image src="@/assets/images/components/small-26.svg" height="158" alt="Онлайн-консультант" />
 						<p class="mt-3 mb-0">
 							Онлайн‑консультант
 						</p>
-					</a>
+					</g-link>
 				</b-col>
 				<b-col cols="6" lg="3">
-					<a href="/knowledge-base/" class="functions__box box text-center p-4">
+					<g-link to="/knowledge-base/" class="functions__box box text-center p-4">
 						<g-image src="@/assets/images/components/small-27.svg" height="158" alt="База знаний" />
 						<p class="mt-3 mb-0">
 							База знаний
 						</p>
-					</a>
+					</g-link>
 				</b-col>
 				<b-col cols="6" lg="3">
-					<a href="/lead-manager/" class="functions__box box text-center p-4">
+					<g-link to="/lead-manager/" class="functions__box box text-center p-4">
 						<g-image src="@/assets/images/components/small-28.svg" height="158" alt="eCRM" />
 						<p class="mt-3 mb-0">
 							eCRM
 						</p>
-					</a>
+					</g-link>
 				</b-col>
 				<b-col cols="6" lg="3">
-					<a href="/chatbot/" class="functions__box box text-center p-4">
+					<g-link to="/chatbot/" class="functions__box box text-center p-4">
 						<g-image src="@/assets/images/components/small-29.svg" height="158" alt="Чат-бот" />
 						<p class="mt-3 mb-0">
 							Чат-бот
 						</p>
-					</a>
+					</g-link>
 				</b-col>
 				<b-col cols="6" lg="3">
-					<a href="/pop-up/" class="functions__box box text-center p-4">
+					<g-link to="/pop-up/" class="functions__box box text-center p-4">
 						<g-image src="@/assets/images/components/small-30.svg" height="158" alt="Поп-ап окна" />
 						<p class="mt-3 mb-0">
 							Поп-ап окна
 						</p>
-					</a>
+					</g-link>
 				</b-col>
 				<b-col cols="6" lg="3">
-					<a href="/sdk/" class="functions__box box text-center p-4">
+					<g-link to="/sdk/" class="functions__box box text-center p-4">
 						<g-image src="@/assets/images/components/small-31.svg" height="158" alt="SDK для iOS и Android" />
 						<p class="mt-3 mb-0">
 							SDK для iOS и&nbsp;Android
 						</p>
-					</a>
+					</g-link>
 				</b-col>
 				<b-col cols="6" lg="3">
-					<a href="/email-marketing/" class="functions__box box text-center p-4">
+					<g-link to="/email-marketing/" class="functions__box box text-center p-4">
 						<g-image src="@/assets/images/components/small-32.svg" height="158" alt="Email-рассылки" />
 						<p class="mt-3 mb-0">
 							Email-рассылки
 						</p>
-					</a>
+					</g-link>
 				</b-col>
 			</b-row>
 		</b-container>

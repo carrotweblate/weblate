@@ -30,19 +30,19 @@
 						</p>
 					</b-col>
 					<b-col lg="4" class="mb-5 mb-lg-0 d-flex align-items-center">
-						<g-link href="/introduction-carrotquest/">
+						<g-link to="/introduction-carrotquest/">
 							<g-image src="@/assets/images/components/small-11.png" class="mr-4" alt="Более 570 проектов внедрения" width="176" />
 						</g-link>
 						<p class="mb-0">
-							Более 570 проектов <g-link href="/introduction-carrotquest/">внедрения</g-link>
+							Более 570 проектов <g-link to="/introduction-carrotquest/">внедрения</g-link>
 						</p>
 					</b-col>
 					<b-col lg="4" class="d-flex align-items-center">
-						<a href="/cases/">
+						<g-link to="/cases/">
 							<g-image src="@/assets/images/components/small-6.png" class="mr-4" alt="Более 60 написанных кейсов" width="176" />
-						</a>
+						</g-link>
 						<p class="mb-0">
-							Более <a href="/cases/">60&nbsp;написанных кейсов</a> с&nbsp;интернет&#8209;магазинами
+							Более <g-link to="/cases/">60&nbsp;написанных кейсов</g-link> с&nbsp;интернет&#8209;магазинами
 						</p>
 					</b-col>
 				</b-row>
@@ -65,9 +65,9 @@
 						</div>
 						<div class="stat__buble mb-4">
 							Добились ROI 1744% благодаря автоматизации воронки.
-							<a href="/blog/case-westfalika/">
+							<g-link to="/blog/case-westfalika/">
 								Кейс
-							</a>
+							</g-link>
 						</div>
 						<g-image src="/assets/images/logos/westfalika.svg" alt="westfalika" style="max-width: 102px;" /> 
 					</b-col>
@@ -86,9 +86,9 @@
 						</div>
 						<div class="stat__buble mb-4">
 							Увеличили конверсию в заказ в 2,5 раза. 
-							<a href="/blog/case_skyshop/">
+							<g-link to="/blog/case_skyshop/">
 								Кейс
-							</a>
+							</g-link>
 						</div>
 						<img src="/assets/images/logos/skyshop.svg" alt="Skyshop" style="max-width: 80px;"> 
 					</b-col>
@@ -107,7 +107,7 @@
 				</b-row>
 				<b-row>
 					<b-col md="6" lg="3" class="mt-4 mt-md-5">
-						<g-link href="/online-consultant/" class="box box-shadow h-100">
+						<g-link to="/online-consultant/" class="box box-shadow h-100">
 							<g-image src="@/assets/images/components/small-5.png" width="160" рeight="96" fit="contain" background="#fff" alt="Онлайн-чат с персонализацией аудио- и видеозвонками для лучших отношений с клиентами" />
 							<p class="mb-0">
 								Онлайн-чат с&nbsp;персонализацией аудио- и&nbsp;видеозвонками для лучших отношений с&nbsp;клиентами
@@ -115,7 +115,7 @@
 						</g-link>
 					</b-col>
 					<b-col md="6" lg="3" class="mt-4 mt-md-5">
-						<g-link href="/chatbot/" class="box box-shadow h-100">
+						<g-link to="/chatbot/" class="box box-shadow h-100">
 							<g-image src="@/assets/images/components/small-2.png" width="160" рeight="96" fit="contain" background="#fff"  alt="Лид-бот на сайте для генерации и квалификации лидов" />
 							<p class="mb-0">
 								Лид-бот на&nbsp;сайте для генерации и&nbsp;квалификации лидов
@@ -123,7 +123,7 @@
 						</g-link>
 					</b-col>
 					<b-col md="6" lg="3" class="mt-4 mt-md-5">
-						<g-link href="/pop-up/" class="box box-shadow h-100">
+						<g-link to="/pop-up/" class="box box-shadow h-100">
 							<g-image src="@/assets/images/components/small-3.png" width="160" рeight="96" fit="contain" background="#fff"  alt="Pop-up окна работающие на основе поведения пользователей" />
 							<p class="mb-0">
 								Поп-ап окна, работающие на&nbsp;основе поведения пользователей
@@ -131,7 +131,7 @@
 						</g-link>
 					</b-col>
 					<b-col md="6" lg="3" class="mt-4 mt-md-5">
-						<g-link href="/email-marketing/" class="box box-shadow h-100">
+						<g-link to="/email-marketing/" class="box box-shadow h-100">
 							<g-image src="@/assets/images/components/small-38.png" width="160" рeight="96" fit="contain" background="#fff"  alt="Триггерные email-кампании для удержания и возвращения клиентов" />
 							<p class="mb-0">
 								Триггерные email-кампании для удержания и&nbsp;возвращения клиентов

@@ -52,7 +52,7 @@
 				</b-row>
 				<b-row>
 					<b-col lg="6">
-						<g-link href="/product-research-book/" class="books__wrapper d-block">
+						<g-link to="/product-research-book/" class="books__wrapper d-block">
 							<p class="font20px">
 								Как проводить исследования, результаты которых пойдут в бэклог, а не в стол<br><br>
 							</p>
@@ -61,7 +61,7 @@
 						</g-link>
 					</b-col>
 					<b-col lg="6">
-						<g-link href="/saas-book/" class="books__wrapper d-block">
+						<g-link to="/saas-book/" class="books__wrapper d-block">
 							<p class="font20px">
 								Самый подробный гайд по автоматизации маркетинга для продакт-маркетологов и CEO онлайн-продуктов
 							</p>
@@ -70,7 +70,7 @@
 						</g-link>
 					</b-col>
 					<b-col lg="6">
-						<g-link href="/ecom-book/" class="books__wrapper d-block">
+						<g-link to="/ecom-book/" class="books__wrapper d-block">
 							<p class="font20px">
 								Полное руководство по коммуникациям и автоматизации воронки пользователей в интернет-магазинах
 							</p>
@@ -79,7 +79,7 @@
 						</g-link>
 					</b-col>
 					<b-col lg="6">
-						<g-link href="/ecom-audiobook/" class="books__wrapper d-block">
+						<g-link to="/ecom-audiobook/" class="books__wrapper d-block">
 							<p class="font20px">
 								Аудиокнига. Полное руководство по коммуникациям и автоматизации воронки пользователей в интернет-магазинах
 							</p>
@@ -104,7 +104,7 @@
 				</b-row>
 				<b-row class="courses_row">
 					<b-col lg="6" class="course">
-						<g-link href="/videocourse-online-sales/" class="courses__wrapper d-block">
+						<g-link to="/videocourse-online-sales/" class="courses__wrapper d-block">
 							<g-image src="~/assets/images/library/courses_video.png" alt="Как увеличить продажи на том же трафике, используя инструменты Carrot quest" />
 							<div class="box">
 								<div class="h5">
@@ -120,7 +120,7 @@
 					</b-col>
 
 					<b-col lg="6" class="course">
-						<g-link href="/transformsales-course-part1/" class="courses__wrapper d-block">
+						<g-link to="/transformsales-course-part1/" class="courses__wrapper d-block">
 							<g-image src="~/assets/images/library/courses_transformation.png" alt="Digital-трансформация маркетинга и продаж" />
 							<div class="box">
 								<div class="h5">
@@ -135,7 +135,7 @@
 					</b-col>
 
 					<b-col lg="6" class="course">
-						<a href="/marketing-course/" class="courses__wrapper d-block">
+						<g-link to="/marketing-course/" class="courses__wrapper d-block">
 							<g-image src="~/assets/images/library/courses_prodagi.png" alt="Маркетинг на сайте: как продать в 2 раза больше, не увеличивая трафик" />
 							<div class="box">
 								<div class="h5">
@@ -145,11 +145,11 @@
 									Этот курс — выжимка опыта, который мы получили за 5 лет внедрения автоворонок для 400 сайтов. Все рекомендации можно внедрить за неделю. Разработчик не понадобится 🙂
 								</p>
 							</div>
-						</a>
+						</g-link>
 					</b-col>
 
 					<b-col lg="6" class="course">
-						<a href="/kurs-email-marketing/" class="courses__wrapper d-block">
+						<g-link to="/kurs-email-marketing/" class="courses__wrapper d-block">
 							<g-image src="~/assets/images/library/courses_email.png" alt="Email-маркетинг за 8 шагов" />
 							<div class="box">
 								<div class="h5">
@@ -160,7 +160,7 @@
 									Вы узнаете, как настраивать коммуникацию с клиентами с помощью поп-апов, емейлов и онлайн-чата.
 								</p>
 							</div>
-						</a>
+						</g-link>
 					</b-col>
 				</b-row>
 			</b-container>
@@ -182,7 +182,7 @@
 				</b-row>
 				<b-row class="courses_row">
 					<b-col lg="6" class="course"> 
-						<g-link href="/support-guide/" class="courses__wrapper d-block">
+						<g-link to="/support-guide/" class="courses__wrapper d-block">
 							<g-image src="~/assets/images/library/gaid-po-podderzhke.png" alt="Гайд по поддержке пользователей" />
 							<div class="box">
 								<div class="h5">
@@ -195,7 +195,7 @@
 						</g-link>
 					</b-col>
 					<b-col lg="6" class="course"> 
-						<g-link href="/qualification-guide/" class="courses__wrapper d-block">
+						<g-link to="/qualification-guide/" class="courses__wrapper d-block">
 							<g-image src="~/assets/images/library/guide_user.png" alt="Гайд по квалификации пользователей на сайте" />
 							<div class="box">
 								<div class="h5">
