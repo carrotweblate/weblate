@@ -340,31 +340,31 @@
 				</b-row>
 				<b-row>
 					<b-col cols="12" md="6" lg="4">
-						<g-link to="/lead-manager/" class="data__box box text-center p-4">
+						<g-link href="/lead-manager/" class="data__box box text-center p-4">
 							<p>С полей и форм на вашем сайте</p>
 							<g-image class="data__box__pic" src="@/assets/images/components/small-43.svg" alt="С полей и форм на вашем сайте" />
 						</g-link>
 					</b-col>
 					<b-col cols="12" md="6" lg="4">
-						<g-link to="/chatbot/" class="data__box box text-center p-4">
+						<g-link href="/chatbot/" class="data__box box text-center p-4">
 							<p>С помощью чат-бота</p>
 							<g-image class="data__box__pic" src="@/assets/images/components/small-39.svg" alt="С помощью чат-бота" />
 						</g-link>
 					</b-col>
 					<b-col cols="12" md="6" lg="4">
-						<g-link to="/online-consultant/" class="data__box box text-center p-4">
+						<g-link href="/online-consultant/" class="data__box box text-center p-4">
 							<p>Через чат</p>
 							<g-image class="data__box__pic" src="@/assets/images/components/small-44.svg" alt="Через чат" />
 						</g-link>
 					</b-col>
 					<b-col cols="12" md="6" lg="4">
-						<g-link to="/pop-up/" class="data__box box text-center p-4">
+						<g-link href="/pop-up/" class="data__box box text-center p-4">
 							<p>С помощью поп-ап окон</p>
 							<g-image class="data__box__pic" src="@/assets/images/components/small-41.svg" alt="Используйте поп-ап окна для сбора дополнительных контактов" />
 						</g-link>
 					</b-col>
 					<b-col cols="12" md="6" lg="4">
-						<g-link to="/integration/" class="data__box box text-center p-4">
+						<g-link href="/integration/" class="data__box box text-center p-4">
 							<p>Carrot quest легко соединяется с вашими инструментами через интеграции и по API</p>
 							<g-image class="data__box__pic" src="@/assets/images/components/small-45.png" alt="Carrot quest легко соединяется с вашими инструментами через интеграции и по API" />
 						</g-link>

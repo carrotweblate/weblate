@@ -30,11 +30,11 @@
 						</p>
 					</b-col>
 					<b-col lg="4" class="mb-5 mb-lg-0 d-flex align-items-center">
-						<g-link to="/introduction-carrotquest/">
+						<g-link href="/introduction-carrotquest/">
 							<g-image src="@/assets/images/components/small-11.png" class="mr-4" alt="Более 570 проектов внедрения" width="176" />
 						</g-link>
 						<p class="mb-0">
-							Более 570 проектов <g-link to="/introduction-carrotquest/">внедрения</g-link>
+							Более 570 проектов <g-link href="/introduction-carrotquest/">внедрения</g-link>
 						</p>
 					</b-col>
 					<b-col lg="4" class="d-flex align-items-center">
@@ -107,7 +107,7 @@
 				</b-row>
 				<b-row>
 					<b-col md="6" lg="3" class="mt-4 mt-md-5">
-						<g-link to="/online-consultant/" class="box box-shadow h-100">
+						<g-link href="/online-consultant/" class="box box-shadow h-100">
 							<g-image src="@/assets/images/components/small-5.png" width="160" рeight="96" fit="contain" background="#fff" alt="Онлайн-чат с персонализацией аудио- и видеозвонками для лучших отношений с клиентами" />
 							<p class="mb-0">
 								Онлайн-чат с&nbsp;персонализацией аудио- и&nbsp;видеозвонками для лучших отношений с&nbsp;клиентами
@@ -115,7 +115,7 @@
 						</g-link>
 					</b-col>
 					<b-col md="6" lg="3" class="mt-4 mt-md-5">
-						<g-link to="/chatbot/" class="box box-shadow h-100">
+						<g-link href="/chatbot/" class="box box-shadow h-100">
 							<g-image src="@/assets/images/components/small-2.png" width="160" рeight="96" fit="contain" background="#fff"  alt="Лид-бот на сайте для генерации и квалификации лидов" />
 							<p class="mb-0">
 								Лид-бот на&nbsp;сайте для генерации и&nbsp;квалификации лидов
@@ -123,7 +123,7 @@
 						</g-link>
 					</b-col>
 					<b-col md="6" lg="3" class="mt-4 mt-md-5">
-						<g-link to="/pop-up/" class="box box-shadow h-100">
+						<g-link href="/pop-up/" class="box box-shadow h-100">
 							<g-image src="@/assets/images/components/small-3.png" width="160" рeight="96" fit="contain" background="#fff"  alt="Pop-up окна работающие на основе поведения пользователей" />
 							<p class="mb-0">
 								Поп-ап окна, работающие на&nbsp;основе поведения пользователей
@@ -131,7 +131,7 @@
 						</g-link>
 					</b-col>
 					<b-col md="6" lg="3" class="mt-4 mt-md-5">
-						<g-link to="/email-marketing/" class="box box-shadow h-100">
+						<g-link href="/email-marketing/" class="box box-shadow h-100">
 							<g-image src="@/assets/images/components/small-38.png" width="160" рeight="96" fit="contain" background="#fff"  alt="Триггерные email-кампании для удержания и возвращения клиентов" />
 							<p class="mb-0">
 								Триггерные email-кампании для удержания и&nbsp;возвращения клиентов

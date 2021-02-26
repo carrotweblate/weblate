@@ -171,7 +171,7 @@
 			</b-row>
 			<b-row>
 				<b-col cols="6" lg="4">
-					<g-link to="/pop-up/" class="collect__box box text-center p-4">
+					<g-link href="/pop-up/" class="collect__box box text-center p-4">
 						<p>
 							Поп-ап окна
 						</p>
@@ -179,7 +179,7 @@
 					</g-link>
 				</b-col>
 				<b-col cols="6" lg="4">
-					<g-link to="/online-consultant/" class="collect__box box text-center p-4">
+					<g-link href="/online-consultant/" class="collect__box box text-center p-4">
 						<p>
 							Онлайн-чат на&nbsp;сайте
 						</p>
@@ -187,7 +187,7 @@
 					</g-link>
 				</b-col>
 				<b-col cols="6" lg="4">
-					<g-link to="/email-marketing/" class="collect__box box text-center p-4">
+					<g-link href="/email-marketing/" class="collect__box box text-center p-4">
 						<p>
 							Email-рассылка
 						</p>
@@ -195,7 +195,7 @@
 					</g-link>
 				</b-col>
 				<b-col cols="6" lg="4">
-					<g-link to="/chatbot/" class="collect__box box text-center p-4">
+					<g-link href="/chatbot/" class="collect__box box text-center p-4">
 						<p>
 							Чат-бот
 						</p>
