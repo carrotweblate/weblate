@@ -17,7 +17,7 @@
 				node {
 					title
 					slug
-					databaseId
+					id
 					categories {
 						edges {
 							node {

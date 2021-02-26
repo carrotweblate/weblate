@@ -74,34 +74,24 @@ module.exports = function (api) {
 	// 	})
 	// })
 
-	// //Wordpress
+	//Wordpress
 	api.createPages(async ({ graphql, createPage }) => {
 		const { data } = await graphql(`{
 			allSettings {
 				readingSettingsPostsPerPage
 			}
-			posts(where: { orderby: { field: DATE, order: DESC } }, first: 200) {
+			posts(where: { orderby: { field: DATE, order: DESC } }, first: 999) {
 				edges {
 					node {
-						databaseId
+						id
 						slug
-						title
-						content
-						seo {
-							canonical
-							title
-							metaDesc
-							opengraphImage {
-								mediaItemUrl
-							}
-						}
 					}
 				}
 			}
 			categories {
 				edges {
 					node {
-						databaseId
+						id
 						slug
 						name
 					}
@@ -133,17 +123,6 @@ module.exports = function (api) {
 			createPage({
 				path: `/blogtest/${node.slug}/`,
 				component: './src/templates/Post.vue',
-				context: {
-					databaseId: node.databaseId,
-					slug: node.slug,
-					content: node.content,
-					seo: {
-						canonical: node.seo.canonical,
-						title: node.seo.title,
-						description: node.seo.metaDesc,
-						cover: node.seo.opengraphImage.mediaItemUrl,
-					}
-				}
 			})
 		})
 
@@ -154,7 +133,7 @@ module.exports = function (api) {
 			path: `/blogtest/${node.slug}`,
 			component: './src/templates/CategoriesArchive.vue',
 				context: {
-					databaseId: node.databaseId,
+					id: node.id,
 					name: node.name
 				}
 			})

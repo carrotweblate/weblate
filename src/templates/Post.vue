@@ -34,7 +34,7 @@
 
 			<!-- Текст статьи -->
 			<b-row>
-				<b-col col xl="8" class="font20px post__text" v-html="$context.content" />
+				<b-col col xl="8" class="font20px post__text" v-html="$page.post.content" />
 				<b-col col cols="4" class="post__info d-none d-xl-block">
 					<div class="post__info__contents">
 						Содержание:
@@ -72,9 +72,10 @@
 
 
 <page-query>
-	query Post ($databaseId: ID!){
-		post(idType: DATABASE_ID, id: $databaseId) {
+	query Post ($id: ID!){
+		post(id: $id) {
 			title
+			content
 			featuredImage {
 				node {
 					mediaItemUrl
@@ -91,46 +92,6 @@
 	import BannerSobirayte from '~/components/BannerSobirayte/BannerSobirayte.vue'
 
 	export default {
-		//Делаем в HEAD
-		metaInfo() {
-			return {
-				title: this.$context.seo.title,
-				meta: [
-					{
-						key: 'description',
-						name: 'description',
-						content: this.$context.description
-					},
-					{
-						key: 'og:url',
-						property: "og:url",
-						content: 'https://www.carrotquest.io/blog/' + this.$context.slug
-					},
-					{
-						key: "og:title",
-						property: "og:title",
-						content: this.$context.title
-					},
-					{
-						key: "og:description",
-						property: "og:description",
-						content: this.$context.description
-					},
-					{	
-						key: "og:image",
-						property: "og:image",
-						content: this.$context.cover
-					},
-				],
-				link: [
-					{
-						key: "canonical",
-						rel: 'canonical',
-						href: 'https://www.carrotquest.io/' + this.$context.slug
-					}
-				]
-			}
-		},
 		components: {
 			VideoRegistration,
 			BannerSobirayte

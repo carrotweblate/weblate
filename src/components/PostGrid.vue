@@ -1,7 +1,7 @@
 <template>
 	
 	<b-row>
-		<Card v-for="{ node } in posts" :key="node.databaseId" :node="node" />
+		<Card v-for="{ node } in posts" :key="node.id" :node="node" />
 	</b-row>
 
 </template>

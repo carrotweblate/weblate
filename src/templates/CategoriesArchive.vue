@@ -13,14 +13,14 @@
 </template>
 
 <page-query>
-	query Categories($databaseId: Int){
-		posts(where: {categoryId: $databaseId}, first: 100) {
+	query Categories($id: Int){
+		posts(where: {categoryId: $id}, first: 100) {
 			edges {
 			node {
 				title
 				slug
 				id
-				databaseId
+				id
 				categories {
 					edges {
 						node {
