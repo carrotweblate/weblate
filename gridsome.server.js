@@ -208,29 +208,23 @@ module.exports = function (api) {
 	// API Wordpress - создаём Посты
 	api.loadSource(async actions => {
 		const { data } = await axios.get(
-			'https://www.carrotquest.io/blog/wp-json/wp/v2/posts?_fields=id,slug,title,date,excerpt,content,author,categories,featured_media&per_page=999'
+			'https://www.carrotquest.io/blog/wp-json/wp/v2/posts?&per_page=999'
 		)
 		// Данные для вывода статей
 		const collection = actions.addCollection('post')
 		for (const item of data) {
-			const { data } = await axios.get(
-				'https://www.carrotquest.io/blog/wp-json/wp/v2/media/' + item.featured_media
-			)
 			collection.addNode({
 				id: item.id,
 				slug: item.slug,
 				title: item.title.rendered,
 				date: item.date,
 				categories: item.categories,
-				featured_media: data.media_details
+				featured_media: item.featured_media_medium
 			})
 		}
 		// Делаем страницы статей
 		api.createManagedPages(async ({ createPage }) => {
 			for (const item of data) {
-				const { data } = await axios.get(
-					'https://www.carrotquest.io/blog/wp-json/wp/v2/media/' + item.featured_media
-				)
 				createPage({
 					path: `/blogtest/${item.slug}`,
 					component: './src/templates/Post.vue',
@@ -244,7 +238,6 @@ module.exports = function (api) {
 						category: item.categories,
 						
 						//Тело статьи
-						featured_media: data.media_details,
 						title: item.title.rendered,
 						description: item.excerpt.rendered,
 						content: item.content.rendered

@@ -26,11 +26,11 @@
 			</b-row>
 
 			<!-- Изображение записи -->
-			<b-row>
+			<!-- <b-row>
 				<b-col col cols="12" class="post__image mt-4 mb-5">
 					<img :src="$context.featured_media.sizes.large.source_url" />
 				</b-col>
-			</b-row>
+			</b-row> -->
 
 			<!-- Текст статьи -->
 			<b-row>

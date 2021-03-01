@@ -11,9 +11,8 @@
 			</b-row>
 			<b-row>
 				<b-col v-for="{ node } in $page.allPost.edges" :key="node.id" md="6" lg="4" class="mb-5">
-					
 					<g-link :to="'/blogtest/' + node.slug + '/'">
-						<img :src="node.featured_media.sizes.medium.source_url" alt="" class="mw-100 mb-3">
+						<img :src="node.featured_media" alt="" class="mw-100 mb-3">
 						<span v-html="node.title" />
 					</g-link>
 					<p class="mt-3 mb-0">
@@ -44,13 +43,7 @@
 					title
 					slug
 					categories
-					featured_media {
-						sizes {
-							medium {
-								source_url
-							}
-						}
-					}
+					featured_media
 				}
 			}
 			pageInfo {
