@@ -74,71 +74,74 @@ module.exports = function (api) {
 	// 	})
 	// })
 
-	//Wordpress
-	api.createPages(async ({ graphql, createPage }) => {
-		const { data } = await graphql(`{
-			allSettings {
-				readingSettingsPostsPerPage
-			}
-			posts(where: { orderby: { field: DATE, order: DESC } }, first: 999) {
-				edges {
-					node {
-						id
-						slug
-					}
-				}
-			}
-			categories {
-				edges {
-					node {
-						id
-						slug
-						name
-					}
-				}
-			}
-		}`)
-		const perPage = data.allSettings.readingSettingsPostsPerPage;
-		const totalNumberOfPosts = data.posts.edges.length;
-		const numberOfPagesForPagination = Math.ceil(totalNumberOfPosts / perPage);
+	// //Wordpress
+	// api.createPages(async ({ graphql, createPage }) => {
+	// 	const { data } = await graphql(`{
+	// 		allSettings {
+	// 			readingSettingsPostsPerPage
+	// 		}
+	// 		posts(where: { orderby: { field: DATE, order: DESC } }, first: 100) {
+	// 			edges {
+	// 				node {
+	// 					id
+	// 					slug
+	// 				}
+	// 			}
+	// 		}
+	// 		categories {
+	// 			edges {
+	// 				node {
+	// 					id
+	// 					slug
+	// 					name
+	// 				}
+	// 			}
+	// 		}
+	// 	}`)
+	// 	const perPage = data.allSettings.readingSettingsPostsPerPage;
+	// 	const totalNumberOfPosts = data.posts.edges.length;
+	// 	const numberOfPagesForPagination = Math.ceil(totalNumberOfPosts / perPage);
 		
-		// Pagination 
-		for (let i = 0; i < numberOfPagesForPagination; i++) {
-			createPage({
-				path: (i === 0) ? `/blogtest/` : `/blogtest/page/${i + 1}/`,
-				component: './src/templates/PostsArchive.vue',
-				context: {
-					offset: parseInt(i * perPage),
-					perPage: parseInt(perPage),
-					pageInfo: {
-						currentPage: parseInt(i + 1),
-						total: parseInt(totalNumberOfPosts),
-					}
-				}
-			})
-		}
+	// 	// Pagination 
+	// 	for (let i = 0; i < numberOfPagesForPagination; i++) {
+	// 		createPage({
+	// 			path: (i === 0) ? `/blogtest/` : `/blogtest/page/${i + 1}/`,
+	// 			component: './src/templates/PostsArchive.vue',
+	// 			context: {
+	// 				offset: parseInt(i * perPage),
+	// 				perPage: parseInt(perPage),
+	// 				pageInfo: {
+	// 					currentPage: parseInt(i + 1),
+	// 					total: parseInt(totalNumberOfPosts),
+	// 				}
+	// 			}
+	// 		})
+	// 	}
 
-		// Single Post 
-		data.posts.edges.forEach(({ node }) => {
-			createPage({
-				path: `/blogtest/${node.slug}/`,
-				component: './src/templates/Post.vue',
-			})
-		})
+	// 	// Single Post 
+	// 	data.posts.edges.forEach(({ node }) => {
+	// 		createPage({
+	// 			path: `/blogtest/${node.slug}/`,
+	// 			component: './src/templates/Post.vue',
+	// 			context: {
+	// 				id: node.id,
+	// 			}
+	// 		})
+	// 	})
 
-		// Categories Pages
-		data.categories.edges.forEach(({ node }) => {
-			console.log(`Creating Category Page: /blogtest/${node.slug}/`);
-			createPage({
-			path: `/blogtest/${node.slug}`,
-			component: './src/templates/CategoriesArchive.vue',
-				context: {
-					id: node.id,
-					name: node.name
-				}
-			})
-		})
-	})
+	// 	// Categories Pages
+	// 	data.categories.edges.forEach(({ node }) => {
+	// 		console.log(`Creating Category Page: /blogtest/${node.slug}/`);
+	// 		createPage({
+	// 		path: `/blogtest/${node.slug}`,
+	// 		component: './src/templates/CategoriesArchive.vue',
+	// 			context: {
+	// 				id: node.id,
+	// 				name: node.name
+	// 			}
+	// 		})
+	// 	})
+	// })
 
 	// //API from Wordpress: Список постов
 	// api.createPages(async ({ graphql, createPage }) =>{
@@ -201,6 +204,84 @@ module.exports = function (api) {
 	// 		})
 	// 	})
 	// })
+
+	// API Wordpress - создаём Посты
+	api.loadSource(async actions => {
+		const { data } = await axios.get(
+			'https://www.carrotquest.io/blog/wp-json/wp/v2/posts?_fields=id,slug,title,date,excerpt,content,author,categories,featured_media&per_page=999'
+		)
+		// Данные для вывода статей
+		const collection = actions.addCollection('post')
+		for (const item of data) {
+			const { data } = await axios.get(
+				'https://www.carrotquest.io/blog/wp-json/wp/v2/media/' + item.featured_media
+			)
+			collection.addNode({
+				id: item.id,
+				slug: item.slug,
+				title: item.title.rendered,
+				date: item.date,
+				categories: item.categories,
+				featured_media: data.media_details
+			})
+		}
+		// Делаем страницы статей
+		api.createManagedPages(async ({ createPage }) => {
+			for (const item of data) {
+				const { data } = await axios.get(
+					'https://www.carrotquest.io/blog/wp-json/wp/v2/media/' + item.featured_media
+				)
+				createPage({
+					path: `/blogtest/${item.slug}`,
+					component: './src/templates/Post.vue',
+					context: {
+						id: item.id,
+						slug: item.slug,
+						
+						//Информация
+						author: item.author,
+						date: item.date,
+						category: item.categories,
+						
+						//Тело статьи
+						featured_media: data.media_details,
+						title: item.title.rendered,
+						description: item.excerpt.rendered,
+						content: item.content.rendered
+					}
+				})
+			}
+		})
+	})
+
+	// API Wordpress - создаём Категории
+	api.loadSource(async actions => {
+		const { data } = await axios.get(
+			'https://www.carrotquest.io/blog/wp-json/wp/v2/categories?_fields=id,name,slug&per_page=50'
+		)
+		// Данные для вывода категорий
+		const collection = actions.addCollection('categories')
+		for (const item of data) {
+			collection.addNode({
+				id: item.id,
+				slug: item.slug,
+				title: item.name
+			})
+		}
+		// Делаем страницы категорий
+		api.createManagedPages(async ({ createPage }) => {
+			for (const item of data) {
+				createPage({
+					path: `/${item.slug}/`,
+					component: './src/templates/Category.vue',
+					context: {
+						id: item.id,
+						ids: [item.id],
+					}
+				})
+			}
+		})
+	})
   
 	api.loadSource(({ addCollection }) => {
 	// Use the Data Store API here: https://gridsome.org/docs/data-store-api/

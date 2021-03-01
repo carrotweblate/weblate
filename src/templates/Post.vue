@@ -7,7 +7,7 @@
 				<b-col>
 					<b-breadcrumb class="font20px d-none d-md-flex">
 						<b-breadcrumb-item href="/">Главная</b-breadcrumb-item>
-						<b-breadcrumb-item href="/blogtest/">Блог</b-breadcrumb-item>
+						<b-breadcrumb-item href="/blog/">Блог</b-breadcrumb-item>
 						<b-breadcrumb-item :href="$context.cslug" :text="$context.category" />
 					</b-breadcrumb>
 				</b-col>
@@ -16,10 +16,10 @@
 			<!-- Заголовок и описание -->
 			<b-row>
 				<b-col col xl="9">
-					<h1 class="post__title" v-html="$page.post.title" />
+					<h1 class="post__title" v-html="$context.title" />
 					<div class="font20px lightgrey-text my-4">
-						<span class="mr-5">Время чтения: {{ $context.time }}</span>
-						<span>21.09.2020</span>
+						<span class="mr-5">Время чтения: {{ Math.ceil($context.content.length/1500) }} мин.</span>
+						<span v-html="$context.date" />
 					</div>
 					<div class="post__description font24px" v-html="$context.description" />
 				</b-col>
@@ -28,17 +28,17 @@
 			<!-- Изображение записи -->
 			<b-row>
 				<b-col col cols="12" class="post__image mt-4 mb-5">
-					<img :src="$page.post.featuredImage.node.mediaItemUrl" />
+					<img :src="$context.featured_media.sizes.large.source_url" />
 				</b-col>
 			</b-row>
 
 			<!-- Текст статьи -->
 			<b-row>
-				<b-col col xl="8" class="font20px post__text" v-html="$page.post.content" />
+				<b-col col xl="8" class="font20px post__text" v-html="$context.content" />
 				<b-col col cols="4" class="post__info d-none d-xl-block">
 					<div class="post__info__contents">
 						Содержание:
-						<div class="mt-4" v-html="$page.post.contents" />
+						<div class="mt-4" v-html="$context.contents" />
 					</div>
 					<div class="post__authors" v-html="$context.author" />
 				</b-col>
@@ -69,21 +69,6 @@
 
 	</Layout>
 </template>
-
-
-<page-query>
-	query Post ($id: ID!){
-		post(id: $id) {
-			title
-			content
-			featuredImage {
-				node {
-					mediaItemUrl
-				}
-			}
-		}
-	}
-</page-query>
 
 
 <script>
