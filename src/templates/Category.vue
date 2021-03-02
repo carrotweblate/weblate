@@ -8,15 +8,10 @@
 				</b-col>
 			</b-row>
 			<b-row>
-				<b-col v-for="{ node } in $page.allPost.edges" :key="node.id" md="6" lg="4" class="mb-5">
-					<g-link :to="'/blogtest/' + node.slug + '/'">
-						<img :src="node.featured_media" alt="" class="mw-100 mb-3">
-						<span v-html="node.title" />
-					</g-link>
-				</b-col>
+				<PostCard v-for="{ node } in $page.allPost.edges" :key="node.id" :node="node" />
 			</b-row>
 			<b-row>
-				<b-col>
+				<b-col class="Pagination">
 					<Pager :info="$page.allPost.pageInfo"/>
 				</b-col>
 			</b-row>
@@ -30,7 +25,7 @@
 		categories(id: $id) {
 			title
 		}
-		allPost (page: $page, perPage: 9, filter: { categories: { containsAny: $ids }}) @paginate {
+		allPost (page: $page, perPage: 12, filter: { categories: { containsAny: $ids }}) @paginate {
 			edges {
 				node {
 					title
@@ -48,10 +43,12 @@
 </page-query>
 
 <script>
+	import PostCard from '~/components/PostCard.vue'
 	import { Pager } from 'gridsome'
 
 	export default {
 		components: {
+			PostCard,
 			Pager
 		},
 		data() {

@@ -1,7 +1,7 @@
 //Колонки
-$container-max-widths: (
-  xl: 1320px
-);
+// $container-max-widths: (
+//   xl: 1320px
+// );
 $grid-gutter-width: 2.5rem;
 
 //Оформление кнопок и ссылок
@@ -531,4 +531,25 @@ footer {
 		}
 	}
 
+}
+
+
+//Pagination
+.Pagination {
+	display: flex;
+	justify-content: center;
+	a {
+		display: inline-block;
+		width: 36px;
+		text-align: center;
+		margin: 4px;
+		padding: 5px 0;
+		color: #000;
+		border: 1px solid $primary;
+		border-radius: 50%;
+	}
+	.active {
+		color: #fff;
+		background-color: $primary;
+	}
 }

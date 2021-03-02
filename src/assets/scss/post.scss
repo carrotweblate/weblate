@@ -9,6 +9,7 @@
 	//Обложка
 	&__image img {
 		border-radius: 5px;
+		width: 100%;
 		max-width: 100%;
 	}
 
@@ -118,7 +119,7 @@
 			}
 		}
 		.alignwide {
-			img , figcaption {
+			img , figcaption , .overflow {
 				@media (min-width: 1200px) { max-width: 1100px; }
 			}
 			table {

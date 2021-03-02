@@ -7,8 +7,10 @@
 				<b-col>
 					<b-breadcrumb class="font20px d-none d-md-flex">
 						<b-breadcrumb-item href="/">Главная</b-breadcrumb-item>
-						<b-breadcrumb-item href="/blog/">Блог</b-breadcrumb-item>
-						<b-breadcrumb-item :href="$context.cslug" :text="$context.category" />
+						<b-breadcrumb-item href="/blogtest/">Блог</b-breadcrumb-item>
+						<template v-for="{ node } in $page.allCategories.edges">
+							<b-breadcrumb-item  v-if="$context.category[0] == node.id" :href="'/blogtest/' + node.slug + '/'" :text="node.title" :key="node.id" />
+						</template>
 					</b-breadcrumb>
 				</b-col>
 			</b-row>
@@ -26,21 +28,31 @@
 			</b-row>
 
 			<!-- Изображение записи -->
-			<!-- <b-row>
+			<b-row>
 				<b-col col cols="12" class="post__image mt-4 mb-5">
-					<img :src="$context.featured_media.sizes.large.source_url" />
+					<img :src="$context.featured_media" />
 				</b-col>
-			</b-row> -->
+			</b-row>
 
 			<!-- Текст статьи -->
 			<b-row>
 				<b-col col xl="8" class="font20px post__text" v-html="$context.content" />
 				<b-col col cols="4" class="post__info d-none d-xl-block">
-					<div class="post__info__contents">
+					<div v-if="$context.contents" class="post__info__contents">
 						Содержание:
 						<div class="mt-4" v-html="$context.contents" />
 					</div>
-					<div class="post__authors" v-html="$context.author" />
+					<!-- Автор -->
+					<template v-for="{ node } in $page.allAuthors.edges">
+						<div v-if="$context.author == node.id" class="post__authors" :key="node.id">
+							<img :src="node.avatar._96" alt="">
+							<p>
+								<b v-text="node.name" />
+								<br>
+								<span class="grey-text" v-text="node.description" />
+							</p>
+						</div>
+					</template>
 				</b-col>
 			</b-row>
 
@@ -71,6 +83,33 @@
 </template>
 
 
+<page-query>
+	query post {
+		allCategories {
+			edges {
+				node {
+					id
+					title
+					slug
+				}
+			}
+		}
+		allAuthors {
+			edges {
+				node {
+					id
+					name
+					description
+					avatar {
+						_96
+					}
+				}
+			}
+		}
+	}
+</page-query>
+
+
 <script>
 	import '~/assets/scss/post.scss'
 	import VideoRegistration from '~/components/VideoRegistration.vue'
@@ -80,6 +119,46 @@
 		components: {
 			VideoRegistration,
 			BannerSobirayte
+		},
+		//Делаем в HEAD
+		metaInfo() {
+			return {
+				title: this.$context.seo.title,
+				meta: [
+					{
+						key: 'description',
+						name: 'description',
+						content: this.$context.seo.description
+					},
+					{
+						key: 'og:url',
+						property: 'og:url',
+						content: 'https://www.carrotquest.io/' + this.$context.slug + '/'
+					},
+					{
+						key: 'og:title',
+						property: 'og:title',
+						content: this.$context.seo.title
+					},
+					{
+						key: 'og:description',
+						property: 'og:description',
+						content: this.$context.seo.description
+					},
+					{	
+						key: 'og:image',
+						property: 'og:image',
+						content: this.$context.seo.cover
+					},
+				],
+				link: [
+					{
+						key: 'canonical',
+						rel: 'canonical',
+						href: 'https://www.carrotquest.io/' + this.$context.slug + '/'
+					}
+				]
+			}
 		},
 	}	
 </script>

@@ -13,14 +13,14 @@ module.exports = {
 
 	plugins: [
 		//GTM
-		// {
-		// 	use: 'gridsome-plugin-gtm',
-		// 	options: {
-		// 		id: 'GTM-PHNG63V',
-		// 		enabled: true,
-		// 		debug: false
-		// 	}
-		// },
+		{
+			use: 'gridsome-plugin-gtm',
+			options: {
+				id: 'GTM-PHNG63V',
+				enabled: true,
+				debug: false
+			}
+		},
 		//PWA
 		{
 			use: 'gridsome-plugin-pwa',
@@ -57,47 +57,7 @@ module.exports = {
 				height: 900
 			}
 		},
-		// //Подключаемся к Блогу
-		// {
-		// 	use: 'gridsome-source-graphql',
-		// 	options: {
-		// 		url: 'https://www.carrotquest.io/blog/graphql',
-		// 		fieldName: 'wp',
-		// 		typeName: 'WordPress',
-		// 		headers: {
-		// 			'Content-Type': 'application/json',
-		// 			Accept: 'application/json'
-		// 		},
-		// 	}
-		// },
-		// {
-		// 	use: '@noxify/gridsome-plugin-remote-image',
-		// 	options: {
-		// 		'typeName' : 'WordPress',
-		// 		'sourceField': 'sourceUrl',
-		// 		'targetField': 'downloadedSrc',
-		// 		'targetPath': './src/assets/remoteImages'
-		// 	}
-		// },
-		// {
-		// 	use: 'gridsome-source-wordpress',
-		// 	options: {
-		// 		baseUrl: 'https://carrotquest.io/blog/', // required
-		// 		apiBase: 'wp-json',
-		// 		typeName: 'WordPress',
-		// 		perPage: 100,
-		// 		concurrent: 10,
-		// 		splitPostsIntoFragments: false, // default false
-		// 		downloadRemoteImagesFromPosts: false, // default false
-		// 		downloadRemoteFeaturedImages: true, // default false
-		// 		downloadACFImages: true, // default false
-		// 	}
-		// }
 	],
-	// templates: {
-	// 	WordPressCategory: '/blog/:slug',
-	// 	WordPressPost: '/blog/:slug',
-	// },
 	
 	// chainWebpack: config => {
 		// config.resolve.alias.set('@images', '@/assets/images')
