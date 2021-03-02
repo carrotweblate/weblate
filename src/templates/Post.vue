@@ -114,6 +114,7 @@
 	import '~/assets/scss/post.scss'
 	import VideoRegistration from '~/components/VideoRegistration.vue'
 	import BannerSobirayte from '~/components/BannerSobirayte/BannerSobirayte.vue'
+	import axios from 'axios'
 
 	export default {
 		components: {
@@ -160,5 +161,16 @@
 				]
 			}
 		},
+		async mounted () {
+			try {
+				const results = await axios.get(
+					'https://www.carrotquest.io/blog/wp-json/wp/v2/posts/' + this.$context.id + '?_fields=content'
+				)
+				this.$context.content = results.data.content.rendered
+			} catch (error) {
+				console.log(error)
+			}
+		}
+
 	}	
 </script>
