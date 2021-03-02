@@ -23,7 +23,7 @@
 						<span class="mr-5">Время чтения: {{ Math.ceil($context.content.length/1500) }} мин.</span>
 						<span v-html="$context.date" />
 					</div>
-					<div class="post__description font24px" v-html="$context.description" />
+					<!-- <div class="post__description font24px" v-html="$context.description" /> -->
 				</b-col>
 			</b-row>
 
@@ -163,9 +163,8 @@
 		},
 		async mounted () {
 			try {
-				const results = await axios.get(
-					'https://www.carrotquest.io/blog/wp-json/wp/v2/posts/' + this.$context.id + '?_fields=content'
-				)
+				let url = 'https://www.carrotquest.io/blog/wp-json/wp/v2/posts/' + this.$context.id + '?_fields=content'
+				const results = await axios.get( url )
 				this.$context.content = results.data.content.rendered
 			} catch (error) {
 				console.log(error)
