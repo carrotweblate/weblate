@@ -18,7 +18,9 @@
 		"gridsome-source-graphql": "^1.0.2",
 		"gridsome-source-wordpress": "^0.4.13",
 		"node-sass": "^4.14.1",
+		"postscribe": "^2.0.8",
 		"sass-loader": "^10.0.1",
+		"typograf": "^6.11.3",
 		"vue-horizontal-list": "^1.2.0",
 		"vue-read-progress": "^1.0.4",
 		"webpack-bundle-analyzer": "^4.4.0"

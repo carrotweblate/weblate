@@ -115,6 +115,8 @@
 	import VideoRegistration from '~/components/VideoRegistration.vue'
 	import BannerSobirayte from '~/components/BannerSobirayte/BannerSobirayte.vue'
 	import axios from 'axios'
+	import Typograf from 'typograf'
+	import postscribe from 'postscribe'
 
 	export default {
 		components: {
@@ -161,11 +163,41 @@
 				]
 			}
 		},
+		beforeMount () {
+			//Типограф
+			const tp = new Typograf({locale: ['ru', 'en-US']});
+			tp.enableRule('common/nbsp/*');
+			this.$context.title = tp.execute(this.$context.title)
+		},
 		async mounted () {
+			const tp = new Typograf({locale: ['ru', 'en-US']});
+			tp.enableRule('common/nbsp/*');
 			try {
-				let url = 'https://www.carrotquest.io/blog/wp-json/wp/v2/posts/' + this.$context.id + '?_fields=content'
+				let routes = '' + location
+				let url = ''
+				if (routes.search('localhost') != -1) {
+					url = 'https://cors-anywhere.herokuapp.com/'
+				}
+				url = url + 'https://www.carrotquest.io/blog/wp-json/wp/v2/posts/' + this.$context.id + '?_fields=content'
 				const results = await axios.get( url )
-				this.$context.content = results.data.content.rendered
+
+				var pageHTML = results.data.content.rendered
+				//CDN для ресурсов
+				pageHTML = pageHTML.split('http://').join('https://')
+				pageHTML = pageHTML.split('https://www.carrotquest.io/blog/wp-content/uploads/').join('https://cdn-www.carrotquest.io/blog/wp-content/uploads/')
+				//Lazyload
+				pageHTML = pageHTML.split('<img src').join('<img loading="lazy" src')
+				//PRE
+				// pageHTML = pageHTML.split('<code><').join('<code>&lt;')
+				// pageHTML = pageHTML.split('></code>').join('&gt;</code>')
+				//Видео
+				pageHTML = pageHTML.split('<video ').join('<video autoplay loop muted playsinline ')
+				pageHTML = pageHTML.split('controls').join('')
+				//Carrot quest
+				pageHTML = pageHTML.split('Carrot quest').join('Carrot&nbsp;quest')
+
+				this.$context.content = pageHTML
+				this.$context.content = tp.execute(this.$context.content)
 			} catch (error) {
 				console.log(error)
 			}

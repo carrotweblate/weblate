@@ -1,6 +1,5 @@
 <template>
 	<ClientOnly>
-
 		<!-- Баннер с видео и регистрацией -->
 		<section class="VideoRegistration">
 			<b-container>
@@ -29,7 +28,6 @@
 				</b-row>
 			</b-container>
 		</section>
-
 	</ClientOnly>
 </template>
 
