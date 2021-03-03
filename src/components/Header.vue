@@ -223,7 +223,7 @@
 				},
 				{
 					title: 'Блог',
-					href: '/blogtest/'
+					href: '/blog/'
 				},
 				{
 					title: 'Партнерам',

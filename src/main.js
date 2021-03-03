@@ -10,7 +10,6 @@ import '~/assets/scss/app.scss'
 //Базовая разметка
 import DefaultLayout from '~/layouts/Default.vue'
 
-
 export default function(Vue, { head }) {
 
 	//Общая для всех страниц META
@@ -45,5 +44,4 @@ export default function(Vue, { head }) {
 			window.addEventListener('scroll', f)
 		}
 	})
-
 }

@@ -9,7 +9,6 @@
 		"explore": "gridsome explore"
 	},
 	"dependencies": {
-		"@gridsome/plugin-critical": "^0.2.0",
 		"axios": "^0.21.1",
 		"bootstrap-vue": "^2.17.3",
 		"gridsome": "^0.7.21",
@@ -18,9 +17,9 @@
 		"gridsome-source-graphql": "^1.0.2",
 		"gridsome-source-wordpress": "^0.4.13",
 		"node-sass": "^4.14.1",
-		"postscribe": "^2.0.8",
 		"sass-loader": "^10.0.1",
 		"typograf": "^6.11.3",
+		"vue-disqus": "^4.0.1",
 		"vue-horizontal-list": "^1.2.0",
 		"vue-read-progress": "^1.0.4",
 		"webpack-bundle-analyzer": "^4.4.0"

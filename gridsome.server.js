@@ -99,6 +99,9 @@ module.exports = function (api) {
 				pageHTML = pageHTML.split('https://www.carrotquest.io/blog/wp-content/uploads/').join('https://cdn-www.carrotquest.io/blog/wp-content/uploads/')
 				//Lazyload
 				pageHTML = pageHTML.split('<img src').join('<img loading="lazy" src')
+				//Видео
+				pageHTML = pageHTML.split('<video ').join('<video autoplay loop muted playsinline ')
+				pageHTML = pageHTML.split('controls').join('')
 				createPage({
 					path: `/blogtest/${item.slug}`,
 					component: './src/templates/Post.vue',
