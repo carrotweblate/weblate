@@ -38,11 +38,11 @@
 						</p>
 					</b-col>
 					<b-col lg="4" class="d-flex align-items-center">
-						<a href="/cases/">
+						<g-link to="/cases/">
 							<g-image src="@/assets/images/components/small-6.png" class="mr-4" alt="Более 60 написанных кейсов" width="176" />
-						</a>
+						</g-link>
 						<p class="mb-0">
-							Более <a href="/cases/">60&nbsp;написанных кейсов</a> с&nbsp;интернет&#8209;магазинами
+							Более <g-link to="/cases/">60&nbsp;написанных кейсов</g-link> с&nbsp;интернет&#8209;магазинами
 						</p>
 					</b-col>
 				</b-row>
@@ -65,9 +65,9 @@
 						</div>
 						<div class="stat__buble mb-4">
 							Добились ROI 1744% благодаря автоматизации воронки.
-							<a href="/blog/case-westfalika/">
+							<g-link to="/blog/case-westfalika/">
 								Кейс
-							</a>
+							</g-link>
 						</div>
 						<g-image src="/assets/images/logos/westfalika.svg" alt="westfalika" style="max-width: 102px;" /> 
 					</b-col>
@@ -86,9 +86,9 @@
 						</div>
 						<div class="stat__buble mb-4">
 							Увеличили конверсию в заказ в 2,5 раза. 
-							<a href="/blog/case_skyshop/">
+							<g-link to="/blog/case_skyshop/">
 								Кейс
-							</a>
+							</g-link>
 						</div>
 						<img src="/assets/images/logos/skyshop.svg" alt="Skyshop" style="max-width: 80px;"> 
 					</b-col>
@@ -301,7 +301,7 @@
 		data() {
 			return {
 				//Делаем в HEAD
-				metaTitle: 'Решение для интернет-магазинов: виджет чата, чат бот, поп-ап окна и триггерные email-компании',
+				metaTitle: 'Решение для интернет-магазинов: виджет чата, чат-бот, поп-ап окна и триггерные email-компании',
 				metaDescription: 'Сервисы Carrot quest для повышения продаж в E-commerce — получайте от трафика максимум, сократите количество брошенных корзин, собирайте данные о клиентах',
 				metaCanonical: 'https://www.carrotquest.io/ecommerce/',
 				metaImage: 'https://www.carrotquest.io/assets/images/cover/ecommerce.png',

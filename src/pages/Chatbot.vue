@@ -335,11 +335,11 @@
 				},
 				{
 					question: 'Как подключить лид-бота?',
-					answer: 'Если у&nbsp;вас на&nbsp;сайте установлен чат Carrot quest, дополнительного подключения чат-ботане&nbsp;требуется. Чтобы настроить чат-бота, вам не&nbsp;нужен программист, бот настраиваетсяне&nbsp;сложнее автосообщения.'
+					answer: 'Если у вас на сайте установлен чат Carrot quest, дополнительного подключения чат-бота не требуется. Чтобы настроить чат-бота, вам не нужен программист, бот настраивается не сложнее автосообщения.'
 				},
 				{
 					question: 'Сколько стоит лид-бот?',
-					answer: 'Чат бот подключается как дополнительный модуль к&nbsp;вашей основной подписке и&nbsp;стоит 2&nbsp;000&nbsp;₽ в&nbsp;месяц.'
+					answer: 'Чат-бот подключается как дополнительный модуль к&nbsp;вашей основной подписке и&nbsp;стоит 2&nbsp;000&nbsp;₽ в&nbsp;месяц.'
 				}
 			]"
 			:button="{
@@ -367,12 +367,12 @@
 					</g-link>
 				</b-col>
 				<b-col cols="6" lg="3">
-					<a href="/knowledge-base/" class="functions__box box text-center p-4">
+					<g-link to="/knowledge-base/" class="functions__box box text-center p-4">
 						<g-image src="@/assets/images/components/small-27.svg" height="158" alt="База знаний" />
 						<p class="mt-3 mb-0">
 							База знаний
 						</p>
-					</a>
+					</g-link>
 				</b-col>
 				<b-col cols="6" lg="3">
 					<g-link to="/lead-manager/" class="functions__box box text-center p-4">
@@ -399,20 +399,20 @@
 					</g-link>
 				</b-col>
 				<b-col cols="6" lg="3">
-					<a href="/sdk/" class="functions__box box text-center p-4">
+					<g-link to="/sdk/" class="functions__box box text-center p-4">
 						<g-image src="@/assets/images/components/small-31.svg" height="158" alt="SDK для iOS и Android" />
 						<p class="mt-3 mb-0">
 							SDK для iOS и&nbsp;Android
 						</p>
-					</a>
+					</g-link>
 				</b-col>
 				<b-col cols="6" lg="3">
-					<a href="/email-marketing/" class="functions__box box text-center p-4">
+					<g-link to="/email-marketing/" class="functions__box box text-center p-4">
 						<g-image src="@/assets/images/components/small-32.svg" height="158" alt="Email-рассылки" />
 						<p class="mt-3 mb-0">
 							Email-рассылки
 						</p>
-					</a>
+					</g-link>
 				</b-col>
 			</b-row>
 		</b-container>

@@ -4,7 +4,7 @@
 		<!-- Баннер с видео и регистрацией -->
 		<section class="BannerSobirayte">
 			<b-container>
-				<a href="/">
+				<g-link to="/">
 					<b-row class="align-items-center">
 						<b-col col-12 lg="6">
 							<g-image class="BannerSobirayte__bg" src="~/components/BannerSobirayte/bg.png" width="680" alt="Видео" />
@@ -17,7 +17,7 @@
 							</b-input-group>
 						</b-col>
 					</b-row>
-				</a>
+				</g-link>
 			</b-container>
 		</section>
 

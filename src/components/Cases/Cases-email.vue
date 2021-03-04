@@ -6,7 +6,7 @@
 			<b-row >
 				<b-col col-12 lg="9">
 					<div class="h2">
-						<a href="/cases/">Более 60 кейсов</a> в разных сферах бизнеса
+						<g-link to="/cases/">Более 60 кейсов</g-link> в разных сферах бизнеса
 					</div>
 				</b-col>
 			</b-row>
@@ -122,12 +122,12 @@
 							</b-row>
 						</b-tab>
 						<template #tabs-end>
-							<g-link to="/cases/" class="nav-item-all d-none d-xl-block">Посмотрите все кейсы</g-link>
+							<a href="/cases/" class="nav-item-all d-none d-xl-block">Посмотрите все кейсы</a>
 						</template>
 					</b-tabs>
-					<g-link to="/cases/" class="d-xl-none">
+					<a href="/cases/" class="d-xl-none">
 						Посмотрите все кейсы
-					</g-link>
+					</a>
 				</b-col>
 			</b-row>
 		</b-container>

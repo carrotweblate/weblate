@@ -97,23 +97,23 @@
 				carrotquest.identify([
 					{op: 'update_or_create', key: 'Сайт', value: this.site }]
 				)
-				// if (!!this.site.search('http')) {
-				// 	if (!this.site.search('http://')) {
-				// 		this.openUrl = this.site.replace('http://','https://')
-				// 	} else {
-				// 		this.openUrl = 'https://' + this.site
-				// 	}
-				// }
-				// this.openUrl = 'https://api.apiflash.com/v1/urltoimage?access_key=f883a85678514489bf673efe63f814fe&format=jpeg&full_page=true&width=1200&quality=80&url=' + this.site
-				// let iframe = document.createElement('iframe') 
-				// iframe.id = 'fit__site__iframe'
-				// iframe.src = this.openUrl
-				// iframe.style.width = '10px'
-				// iframe.style.height = '10px'
-				// iframe.style.opacity = '0'
-				// document.getElementById('fit__silent').appendChild(iframe)
-				// console.log(this.openUrl)
-				// this.site = ''
+				if (!!this.site.search('http')) {
+					if (!this.site.search('http://')) {
+						this.openUrl = this.site.replace('http://','https://')
+					} else {
+						this.openUrl = 'https://' + this.site
+					}
+				}
+				this.openUrl = 'https://api.apiflash.com/v1/urltoimage?access_key=f883a85678514489bf673efe63f814fe&format=jpeg&full_page=true&width=1200&quality=80&url=' + this.site
+				let iframe = document.createElement('iframe') 
+				iframe.id = 'fit__site__iframe'
+				iframe.src = this.openUrl
+				iframe.style.width = '10px'
+				iframe.style.height = '10px'
+				iframe.style.opacity = '0'
+				document.getElementById('fit__silent').appendChild(iframe)
+				console.log(this.openUrl)
+				this.site = ''
 			}
 		},
 		created: function () {

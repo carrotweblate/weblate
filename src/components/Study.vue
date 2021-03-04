@@ -11,10 +11,10 @@
 			</b-row>
 			<b-row>
 				<b-col lg="6" class="Study__videocourse">
-					<a href="/videocourse-online-sales/" class="box box-shadow font20px">
+					<g-link to="/videocourse-online-sales/" class="box box-shadow font20px">
 						<span>Видеокурс по продукту</span>
 						<g-image src="@/assets/images/components/study-videocourse.png" width="450" alt="Видеокурс по продукту" />
-					</a>
+					</g-link>
 				</b-col>
 				<b-col lg="6" class="Study__help">
 					<a href="https://help.carrotquest.io/" class="box box-shadow font20px">
@@ -23,16 +23,16 @@
 					</a>
 				</b-col>
 				<b-col lg="6" class="Study__library">
-					<a href="/library/" class="box box-shadow font20px">
+					<g-link to="/library/" class="box box-shadow font20px">
 						<span>Библиотека с полезными материалами и книгами</span>
 						<g-image src="@/assets/images/components/study-library.png" width="470" alt="Библиотека с полезными материалами и книгами" />
-					</a>
+					</g-link>
 				</b-col>
 				<b-col lg="6" class="Study__cases">
-					<a href="/cases/" class="box box-shadow font20px">
+					<g-link to="/cases/" class="box box-shadow font20px">
 						<span>Кейсы по использованию продукта</span>
 						<g-image src="@/assets/images/components/study-cases.png" width="400" alt="Кейсы по использованию продукта" />
-					</a>
+					</g-link>
 				</b-col>
 			</b-row>
 		</b-container>

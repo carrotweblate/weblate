@@ -243,9 +243,9 @@
 								<div class="case__box">
 									<p>
 										«С помощью Carrot quest мы нашли слабые стороны интернет-магазина SkyShop и пересмотрели способы работы с пользователем. В итоге увеличили конверсию в продажи на сайте в 2,5 раза» 
-										<a href="/blog/case_skyshop/">
+										<g-link to="/blog/case_skyshop/">
 											Читать кейс
-										</a>
+										</g-link>
 									</p>
 								</div>
 								<div class="d-flex">

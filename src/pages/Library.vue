@@ -135,7 +135,7 @@
 					</b-col>
 
 					<b-col lg="6" class="course">
-						<a href="/marketing-course/" class="courses__wrapper d-block">
+						<g-link to="/marketing-course/" class="courses__wrapper d-block">
 							<g-image src="~/assets/images/library/courses_prodagi.png" alt="Маркетинг на сайте: как продать в 2 раза больше, не увеличивая трафик" />
 							<div class="box">
 								<div class="h5">
@@ -145,11 +145,11 @@
 									Этот курс — выжимка опыта, который мы получили за 5 лет внедрения автоворонок для 400 сайтов. Все рекомендации можно внедрить за неделю. Разработчик не понадобится 🙂
 								</p>
 							</div>
-						</a>
+						</g-link>
 					</b-col>
 
 					<b-col lg="6" class="course">
-						<a href="/kurs-email-marketing/" class="courses__wrapper d-block">
+						<g-link to="/kurs-email-marketing/" class="courses__wrapper d-block">
 							<g-image src="~/assets/images/library/courses_email.png" alt="Email-маркетинг за 8 шагов" />
 							<div class="box">
 								<div class="h5">
@@ -160,7 +160,7 @@
 									Вы узнаете, как настраивать коммуникацию с клиентами с помощью поп-апов, емейлов и онлайн-чата.
 								</p>
 							</div>
-						</a>
+						</g-link>
 					</b-col>
 				</b-row>
 			</b-container>
