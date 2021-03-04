@@ -1,6 +1,5 @@
 <template>
 	<ClientOnly>
-
 		<!-- Образовательные штучки -->
 		<b-container class="Study">
 			<b-row >
@@ -37,7 +36,6 @@
 				</b-col>
 			</b-row>
 		</b-container>
-
 	</ClientOnly>
 </template>
 

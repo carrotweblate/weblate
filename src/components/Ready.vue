@@ -1,57 +1,57 @@
 <template>
-
-	<!-- Готовые решения -->
-	<section class="ready">
-		<b-container>
-			<b-row>
-				<b-col lg="9" xl="7">
-					<div class="h1">Готовые решения для разных типов бизнеса</div>
-				</b-col>
-			</b-row>
-			<b-row>
-				<b-col lg="4">
-					<div class="box h-100">
-						<g-image src="@/assets/images/components/small-15.png" fit="contain" background="transparent" height="222" alt="Для интернет магазинов" class="mb-4" />
-						<div class="h5 mb-3">Для интернет-магазинов</div>
-						<ul>
-							<li>Увеличение количества лидов на&nbsp;том&nbsp;же трафике</li>
-							<li>Борьба с&nbsp;брошенными корзинами</li>
-							<li>Возвращение уходящих пользователей</li>
-							<li>Увеличение повторных продаж</li>
-						</ul>
-						<b-button href="/ecommerce/" variant="primary">Подробнее</b-button>
-					</div>
-				</b-col>
-				<b-col lg="4">
-					<div class="box h-100">
-						<g-image src="@/assets/images/components/small-24.png" fit="contain" background="transparent" height="222" alt="Для интернет сервисов (SaaS)" class="mb-4" />
-						<div class="h5 mb-3">Для онлайн-сервисов (SaaS)</div>
-						<ul>
-							<li>Увеличение количества лидов на&nbsp;том&nbsp;же трафике сайта</li>
-							<li>Организация поддержки пользователей</li>
-							<li>Вовлечение и&nbsp;удержание пользователей в&nbsp;продукте</li>
-							<li>Аналитика поведения пользователей в&nbsp;продукте и&nbsp;использования фичей</li>
-						</ul>
-						<b-button href="/saas/" variant="primary">Подробнее</b-button>
-					</div>
-				</b-col>
-				<b-col lg="4">
-					<div class="box h-100">
-						<g-image src="@/assets/images/components/small-25.png" fit="contain" background="transparent" height="222" alt="Для крупных компаний" class="mb-4" />
-						<div class="h5 mb-3">Для крупных компаний</div>
-						<ul>
-							<li>Весь сервис без ограничений</li>
-							<li>Подключим нашего эксперта</li>
-							<li>Поделимся экспертизой по&nbsp;автоматизации маркетинга и&nbsp;построению процесса тестирования гипотез</li>
-							<li>Запустим гипотезы на&nbsp;увеличение конверсии на&nbsp;вашем сайте (на&nbsp;сбор лидов, на&nbsp;удержание клиентов, на&nbsp;возвращение клиентов)</li>
-						</ul>
-						<b-button href="/introduction-carrotquest/" variant="primary">Подробнее</b-button>
-					</div>
-				</b-col>
-			</b-row>
-		</b-container>
-	</section>
-
+	<ClientOnly>
+		<!-- Готовые решения -->
+		<section class="ready">
+			<b-container>
+				<b-row>
+					<b-col lg="9" xl="7">
+						<div class="h1">Готовые решения для разных типов бизнеса</div>
+					</b-col>
+				</b-row>
+				<b-row>
+					<b-col lg="4">
+						<div class="box h-100">
+							<g-image src="@/assets/images/components/small-15.png" fit="contain" background="transparent" height="222" alt="Для интернет магазинов" class="mb-4" />
+							<div class="h5 mb-3">Для интернет-магазинов</div>
+							<ul>
+								<li>Увеличение количества лидов на&nbsp;том&nbsp;же трафике</li>
+								<li>Борьба с&nbsp;брошенными корзинами</li>
+								<li>Возвращение уходящих пользователей</li>
+								<li>Увеличение повторных продаж</li>
+							</ul>
+							<b-button href="/ecommerce/" variant="primary">Подробнее</b-button>
+						</div>
+					</b-col>
+					<b-col lg="4">
+						<div class="box h-100">
+							<g-image src="@/assets/images/components/small-24.png" fit="contain" background="transparent" height="222" alt="Для интернет сервисов (SaaS)" class="mb-4" />
+							<div class="h5 mb-3">Для онлайн-сервисов (SaaS)</div>
+							<ul>
+								<li>Увеличение количества лидов на&nbsp;том&nbsp;же трафике сайта</li>
+								<li>Организация поддержки пользователей</li>
+								<li>Вовлечение и&nbsp;удержание пользователей в&nbsp;продукте</li>
+								<li>Аналитика поведения пользователей в&nbsp;продукте и&nbsp;использования фичей</li>
+							</ul>
+							<b-button href="/saas/" variant="primary">Подробнее</b-button>
+						</div>
+					</b-col>
+					<b-col lg="4">
+						<div class="box h-100">
+							<g-image src="@/assets/images/components/small-25.png" fit="contain" background="transparent" height="222" alt="Для крупных компаний" class="mb-4" />
+							<div class="h5 mb-3">Для крупных компаний</div>
+							<ul>
+								<li>Весь сервис без ограничений</li>
+								<li>Подключим нашего эксперта</li>
+								<li>Поделимся экспертизой по&nbsp;автоматизации маркетинга и&nbsp;построению процесса тестирования гипотез</li>
+								<li>Запустим гипотезы на&nbsp;увеличение конверсии на&nbsp;вашем сайте (на&nbsp;сбор лидов, на&nbsp;удержание клиентов, на&nbsp;возвращение клиентов)</li>
+							</ul>
+							<b-button href="/introduction-carrotquest/" variant="primary">Подробнее</b-button>
+						</div>
+					</b-col>
+				</b-row>
+			</b-container>
+		</section>
+	</ClientOnly>
 </template>
 
 <style lang="scss">

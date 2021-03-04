@@ -1,0 +1,10 @@
+[[headers]]
+	for = "/*"
+	[headers.values]
+		Access-Control-Allow-Origin = "*"
+
+[[redirects]]
+	from = "/blog/"
+	to = "/blogtest/"
+	status = 301
+	force = true

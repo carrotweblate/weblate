@@ -73,6 +73,110 @@ module.exports = function (api) {
 			}
 		})
 	})
+
+	// API Wordpress - создаём Посты
+	api.loadSource(async actions => {
+		const { data } = await axios.get(
+			'https://www.carrotquest.io/blog/wp-json/wp/v2/posts?&per_page=999'
+		)
+		// Данные для вывода статей
+		const collection = actions.addCollection('post')
+		for (const item of data) {
+			collection.addNode({
+				id: item.id,
+				slug: item.slug,
+				title: item.title.rendered,
+				date: item.date,
+				categories: item.categories,
+				featured_media: item.featured_media_medium
+			})
+		}
+		// Делаем страницы статей
+		api.createManagedPages(async ({ createPage }) => {
+			for (const item of data) {
+				var pageHTML = item.content.rendered
+				//CDN для ресурсов
+				pageHTML = pageHTML.split('https://www.carrotquest.io/blog/wp-content/uploads/').join('https://cdn-www.carrotquest.io/blog/wp-content/uploads/')
+				//Lazyload
+				pageHTML = pageHTML.split('<img src').join('<img loading="lazy" src')
+				//Видео
+				pageHTML = pageHTML.split('<video ').join('<video autoplay loop muted playsinline ')
+				pageHTML = pageHTML.split('controls').join('')
+				createPage({
+					path: `/blogtest/${item.slug}`,
+					component: './src/templates/Post.vue',
+					context: {
+						id: item.id,
+						slug: item.slug,
+
+						//SEO
+						seo: {
+							title: item.yoast_title,
+							description: item.yoast_meta[4].content,
+							cover: item.yoast_meta[10].content
+						},
+						
+						//Информация
+						author: item.author,
+						date: item.formatted_date,
+						category: item.categories,
+						
+						//Тело статьи
+						featured_media: item.featured_media_large,
+						title: item.title.rendered,
+						description: item.excerpt.rendered,
+						content: pageHTML
+					}
+				})
+			}
+		})
+	})
+
+	// API Wordpress - создаём Категории
+	api.loadSource(async actions => {
+		const { data } = await axios.get(
+			'https://www.carrotquest.io/blog/wp-json/wp/v2/categories?_fields=id,name,slug&per_page=50'
+		)
+		// Данные для вывода категорий
+		const collection = actions.addCollection('categories')
+		for (const item of data) {
+			collection.addNode({
+				id: item.id,
+				slug: item.slug,
+				title: item.name
+			})
+		}
+		// Делаем страницы категорий
+		api.createManagedPages(async ({ createPage }) => {
+			for (const item of data) {
+				createPage({
+					path: `/blogtest/${item.slug}/`,
+					component: './src/templates/Category.vue',
+					context: {
+						id: item.id,
+						ids: [item.id],
+					}
+				})
+			}
+		})
+	})
+
+	// API Wordpress - создаём Авторов
+	api.loadSource(async actions => {
+		const { data } = await axios.get(
+			'https://www.carrotquest.io/blog/wp-json/wp/v2/users?_fields=id,name,description,link,avatar_urls&per_page=50'
+		)
+		// Данные для вывода категорий
+		const collection = actions.addCollection('authors')
+		for (const item of data) {
+			collection.addNode({
+				id: item.id,
+				name: item.name,
+				description: item.description,
+				avatar: item.avatar_urls
+			})
+		}
+	})
   
 	api.loadSource(({ addCollection }) => {
 	// Use the Data Store API here: https://gridsome.org/docs/data-store-api/

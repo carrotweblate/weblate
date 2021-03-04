@@ -1,6 +1,5 @@
 <template>
 	<ClientOnly>
-
 		<!-- Интеграции -->
 		<b-container class="Integrations outline-tabs">
 			<b-row >
@@ -90,7 +89,6 @@
 				</b-col>
 			</b-row>
 		</b-container>
-
 	</ClientOnly>
 </template>
 

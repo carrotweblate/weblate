@@ -1,4 +1,7 @@
 //Колонки
+// $container-max-widths: (
+//   xl: 1320px
+// );
 $grid-gutter-width: 2.5rem;
 
 //Оформление кнопок и ссылок
@@ -348,9 +351,15 @@ input[type=number]:focus,
 	padding: 0;
 	margin: 0;
 	background: transparent;
-
-	.breadcrumb-item + .breadcrumb-item::before {
-		content: "→" !important;
+	.breadcrumb-item:first-child {
+		list-style: none;
+	}
+	.breadcrumb-item:not(:first-child) {
+		margin-left: 2rem;
+		padding-left: 0.85rem;
+		&::marker {
+			content: "→";
+		}
 	}
 }
 
@@ -522,4 +531,25 @@ footer {
 		}
 	}
 
+}
+
+
+//Pagination
+.Pagination {
+	display: flex;
+	justify-content: center;
+	a {
+		display: inline-block;
+		width: 36px;
+		text-align: center;
+		margin: 4px;
+		padding: 5px 0;
+		color: #000;
+		border: 1px solid $primary;
+		border-radius: 50%;
+	}
+	.active {
+		color: #fff;
+		background-color: $primary;
+	}
 }

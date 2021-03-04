@@ -1,6 +1,6 @@
 <template>
 	<ClientOnly>
-
+		<!-- Балкон с картами -->
 		<div id="balcony"  class="balcony">
 			<b-container>
 				<span id="ad__close">×</span>
@@ -56,7 +56,6 @@
 				</b-row>
 			</b-container>
 		</div>
-
 	</ClientOnly>
 </template>
 

@@ -48,40 +48,14 @@ module.exports = {
             	appleMaskIconColor: '#ffffff',
 			}
 		},
-		//Critical CSS
-		{
-			use: '@gridsome/plugin-critical',
-			options: {
-				paths: ['/'],
-				width: 1300,
-				height: 900
-			}
-		},
-		// {
-		// 	use: 'gridsome-source-graphql',
-		// 	options: {
-		// 	url: 'https://www.carrotquest.io/blog/graphql',
-		// 		fieldName: 'wp',
-		// 		typeName: 'wpTypes',
-		// 	}
-		// },
-		// {
-		// 	use: '@noxify/gridsome-plugin-remote-image',
-		// 	options: {
-		// 		'typeName' : 'wpTypes',
-		// 		'sourceField': 'sourceUrl',
-		// 		'targetField': 'downloadedSrc',
-		// 		'targetPath': './src/assets/remoteImages'
-		// 	}
-		// },
 	],
 	
-	chainWebpack: config => {
+	// chainWebpack: config => {
 		// config.resolve.alias.set('@images', '@/assets/images')
 		
 		//Анализ размера билда
 		// config
 		// 	.plugin('BundleAnalyzerPlugin')
 		// 	.use(BundleAnalyzerPlugin, [{ analyzerMode: 'static' }])
-	}
+	// }
 }
