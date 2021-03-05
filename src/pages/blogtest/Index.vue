@@ -10,7 +10,7 @@
 				</b-col>
 			</b-row>
 			<b-row>
-				<PostCard v-for="{ node } in $page.allPost.edges" :key="node.id" :node="node" />
+				<PostCard v-for="{ node } in $page.allPost.edges" :key="node.id" :node="node" :categoryPage="false" />
 			</b-row>
 			<b-row>
 				<b-col class="Pagination">
