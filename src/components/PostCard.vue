@@ -1,17 +1,20 @@
 <template>
 	<b-col md="6" lg="4" class="post-card mb-5">
 		<g-link :to="'/blogtest/' + node.slug + '/'" class="post__box box-shadow box h-100 d-block">
-			<div class="post__box__pic mb-3" :style="'background-image: url(' + node.featured_media + ')'"></div>
+			<!-- Изображение -->
+			<div class="post__box__pic mb-3" :style="'background-image: url(' + node.featured_media + ')'" />
+			<!-- Категории -->
 			<div v-if="!categoryPage" class="post__box__categories px-3 mb-3">
 				<template v-for="edges in $page.allCategories.edges" >
 					<template v-if="node.categories.includes(Number(edges.node.id))">
-						<g-link :to="'/blogtest/' + edges.node.slug + '/'" :key="edges.node.id" class="grey-text text-uppercase font14px">
+						<span :key="edges.node.id" class="grey-text text-uppercase font14px">
 							{{ edges.node.title }}
-						</g-link>
+						</span>
 					</template>
 				</template>
 			</div>
-			<div class="post__box__title  px-3  pb-4" v-html="node.title"></div>
+			<!-- Заголовок -->
+			<div class="post__box__title  px-3  pb-4" v-html="node.title" />
 		</g-link>
 	</b-col>
 </template>
