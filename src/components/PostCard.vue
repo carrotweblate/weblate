@@ -1,6 +1,7 @@
 <template>
+	<g-link :to="'/blogtest/' + node.slug + '/'">
 		<b-col md="6" lg="4" class="post-card mb-5">
-			<g-link :to="'/blogtest/' + node.slug + '/'" class="post__box box-shadow box h-100">
+			<div class="post__box box-shadow box h-100">
 
 				<!-- Изображение -->
 				<div class="post__box__pic mb-3" :style="'background-image: url(' + node.featured_media + ')'" />
@@ -20,8 +21,9 @@
 				<!-- Заголовок -->
 				<div class="post__box__title  px-3  pb-4" v-html="node.title" />
 				
-			</g-link>
+			</div>
 		</b-col>
+	</g-link>
 </template>
 
 
