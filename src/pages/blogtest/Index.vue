@@ -14,7 +14,7 @@
 			</b-row>
 			<b-row>
 				<b-col class="Pagination">
-					<Pager :info="$page.allPost.pageInfo" range="10"/>
+					<Pager :info="$page.allPost.pageInfo" />
 				</b-col>
 			</b-row>
 		</b-container>
@@ -62,9 +62,9 @@
 		data() {
 			return {
 				//Делаем в HEAD
-				metaTitle: 'Блог',
-				metaDescription: 'Страница, которую вы ищите не найдена на сайте',
-				metaCanonical: 'https://www.carrotquest.io/404/',
+				metaTitle: 'Блог Carrot quest | Автоматизация маркетинга, конверсия в покупку, сегментация пользователей',
+				metaDescription: 'Блог о конверсии, аналитике, коммуникации с пользователями и эффективном интернет-маркетинге. Статьи, кейсы, фишки',
+				metaCanonical: 'https://www.carrotquest.io/blog/',
 				metaImage: '',
 			}
 		}

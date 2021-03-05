@@ -5,8 +5,9 @@
 				<!-- Изображение -->
 				<div class="post__box__pic mb-3" :style="'background-image: url(' + node.featured_media + ')'" />
 
+
 				<!-- Категории -->
-				<div v-if="$page.allCategories" class="post__box__categories px-3">
+				<div v-if="!categoryPage" class="post__box__categories px-3 mb-3">
 					<template v-for="edges in $page.allCategories.edges" >
 						<template v-if="node.categories.includes(Number(edges.node.id))">
 							<g-link :to="'/blogtest/' + edges.node.slug + '/'" :key="edges.node.id" class="grey-text text-uppercase font14px">
@@ -17,7 +18,7 @@
 				</div>
 
 				<!-- Заголовок -->
-				<div class="post__box__title p-3 pb-4" v-html="node.title" />
+				<div class="post__box__title  px-3  pb-4" v-html="node.title" />
 				
 			</g-link>
 		</b-col>
@@ -26,7 +27,10 @@
 
 <script>
 	export default {
-		props: ['node']
+		props: {
+			node: Object,
+			categoryPage: Boolean
+		}
 	};
 </script>
 

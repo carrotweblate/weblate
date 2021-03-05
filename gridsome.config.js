@@ -7,20 +7,52 @@
 // const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
 //   .BundleAnalyzerPlugin
 
+const collections = [{
+	query: `{
+		allPost {
+			edges {
+				node {
+					id
+					title
+					slug
+					modified
+					featured_media
+					content
+					categories
+				}
+			}
+		}
+	}`,
+	transformer: ({ data }) => data.allPost.edges.map(({ node }) => node),
+	indexName: 'prod_Blog', // Algolia index name
+	itemFormatter: (item) => {
+		return {
+			objectID: item.id,
+			title: item.title,
+			slug: item.slug,
+			modified: String(item.modified),
+			featured_media: item.featured_media,
+			content: item.content.slice(0,6000),
+			categories: item.categories
+		}
+	}, // optional
+	matchFields: ['slug', 'modified'], // Array<String> required with PartialUpdates
+},];
+
 module.exports = {
 	siteName: 'Carrot quest',
 	titleTemplate: "%s — Carrot quest",
 
 	plugins: [
 		//GTM
-		{
-			use: 'gridsome-plugin-gtm',
-			options: {
-				id: 'GTM-PHNG63V',
-				enabled: true,
-				debug: false
-			}
-		},
+		// {
+		// 	use: 'gridsome-plugin-gtm',
+		// 	options: {
+		// 		id: 'GTM-PHNG63V',
+		// 		enabled: true,
+		// 		debug: false
+		// 	}
+		// },
 		//PWA
 		{
 			use: 'gridsome-plugin-pwa',
@@ -48,7 +80,18 @@ module.exports = {
             	appleMaskIconColor: '#ffffff',
 			}
 		},
+		{
+			use: `gridsome-plugin-algolia`,
+			options: {
+				appId: '7Y1P83X4M1',
+				apiKey: 'e268d391762ad62104c571742cfd1afa',
+				collections,
+				chunkSize: 10000, // default: 1000
+				enablePartialUpdates: true, // default: false
+			},
+		},
 	],
+	
 	
 	// chainWebpack: config => {
 		// config.resolve.alias.set('@images', '@/assets/images')

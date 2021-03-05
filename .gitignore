@@ -8,5 +8,3 @@ dist-public
 dist-test
 .env
 .env.*
-.temp
-wp-images

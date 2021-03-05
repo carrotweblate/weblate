@@ -142,7 +142,7 @@
 			Footer,
 			Balcony
 		},
-		props: ['header','footer'],
+		props: ['header' , 'footer'],
 		data: function() {
 			return {
 				modalTitle: 'Получить на email',

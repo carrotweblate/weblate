@@ -538,7 +538,7 @@ footer {
 .Pagination {
 	display: flex;
 	justify-content: center;
-	a {
+	a , span {
 		display: inline-block;
 		width: 36px;
 		text-align: center;
@@ -548,8 +548,12 @@ footer {
 		border: 1px solid $primary;
 		border-radius: 50%;
 	}
-	.active {
+	.active , .ais-Pagination-item--selected a {
 		color: #fff;
 		background-color: $primary;
+	}
+	li {
+		display: inline-block;
+		list-style: none;
 	}
 }

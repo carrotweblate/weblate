@@ -1,5 +1,5 @@
 <template>
-	<Layout :header="true" :footer="true"  class="post">
+	<Layout :header="true" :footer="true" class="post">
 		<b-container>
 
 			<!-- Хлебные крошки -->
@@ -35,7 +35,7 @@
 			</b-row>
 
 			<!-- Текст статьи -->
-			<b-row class="mb-5">
+			<b-row>
 				<b-col col xl="8" class="font20px post__text" v-html="$context.content" />
 				<b-col col cols="4" class="post__info d-none d-xl-block">
 					<div v-if="$context.contents" class="post__info__contents">
@@ -56,7 +56,11 @@
 				</b-col>
 			</b-row>
 
-			<Disqus shortname="carrotquest" :identifier="$context.id + ' https://www.carrotquest.io/blog/?p=' + $context.id" lang="ru" />
+			<b-row class="disqus">
+				<b-col>
+					<Disqus shortname="carrotquest" :identifier="$context.id + ' https://www.carrotquest.io/blog/?p=' + $context.id" lang="ru" />
+				</b-col>
+			</b-row>
 
 			<BannerSobirayte />
 
@@ -166,45 +170,47 @@
 				]
 			}
 		},
-		async mounted () {
-			//Типограф
-			const tp = new Typograf({locale: ['ru', 'en-US']});
-			tp.enableRule('common/nbsp/*');
-			this.$context.title = tp.execute(this.$context.title)
-			this.$context.content = tp.execute(this.$context.content)
-
-			try {
-				let routes = '' + location
-				let url = ''
-				if (routes.search('localhost') != -1) {
-					url = 'https://cors-anywhere.herokuapp.com/'
-				}
-				url = url + 'https://www.carrotquest.io/blog/wp-json/wp/v2/posts/' + this.$context.id + '?_fields=content'
-				const results = await axios.get( url ).then(function() {
-						var pageHTML = results.data.content.rendered
-						//CDN для ресурсов
-						pageHTML = pageHTML.split('http://').join('https://')
-						pageHTML = pageHTML.split('https://www.carrotquest.io/blog/wp-content/uploads/').join('https://cdn-www.carrotquest.io/blog/wp-content/uploads/')
-						//Lazyload
-						pageHTML = pageHTML.split('<img src').join('<img loading="lazy" src')
-						//PRE
-						// pageHTML = pageHTML.split('<code><').join('<code>&lt;')
-						// pageHTML = pageHTML.split('></code>').join('&gt;</code>')
-						//Видео
-						pageHTML = pageHTML.split('<video ').join('<video autoplay loop muted playsinline ')
-						pageHTML = pageHTML.split('controls').join('')
-						//Carrot quest
-						pageHTML = pageHTML.split('Carrot quest').join('Carrot&nbsp;quest')
-
-						this.$context.content = pageHTML
-						this.$context.content = tp.execute(this.$context.content)
-						this.searchLeadForms()
-					}
-				)
-			} catch (error) {
-				console.log(error)
-				this.searchLeadForms()
+		mounted() {
+			let routes = '' + location
+			let url = ''
+			if (routes.search('localhost') != -1) {
+				url = 'https://cors-anywhere.herokuapp.com/'
 			}
+			url = url + 'https://www.carrotquest.io/blog/wp-json/wp/v2/posts/' + this.$context.id + '?_fields=content'
+			axios
+			.get(url)
+			.then(response => {
+				var pageHTML = response.data.content.rendered
+				//CDN для ресурсов
+				pageHTML = pageHTML.split('http://').join('https://')
+				pageHTML = pageHTML.split('https://www.carrotquest.io/blog/wp-content/uploads/').join('https://cdn-www.carrotquest.io/blog/wp-content/uploads/')
+				//Lazyload
+				pageHTML = pageHTML.split('<img src').join('<img loading="lazy" src')
+				//PRE
+				// pageHTML = pageHTML.split('<code><').join('<code>&lt;')
+				// pageHTML = pageHTML.split('></code>').join('&gt;</code>')
+				//Видео
+				pageHTML = pageHTML.split('<video ').join('<video autoplay loop muted playsinline ')
+				pageHTML = pageHTML.split('controls').join('')
+				//Carrot quest
+				pageHTML = pageHTML.split('Carrot quest').join('Carrot&nbsp;quest')
+				this.$context.content = pageHTML
+			})
+			.catch(error => {
+				console.log(error);
+				this.errored = true;
+			})
+			.finally(() => {
+				//Типограф
+				const tp = new Typograf({locale: ['ru', 'en-US']});
+				tp.enableRule('common/nbsp/*');
+				this.$context.title = tp.execute(this.$context.title)
+				this.$context.content = tp.execute(this.$context.content)
+				this.searchLeadForms()
+			});
+		},
+		updated() {
+			this.searchLeadForms()
 		},
 		methods: {
 			searchLeadForms: function(e) {

@@ -37,8 +37,7 @@
 		],
 		data: function() {
 			return {
-				email: '',
-				event: ''
+				email: ''
 			};
 		},
 		methods: {
