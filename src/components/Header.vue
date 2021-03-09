@@ -14,8 +14,8 @@
 			<!-- Мобильное меню гамбургер -->
 			<b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
 			
-			<b-collapse is-nav id="nav_collapse">
-				<template v-if="!isBlog">
+			<!-- Обычное меню -->
+			<b-collapse v-if="!isBlog" is-nav id="nav_collapse">
 					<!-- Выпадающее меню -->
 					<b-navbar-nav class="ml-auto mt-3 mt-lg-0">
 						<template v-for="( item , index ) in topMenu">
@@ -61,28 +61,26 @@
 					<b-button variant="outline" href="/panel/login/" class="mt-3 mt-lg-0">
 						Войти
 					</b-button>
-				</template>
-
-				<template v-else>
-					<b-navbar-nav class="ml-auto mt-3 mt-lg-0">
-						<b-nav-form class="mr-2">
-							<b-form v-on:submit.prevent="search">
-								<b-form-input placeholder="Поиск по блогу" v-model="searchBlog" class="mr-1" />
-							</b-form>
-						</b-nav-form>
-						<b-nav-item href="/cases/" class="mr-1">
-							Кейсы
-						</b-nav-item>
-						<b-nav-item to="/library/" class="mr-1">
-							Библиотека
-						</b-nav-item>
-					</b-navbar-nav>
-					<!-- Кнопки -->
-					<b-button variant="primary" href="/panel/register/" class="ml-0 mt-3 mr-1 px-2 ml-xl-3 mt-lg-0 mr-xl-3 px-xl-4">
-						Подключить Carrot quest
-					</b-button>
-				</template>
-				
+			</b-collapse>
+			<!-- Меню блога -->
+			<b-collapse v-else is-nav id="nav_collapse">
+				<b-navbar-nav class="ml-auto mt-3 mt-lg-0">
+					<!-- <b-nav-form class="mr-2">
+						<b-form v-on:submit.prevent="search">
+							<b-form-input placeholder="Поиск по блогу" v-model="searchBlog" class="mr-1" />
+						</b-form>
+					</b-nav-form> -->
+					<b-nav-item href="/cases/" class="mr-1">
+						Кейсы
+					</b-nav-item>
+					<b-nav-item to="/library/" class="mr-1">
+						Библиотека
+					</b-nav-item>
+				</b-navbar-nav>
+				<!-- Кнопки -->
+				<b-button variant="primary" href="/panel/register/" class="ml-0 mt-3 mr-1 px-2 ml-xl-3 mt-lg-0 mr-xl-3 px-xl-4">
+					Подключить Carrot quest
+				</b-button>
 			</b-collapse>
 
 			<!-- Подложка -->
