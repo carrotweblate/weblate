@@ -126,7 +126,7 @@
 					.then(m => m.default)
 					.catch()
 		},
-		beforeMount () {
+		mounted () {
 			//Блог или нет
 			if (document.location.href.indexOf('/blogtest/') != -1){
 				this.isBlog = true
