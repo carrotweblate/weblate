@@ -1,5 +1,8 @@
 <template>
 	<b-col md="6" lg="4" class="post-card mb-5">
+
+		{{ node.index }}
+
 		<g-link :to="'/blogtest/' + node.slug + '/'" class="post__box box-shadow box h-100 d-block">
 			<!-- Изображение -->
 			<div class="post__box__pic mb-3" :style="'background-image: url(' + node.featured_media + ')'"></div>
@@ -7,7 +10,9 @@
 			<!-- Категории -->
 			<div v-if="!categoryPage" class="post__box__categories px-3 mb-3">
 				<template v-for="edges in $page.allCategories.edges" >
-					<span v-if="node.categories.includes(Number(edges.node.id))" :key="edges.node.id" class="grey-text text-uppercase font14px" v-html="edges.node.title" />
+					<span v-if="node.categories.includes(Number(edges.node.id))" :key="edges.node.id" class="grey-text text-uppercase font14px">
+						{{edges.node.title}}
+					</span>	
 				</template>
 			</div>				
 			
@@ -23,6 +28,11 @@
 		props: {
 			node: Object,
 			categoryPage: Boolean
+		},
+		data() {
+			return {
+				index: 1
+			}
 		}
 	};
 </script>

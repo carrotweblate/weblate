@@ -1,30 +1,120 @@
 <template>
 	<Layout :header="true" :footer="true"  class="page blog-index">
+		
+		<!-- Новое и подписка -->
+		<section class="new">
+			<b-container>
+				<b-row>
+					<b-col>
+						<h1 class="mt-5">
+							Блог Carrot quest
+						</h1>
+					</b-col>
+				</b-row>
+				
+				<b-row>
+					<b-col>
+						<h2 class="my-5">
+							<g-link to="/blogtest/recent/">
+								Новое
+							</g-link>
+						</h2>
+					</b-col>
+				</b-row>
+				<b-row>
+					<PostCard v-for="{ node } in $page.recent.edges" :key="node.id" :node="node" :categoryPage="false" />
+				</b-row>
+				<b-row>
+					<b-col>
+						<div class="h1">Вы ещё не подписаны?</div>
+						<p>Присылаем статьи и кейсы, которые помогают бизнесам расти. Польза и ничего кроме!</p>
+						<SubscribeForm event="Подписался на рассылку из блога" />
+					</b-col>
+				</b-row>
+			</b-container>
+		</section>
+		
+		<!-- Кейсы -->
+		<section class="new">
+			<b-container>
+				<b-row>
+					<b-col>
+						<h2 class="my-5">
+							<g-link to="/blogtest/kejsy/">
+								Кейсы
+							</g-link>
+						</h2>
+					</b-col>
+				</b-row>
+				<b-row>
+					<PostCard v-for="{ node } in $page.cases.edges" :key="node.id" :node="node" :categoryPage="true" />
+				</b-row>
+			</b-container>
+		</section>
 
-		<b-container>
-			<b-row>
-				<b-col>
-					<h1 class="my-5">
-						Блог
-					</h1>
-				</b-col>
-			</b-row>
-			<b-row>
-				<PostCard v-for="{ node } in $page.allPost.edges" :key="node.id" :node="node" :categoryPage="false" />
-			</b-row>
-			<b-row>
-				<b-col class="Pagination">
-					<Pager :info="$page.allPost.pageInfo" />
-				</b-col>
-			</b-row>
-		</b-container>
+		<!-- Лучшее -->
+		<section class="best">
+			<b-container>
+				<b-row>
+					<b-col>
+						<h2 class="my-5">
+							<g-link to="/blogtest/best/">
+								Лучшее
+							</g-link>
+						</h2>
+					</b-col>
+				</b-row>
+				<b-row>
+					<PostCard v-for="{ node } in $page.best.edges" :key="node.id" :node="node" />
+				</b-row>
+			</b-container>
+		</section>
+
+		<!-- Обновления -->
+		<section class="new">
+			<b-container>
+				<b-row>
+					<b-col>
+						<h2 class="my-5">
+							<g-link to="/blogtest/new/">
+								Обновления
+							</g-link>
+						</h2>
+					</b-col>
+				</b-row>
+				<b-row>
+					<PostCard v-for="{ node } in $page.updates.edges" :key="node.id" :node="node" :categoryPage="true" />
+				</b-row>
+			</b-container>
+		</section>
+		
+		<!-- Популярное -->
+		<section class="new">
+			<b-container>
+				<b-row>
+					<b-col>
+						<h2 class="my-5">
+							<g-link to="/blogtest/popular/">
+								Популярное
+							</g-link>
+						</h2>
+					</b-col>
+				</b-row>
+				<b-row>
+					<PostCard v-for="{ node } in $page.popular.edges" :key="node.id" :node="node" />
+				</b-row>
+			</b-container>
+		</section>
+
+
+		
 
 	</Layout>
 </template>
 
 <page-query>
-	query Blog ($page: Int) {
-		allPost (page: $page, perPage: 12) @paginate {
+	query {
+		recent: allPost (limit: 3) {
 			edges {
 				node {
 					title
@@ -33,9 +123,47 @@
 					featured_media
 				}
 			}
-			pageInfo {
-				totalPages
-				currentPage
+		}
+		cases: allPost (limit: 3, filter: { categories: { containsAny: 13 }} ) {
+			edges {
+				node {
+					title
+					slug
+					categories
+					featured_media
+				}
+			}
+		}
+		best: allPost (limit: 3 , filter: {sticky: { eq: true }} ) {
+			edges {
+				node {
+					title
+					slug
+					categories
+					featured_media
+					sticky
+				}
+			}
+		}
+		updates: allPost (limit: 3, filter: { categories: { containsAny: 6 }} ) {
+			edges {
+				node {
+					title
+					slug
+					categories
+					featured_media
+				}
+			}
+		}
+		popular: allPost (limit: 6 , sortBy: "page_views", order: DESC) {
+			edges {
+				node {
+					title
+					slug
+					categories
+					featured_media
+					page_views
+				}
 			}
 		}
 		allCategories {
@@ -52,11 +180,13 @@
 
 <script>
 	import PostCard from '~/components/PostCard.vue'
+	import SubscribeForm from '~/components/Forms/SubscribeForm.vue'
 	import { Pager } from 'gridsome'
 
 	export default {
 		components: {
 			PostCard,
+			SubscribeForm,
 			Pager
 		},
 		data() {

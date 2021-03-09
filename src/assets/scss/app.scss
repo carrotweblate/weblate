@@ -431,7 +431,27 @@ input[type=number]:focus,
 		top: -60px;
 	}
 
-	
+	.nav_search {
+		position: relative;
+		label {
+			display: inline-block;
+		}
+		.form-control {
+			width: 280px;
+		}
+		.bi-search {
+			margin-top: -3px;
+		}
+		.bi-search.canclick {
+			cursor: pointer;
+		}
+		.bi-x {
+			cursor: pointer;
+			position: absolute;
+			right: 6px;
+			top: 12px;
+		}
+	}
 	
 }
 
