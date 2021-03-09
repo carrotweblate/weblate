@@ -2,13 +2,19 @@
 	<b-col md="6" lg="4" class="post-card mb-5">
 		<g-link :to="'/blogtest/' + node.slug + '/'" class="post__box box-shadow box h-100 d-block">
 			<!-- Изображение -->
-			<div class="post__box__pic mb-3" :style="'background-image: url(' + node.featured_media + ')'" />
+			<div class="post__box__pic mb-3" :style="'background-image: url(' + node.featured_media + ')'"></div>
+			
 			<!-- Категории -->
 			<div v-if="!categoryPage" class="post__box__categories px-3 mb-3">
 				<template v-for="edges in $page.allCategories.edges" >
-					<g-link v-if="node.categories.includes(Number(edges.node.id))" :key="edges.node.id" v-html="edges.node.title" class="grey-text text-uppercase font14px" />
+					<template v-if="node.categories.includes(Number(edges.node.id))">
+						<g-link :to=" '/blogtest/' + edges.node.slug + '/' " :key="edges.node.id" class="grey-text text-uppercase font14px" >
+							{{ edges.node.title }}
+						</g-link>
+					</template>
 				</template>
-			</div>
+			</div>				
+			
 			<!-- Заголовок -->
 			<div class="post__box__title  px-3  pb-4" v-html="node.title" />
 		</g-link>

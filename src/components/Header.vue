@@ -67,7 +67,8 @@
 				<b-navbar-nav class="ml-auto mt-3 mt-lg-0">
 					<b-nav-form class="mr-2">
 						<b-form v-on:submit.prevent="search">
-							<b-form-input placeholder="Поиск по блогу" v-model="searchBlog" class="mr-1" />
+							<b-form-input placeholder="Поиск по блогу" v-model="searchBlog" class="mr-1"></b-form-input>
+							<b-button type="submit">Искать</b-button>
 						</b-form>
 					</b-nav-form>
 					<b-nav-item href="/cases/" class="mr-1">

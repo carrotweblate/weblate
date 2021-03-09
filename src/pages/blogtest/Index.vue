@@ -1,5 +1,5 @@
 <template>
-	<Layout :header="true" :footer="true"  class="page page-404">
+	<Layout :header="true" :footer="true"  class="page blog-index">
 
 		<b-container>
 			<b-row>
