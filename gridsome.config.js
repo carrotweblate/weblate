@@ -68,7 +68,7 @@ module.exports = {
 				title: 'Carrot quest',
 				description: 'Инструменты для увеличения продаж на сайтах без привлечения нового трафика',
 				shortName: 'CQ',
-				startUrl: '/',
+				startUrl: 'https://www.carrotquest.io/',
 				display: 'standalone',
 				statusBarStyle: 'default',
 				themeColor: '#FF7C16',

@@ -7,11 +7,7 @@
 			<!-- Категории -->
 			<div v-if="!categoryPage" class="post__box__categories px-3 mb-3">
 				<template v-for="edges in $page.allCategories.edges" >
-					<template v-if="node.categories.includes(Number(edges.node.id))">
-						<g-link :to=" '/blogtest/' + edges.node.slug + '/' " :key="edges.node.id" class="grey-text text-uppercase font14px" >
-							{{ edges.node.title }}
-						</g-link>
-					</template>
+					<span v-if="node.categories.includes(Number(edges.node.id))" :key="edges.node.id" class="grey-text text-uppercase font14px" v-html="edges.node.title" />
 				</template>
 			</div>				
 			
