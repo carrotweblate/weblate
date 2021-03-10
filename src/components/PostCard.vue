@@ -1,8 +1,5 @@
 <template>
 	<b-col md="6" lg="4" class="post-card mb-5">
-
-		{{ node.index }}
-
 		<g-link :to="'/blogtest/' + node.slug + '/'" class="post__box box-shadow box h-100 d-block">
 			<!-- Изображение -->
 			<div class="post__box__pic mb-3" :style="'background-image: url(' + node.featured_media + ')'"></div>
@@ -49,6 +46,22 @@
 				height: 150px;
 				background-size: cover;
 				background-position: left center;
+			}
+		}
+		&.col-lg-8 {
+			.post__box__pic {
+				@media (min-width: 768px) {
+					height: 250px;
+				}
+				@media (min-width: 992px) {
+					height: 350px;
+				}
+			}
+			.post__box__title {
+				@media (min-width: 992px) {
+					font-size: 1.5rem;
+					font-weight: bold;
+				}
 			}
 		}
 	}
