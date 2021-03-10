@@ -40,9 +40,10 @@ module.exports = function (api) {
 				) ) {
 				// if ( item.id != '312699' || item.id == '1048214' || item.id == '2883968' || item.id == '11437990' ) {
 				// if ( item.id == '16083784') {
+					console.log(item.id)
 					const { data } = await axios.get(
-						'https://api.tildacdn.info/v1/getpage/?publickey=h6wlwdtglx70dzkz1fnn&secretkey=cz7a318b3jpkqm6nzz4l&pageid=' + item.id,
-						// 'https://tilda.carrotquest.io/page_' + item.id + '.json'
+						// 'https://api.tildacdn.info/v1/getpage/?publickey=h6wlwdtglx70dzkz1fnn&secretkey=cz7a318b3jpkqm6nzz4l&pageid=' + item.id,
+						'https://tilda.carrotquest.io/page_' + item.id + '.json'
 					)
 					if ( item.alias ) {
 						createPage({

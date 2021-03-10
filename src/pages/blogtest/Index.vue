@@ -1,5 +1,5 @@
 <template>
-	<Layout :header="true" :footer="true"  class="page blog-index">
+	<Layout :header="true" :footer="true" class="page blog-index">
 		
 		<!-- Новое и подписка -->
 		<section class="new">

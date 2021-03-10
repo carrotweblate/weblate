@@ -123,7 +123,7 @@
 				this.scrolled = window.scrollY > this.limitPosition;
 			},
 			search() {
-				this.$router.push("/blogtest/search/?q="+this.searchBlog)
+				this.$router.push('/blogtest/search/?q=' + this.searchBlog)
 			},
 			showSearchForm() {
 				this.showSearch = true
@@ -139,13 +139,13 @@
 					.then(m => m.default)
 					.catch()
 		},
-		beforeMount () {
+		mounted () {
 			//Блог или нет
-			if (document.location.href.indexOf('/blogtest/') != -1){
+			if (window.location.href.indexOf('/blogtest/') != -1){
 				this.isBlog = true
 			}
 			//Страница поиска блога или нет
-			if (document.location.href.indexOf('/blogtest/search/') != -1){
+			if (window.location.href.indexOf('/blogtest/search/') != -1){
 				this.isSearchBlog = true
 			}
 		},

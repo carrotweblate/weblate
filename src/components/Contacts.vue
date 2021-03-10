@@ -4,7 +4,7 @@
 		<b-container>
 			<b-col class="Contacts" :style=" 'background-color: ' + bg ">
 				<b-row class="align-items-center">
-					<b-col v-if="pic" cols="12" xl="3">
+					<b-col v-if="title" cols="12" xl="3">
 						<div class="h3" v-html="title" />
 					</b-col>
 					<b-col v-else cols="12" xl="6">
