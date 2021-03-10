@@ -70,6 +70,18 @@
 			</b-container>
 		</section>
 
+		<section>
+			<b-container>
+				<b-row>
+					<b-col>
+						<div class="h1">Крутая книга</div>
+						<p>Получите бесплатно книгу «Коммуникации и управление воронкой пользователя в e−commerce»</p>
+						<SubscribeForm event="Блог - Получить книгу" button="Получить книгу" />
+					</b-col>
+				</b-row>
+			</b-container>
+		</section>
+
 		<!-- Обновления -->
 		<section class="new">
 			<b-container>
@@ -102,6 +114,28 @@
 				</b-row>
 				<b-row>
 					<PostCard v-for="{ node } in $page.popular.edges" :key="node.id" :node="node" />
+				</b-row>
+			</b-container>
+		</section>
+
+		<section>
+			<b-container>
+				<b-row>
+					<b-col>
+						<div class="h1">Как опубликовать гостевой пост в Carrot quest?</div>
+						<b-button to="/blog/gostevoj-post/" variant="primary">Узнать больше</b-button>
+					</b-col>
+				</b-row>
+			</b-container>
+		</section>
+
+		<!-- Разделы -->
+		<section class="new">
+			<b-container>
+				<b-row>
+					<g-link v-for="{ node } in $page.allCategories.edges" :key="node.id">
+						{{ node.title }}
+					</g-link>
 				</b-row>
 			</b-container>
 		</section>
