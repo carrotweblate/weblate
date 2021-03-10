@@ -6,6 +6,7 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 const axios = require('axios')
+const fs = require('fs')
 
 module.exports = function (api) {
 	// API from Tilda Files
@@ -78,6 +79,8 @@ module.exports = function (api) {
 	})
 
 	// API Wordpress - создаём Посты
+	fs.rmdirSync( './static/blogtest/', { recursive: true }) //Удаляем старый AMP
+	fs.mkdirSync('./static/blogtest/') //Создаём новый AMP
 	api.loadSource(async actions => {
 		const { data } = await axios.get(
 			'https://www.carrotquest.io/blog/wp-json/wp/v2/posts?&per_page=999'
@@ -135,6 +138,31 @@ module.exports = function (api) {
 						description: item.excerpt.rendered,
 						content: pageHTML
 					}
+				})
+				fs.mkdirSync('./static/blogtest/' + item.slug)
+				fs.mkdirSync('./static/blogtest/' + item.slug + '/amp/')
+				fs.writeFile('./static/blogtest/' + item.slug + '/amp/index.html', '\
+						<!doctype html>\
+						<html amp lang="en">\
+							<head>\
+								<meta charset="utf-8">\
+								<script async src="https://cdn.ampproject.org/v0.js"></script>\
+								<title>'+item.yoast_title+'</title>\
+								<link rel="canonical" href="https://www.carrotquest.io/blog/'+item.title.rendered+'/">\
+								<meta name="viewport" content="width=device-width">\
+								<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>\
+								<style amp-custom>\
+									{% include "/amp.css" %}\
+								</style>	\
+							</head>\
+							<body>\
+								<h1>' + item.title.rendered + '</h1>\
+								<amp-img src="' + item.featured_media_medium + '" alt="' + item.title.rendered + '" height="300" style"width: auto;min-width: auto;"></amp-img>\
+								'+pageHTML+'\
+							</body>\
+						</html>\
+					', 'utf8' , function (err) {
+					if (err) return console.log(err)
 				})
 			}
 		})

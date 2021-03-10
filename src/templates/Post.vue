@@ -4,14 +4,19 @@
 
 			<!-- Хлебные крошки -->
 			<b-row>
-				<b-col>
-					<b-breadcrumb class="font20px d-none d-md-flex">
+				<b-col md="8" class="d-none d-md-block">
+					<b-breadcrumb class="font20px d-md-flex">
 						<b-breadcrumb-item href="/">Главная</b-breadcrumb-item>
 						<b-breadcrumb-item href="/blogtest/">Блог</b-breadcrumb-item>
 						<template v-for="{ node } in $page.allCategories.edges">
 							<b-breadcrumb-item  v-if="$context.category[0] == node.id" :href="'/blogtest/' + node.slug + '/'" :text="node.title" :key="node.id" />
 						</template>
 					</b-breadcrumb>
+				</b-col>
+				<b-col md="4" class="text-right">
+					<a :href="'/blogtest/' + $context.slug + '/amp/'">
+						AMP версия
+					</a>
 				</b-col>
 			</b-row>
 
