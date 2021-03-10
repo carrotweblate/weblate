@@ -3,8 +3,6 @@
 .DS_Store
 src/.temp
 node_modules
-dist
-dist-public
-dist-test
+dist*
 .env
 .env.*

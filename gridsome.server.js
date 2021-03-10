@@ -11,7 +11,8 @@ module.exports = function (api) {
 	// API from Tilda Files
 	api.loadSource(async actions => {
 		const { data } = await axios.get(
-			'https://api.tildacdn.info/v1/getproject/?publickey=h6wlwdtglx70dzkz1fnn&secretkey=cz7a318b3jpkqm6nzz4l&projectid=62329'
+			// 'https://api.tildacdn.info/v1/getproject/?publickey=h6wlwdtglx70dzkz1fnn&secretkey=cz7a318b3jpkqm6nzz4l&projectid=62329',
+			'https://tilda.carrotquest.io/files_list.json'
 		)
 		const collection = actions.addCollection('tildaFiles')
 		for (const item of data.result.css) {
