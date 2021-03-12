@@ -45,7 +45,6 @@
 				],
 				link: [
 					{
-						key: "canonical",
 						rel: 'canonical',
 						href: 'https://www.carrotquest.io/' + this.$context.slug
 					}

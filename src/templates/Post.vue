@@ -13,19 +13,30 @@
 						</template>
 					</b-breadcrumb>
 				</b-col>
-				<b-col md="4" class="text-right">
+				<b-col md="4" class="amp text-right">
 					<a :href="'/blogtest/' + $context.slug + '/amp/'">
-						AMP версия
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g clip-path="url(#clip0)">
+							<path d="M10.0001 20C15.523 20 20.0002 15.5228 20.0002 9.99988C20.0002 4.47696 15.523 -0.000244141 10.0001 -0.000244141C4.47721 -0.000244141 0 4.47696 0 9.99988C0 15.5228 4.47721 20 10.0001 20Z" fill="#FF7C16"/>
+							<path d="M10.7471 8.48866H13.1694C13.1694 8.48866 13.6807 8.48866 13.4173 9.06811L9.23416 16.0192H8.4595L9.19698 11.475L6.73742 11.4595C6.73742 11.4595 6.30051 11.286 6.63207 10.722L10.7393 3.92822H11.545L10.7471 8.48866Z" fill="white"/>
+							</g>
+							<defs>
+							<clipPath id="clip0">
+							<rect width="20" height="20" fill="white"/>
+							</clipPath>
+							</defs>
+						</svg>
+						AMP страница
 					</a>
 				</b-col>
 			</b-row>
-
+			
 			<!-- Заголовок и описание -->
 			<b-row>
 				<b-col col xl="9">
 					<h1 class="post__title" v-html="$context.title" />
 					<div class="font20px lightgrey-text my-4">
-						<span class="mr-5">Время чтения: {{ Math.ceil($context.content.length/1500) }} мин.</span>
+						<span class="mr-5">Время чтения: {{ this.timeToRead }}</span>
 						<span v-html="$context.date" />
 					</div>
 					<!-- <div class="post__description font24px" v-html="$context.description" /> -->
@@ -95,7 +106,10 @@
 
 
 <page-query>
-	query post {
+	query post ($id: ID!) {
+		post (id: $id) {
+			id
+		}
 		allCategories {
 			edges {
 				node {
@@ -126,7 +140,6 @@
 	import VideoRegistration from '~/components/VideoRegistration.vue'
 	import BannerSobirayte from '~/components/BannerSobirayte/BannerSobirayte.vue'
 	import axios from 'axios'
-	import Typograf from 'typograf'
 	import { Disqus } from 'vue-disqus'
 
 	export default {
@@ -137,42 +150,50 @@
 		},
 		//Делаем в HEAD
 		metaInfo() {
+			let postTitle = ''
+			let postMeta = []
+			let postLink = []
+			let postScript = []
+			for (let item in this.$context.seo.meta) {
+				let seo = this.$context.seo.meta[item]
+				if (!!seo.name) {
+					postMeta.push(
+						{
+							key: seo.name,
+							name: seo.name,
+							content: seo.content
+						}
+					)
+					if (seo.name=='twitter:data1') {
+						this.timeToRead = seo.content
+					}
+				} else {
+					postMeta.push(
+						{
+							key: seo.property,
+							property: seo.property,
+							content: seo.content
+						}
+					)
+					if (seo.property=='og:url') {
+						this.metaCanonical = seo.content
+					}
+				}
+			}
 			return {
 				title: this.$context.seo.title,
-				meta: [
-					{
-						key: 'description',
-						name: 'description',
-						content: this.$context.seo.description
-					},
-					{
-						key: 'og:url',
-						property: 'og:url',
-						content: 'https://www.carrotquest.io/' + this.$context.slug + '/'
-					},
-					{
-						key: 'og:title',
-						property: 'og:title',
-						content: this.$context.seo.title
-					},
-					{
-						key: 'og:description',
-						property: 'og:description',
-						content: this.$context.seo.description
-					},
-					{	
-						key: 'og:image',
-						property: 'og:image',
-						content: this.$context.seo.cover
-					},
-				],
-				link: [
-					{
-						key: 'canonical',
-						rel: 'canonical',
-						href: 'https://www.carrotquest.io/' + this.$context.slug + '/'
-					}
-				]
+				meta: postMeta,
+				link: postLink,
+				script: [{
+					type: 'application/ld+json',
+					json: this.$context.seo.json_ld[0]
+				}]
+			}
+		},
+		data() {
+			return {
+				timeToRead: '',
+				metaCanonical: ''
 			}
 		},
 		mounted() {
@@ -181,38 +202,34 @@
 			if (routes.search('localhost') != -1) {
 				url = 'https://cors-anywhere.herokuapp.com/'
 			}
-			url = url + 'https://www.carrotquest.io/blog/wp-json/wp/v2/posts/' + this.$context.id + '?_fields=content'
-			axios
-			.get(url)
-			.then(response => {
-				var pageHTML = response.data.content.rendered
-				//CDN для ресурсов
-				pageHTML = pageHTML.split('http://').join('https://')
-				pageHTML = pageHTML.split('https://www.carrotquest.io/blog/wp-content/uploads/').join('https://cdn-www.carrotquest.io/blog/wp-content/uploads/')
-				//Lazyload
-				pageHTML = pageHTML.split('<img src').join('<img loading="lazy" src')
-				//PRE
-				// pageHTML = pageHTML.split('<code><').join('<code>&lt;')
-				// pageHTML = pageHTML.split('></code>').join('&gt;</code>')
-				//Видео
-				pageHTML = pageHTML.split('<video ').join('<video autoplay loop muted playsinline ')
-				pageHTML = pageHTML.split('controls').join('')
-				//Carrot quest
-				pageHTML = pageHTML.split('Carrot quest').join('Carrot&nbsp;quest')
-				this.$context.content = pageHTML
-			})
-			.catch(error => {
-				console.log(error);
-				this.errored = true;
-			})
-			.finally(() => {
-				//Типограф
-				const tp = new Typograf({locale: ['ru', 'en-US']});
-				tp.enableRule('common/nbsp/*');
-				this.$context.title = tp.execute(this.$context.title)
-				this.$context.content = tp.execute(this.$context.content)
-				this.searchLeadForms()
-			});
+			
+
+			axios.get(url + 'https://www.carrotquest.io/blog/wp-json/wp/v2/posts/' + this.$context.id + '?_fields=modified')
+				.then(response => {
+					if (response.data.modified != this.$context.modified) {
+						url = url + 'https://www.carrotquest.io/blog/wp-json/wp/v2/posts/' + this.$context.id + '?_fields=content'
+						axios.get(url)
+							.then(response => {
+								var pageHTML = response.data.content.rendered
+								//CDN для ресурсов
+								pageHTML = pageHTML.split('http://').join('https://')
+								pageHTML = pageHTML.split('https://www.carrotquest.io/blog/wp-content/uploads/').join('https://cdn-www.carrotquest.io/blog/wp-content/uploads/')
+								//Lazyload
+								pageHTML = pageHTML.split('<img src').join('<img loading="lazy" src')
+								//Видео
+								pageHTML = pageHTML.split('<video ').join('<video autoplay loop muted playsinline ')
+								pageHTML = pageHTML.split('controls').join('')
+								//Carrot quest
+								pageHTML = pageHTML.split('Carrot quest').join('Carrot&nbsp;quest')
+								this.$context.content = pageHTML
+							})
+							.catch(error => {
+								console.log(error)
+								this.errored = true
+							})
+						}
+					}
+				)
 		},
 		updated() {
 			this.searchLeadForms()

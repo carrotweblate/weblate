@@ -4,7 +4,7 @@
 		<b-container>
 			<b-row>
 				<b-col>
-					<h1 class="my-5" v-html="$page.categories.title"/>
+					<h1 class="my-5" v-html="$context.title"/>
 				</b-col>
 			</b-row>
 			<b-row>
@@ -21,10 +21,7 @@
 </template>
 
 <page-query>
-	query categories ($id: ID!, $page: Int, $ids: [Int]) {
-		categories(id: $id) {
-			title
-		}
+	query categories ($page: Int, $ids: [Int]) {
 		allPost (page: $page, perPage: 12, filter: { categories: { containsAny: $ids }}) @paginate {
 			edges {
 				node {
@@ -51,14 +48,39 @@
 			PostCard,
 			Pager
 		},
-		data() {
+		//Делаем в HEAD
+		metaInfo() {
 			return {
-				//Делаем в HEAD
-				metaTitle: 'Блог',
-				metaDescription: 'Страница, которую вы ищите не найдена на сайте',
-				metaCanonical: 'https://www.carrotquest.io/404/',
-				metaImage: '',
+				title: 'Блог Carrot quest | ' + this.$context.title,
+				meta: [
+					{
+						key: 'description',
+						name: 'description',
+						content:  this.$context.description
+					},
+					{
+						key: 'og:url',
+						property: 'og:url',
+						content: 'https://www.carrotquest.io/blog/' +  this.$context.slug + '/'
+					},
+					{
+						key: 'og:title',
+						property: 'og:title',
+						content: 'Блог Carrot quest | ' + this.$context.title,
+					},
+					{
+						key: 'og:description',
+						property: 'og:description',
+						content: this.$context.description
+					}
+				],
+				link: [
+					{
+						rel: 'canonical',
+						href: 'https://www.carrotquest.io/blog/' +  this.$context.slug + '/'
+					}
+				]
 			}
-		}
+		},
 	}	
 </script>

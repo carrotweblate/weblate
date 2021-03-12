@@ -5,7 +5,7 @@
 			<b-row>
 				<b-col>
 					<h1 class="my-5">
-						Лучшее
+						Лучшие статьи
 					</h1>
 				</b-col>
 			</b-row>
@@ -63,9 +63,9 @@
 		data() {
 			return {
 				//Делаем в HEAD
-				metaTitle: 'Блог Carrot quest | Автоматизация маркетинга, конверсия в покупку, сегментация пользователей',
-				metaDescription: 'Блог о конверсии, аналитике, коммуникации с пользователями и эффективном интернет-маркетинге. Статьи, кейсы, фишки',
-				metaCanonical: 'https://www.carrotquest.io/blog/',
+				metaTitle: 'Лучшие статьи | Блог Carrot quest',
+				metaDescription: 'Лучшие статьи в блоге о конверсии, аналитике, коммуникации с пользователями и эффективном интернет-маркетинге — Carrot Quest',
+				metaCanonical: 'https://www.carrotquest.io/blog/best/',
 				metaImage: '',
 			}
 		}

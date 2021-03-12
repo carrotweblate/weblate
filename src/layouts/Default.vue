@@ -340,28 +340,28 @@
 					},
 					{
 						key: 'og:url',
-						property: "og:url",
+						property: 'og:url',
 						content: this.$parent.metaCanonical
 					},
 					{
-						key: "og:title",
-						property: "og:title",
+						key: 'og:title',
+						property: 'og:title',
 						content: this.$parent.metaTitle
 					},
 					{
-						key: "og:description",
-						property: "og:description",
+						key: 'og:description',
+						property: 'og:description',
 						content: this.$parent.metaDescription
 					},
 					{
-						key: "og:image",
-						property: "og:image",
+						key: 'og:image',
+						property: 'og:image',
 						content: this.$parent.metaImage
 					},
 				],
 				link: [
 					{
-						key: "canonical",
+						key: 'canonical',
 						rel: 'canonical',
 						href: this.$parent.metaCanonical
 					}
@@ -370,7 +370,3 @@
 		}
 	};
 </script>
-
-<style lang="scss">
-
-</style>

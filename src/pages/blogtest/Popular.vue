@@ -5,7 +5,7 @@
 			<b-row>
 				<b-col>
 					<h1 class="my-5">
-						Обновления
+						Популярные статьи
 					</h1>
 				</b-col>
 			</b-row>
@@ -24,7 +24,7 @@
 
 <page-query>
 	query Blog ($page: Int) {
-		allPost (page: $page, perPage: 12) @paginate {
+		allPost (page: $page, perPage: 12, sortBy: "page_views", order: DESC) @paginate {
 			edges {
 				node {
 					title
@@ -62,9 +62,9 @@
 		data() {
 			return {
 				//Делаем в HEAD
-				metaTitle: 'Обновления | Блог Carrot quest',
-				metaDescription: 'Всё течёт, всё изменяется. Следите за тем, как меняется и растёт Carrot Quest, а также какие новые возможности открываются перед вами',
-				metaCanonical: 'https://www.carrotquest.io/blog/new/',
+				metaTitle: 'Популярные статьи | Блог Carrot quest',
+				metaDescription: 'Популярные статьи в блоге о конверсии, аналитике, коммуникации с пользователями и эффективном интернет-маркетинге — Carrot Quest',
+				metaCanonical: 'https://www.carrotquest.io/blog/popular/',
 				metaImage: '',
 			}
 		}

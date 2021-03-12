@@ -32,7 +32,7 @@ const collections = [{
 			slug: item.slug,
 			modified: String(item.modified),
 			featured_media: item.featured_media,
-			content: item.content.slice(0,6000),
+			content: item.content.slice(0,4000),
 			categories: item.categories
 		}
 	}, // optional
@@ -41,7 +41,7 @@ const collections = [{
 
 module.exports = {
 	siteName: 'Carrot quest',
-	titleTemplate: "%s — Carrot quest",
+	titleTemplate: "%s",
 
 	plugins: [
 		//GTM
