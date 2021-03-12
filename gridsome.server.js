@@ -8,12 +8,10 @@
 const axios = require('axios')
 
 const Typograf = require('typograf')
-const tp = new Typograf({locale: ['ru', 'en-US']});
-tp.enableRule('common/nbsp/*');
+const tp = new Typograf({locale: ['ru', 'en-US']})
+tp.enableRule('common/nbsp/*')
 
 const fs = require('fs')
-const AmpOptimizer = require('@ampproject/toolbox-optimizer');
-const ampOptimizer = AmpOptimizer.create()
 
 module.exports = function (api) {
 	// API from Tilda Files
@@ -88,7 +86,7 @@ module.exports = function (api) {
 	// API Wordpress - создаём Посты
 	api.loadSource(async actions => {
 		const { data } = await axios.get(
-			'https://www.carrotquest.io/blog/wp-json/wp/v2/posts?&per_page=999'
+			'https://www.carrotquest.io/blog/wp-json/wp/v2/posts?&per_page=1'
 		)
 		// Данные для вывода статей
 		const collection = actions.addCollection('post')
@@ -152,7 +150,10 @@ module.exports = function (api) {
 				})
 
 				//Делаем AMP
-				item.content.rendered = pageHTML.split('https://www.carrotquest.io/blog/wp-content/uploads/').join('https://cdn-www.carrotquest.io/blog/wp-content/uploads/')
+				pageHTML = item.content.rendered
+				pageHTML = pageHTML.split('https://www.carrotquest.io/blog/wp-content/uploads/').join('https://cdn-www.carrotquest.io/blog/wp-content/uploads/')
+				pageHTML = pageHTML.split('<video').join('<amp-video')
+				pageHTML = pageHTML.split('<img').join('<amp-img')
 				const html = `
 					<!doctype html>
 						<html ⚡ lang="ru">
@@ -161,13 +162,13 @@ module.exports = function (api) {
 							<meta name="viewport" content="width=device-width">
 							<meta name="description" content="This is the AMP Boilerplate.">
 							<link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
-							<link rel="preload" href=` + featured_media_large + ` as="image">
 							<link rel="canonical" href=https://www.carrotquest.io/blog/`+item.slug+`/>
 							<script async src="https://cdn.ampproject.org/v0.js"></script>
 							<!-- Import other AMP Extensions here -->
 							<script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+							<script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
 							<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-							<style amp-custom> .wp-block-image { margin-bottom: 1em } .wp-block-image amp-img { max-width: 100% } .wp-block-image:not(.is-style-rounded) amp-img { border-radius: inherit } .wp-block-image.aligncenter { text-align: center } .wp-block-image .aligncenter { display: table } .wp-block-image .aligncenter>figcaption { display: table-caption; caption-side: bottom } .wp-block-image .aligncenter { margin-left: auto; margin-right: auto } .wp-block-image figcaption { margin-top: .5em; margin-bottom: 1em } p:empty:before { content: "​" } .wp-block-video { margin-left: 0; margin-right: 0 } .wp-block-video amp-video { width: 100% } .wp-block-video.aligncenter { text-align: center } .wp-block-video figcaption { margin-top: .5em; margin-bottom: 1em } .has-text-align-center { text-align: center } .aligncenter { clear: both } .wp-block-image figcaption { color: #555; font-size: 13px; text-align: center } .wp-block-video figcaption { color: #555; font-size: 13px; text-align: center } amp-img.amp-wp-enforced-sizes[layout="intrinsic"]>img { object-fit: contain } .alignnone, .aligncenter { margin-top: 1em; margin-right: auto; margin-bottom: 1em; margin-left: auto } .aligncenter { display: block; text-align: center; margin-left: auto; margin-right: auto } .amp-wp-enforced-sizes { max-width: 100%; margin: 0 auto } html { background: #fff } body { background: #fff; color: #353535; font-family: "Open Sans", sans-serif; font-weight: 300; line-height: 1.75em } p, ol, ul, figure { margin: 0 0 1em; padding: 0 } a { color: #FF7C16; } a, a:visited { color: #FF7C16 } a:hover, a:active, a:focus { color: #353535 } .amp-wp-header { background-color: #fff; border-bottom: 1px solid #f3f3f3; margin-bottom: 1rem; } .amp-wp-header div { font-size: 1em; font-weight: 400; margin: 0 auto; max-width: calc(840px - 32px); padding: .875em 16px; position: relative } .amp-wp-header a { font-size: 24px; text-decoration: none } .amp-wp-header .amp-wp-site-icon { background-color: #fff; border: 1px solid #fff; border-radius: 50%; position: absolute; right: 18px; top: 10px } .amp-wp-article { color: #353535; font-weight: 400; margin: 1.5em auto; max-width: 840px; overflow-wrap: break-word; word-wrap: break-word } .amp-wp-article-header { align-items: center; align-content: stretch; display: flex; flex-wrap: wrap; justify-content: space-between; margin: 1.5em 16px 0 } .amp-wp-title { color: #353535; display: block; flex: 1 0 100%; font-weight: 900; margin: 0 0 .625em; width: 100% } .amp-wp-meta { color: #696969; display: inline-block; flex: 2 1 50%; font-size: .875em; line-height: 1.5em; margin: 0 0 1.5em; padding: 0 } .amp-wp-article-header .amp-wp-meta:last-of-type { text-align: right } .amp-wp-article-header .amp-wp-meta:first-of-type { text-align: left } .amp-wp-byline amp-img { display: inline-block; vertical-align: middle } .amp-wp-byline amp-img { border: 1px solid #0a89c0; border-radius: 50%; position: relative; margin-right: 6px } .amp-wp-posted-on { text-align: right } .amp-wp-article-featured-image { margin: 0 0 1em } .amp-wp-article-featured-image amp-img { margin: 0 auto } .amp-wp-article-content { margin: 0 16px } .amp-wp-article-content ul, .amp-wp-article-content ol { margin-left: 1em } .amp-wp-article-content .wp-caption { max-width: 100% } .amp-wp-article-content amp-img { margin: 0 auto } .wp-caption { padding: 0 } .amp-wp-article-footer .amp-wp-meta { display: block } .amp-wp-tax-category, .amp-wp-tax-tag { color: #696969; font-size: .875em; line-height: 1.5em; margin: 1.5em 16px } .amp-wp-comments-link { color: #696969; font-size: .875em; line-height: 1.5em; text-align: center; margin: 2.25em 0 1.5em } .amp-wp-comments-link a { border-style: solid; border-color: #c2c2c2; border-width: 1px 1px 2px; border-radius: 4px; background-color: transparent; color: #0a89c0; cursor: pointer; display: block; font-size: 14px; font-weight: 600; line-height: 18px; margin: 0 auto; max-width: 200px; padding: 11px 16px; text-decoration: none; width: 50%; -webkit-transition: background-color .2s ease; transition: background-color .2s ease } .amp-wp-footer { border-top: 1px solid #c2c2c2; margin: calc(1.5em - 1px) 0 0 } .amp-wp-footer div { margin: 0 auto; max-width: calc(840px - 32px); padding: 1.25em 16px 1.25em; position: relative } .amp-wp-footer h2 { font-size: 1em; line-height: 1.375em; margin: 0 0 .5em } .amp-wp-footer p { color: #696969; font-size: .8em; line-height: 1.5em; margin: 0 85px 0 0 } .amp-wp-footer a { text-decoration: none } .lidform-universal-container { display: none; } video, img {max-width: 100%;} </style>
+							<style amp-custom> .wp-block-image { margin-bottom: 1em } .wp-block-image amp-img { max-width: 100% } .wp-block-image:not(.is-style-rounded) amp-img { border-radius: inherit } .wp-block-image.aligncenter { text-align: center } .wp-block-image .aligncenter { display: table } .wp-block-image .aligncenter>figcaption { display: table-caption; caption-side: bottom } .wp-block-image .aligncenter { margin-left: auto; margin-right: auto } .wp-block-image figcaption { margin-top: .5em; margin-bottom: 1em } p:empty:before { content: "​" } .wp-block-video { margin-left: 0; margin-right: 0 } .wp-block-video amp-video { width: 100% } .wp-block-video.aligncenter { text-align: center } .wp-block-video figcaption { margin-top: .5em; margin-bottom: 1em } .has-text-align-center { text-align: center } .aligncenter { clear: both } .wp-block-image figcaption { color: #555; font-size: 13px; text-align: center } .wp-block-video figcaption { color: #555; font-size: 13px; text-align: center } amp-img.amp-wp-enforced-sizes[layout="intrinsic"]>img { object-fit: contain } .alignnone, .aligncenter { margin-top: 1em; margin-right: auto; margin-bottom: 1em; margin-left: auto } .aligncenter { display: block; text-align: center; margin-left: auto; margin-right: auto } .amp-wp-enforced-sizes { max-width: 100%; margin: 0 auto } html { background: #fff } body { background: #fff; color: #353535; font-family: "Open Sans", sans-serif; font-weight: 300; line-height: 1.75em } p, ol, ul, figure { margin: 0 0 1em; padding: 0 } a { color: #FF7C16; } a, a:visited { color: #FF7C16 } a:hover, a:active, a:focus { color: #353535 } .amp-wp-header { background-color: #fff; border-bottom: 1px solid #f3f3f3; margin-bottom: 0.5rem; } .amp-wp-header div { font-size: 1em; font-weight: 400; margin: 0 auto; max-width: calc(840px - 32px); padding: .875em 16px; position: relative } .amp-wp-header a { font-size: 24px; text-decoration: none } .amp-wp-header .amp-wp-site-icon { background-color: #fff; border: 1px solid #fff; border-radius: 50%; position: absolute; right: 18px; top: 10px } .amp-wp-article { color: #353535; font-weight: 400; margin: 1.5em auto; max-width: 840px; overflow-wrap: break-word; word-wrap: break-word } .amp-wp-article-header { align-items: center; align-content: stretch; display: flex; flex-wrap: wrap; justify-content: space-between; margin: 1.5em 16px 0 } .amp-wp-title { color: #353535; display: block; flex: 1 0 100%; font-weight: 900; margin: 0.5rem 0 .625em; width: 100% } .amp-wp-meta { color: #696969; display: inline-block; flex: 2 1 50%; font-size: .875em; line-height: 1.5em; margin: 0 0 1.5em; padding: 0 } .amp-wp-article-header .amp-wp-meta:last-of-type { text-align: right } .amp-wp-article-header .amp-wp-meta:first-of-type { text-align: left } .amp-wp-byline amp-img { display: inline-block; vertical-align: middle } .amp-wp-byline amp-img { border: 1px solid #0a89c0; border-radius: 50%; position: relative; margin-right: 6px } .amp-wp-posted-on { text-align: right } .amp-wp-article-featured-image { margin: 0 0 1em } .amp-wp-article-featured-image amp-img { margin: 0 auto } .amp-wp-article-content { margin: 0 16px } .amp-wp-article-content ul, .amp-wp-article-content ol { margin-left: 1em } .amp-wp-article-content .wp-caption { max-width: 100% } .amp-wp-article-content amp-img { margin: 0 auto } .wp-caption { padding: 0 } .amp-wp-article-footer .amp-wp-meta { display: block } .amp-wp-tax-category, .amp-wp-tax-tag { color: #696969; font-size: .875em; line-height: 1.5em; margin: 1.5em 16px } .amp-wp-comments-link { color: #696969; font-size: .875em; line-height: 1.5em; text-align: center; margin: 2.25em 0 1.5em } .amp-wp-comments-link a { border-style: solid; border-color: #c2c2c2; border-width: 1px 1px 2px; border-radius: 4px; background-color: transparent; color: #0a89c0; cursor: pointer; display: block; font-size: 14px; font-weight: 600; line-height: 18px; margin: 0 auto; max-width: 200px; padding: 11px 16px; text-decoration: none; width: 50%; -webkit-transition: background-color .2s ease; transition: background-color .2s ease } .amp-wp-footer { border-top: 1px solid #c2c2c2; margin: calc(1.5em - 1px) 0 0 } .amp-wp-footer div { margin: 0 auto; max-width: calc(840px - 32px); padding: 1.25em 16px 1.25em; position: relative } .amp-wp-footer h2 { font-size: 1em; line-height: 1.375em; margin: 0 0 .5em } .amp-wp-footer p { color: #696969; font-size: .8em; line-height: 1.5em; margin: 0 85px 0 0 } .amp-wp-footer a { text-decoration: none } .lidform-universal-container { display: none; } video, img {max-width: 100%;} </style>
 							<title>` + item.yoast_title + `</title>
 						</head>
 						<body>
@@ -184,21 +185,20 @@ module.exports = function (api) {
 								<div class="amp-wp-article-header">
 									<a href=/blogtest/`+item.slug+`/>Полная версия страницы</a>
 									<h1 class="amp-wp-title">` + item.title.rendered + `</h1>
-									<img src="` + featured_media_large + `" alt="` + item.title.rendered + `" />
+									<amp-img src="` + featured_media_large + `" alt="` + item.title.rendered + `" />
 								</div>
 								<div class="amp-wp-article-content">
-									`+pageHTML+`
+									` + pageHTML + `
 								</div>
 							</article>
 							<amp-analytics type="gtag" data-credentials="include"><script type="application/json">{"vars" : {"gtag_id": "G-QWX1N5X5XL","config" : {"G-QWX1N5X5XL": {"groups": "default"}}}}</script></amp-analytics>
 						</body>
 					</html>
-				`;
+				`
 
-				optimizedHtml = await ampOptimizer.transformHtml(html)
 				fs.mkdirSync('./static/blogtest/' + item.slug)
 				fs.mkdirSync('./static/blogtest/' + item.slug + '/amp/')
-				fs.writeFile('./static/blogtest/' + item.slug + '/amp/index.html', optimizedHtml, 'utf8' , function (err) {
+				fs.writeFile('./static/blogtest/' + item.slug + '/amp/index.html', html, 'utf8' , function (err) {
 					if (err) return console.log(err)
 				})
 			}

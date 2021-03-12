@@ -9,7 +9,6 @@
 		"explore": "gridsome explore"
 	},
 	"dependencies": {
-		"@ampproject/toolbox-optimizer": "^2.7.6",
 		"algoliasearch": "^4.8.5",
 		"axios": "^0.21.1",
 		"bootstrap-vue": "^2.17.3",
@@ -19,12 +18,7 @@
 		"gridsome-plugin-gtm": "^0.1.1",
 		"gridsome-plugin-pwa": "^0.0.18",
 		"gridsome-source-graphql": "^1.0.2",
-		"gridsome-source-wordpress": "^0.4.13",
-		"jimp": "^0.16.1",
-		"lru-cache": "^6.0.0",
 		"node-sass": "^4.14.1",
-		"postcss": "^8.2.8",
-		"postcss-focus": "^5.0.1",
 		"sass-loader": "^10.0.1",
 		"typograf": "^6.11.3",
 		"vue-disqus": "^4.0.1",
