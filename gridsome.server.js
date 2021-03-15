@@ -111,7 +111,7 @@ module.exports = function (api) {
 		api.createManagedPages(async ({ createPage }) => {
 			for (const item of data) {
 				let pageHTML = item.content.rendered
-				let featured_media_large = item.featured_media_large
+				let featured_media_large = '' + item.featured_media_large
 				//CDN для ресурсов
 				pageHTML = pageHTML.split('https://www.carrotquest.io/blog/wp-content/uploads/').join('https://cdn-www.carrotquest.io/blog/wp-content/uploads/')
 				featured_media_large = featured_media_large.split('https://www.carrotquest.io/').join('https://cdn-www.carrotquest.io/')
