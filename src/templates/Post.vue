@@ -42,9 +42,9 @@
 					<!-- <div class="post__description font24px" v-html="$context.description" /> -->
 				</b-col>
 			</b-row>
-
+			
 			<!-- Изображение записи -->
-			<b-row>
+			<b-row v-if="$context.featured_media != 'false'">
 				<b-col col cols="12" class="post__image mt-4 mb-5">
 					<img :src="$context.featured_media" />
 				</b-col>
