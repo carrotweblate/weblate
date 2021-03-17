@@ -202,8 +202,6 @@
 			if (routes.search('localhost') != -1) {
 				url = 'https://cors-anywhere.herokuapp.com/'
 			}
-			
-
 			axios.get(url + 'https://www.carrotquest.io/blog/wp-json/wp/v2/posts/' + this.$context.id + '?_fields=modified')
 				.then(response => {
 					if (response.data.modified != this.$context.modified) {
