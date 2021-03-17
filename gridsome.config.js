@@ -17,7 +17,7 @@ const collections = [{
 					slug
 					modified
 					featured_media
-					content
+					tags
 					categories
 				}
 			}
@@ -32,7 +32,7 @@ const collections = [{
 			slug: item.slug,
 			modified: String(item.modified),
 			featured_media: item.featured_media,
-			content: item.content.slice(0,4000),
+			tags: item.tags,
 			categories: item.categories
 		}
 	}, // optional

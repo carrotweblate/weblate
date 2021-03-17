@@ -228,6 +228,7 @@
 						}
 					}
 				)
+			this.searchLeadForms()
 		},
 		updated() {
 			this.searchLeadForms()
@@ -292,7 +293,7 @@
 							}
 							
 							item.classList = 'd-none'
-							document.getElementById(item.id.replace('form-begin_' , 'form-done_')).classList = 'd-block'
+							document.getElementById(item.id.replace('form-begin_' , 'form-done_')).classList = document.getElementById(item.id.replace('form-begin_' , 'form-done_')).classList + ' d-block'
 						})
 					})
 				}

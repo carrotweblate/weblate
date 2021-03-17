@@ -19,6 +19,9 @@ export default function(Vue, { head }) {
 		{ property: "og:locale", content: "ru_RU" },
 		{ property: "og:type", content: "website" },
 	)
+	head.link.push(
+		{ rel: "icon", 	href: "https://www.carrotquest.io/favicon.ico" },
+	)
 
 	//Подключаем Шрифты
 	head.link.push(

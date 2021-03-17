@@ -5,10 +5,10 @@
 
 			<!-- Логотип -->
 			<g-link v-if="!isBlog" to="/">
-				<g-image src="~/assets/images/components/logo.svg" width="386" height="70" class="logo ml-2 ml-md-3" style="max-width: 193px;" alt="Carrot quest" immediate />
+				<img src="@/assets/images/components/logo.svg" width="193" height="40" class="logo ml-2 ml-md-3" alt="Carrot quest" />
 			</g-link>
 			<g-link v-else to="/blogtest/">
-				<g-image src="~/assets/images/components/blogLogo.svg" width="386" height="70" class="logo ml-2 ml-md-3" style="max-width: 190px;" alt="Carrot quest Blog" immediate />
+				<img src="@/assets/images/components/blogLogo.svg" width="190" height="40" class="logo ml-2 ml-md-3" alt="Carrot quest Blog" />
 			</g-link>
 
 			<!-- Мобильное меню гамбургер -->

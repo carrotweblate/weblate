@@ -99,12 +99,14 @@ module.exports = function (api) {
 				date: item.date,
 				modified: item.modified,
 				categories: item.categories,
+				authors: item.acf.post__authors,
 				author: item.author,
 				featured_media: item.featured_media_medium,
 				featured_media_large: item.featured_media_large,
 				content: tp.execute(item.content.rendered),
 				sticky: item.sticky,
 				page_views: item.meta.wpb_post_views_count,
+				tags: item.tags,
 			})
 		}
 		// Делаем страницы статей
