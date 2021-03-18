@@ -115,6 +115,7 @@ module.exports = function (api) {
 				let pageHTML = item.content.rendered
 				let featured_media_large = '' + item.featured_media_large
 				//CDN для ресурсов
+				pageHTML = pageHTML.split('http://www.carrotquest.io/').join('https://www.carrotquest.io/')
 				pageHTML = pageHTML.split('https://www.carrotquest.io/blog/wp-content/uploads/').join('https://cdn-www.carrotquest.io/blog/wp-content/uploads/')
 				featured_media_large = featured_media_large.split('https://www.carrotquest.io/').join('https://cdn-www.carrotquest.io/')
 				//Lazyload
@@ -167,6 +168,7 @@ module.exports = function (api) {
 						axios.get('https://www.carrotquest.io/blog/' + item.slug + '/amp/')
 							.then(response => {
 								pageHTML = response.data
+								pageHTML = pageHTML.split('http://www.carrotquest.io/').join('https://www.carrotquest.io/')
 								pageHTML = pageHTML.split('https://www.carrotquest.io/blog/wp-content/uploads/').join('https://cdn-www.carrotquest.io/blog/wp-content/uploads/')
 								pageHTML = tp.execute(pageHTML)
 								fs.writeFile('./static/blog/' + item.slug + '/amp/index.html', pageHTML, 'utf8' , function (err) {
