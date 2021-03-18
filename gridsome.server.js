@@ -124,7 +124,7 @@ module.exports = function (api) {
 				pageHTML = pageHTML.split('controls').join('')
 				
 				createPage({
-					path: `/blog/${item.slug}/`,
+					path: `/blogtest/${item.slug}/`,
 					component: './src/templates/Post.vue',
 					context: {
 						id: item.id,
@@ -244,7 +244,7 @@ module.exports = function (api) {
 
 				if (item.parent == 28678) {
 					createPage({
-						path: `/blog/authors/${item.slug}/`,
+						path: `/blogtest/authors/${item.slug}/`,
 						component: './src/templates/Author.vue',
 						context: {
 							id: item.acf.user.ID,
