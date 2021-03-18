@@ -15,7 +15,7 @@
 				<b-row>
 					<b-col>
 						<h2 class="mb-4">
-							<g-link to="/blogtest/recent/">
+							<g-link to="/blog/recent/">
 								Новое
 							</g-link>
 						</h2>
@@ -23,7 +23,7 @@
 				</b-row>
 				<b-row>
 					<b-col md="12" lg="8" class="post-card mb-5">
-						<g-link :to="'/blogtest/' + $page.recent.edges[0].node.slug + '/'" class="post__box box-shadow box h-100 d-block">
+						<g-link :to="'/blog/' + $page.recent.edges[0].node.slug + '/'" class="post__box box-shadow box h-100 d-block">
 							<!-- Изображение -->
 							<div class="post__box__pic mb-3" :style="'background-image: url(' + $page.recent.edges[0].node.featured_media_large + ')'"></div>
 							<!-- Категории -->
@@ -41,7 +41,7 @@
 					<b-col md="12" lg="4" class="post-card mb-lg-5">
 						<b-row>
 							<b-col md="6" lg="12" class="post-card mb-5">
-								<g-link :to="'/blogtest/' + $page.recent.edges[1].node.slug + '/'" class="post__box box-shadow box h-100 d-block">
+								<g-link :to="'/blog/' + $page.recent.edges[1].node.slug + '/'" class="post__box box-shadow box h-100 d-block">
 									<!-- Изображение -->
 									<div class="post__box__pic mb-3" :style="'background-image: url(' + $page.recent.edges[1].node.featured_media + ')'"></div>
 									<!-- Категории -->
@@ -57,7 +57,7 @@
 								</g-link>
 							</b-col>
 							<b-col md="6" lg="12" class="post-card mb-5 mb-lg-0">
-								<g-link :to="'/blogtest/' + $page.recent.edges[2].node.slug + '/'" class="post__box box-shadow box h-100 d-block">
+								<g-link :to="'/blog/' + $page.recent.edges[2].node.slug + '/'" class="post__box box-shadow box h-100 d-block">
 									<!-- Изображение -->
 									<div class="post__box__pic mb-3" :style="'background-image: url(' + $page.recent.edges[2].node.featured_media + ')'"></div>
 									<!-- Категории -->
@@ -92,7 +92,7 @@
 				<b-row>
 					<b-col>
 						<h2 class="mb-4">
-							<g-link to="/blogtest/kejsy/">
+							<g-link to="/blog/kejsy/">
 								Кейсы
 							</g-link>
 						</h2>
@@ -102,7 +102,7 @@
 					<b-col md="12" lg="4" class="post-card mb-lg-5">
 						<b-row>
 							<b-col md="6" lg="12" class="post-card mb-5">
-								<g-link :to="'/blogtest/' + $page.cases.edges[1].node.slug + '/'" class="post__box box-shadow box h-100 d-block">
+								<g-link :to="'/blog/' + $page.cases.edges[1].node.slug + '/'" class="post__box box-shadow box h-100 d-block">
 									<!-- Изображение -->
 									<div class="post__box__pic mb-3" :style="'background-image: url(' + $page.cases.edges[1].node.featured_media + ')'"></div>
 									<!-- Заголовок -->
@@ -110,7 +110,7 @@
 								</g-link>
 							</b-col>
 							<b-col md="6" lg="12" class="post-card mb-5 mb-lg-0">
-								<g-link :to="'/blogtest/' + $page.cases.edges[2].node.slug + '/'" class="post__box box-shadow box h-100 d-block">
+								<g-link :to="'/blog/' + $page.cases.edges[2].node.slug + '/'" class="post__box box-shadow box h-100 d-block">
 									<!-- Изображение -->
 									<div class="post__box__pic mb-3" :style="'background-image: url(' + $page.cases.edges[2].node.featured_media + ')'"></div>
 									<!-- Заголовок -->
@@ -120,7 +120,7 @@
 						</b-row>
 					</b-col>
 					<b-col md="12" lg="8" class="post-card mb-5">
-						<g-link :to="'/blogtest/' + $page.cases.edges[0].node.slug + '/'" class="post__box box-shadow box h-100 d-block">
+						<g-link :to="'/blog/' + $page.cases.edges[0].node.slug + '/'" class="post__box box-shadow box h-100 d-block">
 							<!-- Изображение -->
 							<div class="post__box__pic mb-3" :style="'background-image: url(' + $page.cases.edges[0].node.featured_media_large + ')'"></div>
 							<!-- Заголовок -->
@@ -133,7 +133,7 @@
 				<b-row>
 					<b-col>
 						<h2 class="mb-4">
-							<g-link to="/blogtest/best/">
+							<g-link to="/blog/best/">
 								Лучшее
 							</g-link>
 						</h2>
@@ -154,7 +154,7 @@
 				<b-row class="pt-5">
 					<b-col>
 						<h2 class="mb-4">
-							<g-link to="/blogtest/new/">
+							<g-link to="/blog/new/">
 								Обновления
 							</g-link>
 						</h2>
@@ -168,7 +168,7 @@
 				<b-row>
 					<b-col>
 						<h2 class="mb-4">
-							<g-link to="/blogtest/popular/">
+							<g-link to="/blog/popular/">
 								Популярное
 							</g-link>
 						</h2>
@@ -185,7 +185,7 @@
 				<b-row>
 					<b-col>
 						<div class="h1">Как опубликовать гостевой пост в Carrot quest?</div>
-						<b-button to="/blogtest/gostevoj-post/" variant="primary">Узнать больше</b-button>
+						<b-button to="/blog/gostevoj-post/" variant="primary">Узнать больше</b-button>
 					</b-col>
 				</b-row>
 			</b-container>

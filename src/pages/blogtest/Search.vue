@@ -91,7 +91,7 @@
 				//Делаем в HEAD
 				metaTitle: 'Результаты поиска',
 				metaDescription: '',
-				metaCanonical: 'https://www.carrotquest.io/blogtest/search/',
+				metaCanonical: 'https://www.carrotquest.io/blog/search/',
 				metaImage: '',
 
 				//Поиск
@@ -106,7 +106,7 @@
 			this.search = this.$route.query.q
 		},
 		updated() {
-			this.$router.push("/blogtest/search/?q="+this.search)
+			this.$router.push("/blog/search/?q="+this.search)
 		}
 	}	
 </script>

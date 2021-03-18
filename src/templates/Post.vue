@@ -7,14 +7,14 @@
 				<b-col md="8" class="d-none d-md-block">
 					<b-breadcrumb class="font20px d-md-flex">
 						<b-breadcrumb-item href="/">Главная</b-breadcrumb-item>
-						<b-breadcrumb-item href="/blogtest/">Блог</b-breadcrumb-item>
+						<b-breadcrumb-item href="/blog/">Блог</b-breadcrumb-item>
 						<template v-for="{ node } in $page.allCategories.edges">
-							<b-breadcrumb-item  v-if="$context.category[0] == node.id" :href="'/blogtest/' + node.slug + '/'" :text="node.title" :key="node.id" />
+							<b-breadcrumb-item  v-if="$context.category[0] == node.id" :href="'/blog/' + node.slug + '/'" :text="node.title" :key="node.id" />
 						</template>
 					</b-breadcrumb>
 				</b-col>
 				<b-col md="4" class="amp text-right">
-					<a :href="'/blogtest/' + $context.slug + '/amp/'">
+					<a :href="'/blog/' + $context.slug + '/amp/'">
 						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<g clip-path="url(#clip0)">
 							<path d="M10.0001 20C15.523 20 20.0002 15.5228 20.0002 9.99988C20.0002 4.47696 15.523 -0.000244141 10.0001 -0.000244141C4.47721 -0.000244141 0 4.47696 0 9.99988C0 15.5228 4.47721 20 10.0001 20Z" fill="#FF7C16"/>
@@ -72,30 +72,22 @@
 				</b-col>
 			</b-row>
 
+			<b-row class="post__more">
+				<b-col cols="12" class="h2 mb-5">
+					Что еще читать по теме:
+				</b-col>
+				<PostCard v-for="{ node } in $page.allPost.edges" :key="node.id" :node="node" :categoryPage="false" />
+			</b-row>
+
 			<b-row class="disqus">
 				<b-col>
 					<Disqus shortname="carrotquest" :identifier="$context.id + ' https://www.carrotquest.io/blog/?p=' + $context.id" lang="ru" />
 				</b-col>
 			</b-row>
 
-			<BannerSobirayte />
+			<!-- <BannerSobirayte /> -->
 
-			<!-- <b-row class="post__more">
-				<b-col cols="12" class="h2 mb-5">
-					Что еще читать по теме:
-				</b-col>
-				<template v-for="( item , index ) in $context.more">
-
-					<b-col cols="12" lg="6" xl="4" :key="index" class="mb-5">
-						<a :href="item.url" class="post__more__box" :style="item.pic"></a>
-						<span v-text="item.category" class="font12px lightgrey-text mt-4 mb-3"/>
-						<a :href="item.url" class="h4">
-							{{ item.title }}
-						</a>
-					</b-col>
-					
-				</template>
-			</b-row> -->
+			
 
 		</b-container>
 
@@ -109,6 +101,21 @@
 	query post ($id: ID!) {
 		post (id: $id) {
 			id
+		}
+		allPost (limit: 10 , filter: {sticky: { eq: true }}) {
+			edges {
+				node {
+					title
+					slug
+					categories
+					featured_media
+					sticky
+				}
+			}
+			pageInfo {
+				totalPages
+				currentPage
+			}
 		}
 		allCategories {
 			edges {
@@ -141,12 +148,14 @@
 	import BannerSobirayte from '~/components/BannerSobirayte/BannerSobirayte.vue'
 	import axios from 'axios'
 	import { Disqus } from 'vue-disqus'
+	import PostCard from '~/components/PostCard.vue'
 
 	export default {
 		components: {
 			VideoRegistration,
 			BannerSobirayte,
-			Disqus
+			Disqus,
+			PostCard
 		},
 		//Делаем в HEAD
 		metaInfo() {
@@ -195,6 +204,9 @@
 				timeToRead: '',
 				metaCanonical: ''
 			}
+		},
+		beforeMount() {
+			this.$page.allPost.edges = this.$page.allPost.edges.sort(function (a, b) {return Math.random() - 0.5;}).slice(0, 3)
 		},
 		async mounted() {
 			let routes = '' + location

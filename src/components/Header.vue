@@ -7,7 +7,7 @@
 			<g-link v-if="!isBlog" to="/">
 				<img src="@/assets/images/components/logo.svg" width="193" height="40" class="logo ml-2 ml-md-3" alt="Carrot quest" />
 			</g-link>
-			<g-link v-else to="/blogtest/">
+			<g-link v-else to="/blog/">
 				<img src="@/assets/images/components/blogLogo.svg" width="190" height="40" class="logo ml-2 ml-md-3" alt="Carrot quest Blog" />
 			</g-link>
 
@@ -123,7 +123,7 @@
 				this.scrolled = window.scrollY > this.limitPosition;
 			},
 			search() {
-				this.$router.push('/blogtest/search/?q=' + this.searchBlog)
+				this.$router.push('/blog/search/?q=' + this.searchBlog)
 			},
 			showSearchForm() {
 				this.showSearch = true
@@ -141,11 +141,11 @@
 		},
 		mounted () {
 			//Блог или нет
-			if (window.location.href.indexOf('/blogtest/') != -1){
+			if (window.location.href.indexOf('/blog/') != -1){
 				this.isBlog = true
 			}
 			//Страница поиска блога или нет
-			if (window.location.href.indexOf('/blogtest/search/') != -1){
+			if (window.location.href.indexOf('/blog/search/') != -1){
 				this.isSearchBlog = true
 			}
 		},

@@ -7,7 +7,7 @@
 				<b-col md="8" class="d-none d-md-block">
 					<b-breadcrumb class="font20px d-md-flex">
 						<b-breadcrumb-item href="/">Главная</b-breadcrumb-item>
-						<b-breadcrumb-item href="/blogtest/">Блог</b-breadcrumb-item>
+						<b-breadcrumb-item href="/blog/">Блог</b-breadcrumb-item>
 						<b-breadcrumb-item href="/authors/">Авторы</b-breadcrumb-item>
 					</b-breadcrumb>
 				</b-col>
