@@ -18,6 +18,7 @@ const collections = [{
 					modified
 					featured_media
 					meta
+					categories
 				}
 			}
 		}
@@ -31,7 +32,8 @@ const collections = [{
 			slug: item.slug,
 			modified: String(item.modified),
 			featured_media: item.featured_media,
-			meta: item.meta
+			meta: item.meta,
+			categories: item.categories
 		}
 	}, // optional
 	matchFields: ['slug', 'modified'], // Array<String> required with PartialUpdates

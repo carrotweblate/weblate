@@ -106,7 +106,7 @@
 			this.search = this.$route.query.q
 		},
 		updated() {
-			this.$router.push("/blog/search/?q="+this.search)
+			this.$router.push('/blog/search/?q=' + this.search)
 		}
 	}	
 </script>
