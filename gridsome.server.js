@@ -96,6 +96,7 @@ module.exports = function (api) {
 				id: item.id,
 				slug: item.slug,
 				title: tp.execute(item.title.rendered),
+				meta: JSON.stringify(item.yoast_meta),
 				date: item.date,
 				modified: item.modified,
 				categories: item.categories,

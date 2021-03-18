@@ -17,8 +17,7 @@ const collections = [{
 					slug
 					modified
 					featured_media
-					tags
-					categories
+					meta
 				}
 			}
 		}
@@ -32,8 +31,7 @@ const collections = [{
 			slug: item.slug,
 			modified: String(item.modified),
 			featured_media: item.featured_media,
-			tags: item.tags,
-			categories: item.categories
+			meta: item.meta
 		}
 	}, // optional
 	matchFields: ['slug', 'modified'], // Array<String> required with PartialUpdates
@@ -87,7 +85,7 @@ module.exports = {
 				apiKey: 'e268d391762ad62104c571742cfd1afa',
 				collections,
 				chunkSize: 10000, // default: 1000
-				enablePartialUpdates: true, // default: false
+				enablePartialUpdates: false, // default: false
 			},
 		},
 	],
