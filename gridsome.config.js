@@ -87,7 +87,7 @@ module.exports = {
 				apiKey: 'e268d391762ad62104c571742cfd1afa',
 				collections,
 				chunkSize: 10000, // default: 1000
-				enablePartialUpdates: false, // default: false
+				enablePartialUpdates: true, // default: false
 			},
 		},
 	],

@@ -203,9 +203,6 @@
 				metaCanonical: ''
 			}
 		},
-		beforeMount() {
-			this.$page.allPost.edges = this.$page.allPost.edges.sort(function (a, b) {return Math.random() - 0.5;}).slice(0, 3)
-		},
 		async mounted() {
 			let routes = '' + location
 			let url = ''
@@ -239,6 +236,7 @@
 					}
 				)
 			this.searchLeadForms()
+			this.$page.allPost.edges = this.$page.allPost.edges.sort(function (a, b) {return Math.random() - 0.5;}).slice(0, 3)
 		},
 		updated() {
 			this.searchLeadForms()
