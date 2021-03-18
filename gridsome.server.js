@@ -199,7 +199,7 @@ module.exports = function (api) {
 		api.createManagedPages(async ({ createPage }) => {
 			for (const item of data) {
 				createPage({
-					path: `/blog/${item.slug}/`,
+					path: `/blogtest/${item.slug}/`,
 					component: './src/templates/Category.vue',
 					context: {
 						id: item.id,
