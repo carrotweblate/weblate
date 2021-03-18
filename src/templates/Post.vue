@@ -196,7 +196,7 @@
 				metaCanonical: ''
 			}
 		},
-		mounted() {
+		async mounted() {
 			let routes = '' + location
 			let url = ''
 			if (routes.search('localhost') != -1) {
