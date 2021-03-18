@@ -87,8 +87,6 @@
 
 			<!-- <BannerSobirayte /> -->
 
-			
-
 		</b-container>
 
 		<VideoRegistration />
