@@ -113,8 +113,6 @@ body {
 	opacity: 0 !important
 }
 .page {
-	overflow: hidden;
-	padding-top: 5.5rem;
 	.container , .container-fluid , .hero{
 		margin-bottom: 10rem;
 	}
@@ -128,13 +126,20 @@ body {
 		}		
 	}
 	@media (max-width: 767.98px) {
-		padding-top: 4.5rem;
+		
 		.container , .container-fluid , .hero {
 			margin-bottom: 5rem;
 		}
 		.hero {
 			max-height: initial;
 		}
+	}
+}
+.page , .post {
+	overflow: hidden;
+	padding-top: 5.5rem;
+	@media (max-width: 767.98px) {
+		padding-top: 3.55rem;
 	}
 }
 
@@ -355,6 +360,7 @@ input[type=number]:focus,
 	padding: 0;
 	margin: 0;
 	background: transparent;
+	
 	.breadcrumb-item:first-child {
 		list-style: none;
 	}
@@ -363,6 +369,18 @@ input[type=number]:focus,
 		padding-left: 0.85rem;
 		&::marker {
 			content: "→";
+			color: $light-grey;
+		}
+	}
+	@media (max-width: 767.98px) {
+		font-size: 14px;
+		.breadcrumb-item:not(:first-child) {
+			margin-left: 0.7rem;
+			padding-left: 0.25rem;
+			&::marker {
+				content: "/";
+				color: $light-grey;
+			}
 		}
 	}
 }
@@ -458,7 +476,17 @@ input[type=number]:focus,
 	}
 	
 }
-
+@media (max-width: 767.98px) {
+	.logo {
+		width: auto;
+		height: 25px;
+	}
+}
+@media (max-width: 1199.98px) {
+	.navbar , .dropdown-menu {
+		font-size: 0.875em;
+	}
+}
 @media (min-width: 1200px) {
 	#nav_collapse , .navbar-nav , .hasmegamenu {
 		position: initial !important;
@@ -487,11 +515,6 @@ input[type=number]:focus,
 	}
 }
 
-@media (max-width: 1199.98px) {
-	.navbar , .dropdown-menu {
-		font-size: 0.875em;
-	}
-}
 
 
 

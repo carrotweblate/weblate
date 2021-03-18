@@ -3,9 +3,9 @@
 		<b-container>
 
 			<!-- Хлебные крошки -->
-			<b-row>
-				<b-col md="8" class="d-none d-md-block">
-					<b-breadcrumb class="font20px d-md-flex">
+			<b-row class="mt-3 mt-md-5 mb-md-5">
+				<b-col md="8">
+					<b-breadcrumb class="d-flex">
 						<b-breadcrumb-item href="/">Главная</b-breadcrumb-item>
 						<b-breadcrumb-item href="/blog/">Блог</b-breadcrumb-item>
 						<template v-for="{ node } in $page.allCategories.edges">
@@ -13,7 +13,7 @@
 						</template>
 					</b-breadcrumb>
 				</b-col>
-				<b-col md="4" class="amp text-right">
+				<b-col md="4" class="amp text-md-right my-3 my-md-0">
 					<a :href="'/blog/' + $context.slug + '/amp/'">
 						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<g clip-path="url(#clip0)">
@@ -26,7 +26,7 @@
 							</clipPath>
 							</defs>
 						</svg>
-						AMP страница
+						AMP<span class="d-none d-md-inline"> страница</span>
 					</a>
 				</b-col>
 			</b-row>
@@ -35,8 +35,8 @@
 			<b-row>
 				<b-col col xl="9">
 					<h1 class="post__title" v-html="$context.title" />
-					<div class="font20px lightgrey-text my-4">
-						<span class="mr-5">Время чтения: {{ this.timeToRead }}</span>
+					<div class="lightgrey-text my-4">
+						<span class="mr-4 mr-md-5">Время чтения: {{ this.timeToRead }}</span>
 						<span v-html="$context.date" />
 					</div>
 					<!-- <div class="post__description font24px" v-html="$context.description" /> -->

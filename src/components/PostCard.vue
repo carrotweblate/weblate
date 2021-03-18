@@ -1,5 +1,5 @@
 <template>
-	<b-col md="6" lg="4" class="post-card mb-5">
+	<b-col md="6" lg="4" class="post-card mb-4 mb-md-5">
 		<g-link :to="'/blog/' + node.slug + '/'" class="post__box box-shadow box h-100 d-block">
 			<!-- Изображение -->
 			<div class="post__box__pic mb-3" :style="'background-image: url(' + node.featured_media + ')'"></div>

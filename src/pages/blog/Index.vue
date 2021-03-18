@@ -6,7 +6,7 @@
 			<b-container>
 				<b-row>
 					<b-col>
-						<h1 class="my-5">
+						<h1 class="my-4 my-md-5">
 							Блог Carrot quest
 						</h1>
 					</b-col>
@@ -22,7 +22,7 @@
 					</b-col>
 				</b-row>
 				<b-row>
-					<b-col md="12" lg="8" class="post-card mb-5">
+					<b-col md="12" lg="8" class="post-card mb-4 mb-md-5">
 						<g-link :to="'/blog/' + $page.recent.edges[0].node.slug + '/'" class="post__box box-shadow box h-100 d-block">
 							<!-- Изображение -->
 							<div class="post__box__pic mb-3" :style="'background-image: url(' + $page.recent.edges[0].node.featured_media_large + ')'"></div>
@@ -40,7 +40,7 @@
 					</b-col>
 					<b-col md="12" lg="4" class="post-card mb-lg-5">
 						<b-row>
-							<b-col md="6" lg="12" class="post-card mb-5">
+							<b-col md="6" lg="12" class="post-card mb-4 mb-md-5">
 								<g-link :to="'/blog/' + $page.recent.edges[1].node.slug + '/'" class="post__box box-shadow box h-100 d-block">
 									<!-- Изображение -->
 									<div class="post__box__pic mb-3" :style="'background-image: url(' + $page.recent.edges[1].node.featured_media + ')'"></div>
@@ -56,7 +56,7 @@
 									<div class="post__box__title  px-3  pb-4" v-html="$page.recent.edges[1].node.title" />
 								</g-link>
 							</b-col>
-							<b-col md="6" lg="12" class="post-card mb-5 mb-lg-0">
+							<b-col md="6" lg="12" class="post-card mb-4 mb-md-5 mb-lg-0">
 								<g-link :to="'/blog/' + $page.recent.edges[2].node.slug + '/'" class="post__box box-shadow box h-100 d-block">
 									<!-- Изображение -->
 									<div class="post__box__pic mb-3" :style="'background-image: url(' + $page.recent.edges[2].node.featured_media + ')'"></div>
@@ -101,7 +101,7 @@
 				<b-row class="mb-5">
 					<b-col md="12" lg="4" class="post-card mb-lg-5">
 						<b-row>
-							<b-col md="6" lg="12" class="post-card mb-5">
+							<b-col md="6" lg="12" class="post-card mb-4 mb-md-5">
 								<g-link :to="'/blog/' + $page.cases.edges[1].node.slug + '/'" class="post__box box-shadow box h-100 d-block">
 									<!-- Изображение -->
 									<div class="post__box__pic mb-3" :style="'background-image: url(' + $page.cases.edges[1].node.featured_media + ')'"></div>
@@ -109,7 +109,7 @@
 									<div class="post__box__title  px-3  pb-4" v-html="$page.cases.edges[1].node.title" />
 								</g-link>
 							</b-col>
-							<b-col md="6" lg="12" class="post-card mb-5 mb-lg-0">
+							<b-col md="6" lg="12" class="post-card mb-4 mb-md-5 mb-lg-0">
 								<g-link :to="'/blog/' + $page.cases.edges[2].node.slug + '/'" class="post__box box-shadow box h-100 d-block">
 									<!-- Изображение -->
 									<div class="post__box__pic mb-3" :style="'background-image: url(' + $page.cases.edges[2].node.featured_media + ')'"></div>
@@ -119,7 +119,7 @@
 							</b-col>
 						</b-row>
 					</b-col>
-					<b-col md="12" lg="8" class="post-card mb-5">
+					<b-col md="12" lg="8" class="post-card mb-4 mb-md-5">
 						<g-link :to="'/blog/' + $page.cases.edges[0].node.slug + '/'" class="post__box box-shadow box h-100 d-block">
 							<!-- Изображение -->
 							<div class="post__box__pic mb-3" :style="'background-image: url(' + $page.cases.edges[0].node.featured_media_large + ')'"></div>
