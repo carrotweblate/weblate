@@ -14,75 +14,75 @@ tp.enableRule('common/nbsp/*')
 const fs = require('fs')
 
 module.exports = function (api) {
-	// API from Tilda Files
-	api.loadSource(async actions => {
-		const { data } = await axios.get(
-			// 'https://api.tildacdn.info/v1/getproject/?publickey=h6wlwdtglx70dzkz1fnn&secretkey=cz7a318b3jpkqm6nzz4l&projectid=62329',
-			'https://tilda.carrotquest.io/files_list.json'
-		)
-		const collection = actions.addCollection('tildaFiles')
-		for (const item of data.result.css) {
-			collection.addNode({css: item})
-		}
-		for (const item of data.result.js) {
-			collection.addNode({js: item})
-		}
-	})
+	// // API from Tilda Files
+	// api.loadSource(async actions => {
+	// 	const { data } = await axios.get(
+	// 		// 'https://api.tildacdn.info/v1/getproject/?publickey=h6wlwdtglx70dzkz1fnn&secretkey=cz7a318b3jpkqm6nzz4l&projectid=62329',
+	// 		'https://tilda.carrotquest.io/files_list.json'
+	// 	)
+	// 	const collection = actions.addCollection('tildaFiles')
+	// 	for (const item of data.result.css) {
+	// 		collection.addNode({css: item})
+	// 	}
+	// 	for (const item of data.result.js) {
+	// 		collection.addNode({js: item})
+	// 	}
+	// })
 
-	// API from Tilda: Список страниц
-	api.loadSource(async actions => {
-		const { data } = await axios.get(
-			// 'https://api.tildacdn.info/v1/getpageslist/?publickey=h6wlwdtglx70dzkz1fnn&secretkey=cz7a318b3jpkqm6nzz4l&projectid=62329',
-			'https://tilda.carrotquest.io/pages_list.json'
-		)
-		const collection = actions.addCollection('Tilda')
-		api.createManagedPages(async ({ createPage }) => {
-			for (const item of data.result) {
-				if ( 
-					( item.id != '312699' ) && ( item.id == '12011344' || item.id == '17091896' || item.id == '11937240' || item.id == '16075876' || item.id == '16080876' || item.id == '16083784' || item.id == '2833995' || item.id == '16218892' || item.id == '11880600' || item.id == '10518279' || item.id == '10714391' || item.id == '10714999' || item.id == '10715060'
-					//Интеграции
-					|| item.id == '9970780' || item.id == '11191195' || item.id == '11193030' || item.id == '11193800' || item.id == '11195611' || item.id == '11431149' || item.id == '11431453' || item.id == '11431738' || item.id == '11007077' || item.id == '11183247' || item.id == '11183537' || item.id == '11194593' || item.id == '11195339' || item.id == '11430916' || item.id == '11432052' || item.id == '11432895' || item.id == '11433520' || item.id == '13669305' || item.id == '13670106' || item.id == '13670549' || item.id == '13670751' || item.id == '3785072' || item.id == '3195986'
-					//Вебинары
-					|| item.id == '17071238' || item.id == '17091896'
-				) ) {
-				// if ( item.id != '312699' || item.id == '1048214' || item.id == '2883968' || item.id == '11437990' ) {
-				// if ( item.id == '16083784') {
-					const { data } = await axios.get(
-						// 'https://api.tildacdn.info/v1/getpage/?publickey=h6wlwdtglx70dzkz1fnn&secretkey=cz7a318b3jpkqm6nzz4l&pageid=' + item.id,
-						'https://tilda.carrotquest.io/page_' + item.id + '.json'
-					)
-					if ( item.alias ) {
-						createPage({
-							path: `/${item.alias}`,
-							component: './src/templates/Tilda.vue',
-							context: {
-								id: item.id,
-								title: item.title,
-								description: item.descr,
-								cover: item.img,
-								slug: item.alias,
-								html: data.result.html
-							}
-						})
-					} else {
-						createPage({
-							path: `/${item.filename}`,
-							component: './src/templates/Tilda.vue',
-							context: {
-								id: item.id,
-								title: item.title,
-								description: item.descr,
-								cover: item.img,
-								slug: item.filename,
-								html: data.result.html
-							}
-						})
-					}
-				}
-				console.log('Tilda - ' + item.title + ' - готова!')
-			}
-		})
-	})
+	// // API from Tilda: Список страниц
+	// api.loadSource(async actions => {
+	// 	const { data } = await axios.get(
+	// 		// 'https://api.tildacdn.info/v1/getpageslist/?publickey=h6wlwdtglx70dzkz1fnn&secretkey=cz7a318b3jpkqm6nzz4l&projectid=62329',
+	// 		'https://tilda.carrotquest.io/pages_list.json'
+	// 	)
+	// 	const collection = actions.addCollection('Tilda')
+	// 	api.createManagedPages(async ({ createPage }) => {
+	// 		for (const item of data.result) {
+	// 			if ( 
+	// 				( item.id != '312699' ) && ( item.id == '12011344' || item.id == '17091896' || item.id == '11937240' || item.id == '16075876' || item.id == '16080876' || item.id == '16083784' || item.id == '2833995' || item.id == '16218892' || item.id == '11880600' || item.id == '10518279' || item.id == '10714391' || item.id == '10714999' || item.id == '10715060'
+	// 				//Интеграции
+	// 				|| item.id == '9970780' || item.id == '11191195' || item.id == '11193030' || item.id == '11193800' || item.id == '11195611' || item.id == '11431149' || item.id == '11431453' || item.id == '11431738' || item.id == '11007077' || item.id == '11183247' || item.id == '11183537' || item.id == '11194593' || item.id == '11195339' || item.id == '11430916' || item.id == '11432052' || item.id == '11432895' || item.id == '11433520' || item.id == '13669305' || item.id == '13670106' || item.id == '13670549' || item.id == '13670751' || item.id == '3785072' || item.id == '3195986'
+	// 				//Вебинары
+	// 				|| item.id == '17071238' || item.id == '17091896'
+	// 			) ) {
+	// 			// if ( item.id != '312699' || item.id == '1048214' || item.id == '2883968' || item.id == '11437990' ) {
+	// 			// if ( item.id == '16083784') {
+	// 				const { data } = await axios.get(
+	// 					// 'https://api.tildacdn.info/v1/getpage/?publickey=h6wlwdtglx70dzkz1fnn&secretkey=cz7a318b3jpkqm6nzz4l&pageid=' + item.id,
+	// 					'https://tilda.carrotquest.io/page_' + item.id + '.json'
+	// 				)
+	// 				if ( item.alias ) {
+	// 					createPage({
+	// 						path: `/${item.alias}`,
+	// 						component: './src/templates/Tilda.vue',
+	// 						context: {
+	// 							id: item.id,
+	// 							title: item.title,
+	// 							description: item.descr,
+	// 							cover: item.img,
+	// 							slug: item.alias,
+	// 							html: data.result.html
+	// 						}
+	// 					})
+	// 				} else {
+	// 					createPage({
+	// 						path: `/${item.filename}`,
+	// 						component: './src/templates/Tilda.vue',
+	// 						context: {
+	// 							id: item.id,
+	// 							title: item.title,
+	// 							description: item.descr,
+	// 							cover: item.img,
+	// 							slug: item.filename,
+	// 							html: data.result.html
+	// 						}
+	// 					})
+	// 				}
+	// 			}
+	// 			console.log('Tilda - ' + item.title + ' - готова!')
+	// 		}
+	// 	})
+	// })
 
 	// API Wordpress - создаём Посты
 	api.loadSource(async actions => {
@@ -110,8 +110,6 @@ module.exports = function (api) {
 			})
 		}
 		// Делаем страницы статей
-		fs.rmdirSync( './static/blogtest/', { recursive: true }) //Удаляем старый AMP
-		fs.mkdirSync('./static/blogtest/') //Создаём новый AMP
 		api.createManagedPages(async ({ createPage }) => {
 			for (const item of data) {
 				let pageHTML = item.content.rendered
@@ -155,18 +153,29 @@ module.exports = function (api) {
 				console.log('Пост - ' + item.id + ' - готов!')
 
 				//Делаем AMP
-				axios.get('https://www.carrotquest.io/blog/' + item.slug + '/amp/')
-					.then(response => {
-						pageHTML = response.data
-						pageHTML = pageHTML.split('https://www.carrotquest.io/blog/wp-content/uploads/').join('https://cdn-www.carrotquest.io/blog/wp-content/uploads/')
-						pageHTML = tp.execute(pageHTML)
-						fs.mkdirSync('./static/blogtest/' + item.slug)
-						fs.mkdirSync('./static/blogtest/' + item.slug + '/amp/')
-						fs.writeFile('./static/blogtest/' + item.slug + '/amp/index.html', pageHTML, 'utf8' , function (err) {
+				fs.readFile('./static/blogtest/' + item.slug + '/amp/modified.json', 'utf8', function(err, contents) {
+					let ampModified = JSON.stringify({ date: '' })
+					if (contents) {
+						ampModified = JSON.parse(contents)
+					}
+					if (ampModified.date != item.modified ) {
+						fs.mkdirSync('./static/blogtest/' + item.slug , { recursive: true })
+						fs.mkdirSync('./static/blogtest/' + item.slug + '/amp/' , { recursive: true })
+						fs.writeFile('./static/blogtest/' + item.slug + '/amp/modified.json', JSON.stringify({ date: item.modified }), 'utf8' , function (err) {
 							if (err) return console.log(err)
 						})
-						console.log('AMP - ' + item.id + ' - готов!')
-					})
+						axios.get('https://www.carrotquest.io/blog/' + item.slug + '/amp/')
+							.then(response => {
+								pageHTML = response.data
+								pageHTML = pageHTML.split('https://www.carrotquest.io/blog/wp-content/uploads/').join('https://cdn-www.carrotquest.io/blog/wp-content/uploads/')
+								pageHTML = tp.execute(pageHTML)
+								fs.writeFile('./static/blogtest/' + item.slug + '/amp/index.html', pageHTML, 'utf8' , function (err) {
+									if (err) return console.log(err)
+								})
+								console.log('AMP - ' + item.id + ' - готов!')
+							})
+					}
+				})
 			}
 		})
 	})
