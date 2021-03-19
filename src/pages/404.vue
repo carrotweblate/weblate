@@ -24,11 +24,11 @@
 </template>
 
 <script>
-
 	export default {
 		data() {
 			return {
 				//Делаем в HEAD
+				visibleDDMenu: '123',
 				metaTitle: '404 — Страница не найдена',
 				metaDescription: 'Страница, которую вы ищите не найдена на сайте',
 				metaCanonical: 'https://www.carrotquest.io/404/',

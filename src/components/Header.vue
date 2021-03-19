@@ -16,52 +16,84 @@
 			
 			<!-- Обычное меню -->
 			<b-collapse v-if="!isBlog" is-nav id="nav_collapse">
-					<!-- Выпадающее меню -->
-					<b-navbar-nav class="ml-auto mt-3 mt-lg-0">
-						<template v-for="( item , index ) in topMenu">
-							<b-nav-item v-if="!item.subLinks" :href="item.href" :key="index" class="mr-1">
-								{{ item.title }}
-							</b-nav-item>
-							<b-nav-item-dropdown v-else :text="item.title" :key="index" class="mr-1">
-								<b-dropdown-item v-for="( subLink , index ) in item.subLinks" :href="subLink.href" :key="index">
+				<!-- Выпадающее меню -->
+				<b-navbar-nav class="ml-auto mt-3 mt-lg-0">
+					<template v-for="( item , index ) in topMenu">
+						<b-nav-item v-if="!item.subLinks" :href="item.href" :key="index" class="mr-1" >
+							{{ item.title }}
+						</b-nav-item>
+						<template v-else>
+							<b-nav-item-dropdown :key="index" class="mr-1" :class="{hasmegamenu: !!item.jobs}" >
+								<template slot="button-content">
+									<span v-on:click="openMegamenu" class="d-none d-lg-inline">
+										{{item.title}}
+									</span>
+									<span class="d-lg-none">
+										{{item.title}}
+									</span>
+								</template>
+
+								<b-dropdown-item v-for="( subLink , index ) in item.subLinks" :href="subLink.href" :key="index" class="d-lg-none">
 									{{ subLink.title }}
 								</b-dropdown-item>
-							</b-nav-item-dropdown>
-							<!-- <template v-else>
-
-								<b-nav-item-dropdown v-if="!item.jobs" :text="item.title" :key="index" class="mr-1">
-									<b-dropdown-item v-for="( subLink , index ) in item.subLinks" :href="subLink.href" :key="index">
-										{{ subLink.title }}
-									</b-dropdown-item>
-								</b-nav-item-dropdown>
-
-								<b-nav-item-dropdown v-else :text="item.title" :key="index" class="hasmegamenu mr-1">
-									<b-dropdown-item v-for="( subLink , index ) in item.subLinks" :href="subLink.href" :key="index" class="d-xl-none">
-										{{ subLink.title }}
-									</b-dropdown-item>
-									<b-row class="megamenu d-none d-xl-flex">
-										<b-col v-for="( subLink , index ) in item.subLinks" :key="index" cols="4">
-											<p class="mb-4">
-												<a :href="subLink.href">
-													<b>{{ subLink.title }}</b>
-													<span v-html="subLink.job" class="font14px grey-text mt-1" />
-												</a>
+								
+								<!-- Инструменты и Решения -->
+								<b-container v-if="(item.title == 'Инструменты') || (item.title == 'Решения')" class="megamenu  py-4 d-none d-lg-flex" :class="{'megamenu--instruments': item.title == 'Инструменты' , 'megamenu--resheniya': item.title == 'Решения'}">
+									<b-row>
+										<b-col lg="8">
+											<ul>
+												<li v-for="( subLink , index ) in item.subLinks" :key="index"  class="mb-4">
+													<a :href="subLink.href">
+														<b class="mb-1">{{ subLink.title }}</b>
+														<span v-html="subLink.job" class="font14px grey-text mt-1" />
+													</a>
+												</li>
+											</ul>
+										</b-col>
+										<b-col lg="4" class="border-left">
+											<p class="text-uppercase lightgrey-text">
+												Тарифы
+											</p>
+											<p class="mt-4 mb-2">
+												Бизнес-чат и Автоматизация
+											</p>
+											<p class="font14px lightgrey-text">
+												до 10 000 уников в месяц<br>
+												2 400 ₽ в месяц
+											</p>
+											<p class="mt-4 mb-2">
+												Премиум
+											</p>
+											<p class="font14px lightgrey-text">
+												Максимум возможностей сервиса и персональные консультации от нашего эксперта
+											</p>
+											<p class="my-4">
+												<g-link to="/price/">
+													Посмотреть тарифы
+												</g-link>
+											</p>
+											<p>
+												<b-button variant="primary">Записаться на демонстрацию</b-button>
 											</p>
 										</b-col>
 									</b-row>
-								</b-nav-item-dropdown>
+								</b-container>
 
-							</template> -->
+								
+
+							</b-nav-item-dropdown>
 						</template>
-					</b-navbar-nav>
-					<!-- Кнопки -->
-					<b-button variant="primary" href="/panel/register/" class="ml-0 mt-3 mr-1 px-2 ml-xl-3 mt-lg-0 mr-xl-3 px-xl-4">
-						Зарегистрироваться
-					</b-button>
-					<b-button variant="outline" href="/panel/login/" class="mt-3 mt-lg-0">
-						Войти
-					</b-button>
+					</template>
+				</b-navbar-nav>
+				<!-- Кнопки -->
+				<b-button variant="primary" href="/panel/register/" class="ml-0 mt-3 mr-1 px-2 ml-xl-3 mt-lg-0 mr-xl-3 px-xl-4">
+					Зарегистрироваться
+				</b-button>
+				<b-button variant="outline" href="/panel/login/" class="mt-3 mt-lg-0">
+					Войти
+				</b-button>
 			</b-collapse>
+
 			<!-- Меню блога -->
 			<b-collapse v-else is-nav id="nav_collapse">
 				<b-navbar-nav class="ml-auto mt-3 mt-lg-0">
@@ -130,6 +162,13 @@
 			},
 			hideSearchForm() {
 				this.showSearch = false
+			},
+			openMegamenu(el) {
+				if (el.srcElement.parentElement.ariaExpanded == 'false') {
+					this.$emit('overlay-show')
+				} else {
+					this.$emit('overlay-close')
+				}
 			}
 		},
 		components: {
@@ -149,134 +188,146 @@
 				this.isSearchBlog = true
 			}
 		},
-		data: () => ({
-			lastPosition: 0,
-			limitPosition: 500,
-      		scrolled: false,
-			hideHeader: false,
-			isBlog: false,
-			isSearchBlog: false,
-			showSearch: false,
-			searchBlog: '',
-			topMenu: [
-				{
-					title: 'Инструменты',
-					subLinks: [
-						{
-							title: 'Лид-бот',
-							href: '/chatbot/',
-							job: 'Собирайте больше квалифицированных лидов с&nbsp;сайта сайта без дополнительной нагрузки на&nbsp;ваших сотрудников'
-						},
-						{
-							title: 'Онлайн-консультант',
-							href: '/online-consultant/',
-							job: 'Повышайте продажи на&nbsp;сайте и&nbsp;улучшайте поддержку ваших клиентов'
-						},
-						{
-							title: 'Автоматизация воронки',
-							href: '/automation-marketing/',
-							job: 'Увеличивайте конверсию воронки сайта с&nbsp;помощью цепочек сообщений (чат, чат-бот, поп-ап, письма)'
-						},
-						{
-							title: 'База знаний',
-							href: '/knowledge-base/',
-							job: 'Сокращает время ответа на&nbsp;вопрос и&nbsp;систематизирует для клиентов знания о&nbsp;вашем продукте'
-						},
-						{
-							title: 'Email-маркетинг',
-							href: '/email-marketing/',
-							job: 'Повышает эффективность рассылок за&nbsp;счет гибкой сегментации пользователей'
-						},
-						{
-							title: 'SDK для Android и iOS',
-							href: '/sdk/',
-							job: 'Добавляет функционал Carrot quest в&nbsp;ваше клиентское мобильное приложение'
-						},
-						{
-							title: 'Трекинг пользователей',
-							href: '/lead-manager/',
-							job: 'Собирает все данные о&nbsp;каждом пользователе, его действиях, заказах и&nbsp;коммуникациях'
-						},
-						{
-							title: 'Поп-ап окна',
-							href: '/pop-up/',
-							job: 'Собирайте больше лидов и&nbsp;продаж благодаря гиперсегментации аудитории'
-						},
-					],
-					jobs: true
-				},
-				{
-					title: 'Решения',
-					subLinks: [
-						{
-							title: 'Продуктовым компаниям и SAAS',
-							href: '/saas/'
-						},
-						{
-							title: 'Интернет-магазинам и e‑commerce',
-							href: '/ecommerce/'
-						},
-						{
-							title: 'Внедрение для крупных компаний',
-							href: '/introduction-carrotquest/'
-						}
-					],
-					jobs: false
-				},
-				{
-					title: 'Тарифы',
-					href: '/price/'
-				},
-				{
-					title: 'Ресурсы',
-					subLinks: [
-						{
-							title: 'Библиотека',
-							href: '/library/',
-							job: 'Книги, гайды, чек листы, видеокурсы. Скачивайте бесплатно'
-						},
-						{
-							title: 'Блог',
-							href: '/blog/',
-							job: 'О&nbsp;том, как разработчику интегрировать Carrot quest на&nbsp;сайт'
-						},
-						{
-							title: 'API',
-							href: 'https://developers.carrotquest.io/',
-							job: 'О&nbsp;том, как разработчику интегрировать Carrot quest на&nbsp;сайт'
-						},
-						{
-							title: 'Вебинары и подкасты',
-							href: '/blog/webinars/',
-							job: 'Более 30&nbsp;вебинаров и&nbsp;подкастов на&nbsp;темы про создание продуктов, маркетинг и&nbsp;growth hacking'
-						},
-						{
-							title: 'Интеграции',
-							href: '/integration/',
-							job: 'Более 30&nbsp;готовых интеграций с&nbsp;CMS, CRM, аналитикой, мессенджерами, соц.сетями и&nbsp;другими сервисами'
-						},
-						{
-							title: 'Кейсы',
-							href: '/cases/',
-							job: 'Более 60&nbsp;историй успеха наших клиентов'
-						},
-						{
-							title: 'База знаний',
-							href: 'https://help.carrotquest.io/',
-							job: 'О&nbsp;том, как работает Carrot quest и&nbsp;как его настроить (для продакта, маркетолога и&nbsp;разработчика)'
-						}						
-					],
-					jobs: true
-				},
-				{
-					title: 'Блог',
-					href: '/blog/'
-				},
-				{
-					title: 'Партнерам',
-					href: '/partner/'
-				}
-			]
-		})
+		data() {
+			return {
+				lastPosition: 0,
+				limitPosition: 500,
+				scrolled: false,
+				hideHeader: false,
+
+				//Навигация для блога
+				isBlog: false,
+				isSearchBlog: false,
+
+				//Поиск по блогу
+				showSearch: false,
+				searchBlog: '',
+
+				//Верхнее меню
+				topMenu: [
+					{
+						title: 'Инструменты',
+						subLinks: [
+							{
+								title: 'Онлайн-консультант',
+								href: '/online-consultant/',
+								job: 'Повышайте продажи на сайте и улучшайте поддержку ваших клиентов'
+							},
+							{
+								title: 'Лид-бот',
+								href: '/chatbot/',
+								job: 'Собирайте больше квалифицированных лидов с сайта сайта без дополнительной нагрузки на ваших сотрудников'
+							},
+							
+							{
+								title: 'Автоматизация воронки',
+								href: '/automation-marketing/',
+								job: 'Увеличивайте конверсию воронки сайта с помощью цепочек сообщений (чат, чат-бот, поп-ап, письма)'
+							},
+							{
+								title: 'База знаний',
+								href: '/knowledge-base/',
+								job: 'Сокращает время ответа на вопрос и систематизирует для клиентов знания о вашем продукте'
+							},
+							{
+								title: 'Email-маркетинг',
+								href: '/email-marketing/',
+								job: 'Повышает эффективность рассылок за счет гибкой сегментации пользователей'
+							},
+							{
+								title: 'SDK для Android и iOS',
+								href: '/sdk/',
+								job: 'Добавляет функционал Carrot quest в ваше клиентское мобильное приложение'
+							},
+							{
+								title: 'Трекинг пользователей',
+								href: '/lead-manager/',
+								job: 'Собирает все данные о каждом пользователе, его действиях, заказах и коммуникациях'
+							},
+							{
+								title: 'Поп-ап окна',
+								href: '/pop-up/',
+								job: 'Собирайте больше лидов и продаж благодаря гиперсегментации аудитории'
+							},
+						],
+						jobs: true
+					},
+					{
+						title: 'Решения',
+						subLinks: [
+							{
+								title: 'Для продуктовых компаний',
+								href: '/saas/',
+								job: 'saas/онлайн-сервисы <br>Сервис помогает продакт-менеджерам, маркетологам и поддержке лучше взаимодействовать с пользователями и улучшать результаты команды и метрики продукта'
+							},
+							{
+								title: 'Внедрение крупным компаниям',
+								href: '/introduction-carrotquest/',
+								job: 'Выделенная команда внедрения поможет вашей команде быстро настроить сервис, запустить сценарии автоматизации маркетинга и измерить результат'
+							},
+							{
+								title: 'Интернет-магазинам и e‑commerce',
+								href: '/ecommerce/',
+								job: 'Сервис помогает маркетологам и менеджерам по продажам увеличивать ROI своей работы'
+							}
+						],
+						jobs: true
+					},
+					{
+						title: 'Тарифы',
+						href: '/price/'
+					},
+					{
+						title: 'Ресурсы',
+						subLinks: [
+							{
+								title: 'Библиотека',
+								href: '/library/',
+								job: 'Книги, гайды, чек листы, видеокурсы. Скачивайте бесплатно'
+							},
+							{
+								title: 'Блог',
+								href: '/blog/',
+								job: 'О&nbsp;том, как разработчику интегрировать Carrot quest на&nbsp;сайт'
+							},
+							{
+								title: 'API',
+								href: 'https://developers.carrotquest.io/',
+								job: 'О&nbsp;том, как разработчику интегрировать Carrot quest на&nbsp;сайт'
+							},
+							{
+								title: 'Вебинары и подкасты',
+								href: '/blog/webinars/',
+								job: 'Более 30&nbsp;вебинаров и&nbsp;подкастов на&nbsp;темы про создание продуктов, маркетинг и&nbsp;growth hacking'
+							},
+							{
+								title: 'Интеграции',
+								href: '/integration/',
+								job: 'Более 30&nbsp;готовых интеграций с&nbsp;CMS, CRM, аналитикой, мессенджерами, соц.сетями и&nbsp;другими сервисами'
+							},
+							{
+								title: 'Кейсы',
+								href: '/cases/',
+								job: 'Более 60&nbsp;историй успеха наших клиентов'
+							},
+							{
+								title: 'База знаний',
+								href: 'https://help.carrotquest.io/',
+								job: 'О&nbsp;том, как работает Carrot quest и&nbsp;как его настроить (для продакта, маркетолога и&nbsp;разработчика)'
+							}						
+						],
+						jobs: true
+					},
+					{
+						title: 'Блог',
+						href: '/blog/'
+					},
+					{
+						title: 'Партнерам',
+						href: '/partner/'
+					}
+				]
+			}
+		}
 	}
 </script>

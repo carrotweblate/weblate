@@ -1,12 +1,16 @@
 <template>
 	<div>
-		<Header v-if="header" />
-		
-		<slot />
+		<b-overlay :show="showOverlay" v-on:click="showOverlay = false">
 
-		<Footer v-if="footer" />
+			<Header v-if="header" v-on:overlay-show="overlay" v-on:overlay-close="overlayClose" />
 
-		<Balcony />
+			<slot />
+
+			<Footer v-if="footer" />
+
+			<Balcony />
+			
+		</b-overlay>
 
 		<!-- Модалка для скачивания файлов -->
 		<b-modal ref="open-modal-download" hide-footer :title="modalTitle">
@@ -153,7 +157,9 @@
 				modalRole: '',
 				modalEvent: '',
 				modalOpenUrl: '',
-				modealSend: false
+				modealSend: false,
+
+				showOverlay: false,
 			};
 		},
 		methods: {
@@ -170,6 +176,7 @@
 					'Email': this.modalEmail,
 					'url': location.host + location.pathname
 				})
+				carrotquest.track('Скачал лид-магнит')
 				carrotquest.track(this.modalEvent)
 
 				dataLayer.push({ event: 'UAevent', eventCategory: 'leads', eventAction: 'phone', eventLabel: location.host + location.pathname })
@@ -246,6 +253,14 @@
 				this.$refs['open-modal-webinar'].hide()
 
 				window.open( this.modalOpenUrl + '?cq_event=webinar_bonus_landing_opened' + '&from=webinar-' + this.modalTitle , '_self' )
+			},
+
+			//Управляем оверлеем
+			overlay() {
+				this.showOverlay = true
+			},
+			overlayClose() {
+				this.showOverlay = false
 			}
 		},
 		mounted () {
