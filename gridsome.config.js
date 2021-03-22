@@ -4,8 +4,8 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
-  .BundleAnalyzerPlugin
+// const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
+//   .BundleAnalyzerPlugin
 
 const collections = [{
 	query: `{
@@ -90,13 +90,23 @@ module.exports = {
 				enablePartialUpdates: true, // default: false
 			},
 		},
+		{
+			use: `compression-webpack-plugin`,
+			options: {
+				exclude: /\/icons/,
+				algorithm: "gzip",
+				test: /\.js$|\.html$/,
+				threshold: 10240,
+        		minRatio: 0.8
+			},
+		}
 	],
 	
 	
-	chainWebpack: config => {		
-		// Анализ размера билда
-		config
-			.plugin('BundleAnalyzerPlugin')
-			.use(BundleAnalyzerPlugin, [{ analyzerMode: 'static' }])
-	}
+	// chainWebpack: config => {		
+	// 	// Анализ размера билда
+	// 	config
+	// 		.plugin('BundleAnalyzerPlugin')
+	// 		.use(BundleAnalyzerPlugin, [{ analyzerMode: 'static' }])
+	// }
 }

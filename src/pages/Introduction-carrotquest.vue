@@ -33,7 +33,7 @@
 						:text="item.text" 
 						:href="item.href" 
 					/>
-					<Case v-for="item in cases" :key="item.logo"
+					<Case v-for="item in cases" :key="item.logo + '-2'"
 						:number="item.number" 
 						:logo='item.logo'
 						:title="item.title"

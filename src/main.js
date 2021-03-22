@@ -2,7 +2,18 @@
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 
 //Bootstrap
-import BootstrapVue from 'bootstrap-vue' 
+import {
+	LayoutPlugin,
+	BOverlay,
+	NavbarPlugin,
+	TabsPlugin,
+	CardPlugin,
+	EmbedPlugin,
+	VBVisiblePlugin,
+	LinkPlugin,
+	FormPlugin, FormInputPlugin, FormRadioPlugin, FormGroupPlugin, InputGroupPlugin, ButtonPlugin, ButtonGroupPlugin,
+	ModalPlugin,
+} from 'bootstrap-vue' 
 
 //Общие стили
 import '~/assets/scss/app.scss'
@@ -31,7 +42,23 @@ export default function(Vue, { head }) {
 	)
 
 	//Bootstrap
-	Vue.use(BootstrapVue) 
+	Vue.use(LayoutPlugin)
+	Vue.component('b-overlay', BOverlay)
+	Vue.use(NavbarPlugin)
+	Vue.use(TabsPlugin)
+	Vue.use(CardPlugin)
+	Vue.use(EmbedPlugin)
+	Vue.use(VBVisiblePlugin)
+	Vue.use(LinkPlugin)
+	Vue.use(FormPlugin)
+	Vue.use(FormInputPlugin)
+	Vue.use(FormRadioPlugin)
+	Vue.use(FormGroupPlugin)
+	Vue.use(InputGroupPlugin)
+	Vue.use(ButtonPlugin)
+	Vue.use(ButtonGroupPlugin)
+	Vue.use(ModalPlugin)
+
 
 	//Базовая разметка
 	Vue.component('Layout', DefaultLayout)

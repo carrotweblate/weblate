@@ -79,6 +79,51 @@
 									</b-row>
 								</b-container>
 
+								<!-- Ресурсы -->
+								<b-container v-if="item.title == 'Ресурсы'" class="megamenu  py-4 d-none d-lg-flex megamenu--resurces">
+									<b-row>
+										<b-col lg="4">
+											<p class="text-uppercase lightgrey-text">
+												О продукте
+											</p>
+											<ul>
+												<li v-for="( subLink , index ) in item.subLinks" :key="index"  class="mb-4">
+													<a :href="subLink.href">
+														<b class="mb-1">{{ subLink.title }}</b>
+														<span v-html="subLink.job" class="font14px grey-text mt-1" />
+													</a>
+												</li>
+											</ul>
+										</b-col>
+										<b-col lg="4" class="border-left border-right">
+											<p class="text-uppercase lightgrey-text">
+												Тарифы
+											</p>
+											<p class="mt-4 mb-2">
+												Бизнес-чат и Автоматизация
+											</p>
+											<p class="font14px lightgrey-text">
+												до 10 000 уников в месяц<br>
+												2 400 ₽ в месяц
+											</p>
+											<p class="mt-4 mb-2">
+												Премиум
+											</p>
+											<p class="font14px lightgrey-text">
+												Максимум возможностей сервиса и персональные консультации от нашего эксперта
+											</p>
+											<p class="my-4">
+												<g-link to="/price/">
+													Посмотреть тарифы
+												</g-link>
+											</p>
+											<p>
+												<b-button variant="primary">Записаться на демонстрацию</b-button>
+											</p>
+										</b-col>
+									</b-row>
+								</b-container>
+
 								
 
 							</b-nav-item-dropdown>

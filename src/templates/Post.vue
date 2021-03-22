@@ -142,6 +142,7 @@
 
 <script>
 	import '~/assets/scss/post.scss'
+	import { BBreadcrumb , BBreadcrumbItem } from 'bootstrap-vue'
 	import VideoRegistration from '~/components/VideoRegistration.vue'
 	import BannerSobirayte from '~/components/BannerSobirayte/BannerSobirayte.vue'
 	import axios from 'axios'
@@ -150,6 +151,7 @@
 
 	export default {
 		components: {
+			BBreadcrumb, BBreadcrumbItem,
 			VideoRegistration,
 			BannerSobirayte,
 			Disqus,

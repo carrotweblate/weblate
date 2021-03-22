@@ -581,12 +581,14 @@
 	import Contacts 		from '~/components/Contacts.vue'
 	import FAQ 				from '~/components/FAQ.vue'
 	import Consultation 	from '~/components/Consultation.vue'
+	import { BTooltip } 	from 'bootstrap-vue'
 
 	export default {
 		components: {
 			Contacts,
 			FAQ,
-			Consultation
+			Consultation,
+			BTooltip
 		},
 		data() {
 			return {
