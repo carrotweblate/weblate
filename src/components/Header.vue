@@ -12,7 +12,7 @@
 			</g-link>
 
 			<!-- Мобильное меню гамбургер -->
-			<b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
+			<b-navbar-toggle target="nav_collapse" class="pr-0" />
 			
 			<!-- Обычное меню -->
 			<b-collapse v-if="!isBlog" is-nav id="nav_collapse">
@@ -152,18 +152,22 @@
 					</template>
 				</b-navbar-nav>
 				<!-- Кнопки -->
-				<b-button variant="primary" href="/panel/register/" class="ml-0 mt-3 mr-1 px-2 ml-xl-3 mt-lg-0 mr-xl-3 px-xl-4">
+				<b-button variant="primary" href="/panel/register/" class="mb-2 mb-md-0 ml-0 mt-3 mr-1 px-2 ml-xl-3 mt-lg-0 mr-xl-3 px-xl-4">
 					Зарегистрироваться
 				</b-button>
-				<b-button variant="outline" href="/panel/login/" class="mt-3 mt-lg-0">
+				<b-button variant="outline" href="/panel/login/" class="mt-3 mt-lg-0 d-none d-md-inline-block">
+					Войти
+				</b-button>
+				<b-button variant="outline-primary" href="/panel/login/" class="mb-4 mb-md-0 mt-3 mt-lg-0 d-md-none">
 					Войти
 				</b-button>
 			</b-collapse>
 
 			<!-- Меню блога -->
-			<b-collapse v-else is-nav id="nav_collapse">
+			<b-collapse v-else is-nav id="nav_collapse" class="pt-3">
 				<b-navbar-nav class="ml-auto mt-3 mt-lg-0">
-					<b-nav-form v-if="!isSearchBlog" class="mr-1 nav_search">
+					<!-- Поиск по блогу -->
+					<b-nav-form v-if="!isSearchBlog" class="mr-1 nav_search d-none d-lg-flex">
 						<b-form v-on:submit.prevent="search">
 							<label for="searchFormInput">
 								<svg v-on:click="showSearchForm" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search mr-2" :class="{canclick: !showSearch}" viewBox="0 0 16 16">
@@ -176,6 +180,20 @@
 							</svg>
 						</b-form>
 					</b-nav-form>
+					<!-- Поиск по блогу на мобиле -->
+					<b-form v-if="!isSearchBlog" v-on:submit.prevent="search" class="mr-1 nav_search d-block d-lg-none ">
+						<b-input-group class="mw-100 mb-3">
+							<b-form-input id="searchFormInput" placeholder="Поиск по блогу" v-model="searchBlog" />
+							<b-input-group-append>
+								<b-button type="submit">
+									Найти
+								</b-button>
+							</b-input-group-append>
+						</b-input-group>
+					</b-form>
+					<b-nav-item href="/" class="mr-1">
+						О продукте
+					</b-nav-item>
 					<b-nav-item href="/cases/" class="mr-1">
 						Кейсы
 					</b-nav-item>
@@ -184,7 +202,7 @@
 					</b-nav-item>
 				</b-navbar-nav>
 				<!-- Кнопки -->
-				<b-button variant="primary" href="/panel/register/" class="ml-0 mt-3 mr-1 px-2 ml-xl-3 mt-lg-0 mr-xl-3 px-xl-4">
+				<b-button variant="primary" href="/panel/register/" class="mb-4 mb-md-0 ml-0 mt-3 mr-1 px-2 ml-xl-3 mt-lg-0 mr-xl-3 px-xl-4">
 					Подключить Carrot quest
 				</b-button>
 			</b-collapse>
