@@ -55,7 +55,7 @@ module.exports = {
 		},
 		//PWA
 		{
-			use: '@allanchain/gridsome-plugin-pwa',
+			use: 'gridsome-plugin-pwa',
 			options: {
 				// Service Worker Options
 				disableServiceWorker: false,
@@ -80,6 +80,52 @@ module.exports = {
             	appleMaskIconColor: '#ffffff',
 			}
 		},
+		// {
+		// 	use: '@allanchain/gridsome-plugin-pwa',
+		// 	options: {
+		// 		manifestOptions: {
+		// 			title: 'Carrot quest',
+		// 			short_name: 'CQ',
+		// 			description: 'Инструменты для увеличения продаж на сайтах без привлечения нового трафика',
+		// 			display: 'standalone',
+		// 			categories: ['utilities'],
+		// 			lang: 'ru-RU',
+		// 		},
+		// 		themeColor: '#FF7C16',
+		// 		appleMobileWebAppStatusBarStyle: 'default',
+		// 		appleMaskIconColor: '#ffffff',
+		// 		manifestPath: 'manifest.json',
+		// 		icon: {
+		// 			androidChrome: [
+		// 				{
+		// 					src: './static/favicon.png',
+		// 					sizes: [512, 384, 192],
+		// 					purpose: 'maskable'
+		// 				},
+		// 				{
+		// 					sizes: [144],
+		// 					purpose: 'any'
+		// 				},
+		// 				{
+		// 					urls: [
+		// 						'/gridsome/assets/static/favicon.png'
+		// 					],
+		// 					sizes: [512]
+		// 				}
+		// 			],
+		// 			appleMaskIcon: { url: './favicon.svg' }
+		// 		},
+		// 		msTileColor: '#00a672',
+		// 		appShellPath: 'offline/index.html',
+		// 		workboxOptions: {
+		// 			cacheId: 'cq-pwa',
+		// 			globPatterns: ['assets/@(js|css)/*', 'offline/index.html'],
+		// 			navigateFallback: '/gridsome/offline/index.html',
+		// 			navigateFallbackAllowlist: [/\/$/],
+		// 			skipWaiting: true
+		// 		}
+		// 	}
+		// },
 		{
 			use: `gridsome-plugin-algolia`,
 			options: {

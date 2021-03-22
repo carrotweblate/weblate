@@ -21,7 +21,12 @@ import '~/assets/scss/app.scss'
 //Базовая разметка
 import DefaultLayout from '~/layouts/Default.vue'
 
+
 export default function(Vue, { head }) {
+	//Register service worker
+	// if (isClient && process.env.NODE_ENV === 'production') {
+	// 	require('./registerServiceWorker')
+	// }
 
 	//Общая для всех страниц META
 	head.meta.push(

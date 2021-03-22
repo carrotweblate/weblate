@@ -160,10 +160,14 @@
 						<p>
 							<a href="#" @click="scenarioIndex=1" :class="{ 'font-weight-bold text-primary' : scenarioIndex == 1 }">Определите сегмент</a>
 						</p>
+						<p>
+							<a href="#" @click="scenarioIndex=2" :class="{ 'font-weight-bold text-primary' : scenarioIndex == 2 }">Настройте условия отправки</a>
+						</p>
 					</b-col>
 					<b-col lg="6">
 						<g-image src="@/assets/images/pop-up/scripts-1.png" quality="100" class="mw-100 scenario__pics" :class="{ active : scenarioIndex == 0 }" alt="Выберите триггер" />
 						<g-image src="@/assets/images/pop-up/scripts-2.png" quality="100" class="mw-100 scenario__pics" :class="{ active : scenarioIndex == 1 }" alt="Определите сегмент" />
+						<g-image src="@/assets/images/pop-up/scripts-3.png" quality="100" class="mw-100 scenario__pics" :class="{ active : scenarioIndex == 2 }" alt="Настройте условия отправки" />
 					</b-col>
 				</b-row>
 			</b-container>
@@ -470,14 +474,17 @@
 				position: relative;
 				right: -10px;
 				z-index: 2;
+				opacity: 1;
 			}
 			&__pics:not(.active) {
 				position: absolute;
+				opacity: 0.5;
 				top: 20px;
-				left: 10px;
+				left: 12px;
 				z-index: 1;
 				width: calc( 100% - 2.5rem );
 			}
+			
 		}
 
 		.tasks {

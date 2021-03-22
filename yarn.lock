@@ -4949,6 +4949,16 @@ gridsome-plugin-gtm@^0.1.1:
   dependencies:
     vue-gtm "^2.0.0"
 
+gridsome-plugin-pwa@^0.0.18:
+  version "0.0.18"
+  resolved "https://registry.yarnpkg.com/gridsome-plugin-pwa/-/gridsome-plugin-pwa-0.0.18.tgz#e4ca5c82cf3cfaa6ee0a381c6372a606d622aad5"
+  integrity sha512-9GUAUDiQ/HXR1FMYR0bAULf8RT+Megh8x90pJIojP/MipDabpiWJG0CSqH+CxKcvZl2eoDC8wW+H1tOL1nkljw==
+  dependencies:
+    fs-extra "^8.1.0"
+    register-service-worker "^1.6.2"
+    rename "^1.0.4"
+    workbox-build "^5.1.2"
+
 gridsome-source-graphql@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/gridsome-source-graphql/-/gridsome-source-graphql-1.0.2.tgz#33e76c709013ddee0f05b1b2eeac9e1c07fd4c7d"
@@ -8281,6 +8291,11 @@ regexpu-core@^4.7.1:
     unicode-match-property-ecmascript "^1.0.4"
     unicode-match-property-value-ecmascript "^1.2.0"
 
+register-service-worker@^1.6.2, register-service-worker@^1.7.2:
+  version "1.7.2"
+  resolved "https://registry.yarnpkg.com/register-service-worker/-/register-service-worker-1.7.2.tgz#6516983e1ef790a98c4225af1216bc80941a4bd2"
+  integrity sha512-CiD3ZSanZqcMPRhtfct5K9f7i3OLCcBBWsJjLh1gW9RO/nS94sVzY59iS+fgYBOBqaBpf4EzfqUF3j9IG+xo8A==
+
 registry-auth-token@^4.0.0:
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/registry-auth-token/-/registry-auth-token-4.2.1.tgz#6d7b4006441918972ccd5fedcd41dc322c79b250"
@@ -10321,7 +10336,7 @@ workbox-broadcast-update@^5.1.4:
   dependencies:
     workbox-core "^5.1.4"
 
-workbox-build@^5.1.3:
+workbox-build@^5.1.2, workbox-build@^5.1.3:
   version "5.1.4"
   resolved "https://registry.yarnpkg.com/workbox-build/-/workbox-build-5.1.4.tgz#23d17ed5c32060c363030c8823b39d0eabf4c8c7"
   integrity sha512-xUcZn6SYU8usjOlfLb9Y2/f86Gdo+fy1fXgH8tJHjxgpo53VVsqRX0lUDw8/JuyzNmXuo8vXX14pXX2oIm9Bow==
