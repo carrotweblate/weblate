@@ -37,7 +37,7 @@
 		</section>
 
 		<!-- Книги -->
-		<section class="books">
+		<section id="books" class="books">
 			<b-container>
 				<b-row>
 					<b-col lg="8" xl="7">

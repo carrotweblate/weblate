@@ -41,8 +41,8 @@
 								<b-container v-if="(item.title == 'Инструменты') || (item.title == 'Решения')" class="megamenu  py-4 d-none d-lg-flex" :class="{'megamenu--instruments': item.title == 'Инструменты' , 'megamenu--resheniya': item.title == 'Решения'}">
 									<b-row>
 										<b-col lg="8">
-											<ul>
-												<li v-for="( subLink , index ) in item.subLinks" :key="index"  class="mb-4">
+											<ul class="row">
+												<li v-for="( subLink , index ) in item.subLinks" :key="index"  class="mb-4 col-6" :class="'order-lg-' + subLink.order">
 													<a :href="subLink.href">
 														<b class="mb-1">{{ subLink.title }}</b>
 														<span v-html="subLink.job" class="font14px grey-text mt-1" />
@@ -83,11 +83,11 @@
 								<b-container v-if="item.title == 'Ресурсы'" class="megamenu  py-4 d-none d-lg-flex megamenu--resurces">
 									<b-row>
 										<b-col lg="4">
-											<p class="text-uppercase lightgrey-text">
+											<p class="text-uppercase lightgrey-text mb-3">
 												О продукте
 											</p>
 											<ul>
-												<li v-for="( subLink , index ) in item.subLinks" :key="index"  class="mb-4">
+												<li v-for="( subLink , index ) in item.subLinks[0].aboutProduct" :key="index"  class="mb-4">
 													<a :href="subLink.href">
 														<b class="mb-1">{{ subLink.title }}</b>
 														<span v-html="subLink.job" class="font14px grey-text mt-1" />
@@ -96,29 +96,53 @@
 											</ul>
 										</b-col>
 										<b-col lg="4" class="border-left border-right">
-											<p class="text-uppercase lightgrey-text">
-												Тарифы
+											<p class="text-uppercase lightgrey-text mb-3">
+												Контент
 											</p>
-											<p class="mt-4 mb-2">
-												Бизнес-чат и Автоматизация
+											<ul>
+												<li v-for="( subLink , index ) in item.subLinks[1].content" :key="index"  class="mb-4">
+													<a :href="subLink.href">
+														<b class="mb-1">{{ subLink.title }}</b>
+														<span v-html="subLink.job" class="font14px grey-text mt-1" />
+													</a>
+												</li>
+											</ul>
+										</b-col>
+										<b-col lg="4">
+											<p class="text-uppercase lightgrey-text mb-3">
+												Последние статьи из блога
 											</p>
-											<p class="font14px lightgrey-text">
-												до 10 000 уников в месяц<br>
-												2 400 ₽ в месяц
-											</p>
-											<p class="mt-4 mb-2">
-												Премиум
-											</p>
-											<p class="font14px lightgrey-text">
-												Максимум возможностей сервиса и персональные консультации от нашего эксперта
-											</p>
-											<p class="my-4">
-												<g-link to="/price/">
-													Посмотреть тарифы
-												</g-link>
-											</p>
+											<ul>
+												<li v-for="{ node } in $static.recent.edges" :key="node.id"  class="mb-4">
+													<a :href="'/blog/' + node.slug + '/'" class="megamenu__post">
+														<span :style="'background-image: url(' + node.featured_media + ')'" class="megamenu__post__pic d-block mr-3" />
+														<span v-html="node.title" class="megamenu__post__title" />
+													</a>
+												</li>
+											</ul>
 											<p>
-												<b-button variant="primary">Записаться на демонстрацию</b-button>
+												<a href="/blog/">
+													Все статьи
+												</a>
+											</p>
+
+											<p class="text-uppercase lightgrey-text mt-4 mb-3">
+												Книги и материалы
+											</p>
+											<ul>
+												<li class="mb-4">
+													<a href="/product-research-book/" class="megamenu__post">
+														<g-image src="~/assets/images/library/small_book_product-researc.png" width="160" height="160" class="megamenu__post__pic d-block mr-3" />
+														<span class="megamenu__post__title">
+															Как проводить исследования, результаты которых пойдут в бэклог, а не в стол
+														</span>
+													</a>
+												</li>
+											</ul>
+											<p>
+												<a href="/library/#books">
+													Все книги
+												</a>
 											</p>
 										</b-col>
 									</b-row>
@@ -181,11 +205,29 @@
 	</header>
 </template>
 
+
+<static-query>
+	query {
+		recent: allPost (limit: 3) {
+			edges {
+				node {
+					title
+					slug
+					categories
+					featured_media
+					featured_media_large
+				}
+			}
+		}
+	}
+</static-query>
+
+
 <script>
 	export default {
 		methods: {
 			handleScroll() {
-				if (this.lastPosition < window.scrollY && this.limitPosition+550 < window.scrollY) {
+				if (this.lastPosition < window.scrollY && this.limitPosition < window.scrollY) {
 					this.hideHeader = true;
 					// move up!
 				} 
@@ -256,43 +298,51 @@
 							{
 								title: 'Онлайн-консультант',
 								href: '/online-consultant/',
-								job: 'Повышайте продажи на сайте и улучшайте поддержку ваших клиентов'
+								job: 'Повышайте продажи на сайте и улучшайте поддержку ваших клиентов',
+								order: 1
 							},
 							{
 								title: 'Лид-бот',
 								href: '/chatbot/',
-								job: 'Собирайте больше квалифицированных лидов с сайта сайта без дополнительной нагрузки на ваших сотрудников'
+								job: 'Собирайте больше квалифицированных лидов с сайта сайта без дополнительной нагрузки на ваших сотрудников',
+								order: 3
 							},
 							
 							{
 								title: 'Автоматизация воронки',
 								href: '/automation-marketing/',
-								job: 'Увеличивайте конверсию воронки сайта с помощью цепочек сообщений (чат, чат-бот, поп-ап, письма)'
+								job: 'Увеличивайте конверсию воронки сайта с помощью цепочек сообщений (чат, чат-бот, поп-ап, письма)',
+								order: 5
 							},
 							{
 								title: 'База знаний',
 								href: '/knowledge-base/',
-								job: 'Сокращает время ответа на вопрос и систематизирует для клиентов знания о вашем продукте'
+								job: 'Сокращает время ответа на вопрос и систематизирует для клиентов знания о вашем продукте',
+								order: 7
 							},
 							{
 								title: 'Email-маркетинг',
 								href: '/email-marketing/',
-								job: 'Повышает эффективность рассылок за счет гибкой сегментации пользователей'
+								job: 'Повышает эффективность рассылок за счет гибкой сегментации пользователей',
+								order: 2
 							},
 							{
 								title: 'SDK для Android и iOS',
 								href: '/sdk/',
-								job: 'Добавляет функционал Carrot quest в ваше клиентское мобильное приложение'
+								job: 'Добавляет функционал Carrot quest в ваше клиентское мобильное приложение',
+								order: 4
 							},
 							{
 								title: 'Трекинг пользователей',
 								href: '/lead-manager/',
-								job: 'Собирает все данные о каждом пользователе, его действиях, заказах и коммуникациях'
+								job: 'Собирает все данные о каждом пользователе, его действиях, заказах и коммуникациях',
+								order: 6
 							},
 							{
 								title: 'Поп-ап окна',
 								href: '/pop-up/',
-								job: 'Собирайте больше лидов и продаж благодаря гиперсегментации аудитории'
+								job: 'Собирайте больше лидов и продаж благодаря гиперсегментации аудитории',
+								order: 7
 							},
 						],
 						jobs: true
@@ -303,18 +353,22 @@
 							{
 								title: 'Для продуктовых компаний',
 								href: '/saas/',
-								job: 'saas/онлайн-сервисы <br>Сервис помогает продакт-менеджерам, маркетологам и поддержке лучше взаимодействовать с пользователями и улучшать результаты команды и метрики продукта'
+								job: 'saas/онлайн-сервисы <br>Сервис помогает продакт-менеджерам, маркетологам и поддержке лучше взаимодействовать с пользователями и улучшать результаты команды и метрики продукта',
+								order: 1
+							},
+							{
+								title: 'Для eCommerce',
+								href: '/ecommerce/',
+								job: 'Сервис помогает маркетологам и менеджерам по продажам увеличивать ROI своей работы',
+								order: 2
 							},
 							{
 								title: 'Внедрение крупным компаниям',
 								href: '/introduction-carrotquest/',
-								job: 'Выделенная команда внедрения поможет вашей команде быстро настроить сервис, запустить сценарии автоматизации маркетинга и измерить результат'
-							},
-							{
-								title: 'Интернет-магазинам и e‑commerce',
-								href: '/ecommerce/',
-								job: 'Сервис помогает маркетологам и менеджерам по продажам увеличивать ROI своей работы'
+								job: 'Выделенная команда внедрения поможет вашей команде быстро настроить сервис, запустить сценарии автоматизации маркетинга и измерить результат',
+								order: 3
 							}
+							
 						],
 						jobs: true
 					},
@@ -326,40 +380,58 @@
 						title: 'Ресурсы',
 						subLinks: [
 							{
-								title: 'Библиотека',
-								href: '/library/',
-								job: 'Книги, гайды, чек листы, видеокурсы. Скачивайте бесплатно'
+								aboutProduct: [
+									{
+										title: 'База знаний о продукте',
+										href: 'https://help.carrotquest.io/',
+										job: 'Сокращает время ответа на вопрос и систематизирует для клиентов знания о вашем продукте'
+									},
+									{
+										title: 'Интеграции',
+										href: '/integration/',
+										job: 'Более 30 готовых интеграций с CMS, CRM, аналитикой, мессенджерами, соц.сетями и другими сервисами'
+									},
+									{
+										title: 'API',
+										href: 'https://developers.carrotquest.io/',
+										job: 'О том, как разработчику интегрировать Carrot quest на сайт'
+									},
+									{
+										title: 'Видеокурс',
+										href: '/videocourse-online-sales/',
+										job: 'Как увеличить продажи на том же трафике, используя инструменты Carrot quest'
+									},
+								]
 							},
 							{
-								title: 'Блог',
-								href: '/blog/',
-								job: 'О&nbsp;том, как разработчику интегрировать Carrot quest на&nbsp;сайт'
-							},
-							{
-								title: 'API',
-								href: 'https://developers.carrotquest.io/',
-								job: 'О&nbsp;том, как разработчику интегрировать Carrot quest на&nbsp;сайт'
-							},
-							{
-								title: 'Вебинары и подкасты',
-								href: '/blog/webinars/',
-								job: 'Более 30&nbsp;вебинаров и&nbsp;подкастов на&nbsp;темы про создание продуктов, маркетинг и&nbsp;growth hacking'
-							},
-							{
-								title: 'Интеграции',
-								href: '/integration/',
-								job: 'Более 30&nbsp;готовых интеграций с&nbsp;CMS, CRM, аналитикой, мессенджерами, соц.сетями и&nbsp;другими сервисами'
-							},
-							{
-								title: 'Кейсы',
-								href: '/cases/',
-								job: 'Более 60&nbsp;историй успеха наших клиентов'
-							},
-							{
-								title: 'База знаний',
-								href: 'https://help.carrotquest.io/',
-								job: 'О&nbsp;том, как работает Carrot quest и&nbsp;как его настроить (для продакта, маркетолога и&nbsp;разработчика)'
-							}						
+								content: [
+									{
+										title: 'Блог',
+										href: '/blog/',
+										job: 'О&nbsp;том, как разработчику интегрировать Carrot quest на&nbsp;сайт'
+									},
+									{
+										title: 'Кейсы',
+										href: '/cases/',
+										job: 'Более 60&nbsp;историй успеха наших клиентов'
+									},
+									{
+										title: 'Библиотека',
+										href: '/library/',
+										job: 'Книги, гайды, чек листы, видеокурсы. Скачивайте бесплатно'
+									},
+									{
+										title: 'Наши книги',
+										href: '/library/#books',
+										job: 'Подробная экспертиза от команды carrot quest (dashly)'
+									},
+									{
+										title: 'Вебинары и подкасты',
+										href: '/blog/webinars/',
+										job: 'Более 30&nbsp;вебинаров и&nbsp;подкастов на&nbsp;темы про создание продуктов, маркетинг и&nbsp;growth hacking'
+									},
+								]
+							}				
 						],
 						jobs: true
 					},
