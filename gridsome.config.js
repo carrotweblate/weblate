@@ -4,8 +4,8 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
-// const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
-//   .BundleAnalyzerPlugin
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
+  .BundleAnalyzerPlugin
 
 const collections = [{
 	query: `{
@@ -55,7 +55,7 @@ module.exports = {
 		},
 		//PWA
 		{
-			use: 'gridsome-plugin-pwa',
+			use: '@allanchain/gridsome-plugin-pwa',
 			options: {
 				// Service Worker Options
 				disableServiceWorker: false,
@@ -93,12 +93,10 @@ module.exports = {
 	],
 	
 	
-	// chainWebpack: config => {
-		// config.resolve.alias.set('@images', '@/assets/images')
-		
-		//Анализ размера билда
-		// config
-		// 	.plugin('BundleAnalyzerPlugin')
-		// 	.use(BundleAnalyzerPlugin, [{ analyzerMode: 'static' }])
-	// }
+	chainWebpack: config => {		
+		// Анализ размера билда
+		config
+			.plugin('BundleAnalyzerPlugin')
+			.use(BundleAnalyzerPlugin, [{ analyzerMode: 'static' }])
+	}
 }

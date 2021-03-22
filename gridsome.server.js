@@ -79,7 +79,7 @@ module.exports = function (api) {
 						})
 					}
 				}
-				console.log('Tilda - ' + item.title + ' - готова!')
+				// console.log('Tilda - ' + item.title + ' - готова!')
 			}
 		})
 	})
@@ -153,7 +153,7 @@ module.exports = function (api) {
 						content: tp.execute(pageHTML)
 					}
 				})
-				console.log('Пост - ' + item.id + ' - готов!')
+				// console.log('Пост - ' + item.id + ' - готов!')
 
 				//Делаем AMP
 				fs.readFile('./static/blog/' + item.slug + '/amp/modified.json', 'utf8', function(err, contents) {
@@ -177,7 +177,7 @@ module.exports = function (api) {
 								fs.writeFile('./static/blog/' + item.slug + '/amp/index.html', pageHTML, 'utf8' , function (err) {
 									if (err) return console.log(err)
 								})
-								console.log('AMP - ' + item.id + ' - готов!')
+								// console.log('AMP - ' + item.id + ' - готов!')
 							})
 					}
 				})
@@ -214,7 +214,7 @@ module.exports = function (api) {
 						description: tp.execute(item.description)
 					}
 				})
-				console.log('Категория - ' + item.name + ' - готова!')
+				// console.log('Категория - ' + item.name + ' - готова!')
 			}
 		})
 	})
@@ -267,7 +267,7 @@ module.exports = function (api) {
 							}
 						}
 					})
-					console.log('Автор - ' + item.title.rendered + ' - готов!')
+					// console.log('Автор - ' + item.title.rendered + ' - готов!')
 				}
 			}
 		})
