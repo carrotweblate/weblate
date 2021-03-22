@@ -73,7 +73,7 @@
 												</g-link>
 											</p>
 											<p>
-												<b-button variant="primary">Записаться на демонстрацию</b-button>
+												<b-button href="#open-demo-pop-up" variant="primary">Записаться на демонстрацию</b-button>
 											</p>
 										</b-col>
 									</b-row>
