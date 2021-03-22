@@ -87,7 +87,7 @@
 												О продукте
 											</p>
 											<ul>
-												<li v-for="( subLink , index ) in item.subLinks[0].aboutProduct" :key="index"  class="mb-4">
+												<li v-for="( subLink , index ) in item.subBlocks.aboutProduct" :key="index"  class="mb-4">
 													<a :href="subLink.href">
 														<b class="mb-1">{{ subLink.title }}</b>
 														<span v-html="subLink.job" class="font14px grey-text mt-1" />
@@ -100,7 +100,7 @@
 												Контент
 											</p>
 											<ul>
-												<li v-for="( subLink , index ) in item.subLinks[1].content" :key="index"  class="mb-4">
+												<li v-for="( subLink , index ) in item.subBlocks.content" :key="index"  class="mb-4">
 													<a :href="subLink.href">
 														<b class="mb-1">{{ subLink.title }}</b>
 														<span v-html="subLink.job" class="font14px grey-text mt-1" />
@@ -147,9 +147,6 @@
 										</b-col>
 									</b-row>
 								</b-container>
-
-								
-
 							</b-nav-item-dropdown>
 						</template>
 					</template>
@@ -378,60 +375,94 @@
 					},
 					{
 						title: 'Ресурсы',
+						subBlocks: {
+							aboutProduct: [
+								{
+									title: 'База знаний о продукте',
+									href: 'https://help.carrotquest.io/',
+									job: 'Сокращает время ответа на вопрос и систематизирует для клиентов знания о вашем продукте'
+								},
+								{
+									title: 'Интеграции',
+									href: '/integration/',
+									job: 'Более 30 готовых интеграций с CMS, CRM, аналитикой, мессенджерами, соц.сетями и другими сервисами'
+								},
+								{
+									title: 'API',
+									href: 'https://developers.carrotquest.io/',
+									job: 'О том, как разработчику интегрировать Carrot quest на сайт'
+								},
+								{
+									title: 'Видеокурс',
+									href: '/videocourse-online-sales/',
+									job: 'Как увеличить продажи на том же трафике, используя инструменты Carrot quest'
+								},
+							],
+							content: [
+								{
+									title: 'Блог',
+									href: '/blog/',
+									job: 'О&nbsp;том, как разработчику интегрировать Carrot quest на&nbsp;сайт'
+								},
+								{
+									title: 'Кейсы',
+									href: '/cases/',
+									job: 'Более 60&nbsp;историй успеха наших клиентов'
+								},
+								{
+									title: 'Библиотека',
+									href: '/library/',
+									job: 'Книги, гайды, чек листы, видеокурсы. Скачивайте бесплатно'
+								},
+								{
+									title: 'Наши книги',
+									href: '/library/#books',
+									job: 'Подробная экспертиза от команды carrot quest (dashly)'
+								},
+								{
+									title: 'Вебинары и подкасты',
+									href: '/blog/webinars/',
+									job: 'Более 30&nbsp;вебинаров и&nbsp;подкастов на&nbsp;темы про создание продуктов, маркетинг и&nbsp;growth hacking'
+								}
+							]
+						},
 						subLinks: [
 							{
-								aboutProduct: [
-									{
-										title: 'База знаний о продукте',
-										href: 'https://help.carrotquest.io/',
-										job: 'Сокращает время ответа на вопрос и систематизирует для клиентов знания о вашем продукте'
-									},
-									{
-										title: 'Интеграции',
-										href: '/integration/',
-										job: 'Более 30 готовых интеграций с CMS, CRM, аналитикой, мессенджерами, соц.сетями и другими сервисами'
-									},
-									{
-										title: 'API',
-										href: 'https://developers.carrotquest.io/',
-										job: 'О том, как разработчику интегрировать Carrot quest на сайт'
-									},
-									{
-										title: 'Видеокурс',
-										href: '/videocourse-online-sales/',
-										job: 'Как увеличить продажи на том же трафике, используя инструменты Carrot quest'
-									},
-								]
+								title: 'База знаний о продукте',
+								href: 'https://help.carrotquest.io/'
 							},
 							{
-								content: [
-									{
-										title: 'Блог',
-										href: '/blog/',
-										job: 'О&nbsp;том, как разработчику интегрировать Carrot quest на&nbsp;сайт'
-									},
-									{
-										title: 'Кейсы',
-										href: '/cases/',
-										job: 'Более 60&nbsp;историй успеха наших клиентов'
-									},
-									{
-										title: 'Библиотека',
-										href: '/library/',
-										job: 'Книги, гайды, чек листы, видеокурсы. Скачивайте бесплатно'
-									},
-									{
-										title: 'Наши книги',
-										href: '/library/#books',
-										job: 'Подробная экспертиза от команды carrot quest (dashly)'
-									},
-									{
-										title: 'Вебинары и подкасты',
-										href: '/blog/webinars/',
-										job: 'Более 30&nbsp;вебинаров и&nbsp;подкастов на&nbsp;темы про создание продуктов, маркетинг и&nbsp;growth hacking'
-									},
-								]
-							}				
+								title: 'Интеграции',
+								href: '/integration/'
+							},
+							{
+								title: 'API',
+								href: 'https://developers.carrotquest.io/'
+							},
+							{
+								title: 'Видеокурс',
+								href: '/videocourse-online-sales/'
+							},
+							{
+								title: 'Блог',
+								href: '/blog/'
+							},
+							{
+								title: 'Кейсы',
+								href: '/cases/'
+							},
+							{
+								title: 'Библиотека',
+								href: '/library/'
+							},
+							{
+								title: 'Наши книги',
+								href: '/library/#books'
+							},
+							{
+								title: 'Вебинары и подкасты',
+								href: '/blog/webinars/'
+							}		
 						],
 						jobs: true
 					},
