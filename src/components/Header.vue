@@ -164,7 +164,7 @@
 			</b-collapse>
 
 			<!-- Меню блога -->
-			<b-collapse v-else is-nav id="nav_collapse" class="pt-3">
+			<b-collapse v-else is-nav id="nav_collapse" class="pt-3 pt-lg-0">
 				<b-navbar-nav class="ml-auto mt-3 mt-lg-0">
 					<!-- Поиск по блогу -->
 					<b-nav-form v-if="!isSearchBlog" class="mr-1 nav_search d-none d-lg-flex">

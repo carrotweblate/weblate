@@ -594,6 +594,13 @@ input[type=number]:focus,
 		}
 	}
 }
+@media (min-width: 2000px) {
+	.navbar {
+		max-width: 2000px;
+		left: 50%;
+		margin-left: -1000px;
+	}
+}
 
 
 

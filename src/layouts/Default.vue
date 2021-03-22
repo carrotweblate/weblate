@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<b-overlay :show="showOverlay" v-on:click="showOverlay = false">
+		<!-- <b-overlay :show="showOverlay" v-on:click="showOverlay = false"> -->
 
 			<Header v-if="header" v-on:overlay-show="overlay" v-on:overlay-close="overlayClose" />
 
@@ -10,7 +10,7 @@
 
 			<Balcony />
 			
-		</b-overlay>
+		<!-- </b-overlay> -->
 
 		<!-- Модалка для скачивания файлов -->
 		<b-modal ref="open-modal-download" hide-footer :title="modalTitle">
