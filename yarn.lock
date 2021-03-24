@@ -4967,6 +4967,11 @@ gridsome-plugin-gtm@^0.1.1:
   dependencies:
     vue-gtm "^2.0.0"
 
+gridsome-plugin-image-cdn@^0.1.6:
+  version "0.1.6"
+  resolved "https://registry.yarnpkg.com/gridsome-plugin-image-cdn/-/gridsome-plugin-image-cdn-0.1.6.tgz#c21aa81e40f5511fbdbba9efec44484e5bd2affc"
+  integrity sha512-bWwJQ5OtmPYgHaCy5owqLd78kepvYpabbvqPdiW0cNAfPH0kmHbmW2e6l2SMwQ/sTidNd4tgp67oze+75RIVlw==
+
 gridsome-plugin-pwa@^0.0.18:
   version "0.0.18"
   resolved "https://registry.yarnpkg.com/gridsome-plugin-pwa/-/gridsome-plugin-pwa-0.0.18.tgz#e4ca5c82cf3cfaa6ee0a381c6372a606d622aad5"
@@ -5412,6 +5417,18 @@ ignore@^5.1.1:
   version "5.1.8"
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-5.1.8.tgz#f150a8b50a34289b33e22f5889abd4d8016f0e57"
   integrity sha512-BMpfD7PpiETpBl/A6S498BaIJ6Y/ABT93ETbby2fP00v4EbvPBXWEoaR1UBPKs3iR53pJY7EtZk5KACI57i1Uw==
+
+imagekit-javascript@^1.3.5:
+  version "1.3.6"
+  resolved "https://registry.yarnpkg.com/imagekit-javascript/-/imagekit-javascript-1.3.6.tgz#2318158a481a077dfdaa4e4f61b8e47f8bdd281b"
+  integrity sha512-zKr8vOvLdF/K0w6QGHuAVibneTqDxE6LRotQNTd1eUUDYdro7rrywuKqQb0XFbG43RQXdHNE+mB1RCj+/wQgIw==
+
+imagekitio-vue@^1.0.9:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/imagekitio-vue/-/imagekitio-vue-1.0.9.tgz#562e97df316b4fcb4a88cd2f11d5bcdfbb9fea41"
+  integrity sha512-j6s6ScPlKMNpwZa+GM5skkWtV0mlL0CG89lJ0QqzlO5Wv8/6uglXejJR+Wt/dp9kq2b3/XMC26YgWdM9TsC+wA==
+  dependencies:
+    imagekit-javascript "^1.3.5"
 
 imagemin-mozjpeg@^8.0.0:
   version "8.0.0"

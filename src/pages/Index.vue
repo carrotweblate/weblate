@@ -44,7 +44,16 @@
 				<b-row >
 					<b-col col-12 lg="7" xl="8" class="mb-4 mb-lg-0 h-100">
 						<a v-b-modal.youtubeCQ class="video-numbers__play box">
-							<g-image src="@/assets/images/components/VideoAbout.png" width="1440" height="760" alt="Видео" />
+							<!-- <g-image src="@/assets/images/components/VideoAbout.png" width="1440" height="760" alt="Видео" /> -->
+							<ik-image
+								path="/components/VideoAbout.png"
+								:transformation="[{width:1440,height:760}]"
+								:lqip="{active:true, quality: 40, blur: 5}"
+								width="720"
+								height="380"
+								loading="lazy"
+								alt="Видео"
+							/>
 						</a>
 						<b-modal id="youtubeCQ" size="xl" hide-header hide-footer>
 							<b-embed

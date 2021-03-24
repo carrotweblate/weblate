@@ -5,7 +5,17 @@
 			<b-container>
 				<b-row class="align-items-center">
 					<b-col lg="4" class="d-none d-lg-block">
-						<g-image src="@/assets/images/components/medium-6.png" width="680" quality="100" class="mw-100" alt="Что-то пошло не так." title="Бип-пип-пуап" />
+						<!-- <g-image src="@/assets/images/components/medium-6.png" width="340" height="289" quality="100" class="mw-100" alt="Что-то пошло не так." title="Бип-пип-пуап" /> -->
+						<ik-image
+							path="/components/medium-6.png"
+							:transformation="[{width:680,height:578}]"
+							width="340"
+							height="289"
+							loading="lazy"
+							class="mw-100"
+							alt="Что-то пошло не так."
+							title="Бип-пип-пуап"
+						/>
 					</b-col>
 					<b-col lg="8">
 						<h1>

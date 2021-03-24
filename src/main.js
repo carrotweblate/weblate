@@ -16,6 +16,9 @@ import '~/assets/scss/app.scss'
 //Базовая разметка
 import DefaultLayout from '~/layouts/Default.vue'
 
+//CDN Imagekit для изображений
+import ImageKit from "imagekitio-vue"
+
 
 export default function(Vue, { head }) {
 	//Register service worker
@@ -68,5 +71,10 @@ export default function(Vue, { head }) {
 			}
 			window.addEventListener('scroll', f)
 		}
+	})
+
+	//CDN Imagekit для изображений
+	Vue.use(ImageKit, {
+		urlEndpoint: "https://ik.imagekit.io/0nyjr4jxhmg/"
 	})
 }
