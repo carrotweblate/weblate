@@ -11,7 +11,17 @@
 				<b-row>
 					<b-col lg="4">
 						<div class="box h-100">
-							<g-image src="@/assets/images/components/small-15.png" fit="contain" background="transparent" height="222" alt="Для интернет магазинов" class="mb-4" />
+							<!-- <g-image src="@/assets/images/components/small-15.png" fit="contain" background="transparent" height="222" alt="Для интернет магазинов" class="mb-4" /> -->
+							<ik-image
+								path="/components/small-15.png"
+								:transformation="[{height:222}]"
+								:lqip="{active:true, quality: 40, blur: 10}"
+								width="198"
+								height="111"
+								loading="lazy"
+								alt="Для интернет магазинов"
+								class="mb-4"
+							/>
 							<div class="h5 mb-3">Для интернет-магазинов</div>
 							<ul>
 								<li>Увеличение количества лидов на&nbsp;том&nbsp;же трафике</li>
@@ -24,7 +34,17 @@
 					</b-col>
 					<b-col lg="4">
 						<div class="box h-100">
-							<g-image src="@/assets/images/components/small-24.png" fit="contain" background="transparent" height="222" alt="Для интернет сервисов (SaaS)" class="mb-4" />
+							<!-- <g-image src="@/assets/images/components/small-24.png" fit="contain" background="transparent" height="222" alt="Для интернет сервисов (SaaS)" class="mb-4" /> -->
+							<ik-image
+								path="/components/small-24.png"
+								:transformation="[{height:222}]"
+								:lqip="{active:true, quality: 40, blur: 10}"
+								width="175"
+								height="111"
+								loading="lazy"
+								alt="Для интернет сервисов (SaaS)"
+								class="mb-4"
+							/>
 							<div class="h5 mb-3">Для онлайн-сервисов (SaaS)</div>
 							<ul>
 								<li>Увеличение количества лидов на&nbsp;том&nbsp;же трафике сайта</li>
@@ -37,7 +57,17 @@
 					</b-col>
 					<b-col lg="4">
 						<div class="box h-100">
-							<g-image src="@/assets/images/components/small-25.png" fit="contain" background="transparent" height="222" alt="Для крупных компаний" class="mb-4" />
+							<!-- <g-image src="@/assets/images/components/small-25.png" fit="contain" background="transparent" height="222" alt="Для крупных компаний" class="mb-4" /> -->
+							<ik-image
+								path="/components/small-25.png"
+								:transformation="[{height:222}]"
+								:lqip="{active:true, quality: 40, blur: 10}"
+								width="190"
+								height="111"
+								loading="lazy"
+								alt="Для крупных компаний"
+								class="mb-4"
+							/>
 							<div class="h5 mb-3">Для крупных компаний</div>
 							<ul>
 								<li>Весь сервис без ограничений</li>
