@@ -160,14 +160,14 @@
 						<p>
 							<b-link @click="scriptsIndex=1" :class="{ 'font-weight-bold text-primary' : scriptsIndex == 1 }">Определите сегмент</b-link>
 						</p>
-						<p>
+						<!-- <p>
 							<b-link @click="scriptsIndex=2" :class="{ 'font-weight-bold text-primary' : scriptsIndex == 2 }">Настройте условия отправки</b-link>
-						</p>
+						</p> -->
 					</b-col>
 					<b-col lg="6">
 						<g-image src="@/assets/images/pop-up/scripts-1.png" quality="100" class="mw-100 scripts__pics" :class="{ active : scriptsIndex == 0 }" alt="Выберите триггер" />
 						<g-image src="@/assets/images/pop-up/scripts-2.png" quality="100" class="mw-100 scripts__pics" :class="{ active : scriptsIndex == 1 }" alt="Определите сегмент" />
-						<g-image src="@/assets/images/pop-up/scripts-3.png" quality="100" class="mw-100 scripts__pics" :class="{ active : scriptsIndex == 2 }" alt="Настройте условия отправки" />
+						<!-- <g-image src="@/assets/images/pop-up/scripts-3.png" quality="100" class="mw-100 scripts__pics" :class="{ active : scriptsIndex == 2 }" alt="Настройте условия отправки" /> -->
 					</b-col>
 				</b-row>
 			</b-container>
