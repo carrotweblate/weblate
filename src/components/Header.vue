@@ -72,9 +72,9 @@
 													Посмотреть тарифы
 												</g-link>
 											</p>
-											<p>
+											<!-- <p>
 												<b-button href="#open-demo-pop-up" variant="primary">Записаться на демонстрацию</b-button>
-											</p>
+											</p> -->
 										</b-col>
 									</b-row>
 								</b-container>
@@ -260,7 +260,7 @@
 				this.scrolled = window.scrollY > this.limitPosition;
 			},
 			search() {
-				this.$router.push('/blog/search/?q=' + this.searchBlog)
+				this.$router.push('/blogtest/search/?q=' + this.searchBlog)
 			},
 			showSearchForm() {
 				this.showSearch = true
@@ -287,11 +287,11 @@
 			this.ready = true
 
 			//Блог или нет
-			if (window.location.href.indexOf('/blog/') != -1){
+			if (window.location.href.indexOf('/blogtest/') != -1){
 				this.isBlog = true
 			}
 			//Страница поиска блога или нет
-			if (window.location.href.indexOf('/blog/search/') != -1){
+			if (window.location.href.indexOf('/blogtest/search/') != -1){
 				this.isSearchBlog = true
 			}
 		},

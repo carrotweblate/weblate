@@ -163,6 +163,87 @@
 			};
 		},
 		methods: {
+			// Ищем ссылки на страницах
+			searchHrefs () {
+				// Ищем ссылки для открытия чата
+				if ( document.querySelector('[href="#open-chat"]') ) {
+					document.querySelectorAll('[href="#open-chat"]').forEach(function(item) {
+						item.addEventListener('click', function(e) {
+							e.preventDefault()
+							carrotquest.open()
+						})
+					})
+				}
+
+				// Ищем ссылки для записи на демо
+				if ( document.querySelector('a[href*="#open-demo-pop-up"]') ) {
+					document.querySelectorAll('a[href*="#open-demo-pop-up"]').forEach(function(item) {
+						item.addEventListener('click', function(e) {
+							e.preventDefault()
+							carrotquest.track('Записаться на демо через поп-ап');
+						}.bind(this))
+					}.bind(this))
+				}
+
+				// Ищем ссылки для открытия модалок на скачивание файлов
+				if ( document.querySelector('a[href*="#open-modal-download"]') ) {
+					document.querySelectorAll('a[href*="#open-modal-download"]').forEach(function(item) {
+						item.addEventListener('click', function(e) {
+							e.preventDefault()
+							this.$refs['open-modal-download'].show()
+
+							let addr = new URL(e.srcElement.href.replace('#open-modal-download' , ''))
+
+							this.modalTitle = addr.searchParams.get('title')
+							this.modalEvent = addr.searchParams.get('cqe')
+						}.bind(this))
+					}.bind(this))
+				}
+
+				// Ищем ссылки для открытия модалок на переход или открытие файлов
+				if ( document.querySelector('a[href*="#open-modal-url"]') ) {
+					document.querySelectorAll('a[href*="#open-modal-url"]').forEach(function(item) {
+						item.addEventListener('click', function(e) {
+							e.preventDefault()
+							this.$refs['open-modal-url'].show()
+
+							let addr = new URL(e.srcElement.href.replace('#open-modal-url' , ''))
+
+							this.modalTitle = addr.searchParams.get('title')
+							this.modalEvent = addr.searchParams.get('cqe')
+							this.modalOpenUrl = addr.searchParams.get('url')
+						}.bind(this))
+					}.bind(this))
+				}
+
+				// Ищем ссылки для открытия модалок для регистрации на вебинар
+				if ( document.querySelector('a[href*="#open-modal-webinar"]') ) {
+					document.querySelectorAll('a[href*="#open-modal-webinar"]').forEach(function(item) {
+						item.addEventListener('click', function(e) {
+							e.preventDefault()
+							this.$refs['open-modal-webinar'].show()
+
+							let addr = new URL(e.srcElement.href.replace('#open-modal-webinar' , ''))
+
+							this.modalTitle = addr.searchParams.get('title')
+							this.modalOpenUrl = addr.searchParams.get('url')
+							carrotquest.track('webinar_form_open')
+						}.bind(this))
+					}.bind(this))
+				}
+
+				// Ищем ссылки на получение награды
+				if ( document.querySelector('a[href*="tg://resolve?domain=CQ_Webinar_Revenue_Bot&start=ml11"]') ) {
+					document.querySelectorAll('a[href*="tg://resolve?domain=CQ_Webinar_Revenue_Bot&start=ml11"]').forEach(function(item) {
+						item.addEventListener('click', function(e) {
+							e.preventDefault()
+							carrotquest.track('webinar_bonus_requested')
+							window.open( e.srcElement.href , '_self' )
+						}.bind(this))
+					}.bind(this))
+				}
+			},
+
 			//Скачивание файлов
 			modalDownload () {
 				carrotquest.identify([
@@ -264,84 +345,10 @@
 			}
 		},
 		mounted () {
-			// Ищем ссылки для открытия чата
-			if ( document.querySelector('[href="#open-chat"]') ) {
-				document.querySelectorAll('[href="#open-chat"]').forEach(function(item) {
-					item.addEventListener('click', function(e) {
-						e.preventDefault()
-						carrotquest.open()
-					})
-				})
-			}
-
-			// Ищем ссылки для записи на демо
-			if ( document.querySelector('a[href*="#open-demo-pop-up"]') ) {
-				document.querySelectorAll('a[href*="#open-demo-pop-up"]').forEach(function(item) {
-					item.addEventListener('click', function(e) {
-						e.preventDefault()
-						carrotquest.track('Записаться на демо через поп-ап');
-					}.bind(this))
-				}.bind(this))
-			}
-
-			// Ищем ссылки для открытия модалок на скачивание файлов
-			if ( document.querySelector('a[href*="#open-modal-download"]') ) {
-				document.querySelectorAll('a[href*="#open-modal-download"]').forEach(function(item) {
-					item.addEventListener('click', function(e) {
-						e.preventDefault()
-						this.$refs['open-modal-download'].show()
-
-						let addr = new URL(e.srcElement.href.replace('#open-modal-download' , ''))
-
-						this.modalTitle = addr.searchParams.get('title')
-						this.modalEvent = addr.searchParams.get('cqe')
-					}.bind(this))
-				}.bind(this))
-			}
-
-			// Ищем ссылки для открытия модалок на переход или открытие файлов
-			if ( document.querySelector('a[href*="#open-modal-url"]') ) {
-				document.querySelectorAll('a[href*="#open-modal-url"]').forEach(function(item) {
-					item.addEventListener('click', function(e) {
-						e.preventDefault()
-						this.$refs['open-modal-url'].show()
-
-						let addr = new URL(e.srcElement.href.replace('#open-modal-url' , ''))
-
-						this.modalTitle = addr.searchParams.get('title')
-						this.modalEvent = addr.searchParams.get('cqe')
-						this.modalOpenUrl = addr.searchParams.get('url')
-					}.bind(this))
-				}.bind(this))
-			}
-
-			// Ищем ссылки для открытия модалок для регистрации на вебинар
-			if ( document.querySelector('a[href*="#open-modal-webinar"]') ) {
-				document.querySelectorAll('a[href*="#open-modal-webinar"]').forEach(function(item) {
-					item.addEventListener('click', function(e) {
-						e.preventDefault()
-						this.$refs['open-modal-webinar'].show()
-
-						let addr = new URL(e.srcElement.href.replace('#open-modal-webinar' , ''))
-
-						this.modalTitle = addr.searchParams.get('title')
-						this.modalOpenUrl = addr.searchParams.get('url')
-						carrotquest.track('webinar_form_open')
-					}.bind(this))
-				}.bind(this))
-			}
-
-			// Ищем ссылки на получение награды
-			if ( document.querySelector('a[href*="tg://resolve?domain=CQ_Webinar_Revenue_Bot&start=ml11"]') ) {
-				document.querySelectorAll('a[href*="tg://resolve?domain=CQ_Webinar_Revenue_Bot&start=ml11"]').forEach(function(item) {
-					item.addEventListener('click', function(e) {
-						e.preventDefault()
-						carrotquest.track('webinar_bonus_requested')
-						window.open( e.srcElement.href , '_self' )
-					}.bind(this))
-				}.bind(this))
-			}
-
+			this.searchHrefs()
+		},
+		updated () {
+			this.searchHrefs()
 		},
 		//Делаем в HEAD
 		metaInfo() {
