@@ -114,14 +114,14 @@
 											</p>
 											<ul>
 												<li v-for="{ node } in $static.recent.edges" :key="node.id"  class="mb-4">
-													<a :href="'/blog/' + node.slug + '/'" class="megamenu__post">
+													<a :href="'https://www.carrotquest.io/blog/' + node.slug + '/'" class="megamenu__post">
 														<span :style="'background-image: url(' + node.featured_media + ')'" class="megamenu__post__pic d-block mr-3" />
 														<span v-html="node.title" class="megamenu__post__title" />
 													</a>
 												</li>
 											</ul>
 											<p>
-												<a href="/blog/">
+												<a href="https://www.carrotquest.io/blog/">
 													Все статьи
 												</a>
 											</p>
