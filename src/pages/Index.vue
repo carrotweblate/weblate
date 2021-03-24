@@ -332,6 +332,7 @@
 	import Cases 				from '~/components/Cases/Cases.vue'
 	import RegistrationForm 	from '~/components/Forms/RegistrationForm.vue'
 	import Study 				from '~/components/Study.vue'
+	import { BEmbed } 			from 'bootstrap-vue'
 
 	export default {
 		components: {
@@ -342,7 +343,8 @@
 			Integrations,
 			Cases,
 			RegistrationForm,
-			Study
+			Study,
+			BEmbed
 		},
 		data() {
 			return {

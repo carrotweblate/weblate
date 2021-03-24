@@ -35,10 +35,12 @@
 
 <script>
 	import RegistrationForm from '~/components/Forms/RegistrationForm.vue'
+	import { BEmbed } 		from 'bootstrap-vue'
 
 	export default {
 		components: {
-			RegistrationForm
+			RegistrationForm,
+			BEmbed
 		},
 	}
 </script>
