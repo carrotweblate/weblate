@@ -113,7 +113,15 @@
 
 
 <script>
+	import { BTabs , BTab , BCard , BEmbed } from 'bootstrap-vue'
+
 	export default {
+		components: {
+			BTabs,
+			BTab,
+			BCard,
+			BEmbed
+		},
 		props: {
 			title: String,
 			tabs: Array,

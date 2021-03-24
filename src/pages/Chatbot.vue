@@ -449,6 +449,7 @@
 	import Logos 				from '~/components/Logos.vue'
 	import RegistrationForm 	from '~/components/Forms/RegistrationForm.vue'
 	import Study 				from '~/components/Study.vue'
+	import { BBadge , BLink , BTabs , BTab } from 'bootstrap-vue'
 
 	export default {
 		components: {
@@ -457,7 +458,10 @@
 			Cases,
 			Logos,
 			RegistrationForm,
-			Study
+			Study,
+			BBadge,
+			BLink,
+			BTabs , BTab
 		},
 		data() {
 			return {

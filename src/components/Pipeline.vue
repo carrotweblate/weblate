@@ -437,7 +437,12 @@
 
 
 <script>
+	import { BTabs , BTab } from 'bootstrap-vue'
+
 	export default {
+		components: {
+			BTabs , BTab
+		},
 		props: {
 			title: String
 		}

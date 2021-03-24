@@ -144,7 +144,7 @@
 			</b-container>
 		</section>
 
-		<section class="scenario">
+		<section class="scripts">
 			<b-container>
 				<b-row>
 					<b-col lg="6" class="mb-4">
@@ -155,19 +155,19 @@
 							Выберите настройки для показа поп-апа, которые будут точно соответствовать целевой аудитории. Выберите максимально целевой сегмент
 						</p>
 						<p>
-							<a href="#" @click="scenarioIndex=0" :class="{ 'font-weight-bold text-primary' : scenarioIndex == 0 }">Выберите триггер</a>
+							<b-link @click="scriptsIndex=0" :class="{ 'font-weight-bold text-primary' : scriptsIndex == 0 }">Выберите триггер</b-link>
 						</p>
 						<p>
-							<a href="#" @click="scenarioIndex=1" :class="{ 'font-weight-bold text-primary' : scenarioIndex == 1 }">Определите сегмент</a>
+							<b-link @click="scriptsIndex=1" :class="{ 'font-weight-bold text-primary' : scriptsIndex == 1 }">Определите сегмент</b-link>
 						</p>
 						<p>
-							<a href="#" @click="scenarioIndex=2" :class="{ 'font-weight-bold text-primary' : scenarioIndex == 2 }">Настройте условия отправки</a>
+							<b-link @click="scriptsIndex=2" :class="{ 'font-weight-bold text-primary' : scriptsIndex == 2 }">Настройте условия отправки</b-link>
 						</p>
 					</b-col>
 					<b-col lg="6">
-						<g-image src="@/assets/images/pop-up/scripts-1.png" quality="100" class="mw-100 scenario__pics" :class="{ active : scenarioIndex == 0 }" alt="Выберите триггер" />
-						<g-image src="@/assets/images/pop-up/scripts-2.png" quality="100" class="mw-100 scenario__pics" :class="{ active : scenarioIndex == 1 }" alt="Определите сегмент" />
-						<g-image src="@/assets/images/pop-up/scripts-3.png" quality="100" class="mw-100 scenario__pics" :class="{ active : scenarioIndex == 2 }" alt="Настройте условия отправки" />
+						<g-image src="@/assets/images/pop-up/scripts-1.png" quality="100" class="mw-100 scripts__pics" :class="{ active : scriptsIndex == 0 }" alt="Выберите триггер" />
+						<g-image src="@/assets/images/pop-up/scripts-2.png" quality="100" class="mw-100 scripts__pics" :class="{ active : scriptsIndex == 1 }" alt="Определите сегмент" />
+						<g-image src="@/assets/images/pop-up/scripts-3.png" quality="100" class="mw-100 scripts__pics" :class="{ active : scriptsIndex == 2 }" alt="Настройте условия отправки" />
 					</b-col>
 				</b-row>
 			</b-container>
@@ -261,6 +261,7 @@
 	import Cases 				from '~/components/Cases/Cases.vue'
 	import Logos 				from '~/components/Logos.vue'
 	import Study 				from '~/components/Study.vue'
+	import { BEmbed , BLink } from 'bootstrap-vue'
 
 	export default {
 		components: {
@@ -268,7 +269,8 @@
 			Consultation,
 			Cases,
 			Logos,
-			Study
+			Study,
+			BEmbed, BLink
 		},
 		data() {
 			return {
@@ -279,7 +281,7 @@
 				metaImage: 'https://www.carrotquest.io/assets/images/cover/pop-up.png',
 
 				//Сценарии
-				scenarioIndex: 0
+				scriptsIndex: 0
 			}
 		},
 		methods: {
@@ -466,7 +468,7 @@
 			}
 		}
 
-		.scenario {
+		.scripts {
 			&__pics {
 				position: relative;
 			}

@@ -1,16 +1,11 @@
 // This is the main.js file. Import global CSS and scripts here.
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 
-//Bootstrap
+// Bootstrap
 import {
 	LayoutPlugin,
-	BOverlay,
 	NavbarPlugin,
-	TabsPlugin,
-	CardPlugin,
-	EmbedPlugin,
 	VBVisiblePlugin,
-	LinkPlugin,
 	FormPlugin, FormInputPlugin, FormRadioPlugin, FormGroupPlugin, InputGroupPlugin, ButtonPlugin, ButtonGroupPlugin,
 	ModalPlugin,
 } from 'bootstrap-vue' 
@@ -48,13 +43,8 @@ export default function(Vue, { head }) {
 
 	//Bootstrap
 	Vue.use(LayoutPlugin)
-	Vue.component('b-overlay', BOverlay)
 	Vue.use(NavbarPlugin)
-	Vue.use(TabsPlugin)
-	Vue.use(CardPlugin)
-	Vue.use(EmbedPlugin)
 	Vue.use(VBVisiblePlugin)
-	Vue.use(LinkPlugin)
 	Vue.use(FormPlugin)
 	Vue.use(FormInputPlugin)
 	Vue.use(FormRadioPlugin)

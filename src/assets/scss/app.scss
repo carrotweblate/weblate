@@ -411,6 +411,9 @@ input[type=number]:focus,
 		position: relative;
 		top: -2px;
 	}
+	.nav-item.show .dropdown-toggle>span {
+		color: $primary;
+	}
 	.nav-link {
 		color: #000 !important;
 	}
@@ -435,6 +438,9 @@ input[type=number]:focus,
 	.blur , .dropdown-menu {
 		background-color: rgba(255, 255, 255, 0.90);
 		backdrop-filter: blur(10px);
+		@-moz-document url-prefix() { 
+			background-color: rgba(255, 255, 255, 1);
+		}
 	}
 	.blur {
 		box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);

@@ -347,6 +347,7 @@
 	import Cases 			from '~/components/Cases/Cases.vue'
 	import Integrations 	from '~/components/Integrations.vue'
 	import Study 			from '~/components/Study.vue'
+	import { BTabs , BTab } from 'bootstrap-vue'
 
 	export default {
 		components: {
@@ -354,7 +355,8 @@
 			Pipeline,
 			Cases,
 			Integrations,
-			Study
+			Study,
+			BTabs, BTab
 		},
 		data() {
 			return {

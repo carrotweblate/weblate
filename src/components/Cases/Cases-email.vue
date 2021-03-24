@@ -137,10 +137,13 @@
 
 <script>
 	import Case from '~/components/Cases/Case.vue'
+	import { BTabs , BTab } from 'bootstrap-vue'
 
 	export default {
 		components: {
-			Case
+			Case,
+			BTabs,
+			BTab
 		}
 	}
 </script>

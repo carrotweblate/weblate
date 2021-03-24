@@ -587,13 +587,16 @@
 	import Cases 				from '~/components/Cases/Cases-email.vue'
 	import FAQ 					from '~/components/FAQ.vue'
 	import Study 				from '~/components/Study.vue'
+	import { BLink , BTabs , BTab } from 'bootstrap-vue'
 
 	export default {
 		components: {
 			RegistrationForm,
 			Cases,
 			FAQ,
-			Study
+			Study,
+			BLink,
+			BTabs, BTab
 		},
 		data() {
 			return {

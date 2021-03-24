@@ -1,7 +1,7 @@
 <template>
 	<header>
 		
-		<b-navbar toggleable="lg" :class="{'pt-2 pb-2': scrolled, 'pt-2 pb-2 pt-md-4 pb-md-4': !scrolled, 'hideHeader': hideHeader, '': !hideHeader}" v-scroll="handleScroll">
+		<b-navbar v-if="ready" toggleable="lg" :class="{'pt-2 pb-2': scrolled, 'pt-2 pb-2 pt-md-4 pb-md-4': !scrolled, 'hideHeader': hideHeader, '': !hideHeader}" v-scroll="handleScroll" >
 
 			<!-- Логотип -->
 			<g-link v-if="!isBlog" to="/">
@@ -228,9 +228,7 @@
 				node {
 					title
 					slug
-					categories
 					featured_media
-					featured_media_large
 				}
 			}
 		}
@@ -243,14 +241,19 @@
 		methods: {
 			handleScroll() {
 				if (this.lastPosition < window.scrollY && this.limitPosition < window.scrollY) {
-					this.hideHeader = true;
-					// move up!
+					this.hideHeader = true
+					if ( document.querySelector('a[aria-expanded*="true"]') ) {
+						document.querySelector('a[aria-expanded*="true"]').setAttribute('aria-expanded', false)
+						document.querySelector('.b-nav-dropdown.show').classList = 'nav-item b-nav-dropdown dropdown mr-1 hasmegamenu'
+						document.querySelector('.dropdown-menu.show').classList = 'dropdown-menu'
+					}
+					// Скролим вниз
 				} 
 				
 				if (this.lastPosition > window.scrollY) {
-					this.scrolled = true;
-					this.hideHeader = false;
-					// move down
+					this.scrolled = true
+					this.hideHeader = false
+					// Скролим вверх
 				}
 				
 				this.lastPosition = window.scrollY;
@@ -281,6 +284,8 @@
 					.catch()
 		},
 		mounted () {
+			this.ready = true
+
 			//Блог или нет
 			if (window.location.href.indexOf('/blog/') != -1){
 				this.isBlog = true
@@ -292,6 +297,7 @@
 		},
 		data() {
 			return {
+				ready: false,
 				lastPosition: 0,
 				limitPosition: 500,
 				scrolled: false,

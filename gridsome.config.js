@@ -4,6 +4,7 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
+// // Анализ размера билда
 // const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
 //   .BundleAnalyzerPlugin
 
@@ -136,16 +137,13 @@ module.exports = {
 				enablePartialUpdates: true, // default: false
 			},
 		},
-		{
-			use: `compression-webpack-plugin`,
-			options: {
-				exclude: /\/icons/,
-				algorithm: "gzip",
-				test: /\.js$|\.html$/,
-				threshold: 10240,
-        		minRatio: 0.8
-			},
-		}
+		// //Brotli должен стоять на сервере
+		// {
+		// 	use: 'gridsome-plugin-brotli',
+		// 	options: {
+		// 		extensions: ['css', 'html', 'js', 'svg', 'json']
+		// 	}
+		// }
 	],
 	
 	

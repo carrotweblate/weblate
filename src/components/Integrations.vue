@@ -93,8 +93,13 @@
 </template>
 
 <script>
-	export default {
+	import { BTabs , BTab } from 'bootstrap-vue'
 
+	export default {
+		components: {
+			BTabs,
+			BTab
+		}
 	}
 </script>
 
