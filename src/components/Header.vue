@@ -1,7 +1,7 @@
 <template>
 	<header>
 		
-		<b-navbar v-if="ready" toggleable="lg" :class="{'pt-2 pb-2': scrolled, 'pt-2 pb-2 pt-md-4 pb-md-4': !scrolled, 'hideHeader': hideHeader, '': !hideHeader}" v-scroll="handleScroll" >
+		<b-navbar toggleable="lg" :class="{'pt-2 pb-2': scrolled, 'pt-2 pb-2 pt-md-4 pb-md-4': !scrolled, 'hideHeader': hideHeader, '': !hideHeader}" v-scroll="handleScroll" >
 
 			<!-- Логотип -->
 			<g-link v-if="!isBlog" to="/">
@@ -19,11 +19,11 @@
 				<!-- Выпадающее меню -->
 				<b-navbar-nav class="ml-auto mt-3 mt-lg-0">
 					<template v-for="( item , index ) in topMenu">
-						<b-nav-item v-if="!item.subLinks" :href="item.href" :key="index" class="mr-1" >
+						<b-nav-item v-if="!item.subLinks" :href="item.href" :key="index" class="mr-1" :disabled="ready" >
 							{{ item.title }}
 						</b-nav-item>
 						<template v-else>
-							<b-nav-item-dropdown :key="index" class="mr-1" :class="{hasmegamenu: !!item.jobs}" >
+							<b-nav-item-dropdown :key="index" class="mr-1" :class="{hasmegamenu: !!item.jobs}" :disabled="ready" >
 								<template slot="button-content">
 									<span v-on:click="openMegamenu" class="d-none d-lg-inline">
 										{{item.title}}
@@ -284,7 +284,7 @@
 					.catch()
 		},
 		mounted () {
-			this.ready = true
+			this.ready = false
 
 			//Блог или нет
 			if (window.location.href.indexOf('/blogtest/') != -1){
@@ -297,7 +297,7 @@
 		},
 		data() {
 			return {
-				ready: false,
+				ready: true,
 				lastPosition: 0,
 				limitPosition: 500,
 				scrolled: false,

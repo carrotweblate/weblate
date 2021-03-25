@@ -25,14 +25,12 @@
 				
 				<div class="hero__bg">
 					
-					<video autoplay loop muted playsinline class="d-none d-lg-block">
+					<b-embed v-b-visible.once="callback" type="video" loading="lazy" autoplay loop muted playsinline class="d-none d-lg-block">
 						<!-- <source src="/assets/video/index/index-hero.webm" type="video/webm">
 						<source src="/assets/video/index/index-hero.mp4" type="video/mp4"> -->
 						<source src="https://ik.imagekit.io/0nyjr4jxhmg/video/index-hero.webm" type="video/webm">
 						<source src="https://ik.imagekit.io/0nyjr4jxhmg/video/index-hero.mp4" type="video/mp4">
-						<!-- <source :src="indexHero.webm" type="video/webm">
-						<source :src="indexHero.mp4" type="video/mp4"> -->
-					</video>
+					</b-embed>
 					<svg class="d-lg-none" width="835" height="680" viewBox="0 0 835 680" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path d="M729.839 140.08C705.697 41.511 606.221 -18.8239 507.652 5.31796L140.08 95.3452C41.5109 119.487 -18.8238 218.963 5.31796 317.532C29.4598 416.101 128.936 476.436 227.505 452.294L595.077 362.267C693.646 338.125 753.981 238.648 729.839 140.08Z" fill="#FFEEDB"></path>
 						<path d="M192.521 259.73C192.521 259.73 176.493 331.149 133.45 402.115C90.4077 473.081 49.0844 496.219 49.0844 496.219L239.047 449.693L192.521 259.73Z" fill="#FFEEDB"></path>
@@ -373,17 +371,8 @@
 				carrotNumbersLids: 94324071,
 				carrotNumbersSites: 9325,
 
-				// indexHero: {
-				// 	webm: '',
-				// 	mp4: ''
-				// }
+				visible: false
 			};
-		},
-		mounted () {
-			// this.indexHero = {
-			// 	webm: 'https://ik.imagekit.io/0nyjr4jxhmg/video/index-hero.webm',
-			// 	mp4: 'https://ik.imagekit.io/0nyjr4jxhmg/video/index-hero.mp4'
-			// }
 		},
 		methods: {
 			formatToPrice(value) {
@@ -449,6 +438,10 @@
 				right: 50%;
 				margin-top: -460px;
 				margin-right: -750px;
+				.embed-responsive {
+					width: 978px;
+					height: 800px;
+				}
 			}
 			@media (max-width: 1199.98px) {
 				&__bg {

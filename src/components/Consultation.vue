@@ -5,9 +5,17 @@
 			<b-col class="Consultation" :style=" 'background-color: ' + bg ">
 				<b-row class="align-items-center justify-content-center">
 					<b-col cols="8" lg="4" class="mb-5 d-none d-lg-block">
-						<g-image v-if="pic == 'medium-1.png'" src="@/assets/images/components/medium-1.png" width="552" :alt="alt" :title="alt" class="mw-100" />
-						<g-image v-if="pic == 'medium-2.png'" src="@/assets/images/components/medium-2.png" width="552" :alt="alt" :title="alt" class="mw-100" />
-						<g-image v-if="pic == 'medium-3.png'" src="@/assets/images/components/medium-3.png" width="552" :alt="alt" :title="alt" class="mw-100" />
+						<ik-image
+							:path="'/components/' + pic"
+							:transformation="[{width:552,height:552,cropMode:'pad_resize'}]"
+							:lqip="{active:true, quality: 40, blur: 10}"
+							width="552"
+							height="552"
+							class="mw-100 h-auto"
+							loading="lazy"
+							:alt="alt" 
+							:title="alt" 
+						/>
 					</b-col>
 					<b-col cols="12" lg="8">
 						<div class="h1 mb-4" v-html="title" />
