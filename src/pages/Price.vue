@@ -359,7 +359,7 @@
 							</div>
 							<p>
 								Когда надо оптимизировать работу операторов, используйте данные для принятия решений: Анализ загрузки операторов, скорость работы команды, статистика запросов, распределение диалогов по времени и т.д.
-								<g-link to="/blog/zhiznenno-vazhnye-metriki-sluzhby-podderzhki-kotorye-stoit-nachat-izmeryat-uzhe-segodnya/" target="_blank" rel="noopener">Подробнее</g-link>
+								<g-link to="/blog/metriki-tekhpodderzhki/" target="_blank" rel="noopener">Подробнее</g-link>
 							</p>
 							<div class="price">
 								<div class="font20px">
