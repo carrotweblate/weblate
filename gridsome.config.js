@@ -54,33 +54,33 @@ module.exports = {
 				debug: false
 			}
 		},
-		//PWA
-		{
-			use: 'gridsome-plugin-pwa',
-			options: {
-				// Service Worker Options
-				disableServiceWorker: false,
-				serviceWorkerPath: 'service-worker.js',
-				cachedFileTypes: 'js,json,css,html,png,jpg,jpeg,svg,gif,webm,mp4',
-				disableTemplatedUrls: false,
+		// //PWA
+		// {
+		// 	use: 'gridsome-plugin-pwa',
+		// 	options: {
+		// 		// Service Worker Options
+		// 		disableServiceWorker: false,
+		// 		serviceWorkerPath: 'service-worker.js',
+		// 		cachedFileTypes: 'js,json,css,html,png,jpg,jpeg,svg,gif,webm,mp4',
+		// 		disableTemplatedUrls: false,
 	
-				// Manifest Options (https://developer.mozilla.org/en-US/docs/Web/Manifest)
-				manifestPath: 'manifest.json',
-				title: 'Carrot quest',
-				description: 'Инструменты для увеличения продаж на сайтах без привлечения нового трафика',
-				shortName: 'CQ',
-				startUrl: '/',
-				display: 'standalone',
-				statusBarStyle: 'default',
-				themeColor: '#FF7C16',
-				backgroundColor: '#ffffff',
-				icon: './static/favicon.png',
-				maskableIcon: true,
-				svgFavicon: 'https://www.carrotquest.io/favicon.svg',
-				appleMaskIcon: 'https://www.carrotquest.io/favicon.svg',
-            	appleMaskIconColor: '#ffffff',
-			}
-		},
+		// 		// Manifest Options (https://developer.mozilla.org/en-US/docs/Web/Manifest)
+		// 		manifestPath: 'manifest.json',
+		// 		title: 'Carrot quest',
+		// 		description: 'Инструменты для увеличения продаж на сайтах без привлечения нового трафика',
+		// 		shortName: 'CQ',
+		// 		startUrl: '/',
+		// 		display: 'standalone',
+		// 		statusBarStyle: 'default',
+		// 		themeColor: '#FF7C16',
+		// 		backgroundColor: '#ffffff',
+		// 		icon: './static/favicon.png',
+		// 		maskableIcon: true,
+		// 		svgFavicon: 'https://www.carrotquest.io/favicon.svg',
+		// 		appleMaskIcon: 'https://www.carrotquest.io/favicon.svg',
+        //     	appleMaskIconColor: '#ffffff',
+		// 	}
+		// },
 		// {
 		// 	use: '@allanchain/gridsome-plugin-pwa',
 		// 	options: {
