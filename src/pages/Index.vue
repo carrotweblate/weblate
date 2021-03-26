@@ -187,7 +187,7 @@
 						text="
 							<p>
 								«Дом.ru увеличил конверсию сайта на 30% благодаря автоматизации и экспериментам» 
-								<a href=/blog/kejs-kak-dom-ru-uvelichil-konversiyu-sajta-na-30-s-pomoshhyu-carrot-quest/>Читать кейс</a>
+								<a href=/blog/case-dom-ru-konversii/>Читать кейс</a>
 							</p>
 							<p>
 								Андрей Шубин <br>
@@ -220,7 +220,7 @@
 						text="
 							<p>
 								«Мы в интернет-магазине SkyShop в 2,5 раза увеличили конверсию в заказ с помощью триггерных поп-апов, писем и чата»
-								<a href=/blog/case_skyshop/>Читать кейс</a>
+								<a href=/blog/case-skyshop/>Читать кейс</a>
 							</p>
 							<p>
 								Цепков Сергей <br>
