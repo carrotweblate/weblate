@@ -24,15 +24,10 @@
 							autoplay loop muted playsinline
 							loading="lazy"
 							>
-							<source v-if="visible" :src="item.pic.replace('mp4','webm')" type="video/webm">
-							<source v-if="visible" :src="item.pic" type="video/mp4">
+							<source v-if="visible" :src="'https://cdn-www.carrotquest.io' + item.pic.replace('mp4','webm')" type="video/webm">
+							<source v-if="visible" :src="'https://cdn-www.carrotquest.io' + item.pic" type="video/mp4">
 						</b-embed>
 						<!-- Изображение -->
-						<!-- <g-image v-else
-							:src="require(`!!assets-loader?width=1440&height=1080&fit=contain&background=transparent!@/assets/images/components/${item.pic}`)"
-							:alt="item.title"
-							quality="100"
-						/> -->
 						<img v-else
 							:src="'https://res.cloudinary.com/carrotquest/image/upload/v1613043845/components/' + item.pic"
 							:alt="item.title"
@@ -62,8 +57,8 @@
 							aspect="1by1"
 							autoplay loop muted playsinline
 							>
-							<source v-if="visible" :src="item.pic.replace('mp4','webm')" type="video/webm">
-							<source v-if="visible" :src="item.pic" type="video/mp4">
+							<source v-if="visible" :src="'https://cdn-www.carrotquest.io' + item.pic.replace('mp4','webm')" type="video/webm">
+							<source v-if="visible" :src="'https://cdn-www.carrotquest.io' + item.pic" type="video/mp4">
 						</b-embed>
 						<!-- Изображение -->
 						<!-- <g-image v-else

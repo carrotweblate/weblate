@@ -24,12 +24,9 @@
 				</b-row>
 				
 				<div class="hero__bg">
-					
 					<b-embed v-b-visible.once="callback" type="video" loading="lazy" autoplay loop muted playsinline class="d-none d-lg-block">
-						<!-- <source src="/assets/video/index/index-hero.webm" type="video/webm">
-						<source src="/assets/video/index/index-hero.mp4" type="video/mp4"> -->
-						<source src="https://ik.imagekit.io/0nyjr4jxhmg/video/index-hero.webm" type="video/webm">
-						<source src="https://ik.imagekit.io/0nyjr4jxhmg/video/index-hero.mp4" type="video/mp4">
+						<source src="https://cdn-www.carrotquest.io/assets/video/index/index-hero.webm" type="video/webm">
+						<source src="https://cdn-www.carrotquest.io/assets/video/index/index-hero.mp4" type="video/mp4">
 					</b-embed>
 					<svg class="d-lg-none" width="835" height="680" viewBox="0 0 835 680" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path d="M729.839 140.08C705.697 41.511 606.221 -18.8239 507.652 5.31796L140.08 95.3452C41.5109 119.487 -18.8238 218.963 5.31796 317.532C29.4598 416.101 128.936 476.436 227.505 452.294L595.077 362.267C693.646 338.125 753.981 238.648 729.839 140.08Z" fill="#FFEEDB"></path>
@@ -320,7 +317,17 @@
 			<b-col class="p-4" style="background-color: #fff3e6; border-radius: 5px;">
 				<b-row class="align-items-center justify-content-center">
 					<b-col lg="6">
-						<g-image src="@/assets/images/components/10.png" width="494" alt="Регистрация в сервисе" title="Поехали!" style="max-width: 100%" />
+						<!-- <g-image src="@/assets/images/components/10.png" width="494" alt="Регистрация в сервисе" title="Поехали!"  style="max-width: 100%" /> -->
+						<ik-image
+							path="/components/10.png"
+							:transformation="[{width:494}]"
+							:lqip="{active:true, quality: 40, blur: 10}"
+							width="494"
+							height="256"
+							loading="lazy"
+							class="mw-100"
+							alt="Регистрация в сервисе" title="Поехали!" 
+						/>
 					</b-col>
 					<b-col lg="6">
 						<div class="h1 mb-4">Регистрация в&nbsp;сервисе</div>

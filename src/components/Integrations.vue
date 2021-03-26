@@ -40,10 +40,10 @@
 									<g-link to="/integration/telegram/" class="Integrations__logo telegram"></g-link>
 									<g-link to="/integration/viber/" class="Integrations__logo viber"></g-link>
 									<g-link to="/integration/slack/" class="Integrations__logo slack_chat"></g-link>
-									<a href="https://help.carrotquest.io/article/158/" class="Integrations__logo zendesk"></a>
-									<a href="https://help.carrotquest.io/article/166/" class="Integrations__logo omnidesk"></a>
-									<a href="https://help.carrotquest.io/article/163/" class="Integrations__logo usedesk"></a>
-									<a href="https://help.carrotquest.io/article/1129/" class="Integrations__logo calendly"></a>
+									<g-link href="https://help.carrotquest.io/article/158/" class="Integrations__logo zendesk"></g-link>
+									<g-link href="https://help.carrotquest.io/article/166/" class="Integrations__logo omnidesk"></g-link>
+									<g-link href="https://help.carrotquest.io/article/163/" class="Integrations__logo usedesk"></g-link>
+									<g-link href="https://help.carrotquest.io/article/1129/" class="Integrations__logo calendly"></g-link>
 								</b-col>
 							</b-row>
 						</b-tab>
@@ -70,7 +70,7 @@
 						<b-tab title="Своими руками" lazy>
 							<b-row class="mt-4">
 								<b-col class="d-flex flex-wrap">
-									<g-link to="/developers/" class="Integrations__logo api"></g-link>
+									<g-link href="https://developers.carrotquest.io/" class="Integrations__logo api"></g-link>
 									<a class="Integrations__logo dialogflow"></a>
 									<a class="Integrations__logo lambdascript"></a>
 									<a class="Integrations__logo jsscript"></a>
