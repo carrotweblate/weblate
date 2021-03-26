@@ -148,7 +148,9 @@ body {
 //Шрифты
 @font-face {
 	font-family: 'Stag Sans';
-	src: url('/assets/font/Stag Sans-Medium-Web.woff') format('woff'), url('/assets/font/Stag Sans-Medium-Web.woff') format('woff');
+	src: 
+		url('http://cdn-www.carrotquest.io/assets/font/Stag-Sans-Medium-Web.woff2') format('woff2'), 
+		url('http://cdn-www.carrotquest.io/assets/font/Stag-Sans-Medium-Web.woff') format('woff');
 	font-style: normal;
 	font-display: swap;
 }
