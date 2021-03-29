@@ -72,18 +72,23 @@
 				</b-col>
 			</b-row>
 
-			<b-row class="post__more">
-				<b-col cols="12" class="h2 mb-5">
-					Что еще читать по теме:
-				</b-col>
-				<PostCard v-for="{ node } in $page.allPost.edges" :key="node.id" :node="node" :categoryPage="false" />
-			</b-row>
+			<ClientOnly>
+				<!-- Что еще читать по теме -->
+				<b-row class="post__more">
+					<b-col cols="12" class="h2 mb-5">
+						Что еще читать по теме:
+					</b-col>
+					<PostCard v-for="{ node } in $page.allPost.edges" :key="node.id" :node="node" :categoryPage="false" />
+				</b-row>
+			
+				<!-- Комментарии -->
+				<b-row class="disqus">
+					<b-col>
+						<Disqus shortname="carrotquest" :identifier="$context.id + ' https://www.carrotquest.io/blog/?p=' + $context.id" lang="ru" />
+					</b-col>
+				</b-row>
 
-			<b-row class="disqus">
-				<b-col>
-					<Disqus shortname="carrotquest" :identifier="$context.id + ' https://www.carrotquest.io/blog/?p=' + $context.id" lang="ru" />
-				</b-col>
-			</b-row>
+			</ClientOnly>
 
 			<!-- <BannerSobirayte /> -->
 

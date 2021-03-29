@@ -127,7 +127,7 @@ module.exports = function (api) {
 				pageHTML = pageHTML.split('controls').join('')
 				
 				createPage({
-					path: `/blogtest/${item.slug}/`,
+					path: `/blog/${item.slug}/`,
 					component: './src/templates/Post.vue',
 					context: {
 						id: item.id,
@@ -156,15 +156,15 @@ module.exports = function (api) {
 				// console.log('Пост - ' + item.id + ' - готов!')
 
 				//Делаем AMP
-				fs.readFile('./static/blogtest/' + item.slug + '/amp/modified.json', 'utf8', function(err, contents) {
+				fs.readFile('./static/blog/' + item.slug + '/amp/modified.json', 'utf8', function(err, contents) {
 					let ampModified = JSON.stringify({ date: '' })
 					if (contents) {
 						ampModified = JSON.parse(contents)
 					}
 					if (ampModified.date != item.modified ) {
-						fs.mkdirSync('./static/blogtest/' + item.slug , { recursive: true })
-						fs.mkdirSync('./static/blogtest/' + item.slug + '/amp/' , { recursive: true })
-						fs.writeFile('./static/blogtest/' + item.slug + '/amp/modified.json', JSON.stringify({ date: item.modified }), 'utf8' , function (err) {
+						fs.mkdirSync('./static/blog/' + item.slug , { recursive: true })
+						fs.mkdirSync('./static/blog/' + item.slug + '/amp/' , { recursive: true })
+						fs.writeFile('./static/blog/' + item.slug + '/amp/modified.json', JSON.stringify({ date: item.modified }), 'utf8' , function (err) {
 							if (err) return console.log(err)
 						})
 						axios.get('https://www.carrotquest.io/blog/' + item.slug + '/amp/')
@@ -174,7 +174,7 @@ module.exports = function (api) {
 								pageHTML = pageHTML.split('http://carrotquest.io/').join('https://www.carrotquest.io/')
 								pageHTML = pageHTML.split('https://www.carrotquest.io/blog/wp-content/uploads/').join('https://cdn-www.carrotquest.io/blog/wp-content/uploads/')
 								pageHTML = tp.execute(pageHTML)
-								fs.writeFile('./static/blogtest/' + item.slug + '/amp/index.html', pageHTML, 'utf8' , function (err) {
+								fs.writeFile('./static/blog/' + item.slug + '/amp/index.html', pageHTML, 'utf8' , function (err) {
 									if (err) return console.log(err)
 								})
 								// console.log('AMP - ' + item.id + ' - готов!')
@@ -204,7 +204,7 @@ module.exports = function (api) {
 		api.createManagedPages(async ({ createPage }) => {
 			for (const item of data) {
 				createPage({
-					path: `/blogtest/${item.slug}/`,
+					path: `/blog/${item.slug}/`,
 					component: './src/templates/Category.vue',
 					context: {
 						id: item.id,
@@ -249,7 +249,7 @@ module.exports = function (api) {
 
 				if (item.parent == 28678) {
 					createPage({
-						path: `/blogtest/authors/${item.slug}/`,
+						path: `/blog/authors/${item.slug}/`,
 						component: './src/templates/Author.vue',
 						context: {
 							id: item.acf.user.ID,
