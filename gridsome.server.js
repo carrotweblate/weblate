@@ -43,7 +43,9 @@ module.exports = function (api) {
 					//Интеграции
 					|| item.id == '9970780' || item.id == '11191195' || item.id == '11193030' || item.id == '11193800' || item.id == '11195611' || item.id == '11431149' || item.id == '11431453' || item.id == '11431738' || item.id == '11007077' || item.id == '11183247' || item.id == '11183537' || item.id == '11194593' || item.id == '11195339' || item.id == '11430916' || item.id == '11432052' || item.id == '11432895' || item.id == '11433520' || item.id == '13669305' || item.id == '13670106' || item.id == '13670549' || item.id == '13670751' || item.id == '3785072' || item.id == '3195986'
 					//Вебинары
-					|| item.id == '17071238' || item.id == '17091896'
+					|| item.id == '17071238' || item.id == '17091896' || item.id == '17931613' || item.id == '18334680'
+					//Лидбот
+					|| item.id == '18405836'
 				) ) {
 				// if ( item.id != '312699' || item.id == '1048214' || item.id == '2883968' || item.id == '11437990' ) {
 				// if ( item.id == '16083784') {
@@ -127,7 +129,7 @@ module.exports = function (api) {
 				pageHTML = pageHTML.split('controls').join('')
 				
 				createPage({
-					path: `/blog/${item.slug}/`,
+					path: `/blogtest/${item.slug}/`,
 					component: './src/templates/Post.vue',
 					context: {
 						id: item.id,
@@ -156,7 +158,7 @@ module.exports = function (api) {
 				// console.log('Пост - ' + item.id + ' - готов!')
 
 				//Делаем AMP
-				fs.readFile('./static/blog/' + item.slug + '/amp/modified.json', 'utf8', function(err, contents) {
+				fs.readFile('./static/blogtest/' + item.slug + '/amp/modified.json', 'utf8', function(err, contents) {
 					let ampModified = JSON.stringify({ date: '' })
 					if (contents) {
 						ampModified = JSON.parse(contents)
@@ -204,7 +206,7 @@ module.exports = function (api) {
 		api.createManagedPages(async ({ createPage }) => {
 			for (const item of data) {
 				createPage({
-					path: `/blog/${item.slug}/`,
+					path: `/blogtest/${item.slug}/`,
 					component: './src/templates/Category.vue',
 					context: {
 						id: item.id,
@@ -249,7 +251,7 @@ module.exports = function (api) {
 
 				if (item.parent == 28678) {
 					createPage({
-						path: `/blog/authors/${item.slug}/`,
+						path: `/blogtest/authors/${item.slug}/`,
 						component: './src/templates/Author.vue',
 						context: {
 							id: item.acf.user.ID,

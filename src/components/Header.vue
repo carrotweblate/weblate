@@ -425,12 +425,12 @@
 							content: [
 								{
 									title: 'Блог',
-									href: '/blog/',
+									href: 'https://www.carrotquest.io/blog/',
 									job: 'О&nbsp;том, как разработчику интегрировать Carrot quest на&nbsp;сайт'
 								},
 								{
 									title: 'Кейсы',
-									href: '/cases/',
+									href: 'https://www.carrotquest.io/cases/',
 									job: 'Более 60&nbsp;историй успеха наших клиентов'
 								},
 								{
@@ -492,7 +492,7 @@
 					},
 					{
 						title: 'Блог',
-						href: '/blog/'
+						href: 'https://www.carrotquest.io/blog/'
 					},
 					{
 						title: 'Партнерам',
