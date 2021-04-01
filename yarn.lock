@@ -4972,9 +4972,9 @@ gridsome-plugin-gtm@^0.1.1:
     vue-gtm "^2.0.0"
 
 gridsome-plugin-image-cdn@^0.1.6:
-  version "0.1.6"
-  resolved "https://registry.yarnpkg.com/gridsome-plugin-image-cdn/-/gridsome-plugin-image-cdn-0.1.6.tgz#c21aa81e40f5511fbdbba9efec44484e5bd2affc"
-  integrity sha512-bWwJQ5OtmPYgHaCy5owqLd78kepvYpabbvqPdiW0cNAfPH0kmHbmW2e6l2SMwQ/sTidNd4tgp67oze+75RIVlw==
+  version "0.1.7"
+  resolved "https://registry.yarnpkg.com/gridsome-plugin-image-cdn/-/gridsome-plugin-image-cdn-0.1.7.tgz#2397da05cadada1bb18e8eac9ca8b73184875417"
+  integrity sha512-Vz5yi8ZWWgq7hdQvKNHXOUM5GdsqNHTEHTWcPUCJ0vUkgU4J7i1+FZ48Sfs/UGEJMc2WUUQEngnpmpzrCPEWPw==
 
 gridsome-plugin-pwa@^0.0.18:
   version "0.0.18"

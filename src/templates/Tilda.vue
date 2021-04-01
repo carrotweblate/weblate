@@ -4,6 +4,16 @@
 		<!-- Страница из тильды -->
 		<div class="page-tilda" v-html="$context.html" />
 
+		<!-- Модалка с видосом -->
+		<b-modal ref="open-modal-video" size="xl" hide-header hide-footer>
+			<b-embed
+				type="iframe"
+				aspect="16by9"
+				src="https://www.youtube.com/embed/RNOS-68LaSk?autoplay=1"
+				allowfullscreen
+			></b-embed>
+		</b-modal>
+
 	</Layout>
 </template>
 
@@ -11,7 +21,12 @@
 
 
 <script>
+	import { BEmbed } 		from 'bootstrap-vue'
+
 	export default {
+		components: {
+			BEmbed
+		},
 		//Делаем в HEAD
 		metaInfo() {
 			return {
@@ -84,6 +99,16 @@
 
 			//Копируем массив тильды для удаления
 			this.tilda = this.$page.allTildaFiles.edges
+
+			// Ищем ссылки для открытия модалок на скачивание файлов
+			if ( document.querySelector('a[href*="#open-modal-video"]') ) {
+				document.querySelectorAll('a[href*="#open-modal-video"]').forEach(function(item) {
+					item.addEventListener('click', function(e) {
+						e.preventDefault()
+						this.$refs['open-modal-video'].show()
+					}.bind(this))
+				}.bind(this))
+			}
 		},
 		beforeDestroy () {
 			//Удаляем стили и скрипты тильды

@@ -55,6 +55,7 @@
 								alt="Видео"
 							/>
 						</a>
+						<!-- Модалка с видосом -->
 						<b-modal id="youtubeCQ" size="xl" hide-header hide-footer>
 							<b-embed
 								type="iframe"

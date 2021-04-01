@@ -129,7 +129,7 @@ module.exports = function (api) {
 				pageHTML = pageHTML.split('controls').join('')
 				
 				createPage({
-					path: `/blogtest/${item.slug}/`,
+					path: `/blog/${item.slug}/`,
 					component: './src/templates/Post.vue',
 					context: {
 						id: item.id,
@@ -158,7 +158,7 @@ module.exports = function (api) {
 				// console.log('Пост - ' + item.id + ' - готов!')
 
 				//Делаем AMP
-				fs.readFile('./static/blogtest/' + item.slug + '/amp/modified.json', 'utf8', function(err, contents) {
+				fs.readFile('./static/blog/' + item.slug + '/amp/modified.json', 'utf8', function(err, contents) {
 					let ampModified = JSON.stringify({ date: '' })
 					if (contents) {
 						ampModified = JSON.parse(contents)
@@ -206,7 +206,7 @@ module.exports = function (api) {
 		api.createManagedPages(async ({ createPage }) => {
 			for (const item of data) {
 				createPage({
-					path: `/blogtest/${item.slug}/`,
+					path: `/blog/${item.slug}/`,
 					component: './src/templates/Category.vue',
 					context: {
 						id: item.id,
@@ -251,7 +251,7 @@ module.exports = function (api) {
 
 				if (item.parent == 28678) {
 					createPage({
-						path: `/blogtest/authors/${item.slug}/`,
+						path: `/blog/authors/${item.slug}/`,
 						component: './src/templates/Author.vue',
 						context: {
 							id: item.acf.user.ID,

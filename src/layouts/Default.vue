@@ -387,16 +387,13 @@
 						rel: 'canonical',
 						href: this.$parent.metaCanonical
 					},
-					// Подключаем Google Fonts
+					// Подключаем Open sans
 					{
-						rel: 'preconnect',
-						href: 'https://fonts.gstatic.com'
-					},
-					{
-						rel: 'stylesheet',
-						href: 'https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap',
-						media: 'print',
-						onload: 'this.onload=null;this.removeAttribute("media")'
+						rel: 'preload',
+						href: 'https://cdn-www.carrotquest.io/assets/font/OpenSans-Regular.woff2',
+						as: 'font', 
+						type: 'font/woff2', 
+						crossorigin: 'anonymous'
 					},
 					// Подключаем Stag sans
 					{
@@ -411,10 +408,3 @@
 		}
 	};
 </script>
-
-//Подключаем Шрифты
-	head.link.push(
-		{ rel: "preconnect", 	href: "https://fonts.gstatic.com" },
-		{ rel: "preload", 		href: "/assets/font/Stag%20Sans-Medium-Web.woff", as: "font", type: "font/woff", crossorigin:"anonymous" },
-		{ rel: "stylesheet", 	href: "https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap", media: "print", onload: "this.onload=null;this.removeAttribute('media');" }
-	)
