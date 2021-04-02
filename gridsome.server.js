@@ -53,33 +53,36 @@ module.exports = function (api) {
 						// 'https://api.tildacdn.info/v1/getpage/?publickey=h6wlwdtglx70dzkz1fnn&secretkey=cz7a318b3jpkqm6nzz4l&pageid=' + item.id,
 						'https://tilda.carrotquest.io/page_' + item.id + '.json'
 					)
-					console.log(item.id)
-					if ( item.alias ) {
-						createPage({
-							path: `/${item.alias}`,
-							component: './src/templates/Tilda.vue',
-							context: {
-								id: item.id,
-								title: item.title,
-								description: item.descr,
-								cover: item.img,
-								slug: item.alias,
-								html: tp.execute(data.result.html),
-							}
-						})
-					} else {
-						createPage({
-							path: `/${item.filename}`,
-							component: './src/templates/Tilda.vue',
-							context: {
-								id: item.id,
-								title: item.title,
-								description: item.descr,
-								cover: item.img,
-								slug: item.filename,
-								html: tp.execute(data.result.html)
-							}
-						})
+					try {
+						if ( item.alias ) {
+							createPage({
+								path: `/${item.alias}`,
+								component: './src/templates/Tilda.vue',
+								context: {
+									id: item.id,
+									title: item.title,
+									description: item.descr,
+									cover: item.img,
+									slug: item.alias,
+									html: tp.execute(data.result.html),
+								}
+							})
+						} else {
+							createPage({
+								path: `/${item.filename}`,
+								component: './src/templates/Tilda.vue',
+								context: {
+									id: item.id,
+									title: item.title,
+									description: item.descr,
+									cover: item.img,
+									slug: item.filename,
+									html: tp.execute(data.result.html)
+								}
+							})
+						}
+					} catch {
+						console.log('Ошибка в тильде: ' + item.id)
 					}
 				}
 				// console.log('Tilda - ' + item.title + ' - готова!')
