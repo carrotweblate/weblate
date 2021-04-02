@@ -53,6 +53,7 @@ module.exports = function (api) {
 						// 'https://api.tildacdn.info/v1/getpage/?publickey=h6wlwdtglx70dzkz1fnn&secretkey=cz7a318b3jpkqm6nzz4l&pageid=' + item.id,
 						'https://tilda.carrotquest.io/page_' + item.id + '.json'
 					)
+					console.log(item.id)
 					if ( item.alias ) {
 						createPage({
 							path: `/${item.alias}`,
