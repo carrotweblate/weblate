@@ -45,7 +45,7 @@ module.exports = function (api) {
 					//Вебинары
 					|| item.id == '17071238' || item.id == '17091896' || item.id == '17931613' || item.id == '18334680'
 					//Лидбот
-					|| item.id == '18405836'
+					|| item.id == '18405836' || item.id == '18459207' || item.id == '18461004' || item.id == '18461139' || item.id == '18493211' || item.id == '18493266' || item.id == '18493284' 
 				) ) {
 				// if ( item.id != '312699' || item.id == '1048214' || item.id == '2883968' || item.id == '11437990' ) {
 				// if ( item.id == '16083784') {
@@ -63,7 +63,7 @@ module.exports = function (api) {
 								description: item.descr,
 								cover: item.img,
 								slug: item.alias,
-								html: data.result.html
+								html: tp.execute(data.result.html),
 							}
 						})
 					} else {
@@ -76,7 +76,7 @@ module.exports = function (api) {
 								description: item.descr,
 								cover: item.img,
 								slug: item.filename,
-								html: data.result.html
+								html: tp.execute(data.result.html)
 							}
 						})
 					}

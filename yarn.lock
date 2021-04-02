@@ -2841,9 +2841,9 @@ class-utils@^0.3.5:
     static-extend "^0.1.1"
 
 classnames@^2.2.5:
-  version "2.2.6"
-  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
-  integrity sha512-JR/iSQOSt+LQIWwrwEzJ9uk0xfN3mTVYMwt1Ir5mUcSN6pU+V4zQFFaJsclJbPuAUQH+yfWef6tm7l1quW3C8Q==
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.3.0.tgz#19524334bad47ccd99793936b67f9be0860fe835"
+  integrity sha512-UUf/S3eeczXBjHPpSnrZ1ZyxH3KmLW8nVYFUWIZA/dixYMIQr7l94yYKxaAkmPk7HO9dlT6gFqAPZC02tTdfQw==
 
 clean-css@4.2.x:
   version "4.2.3"
@@ -4972,9 +4972,9 @@ gridsome-plugin-gtm@^0.1.1:
     vue-gtm "^2.0.0"
 
 gridsome-plugin-image-cdn@^0.1.6:
-  version "0.1.7"
-  resolved "https://registry.yarnpkg.com/gridsome-plugin-image-cdn/-/gridsome-plugin-image-cdn-0.1.7.tgz#2397da05cadada1bb18e8eac9ca8b73184875417"
-  integrity sha512-Vz5yi8ZWWgq7hdQvKNHXOUM5GdsqNHTEHTWcPUCJ0vUkgU4J7i1+FZ48Sfs/UGEJMc2WUUQEngnpmpzrCPEWPw==
+  version "0.1.8"
+  resolved "https://registry.yarnpkg.com/gridsome-plugin-image-cdn/-/gridsome-plugin-image-cdn-0.1.8.tgz#b37b6af7053ddff44a34c0ed15b81ad2adeb4d15"
+  integrity sha512-yiMhk7z+a9pGaykls0NjReXes3OSfmtBbXQku0LqdBansGq9w9uFPEfxrQelIPrFZUMGHSYawvc5ANZ5E/oEtg==
 
 gridsome-plugin-pwa@^0.0.18:
   version "0.0.18"
@@ -5568,9 +5568,9 @@ ini@^1.3.4, ini@~1.3.0:
   integrity sha512-JV/yugV2uzW5iMRSiZAyDtQd+nxtUnjeLt0acNdw98kKLrvuRVyB80tsREOE7yvGVgalhZ6RNXCmEHkUKBKxew==
 
 instantsearch.js@^4.16.1:
-  version "4.18.0"
-  resolved "https://registry.yarnpkg.com/instantsearch.js/-/instantsearch.js-4.18.0.tgz#59825539f7234fdc5f5e804c73b2609276b55c85"
-  integrity sha512-mDvbyEZy13t/KBTYgB2tFjbTuzuxNokWZJiqRg7V0W2bSMlPTdDc96xkFgZI1ImkFHWTsJK7w0y96aA49XFfVQ==
+  version "4.19.0"
+  resolved "https://registry.yarnpkg.com/instantsearch.js/-/instantsearch.js-4.19.0.tgz#d92d57754e2838635d6e7443665d8f4d31be203b"
+  integrity sha512-zPH3ekiG5TGZeZkxLBZuXm7KWayHCLELtxYlg1NUYQKHICg2FL/GZs9uHUCpdzFUwHNF+HWNQzBKcycz4STMRg==
   dependencies:
     "@types/googlemaps" "^3.39.6"
     algoliasearch-helper "^3.4.4"
@@ -10073,9 +10073,9 @@ vue-hot-reload-api@^2.3.0:
   integrity sha512-BXq3jwIagosjgNVae6tkHzzIk6a8MHFtzAdwhnV5VlvPTFxDCvIttgSiHWjdGoTJvXtmRu5HacExfdarRcFhog==
 
 vue-instantsearch@^3.5.0:
-  version "3.5.0"
-  resolved "https://registry.yarnpkg.com/vue-instantsearch/-/vue-instantsearch-3.5.0.tgz#f7b16f0ec39035944212731424c004fc6cd211c5"
-  integrity sha512-L9fBCyUD1SM6z9ZD1JiM1yRyTqBtIzKRgxO/oRDPmFfccuh6BGwKAFBmDfbH0aZFPPI1C6i81xDSVGuwheJUnA==
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/vue-instantsearch/-/vue-instantsearch-3.6.0.tgz#420efb56ed56a748acbddd620d9bd218c617d3ad"
+  integrity sha512-j+jyKlwo448NbxmmLpAR2IG9QU7SlaV8E2S3JNWyHbpPDmRPWM7wpJUpvBqTS4ZUXwpbL4MIerPLcpGjU6Y7TA==
   dependencies:
     algoliasearch-helper "^3.1.0"
     instantsearch.js "^4.16.1"

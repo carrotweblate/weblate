@@ -192,11 +192,11 @@
 						},
 						{
 							title: 'Кейсы',
-							to: '/cases/'
+							to: 'https://www.carrotquest.io/cases/'
 						},
 						{
 							title: 'Вебинары',
-							to: '/blog/webinars/'
+							to: 'https://www.carrotquest.io/blog/webinars/'
 						},
 						{
 							title: 'База знаний Carrot quest',
@@ -229,15 +229,15 @@
 					subLinks: [
 						{
 							title: 'Клиенты и отзывы',
-							to: '/cases/'
+							to: 'https://www.carrotquest.io/cases/'
 						},
 						{
 							title: 'Вакансии',
-							to: '/vacancy/'
+							to: 'https://www.carrotquest.io/vacancy/'
 						},
 						{
 							title: 'Оферта и политика',
-							to: '/terms-and-policies/'
+							to: 'https://www.carrotquest.io/terms-and-policies/'
 						},
 						{
 							title: 'Партнерам',

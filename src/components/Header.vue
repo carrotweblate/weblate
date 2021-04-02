@@ -114,14 +114,14 @@
 											</p>
 											<ul>
 												<li v-for="{ node } in $static.recent.edges" :key="node.id"  class="mb-4">
-													<a :href="'https://www.carrotquest.io/blog/' + node.slug + '/'" class="megamenu__post">
+													<a :href="'/blog/' + node.slug + '/'" class="megamenu__post">
 														<span :style="'background-image: url(' + node.featured_media + ')'" class="megamenu__post__pic d-block mr-3" />
 														<span v-html="node.title" class="megamenu__post__title" />
 													</a>
 												</li>
 											</ul>
 											<p>
-												<a href="https://www.carrotquest.io/blog/">
+												<a href="/blog/">
 													Все статьи
 												</a>
 											</p>
@@ -425,7 +425,7 @@
 							content: [
 								{
 									title: 'Блог',
-									href: 'https://www.carrotquest.io/blog/',
+									href: '/blog/',
 									job: 'О&nbsp;том, как разработчику интегрировать Carrot quest на&nbsp;сайт'
 								},
 								{
@@ -445,7 +445,7 @@
 								},
 								{
 									title: 'Вебинары и подкасты',
-									href: '/blog/webinars/',
+									href: 'https://www.carrotquest.io/blog/webinars/',
 									job: 'Более 30&nbsp;вебинаров и&nbsp;подкастов на&nbsp;темы про создание продуктов, маркетинг и&nbsp;growth hacking'
 								}
 							]
@@ -473,7 +473,7 @@
 							},
 							{
 								title: 'Кейсы',
-								href: '/cases/'
+								href: 'https://www.carrotquest.io/cases/'
 							},
 							{
 								title: 'Библиотека',
@@ -485,14 +485,14 @@
 							},
 							{
 								title: 'Вебинары и подкасты',
-								href: '/blog/webinars/'
+								href: 'https://www.carrotquest.io/blog/webinars/'
 							}		
 						],
 						jobs: true
 					},
 					{
 						title: 'Блог',
-						href: 'https://www.carrotquest.io/blog/'
+						href: '/blog/'
 					},
 					{
 						title: 'Партнерам',
