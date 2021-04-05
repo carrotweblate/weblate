@@ -118,13 +118,11 @@
 				line-height: 1.5rem;
 				color: #333333;
 				font-style: italic;
+				text-align: center;
 			}
 			&.aligncenter {
 				img {
 					margin: 0 auto;
-				}
-				figcaption {
-					text-align: center;
 				}
 			}
 		}

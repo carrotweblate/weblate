@@ -126,7 +126,6 @@ Disallow: /?amp*
 Disallow: /blog/ispeakers/
 Disallow: /blog/ispeakers/*
 Disallow: /blog/*/feed/
-Disallow: /blog/jtbd-on-practice/
 Clean-param: utm_source *
 Clean-param: utm_medium *
 Clean-param: utm_campaign *
@@ -289,7 +288,6 @@ Disallow: /price-2/
 Disallow: /price-3/
 Disallow: /price-4/
 Disallow: /partner/
-Disallow: /blog/jtbd-on-practice/
 
 User-agent: * 
 Allow: */blog/wp-content/cache*.js
@@ -447,7 +445,6 @@ Disallow: /price-2/
 Disallow: /price-3/
 Disallow: /price-4/
 Disallow: /partner/
-Disallow: /blog/jtbd-on-practice/
 
 User-agent: Googlebot-Image
 Allow: /blog/wp-content/uploads/
