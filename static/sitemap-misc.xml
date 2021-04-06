@@ -1,62 +1,62 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="http://www.carrotquest.io/blog/wp-content/plugins/google-sitemap-generator/sitemap.xsl"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" 
-sitemap-generator-version="4.0.7.1" --> <!-- generated-on="04.12.2015 06:45" --> <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 
-http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="https://www.carrotquest.io/blog/wp-content/plugins/google-sitemap-generator/sitemap.xsl"?><!-- sitemap-generator-url="https://www.arnebrachhold.de" 
+sitemap-generator-version="4.0.7.1" --> <!-- generated-on="04.12.2015 06:45" --> <urlset xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.sitemaps.org/schemas/sitemap/0.9 
+https://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>http://www.carrotquest.io/</loc>
-		<lastmod>2016-11-29T13:39:15+00:00</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1.0</priority>
-	</url>
-	<url>
-		<loc>http://www.carrotquest.io/lead-manager</loc>
-		<lastmod>2016-11-29T13:39:15+00:00</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1.0</priority>
-	</url>
-     <url>
-		<loc>http://www.carrotquest.io/email-marketing</loc>
-		<lastmod>2016-11-29T13:39:15+00:00</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1.0</priority>
-	</url>
-     <url>
-		<loc>http://www.carrotquest.io/online-consultant</loc>
-		<lastmod>2016-11-29T13:39:15+00:00</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1.0</priority>
-	</url>
-     <url>
-		<loc>http://www.carrotquest.io/pop-up</loc>
-		<lastmod>2016-11-29T13:39:15+00:00</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1.0</priority>
-	</url>
-     <url>
-		<loc>http://www.carrotquest.io/automation-marketing</loc>
-		<lastmod>2016-11-29T13:39:15+00:00</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1.0</priority>
-	</url>
-     <url>
-		<loc>http://www.carrotquest.io/introduction-carrotquest</loc>
-		<lastmod>2016-11-29T13:39:15+00:00</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1.0</priority>
-	</url>
-     <url>
-		<loc>http://www.carrotquest.io/partner</loc>
-		<lastmod>2016-11-29T13:39:15+00:00</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1.0</priority>
-	</url>
-     <url>
-		<loc>http://www.carrotquest.io/price</loc>
+		<loc>https://www.carrotquest.io/</loc>
 		<lastmod>2016-11-29T13:39:15+00:00</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
 	</url>
 	<url>
-		<loc>http://www.carrotquest.io/blog/</loc>
+		<loc>https://www.carrotquest.io/lead-manager</loc>
+		<lastmod>2016-11-29T13:39:15+00:00</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+     <url>
+		<loc>https://www.carrotquest.io/email-marketing</loc>
+		<lastmod>2016-11-29T13:39:15+00:00</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+     <url>
+		<loc>https://www.carrotquest.io/online-consultant</loc>
+		<lastmod>2016-11-29T13:39:15+00:00</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+     <url>
+		<loc>https://www.carrotquest.io/pop-up</loc>
+		<lastmod>2016-11-29T13:39:15+00:00</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+     <url>
+		<loc>https://www.carrotquest.io/automation-marketing</loc>
+		<lastmod>2016-11-29T13:39:15+00:00</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+     <url>
+		<loc>https://www.carrotquest.io/introduction-carrotquest</loc>
+		<lastmod>2016-11-29T13:39:15+00:00</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+     <url>
+		<loc>https://www.carrotquest.io/partner/</loc>
+		<lastmod>2016-11-29T13:39:15+00:00</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+     <url>
+		<loc>https://www.carrotquest.io/price/</loc>
+		<lastmod>2016-11-29T13:39:15+00:00</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://www.carrotquest.io/blog/</loc>
 		<lastmod>2016-11-29T13:39:15+00:00</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>

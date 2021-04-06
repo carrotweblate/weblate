@@ -113,10 +113,10 @@
 												Последние статьи из блога
 											</p>
 											<ul>
-												<li v-for="{ node } in $static.recent.edges" :key="node.id"  class="mb-4">
+												<li v-for="{ node } in $static.recent.edges" :key="node.id"  class="mb-3">
 													<a :href="'/blog/' + node.slug + '/'" class="megamenu__post">
 														<span :style="'background-image: url(' + node.featured_media + ')'" class="megamenu__post__pic d-block mr-3" />
-														<span v-html="node.title" class="megamenu__post__title" />
+														<span v-html="node.title" class="megamenu__post__title font14px" />
 													</a>
 												</li>
 											</ul>
@@ -130,10 +130,10 @@
 												Книги и материалы
 											</p>
 											<ul>
-												<li class="mb-4">
+												<li class="mb-3">
 													<a href="/product-research-book/" class="megamenu__post">
 														<g-image src="~/assets/images/library/small_book_product-researc.png" width="160" height="160" class="megamenu__post__pic d-block mr-3" />
-														<span class="megamenu__post__title">
+														<span class="megamenu__post__title font14px">
 															Как проводить исследования, результаты которых пойдут в бэклог, а не в стол
 														</span>
 													</a>
@@ -167,7 +167,7 @@
 			<b-collapse v-else is-nav id="nav_collapse" class="pt-3 pt-lg-0">
 				<b-navbar-nav class="ml-auto mt-3 mt-lg-0">
 					<!-- Поиск по блогу -->
-					<b-nav-form v-if="!isSearchBlog" class="mr-1 nav_search d-none d-lg-flex">
+					<b-nav-form v-if="!isSearchBlog" class="mr-3 nav_search d-none d-lg-flex">
 						<b-form v-on:submit.prevent="search">
 							<label for="searchFormInput">
 								<svg v-on:click="showSearchForm" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search mr-2" :class="{canclick: !showSearch}" viewBox="0 0 16 16">
@@ -206,11 +206,10 @@
 					Подключить Carrot quest
 				</b-button>
 			</b-collapse>
-
-			<!-- Подложка -->
-			<div class="blur"></div>
-
 		</b-navbar>
+
+		<!-- Подложка -->
+		<div class="blur" :class="{'pt-2 pb-2': scrolled, 'pt-2 pb-2 pt-md-4 pb-md-4': !scrolled, 'hideHeader': hideHeader, '': !hideHeader}" v-scroll="handleScroll"><div></div></div>
 
 		<ClientOnly>
 			<!-- Прогрес бар чтения -->

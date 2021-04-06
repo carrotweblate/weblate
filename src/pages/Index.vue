@@ -354,7 +354,7 @@
 	import Study 				from '~/components/Study.vue'
 	import { BEmbed } 			from 'bootstrap-vue'
 
-	export default {
+	export default { 
 		components: {
 			Ready,
 			Logos,
@@ -385,6 +385,11 @@
 		methods: {
 			formatToPrice(value) {
 				return `${value.toLocaleString('ru', {maximumFractionDigits: 0})}`;
+			},
+			callback(visible) {
+				if (visible) {
+					this.visible = true
+				}
 			}
 		}
 	}	
