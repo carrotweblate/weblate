@@ -44,9 +44,10 @@
 			</b-row>
 			
 			<!-- Изображение записи -->
-			<b-row v-if="$context.featured_media != 'false'">
+			<b-row v-if="$context.featured_media != '0'">
 				<b-col col cols="12" class="post__image mt-4 mb-5">
-					<img :src="$context.featured_media" />
+					<img v-if="$context.featured_media[2] != 274 " :src="$context.featured_media[0].split('https://www.carrotquest.io/').join('https://cdn-www.carrotquest.io/')" :width="$context.featured_media[1]" :height="$context.featured_media[2]" />
+					<img v-else :src="$context.featured_media[0].split('https://www.carrotquest.io/').join('https://cdn-www.carrotquest.io/')" :width="($context.featured_media[1] * 1.71875)" :height="( $context.featured_media[2] * 1.71875)" />
 				</b-col>
 			</b-row>
 
@@ -61,7 +62,7 @@
 					<!-- Автор -->
 					<template v-for="{ node } in $page.allAuthors.edges">
 						<div v-if="$context.author == node.id" class="post__authors" :key="node.id">
-							<img :src="node.avatar._96" alt="">
+							<img :src="node.avatar._96" width="80" height="80" :alt="node.name">
 							<p>
 								<b v-text="node.name" />
 								<br>

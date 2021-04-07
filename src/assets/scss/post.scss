@@ -104,6 +104,7 @@
 			padding-left: 2rem;
 		}
 		figure {
+			display: inline-block;
 			margin-bottom: 3.5rem;
 			img , video {
 				margin: 0;
@@ -113,14 +114,14 @@
 			}
 			figcaption {
 				margin-top: 1.5rem;
-				text-align: left;
+				text-align: center;
 				font-size: 1rem;
 				line-height: 1.5rem;
 				color: #333333;
 				font-style: italic;
-				text-align: center;
 			}
 			&.aligncenter {
+				display: block;
 				img {
 					margin: 0 auto;
 				}

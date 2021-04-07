@@ -18,6 +18,8 @@
 								<Case 
 									number="200-250" 
 									logo='modulbank.svg'
+									width='185'
+									height='49'
 									title="обращений в чат обрабатывают ежедневно"
 									text="
 										<p>
@@ -31,6 +33,8 @@
 								<Case 
 									number="На 30%" 
 									logo="domru.svg"
+									width='50'
+									height='50'
 									title="увеличилась конверсия сайта"
 									text='
 										<p>
@@ -48,6 +52,8 @@
 								<Case 
 									number="31,3%" 
 									logo='skyshop.svg'
+									width='130'
+									height='50'
 									title="сделали заказ из рассылки с акциями SkyShop"
 									text="
 										<p>
@@ -60,6 +66,8 @@
 								<Case 
 									number="На 28%" 
 									logo="vlastah.png"
+									width='170'
+									height='50'
 									title="выросли продажи"
 									text='
 										<p>
@@ -75,6 +83,8 @@
 								<Case 
 									number="На 40%" 
 									logo='nagorniy.svg'
+									width='179'
+									height='40'
 									title="выросла конверсия сайта"
 									text="
 										<p>
@@ -86,6 +96,8 @@
 								<Case 
 									number="78%" 
 									logo='SPK.png'
+									width='57'
+									height='40'
 									title="конверсия в лида"
 									text="
 										<p>
@@ -104,6 +116,8 @@
 								<Case 
 									number="на 25%" 
 									logo='teatr-teatr.svg'
+									width='160'
+									height='50'
 									title="увеличили конверсию в покупку"
 									text="
 										<p>
@@ -115,6 +129,8 @@
 								<Case 
 									number="78%" 
 									logo='introvert.png'
+									width='165'
+									height='26'
 									title="конверсия в лида"
 									text="
 										<p>

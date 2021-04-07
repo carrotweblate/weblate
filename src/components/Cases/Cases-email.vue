@@ -18,6 +18,8 @@
 								<Case 
 									number="29,45%" 
 									logo='instaplus.svg'
+									width='135'
+									height='50'
 									title="зарегистрировались из приветственного письма"
 									text="
 										<p>
@@ -29,6 +31,8 @@
 								<Case 
 									number="19,3%" 
 									logo="mofy.svg"
+									width='135'
+									height='50'
 									title="всех заказов принес Carrot quest"
 									text='
 										<p>
@@ -44,6 +48,8 @@
 								<Case 
 									number="31,3%" 
 									logo='skyshop.svg'
+									width='130'
+									height='50'
 									title="сделали заказ из рассылки с акциями SkyShop"
 									text="
 										<p>
@@ -56,6 +62,8 @@
 								<Case 
 									number="40%" 
 									logo="Boxmarket.jpg"
+									width='96'
+									height='50'
 									title="всех заказов получают благодаря сценариям Carrot quest"
 									text='
 										<p>
@@ -71,6 +79,8 @@
 								<Case 
 									number="4%" 
 									logo='pzsp.png'
+									width='47'
+									height='50'
 									title="конверсия в заявку из ручной рассылки"
 									text="
 										<p>
@@ -82,6 +92,8 @@
 								<Case 
 									number="78%" 
 									logo='SPK.png'
+									width='57'
+									height='40'
 									title="конверсия в лида"
 									text="
 										<p>
@@ -100,6 +112,8 @@
 								<Case 
 									number="на 25%" 
 									logo='teatr-teatr.svg'
+									width='160'
+									height='50'
 									title="увеличили конверсию в покупку"
 									text="
 										<p>
@@ -111,6 +125,8 @@
 								<Case 
 									number="7,3%" 
 									logo='astykzhan.png'
+									width='170'
+									height='23'
 									title="сделали заказ из приветственного письма"
 									text="
 										<p>

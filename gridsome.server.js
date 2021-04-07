@@ -109,7 +109,7 @@ module.exports = function (api) {
 				authors: item.acf.post__authors,
 				author: item.author,
 				featured_media: item.featured_media_medium,
-				featured_media_large: item.featured_media_large,
+				featured_media_large: item.featured_media_large[0],
 				content: tp.execute(item.content.rendered),
 				sticky: item.sticky,
 				page_views: item.meta.wpb_post_views_count,
@@ -120,12 +120,10 @@ module.exports = function (api) {
 		api.createManagedPages(async ({ createPage }) => {
 			for (const item of data) {
 				let pageHTML = item.content.rendered
-				let featured_media_large = '' + item.featured_media_large
 				//CDN для ресурсов
 				pageHTML = pageHTML.split('http://www.carrotquest.io/').join('https://www.carrotquest.io/')
 				pageHTML = pageHTML.split('http://carrotquest.io/').join('https://www.carrotquest.io/')
 				pageHTML = pageHTML.split('https://www.carrotquest.io/blog/wp-content/uploads/').join('https://cdn-www.carrotquest.io/blog/wp-content/uploads/')
-				featured_media_large = featured_media_large.split('https://www.carrotquest.io/').join('https://cdn-www.carrotquest.io/')
 				//Lazyload
 				pageHTML = pageHTML.split('<img src').join('<img loading="lazy" src')
 				//Видео
@@ -153,7 +151,7 @@ module.exports = function (api) {
 						modified: item.modified,
 						
 						//Тело статьи
-						featured_media: featured_media_large,
+						featured_media: item.featured_media_large,
 						title: tp.execute(item.title.rendered),
 						description: tp.execute(item.excerpt.rendered),
 						content: tp.execute(pageHTML)
@@ -248,10 +246,8 @@ module.exports = function (api) {
 			)
 			for (const item of data) {
 				let pageHTML = item.content.rendered
-				let featured_media_large = '' + item.featured_media_large
 				//CDN для ресурсов
 				pageHTML = pageHTML.split('https://www.carrotquest.io/blog/wp-content/uploads/').join('https://cdn-www.carrotquest.io/blog/wp-content/uploads/')
-				featured_media_large = featured_media_large.split('https://www.carrotquest.io/').join('https://cdn-www.carrotquest.io/')
 
 				if (item.parent == 28678) {
 					createPage({
@@ -261,7 +257,7 @@ module.exports = function (api) {
 							id: item.acf.user.ID,
 							title: tp.execute(item.title.rendered),
 							modified: item.modified,
-							featured_media: featured_media_large,
+							featured_media: item.featured_media_large,
 							content: tp.execute(pageHTML),
 							another_publications: item.acf.another_publications,
 	

@@ -12,6 +12,8 @@
 					<img
 						:src="'/assets/images/logos/' + logo"
 						:alt="title"
+						:width="width"
+						:height="height"
 					/>
 				</div>
 			</b-row>
@@ -26,6 +28,6 @@
 
 <script>
 	export default {
-		props: [ 'number' , 'logo' , 'title' , 'text' , 'href' ]
+		props: [ 'number' , 'logo' , 'width' , 'height' , 'title' , 'text' , 'href' ]
 	}
 </script>
