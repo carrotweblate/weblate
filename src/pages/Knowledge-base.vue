@@ -169,8 +169,8 @@
 					</b-col>
 					<b-col lg="8">
 						<video autoplay loop muted playsinline class="embed-responsive-item mw-100">
-							<source src="/assets/video/components/9.webm" type="video/webm">
-							<source src="/assets/video/components/9.mp4" type="video/mp4">
+							<source src="https://cdn-www.carrotquest.io/assets/video/components/9.webm" type="video/webm">
+							<source src="https://cdn-www.carrotquest.io/assets/video/components/9.mp4" type="video/mp4">
 						</video>
 					</b-col>
 				</b-row>
@@ -236,8 +236,8 @@
 					</b-col>
 					<b-col lg="7">
 						<video autoplay loop muted playsinline class="embed-responsive-item mw-100">
-							<source src="/assets/video/components/12.webm" type="video/webm">
-							<source src="/assets/video/components/12.mp4" type="video/mp4">
+							<source src="https://cdn-www.carrotquest.io/assets/video/components/12.webm" type="video/webm">
+							<source src="https://cdn-www.carrotquest.io/assets/video/components/12.mp4" type="video/mp4">
 						</video>
 					</b-col>
 				</b-row>

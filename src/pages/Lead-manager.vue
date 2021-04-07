@@ -55,8 +55,8 @@
 				</b-col>
 				<b-col lg="8">
 					<video type="video" autoplay loop muted playsinline>
-						<source src="/assets/video/components/2.webm" type="video/webm">
-						<source src="/assets/video/components/2.mp4" type="video/mp4">
+						<source src="https://cdn-www.carrotquest.io/assets/video/components/2.webm" type="video/webm">
+						<source src="https://cdn-www.carrotquest.io/assets/video/components/2.mp4" type="video/mp4">
 					</video>
 				</b-col>
 			</b-row>

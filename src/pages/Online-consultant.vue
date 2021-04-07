@@ -200,12 +200,12 @@
 					</div>
 					<div class="col-12">
 						<video muted autoplay loop playsinline class="design__team__pic" :class="{ 'd-none':designChatDark }">
-							<source src="/assets/video/online-consultant/design_light_team_vid.webm" type="video/webm">
-							<source src="/assets/video/online-consultant/design_light_team_vid.mp4" type="video/mp4">
+							<source src="https://cdn-www.carrotquest.io/assets/video/online-consultant/design_light_team_vid.webm" type="video/webm">
+							<source src="https://cdn-www.carrotquest.io/assets/video/online-consultant/design_light_team_vid.mp4" type="video/mp4">
 						</video>
 						<video muted autoplay loop playsinline class="design__team__pic" :class="{ 'd-none':!designChatDark }">
-							<source src="/assets/video/online-consultant/design_dark_team_vid.webm" type="video/webm">
-							<source src="/assets/video/online-consultant/design_dark_team_vid.mp4" type="video/mp4">
+							<source src="https://cdn-www.carrotquest.io/assets/video/online-consultant/design_dark_team_vid.webm" type="video/webm">
+							<source src="https://cdn-www.carrotquest.io/assets/video/online-consultant/design_dark_team_vid.mp4" type="video/mp4">
 						</video>
 					</div>
 				</div>
