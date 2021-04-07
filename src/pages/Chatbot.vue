@@ -4,20 +4,20 @@
 		<div class="hero blue">
 			<b-container>
 				<b-row class="align-items-center">
-					<b-col lg="6" class="order-2 order-lg-1 d-none d-lg-block">
+					<b-col lg="6">
+						<h1>
+							Лид-бот — это новый способ передавать в продажи только квалифицированных лидов
+						</h1>
+						<p>
+							Масштабируйте работу команду продаж и поддержки за счет автоматизации, а не найма новых людей. Лид-бот поможет разгрузить вашу команду и оказать персональный подход к каждому клиенту
+						</p>
+						<b-button href="/panel/toapp/messages/chat-bot/" variant="primary" class="my-3">Подключить к своему сайту</b-button>
+					</b-col>
+					<b-col lg="6" class="d-none d-lg-block">
 						<video autoplay="autoplay" loop="loop" muted="muted" playsinline="" class="embed-responsive-item">
 							<source src="https://cdn-www.carrotquest.io/assets/video/components/8.webm" type="video/webm">
 							<source src="https://cdn-www.carrotquest.io/assets/video/components/8.mp4" type="video/mp4">
 						</video>
-					</b-col>
-					<b-col lg="6" class="order-1 order-lg-2">
-						<h1>
-							Лид-бот от&nbsp;Carrot quest поможет собирать больше квалифицированных лидов с&nbsp;сайта без дополнительной нагрузки на&nbsp;ваших сотрудников
-						</h1>
-						<b-button href="/panel/toapp/messages/chat-bot/" variant="primary" class="my-3">Подключить к&nbsp;своему сайту</b-button>
-						<p>
-							14&nbsp;дней бесплатно
-						</p>
 					</b-col>
 				</b-row>
 			</b-container>
@@ -417,20 +417,20 @@
 			</b-row>
 		</b-container>
 
-		<Cases />
-
-		<Logos />
-
-		<!-- Регистрация в сервисе -->
+		<!-- Стоимость лид-бота на вашем сайте -->
 		<b-container>
 			<b-col class="p-4" style="background-color: #fff3e6; border-radius: 5px;">
 				<b-row class="align-items-center justify-content-center">
 					<b-col lg="6">
-						<g-image src="@/assets/images/components/10.png" width="494" alt="Регистрация в сервисе" title="Поехали!" class="mw-100" />
+						<p class="font24px">
+							Стоимость лид-бота на вашем сайте
+						</p>
+						<p class="h1">
+							2 000 ₽ в месяц
+						</p>
 					</b-col>
 					<b-col lg="6">
-						<div class="h1 mb-4">Регистрация в&nbsp;сервисе</div>
-						<RegistrationForm text="14 дней бесплатно" />
+						<b-button href="/panel/toapp/messages/chat-bot/" variant="primary" class="my-3">Подключить к своему сайту</b-button>
 					</b-col>
 				</b-row>
 			</b-col>
