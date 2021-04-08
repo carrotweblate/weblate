@@ -93,7 +93,7 @@ module.exports = function (api) {
 	// API Wordpress - создаём Посты
 	api.loadSource(async actions => {
 		const { data } = await axios.get(
-			'https://www.carrotquest.io/blog/wp-json/wp/v2/posts?&per_page=999'
+			'https://www.carrotquest.io/blog/wp-json/wp/v2/posts?&per_page=99'
 		)
 		// Данные для вывода статей
 		const collection = actions.addCollection('post')

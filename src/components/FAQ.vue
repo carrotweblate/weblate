@@ -13,17 +13,19 @@
 			<b-col cols="12" v-for="(item , index ) in items" :key="index">
 				<div class="FAQ__box mt-2">
 					<b-button v-b-toggle="'answer-' + index" variant="link">
-						<span v-html="item.question" />
+						<span v-html="item.name" />
 					</b-button>
 					<b-collapse :id="'answer-' + index" :visible="index==0" class="pb-3">
-						<div class="FAQ__box__answer text" v-html="item.answer" />
+						<div class="FAQ__box__answer text" v-html="item.acceptedAnswer.text" />
 					</b-collapse>
 				</div>
 			</b-col>
 		</b-row>
 
-		<b-row v-if="button" class="justify-content-center">
-			<b-button :href="button.href" variant="primary" class="mt-5" v-html="button.text" />
+		<b-row v-if="button">
+			<b-col>
+				<b-button :href="button.href" variant="primary" class="mt-5" v-html="button.text" />
+			</b-col>
 		</b-row>
 		
 	</b-container>
@@ -38,41 +40,6 @@
 			items: Array,
 			button: Object
 		},
-
-		data() {
-			return {
-				shema: {
-					"@context": "https://schema.org",
-					"@type": "FAQPage",
-					"mainEntity": []
-				}
-			}
-		},
-
-		metaInfo() {
-			return {
-				script: [
-					{ 
-						type: 'application/ld+json', 
-						json: this.shema
-					}
-				]
-			}
-		},
-
-		mounted () {
-			for (let item of this.items) {
-				this.mainEntity = {
-					'@type': "Question",
-					name: item.question,
-					acceptedAnswer: {
-						'@type': "Answer",
-						text: item.answer
-					}
-				}
-				this.shema.mainEntity.push(this.mainEntity)
-			}
-		}
 	}
 </script>
 
