@@ -24,6 +24,49 @@
 		</div>
 
 		<!-- Масштабируйте персональные продажи и поддержку без найма новых сотрудников -->
+		<section class="night">
+			<!-- Лид-бот соберёт лидов за вас ночью и в нерабочее время -->
+			<b-container>
+				<b-row class="align-items-center">
+					<b-col lg="6" class="d-none d-lg-block">
+						<g-image class="w-100" src="@/assets/images/chatbot/night-1.png" width="1010" quality="100" alt="Ночной бот" />
+					</b-col>
+					<b-col lg="6" class="mb-3">
+						<h2>Лид-бот соберёт лидов за вас ночью и в нерабочее время</h2>
+						<p>
+							Лид-бот работает круглосуточно без выходных. Он соберет за вас лиды и передаст в команду продаж или поддержки. Потенциальная заявка не потеряется ночью
+						</p>
+						<b-button href="/panel/toapp/messages/chat-bot/" variant="primary" class="my-3">Подключить лид-бот к себе на сайт</b-button>
+					</b-col>
+				</b-row>
+			</b-container>
+			<b-container>
+				<b-row>
+					<b-col>
+						<g-image class="w-100" src="@/assets/images/chatbot/night-2.png" width="1739" quality="100" alt="Лид-бот соберёт лидов за вас ночью и в нерабочее время" />
+					</b-col>
+				</b-row>
+			</b-container>
+			<!-- Лид-бот обогатит информацию о лиде без участия менеджера -->
+			<b-container>
+				<b-row>
+					<b-col lg="4" class="order-lg-1 mb-3">
+						<h2 class="mb-3">
+							Лид-бот обогатит информацию о лиде без участия менеджера
+						</h2>
+						<p>
+							Лид-бот наполнит карточку лида подробной информацией на основе ответов на вопросы. Она полезна менеджерам продаж и поддержки, чтобы работать с каждым клиентом персонально в маштабе.
+						</p>
+						<b-button href="/panel/toapp/messages/chat-bot/" variant="primary" class="my-3">Подключить лид-бот к себе на сайт</b-button>
+					</b-col>
+					<b-col lg="8" class="order-lg-2">
+						<g-image class="w-100" src="@/assets/images/chatbot/night-3.png" width="1142" quality="100" alt="Лид-бот обогатит информацию о лиде без участия менеджера" />
+					</b-col>
+				</b-row>
+			</b-container>
+		</section>
+
+		<!-- Масштабируйте персональные продажи и поддержку без найма новых сотрудников -->
 		<section class="blue">
 			<b-container>
 				<b-row class="features">
@@ -33,11 +76,11 @@
 						:tabs="[
 							{
 								title: 'Вовлекает в диалог только нужный сегмент клиентов',
-								pic: '24.png'
+								pic: '/assets/video/components/8.mp4'
 							},
 							{
 								title: 'Задаёт вопросы с вариантами ответа для квалификации',
-								pic: '25.png'
+								pic: '24.png'
 							},
 							{
 								title: 'В зависимости от ответов соберет контакты и передаст менеджеру продаж',
@@ -45,7 +88,7 @@
 							},
 							{
 								title: 'Передаст потенциального клиента в вашу CRM',
-								pic: '/assets/video/components/11.mp4'
+								pic: '6.png'
 							}
 						]"
 						:more="{
@@ -60,7 +103,7 @@
 		<!-- Настройте и запустите чат-бота за 5 минут в визуальном конструкторе -->
 		<section class="settings">
 			<b-container>
-				<b-row class="row">
+				<b-row>
 					<b-col lg="10" xl="8">
 						<h2>Настройте и запустите за 5 минут в визуальном конструкторе. Программист не понадобится</h2>
 					</b-col>
@@ -150,21 +193,22 @@
 			</b-container>
 		</section>
 
-		<!-- Стоимость лид-бота на вашем сайте -->
+		<!-- Карта автоматизации в SaaS и eCom с использованием чат-бота на сайте -->
 		<b-container class="maps">
-			<b-col class="px-4 py-5" style="background-color: #fff3e6; border-radius: 5px;">
+			<b-col class="p-5" style="background-color: #fff3e6; border-radius: 5px;">
 				<b-row class="align-items-center justify-content-center">
-					<b-col lg="5" class="text-lg-center">
-						
+					<b-col lg="4" class="d-none d-lg-block maps__pics">
+						<g-image class="maps__pic maps__pic-1" src="@/assets/images/components/map-saas.png" width="400" alt="Для онлайн-сервисов" />
+						<g-image class="maps__pic maps__pic-2" src="@/assets/images/components/map-ecom-bot.png" width="400" alt="Для интернет-магазинов с использованием чат-бота на сайте" />
 					</b-col>
-					<b-col lg="6">
-						<div class="h1">
-							Карта автоматизации в SaaS и eCom с использованием чат-бота на сайте
+					<b-col lg="8">
+						<div class="h2">
+							Карта автоматизации в SaaS и eCom с использованием чат-бота на сайте
 						</div>
 						<p>
 							Оставьте email, чтобы получить карту
 						</p>
-						<SubscribeForm />
+						<SubscribeForm title="Карты отправлены" event="Скачал карты SaaS и ecom для лид-бота" button="Скачать" />
 					</b-col>
 				</b-row>
 			</b-col>
@@ -362,6 +406,24 @@
 			video {
 				max-width: 100%;
 			}
+			& , .container {
+				margin-bottom: 0;
+			}
+		}
+
+		.night {
+			padding-top: 5rem;
+			padding-bottom: 5rem;
+			background: {
+				color: #181648; 
+				image: url('../assets/images/chatbot/night-bg-stars.png') , url('../assets/images/chatbot/night-bg-flame.png');
+				position: center;
+				repeat: repeat , repeat-y;
+			}
+			color: #fff;
+			img {
+				border-radius: 5px;
+			}
 		}
 
 		.settings {
@@ -414,6 +476,36 @@
 				.col-md-6:last-child .scripts__box { 
 					min-height: 150px;
 					padding-bottom: 0rem;
+				}
+			}
+		}
+
+		.maps {
+			&__pics {
+				position: relative;
+				height: 220px;
+			}
+			&__pic {
+				position: absolute;
+				top: 0;
+				z-index: 1;
+				width: 75%;
+				box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+				&-2 {
+					z-index: 2;
+					top: 40px;
+					left: 60px;
+				}
+			}
+			@media (max-width: 1199.98px) {
+				&__pics {
+					height: 200px;
+				}
+				&__pic {
+					left: 0;
+					&-2 {
+						left: 40px;
+					}
 				}
 			}
 		}

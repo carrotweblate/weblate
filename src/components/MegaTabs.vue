@@ -29,10 +29,14 @@
 							<source v-if="visible" :src="'https://cdn-www.carrotquest.io' + item.pic" type="video/mp4">
 						</b-embed>
 						<!-- Изображение -->
-						<img v-else
-							:src="'https://res.cloudinary.com/carrotquest/image/upload/v1613043845/components/' + item.pic"
-							:alt="item.title"
+						<ik-image v-else
+							:path="'/components/' + item.pic"
+							:transformation="[{width:720,height:600,crop:'at_max'}]"
+							width="720"
+							height="600"
 							loading="lazy"
+							class="mw-100"
+							:alt="item.title"
 						/>
 					</b-tab>
 					<template #tabs-end>
@@ -61,15 +65,14 @@
 							<source v-if="visible" :src="'https://cdn-www.carrotquest.io' + item.pic.replace('mp4','webm')" type="video/webm">
 							<source v-if="visible" :src="'https://cdn-www.carrotquest.io' + item.pic" type="video/mp4">
 						</b-embed>
-						<!-- Изображение -->
-						<!-- <g-image v-else
-							:src="require(`!!assets-loader?width=800&height=700&fit=contain&background=transparent!@/assets/images/components/${item.pic}`)"
-							:alt="item.title"
-						/> -->
-						<img v-else
-							:src="'https://res.cloudinary.com/carrotquest/image/upload/c_fit,h_700,w_800/v1613043845/components/' + item.pic"
-							:alt="item.title"
+						<ik-image v-else
+							:path="'/components/' + item.pic"
+							:transformation="[{width:720,height:600,crop:'at_max'}]"
+							width="720"
+							height="600"
 							loading="lazy"
+							class="mw-100"
+							:alt="item.title"
 						/>
 					</div>
 				</b-card>
@@ -89,14 +92,14 @@
 			</b-col>
 			<b-col lg="3" v-for="item in instruments" :key="item.title" class="mt-4 mt-md-5 mt-lg-4">
 				<a :href="item.href" class="box">
-					<!-- <g-image
-						:src="require(`!!assets-loader?width=160&height=96&fit=contain&background=transparent!@/assets/images/components/${item.pic}`)"
-						:alt="item.title.replace('<i>', '').replace('</i>', '')"
-					/> -->
-					<img
-						:src="'https://res.cloudinary.com/carrotquest/image/upload/c_pad,h_96,w_160/v1613043845/components/' + item.pic"
-						:alt="item.title.replace('<i>', '').replace('</i>', '')"
+					<ik-image
+						:path="'/components/' + item.pic"
+						:transformation="[{width:160,height:96,crop:'at_max'}]"
+						width="160"
+						height="96"
 						loading="lazy"
+						class="mw-100"
+						:alt="item.title.replace('<i>', '').replace('</i>', '')"
 					/>
 					<div class="title" v-html="item.title" />
 				</a>

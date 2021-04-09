@@ -9,6 +9,7 @@
 						<ik-image
 							path="/components/medium-6.png"
 							:transformation="[{width:680,height:578}]"
+							:lqip="{active:true, quality: 40, blur: 10}"
 							width="340"
 							height="289"
 							loading="lazy"
