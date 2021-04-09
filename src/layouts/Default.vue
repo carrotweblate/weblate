@@ -25,6 +25,7 @@
 				<b-form-input 
 					placeholder="Телефон" 
 					type="text" 
+					pattern="^[^A-zА-я]{5,}"
 					required
 					v-model="modalPhone"
 					class="px-3 py-4 mt-3"
@@ -73,6 +74,7 @@
 				<b-form-input 
 					placeholder="Телефон" 
 					type="text" 
+					pattern="^[^A-zА-я]{5,}"
 					required
 					v-model="modalPhone"
 					class="px-3 py-4 mt-3"
@@ -120,6 +122,7 @@
 				<b-form-input 
 					placeholder="Телефон" 
 					type="text" 
+					pattern="^[^A-zА-я]{5,}"
 					required
 					v-model="modalPhone"
 					class="px-3 py-4 mt-3"
@@ -264,18 +267,28 @@
 				carrotquest.identify([
 					{"op": "update_or_create", "key": "$phone", "value": this.modalPhone},
 					{"op": "update_or_create", "key": "$name", "value": this.modalName},
-					{"op": "update_or_create", "key": "$email", "value": this.modalEmail}
+					{"op": "update_or_create", "key": "$email", "value": this.modalEmail},
+					{"op": "update_or_create", "key": "Должность", "value": this.modalRole},
+					{"op": "update_or_create", "key": "Адрес сайта", "value": this.modalSite}
 				]);
+				carrotquest.track(this.modalEvent , {
+					'Телефон': this.modalPhone,
+					'Имя': this.modalName,
+					'Email': this.modalEmail,
+					'Должность': this.modalRole,
+					'Адрес сайта': this.modalSite,
+					'url': location.host + location.pathname
+				})
 				carrotquest.track("Заполнил форму на скачивание файлов", {
 					'Телефон': this.modalPhone,
 					'Имя': this.modalName,
 					'Email': this.modalEmail,
 					'Должность': this.modalRole,
-					'Сайт': this.modalSite,
+					'Адрес сайта': this.modalSite,
 					'url': location.host + location.pathname
 				})
 				carrotquest.track('Скачал лид-магнит')
-				carrotquest.track(this.modalEvent)
+				
 
 				dataLayer.push({ event: 'UAevent', eventCategory: 'leads', eventAction: 'phone', eventLabel: location.host + location.pathname })
 				fbq('trackCustom', 'get_lead', {page: location.pathname})
@@ -301,7 +314,7 @@
 						'Телефон': this.modalPhone,
 						'Имя': this.modalName,
 						'Email': this.modalEmail,
-						'Сайт': this.modalSite,
+						'Адрес сайта': this.modalSite,
 						'Должность': this.modalRole,
 						'url': location.host + location.pathname
 					})
@@ -309,7 +322,7 @@
 						'Телефон': this.modalPhone,
 						'Имя': this.modalName,
 						'Email': this.modalEmail,
-						'Сайт': this.modalSite,
+						'Адрес сайта': this.modalSite,
 						'Должность': this.modalRole,
 						'url': location.host + location.pathname
 					})
