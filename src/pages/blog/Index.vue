@@ -25,9 +25,9 @@
 					<b-col md="12" lg="8" class="post-card mb-4 mb-md-5">
 						<g-link :to="'/blog/' + $page.recent.edges[0].node.slug + '/'" class="post__box box-shadow box h-100 d-block">
 							<!-- Изображение -->
-							<div class="post__box__pic mb-3" :style="'background-image: url(' + $page.recent.edges[0].node.featured_media_large + ')'"></div>
+							<div class="post__box__pic mb-4" :style="'background-image: url(' + $page.recent.edges[0].node.featured_media_large + ')'"></div>
 							<!-- Категории -->
-							<div class="post__box__categories px-3 mb-3">
+							<div class="post__box__categories px-3 mb-4">
 								<template v-for="edges in $page.allCategories.edges" >
 									<span v-if="$page.recent.edges[0].node.categories.includes(Number(edges.node.id))" :key="edges.node.id" class="grey-text text-uppercase font14px">
 										{{edges.node.title}}
@@ -35,7 +35,7 @@
 								</template>
 							</div>				
 							<!-- Заголовок -->
-							<div class="post__box__title px-3 pb-4" v-html="$page.recent.edges[0].node.title" />
+							<div class="h1 px-3 pb-4" v-html="$page.recent.edges[0].node.title" />
 						</g-link>
 					</b-col>
 					<b-col md="12" lg="4" class="post-card mb-lg-5">
@@ -124,7 +124,7 @@
 							<!-- Изображение -->
 							<div class="post__box__pic mb-3" :style="'background-image: url(' + $page.cases.edges[0].node.featured_media_large + ')'"></div>
 							<!-- Заголовок -->
-							<div class="post__box__title px-3 pb-4" v-html="$page.cases.edges[0].node.title" />
+							<div class="h1 px-3 pb-4" v-html="$page.cases.edges[0].node.title" />
 						</g-link>
 					</b-col>
 				</b-row>

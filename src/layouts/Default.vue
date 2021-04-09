@@ -36,6 +36,21 @@
 					v-model="modalEmail"
 					class="px-3 py-4 mt-3"
 				/>
+				<b-form-input 
+					placeholder="Должность" 
+					type="text"
+					required
+					v-model="modalRole"
+					class="px-3 py-4 mt-3"
+				/>
+				<b-form-input 
+					placeholder="URL вашего сайта" 
+					type="text"
+					pattern="([\D\d]+)([.]+)([\D\d]+)"
+					required
+					v-model="modalSite"
+					class="px-3 py-4 mt-3"
+				/>
 				<b-button 
 					type="submit" 
 					variant="primary" 
@@ -70,17 +85,17 @@
 					class="px-3 py-4 mt-3"
 				/>
 				<b-form-input 
-					placeholder="Сайт" 
-					type="text"
-					required
-					v-model="modalSite"
-					class="px-3 py-4 mt-3"
-				/>
-				<b-form-input 
 					placeholder="Должность" 
 					type="text"
 					required
 					v-model="modalRole"
+					class="px-3 py-4 mt-3"
+				/>
+				<b-form-input 
+					placeholder="URL вашего сайта" 
+					type="text"
+					required
+					v-model="modalSite"
 					class="px-3 py-4 mt-3"
 				/>
 				<b-button 
@@ -255,6 +270,8 @@
 					'Телефон': this.modalPhone,
 					'Имя': this.modalName,
 					'Email': this.modalEmail,
+					'Должность': this.modalRole,
+					'Сайт': this.modalSite,
 					'url': location.host + location.pathname
 				})
 				carrotquest.track('Скачал лид-магнит')
