@@ -3,8 +3,9 @@
 
 		<!-- Заголовок блока -->
 		<b-row class="justify-content-center">
-			<b-col cols="12" lg="10" xl="9">
-				<h2 class="h1 mb-3 mb-md-5" v-html="title" />
+			<b-col cols="12" lg="10" xl="9" class="mb-3 mb-md-5 text-center">
+				<h2 class="h1" v-html="title" />
+				<p v-if="description" v-html="description" class="mt-4" />
 			</b-col>
 		</b-row>
 
@@ -119,6 +120,7 @@
 		},
 		props: {
 			title: String,
+			description: String,
 			tabs: Array,
 			more: Object,
 			text: String,

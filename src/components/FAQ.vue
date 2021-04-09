@@ -24,7 +24,7 @@
 
 		<b-row v-if="button">
 			<b-col>
-				<b-button :href="button.href" variant="primary" class="mt-5" v-html="button.text" />
+				<b-button :href="button.href" variant="primary" class="mt-4 mt-md-5" v-html="button.text" />
 			</b-col>
 		</b-row>
 		
