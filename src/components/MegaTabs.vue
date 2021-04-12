@@ -225,6 +225,7 @@
 			img , video {
 				display: block;
 				max-width: 100%;
+				height: inherit;
 				margin: 0 auto;
 			}
 			.h4 {

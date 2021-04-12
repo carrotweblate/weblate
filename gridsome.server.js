@@ -135,6 +135,10 @@ module.exports = function (api) {
 					slug: item.slug,
 
 					//SEO
+					breadcrumb: {
+						title: '',
+						url: ''
+					},
 					seo: {
 						title: item.yoast_title,
 						meta: item.yoast_meta,
@@ -163,10 +167,12 @@ module.exports = function (api) {
 				
 				// Кейсы для Лид-бота
 				if ( item.id == '26546' || item.id == '23996' || item.id == '25965' ) {
+					pageContext.breadcrumb.title = 'Лид-бот'
+					pageContext.breadcrumb.url = '/chatbot/'
 					createPage({
 						path: `/chatbot/${item.slug}/`,
 						component: './src/templates/Post.vue',
-						context: pageContext
+						context: pageContext,
 					})
 				}
 

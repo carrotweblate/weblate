@@ -7,9 +7,14 @@
 				<b-col md="8">
 					<b-breadcrumb class="d-flex">
 						<b-breadcrumb-item href="/">Главная</b-breadcrumb-item>
-						<b-breadcrumb-item href="/blog/">Блог</b-breadcrumb-item>
-						<template v-for="{ node } in $page.allCategories.edges">
-							<b-breadcrumb-item  v-if="$context.category[0] == node.id" :href="'/blog/' + node.slug + '/'" :text="node.title" :key="node.id" />
+						<template v-if="$context.breadcrumb.title == ''">
+							<b-breadcrumb-item href="/blog/" text="Блог" />
+							<template v-for="{ node } in $page.allCategories.edges">
+								<b-breadcrumb-item  v-if="$context.category[0] == node.id" :href="'/blog/' + node.slug + '/'" :text="node.title" :key="node.id" />
+							</template>
+						</template>
+						<template v-else>
+							<b-breadcrumb-item :href="$context.breadcrumb.url" :text="$context.breadcrumb.title" />
 						</template>
 					</b-breadcrumb>
 				</b-col>

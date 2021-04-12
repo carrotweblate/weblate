@@ -41,12 +41,12 @@
 							/>
 						<!-- <g-image class="w-100" src="@/assets/images/chatbot/night-1.png" width="1010" quality="100" alt="Ночной бот" /> -->
 					</b-col>
-					<b-col lg="6" class="mb-3 offset-lg-1">
+					<b-col lg="6" class="offset-lg-1">
 						<h2>Лид-бот соберёт лидов за вас ночью и в нерабочее время</h2>
 						<p>
 							Лид-бот работает круглосуточно без выходных. Он соберет за вас лиды и передаст в команду продаж или поддержки. Потенциальная заявка не потеряется ночью
 						</p>
-						<b-button href="/panel/toapp/messages/chat-bot/" variant="primary" class="my-3">Подключить лид-бот к себе на сайт</b-button>
+						<b-button href="/panel/toapp/messages/chat-bot/" variant="primary" class="mt-3">Подключить лид-бот к себе на сайт</b-button>
 					</b-col>
 				</b-row>
 			</b-container>
@@ -199,7 +199,7 @@
 					</b-col>
 					<b-col md="6" lg="4" xl="3">
 						<div class="scripts__box box h-100 text-center d-flex align-items-center">
-							<p class="font20px align-middle">Еще больше сценариев совсем скоро</p>
+							<p class="font20px w-100">Еще больше сценариев совсем скоро</p>
 						</div>
 					</b-col>
 				</b-row>
@@ -208,7 +208,7 @@
 
 		<!-- Карта автоматизации в SaaS и eCom с использованием чат-бота на сайте -->
 		<b-container class="maps">
-			<b-col class="p-5" style="background-color: #fff3e6; border-radius: 5px;">
+			<b-col class="p-4 px-lg-4 py-lg-5" style="background-color: #fff3e6; border-radius: 5px;">
 				<b-row class="align-items-center justify-content-center">
 					<b-col lg="4" class="d-none d-lg-block maps__pics">
 						<g-image class="maps__pic maps__pic-1" src="@/assets/images/components/map-saas.png" width="400" alt="Для онлайн-сервисов" />
@@ -262,7 +262,7 @@
 
 		<!-- Стоимость лид-бота на вашем сайте -->
 		<b-container class="price">
-			<b-col class="px-4 py-5" style="background-color: #fff3e6; border-radius: 5px;">
+			<b-col class="p-4 px-lg-4 py-lg-5" style="background-color: #fff3e6; border-radius: 5px;">
 				<b-row class="align-items-center justify-content-center">
 					<b-col lg="6">
 						<p class="font24px">
@@ -273,7 +273,7 @@
 						</p>
 					</b-col>
 					<b-col lg="5" class="text-lg-center">
-						<b-button href="/panel/toapp/messages/chat-bot/" variant="primary" class="my-3">Подключить к своему сайту</b-button>
+						<b-button href="/panel/toapp/messages/chat-bot/" variant="primary" class="mt-3">Подключить к своему сайту</b-button>
 					</b-col>
 				</b-row>
 			</b-col>
@@ -445,6 +445,7 @@
 		.settings {
 			video {
 				border-radius: 5px;
+				height: inherit;
 			}
 		}
 
