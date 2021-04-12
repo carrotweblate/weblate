@@ -25,6 +25,7 @@
 				<b-form-input 
 					placeholder="Телефон" 
 					type="text" 
+					pattern="^[^A-zА-я]{5,}"
 					required
 					v-model="modalPhone"
 					class="px-3 py-4 mt-3"
@@ -34,6 +35,21 @@
 					type="email" 
 					required
 					v-model="modalEmail"
+					class="px-3 py-4 mt-3"
+				/>
+				<b-form-input 
+					placeholder="Должность" 
+					type="text"
+					required
+					v-model="modalRole"
+					class="px-3 py-4 mt-3"
+				/>
+				<b-form-input 
+					placeholder="URL вашего сайта" 
+					type="text"
+					pattern="([\D\d]+)([.]+)([\D\d]+)"
+					required
+					v-model="modalSite"
 					class="px-3 py-4 mt-3"
 				/>
 				<b-button 
@@ -58,6 +74,7 @@
 				<b-form-input 
 					placeholder="Телефон" 
 					type="text" 
+					pattern="^[^A-zА-я]{5,}"
 					required
 					v-model="modalPhone"
 					class="px-3 py-4 mt-3"
@@ -70,17 +87,18 @@
 					class="px-3 py-4 mt-3"
 				/>
 				<b-form-input 
-					placeholder="Сайт" 
-					type="text"
-					required
-					v-model="modalSite"
-					class="px-3 py-4 mt-3"
-				/>
-				<b-form-input 
 					placeholder="Должность" 
 					type="text"
 					required
 					v-model="modalRole"
+					class="px-3 py-4 mt-3"
+				/>
+				<b-form-input 
+					placeholder="URL вашего сайта" 
+					type="text"
+					pattern="([\D\d]+)([.]+)([\D\d]+)"
+					required
+					v-model="modalSite"
 					class="px-3 py-4 mt-3"
 				/>
 				<b-button 
@@ -105,6 +123,7 @@
 				<b-form-input 
 					placeholder="Телефон" 
 					type="text" 
+					pattern="^[^A-zА-я]{5,}"
 					required
 					v-model="modalPhone"
 					class="px-3 py-4 mt-3"
@@ -249,16 +268,28 @@
 				carrotquest.identify([
 					{"op": "update_or_create", "key": "$phone", "value": this.modalPhone},
 					{"op": "update_or_create", "key": "$name", "value": this.modalName},
-					{"op": "update_or_create", "key": "$email", "value": this.modalEmail}
+					{"op": "update_or_create", "key": "$email", "value": this.modalEmail},
+					{"op": "update_or_create", "key": "Должность", "value": this.modalRole},
+					{"op": "update_or_create", "key": "Адрес сайта", "value": this.modalSite}
 				]);
+				carrotquest.track(this.modalEvent , {
+					'Телефон': this.modalPhone,
+					'Имя': this.modalName,
+					'Email': this.modalEmail,
+					'Должность': this.modalRole,
+					'Адрес сайта': this.modalSite,
+					'url': location.host + location.pathname
+				})
 				carrotquest.track("Заполнил форму на скачивание файлов", {
 					'Телефон': this.modalPhone,
 					'Имя': this.modalName,
 					'Email': this.modalEmail,
+					'Должность': this.modalRole,
+					'Адрес сайта': this.modalSite,
 					'url': location.host + location.pathname
 				})
 				carrotquest.track('Скачал лид-магнит')
-				carrotquest.track(this.modalEvent)
+				
 
 				dataLayer.push({ event: 'UAevent', eventCategory: 'leads', eventAction: 'phone', eventLabel: location.host + location.pathname })
 				fbq('trackCustom', 'get_lead', {page: location.pathname})
@@ -278,13 +309,14 @@
 						{"op": "update_or_create", "key": "$name", "value": this.modalName},
 						{"op": "update_or_create", "key": "$email", "value": this.modalEmail},
 						{"op": "update_or_create", "key": "Адрес сайта", "value": this.modalSite},
+						{"op": "update_or_create", "key": "Должность", "value": this.modalRole},
 						{"op": "update_or_create", "key": "Источник", "value": "Книга продуктовые исследования"}
 					]);
 					carrotquest.track("Заполнил форму на скачивание файлов", {
 						'Телефон': this.modalPhone,
 						'Имя': this.modalName,
 						'Email': this.modalEmail,
-						'Сайт': this.modalSite,
+						'Адрес сайта': this.modalSite,
 						'Должность': this.modalRole,
 						'url': location.host + location.pathname
 					})
@@ -292,7 +324,7 @@
 						'Телефон': this.modalPhone,
 						'Имя': this.modalName,
 						'Email': this.modalEmail,
-						'Сайт': this.modalSite,
+						'Адрес сайта': this.modalSite,
 						'Должность': this.modalRole,
 						'url': location.host + location.pathname
 					})
@@ -391,6 +423,13 @@
 					{
 						rel: 'preload',
 						href: 'https://cdn-www.carrotquest.io/assets/font/OpenSans-Regular.woff2',
+						as: 'font', 
+						type: 'font/woff2', 
+						crossorigin: 'anonymous'
+					},
+					{
+						rel: 'preload',
+						href: 'https://cdn-www.carrotquest.io/assets/font/OpenSans-Bold.woff2',
 						as: 'font', 
 						type: 'font/woff2', 
 						crossorigin: 'anonymous'

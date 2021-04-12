@@ -12,13 +12,12 @@
 							База знаний, в которой пользователи могут самостоятельно найти ответы на свои вопросы, и не нагружают поддержку
 						</p>
 						<b-button href="/panel/toAPP/knowledge-base/" variant="primary">Создать базу знаний</b-button>
+
+						<g-image src="@/assets/images/knowledge-base/left-book.svg" quality="100" class="hero__book hero__book-left d-none d-lg-block" alt="Левая книга" />
+						<g-image src="@/assets/images/knowledge-base/right-book.svg" quality="100" class="hero__book hero__book-right d-none d-lg-block" alt="Правая книга" />
+
 					</b-col>
-
-					<g-image src="@/assets/images/knowledge-base/left-book.svg" quality="100" class="hero__book hero__book-left d-none d-lg-block" alt="Левая книга" />
-					<g-image src="@/assets/images/knowledge-base/right-book.svg" quality="100" class="hero__book hero__book-right d-none d-lg-block" alt="Правая книга" />
-
 					<g-image src="@/assets/images/knowledge-base/hero.png" quality="100" class="hero__pic mw-100 d-none d-lg-block" alt="Разгрузите техподдержку: создайте базу знаний для вашего сайта" />
-					
 				</b-row>
 			</b-container>
 		</section>
@@ -501,12 +500,12 @@
 					position: absolute;
 					z-index: 1;
 					&-left {
-						margin-top: -240px;
-    					margin-left: -1190px;
+						top: 200px;
+						left: -300px;
 					}
 					&-right {
-						margin-top: -430px;
-    					margin-right: -1080px;
+						top: 150px;
+						right: -200px;
 					}
 				}
 			}
