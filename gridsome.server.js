@@ -93,7 +93,7 @@ module.exports = function (api) {
 	// API Wordpress - создаём Посты
 	api.loadSource(async actions => {
 		const { data } = await axios.get(
-			'https://www.carrotquest.io/blog/wp-json/wp/v2/posts?&per_page=99'
+			'https://www.carrotquest.io/blog/wp-json/wp/v2/posts?&per_page=999'
 		)
 		// Данные для вывода статей
 		const collection = actions.addCollection('post')
@@ -129,34 +129,47 @@ module.exports = function (api) {
 				//Видео
 				pageHTML = pageHTML.split('<video ').join('<video autoplay loop muted playsinline ')
 				pageHTML = pageHTML.split('controls').join('')
+
+				let pageContext = {
+					id: item.id,
+					slug: item.slug,
+
+					//SEO
+					seo: {
+						title: item.yoast_title,
+						meta: item.yoast_meta,
+						json_ld: item.yoast_json_ld
+					},
+					
+					//Информация
+					author: item.author,
+					date: item.formatted_date,
+					category: item.categories,
+					modified: item.modified,
+					
+					//Тело статьи
+					featured_media: item.featured_media_large,
+					title: tp.execute(item.title.rendered),
+					description: tp.execute(item.excerpt.rendered),
+					content: tp.execute(pageHTML)
+				}
 				
+				// Обычные записи в блоге
 				createPage({
 					path: `/blog/${item.slug}/`,
 					component: './src/templates/Post.vue',
-					context: {
-						id: item.id,
-						slug: item.slug,
-
-						//SEO
-						seo: {
-							title: item.yoast_title,
-							meta: item.yoast_meta,
-							json_ld: item.yoast_json_ld
-						},
-						
-						//Информация
-						author: item.author,
-						date: item.formatted_date,
-						category: item.categories,
-						modified: item.modified,
-						
-						//Тело статьи
-						featured_media: item.featured_media_large,
-						title: tp.execute(item.title.rendered),
-						description: tp.execute(item.excerpt.rendered),
-						content: tp.execute(pageHTML)
-					}
+					context: pageContext
 				})
+				
+				// Кейсы для Лид-бота
+				if ( item.id == '26546' || item.id == '23996' || item.id == '25965' ) {
+					createPage({
+						path: `/chatbot/${item.slug}/`,
+						component: './src/templates/Post.vue',
+						context: pageContext
+					})
+				}
+
 				// console.log('Пост - ' + item.id + ' - готов!')
 
 				//Делаем AMP

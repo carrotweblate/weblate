@@ -207,8 +207,11 @@ body {
 
 
 //Заголовки
-h1 , .h1 , h2 , .h2 , h3 , .h3 , h4 , .h4 , h5 , .h5 {
-	font-family: 'Stag Sans' , Tahoma , sans-serif;
+h1 , .h1 , h2 , .h2 , h3 , .h3 , h4 , .h4 , h5 , .h5 , .t-heading {
+	font-family: 'Stag Sans' , Tahoma , sans-serif !important;
+	b , strong {
+		font-weight: normal !important;
+	}
 }
 @media (max-width: 767.98px) {
 	h1 , .h1 , h2 , .h2 {

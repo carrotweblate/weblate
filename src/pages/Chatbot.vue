@@ -14,7 +14,7 @@
 						<b-button href="/panel/toapp/messages/chat-bot/" variant="primary" class="my-3">Подключить к своему сайту</b-button>
 					</b-col>
 					<b-col lg="6" class="d-none d-lg-block">
-						<video autoplay="autoplay" loop="loop" muted="muted" playsinline="" class="embed-responsive-item">
+						<video autoplay="autoplay" loop="loop" muted="muted" playsinline="" width="530" height="463" class="embed-responsive-item">
 							<source src="https://cdn-www.carrotquest.io/assets/video/components/8.webm" type="video/webm">
 							<source src="https://cdn-www.carrotquest.io/assets/video/components/8.mp4" type="video/mp4">
 						</video>
@@ -28,10 +28,20 @@
 			<!-- Лид-бот соберёт лидов за вас ночью и в нерабочее время -->
 			<b-container>
 				<b-row class="align-items-center">
-					<b-col lg="6" class="d-none d-lg-block">
-						<g-image class="w-100" src="@/assets/images/chatbot/night-1.png" width="1010" quality="100" alt="Ночной бот" />
+					<b-col lg="5" class="d-none d-lg-block">
+						<ik-image
+								path="/components/medium-7.png"
+								:transformation="[{width:941,height:825}]"
+								:lqip="{active:true, quality: 40, blur: 10}"
+								width="941"
+								height="826"
+								loading="lazy"
+								class="w-100"
+								alt="Лид-бот соберёт лидов за вас ночью и в нерабочее время"
+							/>
+						<!-- <g-image class="w-100" src="@/assets/images/chatbot/night-1.png" width="1010" quality="100" alt="Ночной бот" /> -->
 					</b-col>
-					<b-col lg="6" class="mb-3">
+					<b-col lg="6" class="mb-3 offset-lg-1">
 						<h2>Лид-бот соберёт лидов за вас ночью и в нерабочее время</h2>
 						<p>
 							Лид-бот работает круглосуточно без выходных. Он соберет за вас лиды и передаст в команду продаж или поддержки. Потенциальная заявка не потеряется ночью
@@ -88,7 +98,7 @@
 							},
 							{
 								title: 'Передаст потенциального клиента в вашу CRM',
-								pic: '6.png'
+								pic: '35.png'
 							}
 						]"
 						:more="{
@@ -111,7 +121,10 @@
 						<p>Вы сразу видите, как лид-бот будет выглядеть для клиента. Это уменьшает вероятность ошибки</p>
 					</b-col>
 					<b-col cols="12" class="text-lg-center">
-						<g-image src="@/assets/images/chatbot/settings.png" width="1140" quality="100" alt="Настройте и запустите за 5 минут" />
+						<video autoplay="autoplay" loop="loop" muted="muted" playsinline="" width="1100" height="619" class="embed-responsive-item w-100">
+							<source src="/assets/video/components/14.webm" type="video/webm">
+							<source src="/assets/video/components/14.mp4" type="video/mp4">
+						</video>
 						<b-button href="/panel/toapp/messages/chat-bot/" variant="primary" class="mt-4 mt-md-5">Подключить к своему сайту</b-button>
 					</b-col>
 				</b-row>
@@ -226,7 +239,7 @@
 					</b-col>
 				</b-row>
 				<b-row>
-					<PostCard v-for="{ node } in $page.cases.edges" :key="node.id" :node="node" />
+					<PostCard v-for="{ node } in $page.cases.edges" :key="node.id" :node="node" parentPage="/chatbot/" />
 				</b-row>
 				<b-row>
 					<b-col class="all">
@@ -282,7 +295,6 @@
 					slug
 					categories
 					featured_media
-					featured_media_large
 				}
 			}
 		}
@@ -409,6 +421,9 @@
 			& , .container {
 				margin-bottom: 0;
 			}
+			video {
+				border-radius: 5px;
+			}
 		}
 
 		.night {
@@ -423,13 +438,13 @@
 			color: #fff;
 			img {
 				border-radius: 5px;
+				height: inherit;
 			}
 		}
 
 		.settings {
-			img {
+			video {
 				border-radius: 5px;
-				max-width: 100%;
 			}
 		}
 
