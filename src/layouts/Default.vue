@@ -96,6 +96,7 @@
 				<b-form-input 
 					placeholder="URL вашего сайта" 
 					type="text"
+					pattern="([\D\d]+)([.]+)([\D\d]+)"
 					required
 					v-model="modalSite"
 					class="px-3 py-4 mt-3"
@@ -308,6 +309,7 @@
 						{"op": "update_or_create", "key": "$name", "value": this.modalName},
 						{"op": "update_or_create", "key": "$email", "value": this.modalEmail},
 						{"op": "update_or_create", "key": "Адрес сайта", "value": this.modalSite},
+						{"op": "update_or_create", "key": "Должность", "value": this.modalRole},
 						{"op": "update_or_create", "key": "Источник", "value": "Книга продуктовые исследования"}
 					]);
 					carrotquest.track("Заполнил форму на скачивание файлов", {
