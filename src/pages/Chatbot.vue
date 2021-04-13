@@ -31,10 +31,10 @@
 					<b-col lg="5" class="d-none d-lg-block">
 						<ik-image
 								path="/components/medium-7.png"
-								:transformation="[{width:941,height:825}]"
+								:transformation="[{width:481,height:426}]"
 								:lqip="{active:true, quality: 40, blur: 10}"
-								width="941"
-								height="826"
+								width="481"
+								height="426"
 								loading="lazy"
 								class="w-100"
 								alt="Лид-бот соберёт лидов за вас ночью и в нерабочее время"
@@ -238,7 +238,7 @@
 						</h2>
 					</b-col>
 				</b-row>
-				<b-row>
+				<b-row class="pt-lg-3">
 					<PostCard v-for="{ node } in $page.cases.edges" :key="node.id" :node="node" parentPage="/chatbot/" />
 				</b-row>
 				<b-row>
@@ -541,8 +541,13 @@
 		}
 
 		.blue {
-			padding-top: 5rem;
 			background-color: #F3F3FF;
+			@media (max-width: 1199.98px) {
+				padding-top: 5rem
+			}
+			@media (min-width: 1200px) {
+				padding-top: 10rem
+			}
 		}
 	}
 </style>
