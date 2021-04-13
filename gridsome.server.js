@@ -45,7 +45,7 @@ module.exports = function (api) {
 					//Вебинары
 					|| item.id == '17071238' || item.id == '17091896' || item.id == '17931613' || item.id == '18334680'
 					//Лидбот
-					|| item.id == '18405836' || item.id == '18459207' || item.id == '18461004' || item.id == '18461139' || item.id == '18493211' || item.id == '18493266' || item.id == '18493284' || item.id == '18633619' 
+					|| item.id == '18405836' || item.id == '18459207' || item.id == '18461004' || item.id == '18461139' || item.id == '18493211' || item.id == '18493266' || item.id == '18493284' 
 				) ) {
 				// if ( item.id != '312699' || item.id == '1048214' || item.id == '2883968' || item.id == '11437990' ) {
 				// if ( item.id == '16083784') {
@@ -93,15 +93,11 @@ module.exports = function (api) {
 	// API Wordpress - создаём Посты
 	api.loadSource(async actions => {
 		const { data } = await axios.get(
-			'https://www.carrotquest.io/blog/wp-json/wp/v2/posts?&per_page=99&_fields=id,slug,title,excerpt,yoast_meta,date,modified,categories,acf,author,featured_media_medium,featured_media_large,content,sticky,meta,tags'
+			'https://www.carrotquest.io/blog/wp-json/wp/v2/posts?&per_page=440'
 		)
 		// Данные для вывода статей
 		const collection = actions.addCollection('post')
 		for (const item of data) {
-			let featured_media_large = {0 : 'empty'}
-			if (typeof(item.featured_media_large) == 'object') {
-				featured_media_large = item.featured_media_large[0]
-			}
 			collection.addNode({
 				id: item.id,
 				slug: item.slug,
@@ -112,8 +108,8 @@ module.exports = function (api) {
 				categories: item.categories,
 				authors: item.acf.post__authors,
 				author: item.author,
-				featured_media: '' + item.featured_media_medium,
-				featured_media_large: featured_media_large,
+				featured_media: item.featured_media_medium,
+				featured_media_large: item.featured_media_large[0],
 				content: tp.execute(item.content.rendered),
 				sticky: item.sticky,
 				page_views: item.meta.wpb_post_views_count,
@@ -123,10 +119,6 @@ module.exports = function (api) {
 		// Делаем страницы статей
 		api.createManagedPages(async ({ createPage }) => {
 			for (const item of data) {
-				let featured_media_large = {0 : 'empty'}
-				if (typeof(item.featured_media_large) == 'object') {
-					featured_media_large = item.featured_media_large[0]
-				}
 				let pageHTML = item.content.rendered
 				//CDN для ресурсов
 				pageHTML = pageHTML.split('http://www.carrotquest.io/').join('https://www.carrotquest.io/')
@@ -137,53 +129,34 @@ module.exports = function (api) {
 				//Видео
 				pageHTML = pageHTML.split('<video ').join('<video autoplay loop muted playsinline ')
 				pageHTML = pageHTML.split('controls').join('')
-
-				let pageContext = {
-					id: item.id,
-					slug: item.slug,
-
-					//SEO
-					breadcrumb: {
-						title: '',
-						url: ''
-					},
-					seo: {
-						title: item.yoast_title,
-						meta: item.yoast_meta,
-						json_ld: item.yoast_json_ld
-					},
-					
-					//Информация
-					author: item.author,
-					date: item.formatted_date,
-					category: item.categories,
-					modified: item.modified,
-					
-					//Тело статьи
-					featured_media: featured_media_large,
-					title: tp.execute(item.title.rendered),
-					description: tp.execute(item.excerpt.rendered),
-					content: tp.execute(pageHTML)
-				}
 				
-				// Обычные записи в блоге
 				createPage({
 					path: `/blog/${item.slug}/`,
 					component: './src/templates/Post.vue',
-					context: pageContext
-				})
-				
-				// Кейсы для Лид-бота
-				if ( item.id == '26546' || item.id == '23996' || item.id == '25965' ) {
-					pageContext.breadcrumb.title = 'Лид-бот'
-					pageContext.breadcrumb.url = '/chatbot/'
-					createPage({
-						path: `/chatbot/${item.slug}/`,
-						component: './src/templates/Post.vue',
-						context: pageContext,
-					})
-				}
+					context: {
+						id: item.id,
+						slug: item.slug,
 
+						//SEO
+						seo: {
+							title: item.yoast_title,
+							meta: item.yoast_meta,
+							json_ld: item.yoast_json_ld
+						},
+						
+						//Информация
+						author: item.author,
+						date: item.formatted_date,
+						category: item.categories,
+						modified: item.modified,
+						
+						//Тело статьи
+						featured_media: item.featured_media_large,
+						title: tp.execute(item.title.rendered),
+						description: tp.execute(item.excerpt.rendered),
+						content: tp.execute(pageHTML)
+					}
+				})
 				// console.log('Пост - ' + item.id + ' - готов!')
 
 				//Делаем AMP
