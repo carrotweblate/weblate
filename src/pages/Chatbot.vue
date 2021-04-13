@@ -125,7 +125,7 @@
 							<source src="/assets/video/components/14.webm" type="video/webm">
 							<source src="/assets/video/components/14.mp4" type="video/mp4">
 						</video>
-						<b-button href="/panel/toapp/messages/chat-bot/" variant="primary" class="mt-4 mt-md-5">Подключить к своему сайту</b-button>
+						<b-button href="/chatbot/constructor/" variant="outline-primary" class="mt-4 mt-md-5">Смотреть подробнее про конструктор лид-бота</b-button>
 					</b-col>
 				</b-row>
 			</b-container>
@@ -142,7 +142,7 @@
 				<b-row>
 					<b-col md="6" lg="4" xl="3">
 						<g-link to="/chatbot/collect-qualify-lead-use-questions/" class="scripts__box box h-100">
-							<p class="font20px">Собирайте и квалифицируйте лидов на вашем сайте</p>
+							<p class="font17px  font-weight-bold">Собирайте и квалифицируйте лидов на вашем сайте</p>
 							<div class="badges">
 								<b-badge class="font14px">Маркетологу</b-badge>
 							</div>
@@ -150,7 +150,7 @@
 					</b-col>
 					<b-col md="6" lg="4" xl="3">
 						<g-link to="/chatbot/automatic-collect-lead-at-night/" class="scripts__box box h-100">
-							<p class="font20px">Не теряйте лиды даже ночью, когда все менеджеры спят</p>
+							<p class="font17px  font-weight-bold">Не теряйте лиды даже ночью, когда все менеджеры спят</p>
 							<div class="badges">
 								<b-badge class="font14px">Маркетологу</b-badge>
 							</div>
@@ -158,7 +158,7 @@
 					</b-col>
 					<b-col md="6" lg="4" xl="3">
 						<g-link to="/chatbot/collect-user-feedback/" class="scripts__box box h-100">
-							<p class="font20px">Собирайте обратную связь с пользователей</p>
+							<p class="font17px  font-weight-bold">Собирайте обратную связь с пользователей</p>
 							<div class="badges">
 								<b-badge class="font14px green">Продакту</b-badge>
 							</div>
@@ -166,7 +166,7 @@
 					</b-col>
 					<b-col md="6" lg="4" xl="3">
 						<g-link to="/chatbot/close-duplicate-questions/" class="scripts__box box h-100">
-							<p class="font20px">Проактивно закрывайте повторяющиеся вопросы до того, как пользователь задал их в чат</p>
+							<p class="font17px  font-weight-bold">Проактивно закрывайте повторяющиеся вопросы до того, как пользователь задал их в чат</p>
 							<div class="badges">
 								<b-badge class="font14px yellow">Руководителю продаж</b-badge>
 							</div>
@@ -174,7 +174,7 @@
 					</b-col>
 					<b-col md="6" lg="4" xl="3">
 						<g-link to="/chatbot/increase-efficiency-sales-manager-calls/" class="scripts__box box h-100">
-							<p class="font20px">Увеличьте эффективность звонков менеджера по продажам</p>
+							<p class="font17px  font-weight-bold">Увеличьте эффективность звонков менеджера по продажам</p>
 							<div class="badges">
 								<b-badge class="font14px">Маркетологу</b-badge>
 								<b-badge class="font14px yellow mt-2">Руководителю продаж</b-badge>
@@ -183,7 +183,7 @@
 					</b-col>
 					<b-col md="6" lg="4" xl="3">
 						<g-link to="/chatbot/share-features-with-desired-segment/" class="scripts__box box h-100">
-							<p class="font20px">Рассказывайте о новых фичах нужному сегменту аудитории</p>
+							<p class="font17px  font-weight-bold">Рассказывайте о новых фичах нужному сегменту аудитории</p>
 							<div class="badges">
 								<b-badge class="font14px green">Продакту</b-badge>
 							</div>
@@ -191,7 +191,7 @@
 					</b-col>
 					<b-col md="6" lg="4" xl="3">
 						<g-link to="/chatbot/offer-products-for-specific-user/" class="scripts__box box h-100">
-							<p class="font20px">Предлагайте товары под задачи конкретного пользователя</p>
+							<p class="font17px  font-weight-bold">Предлагайте товары под задачи конкретного пользователя</p>
 							<div class="badges">
 								<b-badge class="font14px">Маркетологу</b-badge>
 							</div>
@@ -199,7 +199,7 @@
 					</b-col>
 					<b-col md="6" lg="4" xl="3">
 						<div class="scripts__box box h-100 text-center d-flex align-items-center">
-							<p class="font20px w-100">Еще больше сценариев совсем скоро</p>
+							<p class="font17px w-100">Еще больше сценариев совсем скоро</p>
 						</div>
 					</b-col>
 				</b-row>
@@ -458,7 +458,7 @@
 				background: #F3F3FF;
 				border-radius: 5px;
 				padding: 20px;
-				min-height: 280px;
+				min-height: 260px;
 				.badges {
 					position: absolute;
 					left: 20px;

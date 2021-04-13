@@ -93,11 +93,15 @@ module.exports = function (api) {
 	// API Wordpress - создаём Посты
 	api.loadSource(async actions => {
 		const { data } = await axios.get(
-			'https://www.carrotquest.io/blog/wp-json/wp/v2/posts?&per_page=450'
+			'https://www.carrotquest.io/blog/wp-json/wp/v2/posts?&per_page=99&_fields=id,slug,title,excerpt,yoast_meta,date,modified,categories,acf,author,featured_media_medium,featured_media_large,content,sticky,meta,tags'
 		)
 		// Данные для вывода статей
 		const collection = actions.addCollection('post')
 		for (const item of data) {
+			let featured_media_large = {0 : 'empty'}
+			if (typeof(item.featured_media_large) == 'object') {
+				featured_media_large = item.featured_media_large[0]
+			}
 			collection.addNode({
 				id: item.id,
 				slug: item.slug,
@@ -108,8 +112,8 @@ module.exports = function (api) {
 				categories: item.categories,
 				authors: item.acf.post__authors,
 				author: item.author,
-				featured_media: item.featured_media_medium,
-				featured_media_large: item.featured_media_large[0],
+				featured_media: '' + item.featured_media_medium,
+				featured_media_large: featured_media_large,
 				content: tp.execute(item.content.rendered),
 				sticky: item.sticky,
 				page_views: item.meta.wpb_post_views_count,
@@ -119,6 +123,10 @@ module.exports = function (api) {
 		// Делаем страницы статей
 		api.createManagedPages(async ({ createPage }) => {
 			for (const item of data) {
+				let featured_media_large = {0 : 'empty'}
+				if (typeof(item.featured_media_large) == 'object') {
+					featured_media_large = item.featured_media_large[0]
+				}
 				let pageHTML = item.content.rendered
 				//CDN для ресурсов
 				pageHTML = pageHTML.split('http://www.carrotquest.io/').join('https://www.carrotquest.io/')
@@ -152,7 +160,7 @@ module.exports = function (api) {
 					modified: item.modified,
 					
 					//Тело статьи
-					featured_media: item.featured_media_large,
+					featured_media: featured_media_large,
 					title: tp.execute(item.title.rendered),
 					description: tp.execute(item.excerpt.rendered),
 					content: tp.execute(pageHTML)
