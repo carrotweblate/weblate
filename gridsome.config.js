@@ -36,7 +36,7 @@ const collections = [{
 			featured_media: item.featured_media,
 			meta: item.meta,
 			categories: item.categories,
-			content: item.content.substr(0,3000)
+			content: item.content.substr(0,5000)
 		}
 	}, // optional
 	matchFields: ['slug', 'modified'], // Array<String> required with PartialUpdates
@@ -136,7 +136,7 @@ module.exports = {
 				apiKey: 'e268d391762ad62104c571742cfd1afa',
 				collections,
 				chunkSize: 10000, // default: 1000
-				enablePartialUpdates: false, // default: false
+				enablePartialUpdates: true, // default: false
 			},
 		},
 		// //Brotli должен стоять на сервере
