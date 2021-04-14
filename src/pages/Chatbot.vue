@@ -9,7 +9,7 @@
 							Лид-бот — это новый способ передавать в продажи только квалифицированных лидов
 						</h1>
 						<p>
-							Масштабируйте работу команду продаж и поддержки за счет автоматизации, а не найма новых людей. Лид-бот поможет разгрузить вашу команду и оказать персональный подход к каждому клиенту
+							Масштабируйте работу команды продаж и поддержки за счет автоматизации, а не найма новых людей. Лид-бот поможет разгрузить вашу команду и оказать персональный подход к каждому клиенту
 						</p>
 						<b-button href="/panel/toapp/messages/chat-bot/" variant="primary" class="my-3">Подключить к своему сайту</b-button>
 					</b-col>
@@ -82,7 +82,7 @@
 				<b-row class="features">
 					<MegaTabs 
 						title="Масштабируйте персональные продажи и поддержку без найма новых сотрудников"
-						description="Настройте разные воронки для разных потенциальных клиентов. Выделите сегмент целевых клиентов и передайте в продажи. Вовлекайте и прогревайте воронку еще не готовых клиентов."
+						description="Настройте разные воронки для разных потенциальных клиентов. Выделите сегмент целевых клиентов и передайте в продажи. Вовлекайте в воронку и прогревайте еще не готовых клиентов."
 						:tabs="[
 							{
 								title: 'Вовлекает в диалог только нужный сегмент клиентов',
@@ -142,7 +142,7 @@
 				<b-row>
 					<b-col md="6" lg="4" xl="3">
 						<g-link to="/chatbot/collect-qualify-lead-use-questions/" class="scripts__box box h-100">
-							<p class="font17px  font-weight-bold">Собирайте и квалифицируйте лидов на вашем сайте</p>
+							<p class="font17px">Собирайте и квалифицируйте лидов на вашем сайте</p>
 							<div class="badges">
 								<b-badge class="font14px">Маркетологу</b-badge>
 							</div>
@@ -150,7 +150,7 @@
 					</b-col>
 					<b-col md="6" lg="4" xl="3">
 						<g-link to="/chatbot/automatic-collect-lead-at-night/" class="scripts__box box h-100">
-							<p class="font17px  font-weight-bold">Не теряйте лиды даже ночью, когда все менеджеры спят</p>
+							<p class="font17px">Не теряйте лиды даже ночью, когда все менеджеры спят</p>
 							<div class="badges">
 								<b-badge class="font14px">Маркетологу</b-badge>
 							</div>
@@ -158,7 +158,7 @@
 					</b-col>
 					<b-col md="6" lg="4" xl="3">
 						<g-link to="/chatbot/collect-user-feedback/" class="scripts__box box h-100">
-							<p class="font17px  font-weight-bold">Собирайте обратную связь с пользователей</p>
+							<p class="font17px">Собирайте обратную связь с пользователей</p>
 							<div class="badges">
 								<b-badge class="font14px green">Продакту</b-badge>
 							</div>
@@ -166,7 +166,7 @@
 					</b-col>
 					<b-col md="6" lg="4" xl="3">
 						<g-link to="/chatbot/close-duplicate-questions/" class="scripts__box box h-100">
-							<p class="font17px  font-weight-bold">Проактивно закрывайте повторяющиеся вопросы до того, как пользователь задал их в чат</p>
+							<p class="font17px">Проактивно закрывайте повторяющиеся вопросы до того, как пользователь задал их в чат</p>
 							<div class="badges">
 								<b-badge class="font14px yellow">Руководителю продаж</b-badge>
 							</div>
@@ -174,7 +174,7 @@
 					</b-col>
 					<b-col md="6" lg="4" xl="3">
 						<g-link to="/chatbot/increase-efficiency-sales-manager-calls/" class="scripts__box box h-100">
-							<p class="font17px  font-weight-bold">Увеличьте эффективность звонков менеджера по продажам</p>
+							<p class="font17px">Увеличьте эффективность звонков менеджера по продажам</p>
 							<div class="badges">
 								<b-badge class="font14px">Маркетологу</b-badge>
 								<b-badge class="font14px yellow mt-2">Руководителю продаж</b-badge>
@@ -183,7 +183,7 @@
 					</b-col>
 					<b-col md="6" lg="4" xl="3">
 						<g-link to="/chatbot/share-features-with-desired-segment/" class="scripts__box box h-100">
-							<p class="font17px  font-weight-bold">Рассказывайте о новых фичах нужному сегменту аудитории</p>
+							<p class="font17px">Рассказывайте о новых фичах нужному сегменту аудитории</p>
 							<div class="badges">
 								<b-badge class="font14px green">Продакту</b-badge>
 							</div>
@@ -191,7 +191,7 @@
 					</b-col>
 					<b-col md="6" lg="4" xl="3">
 						<g-link to="/chatbot/offer-products-for-specific-user/" class="scripts__box box h-100">
-							<p class="font17px  font-weight-bold">Предлагайте товары под задачи конкретного пользователя</p>
+							<p class="font17px">Предлагайте товары под задачи конкретного пользователя</p>
 							<div class="badges">
 								<b-badge class="font14px">Маркетологу</b-badge>
 							</div>
@@ -216,7 +216,7 @@
 					</b-col>
 					<b-col lg="8">
 						<div class="h2">
-							Карта автоматизации в SaaS и eCom с использованием чат-бота на сайте
+							Карта автоматизации в SaaS и eCom с использованием лид-бота на сайте
 						</div>
 						<p>
 							Оставьте email, чтобы получить карту
