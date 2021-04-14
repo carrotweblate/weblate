@@ -43,7 +43,7 @@ module.exports = function (api) {
 					//Интеграции
 					|| item.id == '9970780' || item.id == '11191195' || item.id == '11193030' || item.id == '11193800' || item.id == '11195611' || item.id == '11431149' || item.id == '11431453' || item.id == '11431738' || item.id == '11007077' || item.id == '11183247' || item.id == '11183537' || item.id == '11194593' || item.id == '11195339' || item.id == '11430916' || item.id == '11432052' || item.id == '11432895' || item.id == '11433520' || item.id == '13669305' || item.id == '13670106' || item.id == '13670549' || item.id == '13670751' || item.id == '3785072' || item.id == '3195986'
 					//Вебинары
-					|| item.id == '17071238' || item.id == '17091896' || item.id == '17931613' || item.id == '18334680'
+					|| item.id == '18822720' || item.id == '17071238' || item.id == '17091896' || item.id == '17931613' || item.id == '18334680'
 					//Лидбот
 					|| item.id == '18405836' || item.id == '18459207' || item.id == '18461004' || item.id == '18461139' || item.id == '18493211' || item.id == '18493266' || item.id == '18493284' || item.id == '18633619'
 				) ) {
@@ -54,33 +54,25 @@ module.exports = function (api) {
 						'https://tilda.carrotquest.io/page_' + item.id + '.json'
 					)
 					try {
+						let tildaPath = ''
 						if ( item.alias ) {
-							createPage({
-								path: `/${item.alias}`,
-								component: './src/templates/Tilda.vue',
-								context: {
-									id: item.id,
-									title: item.title,
-									description: item.descr,
-									cover: item.img,
-									slug: item.alias,
-									html: tp.execute(data.result.html),
-								}
-							})
+							tildaPath = '/' + item.alias
 						} else {
-							createPage({
-								path: `/${item.filename}`,
-								component: './src/templates/Tilda.vue',
-								context: {
-									id: item.id,
-									title: item.title,
-									description: item.descr,
-									cover: item.img,
-									slug: item.filename,
-									html: tp.execute(data.result.html)
-								}
-							})
+							tildaPath = '/' + item.filename
 						}
+						createPage({
+							path: tildaPath,
+							component: './src/templates/Tilda.vue',
+							context: {
+								id: item.id,
+								title: item.title,
+								description: item.descr,
+								cover: item.img,
+								slug: item.alias,
+								html: tp.execute(data.result.html),
+								date: item.date
+							}
+						})
 					} catch {
 						console.log('Ошибка в тильде: ' + item.id)
 					}

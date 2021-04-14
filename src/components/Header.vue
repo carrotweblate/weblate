@@ -444,7 +444,7 @@
 								},
 								{
 									title: 'Вебинары и подкасты',
-									href: 'https://www.carrotquest.io/blog/webinars/',
+									href: '/webinars/',
 									job: 'Более 30&nbsp;вебинаров и&nbsp;подкастов на&nbsp;темы про создание продуктов, маркетинг и&nbsp;growth hacking'
 								}
 							]
@@ -484,7 +484,7 @@
 							},
 							{
 								title: 'Вебинары и подкасты',
-								href: 'https://www.carrotquest.io/blog/webinars/'
+								href: '/webinars/'
 							}		
 						],
 						jobs: true

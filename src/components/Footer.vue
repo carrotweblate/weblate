@@ -196,7 +196,7 @@
 						},
 						{
 							title: 'Вебинары',
-							to: 'https://www.carrotquest.io/blog/webinars/'
+							to: '/webinars/'
 						},
 						{
 							title: 'База знаний Carrot quest',

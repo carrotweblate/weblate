@@ -56,17 +56,21 @@ module.exports = {
 				debug: false
 			}
 		},
-		// //PWA
+		{
+			use: "gridsome-plugin-manifest",
+			options: {
+				start_url: "/",
+				background_color: "#fff",
+				icon_path: "./static/favicon.png",
+				name: "Carrot quest",
+				short_name: "CQ",
+				theme_color: "#FF7C16",
+				lang: "ru",
+			},
+		},
 		// {
 		// 	use: 'gridsome-plugin-pwa',
 		// 	options: {
-		// 		// Service Worker Options
-		// 		disableServiceWorker: false,
-		// 		serviceWorkerPath: 'service-worker.js',
-		// 		cachedFileTypes: 'js,json,css,html,png,jpg,jpeg,svg,gif,webm,mp4',
-		// 		disableTemplatedUrls: false,
-	
-		// 		// Manifest Options (https://developer.mozilla.org/en-US/docs/Web/Manifest)
 		// 		manifestPath: 'manifest.json',
 		// 		title: 'Carrot quest',
 		// 		description: 'Инструменты для увеличения продаж на сайтах без привлечения нового трафика',
@@ -79,7 +83,6 @@ module.exports = {
 		// 		icon: './static/favicon.png',
 		// 		maskableIcon: true,
 		// 		svgFavicon: 'https://www.carrotquest.io/favicon.svg',
-		// 		appleMaskIcon: 'https://www.carrotquest.io/favicon.svg'
 		// 	}
 		// },
 		// {
