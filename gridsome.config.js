@@ -36,7 +36,7 @@ const collections = [{
 			featured_media: item.featured_media,
 			meta: item.meta,
 			categories: item.categories,
-			content: item.content.substr(0,5000)
+			content: item.content.substr(0,7000)
 		}
 	}, // optional
 	matchFields: ['slug', 'modified'], // Array<String> required with PartialUpdates
@@ -56,33 +56,32 @@ module.exports = {
 				debug: false
 			}
 		},
-		//PWA
-		{
-			use: 'gridsome-plugin-pwa',
-			options: {
-				// Service Worker Options
-				disableServiceWorker: false,
-				serviceWorkerPath: 'service-worker.js',
-				cachedFileTypes: 'js,json,css,html,png,jpg,jpeg,svg,gif,webm,mp4',
-				disableTemplatedUrls: false,
+		// //PWA
+		// {
+		// 	use: 'gridsome-plugin-pwa',
+		// 	options: {
+		// 		// Service Worker Options
+		// 		disableServiceWorker: false,
+		// 		serviceWorkerPath: 'service-worker.js',
+		// 		cachedFileTypes: 'js,json,css,html,png,jpg,jpeg,svg,gif,webm,mp4',
+		// 		disableTemplatedUrls: false,
 	
-				// Manifest Options (https://developer.mozilla.org/en-US/docs/Web/Manifest)
-				manifestPath: 'manifest.json',
-				title: 'Carrot quest',
-				description: 'Инструменты для увеличения продаж на сайтах без привлечения нового трафика',
-				shortName: 'CQ',
-				startUrl: '/',
-				display: 'standalone',
-				statusBarStyle: 'default',
-				themeColor: '#FF7C16',
-				backgroundColor: '#ffffff',
-				icon: './static/favicon.png',
-				maskableIcon: true,
-				svgFavicon: 'https://www.carrotquest.io/favicon.svg',
-				appleMaskIcon: 'https://www.carrotquest.io/favicon.svg',
-				appleMaskIconColor: '#ffffff',
-			}
-		},
+		// 		// Manifest Options (https://developer.mozilla.org/en-US/docs/Web/Manifest)
+		// 		manifestPath: 'manifest.json',
+		// 		title: 'Carrot quest',
+		// 		description: 'Инструменты для увеличения продаж на сайтах без привлечения нового трафика',
+		// 		shortName: 'CQ',
+		// 		startUrl: '/',
+		// 		display: 'standalone',
+		// 		statusBarStyle: 'default',
+		// 		themeColor: '#FF7C16',
+		// 		backgroundColor: '#ffffff',
+		// 		icon: './static/favicon.png',
+		// 		maskableIcon: true,
+		// 		svgFavicon: 'https://www.carrotquest.io/favicon.svg',
+		// 		appleMaskIcon: 'https://www.carrotquest.io/favicon.svg'
+		// 	}
+		// },
 		// {
 		// 	use: '@allanchain/gridsome-plugin-pwa',
 		// 	options: {
@@ -138,14 +137,7 @@ module.exports = {
 				chunkSize: 10000, // default: 1000
 				enablePartialUpdates: true, // default: false
 			},
-		},
-		// //Brotli должен стоять на сервере
-		// {
-		// 	use: 'gridsome-plugin-brotli',
-		// 	options: {
-		// 		extensions: ['css', 'html', 'js', 'svg', 'json']
-		// 	}
-		// }
+		}
 	],
 	
 	

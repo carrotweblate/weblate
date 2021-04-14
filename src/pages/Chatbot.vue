@@ -122,8 +122,8 @@
 					</b-col>
 					<b-col cols="12" class="text-lg-center">
 						<video autoplay="autoplay" loop="loop" muted="muted" playsinline="" width="1100" height="619" class="embed-responsive-item w-100">
-							<source src="/assets/video/components/14.webm" type="video/webm">
-							<source src="/assets/video/components/14.mp4" type="video/mp4">
+							<source src="https://cdn-www.carrotquest.io/assets/video/components/14.webm" type="video/webm">
+							<source src="https://cdn-www.carrotquest.io/assets/video/components/14.mp4" type="video/mp4">
 						</video>
 						<b-button href="/chatbot/constructor/" variant="outline-primary" class="mt-4 mt-md-5">Смотреть подробнее про конструктор лид-бота</b-button>
 					</b-col>

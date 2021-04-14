@@ -185,10 +185,7 @@ module.exports = function (api) {
 					if (ampModified.date != item.modified ) {
 						fs.mkdirSync('./static/blog/' + item.slug , { recursive: true })
 						fs.mkdirSync('./static/blog/' + item.slug + '/amp/' , { recursive: true })
-						fs.writeFile('./static/blog/' + item.slug + '/amp/modified.json', JSON.stringify({ date: item.modified }), 'utf8' , function (err) {
-							if (err) return console.log(err)
-						})
-						axios.get('https://www.carrotquest.io/blog/' + item.slug + '/amp/')
+						axios.get('https://landing-test.carrotquest.io/blog/' + item.slug + '/amp/')
 							.then(response => {
 								pageHTML = response.data
 								pageHTML = pageHTML.split('http://www.carrotquest.io/').join('https://www.carrotquest.io/')
@@ -198,7 +195,10 @@ module.exports = function (api) {
 								fs.writeFile('./static/blog/' + item.slug + '/amp/index.html', pageHTML, 'utf8' , function (err) {
 									if (err) return console.log(err)
 								})
-								// console.log('AMP - ' + item.id + ' - готов!')
+								fs.writeFile('./static/blog/' + item.slug + '/amp/modified.json', JSON.stringify({ date: item.modified }), 'utf8' , function (err) {
+									if (err) return console.log(err)
+								})
+								console.log('AMP - ' + item.id + ' - готов!')
 							})
 					}
 				})
