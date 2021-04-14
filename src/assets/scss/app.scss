@@ -209,6 +209,9 @@ body {
 //Заголовки
 h1 , .h1 , h2 , .h2 , h3 , .h3 , h4 , .h4 , h5 , .h5 {
 	font-family: 'Stag Sans' , Tahoma , sans-serif;
+	& , b , strong {
+		font-weight: normal !important;
+	}
 }
 @media (max-width: 767.98px) {
 	h1 , .h1 , h2 , .h2 {
@@ -637,24 +640,24 @@ header {
 	margin: 0;
 	background: transparent;
 	
-	.breadcrumb-item:first-child {
+	.breadcrumb-item {
 		list-style: none;
 	}
 	.breadcrumb-item:not(:first-child) {
-		margin-left: 2rem;
-		padding-left: 0.85rem;
-		&::marker {
+		margin-left: 1rem;
+		&::before {
 			content: "→";
+			margin-right: 1rem;
 			color: $light-grey;
 		}
 	}
 	@media (max-width: 767.98px) {
 		font-size: 14px;
 		.breadcrumb-item:not(:first-child) {
-			margin-left: 0.7rem;
-			padding-left: 0.25rem;
-			&::marker {
+			margin-left: 0.5rem;
+			&::before {
 				content: "/";
+				margin-right: 0.5rem;
 				color: $light-grey;
 			}
 		}

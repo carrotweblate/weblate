@@ -3,8 +3,9 @@
 
 		<!-- Заголовок блока -->
 		<b-row class="justify-content-center">
-			<b-col cols="12" lg="10" xl="9">
-				<h2 class="h1 mb-3 mb-md-5" v-html="title" />
+			<b-col cols="12" lg="10" xl="9" class="mb-3 mb-md-5 text-center">
+				<h2 class="h1" v-html="title" />
+				<p v-if="description" v-html="description" class="mt-4" />
 			</b-col>
 		</b-row>
 
@@ -12,7 +13,7 @@
 		<b-row class="d-none d-lg-flex">
 			<b-col>
 				<b-tabs pills vertical end nav-wrapper-class="col-4">
-					<b-tab v-for="item in tabs" :key="item.title" lazy>
+					<b-tab v-for="item in tabs" :key="item.title">
 						<template #title>
 							<span v-html="item.title" />
 						</template>
@@ -28,10 +29,14 @@
 							<source v-if="visible" :src="'https://cdn-www.carrotquest.io' + item.pic" type="video/mp4">
 						</b-embed>
 						<!-- Изображение -->
-						<img v-else
-							:src="'https://res.cloudinary.com/carrotquest/image/upload/v1613043845/components/' + item.pic"
-							:alt="item.title"
+						<ik-image v-else
+							:path="'/components/' + item.pic"
+							:transformation="[{width:720,height:600,crop:'at_max'}]"
+							width="720"
+							height="600"
 							loading="lazy"
+							class="mw-100"
+							:alt="item.title"
 						/>
 					</b-tab>
 					<template #tabs-end>
@@ -60,15 +65,15 @@
 							<source v-if="visible" :src="'https://cdn-www.carrotquest.io' + item.pic.replace('mp4','webm')" type="video/webm">
 							<source v-if="visible" :src="'https://cdn-www.carrotquest.io' + item.pic" type="video/mp4">
 						</b-embed>
-						<!-- Изображение -->
-						<!-- <g-image v-else
-							:src="require(`!!assets-loader?width=800&height=700&fit=contain&background=transparent!@/assets/images/components/${item.pic}`)"
-							:alt="item.title"
-						/> -->
-						<img v-else
-							:src="'https://res.cloudinary.com/carrotquest/image/upload/c_fit,h_700,w_800/v1613043845/components/' + item.pic"
-							:alt="item.title"
+						<ik-image v-else
+							:path="'/components/' + item.pic"
+							:transformation="[{width:720,height:600,crop:'at_max'}]"
+							:lqip="{active:true, quality: 40, blur: 10}"
+							width="720"
+							height="600"
 							loading="lazy"
+							class="mw-100"
+							:alt="item.title"
 						/>
 					</div>
 				</b-card>
@@ -88,14 +93,15 @@
 			</b-col>
 			<b-col lg="3" v-for="item in instruments" :key="item.title" class="mt-4 mt-md-5 mt-lg-4">
 				<a :href="item.href" class="box">
-					<!-- <g-image
-						:src="require(`!!assets-loader?width=160&height=96&fit=contain&background=transparent!@/assets/images/components/${item.pic}`)"
-						:alt="item.title.replace('<i>', '').replace('</i>', '')"
-					/> -->
-					<img
-						:src="'https://res.cloudinary.com/carrotquest/image/upload/c_pad,h_96,w_160/v1613043845/components/' + item.pic"
-						:alt="item.title.replace('<i>', '').replace('</i>', '')"
+					<ik-image
+						:path="'/components/' + item.pic"
+						:transformation="[{width:160,height:96,crop:'at_max'}]"
+						:lqip="{active:true, quality: 40, blur: 10}"
+						width="160"
+						height="96"
 						loading="lazy"
+						class="mw-100"
+						:alt="item.title.replace('<i>', '').replace('</i>', '')"
 					/>
 					<div class="title" v-html="item.title" />
 				</a>
@@ -119,6 +125,7 @@
 		},
 		props: {
 			title: String,
+			description: String,
 			tabs: Array,
 			more: Object,
 			text: String,
@@ -218,6 +225,7 @@
 			img , video {
 				display: block;
 				max-width: 100%;
+				height: inherit;
 				margin: 0 auto;
 			}
 			.h4 {

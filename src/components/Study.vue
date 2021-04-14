@@ -76,10 +76,10 @@
 			.box {
 				height: 320px;
 				span {
-					width: 100%;
+					width: 90%;
 				}
 				img {
-					margin-top: 0;
+					margin-top: 80px;
 					left: 100px
 				}
 			}

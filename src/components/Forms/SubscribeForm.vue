@@ -23,7 +23,7 @@
 				</b-input-group>
 			</b-form>
 		</div>
-		<b-modal ref="suсcessSubscribe" hide-footer title="Подписка оформлена">
+		<b-modal ref="suсcessSubscribe" hide-footer :title="title">
 			Проверьте свой email: {{email}}
 		</b-modal>
 	</div>
@@ -31,10 +31,14 @@
 
 <script>
 	export default {
-		props: [
-			'button',
-			'event'
-		],
+		props: {
+			button: String,
+			event: String,
+			title: {
+				default: 'Подписка оформлена',
+				type: String
+			}
+		},
 		data: function() {
 			return {
 				email: ''
@@ -64,7 +68,6 @@
 					this.email = ''
 				}, 7000);
 
-				
 			}
 		}
 	}

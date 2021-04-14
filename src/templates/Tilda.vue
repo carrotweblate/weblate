@@ -136,6 +136,15 @@
 		.t-video-lazyload {
 			height: 300px;
 		}
+		.t-col_8 .t-video-lazyload {
+			height: 430px;
+			@media (max-width: 991.98px) {
+				height: 350px;
+			}
+			@media (max-width: 575.98px) {
+				height: 235px;
+			}
+		}
 	}
 	* , :before , :after {
 		box-sizing: border-box !important;
