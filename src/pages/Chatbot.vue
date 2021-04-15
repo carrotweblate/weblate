@@ -46,7 +46,7 @@
 						<p>
 							Лид-бот работает круглосуточно без выходных. Он соберет за вас лиды и передаст в команду продаж или поддержки. Потенциальная заявка не потеряется ночью
 						</p>
-						<b-button href="/panel/toapp/messages/chat-bot/" variant="primary" class="mt-3">Подключить лид-бот к себе на сайт</b-button>
+						<b-button href="/panel/toapp/messages/chat-bot/" variant="primary" class="mt-3">Подключить лид-бота к себе на сайт</b-button>
 					</b-col>
 				</b-row>
 			</b-container>
@@ -67,7 +67,7 @@
 						<p>
 							Лид-бот наполнит карточку лида подробной информацией на основе ответов на вопросы. Она полезна менеджерам продаж и поддержки, чтобы работать с каждым клиентом персонально в маштабе.
 						</p>
-						<b-button href="/panel/toapp/messages/chat-bot/" variant="primary" class="my-3">Подключить лид-бот к себе на сайт</b-button>
+						<b-button href="/panel/toapp/messages/chat-bot/" variant="primary" class="my-3">Подключить лид-бота к себе на сайт</b-button>
 					</b-col>
 					<b-col lg="8" class="order-lg-2">
 						<g-image class="w-100" src="@/assets/images/chatbot/night-3.png" width="1142" quality="100" alt="Лид-бот обогатит информацию о лиде без участия менеджера" />
@@ -390,7 +390,7 @@
 					},
 					{
 						'@type': "Question",
-						name: 'Как подключить лид-бота?',
+						name: 'Как Подключить лид-бота?',
 						acceptedAnswer: {
 							'@type': 'Answer',
 							text: 'Если у вас на сайте установлен чат Carrot quest, дополнительного подключения чат-бота не требуется. Чтобы настроить чат-бота, вам не нужен программист, бот настраивается не сложнее автосообщения.'

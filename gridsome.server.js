@@ -190,7 +190,7 @@ module.exports = function (api) {
 								fs.writeFile('./static/blog/' + item.slug + '/amp/modified.json', JSON.stringify({ date: item.modified }), 'utf8' , function (err) {
 									if (err) return console.log(err)
 								})
-								console.log('AMP - ' + item.id + ' - готов!')
+								// console.log('AMP - ' + item.id + ' - готов!')
 							})
 					}
 				})
