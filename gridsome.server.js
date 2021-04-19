@@ -46,6 +46,8 @@ module.exports = function (api) {
 					|| item.id == '18822720' || item.id == '17071238' || item.id == '17091896' || item.id == '17931613' || item.id == '18334680'
 					//Лидбот
 					|| item.id == '18405836' || item.id == '18459207' || item.id == '18461004' || item.id == '18461139' || item.id == '18493211' || item.id == '18493266' || item.id == '18493284' || item.id == '18633619'
+					//Плейбуки
+					|| item.id == '18848589' || item.id == '18859531' 
 				) ) {
 				// if ( item.id != '312699' || item.id == '1048214' || item.id == '2883968' || item.id == '11437990' ) {
 				// if ( item.id == '16083784') {
@@ -157,8 +159,8 @@ module.exports = function (api) {
 				})
 				// console.log('Пост - ' + item.id + ' - готов!')
 
-				// Кейсы для Лид-бота
-				if ( item.id == '26546' || item.id == '23996' || item.id == '25965' ) {
+				// Сило для Лид-бота
+				if ( item.id == '26546' || item.id == '23996' || item.id == '25965' || item.id == '22648' || item.id == '24191' || item.id == '25798' || item.id == '24623' || item.id == '23719' || item.id == '24292' || item.id == '23543' || item.id == '25761' || item.id == '25194' || item.id == '22882' || item.id == '24730' ) {
 					pageContext.breadcrumb.title = 'Лид-бот'
 					pageContext.breadcrumb.url = '/chatbot/'
 					createPage({

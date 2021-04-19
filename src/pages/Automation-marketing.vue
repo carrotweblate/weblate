@@ -40,7 +40,15 @@
 						</b-col>
 						<b-col cols="6">
 							<div class="tasks__box tasks__box-ecom text-center">
-								<g-image class="tasks__box__pic mb-4" src="@/assets/images/components/small-13.png" height="180" style="max-height:90px;" fit="inside" alt="Увеличение конверсии в лиды" />
+								<ik-image
+									path="/components/small-13.png"
+									:transformation="[{width:240,height:180,crop:'at_max'}]"
+									width="120"
+									height="90"
+									loading="lazy"
+									class="tasks__box__pic mb-4"
+									alt="Увеличение конверсии в лиды"
+								/>
 								<p>
 									Увеличение конверсии в лиды
 								</p>
@@ -48,7 +56,15 @@
 						</b-col>
 						<b-col cols="6">
 							<div class="tasks__box tasks__box-ecom text-center">
-								<g-image class="tasks__box__pic mb-4" src="@/assets/images/components/small-15.png" height="180" style="max-height:90px;" fit="inside" alt="Увеличение конверсии в заказы" />
+								<ik-image
+									path="/components/small-15.png"
+									:transformation="[{width:240,height:180,crop:'at_max'}]"
+									width="120"
+									height="90"
+									loading="lazy"
+									class="tasks__box__pic mb-4"
+									alt="Увеличение конверсии в заказы"
+								/>
 								<p>
 									Увеличение конверсии в заказы
 								</p>
@@ -56,7 +72,15 @@
 						</b-col>
 						<b-col cols="6">
 							<div class="tasks__box tasks__box-ecom text-center">
-								<g-image class="tasks__box__pic mb-4" src="@/assets/images/components/small-16.png" height="180" style="max-height:90px;" fit="inside" alt="Увеличение количества первых покупок" />
+								<ik-image
+									path="/components/small-16.png"
+									:transformation="[{width:240,height:180,crop:'at_max'}]"
+									width="120"
+									height="90"
+									loading="lazy"
+									class="tasks__box__pic mb-4"
+									alt="Увеличение количества первых покупок"
+								/>
 								<p>
 									Увеличение количества первых покупок
 								</p>
@@ -64,7 +88,15 @@
 						</b-col>
 						<b-col cols="6">
 							<div class="tasks__box tasks__box-ecom text-center">
-								<g-image class="tasks__box__pic mb-4" src="@/assets/images/components/small-17.png" height="180" style="max-height:90px;" fit="inside" alt="Увеличение количества повторных покупок" />
+								<ik-image
+									path="/components/small-17.png"
+									:transformation="[{width:240,height:180,crop:'at_max'}]"
+									width="120"
+									height="90"
+									loading="lazy"
+									class="tasks__box__pic mb-4"
+									alt="Увеличение количества повторных покупок"
+								/>
 								<p>
 									Увеличение количества повторных покупок
 								</p>
@@ -83,7 +115,15 @@
 						</b-col>
 						<b-col cols="6" class="h-50">
 							<div class="tasks__box tasks__box-saas text-center">
-								<g-image class="tasks__box__pic mb-4" src="@/assets/images/components/small-12.png" height="180" style="max-height:90px;" fit="inside" alt="Увеличение LTV" />
+								<ik-image
+									path="/components/small-12.png"
+									:transformation="[{width:240,height:180,crop:'at_max'}]"
+									width="120"
+									height="90"
+									loading="lazy"
+									class="tasks__box__pic mb-4"
+									alt="Увеличение LTV"
+								/>
 								<p>
 									Увеличение LTV
 									<br><br>
@@ -92,7 +132,15 @@
 						</b-col>
 						<b-col cols="6">
 							<div class="tasks__box tasks__box-saas text-center">
-								<g-image class="tasks__box__pic mb-4" src="@/assets/images/components/small-18.png" height="180" style="max-height:90px;" fit="inside" alt="Увеличение Retention" />
+								<ik-image
+									path="/components/small-18.png"
+									:transformation="[{width:240,height:180,crop:'at_max'}]"
+									width="120"
+									height="90"
+									loading="lazy"
+									class="tasks__box__pic mb-4"
+									alt="Увеличение Retention"
+								/>
 								<p>
 									Увеличение Retention
 								</p>
@@ -100,7 +148,15 @@
 						</b-col>
 						<b-col cols="6">
 							<div class="tasks__box tasks__box-saas text-center">
-								<g-image class="tasks__box__pic mb-4" src="@/assets/images/components/small-14.png" width="240" height="180" fit="contain" background="#F8F8FF" style="max-height:90px;" alt="Увеличение количества регистраций" />
+								<ik-image
+									path="/components/small-14.png"
+									:transformation="[{width:240,height:180,crop:'at_max'}]"
+									width="120"
+									height="90"
+									loading="lazy"
+									class="tasks__box__pic mb-4"
+									alt="Увеличение количества регистраций"
+								/>
 								<p>
 									Увеличение количества регистраций
 								</p>
@@ -108,7 +164,15 @@
 						</b-col>
 						<b-col cols="6">
 							<div class="tasks__box tasks__box-saas text-center">
-								<g-image class="tasks__box__pic mb-4" src="@/assets/images/components/small-19.png" width="240" height="180" fit="contain" background="#F8F8FF" style="max-height:90px;" alt="Оптимизация онбординга пользователей" />
+								<ik-image
+									path="/components/small-19.png"
+									:transformation="[{width:240,height:180,crop:'at_max'}]"
+									width="120"
+									height="90"
+									loading="lazy"
+									class="tasks__box__pic mb-4"
+									alt="Оптимизация онбординга пользователей"
+								/>
 								<p>
 									Оптимизация онбординга пользователей
 								</p>

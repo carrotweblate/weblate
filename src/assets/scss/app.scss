@@ -268,9 +268,11 @@ a.box {
 //Списки
 .text {
 	ul {
-		padding-left: 1rem;
+		padding-left: 0;
 		li {
+			position: relative;
 			margin: 0.5rem 0;
+			padding-left: 1rem;
 			list-style-type: none;
 			&::before {
 				display: block;

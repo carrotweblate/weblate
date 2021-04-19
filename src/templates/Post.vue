@@ -200,6 +200,12 @@
 					}
 				}
 			}
+			postLink.push(
+				{
+					rel: 'amphtml',
+					href: 'https://www.carrotquest.io/blog/' + this.$context.slug + '/amp/'
+				}
+			)
 			return {
 				title: this.$context.seo.title,
 				meta: postMeta,

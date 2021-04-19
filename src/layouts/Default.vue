@@ -47,7 +47,7 @@
 				<b-form-input 
 					placeholder="URL вашего сайта" 
 					type="text"
-					pattern="([\D\d]+)([.]+)([\D\d]+)"
+					pattern=".+\.+.+"
 					required
 					v-model="modalSite"
 					class="px-3 py-4 mt-3"
@@ -96,7 +96,7 @@
 				<b-form-input 
 					placeholder="URL вашего сайта" 
 					type="text"
-					pattern="([\D\d]+)([.]+)([\D\d]+)"
+					pattern=".+\.+.+"
 					required
 					v-model="modalSite"
 					class="px-3 py-4 mt-3"
