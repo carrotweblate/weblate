@@ -2,6 +2,13 @@
 	<Layout :header="true" :footer="true" class="post">
 		<b-container>
 
+			<!-- Редактировать статью -->
+			<b-row v-if="wpUser">
+				<b-col class="mt-5">
+					<b-button :href="'https://www.carrotquest.io/blog/wp-admin/post.php?post=' + $context.id + '&action=edit'" variant="outline-primary" target="_blank">Редактировать статью</b-button>
+				</b-col>
+			</b-row>
+
 			<!-- Хлебные крошки -->
 			<b-row class="mt-3 mt-md-5 mb-md-5">
 				<b-col md="8">
@@ -219,7 +226,8 @@
 		data() {
 			return {
 				timeToRead: '',
-				metaCanonical: ''
+				metaCanonical: '',
+				wpUser: false
 			}
 		},
 		async mounted() {
@@ -256,11 +264,19 @@
 				)
 			this.searchLeadForms()
 			this.$page.allPost.edges = this.$page.allPost.edges.sort(function (a, b) {return Math.random() - 0.5;}).slice(0, 3)
+			this.wpLogined()
 		},
 		updated() {
 			this.searchLeadForms()
 		},
 		methods: {
+			wpLogined: function(e) {
+				if (document.cookie.indexOf('wp-settings-') !== -1) {
+					this.wpUser = true
+				}
+			},
+
+			//Лидформы
 			searchLeadForms: function(e) {
 				//Ищем универсальные лидформы
 				if ( document.querySelector('.lidform-universal-container') ) {
