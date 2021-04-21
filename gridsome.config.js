@@ -57,6 +57,16 @@ module.exports = {
 			}
 		},
 		{
+			use: `gridsome-plugin-algolia`,
+			options: {
+				appId: '7Y1P83X4M1',
+				apiKey: 'e268d391762ad62104c571742cfd1afa',
+				collections,
+				chunkSize: 10000, // default: 1000
+				enablePartialUpdates: true, // default: false
+			},
+		},
+		{
 			use: "gridsome-plugin-manifest",
 			options: {
 				start_url: "/",
@@ -131,16 +141,6 @@ module.exports = {
 		// 		}
 		// 	}
 		// },
-		{
-			use: `gridsome-plugin-algolia`,
-			options: {
-				appId: '7Y1P83X4M1',
-				apiKey: 'e268d391762ad62104c571742cfd1afa',
-				collections,
-				chunkSize: 10000, // default: 1000
-				enablePartialUpdates: true, // default: false
-			},
-		}
 	],
 	
 	
