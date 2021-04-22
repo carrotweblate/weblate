@@ -176,6 +176,10 @@
 						{
 							title: 'Внедрение для крупных компаний',
 							to: '/introduction-carrotquest/'
+						},
+						{
+							title: 'Заявка на демо',
+							to: '/free-demo/'
 						}
 					]
 				},
