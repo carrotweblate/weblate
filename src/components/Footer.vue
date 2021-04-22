@@ -178,7 +178,7 @@
 							to: '/introduction-carrotquest/'
 						},
 						{
-							title: 'Демо',
+							title: 'Заявка на демо',
 							to: '/free-demo/'
 						}
 					]
