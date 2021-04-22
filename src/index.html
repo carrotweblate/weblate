@@ -3,17 +3,17 @@
 	<head>
 		<meta charset="utf-8">
 		<script type="text/javascript">
-			//Удаляем Service worker
-			try {
-				navigator.serviceWorker.getRegistrations().then(function(registrations) {
-					for(let registration of registrations) {
-						registration.unregister()
-					}
-				})
-				console.log('Сервис воркер удалён')
-			} catch {
-				console.log('Сервис воркер не найден')
-			}
+			// //Удаляем Service worker
+			// try {
+			// 	navigator.serviceWorker.getRegistrations().then(function(registrations) {
+			// 		for(let registration of registrations) {
+			// 			registration.unregister()
+			// 		}
+			// 	})
+			// 	console.log('Сервис воркер удалён')
+			// } catch {
+			// 	console.log('Сервис воркер не найден')
+			// }
 			
 			//CQ
 			(function() {

@@ -44,7 +44,7 @@ const collections = [{
 
 module.exports = {
 	siteName: 'Carrot quest',
-	titleTemplate: "%s",
+	titleTemplate: '%s',
 
 	plugins: [
 		//GTM
@@ -67,15 +67,24 @@ module.exports = {
 			},
 		},
 		{
-			use: "gridsome-plugin-manifest",
+			use: 'gridsome-plugin-manifest',
 			options: {
-				start_url: "/",
-				background_color: "#fff",
-				icon_path: "./static/favicon.png",
-				name: "Carrot quest",
-				short_name: "CQ",
-				theme_color: "#FF7C16",
-				lang: "ru",
+				start_url: '/',
+				background_color: '#fff',
+				icon_path: './static/favicon.png',
+				name: 'Carrot quest',
+				short_name: 'CQ',
+				theme_color: '#FF7C16',
+				lang: 'ru',
+			},
+		},
+		{
+			use: 'gridsome-plugin-service-worker',
+			options: {
+				networkFirst: {
+					cacheName: 'nf-v1',
+					routes: ['/', /\.(js|css|png)/],
+				},
 			},
 		},
 		// {

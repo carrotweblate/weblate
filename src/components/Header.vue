@@ -183,7 +183,7 @@
 					<!-- Поиск по блогу на мобиле -->
 					<b-form v-if="!isSearchBlog" v-on:submit.prevent="search" class="mr-1 nav_search d-block d-lg-none ">
 						<b-input-group class="mw-100 mb-3">
-							<b-form-input id="searchFormInput" placeholder="Поиск по блогу" v-model="searchBlog" />
+							<b-form-input id="searchFormInputMobile" placeholder="Поиск по блогу" v-model="searchBlog" />
 							<b-input-group-append>
 								<b-button type="submit">
 									Найти
