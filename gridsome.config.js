@@ -83,7 +83,7 @@ module.exports = {
 			options: {
 				networkFirst: {
 					cacheName: 'nf-v1',
-					routes: ['/', /\.(js|css|png)/],
+					routes: ['/', /\.(js|css)/],
 				},
 			},
 		},

@@ -62,6 +62,9 @@ module.exports = function (api) {
 						} else {
 							tildaPath = '/' + item.filename
 						}
+						let pageHTML = data.result.html
+						//Carrot-quest
+						pageHTML = pageHTML.split('Carrot quest').join('Carrot&nbsp;quest')
 						createPage({
 							path: tildaPath,
 							component: './src/templates/Tilda.vue',
@@ -123,6 +126,8 @@ module.exports = function (api) {
 				//Видео
 				pageHTML = pageHTML.split('<video ').join('<video autoplay loop muted playsinline ')
 				pageHTML = pageHTML.split('controls').join('')
+				//Carrot-quest
+				pageHTML = pageHTML.split('Carrot quest').join('Carrot&nbsp;quest')
 
 				pageContext = {
 					id: item.id,
@@ -185,6 +190,7 @@ module.exports = function (api) {
 								pageHTML = pageHTML.split('http://www.carrotquest.io/').join('https://www.carrotquest.io/')
 								pageHTML = pageHTML.split('http://carrotquest.io/').join('https://www.carrotquest.io/')
 								pageHTML = pageHTML.split('https://www.carrotquest.io/blog/wp-content/uploads/').join('https://cdn-www.carrotquest.io/blog/wp-content/uploads/')
+								pageHTML = pageHTML.split('Carrot quest').join('Carrot&nbsp;quest')
 								pageHTML = tp.execute(pageHTML)
 								fs.writeFile('./static/blog/' + item.slug + '/amp/index.html', pageHTML, 'utf8' , function (err) {
 									if (err) return console.log(err)

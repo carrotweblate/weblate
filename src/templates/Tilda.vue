@@ -18,6 +18,18 @@
 </template>
 
 
+<page-query>
+	query {
+		allTildaFiles {
+			edges {
+				node {
+					css
+					js
+				}
+			}
+		}
+	}
+</page-query>
 
 
 <script>
@@ -29,6 +41,20 @@
 		},
 		//Делаем в HEAD
 		metaInfo() {
+			let tildaLink = [
+				{
+					rel: 'canonical',
+					href: 'https://www.carrotquest.io/' + this.$context.slug
+				}
+			]
+			let tildaScripts = []
+			for ( var value of this.$page.allTildaFiles.edges.reverse() ) {
+				if (value.node.css) {
+					tildaLink.push({ rel: 'stylesheet' , href: value.node.css })
+				} else {
+					tildaScripts.push({ src: value.node.js })
+				}
+			}
 			return {
 				title: this.$context.title,
 				meta: [
@@ -58,48 +84,11 @@
 						content: this.$context.cover
 					},
 				],
-				link: [
-					{
-						rel: 'canonical',
-						href: 'https://www.carrotquest.io/' + this.$context.slug
-					}
-				]
-			}
-		},
-		beforeMount () {
-			//Подгружаем стили и скрипты тильды
-			for ( var value of this.$page.allTildaFiles.edges.reverse() ) {
-				if ( ( value.node.js ) && (value.node.js.indexOf('jquery-1.10.2.min.js') >= 0) ) {
-					let tildaScript = document.createElement("script")
-					tildaScript.src = value.node.js
-					tildaScript.setAttribute('rel' , 'preload')
-					document.head.appendChild(tildaScript)
-				}
+				link: tildaLink,
+				script: tildaScripts
 			}
 		},
 		mounted() {
-			//Подгружаем стили и скрипты тильды
-			for ( var value of this.$page.allTildaFiles.edges.reverse() ) {
-				if (value.node.css) {
-					let tildaCss = document.createElement("link")
-					tildaCss.setAttribute('rel', 'stylesheet')
-					tildaCss.setAttribute('href', value.node.css)
-					document.head.appendChild(tildaCss)
-				} else {
-					if ( value.node.js ) {
-						let tildaScript = document.createElement("script")
-						tildaScript.src = value.node.js
-						if (tildaScript.src.indexOf('jquery-1.10.2.min.js') < 0) {
-							tildaScript.setAttribute('defer' , '')
-						}
-						document.head.appendChild(tildaScript)
-					}
-				}
-			}
-
-			//Копируем массив тильды для удаления
-			this.tilda = this.$page.allTildaFiles.edges
-
 			// Ищем ссылки для открытия модалок на скачивание файлов
 			if ( document.querySelector('a[href*="#open-modal-video"]') ) {
 				document.querySelectorAll('a[href*="#open-modal-video"]').forEach(function(item) {
@@ -108,18 +97,6 @@
 						this.$refs['open-modal-video'].show()
 					}.bind(this))
 				}.bind(this))
-			}
-		},
-		beforeDestroy () {
-			//Удаляем стили и скрипты тильды
-			for ( var value of this.tilda ) {
-				if (value.node.css) {
-					let tildaCss = document.querySelector('link[href*="' + value.node.css + '"]')
-					document.head.removeChild(tildaCss)
-				} else {
-					let tildaScript = document.querySelector('script[src*="' + value.node.js + '"]')
-					document.head.removeChild(tildaScript)
-				}
 			}
 		}
 	}
@@ -146,22 +123,9 @@
 			}
 		}
 	}
-	* , :before , :after {
-		box-sizing: border-box !important;
-	}
-</style>
-
-
-
-<page-query>
-	query {
-		allTildaFiles {
-			edges {
-				node {
-					css
-					js
-				}
-			}
+	header , footer , .modal-dialog {
+		* , :before , :after {
+			box-sizing: border-box !important;
 		}
 	}
-</page-query>
+</style>
