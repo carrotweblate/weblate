@@ -4,6 +4,9 @@
 		<loc>https://www.carrotquest.io/sitemap-static.xml</loc>
 	</sitemap>
 	<sitemap>
+		<loc>https://www.carrotquest.io/sitemap-amp.xml</loc>
+	</sitemap>
+	<sitemap>
 		<loc>https://www.carrotquest.io/blog/post-sitemap.xml</loc>
 	</sitemap>
 	<sitemap>
