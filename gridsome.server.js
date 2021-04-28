@@ -5,13 +5,37 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
+//Загрузка API
 const axios = require('axios')
 
+//Типограф
 const Typograf = require('typograf')
 const tp = new Typograf({locale: ['ru', 'en-US']})
 tp.enableRule('common/nbsp/*')
 
+//Работа с файлами
 const fs = require('fs')
+
+//Обработка текста и ссылок
+function renderURL (data) {
+	//Публичный домен
+	return data.split('wp.carrotquest.io').join('www.carrotquest.io')
+}
+function renderText (data) {
+	let pageHTML = renderURL(data)
+	//Lazyload
+	pageHTML = pageHTML.split('<img src').join('<img loading="lazy" src')
+	//Видео
+	pageHTML = pageHTML.split('<video ').join('<video autoplay loop muted playsinline ')
+	pageHTML = pageHTML.split('controls').join('')
+	//Carrot-quest
+	pageHTML = pageHTML.split('Carrot quest').join('Carrot&nbsp;quest')
+	//Типографируем
+	pageHTML = tp.execute(pageHTML)
+
+	return pageHTML
+}
+
 
 module.exports = function (api) {
 	// API from Tilda Files
@@ -43,7 +67,7 @@ module.exports = function (api) {
 					//Интеграции
 					|| item.id == '9970780' || item.id == '11191195' || item.id == '11193030' || item.id == '11193800' || item.id == '11195611' || item.id == '11431149' || item.id == '11431453' || item.id == '11431738' || item.id == '11007077' || item.id == '11183247' || item.id == '11183537' || item.id == '11194593' || item.id == '11195339' || item.id == '11430916' || item.id == '11432052' || item.id == '11432895' || item.id == '11433520' || item.id == '13669305' || item.id == '13670106' || item.id == '13670549' || item.id == '13670751' || item.id == '3785072' || item.id == '3195986'
 					//Вебинары
-					|| item.id == '18822720' || item.id == '17071238' || item.id == '17091896' || item.id == '17931613' || item.id == '18334680'
+					|| item.id == '18822720' || item.id == '17071238' || item.id == '17091896' || item.id == '17931613' || item.id == '18334680' || item.id == '19158192' 
 					//Лидбот
 					|| item.id == '18405836' || item.id == '18459207' || item.id == '18461004' || item.id == '18461139' || item.id == '18493211' || item.id == '18493266' || item.id == '18493284' || item.id == '18633619'
 					//Плейбуки
@@ -90,7 +114,7 @@ module.exports = function (api) {
 	// API Wordpress - создаём Посты
 	api.loadSource(async actions => {
 		const { data } = await axios.get(
-			'https://www.carrotquest.io/blog/wp-json/wp/v2/posts?&per_page=999'
+			'https://wp.carrotquest.io/blog/wp-json/wp/v2/posts?&per_page=99'
 		)
 		// Данные для вывода статей
 		const collection = actions.addCollection('post')
@@ -105,7 +129,7 @@ module.exports = function (api) {
 				categories: item.categories,
 				authors: item.acf.post__authors,
 				author: item.author,
-				featured_media: item.featured_media_medium,
+				featured_media: renderURL(item.featured_media_medium),
 				featured_media_large: item.featured_media_large[0],
 				content: tp.execute(item.content.rendered),
 				sticky: item.sticky,
@@ -116,19 +140,6 @@ module.exports = function (api) {
 		// Делаем страницы статей
 		api.createManagedPages(async ({ createPage }) => {
 			for (const item of data) {
-				let pageHTML = item.content.rendered
-				//CDN для ресурсов
-				pageHTML = pageHTML.split('http://www.carrotquest.io/').join('https://www.carrotquest.io/')
-				pageHTML = pageHTML.split('http://carrotquest.io/').join('https://www.carrotquest.io/')
-				pageHTML = pageHTML.split('https://www.carrotquest.io/blog/wp-content/uploads/').join('https://cdn-www.carrotquest.io/blog/wp-content/uploads/')
-				//Lazyload
-				pageHTML = pageHTML.split('<img src').join('<img loading="lazy" src')
-				//Видео
-				pageHTML = pageHTML.split('<video ').join('<video autoplay loop muted playsinline ')
-				pageHTML = pageHTML.split('controls').join('')
-				//Carrot-quest
-				pageHTML = pageHTML.split('Carrot quest').join('Carrot&nbsp;quest')
-
 				pageContext = {
 					id: item.id,
 					slug: item.slug,
@@ -152,9 +163,9 @@ module.exports = function (api) {
 					
 					//Тело статьи
 					featured_media: item.featured_media_large,
-					title: tp.execute(item.title.rendered),
-					description: tp.execute(item.excerpt.rendered),
-					content: tp.execute(pageHTML)
+					title: renderText(item.title.rendered),
+					description: renderText(item.excerpt.rendered),
+					content: renderText(item.content.rendered)
 				}
 				
 				createPage({
@@ -184,15 +195,9 @@ module.exports = function (api) {
 					if (ampModified.date != item.modified ) {
 						fs.mkdirSync('./static/blog/' + item.slug , { recursive: true })
 						fs.mkdirSync('./static/blog/' + item.slug + '/amp/' , { recursive: true })
-						axios.get('https://landing-test.carrotquest.io/blog/' + item.slug + '/amp/')
+						axios.get('https://wp.carrotquest.io/blog/' + item.slug + '/amp/')
 							.then(response => {
-								pageHTML = response.data
-								pageHTML = pageHTML.split('http://www.carrotquest.io/').join('https://www.carrotquest.io/')
-								pageHTML = pageHTML.split('http://carrotquest.io/').join('https://www.carrotquest.io/')
-								pageHTML = pageHTML.split('https://www.carrotquest.io/blog/wp-content/uploads/').join('https://cdn-www.carrotquest.io/blog/wp-content/uploads/')
-								pageHTML = pageHTML.split('Carrot quest').join('Carrot&nbsp;quest')
-								pageHTML = tp.execute(pageHTML)
-								fs.writeFile('./static/blog/' + item.slug + '/amp/index.html', pageHTML, 'utf8' , function (err) {
+								fs.writeFile('./static/blog/' + item.slug + '/amp/index.html', renderText(response.data), 'utf8' , function (err) {
 									if (err) return console.log(err)
 								})
 								fs.writeFile('./static/blog/' + item.slug + '/amp/modified.json', JSON.stringify({ date: item.modified }), 'utf8' , function (err) {
@@ -209,7 +214,7 @@ module.exports = function (api) {
 	// API Wordpress - создаём Категории
 	api.loadSource(async actions => {
 		const { data } = await axios.get(
-			'https://www.carrotquest.io/blog/wp-json/wp/v2/categories?_fields=id,name,slug,description&per_page=50'
+			'https://wp.carrotquest.io/blog/wp-json/wp/v2/categories?_fields=id,name,slug,description&per_page=50'
 		)
 		// Данные для вывода категорий
 		const collection = actions.addCollection('categories')
@@ -243,7 +248,7 @@ module.exports = function (api) {
 	// API Wordpress - создаём Авторов
 	api.loadSource(async actions => {
 		const { data } = await axios.get(
-			'https://www.carrotquest.io/blog/wp-json/wp/v2/users?_fields=id,name,description,slug,avatar_urls&per_page=50'
+			'https://wp.carrotquest.io/blog/wp-json/wp/v2/users?_fields=id,name,description,slug,avatar_urls&per_page=50'
 		)
 		// Данные для вывода автора
 		const collection = actions.addCollection('authors')
@@ -259,12 +264,10 @@ module.exports = function (api) {
 		// Делаем страницы авторов
 		api.createManagedPages(async ({ createPage }) => {
 			const { data } = await axios.get(
-				'https://www.carrotquest.io/blog/wp-json/wp/v2/pages?_parent=28678'
+				'https://wp.carrotquest.io/blog/wp-json/wp/v2/pages?_parent=28678'
 			)
 			for (const item of data) {
 				let pageHTML = item.content.rendered
-				//CDN для ресурсов
-				pageHTML = pageHTML.split('https://www.carrotquest.io/blog/wp-content/uploads/').join('https://cdn-www.carrotquest.io/blog/wp-content/uploads/')
 
 				if (item.parent == 28678) {
 					createPage({
@@ -291,6 +294,25 @@ module.exports = function (api) {
 			}
 		})
 	})
+
+	//Делаем sitemaps
+	api.loadSource(async actions => {
+		let blogSitemaps = [
+			'post-sitemap.xml',
+			'page-sitemap.xml',
+			'author-sitemap.xml'
+		]
+		blogSitemaps.forEach(async element => {
+			const { data } = await axios.get(
+				'https://wp.carrotquest.io/blog/' + element
+			)
+			fs.writeFile('./static/blog/' + element, data.split('wp.carrotquest.io').join('www.carrotquest.io') , 'utf8' , function (err) {
+				if (err) return console.log(err)
+			})
+		})
+		
+	})
+
   
 	api.loadSource(({ addCollection }) => {
 	// Use the Data Store API here: https://gridsome.org/docs/data-store-api/
