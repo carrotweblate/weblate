@@ -5,7 +5,7 @@
 			<!-- Редактировать статью -->
 			<b-row v-if="wpUser">
 				<b-col class="mt-5">
-					<b-button :href="'https://www.carrotquest.io/blog/wp-admin/post.php?post=' + $context.id + '&action=edit'" variant="outline-primary" target="_blank">Редактировать статью</b-button>
+					<b-button :href="'https://wp.carrotquest.io/blog/wp-admin/post.php?post=' + $context.id + '&action=edit'" variant="outline-primary" target="_blank">Редактировать статью</b-button>
 				</b-col>
 			</b-row>
 
@@ -244,37 +244,37 @@
 			}
 		},
 		async mounted() {
-			let routes = '' + location
-			let url = ''
-			if (routes.search('localhost') != -1) {
-				url = 'https://cors-anywhere.herokuapp.com/'
-			}
-			axios.get(url + 'https://www.carrotquest.io/blog/wp-json/wp/v2/posts/' + this.$context.id + '?_fields=modified')
-				.then(response => {
-					if (response.data.modified != this.$context.modified) {
-						url = url + 'https://www.carrotquest.io/blog/wp-json/wp/v2/posts/' + this.$context.id + '?_fields=content'
-						axios.get(url)
-							.then(response => {
-								var pageHTML = response.data.content.rendered
-								//CDN для ресурсов
-								pageHTML = pageHTML.split('http://').join('https://')
-								pageHTML = pageHTML.split('wp.carrotquest.io').join('www.carrotquest.io')
-								//Lazyload
-								pageHTML = pageHTML.split('<img src').join('<img loading="lazy" src')
-								//Видео
-								pageHTML = pageHTML.split('<video ').join('<video autoplay loop muted playsinline ')
-								pageHTML = pageHTML.split('controls').join('')
-								//Carrot quest
-								pageHTML = pageHTML.split('Carrot quest').join('Carrot&nbsp;quest')
-								this.$context.content = pageHTML
-							})
-							.catch(error => {
-								console.log(error)
-								this.errored = true
-							})
-						}
-					}
-				)
+			// let routes = '' + location
+			// let url = ''
+			// if (routes.search('localhost') != -1) {
+			// 	url = 'https://cors-anywhere.herokuapp.com/'
+			// }
+			// axios.get(url + 'https://www.carrotquest.io/blog/wp-json/wp/v2/posts/' + this.$context.id + '?_fields=modified')
+			// 	.then(response => {
+			// 		if (response.data.modified != this.$context.modified) {
+			// 			url = url + 'https://www.carrotquest.io/blog/wp-json/wp/v2/posts/' + this.$context.id + '?_fields=content'
+			// 			axios.get(url)
+			// 				.then(response => {
+			// 					var pageHTML = response.data.content.rendered
+			// 					//CDN для ресурсов
+			// 					pageHTML = pageHTML.split('http://').join('https://')
+			// 					pageHTML = pageHTML.split('wp.carrotquest.io').join('www.carrotquest.io')
+			// 					//Lazyload
+			// 					pageHTML = pageHTML.split('<img src').join('<img loading="lazy" src')
+			// 					//Видео
+			// 					pageHTML = pageHTML.split('<video ').join('<video autoplay loop muted playsinline ')
+			// 					pageHTML = pageHTML.split('controls').join('')
+			// 					//Carrot quest
+			// 					pageHTML = pageHTML.split('Carrot quest').join('Carrot&nbsp;quest')
+			// 					this.$context.content = pageHTML
+			// 				})
+			// 				.catch(error => {
+			// 					console.log(error)
+			// 					this.errored = true
+			// 				})
+			// 			}
+			// 		}
+			// 	)
 			this.searchLeadForms()
 			this.$page.allPost.edges = this.$page.allPost.edges.sort(function (a, b) {return Math.random() - 0.5;}).slice(0, 3)
 			this.wpLogined()

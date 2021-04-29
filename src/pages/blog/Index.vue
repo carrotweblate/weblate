@@ -25,7 +25,7 @@
 					<b-col md="12" lg="8" class="post-card mb-4 mb-md-5">
 						<g-link :to="'/blog/' + $page.recent.edges[0].node.slug + '/'" class="post__box box-shadow box h-100 d-block">
 							<!-- Изображение -->
-							<div class="post__box__pic mb-4" :style="'background-image: url(' + $page.recent.edges[0].node.featured_media_large + ')'"></div>
+							<div class="post__box__pic mb-4" :style="'background-image: url(' + $page.recent.edges[0].node.featured_media_large.split('wp.carrotquest.io').join('www.carrotquest.io') + ')'"></div>
 							<!-- Категории -->
 							<div class="post__box__categories px-3 mb-4">
 								<template v-for="edges in $page.allCategories.edges" >
@@ -122,7 +122,7 @@
 					<b-col md="12" lg="8" class="post-card mb-4 mb-md-5">
 						<g-link :to="'/blog/' + $page.cases.edges[0].node.slug + '/'" class="post__box box-shadow box h-100 d-block">
 							<!-- Изображение -->
-							<div class="post__box__pic mb-3" :style="'background-image: url(' + $page.cases.edges[0].node.featured_media_large + ')'"></div>
+							<div class="post__box__pic mb-3" :style="'background-image: url(' + $page.cases.edges[0].node.featured_media_large.split('wp.carrotquest.io').join('www.carrotquest.io') + ')'"></div>
 							<!-- Заголовок -->
 							<div class="h1 px-3 pb-4" v-html="$page.cases.edges[0].node.title" />
 						</g-link>

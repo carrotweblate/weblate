@@ -19,7 +19,9 @@ const fs = require('fs')
 //Обработка текста и ссылок
 function renderURL (data) {
 	//Публичный домен
-	return data.split('wp.carrotquest.io').join('www.carrotquest.io')
+	if (!!data) {
+		return data.split('wp.carrotquest.io').join('www.carrotquest.io')
+	}
 }
 function renderText (data) {
 	let pageHTML = renderURL(data)
@@ -114,7 +116,7 @@ module.exports = function (api) {
 	// API Wordpress - создаём Посты
 	api.loadSource(async actions => {
 		const { data } = await axios.get(
-			'https://wp.carrotquest.io/blog/wp-json/wp/v2/posts?&per_page=99'
+			'https://wp.carrotquest.io/blog/wp-json/wp/v2/posts?&per_page=999'
 		)
 		// Данные для вывода статей
 		const collection = actions.addCollection('post')
