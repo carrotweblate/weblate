@@ -691,7 +691,7 @@
 					}
 					@media (hover: none) {
 						&::after {
-							content: url("https://cdn-www.carrotquest.io/static/img/library/download_nohover.svg");
+							content: url("https://www.carrotquest.io/static/img/library/download_nohover.svg");
 							margin-top: -12px;
 							top: 50%;
 							opacity: 1;

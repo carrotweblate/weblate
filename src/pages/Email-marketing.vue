@@ -129,8 +129,8 @@
 				</b-col>
 				<b-col lg="8">
 					<video autoplay loop muted playsinline class="embed-responsive-item mw-100">
-						<source src="https://cdn-www.carrotquest.io/assets/video/components/2.webm" type="video/webm">
-						<source src="https://cdn-www.carrotquest.io/assets/video/components/2.mp4" type="video/mp4">
+						<source src="https://www.carrotquest.io/assets/video/components/2.webm" type="video/webm">
+						<source src="https://www.carrotquest.io/assets/video/components/2.mp4" type="video/mp4">
 					</video>
 				</b-col>
 			</b-row>
@@ -482,8 +482,8 @@
 										Анализ реакции пользователя на письмо и его дальнейших действий на сайте (в карточке пользователя)
 									</p>
 									<video autoplay loop muted playsinline class="embed-responsive-item mw-100 d-lg-none">
-										<source src="https://cdn-www.carrotquest.io/assets/video/components/3.webm" type="video/webm">
-										<source src="https://cdn-www.carrotquest.io/assets/video/components/3.mp4" type="video/mp4">
+										<source src="https://www.carrotquest.io/assets/video/components/3.webm" type="video/webm">
+										<source src="https://www.carrotquest.io/assets/video/components/3.mp4" type="video/mp4">
 									</video>
 								</div>                        
 							</div>
@@ -513,8 +513,8 @@
 							</b-tab>
 							<b-tab lazy>
 								<video autoplay loop muted playsinline class="embed-responsive-item mw-100">
-									<source src="https://cdn-www.carrotquest.io/assets/video/components/3.webm" type="video/webm">
-									<source src="https://cdn-www.carrotquest.io/assets/video/components/3.mp4" type="video/mp4">
+									<source src="https://www.carrotquest.io/assets/video/components/3.webm" type="video/webm">
+									<source src="https://www.carrotquest.io/assets/video/components/3.mp4" type="video/mp4">
 								</video>
 							</b-tab>
 							<b-tab lazy>

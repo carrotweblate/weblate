@@ -15,8 +15,8 @@
 					</b-col>
 					<b-col lg="6" class="d-none d-lg-block">
 						<video autoplay="autoplay" loop="loop" muted="muted" playsinline="" width="530" height="463" class="embed-responsive-item">
-							<source src="https://cdn-www.carrotquest.io/assets/video/components/8.webm" type="video/webm">
-							<source src="https://cdn-www.carrotquest.io/assets/video/components/8.mp4" type="video/mp4">
+							<source src="https://www.carrotquest.io/assets/video/components/8.webm" type="video/webm">
+							<source src="https://www.carrotquest.io/assets/video/components/8.mp4" type="video/mp4">
 						</video>
 					</b-col>
 				</b-row>
@@ -122,8 +122,8 @@
 					</b-col>
 					<b-col cols="12" class="text-lg-center">
 						<video autoplay="autoplay" loop="loop" muted="muted" playsinline="" width="1100" height="619" class="embed-responsive-item w-100">
-							<source src="https://cdn-www.carrotquest.io/assets/video/components/14.webm" type="video/webm">
-							<source src="https://cdn-www.carrotquest.io/assets/video/components/14.mp4" type="video/mp4">
+							<source src="https://www.carrotquest.io/assets/video/components/14.webm" type="video/webm">
+							<source src="https://www.carrotquest.io/assets/video/components/14.mp4" type="video/mp4">
 						</video>
 						<b-button href="/chatbot/constructor/" variant="outline-primary" class="mt-4 mt-md-5">Смотреть подробнее про конструктор лид-бота</b-button>
 					</b-col>

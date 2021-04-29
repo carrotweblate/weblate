@@ -186,7 +186,7 @@
 						width: 100%;
 						height: 100%;
 						border: none;
-						background: #fff url(https://cdn-www.carrotquest.io/static/img/testdrive/loading.gif)  center no-repeat;	
+						background: #fff url(https://www.carrotquest.io/static/img/testdrive/loading.gif)  center no-repeat;	
 						
 						img {
 							width: 100% !important;
