@@ -2,7 +2,7 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>https://www.carrotquest.io/blog/</loc>
-		<lastmod>2021-04-28T12:37:47+00:00</lastmod>
+		<lastmod>2021-04-29T06:44:34+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://www.carrotquest.io/blog/test-na-kogo-podpisatsya/</loc>
@@ -14233,7 +14233,7 @@
 	</url>
 	<url>
 		<loc>https://www.carrotquest.io/blog/look-alike-facebook/</loc>
-		<lastmod>2021-04-28T12:37:47+00:00</lastmod>
+		<lastmod>2021-04-29T06:44:34+00:00</lastmod>
 		<image:image>
 			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2021/04/pasted-image-0-2.png</image:loc>
 			<image:title><![CDATA[look-alike]]></image:title>

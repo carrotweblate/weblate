@@ -13,6 +13,55 @@
 		<!-- </b-overlay> -->
 
 		<!-- Модалка для скачивания файлов -->
+		<b-modal ref="open-modal-demo" hide-footer :title="modalTitle">
+			<b-form v-on:submit.prevent="modalDemo">
+				<b-form-input 
+					placeholder="Имя" 
+					type="text" 
+					required
+					v-model="modalName"
+					class="px-3 py-4"
+				/>
+				<b-form-input 
+					placeholder="Телефон" 
+					type="text" 
+					pattern="^[^A-zА-я]{5,}"
+					required
+					v-model="modalPhone"
+					class="px-3 py-4 mt-3"
+				/>
+				<b-form-input 
+					placeholder="Email" 
+					type="email" 
+					required
+					v-model="modalEmail"
+					class="px-3 py-4 mt-3"
+				/>
+				<b-form-input 
+					placeholder="Должность" 
+					type="text"
+					required
+					v-model="modalRole"
+					class="px-3 py-4 mt-3"
+				/>
+				<b-form-input 
+					placeholder="URL вашего сайта" 
+					type="text"
+					pattern=".+\.+.+"
+					required
+					v-model="modalSite"
+					class="px-3 py-4 mt-3"
+				/>
+				<b-button 
+					type="submit" 
+					variant="primary" 
+					class="px-3 py-2 mt-4">
+					Получить консультацию
+				</b-button>
+			</b-form>
+		</b-modal>
+
+		<!-- Модалка для скачивания файлов -->
 		<b-modal ref="open-modal-download" hide-footer :title="modalTitle">
 			<b-form v-on:submit.prevent="modalDownload">
 				<b-form-input 
@@ -148,6 +197,10 @@
 			Проверьте свой email: {{modalEmail}}
 		</b-modal>
 
+		<b-modal ref="suсcessDemo" hide-footer title="Всё успешно отправлено">
+			В ближайшее время мы свяжемся с вами
+		</b-modal>
+
 	</div>
 	
 </template>
@@ -200,6 +253,20 @@
 						item.addEventListener('click', function(e) {
 							e.preventDefault()
 							carrotquest.track('Записаться на демо через поп-ап');
+						}.bind(this))
+					}.bind(this))
+				}
+
+				// Ищем ссылки для открытия модалок на Демо
+				if ( document.querySelector('a[href*="#open-modal-demo"]') ) {
+					document.querySelectorAll('a[href*="#open-modal-demo"]').forEach(function(item) {
+						item.addEventListener('click', function(e) {
+							e.preventDefault()
+							this.$refs['open-modal-demo'].show()
+
+							let addr = new URL(e.srcElement.href.replace('#open-modal-demo' , ''))
+
+							this.modalTitle = addr.searchParams.get('title')
 						}.bind(this))
 					}.bind(this))
 				}
@@ -261,6 +328,43 @@
 						}.bind(this))
 					}.bind(this))
 				}
+			},
+
+			//Демо
+			modalDemo () {
+				carrotquest.track("Заказал консультацию", {
+					'Телефон': this.modalPhone,
+					'Имя': this.modalName,
+					'Email': this.modalEmail,
+					'Должность': this.modalRole,
+					'Адрес сайта': this.modalSite,
+					'url': location.host + location.pathname
+				});
+				carrotquest.identify([
+					{"op": "update_or_create", "key": "$phone", "value": this.modalPhone},
+					{"op": "update_or_create", "key": "$name", "value": this.modalName},
+					{"op": "update_or_create", "key": "$email", "value": this.modalEmail},
+					{"op": "update_or_create", "key": "Должность", "value": this.modalRole},
+					{"op": "update_or_create", "key": "Адрес сайта", "value": this.modalSite}
+				]);
+
+				dataLayer.push({ event: 'UAevent', eventCategory: 'leads', eventAction: 'phone', eventLabel: location.host + location.pathname })
+				fbq('trackCustom', 'get_demo', {page: location.pathname})
+
+				carrotquest.track("Заполнил форму на демо", {
+					'Телефон': this.modalPhone,
+					'Имя': this.modalName,
+					'Email': this.modalEmail,
+					'Должность': this.modalRole,
+					'Адрес сайта': this.modalSite,
+					'url': location.host + location.pathname
+				});
+
+				this.$refs['open-modal-demo'].hide()
+				this.$refs['suсcessDemo'].show()
+				setTimeout(() => {
+					this.$refs['suсcessDemo'].hide()
+				}, 7000);
 			},
 
 			//Скачивание файлов
