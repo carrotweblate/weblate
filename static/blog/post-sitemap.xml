@@ -2,7 +2,7 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>https://www.carrotquest.io/blog/</loc>
-		<lastmod>2021-04-29T06:44:34+00:00</lastmod>
+		<lastmod>2021-04-30T08:26:42+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://www.carrotquest.io/blog/test-na-kogo-podpisatsya/</loc>
@@ -5113,46 +5113,6 @@
 		<image:image>
 			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/02/%D0%BA%D0%BE%D0%BD%D0%B2%D0%B5%D1%80%D1%82-%D0%BA%D0%B8%D1%82-3.png</image:loc>
 			<image:caption><![CDATA[авторизация аккаунта в ConvertKit]]></image:caption>
-		</image:image>
-	</url>
-	<url>
-		<loc>https://www.carrotquest.io/blog/formula-roi/</loc>
-		<lastmod>2021-04-07T20:04:49+00:00</lastmod>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2018/10/%D0%9E%D0%B1%D0%BB%D0%BE%D0%B6%D0%BA%D0%B0-ROI.jpg</image:loc>
-			<image:title><![CDATA[Обложка ROI]]></image:title>
-			<image:caption><![CDATA[ROI]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2018/10/%D0%A4%D0%BE%D1%80%D0%BC%D1%83%D0%BB%D0%B0-ROI.png</image:loc>
-			<image:caption><![CDATA[ROI]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2018/10/%D0%A4%D0%BE%D1%80%D0%BC%D1%83%D0%BB%D0%B0-ROMI.png</image:loc>
-			<image:caption><![CDATA[ROMI]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2018/10/%D0%A4%D0%BE%D1%80%D0%BC%D1%83%D0%BB%D0%B0-ROAS.png</image:loc>
-			<image:caption><![CDATA[ROAS]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2018/10/%D0%A4%D0%BE%D1%80%D0%BC%D1%83%D0%BB%D0%B0-ROI.png</image:loc>
-			<image:caption><![CDATA[ROI]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2018/10/%D0%A2%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D0%B0.png</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2018/10/%D0%A2%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D0%B02.png</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/08/2.png</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/08/1.png</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2018/10/%D0%A2%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D0%B03.png</image:loc>
 		</image:image>
 	</url>
 	<url>
@@ -13870,24 +13830,6 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://www.carrotquest.io/blog/case-mottor/</loc>
-		<lastmod>2021-04-26T10:46:16+00:00</lastmod>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/03/case-mottor.jpg</image:loc>
-			<image:title><![CDATA[case-mottor]]></image:title>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/03/case-mottor-7.png</image:loc>
-			<image:caption><![CDATA[Как инструменты Carrot quest помогают поддержке Mottor решать вопросы пользователей]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2021/04/pasted-image-0.png</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2021/04/image-8-1.png</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://www.carrotquest.io/blog/case-lidogeneraciya/</loc>
 		<lastmod>2021-04-26T10:46:56+00:00</lastmod>
 		<image:image>
@@ -14233,7 +14175,7 @@
 	</url>
 	<url>
 		<loc>https://www.carrotquest.io/blog/look-alike-facebook/</loc>
-		<lastmod>2021-04-29T06:44:34+00:00</lastmod>
+		<lastmod>2021-04-30T07:18:25+00:00</lastmod>
 		<image:image>
 			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2021/04/pasted-image-0-2.png</image:loc>
 			<image:title><![CDATA[look-alike]]></image:title>
@@ -14242,6 +14184,64 @@
 		<image:image>
 			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2021/04/%D0%B3%D0%B8%D1%84%D0%BA%D0%B0-%D0%BC%D0%B5%D0%B4%D0%BB%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F.gif</image:loc>
 			<image:caption><![CDATA[Скринкаст, как собрать look-alike аудиторию]]></image:caption>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://www.carrotquest.io/blog/formula-roi/</loc>
+		<lastmod>2021-04-30T08:20:04+00:00</lastmod>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2018/10/%D0%9E%D0%B1%D0%BB%D0%BE%D0%B6%D0%BA%D0%B0-ROI.jpg</image:loc>
+			<image:title><![CDATA[Обложка ROI]]></image:title>
+			<image:caption><![CDATA[ROI]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2018/10/%D0%A4%D0%BE%D1%80%D0%BC%D1%83%D0%BB%D0%B0-ROI.png</image:loc>
+			<image:caption><![CDATA[ROI]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2018/10/%D0%A4%D0%BE%D1%80%D0%BC%D1%83%D0%BB%D0%B0-ROMI.png</image:loc>
+			<image:caption><![CDATA[ROMI]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2018/10/%D0%A4%D0%BE%D1%80%D0%BC%D1%83%D0%BB%D0%B0-ROAS.png</image:loc>
+			<image:caption><![CDATA[ROAS]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2018/10/%D0%A4%D0%BE%D1%80%D0%BC%D1%83%D0%BB%D0%B0-ROI.png</image:loc>
+			<image:caption><![CDATA[ROI]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2018/10/%D0%A2%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D0%B0.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2018/10/%D0%A2%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D0%B02.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/08/2.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/08/1.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2018/10/%D0%A2%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D0%B03.png</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://www.carrotquest.io/blog/case-mottor/</loc>
+		<lastmod>2021-04-30T08:26:42+00:00</lastmod>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/03/case-mottor.jpg</image:loc>
+			<image:title><![CDATA[case-mottor]]></image:title>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/03/case-mottor-7.png</image:loc>
+			<image:caption><![CDATA[Как инструменты Carrot quest помогают поддержке Mottor решать вопросы пользователей]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2021/04/pasted-image-0.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2021/04/image-8-1.png</image:loc>
 		</image:image>
 	</url>
 </urlset>
