@@ -52,7 +52,7 @@
 				if (value.node.css) {
 					tildaLink.push({ rel: 'stylesheet' , href: value.node.css })
 				} else {
-					tildaScripts.push({ src: value.node.js })
+					tildaScripts.push({ src: value.node.js , defer: 'defer' })
 				}
 			}
 			return {
@@ -89,7 +89,7 @@
 			}
 		},
 		mounted() {
-			// Ищем ссылки для открытия модалок на скачивание файлов
+			// Ищем ссылки для открытия видео
 			if ( document.querySelector('a[href*="#open-modal-video"]') ) {
 				document.querySelectorAll('a[href*="#open-modal-video"]').forEach(function(item) {
 					item.addEventListener('click', function(e) {
@@ -98,7 +98,23 @@
 					}.bind(this))
 				}.bind(this))
 			}
-		}
+			if (localStorage.getItem('reloaded')) {
+				localStorage.removeItem('reloaded');
+			} else {
+				window.addEventListener("load", function(event) {
+					localStorage.setItem('reloaded', '1');
+					location.reload();
+				});
+			}
+		},
+		updated() {
+			if (localStorage.getItem('reloaded')) {
+				localStorage.removeItem('reloaded');
+			} else {
+				localStorage.setItem('reloaded', '1');
+				location.reload();
+			}
+		},
 	}
 </script>
 
@@ -107,6 +123,9 @@
 <style lang="scss">
 	.page-tilda {
 		overflow: hidden;
+		*, :after, :before {
+			box-sizing: content-box !important;
+		}
 		#t-header, #t-footer {
 			display: none;
 		}

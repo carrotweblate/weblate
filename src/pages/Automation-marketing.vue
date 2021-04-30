@@ -202,8 +202,8 @@
 			<b-row>
 				<b-col>
 					<video type="video" autoplay loop muted playsinline>
-						<source src="https://cdn-www.carrotquest.io/assets/video/components/3.webm" type="video/webm">
-						<source src="https://cdn-www.carrotquest.io/assets/video/components/3.mp4" type="video/mp4">
+						<source src="https://www.carrotquest.io/assets/video/components/3.webm" type="video/webm">
+						<source src="https://www.carrotquest.io/assets/video/components/3.mp4" type="video/mp4">
 					</video>
 				</b-col>
 			</b-row>

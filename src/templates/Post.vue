@@ -5,7 +5,7 @@
 			<!-- Редактировать статью -->
 			<b-row v-if="wpUser">
 				<b-col class="mt-5">
-					<b-button :href="'https://www.carrotquest.io/blog/wp-admin/post.php?post=' + $context.id + '&action=edit'" variant="outline-primary" target="_blank">Редактировать статью</b-button>
+					<b-button :href="'https://wp.carrotquest.io/blog/wp-admin/post.php?post=' + $context.id + '&action=edit'" variant="outline-primary" target="_blank">Редактировать статью</b-button>
 				</b-col>
 			</b-row>
 
@@ -58,8 +58,8 @@
 			<!-- Изображение записи -->
 			<b-row v-if="$context.featured_media != '0'">
 				<b-col col cols="12" class="post__image mt-4 mb-5">
-					<img v-if="$context.featured_media[2] != 274 " :src="$context.featured_media[0].split('https://www.carrotquest.io/').join('https://cdn-www.carrotquest.io/')" :width="$context.featured_media[1]" :height="$context.featured_media[2]" />
-					<img v-else :src="$context.featured_media[0].split('https://www.carrotquest.io/').join('https://cdn-www.carrotquest.io/')" :width="($context.featured_media[1] * 1.71875)" :height="( $context.featured_media[2] * 1.71875)" />
+					<img v-if="$context.featured_media[2] != 274 " :src="$context.featured_media[0].split('wp.carrotquest.io').join('www.carrotquest.io')" :width="$context.featured_media[1]" :height="$context.featured_media[2]" />
+					<img v-else :src="$context.featured_media[0].split('wp.carrotquest.io').join('www.carrotquest.io')" :width="($context.featured_media[1] * 1.71875)" :height="( $context.featured_media[2] * 1.71875)" />
 				</b-col>
 			</b-row>
 
@@ -187,10 +187,10 @@
 		},
 		//Делаем в HEAD
 		metaInfo() {
-			let postTitle = ''
 			let postMeta = []
 			let postLink = []
-			let postScript = []
+			let postJSON = this.$context.seo.json_ld[0]
+			//Создаём META статьи
 			for (let item in this.$context.seo.meta) {
 				let seo = this.$context.seo.meta[item]
 				if (!!seo.name) {
@@ -198,7 +198,7 @@
 						{
 							key: seo.name,
 							name: seo.name,
-							content: seo.content
+							content: seo.content.split('wp.carrotquest.io').join('www.carrotquest.io')
 						}
 					)
 					if (seo.name=='twitter:data1') {
@@ -209,14 +209,27 @@
 						{
 							key: seo.property,
 							property: seo.property,
-							content: seo.content
+							content: seo.content.split('wp.carrotquest.io').join('www.carrotquest.io')
 						}
 					)
 					if (seo.property=='og:url') {
-						this.metaCanonical = seo.content
+						this.metaCanonical = seo.content.split('wp.carrotquest.io').join('www.carrotquest.io')
 					}
 				}
 			}
+			//Меняем урл в JSON
+			function findAndReplace(object){
+				for(var x in object){
+					if(typeof object[x] == typeof {}){
+						findAndReplace(object[x]);
+					}
+					if (typeof object[x] === 'string') {
+						object[x] = object[x].split('wp.carrotquest.io').join('www.carrotquest.io')
+					}
+				}
+			}
+			findAndReplace(postJSON)
+			//Ссылка на AMP страницу
 			postLink.push(
 				{
 					rel: 'amphtml',
@@ -229,7 +242,7 @@
 				link: postLink,
 				script: [{
 					type: 'application/ld+json',
-					json: this.$context.seo.json_ld[0]
+					json: postJSON
 				}]
 			}
 		},
@@ -241,37 +254,37 @@
 			}
 		},
 		async mounted() {
-			let routes = '' + location
-			let url = ''
-			if (routes.search('localhost') != -1) {
-				url = 'https://cors-anywhere.herokuapp.com/'
-			}
-			axios.get(url + 'https://www.carrotquest.io/blog/wp-json/wp/v2/posts/' + this.$context.id + '?_fields=modified')
-				.then(response => {
-					if (response.data.modified != this.$context.modified) {
-						url = url + 'https://www.carrotquest.io/blog/wp-json/wp/v2/posts/' + this.$context.id + '?_fields=content'
-						axios.get(url)
-							.then(response => {
-								var pageHTML = response.data.content.rendered
-								//CDN для ресурсов
-								pageHTML = pageHTML.split('http://').join('https://')
-								pageHTML = pageHTML.split('https://www.carrotquest.io/blog/wp-content/uploads/').join('https://cdn-www.carrotquest.io/blog/wp-content/uploads/')
-								//Lazyload
-								pageHTML = pageHTML.split('<img src').join('<img loading="lazy" src')
-								//Видео
-								pageHTML = pageHTML.split('<video ').join('<video autoplay loop muted playsinline ')
-								pageHTML = pageHTML.split('controls').join('')
-								//Carrot quest
-								pageHTML = pageHTML.split('Carrot quest').join('Carrot&nbsp;quest')
-								this.$context.content = pageHTML
-							})
-							.catch(error => {
-								console.log(error)
-								this.errored = true
-							})
-						}
-					}
-				)
+			// let routes = '' + location
+			// let url = ''
+			// if (routes.search('localhost') != -1) {
+			// 	url = 'https://cors-anywhere.herokuapp.com/'
+			// }
+			// axios.get(url + 'https://www.carrotquest.io/blog/wp-json/wp/v2/posts/' + this.$context.id + '?_fields=modified')
+			// 	.then(response => {
+			// 		if (response.data.modified != this.$context.modified) {
+			// 			url = url + 'https://www.carrotquest.io/blog/wp-json/wp/v2/posts/' + this.$context.id + '?_fields=content'
+			// 			axios.get(url)
+			// 				.then(response => {
+			// 					var pageHTML = response.data.content.rendered
+			// 					//CDN для ресурсов
+			// 					pageHTML = pageHTML.split('http://').join('https://')
+			// 					pageHTML = pageHTML.split('wp.carrotquest.io').join('www.carrotquest.io')
+			// 					//Lazyload
+			// 					pageHTML = pageHTML.split('<img src').join('<img loading="lazy" src')
+			// 					//Видео
+			// 					pageHTML = pageHTML.split('<video ').join('<video autoplay loop muted playsinline ')
+			// 					pageHTML = pageHTML.split('controls').join('')
+			// 					//Carrot quest
+			// 					pageHTML = pageHTML.split('Carrot quest').join('Carrot&nbsp;quest')
+			// 					this.$context.content = pageHTML
+			// 				})
+			// 				.catch(error => {
+			// 					console.log(error)
+			// 					this.errored = true
+			// 				})
+			// 			}
+			// 		}
+			// 	)
 			this.searchLeadForms()
 			this.$page.allPost.edges = this.$page.allPost.edges.sort(function (a, b) {return Math.random() - 0.5;}).slice(0, 3)
 			this.wpLogined()
