@@ -38,6 +38,13 @@ function renderText (data) {
 	return pageHTML
 }
 
+//Сохранение скриптов
+function saveScript (name , data) {
+	fs.writeFile('./static/' + name, data , 'utf8' , function (err) {
+		if (err) return console.log(err)
+	})
+}
+
 
 module.exports = function (api) {
 	// API from Tilda Files
@@ -297,7 +304,7 @@ module.exports = function (api) {
 		})
 	})
 
-	//Делаем sitemaps
+	//Забираем sitemaps из блога, скрипты аналитики и пикселей
 	api.loadSource(async actions => {
 		let blogSitemaps = [
 			'post-sitemap.xml',
@@ -305,14 +312,30 @@ module.exports = function (api) {
 			'author-sitemap.xml'
 		]
 		blogSitemaps.forEach(async element => {
-			const { data } = await axios.get(
-				'https://wp.carrotquest.io/blog/' + element
-			)
-			fs.writeFile('./static/blog/' + element, data.split('wp.carrotquest.io').join('www.carrotquest.io') , 'utf8' , function (err) {
-				if (err) return console.log(err)
-			})
+			const { data } = await axios.get('https://wp.carrotquest.io/blog/' + element)
+			fs.writeFile('./static/blog/' + element, data.split('wp.carrotquest.io').join('www.carrotquest.io') , 'utf8' , function (err) {if (err) return console.log(err)})
 		})
-		
+		let scripts = [
+			{
+				name: 'renta-analytics.js',
+				url: 'https://cdn.renta.im/analytics/carrot_quest/analytics.js'
+			},
+			{
+				name: 'yandex-metrika.js',
+				url: 'https://mc.yandex.ru/metrika/tag.js'
+			},
+			{
+				name: 'fbevents.js',
+				url: 'https://connect.facebook.net/en_US/fbevents.js'
+			},
+			{
+				name: 'openapi.js',
+				url: 'https://vk.com/js/api/openapi.js?154'
+			},
+		]
+		scripts.forEach(async element => {
+			await axios.get(element.url).then(response => saveScript( element.name , response.data ))
+		})
 	})
 
   
