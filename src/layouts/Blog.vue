@@ -2,7 +2,7 @@
 	<div>
 		<!-- <b-overlay :show="showOverlay" v-on:click="showOverlay = false"> -->
 
-			<Header v-if="header" v-on:overlay-show="overlay" v-on:overlay-close="overlayClose" />
+			<HeaderBlog v-if="header" v-on:overlay-show="overlay" v-on:overlay-close="overlayClose" />
 
 			<slot />
 
@@ -152,14 +152,16 @@
 	
 </template>
 
+
+
 <script>
-	import Header from '~/components/Header.vue'
+	import HeaderBlog from '~/components/HeaderBlog.vue'
 	import Footer from '~/components/Footer.vue'
 	import Balcony from '~/components/Balcony.vue'
 
 	export default {
 		components: {
-			Header,
+			HeaderBlog,
 			Footer,
 			Balcony
 		},

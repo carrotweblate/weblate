@@ -253,3 +253,59 @@
 		}),
 	}
 </script>
+
+
+<style lang="scss">
+	@import "~/assets/scss/variables.scss";
+	footer {
+		margin-top: 3rem;
+		color: #333;
+		.container {
+			margin-bottom: 0 !important;
+		}
+		.footer-nav {
+			border-bottom: 1px solid #F2F2F2;
+		}
+		.apps-nav { 
+			svg {
+				position: relative;
+			}
+			.windows svg , .android svg {
+				top: -1px;
+			}
+			.ios svg {
+				top: -2px;
+			}
+		}
+		.navbar-text {
+			font-weight: bold;
+		}
+		.nav-link {
+			padding: .25rem 0;
+			color: #333;
+
+			&:hover, &:hover path {
+				color: $primary;
+				fill: $primary;
+			}
+		}
+		a::after {
+			display: none !important;
+		}
+		@media (max-width: 575.98px) {
+			.social-nav .navbar-text , .apps-nav .navbar-text {
+				width: 100%;
+			}
+			.apps-nav svg {
+				display: block;
+				width: 100%;
+			}
+		}
+		@media (min-width: 1200px) {
+			.social-nav {
+				position: relative;
+				left: -0.25rem;
+			}
+		}
+	}
+</style>

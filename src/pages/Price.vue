@@ -712,6 +712,9 @@
 </script>
 
 <style lang="scss">
+	@import "~/assets/scss/base.scss";
+	@import "~bootstrap/scss/tooltip";
+	@import "~bootstrap-vue/src/components/tooltip/index";
 	.page-price {
 		.calculate {
 			background-color: #F3F3FF;

@@ -109,6 +109,11 @@
 
 		<VideoRegistration />
 
+		<!-- Прогрес бар чтения -->
+		<ClientOnly>
+			<read-progress color="#ff892a" height="2px" :shadow="false"></read-progress>
+		</ClientOnly>
+
 	</Layout>
 </template>
 
@@ -169,6 +174,11 @@
 
 	export default {
 		components: {
+			//Прогресс бар
+			ReadProgress: () =>
+				import("vue-read-progress")
+					.then(m => m.default)
+					.catch(),
 			BBreadcrumb, BBreadcrumbItem,
 			VideoRegistration,
 			BannerSobirayte,

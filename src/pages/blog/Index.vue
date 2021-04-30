@@ -263,12 +263,15 @@
 </page-query>
 
 <script>
+	import Layout from '~/layouts/Blog.vue'
+
 	import PostCard from '~/components/PostCard.vue'
 	import SubscribeForm from '~/components/Forms/SubscribeForm.vue'
 	import { Pager } from 'gridsome'
 
 	export default {
 		components: {
+			Layout,
 			PostCard,
 			SubscribeForm,
 			Pager
