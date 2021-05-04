@@ -25,8 +25,8 @@
 							autoplay loop muted playsinline
 							loading="lazy"
 							>
-							<source v-if="visible" :src="'https://cdn-www.carrotquest.io' + item.pic.replace('mp4','webm')" type="video/webm">
-							<source v-if="visible" :src="'https://cdn-www.carrotquest.io' + item.pic" type="video/mp4">
+							<source v-if="visible" :src="'https://www.carrotquest.io' + item.pic.replace('mp4','webm')" type="video/webm">
+							<source v-if="visible" :src="'https://www.carrotquest.io' + item.pic" type="video/mp4">
 						</b-embed>
 						<!-- Изображение -->
 						<ik-image v-else
@@ -62,8 +62,8 @@
 							aspect="1by1"
 							autoplay loop muted playsinline
 							>
-							<source v-if="visible" :src="'https://cdn-www.carrotquest.io' + item.pic.replace('mp4','webm')" type="video/webm">
-							<source v-if="visible" :src="'https://cdn-www.carrotquest.io' + item.pic" type="video/mp4">
+							<source v-if="visible" :src="'https://www.carrotquest.io' + item.pic.replace('mp4','webm')" type="video/webm">
+							<source v-if="visible" :src="'https://www.carrotquest.io' + item.pic" type="video/mp4">
 						</b-embed>
 						<ik-image v-else
 							:path="'/components/' + item.pic"

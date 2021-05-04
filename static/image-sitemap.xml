@@ -6,19 +6,19 @@
 		<loc>https://www.carrotquest.io/</loc>
 		<priority>1.00</priority>
 		<image:image>
-			<image:loc>https://cdn-www.carrotquest.io/main-page/img/main-page/study_cases.png</image:loc>
+			<image:loc>https://www.carrotquest.io/main-page/img/main-page/study_cases.png</image:loc>
 			<image:title>Видеокурс по продукту</image:title>
 		</image:image>
 		<image:image>
-			<image:loc>https://cdn-www.carrotquest.io/main-page/img/main-page/study_help.png</image:loc>
+			<image:loc>https://www.carrotquest.io/main-page/img/main-page/study_help.png</image:loc>
 			<image:title>Видеокурс по продукту</image:title>
 		</image:image>
 		<image:image>
-			<image:loc>https://cdn-www.carrotquest.io/main-page/img/main-page/study_library.png</image:loc>
+			<image:loc>https://www.carrotquest.io/main-page/img/main-page/study_library.png</image:loc>
 			<image:title>Видеокурс по продукту</image:title>
 		</image:image>
 		<image:image>
-			<image:loc>https://cdn-www.carrotquest.io/main-page/img/main-page/study_videocourse.png</image:loc>
+			<image:loc>https://www.carrotquest.io/main-page/img/main-page/study_videocourse.png</image:loc>
 			<image:title>Видеокурс по продукту</image:title>
 		</image:image>
 		<image:image>
@@ -544,40 +544,40 @@
 		<loc>https://www.carrotquest.io/pop-up/</loc>
 		<priority>0.99</priority>
 		<image:image>
-			<image:loc>https://cdn-www.carrotquest.io/main-page/img/general/default/study/study_cases.png</image:loc>
+			<image:loc>https://www.carrotquest.io/main-page/img/general/default/study/study_cases.png</image:loc>
 			<image:title>Видеокурс по продукту</image:title>
 		</image:image>
 		<image:image>
-			<image:loc>https://cdn-www.carrotquest.io/main-page/img/general/default/study/study_help.png</image:loc>
+			<image:loc>https://www.carrotquest.io/main-page/img/general/default/study/study_help.png</image:loc>
 			<image:title>Видеокурс по продукту</image:title>
 		</image:image>
 		<image:image>
-			<image:loc>https://cdn-www.carrotquest.io/main-page/img/general/default/study/study_library.png</image:loc>
+			<image:loc>https://www.carrotquest.io/main-page/img/general/default/study/study_library.png</image:loc>
 			<image:title>Видеокурс по продукту</image:title>
 		</image:image>
 		<image:image>
-			<image:loc>https://cdn-www.carrotquest.io/main-page/img/general/default/study/study_videocourse.png
+			<image:loc>https://www.carrotquest.io/main-page/img/general/default/study/study_videocourse.png
 			</image:loc>
 			<image:title>Видеокурс по продукту</image:title>
 		</image:image>
 		<image:image>
-			<image:loc>https://cdn-www.carrotquest.io/pop-up/img/pop-up/analitics_pic.png</image:loc>
+			<image:loc>https://www.carrotquest.io/pop-up/img/pop-up/analitics_pic.png</image:loc>
 			<image:title>Анализируйте</image:title>
 		</image:image>
 		<image:image>
-			<image:loc>https://cdn-www.carrotquest.io/pop-up/img/pop-up/hero_browser_bg.png</image:loc>
+			<image:loc>https://www.carrotquest.io/pop-up/img/pop-up/hero_browser_bg.png</image:loc>
 			<image:title>Фон, браузер</image:title>
 		</image:image>
 		<image:image>
-			<image:loc>https://cdn-www.carrotquest.io/pop-up/img/pop-up/hero_watch.svg</image:loc>
+			<image:loc>https://www.carrotquest.io/pop-up/img/pop-up/hero_watch.svg</image:loc>
 			<image:title>Смотреть видео</image:title>
 		</image:image>
 		<image:image>
-			<image:loc>https://cdn-www.carrotquest.io/pop-up/img/pop-up/scripts_1.png</image:loc>
+			<image:loc>https://www.carrotquest.io/pop-up/img/pop-up/scripts_1.png</image:loc>
 			<image:title>Выберите триггер</image:title>
 		</image:image>
 		<image:image>
-			<image:loc>https://cdn-www.carrotquest.io/pop-up/img/pop-up/scripts_2.png</image:loc>
+			<image:loc>https://www.carrotquest.io/pop-up/img/pop-up/scripts_2.png</image:loc>
 			<image:title>Определите сегмент</image:title>
 		</image:image>
 		<image:image>
@@ -888,19 +888,19 @@
 		<loc>https://www.carrotquest.io/price/</loc>
 		<priority>0.99</priority>
 		<image:image>
-			<image:loc>https://cdn-www.carrotquest.io/main-page/img/general/default/study/study_cases.png</image:loc>
+			<image:loc>https://www.carrotquest.io/main-page/img/general/default/study/study_cases.png</image:loc>
 			<image:title>Видеокурс по продукту</image:title>
 		</image:image>
 		<image:image>
-			<image:loc>https://cdn-www.carrotquest.io/main-page/img/general/default/study/study_help.png</image:loc>
+			<image:loc>https://www.carrotquest.io/main-page/img/general/default/study/study_help.png</image:loc>
 			<image:title>Видеокурс по продукту</image:title>
 		</image:image>
 		<image:image>
-			<image:loc>https://cdn-www.carrotquest.io/main-page/img/general/default/study/study_library.png</image:loc>
+			<image:loc>https://www.carrotquest.io/main-page/img/general/default/study/study_library.png</image:loc>
 			<image:title>Видеокурс по продукту</image:title>
 		</image:image>
 		<image:image>
-			<image:loc>https://cdn-www.carrotquest.io/main-page/img/general/default/study/study_videocourse.png
+			<image:loc>https://www.carrotquest.io/main-page/img/general/default/study/study_videocourse.png
 			</image:loc>
 			<image:title>Видеокурс по продукту</image:title>
 		</image:image>
@@ -1000,48 +1000,48 @@
 		<loc>https://www.carrotquest.io/partner/</loc>
 		<priority>0.99</priority>
 		<image:image>
-			<image:loc>https://cdn-www.carrotquest.io/partner/img/partner/default/background/figurePartnersInfo.svg
+			<image:loc>https://www.carrotquest.io/partner/img/partner/default/background/figurePartnersInfo.svg
 			</image:loc>
 			<image:title>Партнерская программа Carrot quest</image:title>
 		</image:image>
 		<image:image>
-			<image:loc>https://cdn-www.carrotquest.io/partner/img/partner/ru/photo/IvanKom%D0%B0rov.jpg</image:loc>
+			<image:loc>https://www.carrotquest.io/partner/img/partner/ru/photo/IvanKom%D0%B0rov.jpg</image:loc>
 			<image:title>Иван Комаров, руководитель направления по работе с партнерами</image:title>
 		</image:image>
 		<image:image>
-			<image:loc>https://cdn-www.carrotquest.io/partner/img/partner/ru/textColumns/dealPartner1.svg</image:loc>
+			<image:loc>https://www.carrotquest.io/partner/img/partner/ru/textColumns/dealPartner1.svg</image:loc>
 			<image:title>Рекомендуем клиентам лучших партнеров</image:title>
 		</image:image>
 		<image:image>
-			<image:loc>https://cdn-www.carrotquest.io/partner/img/partner/ru/textColumns/dealPartner2.svg</image:loc>
+			<image:loc>https://www.carrotquest.io/partner/img/partner/ru/textColumns/dealPartner2.svg</image:loc>
 			<image:title>Помогаем партнерам с продвижением</image:title>
 		</image:image>
 		<image:image>
-			<image:loc>https://cdn-www.carrotquest.io/partner/img/partner/ru/textColumns/dealPartner3.svg</image:loc>
+			<image:loc>https://www.carrotquest.io/partner/img/partner/ru/textColumns/dealPartner3.svg</image:loc>
 			<image:title>Даем до 50% скидки на все тарифы Carrot quest</image:title>
 		</image:image>
 		<image:image>
-			<image:loc>https://cdn-www.carrotquest.io/partner/img/partner/ru/textColumns/dealPartner4.svg</image:loc>
+			<image:loc>https://www.carrotquest.io/partner/img/partner/ru/textColumns/dealPartner4.svg</image:loc>
 			<image:title>Обучаем и поддерживаем партнеров</image:title>
 		</image:image>
 		<image:image>
-			<image:loc>https://cdn-www.carrotquest.io/partner/img/partner/ru/textRows/recommendIcon1.svg</image:loc>
+			<image:loc>https://www.carrotquest.io/partner/img/partner/ru/textRows/recommendIcon1.svg</image:loc>
 			<image:title>Получайте % с каждого платежа клиента за ваши рекомендации</image:title>
 		</image:image>
 		<image:image>
-			<image:loc>https://cdn-www.carrotquest.io/partner/img/partner/ru/textRows/recommendIcon2.svg</image:loc>
+			<image:loc>https://www.carrotquest.io/partner/img/partner/ru/textRows/recommendIcon2.svg</image:loc>
 			<image:title>Внедрение сервиса</image:title>
 		</image:image>
 		<image:image>
-			<image:loc>https://cdn-www.carrotquest.io/partner/img/partner/ru/textRows/recommendIcon3.svg</image:loc>
+			<image:loc>https://www.carrotquest.io/partner/img/partner/ru/textRows/recommendIcon3.svg</image:loc>
 			<image:title>Получайте новых клиентов от Carrot quest</image:title>
 		</image:image>
 		<image:image>
-			<image:loc>https://cdn-www.carrotquest.io/partner/img/partner/ru/textRows/recommendIcon4.svg</image:loc>
+			<image:loc>https://www.carrotquest.io/partner/img/partner/ru/textRows/recommendIcon4.svg</image:loc>
 			<image:title>Вознаграждение за каждый платеж клиента</image:title>
 		</image:image>
 		<image:image>
-			<image:loc>https://cdn-www.carrotquest.io/partner/img/partner/ru/textRows/sidebarDiaryBG.svg</image:loc>
+			<image:loc>https://www.carrotquest.io/partner/img/partner/ru/textRows/sidebarDiaryBG.svg</image:loc>
 			<image:title>Вебинары</image:title>
 		</image:image>
 		<image:image>
@@ -1063,24 +1063,24 @@
 		<loc>https://www.carrotquest.io/knowledge-base/</loc>
 		<priority>0.98</priority>
 		<image:image>
-			<image:loc>https://cdn-www.carrotquest.io/knowledge-base/img/knowledge-base/features/feature_pic_1.gif
+			<image:loc>https://www.carrotquest.io/knowledge-base/img/knowledge-base/features/feature_pic_1.gif
 			</image:loc>
 			<image:title>Операторы не тратят время на частые вопросы</image:title>
 		</image:image>
 		<image:image>
-			<image:loc>https://cdn-www.carrotquest.io/main-page/img/general/default/study/study_cases.png</image:loc>
+			<image:loc>https://www.carrotquest.io/main-page/img/general/default/study/study_cases.png</image:loc>
 			<image:title>Видеокурс по продукту</image:title>
 		</image:image>
 		<image:image>
-			<image:loc>https://cdn-www.carrotquest.io/main-page/img/general/default/study/study_help.png</image:loc>
+			<image:loc>https://www.carrotquest.io/main-page/img/general/default/study/study_help.png</image:loc>
 			<image:title>Видеокурс по продукту</image:title>
 		</image:image>
 		<image:image>
-			<image:loc>https://cdn-www.carrotquest.io/main-page/img/general/default/study/study_library.png</image:loc>
+			<image:loc>https://www.carrotquest.io/main-page/img/general/default/study/study_library.png</image:loc>
 			<image:title>Видеокурс по продукту</image:title>
 		</image:image>
 		<image:image>
-			<image:loc>https://cdn-www.carrotquest.io/main-page/img/general/default/study/study_videocourse.png
+			<image:loc>https://www.carrotquest.io/main-page/img/general/default/study/study_videocourse.png
 			</image:loc>
 			<image:title>Видеокурс по продукту</image:title>
 		</image:image>
@@ -1103,21 +1103,21 @@
 		<loc>https://www.carrotquest.io/library/</loc>
 		<priority>0.98</priority>
 		<image:image>
-			<image:loc>https://cdn-www.carrotquest.io/library/img/library/book_ecom.png</image:loc>
+			<image:loc>https://www.carrotquest.io/library/img/library/book_ecom.png</image:loc>
 			<image:title>Полное руководство по коммуникациям и автоматизации воронки пользователей в интернет-магазинах
 			</image:title>
 		</image:image>
 		<image:image>
-			<image:loc>https://cdn-www.carrotquest.io/library/img/library/book_scripts.png</image:loc>
+			<image:loc>https://www.carrotquest.io/library/img/library/book_scripts.png</image:loc>
 			<image:title>Самый подробный гайд по автоматизации маркетинга для продакт-маркетологов и CEO
 				онлайн-продуктов</image:title>
 		</image:image>
 		<image:image>
-			<image:loc>https://cdn-www.carrotquest.io/library/img/library/courses_email.png</image:loc>
+			<image:loc>https://www.carrotquest.io/library/img/library/courses_email.png</image:loc>
 			<image:title>Email-маркетинг за 8 шагов</image:title>
 		</image:image>
 		<image:image>
-			<image:loc>https://cdn-www.carrotquest.io/library/img/library/courses_prodagi.png</image:loc>
+			<image:loc>https://www.carrotquest.io/library/img/library/courses_prodagi.png</image:loc>
 			<image:title>Маркетинг на сайте: как продать в 2 раза больше, не увеличивая трафик</image:title>
 		</image:image>
 		<image:image>
@@ -1151,19 +1151,19 @@
 		<loc>https://www.carrotquest.io/sdk/</loc>
 		<priority>0.98</priority>
 		<image:image>
-			<image:loc>https://cdn-www.carrotquest.io/main-page/img/general/default/study/study_cases.png</image:loc>
+			<image:loc>https://www.carrotquest.io/main-page/img/general/default/study/study_cases.png</image:loc>
 			<image:title>Видеокурс по продукту</image:title>
 		</image:image>
 		<image:image>
-			<image:loc>https://cdn-www.carrotquest.io/main-page/img/general/default/study/study_help.png</image:loc>
+			<image:loc>https://www.carrotquest.io/main-page/img/general/default/study/study_help.png</image:loc>
 			<image:title>Видеокурс по продукту</image:title>
 		</image:image>
 		<image:image>
-			<image:loc>https://cdn-www.carrotquest.io/main-page/img/general/default/study/study_library.png</image:loc>
+			<image:loc>https://www.carrotquest.io/main-page/img/general/default/study/study_library.png</image:loc>
 			<image:title>Видеокурс по продукту</image:title>
 		</image:image>
 		<image:image>
-			<image:loc>https://cdn-www.carrotquest.io/main-page/img/general/default/study/study_videocourse.png
+			<image:loc>https://www.carrotquest.io/main-page/img/general/default/study/study_videocourse.png
 			</image:loc>
 			<image:title>Видеокурс по продукту</image:title>
 		</image:image>
@@ -3087,27 +3087,27 @@
 		<loc>https://www.carrotquest.io/kurs-email-marketing/</loc>
 		<priority>0.54</priority>
 		<image:image>
-			<image:loc>https://cdn-www.carrotquest.io/kurs-email-marketing/img/kurs-email-marketing/consultation_pic.png
+			<image:loc>https://www.carrotquest.io/kurs-email-marketing/img/kurs-email-marketing/consultation_pic.png
 			</image:loc>
 			<image:title>Курс «Email-маркетинг за 8 шагов»</image:title>
 		</image:image>
 		<image:image>
-			<image:loc>https://cdn-www.carrotquest.io/kurs-email-marketing/img/kurs-email-marketing/hero_bg.png
+			<image:loc>https://www.carrotquest.io/kurs-email-marketing/img/kurs-email-marketing/hero_bg.png
 			</image:loc>
 			<image:title>Email-маркетинг за 8 шагов</image:title>
 		</image:image>
 		<image:image>
-			<image:loc>https://cdn-www.carrotquest.io/kurs-email-marketing/img/kurs-email-marketing/hero_left.png
+			<image:loc>https://www.carrotquest.io/kurs-email-marketing/img/kurs-email-marketing/hero_left.png
 			</image:loc>
 			<image:title>Дерево слева</image:title>
 		</image:image>
 		<image:image>
-			<image:loc>https://cdn-www.carrotquest.io/kurs-email-marketing/img/kurs-email-marketing/hero_right.png
+			<image:loc>https://www.carrotquest.io/kurs-email-marketing/img/kurs-email-marketing/hero_right.png
 			</image:loc>
 			<image:title>Дерево справа</image:title>
 		</image:image>
 		<image:image>
-			<image:loc>https://cdn-www.carrotquest.io/kurs-email-marketing/img/kurs-email-marketing/success.svg
+			<image:loc>https://www.carrotquest.io/kurs-email-marketing/img/kurs-email-marketing/success.svg
 			</image:loc>
 			<image:title>Отправили</image:title>
 		</image:image>
@@ -3130,15 +3130,15 @@
 		<loc>https://www.carrotquest.io/marketing-course/</loc>
 		<priority>0.54</priority>
 		<image:image>
-			<image:loc>https://cdn-www.carrotquest.io/marketing-course/img/marketing-course/guy.svg</image:loc>
+			<image:loc>https://www.carrotquest.io/marketing-course/img/marketing-course/guy.svg</image:loc>
 			<image:title>Парень с компутером</image:title>
 		</image:image>
 		<image:image>
-			<image:loc>https://cdn-www.carrotquest.io/marketing-course/img/marketing-course/hero_bg.png</image:loc>
+			<image:loc>https://www.carrotquest.io/marketing-course/img/marketing-course/hero_bg.png</image:loc>
 			<image:title>Как продать в 2 раза больше</image:title>
 		</image:image>
 		<image:image>
-			<image:loc>https://cdn-www.carrotquest.io/marketing-course/img/marketing-course/success.svg</image:loc>
+			<image:loc>https://www.carrotquest.io/marketing-course/img/marketing-course/success.svg</image:loc>
 			<image:title>Отправили</image:title>
 		</image:image>
 		<image:image>
@@ -3239,11 +3239,11 @@
 		<loc>https://www.carrotquest.io/bots-beta/</loc>
 		<priority>0.50</priority>
 		<image:image>
-			<image:loc>https://cdn-www.carrotquest.io/bots-beta/img/bots-beta/hero_bg.png</image:loc>
+			<image:loc>https://www.carrotquest.io/bots-beta/img/bots-beta/hero_bg.png</image:loc>
 			<image:title>Email-маркетинг за 8 шагов</image:title>
 		</image:image>
 		<image:image>
-			<image:loc>https://cdn-www.carrotquest.io/bots-beta/img/bots-beta/success.svg</image:loc>
+			<image:loc>https://www.carrotquest.io/bots-beta/img/bots-beta/success.svg</image:loc>
 			<image:title>Отправили</image:title>
 		</image:image>
 		<image:image>
