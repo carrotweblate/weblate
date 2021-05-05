@@ -18,6 +18,7 @@
 				<b-form-input 
 					placeholder="Имя" 
 					type="text" 
+					name="name"
 					required
 					v-model="modalName"
 					class="px-3 py-4"
@@ -26,6 +27,7 @@
 					placeholder="Телефон" 
 					type="text" 
 					pattern="^[^A-zА-я]{5,}"
+					name="phone"
 					required
 					v-model="modalPhone"
 					class="px-3 py-4 mt-3"
@@ -33,6 +35,7 @@
 				<b-form-input 
 					placeholder="Email" 
 					type="email" 
+					name="email"
 					required
 					v-model="modalEmail"
 					class="px-3 py-4 mt-3"
@@ -40,6 +43,7 @@
 				<b-form-input 
 					placeholder="Должность" 
 					type="text"
+					name="role"
 					required
 					v-model="modalRole"
 					class="px-3 py-4 mt-3"
@@ -48,6 +52,7 @@
 					placeholder="URL вашего сайта" 
 					type="text"
 					pattern=".+\.+.+"
+					name="site"
 					required
 					v-model="modalSite"
 					class="px-3 py-4 mt-3"
@@ -153,8 +158,16 @@
 				<b-button 
 					type="submit" 
 					variant="primary" 
-					class="px-3 py-2 mt-4">
-					Отправить
+					class="px-3 py-2 mt-4 mr-3">
+					Получить на почту
+				</b-button>
+				<b-button
+					v-if="modalOpenUrl != ''" 
+					type="submit" 
+					variant="primary" 
+					class="px-3 py-2 mt-4"
+					v-on:click="openTelegram = !openTelegram">
+					Получить в Телеграме
 				</b-button>
 			</b-form>
 		</b-modal>
@@ -232,6 +245,7 @@
 				modealSend: false,
 
 				showOverlay: false,
+				openTelegram: false
 			};
 		},
 		methods: {
@@ -408,6 +422,27 @@
 			//Открытие страницы (книга)
 			modalUrl () {
 				if (!this.modealSend) {
+					if (!this.openTelegram) {
+						carrotquest.track(this.modalEvent, {
+							'Телефон': this.modalPhone,
+							'Имя': this.modalName,
+							'Email': this.modalEmail,
+							'Адрес сайта': this.modalSite,
+							'Должность': this.modalRole,
+							'url': location.host + location.pathname
+						})
+						this.modealSend = !this.modealSend
+						this.$refs['open-modal-url'].hide()
+						this.$refs['suсcessDownload'].show()
+						setTimeout(() => {
+							this.$refs['suсcessDownload'].hide()
+						}, 7000);
+					} else {
+						this.openTelegram = false
+						this.$refs['open-modal-url'].hide()
+						window.open( this.modalOpenUrl )
+					}
+
 					carrotquest.identify([
 						{"op": "update_or_create", "key": "$phone", "value": this.modalPhone},
 						{"op": "update_or_create", "key": "$name", "value": this.modalName},
@@ -424,26 +459,10 @@
 						'Должность': this.modalRole,
 						'url': location.host + location.pathname
 					})
-					carrotquest.track(this.modalEvent, {
-						'Телефон': this.modalPhone,
-						'Имя': this.modalName,
-						'Email': this.modalEmail,
-						'Адрес сайта': this.modalSite,
-						'Должность': this.modalRole,
-						'url': location.host + location.pathname
-					})
-
+					
 					dataLayer.push({ event: 'UAevent', eventCategory: 'leads', eventAction: 'phone', eventLabel: location.host + location.pathname })
 					fbq('trackCustom', 'get_lead', {page: location.pathname})
-
-					this.modealSend = !this.modealSend
 				}
-
-				this.$refs['open-modal-url'].hide()
-				this.$refs['suсcessDownload'].show()
-				setTimeout(() => {
-					this.$refs['suсcessDownload'].hide()
-				}, 7000);
 			},
 			
 			//Регистрация на вебинар
