@@ -1,4 +1,5 @@
 .post {
+
 	//Ссылка на AMP версию
 	.amp {
 		svg {
@@ -54,6 +55,10 @@
 	//Текст статьи
 	&__text {
 		z-index: 5;
+		&::first-line {
+			margin-top: 0 !important;
+			padding-top: 0 !important;
+		}
 		h2 , h3 , h4 , p , ol , ul , .wp-block-button , .cq-block-quote {
 			margin-bottom: 2rem;
 		}
@@ -124,7 +129,7 @@
 			}
 			&.aligncenter {
 				display: block;
-				img {
+				img , video {
 					margin: 0 auto;
 				}
 			}
