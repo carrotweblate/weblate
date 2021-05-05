@@ -18,7 +18,7 @@
 </template>
 
 
-<page-query>
+<static-query>
 	query {
 		allTildaFiles {
 			edges {
@@ -29,7 +29,7 @@
 			}
 		}
 	}
-</page-query>
+</static-query>
 
 
 <script>

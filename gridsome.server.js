@@ -44,6 +44,11 @@ function saveScript (name , data) {
 		if (err) return console.log(err)
 	})
 }
+function saveTilda (name , data) {
+	fs.writeFile('./static/tilda/' + name, data , 'utf8' , function (err) {
+		if (err) return console.log(err)
+	})
+}
 
 
 module.exports = function (api) {
@@ -71,24 +76,23 @@ module.exports = function (api) {
 		const collection = actions.addCollection('Tilda')
 		api.createManagedPages(async ({ createPage }) => {
 			for (const item of data.result) {
-				if ( 
-					( item.id != '312699' ) && ( item.id == '19329108' || item.id == '19328915' || item.id == '19319038' || item.id == '12011344' || item.id == '17091896' || item.id == '11937240' || item.id == '16075876' || item.id == '16080876' || item.id == '16083784' || item.id == '2833995' || item.id == '16218892' || item.id == '11880600' || item.id == '10518279' || item.id == '10714391' || item.id == '10714999' || item.id == '10715060'
-					//Интеграции
-					|| item.id == '9970780' || item.id == '11191195' || item.id == '11193030' || item.id == '11193800' || item.id == '11195611' || item.id == '11431149' || item.id == '11431453' || item.id == '11431738' || item.id == '11007077' || item.id == '11183247' || item.id == '11183537' || item.id == '11194593' || item.id == '11195339' || item.id == '11430916' || item.id == '11432052' || item.id == '11432895' || item.id == '11433520' || item.id == '13669305' || item.id == '13670106' || item.id == '13670549' || item.id == '13670751' || item.id == '3785072' || item.id == '3195986'
-					//Вебинары
-					|| item.id == '18822720' || item.id == '17071238' || item.id == '17091896' || item.id == '17931613' || item.id == '18334680' || item.id == '19158192' 
-					//Лидбот
-					|| item.id == '18405836' || item.id == '18459207' || item.id == '18461004' || item.id == '18461139' || item.id == '18493211' || item.id == '18493266' || item.id == '18493284' || item.id == '18633619'
-					//Плейбуки
-					|| item.id == '18848589' || item.id == '18859531' 
-				) ) {
-				// if ( item.id != '312699' || item.id == '1048214' || item.id == '2883968' || item.id == '11437990' ) {
-				// if ( item.id == '16083784') {
-					const { data } = await axios.get(
+				// if ( 
+				// 	( item.id != '312699' ) && ( item.id == '19329108' || item.id == '19328915' || item.id == '19319038' || item.id == '12011344' || item.id == '17091896' || item.id == '11937240' || item.id == '16075876' || item.id == '16080876' || item.id == '16083784' || item.id == '2833995' || item.id == '16218892' || item.id == '11880600' || item.id == '10518279' || item.id == '10714391' || item.id == '10714999' || item.id == '10715060'
+				// 	//Интеграции
+				// 	|| item.id == '9970780' || item.id == '11191195' || item.id == '11193030' || item.id == '11193800' || item.id == '11195611' || item.id == '11431149' || item.id == '11431453' || item.id == '11431738' || item.id == '11007077' || item.id == '11183247' || item.id == '11183537' || item.id == '11194593' || item.id == '11195339' || item.id == '11430916' || item.id == '11432052' || item.id == '11432895' || item.id == '11433520' || item.id == '13669305' || item.id == '13670106' || item.id == '13670549' || item.id == '13670751' || item.id == '3785072' || item.id == '3195986'
+				// 	//Вебинары
+				// 	|| item.id == '18822720' || item.id == '17071238' || item.id == '17091896' || item.id == '17931613' || item.id == '18334680' || item.id == '19158192' 
+				// 	//Лидбот
+				// 	|| item.id == '18405836' || item.id == '18459207' || item.id == '18461004' || item.id == '18461139' || item.id == '18493211' || item.id == '18493266' || item.id == '18493284' || item.id == '18633619'
+				// 	//Плейбуки
+				// 	|| item.id == '18848589' || item.id == '18859531' 
+				// ) ) {
+				if ( item.id != '309741' && !!item.published ) {
+					console.log('Tilda - ' + item.title + ' - ' + item.id + ' - запрос!')
+					await axios.get(
 						// 'https://api.tildacdn.info/v1/getpage/?publickey=h6wlwdtglx70dzkz1fnn&secretkey=cz7a318b3jpkqm6nzz4l&pageid=' + item.id,
 						'https://tilda.carrotquest.io/page_' + item.id + '.json'
-					)
-					try {
+					).then(function (data) {
 						let tildaPath = ''
 						if ( item.alias ) {
 							tildaPath = '/' + item.alias
@@ -111,11 +115,17 @@ module.exports = function (api) {
 								date: item.date
 							}
 						})
-					} catch {
+						console.log('Tilda - ' + item.title + ' - готова!')
+					}).catch(function() {
 						console.log('Ошибка в тильде: ' + item.id)
-					}
+						await axios.get(
+							'https://api.tildacdn.info/v1/getpage/?publickey=h6wlwdtglx70dzkz1fnn&secretkey=cz7a318b3jpkqm6nzz4l&pageid=' + item.id,
+							// 'https://tilda.carrotquest.io/page_' + item.id + '.json'
+						).then(function (data) {
+							saveTilda('page_'+item.id , data)
+						})
+					})
 				}
-				// console.log('Tilda - ' + item.title + ' - готова!')
 			}
 		})
 	})
@@ -123,7 +133,7 @@ module.exports = function (api) {
 	// API Wordpress - создаём Посты
 	api.loadSource(async actions => {
 		const { data } = await axios.get(
-			'https://wp.carrotquest.io/blog/wp-json/wp/v2/posts?&per_page=999'
+			'https://wp.carrotquest.io/blog/wp-json/wp/v2/posts?&per_page=9'
 		)
 		// Данные для вывода статей
 		const collection = actions.addCollection('post')
