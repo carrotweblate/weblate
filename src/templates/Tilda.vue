@@ -34,9 +34,7 @@
 				tildaLink.push({ rel: 'stylesheet' , href: file })
 			}
 			for ( var file of this.$context.files.js ) {
-				if (file !== 'https://static.tildacdn.com/js/jquery-1.10.2.min.js') {
-					tildaScripts.push({ src: file , defer: 'defer' , async: false })
-				}
+				tildaScripts.push({ src: file , defer: 'defer' , async: false })
 			}
 			return {
 				title: this.$context.title,
