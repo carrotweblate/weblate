@@ -18,13 +18,13 @@
 </template>
 
 <script>
-	import jQuery			from 'jquery'
+	import $ 				from 'jquery'
 	import { BEmbed } 		from 'bootstrap-vue'
 
 	export default {
 		components: {
 			BEmbed,
-			jQuery
+			$
 		},
 		//Делаем в HEAD
 		metaInfo() {
@@ -82,19 +82,10 @@
 				}.bind(this))
 			}
 			//Фиксим тильду
-			window.$ = jQuery
-			if (window.localStorage) {
-				if (!localStorage.getItem('reload')) {
-					localStorage['reload'] = true;
-					window.location.reload();
-				} else {
-					localStorage.removeItem('reload')
-				}
-			}
+			window.$ = window.jQuery = require('jquery')
 		},
 		updated() {
 			//Фиксим тильду
-			window.$ = jQuery
 			location.reload()
 		},
 	}
