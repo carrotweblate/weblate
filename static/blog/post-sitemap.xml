@@ -2,7 +2,7 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>https://www.carrotquest.io/blog/</loc>
-		<lastmod>2021-05-05T12:21:07+00:00</lastmod>
+		<lastmod>2021-05-06T06:42:27+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://www.carrotquest.io/blog/test-na-kogo-podpisatsya/</loc>
@@ -11032,38 +11032,6 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://www.carrotquest.io/blog/obuchenie-operatora-podderzhki/</loc>
-		<lastmod>2021-05-04T09:33:04+00:00</lastmod>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/03/%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5.jpeg</image:loc>
-			<image:title><![CDATA[обучение]]></image:title>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/03/image-9-1.jpg</image:loc>
-			<image:caption><![CDATA[теоретическая карточка в Trello]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/03/%D0%B4%D0%BD%D0%B5%D0%B2%D0%BD%D0%B8%D0%BA-1.jpg</image:loc>
-			<image:caption><![CDATA[дневник в Trello]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/03/%D0%A1%D0%BA%D1%80%D0%B8%D0%BD%D1%88%D0%BE%D1%82-26-03-2020-115534.png</image:loc>
-			<image:caption><![CDATA[внутренняя база знаний Carrot quest]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/03/%D1%8B%D0%B2%D1%84%D1%8B%D0%B2%D1%84%D0%B2.jpg</image:loc>
-			<image:caption><![CDATA[команда поддержки Carrot quest]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/03/Frame-28-1.png</image:loc>
-			<image:caption><![CDATA[отзывы клиентов ]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/03/Frame-29.jpg</image:loc>
-			<image:caption><![CDATA[благодарственное письмо]]></image:caption>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://www.carrotquest.io/blog/guide-to-content-marketing/</loc>
 		<lastmod>2021-05-04T09:33:06+00:00</lastmod>
 		<image:image>
@@ -13730,37 +13698,6 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://www.carrotquest.io/blog/progrev-lidov/</loc>
-		<lastmod>2021-05-04T09:34:47+00:00</lastmod>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/05/image-1.jpg</image:loc>
-			<image:title><![CDATA[image 1]]></image:title>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/04/%D0%9A%D0%BE%D0%BD%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%8F-%D0%BA%D0%BD%D0%B8%D0%B3%D0%B8.jpg</image:loc>
-			<image:caption><![CDATA[изменение конверсии в начало регистрации с прогревом]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/05/Screenshot_3.jpg</image:loc>
-			<image:caption><![CDATA[фрагмент CJM Carrot quest]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/05/Frame-41-2.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/05/Group-92.jpg</image:loc>
-			<image:caption><![CDATA[активирующее письмо]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/05/Group-6-1.jpg</image:loc>
-			<image:caption><![CDATA[фрагмент прогревающей цепочки Carrot quest]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/05/Group-1.jpg</image:loc>
-			<image:caption><![CDATA[сомнения клиентов Carrot quest, и как с ними работают]]></image:caption>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://www.carrotquest.io/blog/objectives-and-key-results/</loc>
 		<lastmod>2021-05-04T09:34:47+00:00</lastmod>
 		<image:image>
@@ -14200,19 +14137,6 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://www.carrotquest.io/blog/look-alike-facebook/</loc>
-		<lastmod>2021-05-04T12:27:29+00:00</lastmod>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2021/04/pasted-image-0-2.png</image:loc>
-			<image:title><![CDATA[look-alike]]></image:title>
-			<image:caption><![CDATA[look-alike аудитории в Facebook]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2021/04/%D0%B3%D0%B8%D1%84%D0%BA%D0%B0-%D0%BC%D0%B5%D0%B4%D0%BB%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F.gif</image:loc>
-			<image:caption><![CDATA[Скринкаст, как собрать look-alike аудиторию]]></image:caption>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://www.carrotquest.io/blog/11-b2b-secrets/</loc>
 		<lastmod>2021-05-04T12:30:19+00:00</lastmod>
 		<image:image>
@@ -14237,8 +14161,84 @@
 		</image:image>
 	</url>
 	<url>
+		<loc>https://www.carrotquest.io/blog/obuchenie-operatora-podderzhki/</loc>
+		<lastmod>2021-05-06T06:19:59+00:00</lastmod>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/03/%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5.jpeg</image:loc>
+			<image:title><![CDATA[обучение]]></image:title>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/03/image-9-1.jpg</image:loc>
+			<image:caption><![CDATA[теоретическая карточка в Trello]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/03/%D0%B4%D0%BD%D0%B5%D0%B2%D0%BD%D0%B8%D0%BA-1.jpg</image:loc>
+			<image:caption><![CDATA[дневник в Trello]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/03/%D0%A1%D0%BA%D1%80%D0%B8%D0%BD%D1%88%D0%BE%D1%82-26-03-2020-115534.png</image:loc>
+			<image:caption><![CDATA[внутренняя база знаний Carrot quest]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/03/%D1%8B%D0%B2%D1%84%D1%8B%D0%B2%D1%84%D0%B2.jpg</image:loc>
+			<image:caption><![CDATA[команда поддержки Carrot quest]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/03/Frame-28-1.png</image:loc>
+			<image:caption><![CDATA[отзывы клиентов ]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/03/Frame-29.jpg</image:loc>
+			<image:caption><![CDATA[благодарственное письмо]]></image:caption>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://www.carrotquest.io/blog/progrev-lidov/</loc>
+		<lastmod>2021-05-06T06:33:59+00:00</lastmod>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/05/image-1.jpg</image:loc>
+			<image:title><![CDATA[image 1]]></image:title>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/04/%D0%9A%D0%BE%D0%BD%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%8F-%D0%BA%D0%BD%D0%B8%D0%B3%D0%B8.jpg</image:loc>
+			<image:caption><![CDATA[изменение конверсии в начало регистрации с прогревом]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/05/Screenshot_3.jpg</image:loc>
+			<image:caption><![CDATA[фрагмент CJM Carrot quest]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/05/Frame-41-2.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/05/Group-92.jpg</image:loc>
+			<image:caption><![CDATA[активирующее письмо]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/05/Group-6-1.jpg</image:loc>
+			<image:caption><![CDATA[фрагмент прогревающей цепочки Carrot quest]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/05/Group-1.jpg</image:loc>
+			<image:caption><![CDATA[сомнения клиентов Carrot quest, и как с ними работают]]></image:caption>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://www.carrotquest.io/blog/look-alike-facebook/</loc>
+		<lastmod>2021-05-06T06:40:21+00:00</lastmod>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2021/04/pasted-image-0-2.png</image:loc>
+			<image:title><![CDATA[look-alike]]></image:title>
+			<image:caption><![CDATA[look-alike аудитории в Facebook]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2021/04/%D0%B3%D0%B8%D1%84%D0%BA%D0%B0-%D0%BC%D0%B5%D0%B4%D0%BB%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F.gif</image:loc>
+			<image:caption><![CDATA[Скринкаст, как собрать look-alike аудиторию]]></image:caption>
+		</image:image>
+	</url>
+	<url>
 		<loc>https://www.carrotquest.io/blog/case-appmagic/</loc>
-		<lastmod>2021-05-05T12:21:07+00:00</lastmod>
+		<lastmod>2021-05-06T06:42:27+00:00</lastmod>
 		<image:image>
 			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2021/05/IMG_1056-1.jpg</image:loc>
 			<image:title><![CDATA[IMG_1056-1]]></image:title>
