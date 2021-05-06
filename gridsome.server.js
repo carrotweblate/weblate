@@ -57,16 +57,14 @@ module.exports = function (api) {
 		).then( response => {
 			tildaFiles = response.data.result
 		})
-
 		// Список страниц
 		const { data } = await axios.get(
 			// 'https://api.tildacdn.info/v1/getpageslist/?publickey=h6wlwdtglx70dzkz1fnn&secretkey=cz7a318b3jpkqm6nzz4l&projectid=62329',
 			'https://tilda.carrotquest.io/pages_list.json'
 		)
-		const collection = actions.addCollection('Tilda')
 		api.createManagedPages(async ({ createPage }) => {
 			for (const item of data.result) {
-				if ( item.id != '309741' && !!item.published ) {
+				if ( item.id != '309741' && !!item.published && item.alias.indexOf('vacancy')==-1 && item.title.indexOf('Вакансия')==-1 && item.title.indexOf('cases')==-1 && item.title.indexOf('Кейс')==-1 ) {
 					await axios.get(
 						// 'https://api.tildacdn.info/v1/getpage/?publickey=h6wlwdtglx70dzkz1fnn&secretkey=cz7a318b3jpkqm6nzz4l&pageid=' + item.id,
 						'https://tilda.carrotquest.io/page_' + item.id + '.json'
