@@ -17,21 +17,6 @@
 	</Layout>
 </template>
 
-
-<static-query>
-	query {
-		allTildaFiles {
-			edges {
-				node {
-					css
-					js
-				}
-			}
-		}
-	}
-</static-query>
-
-
 <script>
 	import { BEmbed } 		from 'bootstrap-vue'
 
@@ -41,19 +26,20 @@
 		},
 		//Делаем в HEAD
 		metaInfo() {
-			let tildaLink = [
-				{
-					rel: 'canonical',
-					href: 'https://www.carrotquest.io/' + this.$context.slug
-				}
-			]
+			let tildaLink = [{
+				rel: 'canonical', href: 'https://www.carrotquest.io/' + this.$context.slug
+			}]
 			let tildaScripts = []
-			for ( var value of this.$page.allTildaFiles.edges.reverse() ) {
-				if (value.node.css) {
-					tildaLink.push({ rel: 'stylesheet' , href: value.node.css })
+			for ( var file of this.$context.files.css ) {
+				tildaLink.push({ rel: 'stylesheet' , href: file })
+			}
+			for ( var file of this.$context.files.js ) {
+				if (file === 'https://static.tildacdn.com/js/jquery-1.10.2.min.js') {
+					tildaScripts.push({ src: 'https://code.jquery.com/jquery-1.12.4.min.js' , async: 'false' })
 				} else {
-					tildaScripts.push({ src: value.node.js , defer: 'defer' })
+					tildaScripts.push({ src: file , async: 'false' })
 				}
+				
 			}
 			return {
 				title: this.$context.title,

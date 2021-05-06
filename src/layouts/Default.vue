@@ -565,6 +565,14 @@
 						type: 'font/woff2', 
 						crossorigin: 'anonymous'
 					},
+					// Подключаем jQuery для тильды
+					{
+						rel: 'preload',
+						href: 'https://code.jquery.com/jquery-1.12.4.min.js',
+						as: 'script',
+						integrity: 'sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=',
+						crossorigin: 'anonymous'
+					},
 				]
 			}
 		}
