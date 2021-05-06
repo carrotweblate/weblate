@@ -17,43 +17,26 @@
 	</Layout>
 </template>
 
-
-<page-query>
-	query {
-		allTildaFiles {
-			edges {
-				node {
-					css
-					js
-				}
-			}
-		}
-	}
-</page-query>
-
-
 <script>
+	import { $ , jQuery }	from 'jquery'
 	import { BEmbed } 		from 'bootstrap-vue'
 
 	export default {
 		components: {
-			BEmbed
+			BEmbed,
+			$, jQuery
 		},
 		//Делаем в HEAD
 		metaInfo() {
-			let tildaLink = [
-				{
-					rel: 'canonical',
-					href: 'https://www.carrotquest.io/' + this.$context.slug
-				}
-			]
+			let tildaLink = [{
+				rel: 'canonical', href: 'https://www.carrotquest.io/' + this.$context.slug
+			}]
 			let tildaScripts = []
-			for ( var value of this.$page.allTildaFiles.edges.reverse() ) {
-				if (value.node.css) {
-					tildaLink.push({ rel: 'stylesheet' , href: value.node.css })
-				} else {
-					tildaScripts.push({ src: value.node.js , defer: 'defer' })
-				}
+			for ( var file of this.$context.files.css ) {
+				tildaLink.push({ rel: 'stylesheet' , href: file })
+			}
+			for ( var file of this.$context.files.js ) {
+				tildaScripts.push({ src: file , defer: 'defer' , async: false })
 			}
 			return {
 				title: this.$context.title,
@@ -98,22 +81,11 @@
 					}.bind(this))
 				}.bind(this))
 			}
-			if (localStorage.getItem('reloaded')) {
-				localStorage.removeItem('reloaded');
-			} else {
-				window.addEventListener("load", function(event) {
-					localStorage.setItem('reloaded', '1');
-					location.reload();
-				});
-			}
+			
 		},
 		updated() {
-			if (localStorage.getItem('reloaded')) {
-				localStorage.removeItem('reloaded');
-			} else {
-				localStorage.setItem('reloaded', '1');
-				location.reload();
-			}
+			//Фиксим тильду
+			location.reload()
 		},
 	}
 </script>
