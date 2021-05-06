@@ -34,12 +34,9 @@
 				tildaLink.push({ rel: 'stylesheet' , href: file })
 			}
 			for ( var file of this.$context.files.js ) {
-				if (file === 'https://static.tildacdn.com/js/jquery-1.10.2.min.js') {
-					tildaScripts.push({ src: 'https://code.jquery.com/jquery-1.12.4.min.js' , async: 'false' })
-				} else {
-					tildaScripts.push({ src: file , async: 'false' })
+				if (file !== 'https://static.tildacdn.com/js/jquery-1.10.2.min.js') {
+					tildaScripts.push({ src: file , defer: 'defer' , async: false })
 				}
-				
 			}
 			return {
 				title: this.$context.title,
@@ -75,6 +72,9 @@
 			}
 		},
 		mounted() {
+			window.$ = require('jquery')
+			window.jQuery = require('jquery')
+
 			// Ищем ссылки для открытия видео
 			if ( document.querySelector('a[href*="#open-modal-video"]') ) {
 				document.querySelectorAll('a[href*="#open-modal-video"]').forEach(function(item) {
