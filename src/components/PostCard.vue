@@ -49,7 +49,7 @@
 				width: 100%;
 				height: 150px;
 				background-size: cover;
-				background-position: left center;
+				background-position: center;
 			}
 		}
 		&.col-lg-8 {
