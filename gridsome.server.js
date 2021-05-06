@@ -47,23 +47,18 @@ function saveScript (name , data) {
 
 
 module.exports = function (api) {
-	// API from Tilda Files
+	// API from Tilda
 	api.loadSource(async actions => {
-		const { data } = await axios.get(
+		// Files
+		let tildaFiles = []
+		await axios.get(
 			// 'https://api.tildacdn.info/v1/getproject/?publickey=h6wlwdtglx70dzkz1fnn&secretkey=cz7a318b3jpkqm6nzz4l&projectid=62329',
 			'https://tilda.carrotquest.io/files_list.json'
-		)
-		const collection = actions.addCollection('tildaFiles')
-		for (const item of data.result.css) {
-			collection.addNode({css: item})
-		}
-		for (const item of data.result.js) {
-			collection.addNode({js: item})
-		}
-	})
+		).then( response => {
+			tildaFiles = response.data.result
+		})
 
-	// API from Tilda: Список страниц
-	api.loadSource(async actions => {
+		// Список страниц
 		const { data } = await axios.get(
 			// 'https://api.tildacdn.info/v1/getpageslist/?publickey=h6wlwdtglx70dzkz1fnn&secretkey=cz7a318b3jpkqm6nzz4l&projectid=62329',
 			'https://tilda.carrotquest.io/pages_list.json'
@@ -71,33 +66,17 @@ module.exports = function (api) {
 		const collection = actions.addCollection('Tilda')
 		api.createManagedPages(async ({ createPage }) => {
 			for (const item of data.result) {
-				if ( 
-					( item.id != '312699' ) && ( item.id == '19329108' || item.id == '19328915' || item.id == '19319038' || item.id == '12011344' || item.id == '17091896' || item.id == '11937240' || item.id == '16075876' || item.id == '16080876' || item.id == '16083784' || item.id == '2833995' || item.id == '16218892' || item.id == '11880600' || item.id == '10518279' || item.id == '10714391' || item.id == '10714999' || item.id == '10715060'
-					//Интеграции
-					|| item.id == '9970780' || item.id == '11191195' || item.id == '11193030' || item.id == '11193800' || item.id == '11195611' || item.id == '11431149' || item.id == '11431453' || item.id == '11431738' || item.id == '11007077' || item.id == '11183247' || item.id == '11183537' || item.id == '11194593' || item.id == '11195339' || item.id == '11430916' || item.id == '11432052' || item.id == '11432895' || item.id == '11433520' || item.id == '13669305' || item.id == '13670106' || item.id == '13670549' || item.id == '13670751' || item.id == '3785072' || item.id == '3195986'
-					//Вебинары
-					|| item.id == '18822720' || item.id == '17071238' || item.id == '17091896' || item.id == '17931613' || item.id == '18334680' || item.id == '19158192' 
-					//Лидбот
-					|| item.id == '18405836' || item.id == '18459207' || item.id == '18461004' || item.id == '18461139' || item.id == '18493211' || item.id == '18493266' || item.id == '18493284' || item.id == '18633619'
-					//Плейбуки
-					|| item.id == '18848589' || item.id == '18859531' 
-				) ) {
-				// if ( item.id != '312699' || item.id == '1048214' || item.id == '2883968' || item.id == '11437990' ) {
-				// if ( item.id == '16083784') {
-					const { data } = await axios.get(
+				if ( item.id != '309741' && !!item.published ) {
+					await axios.get(
 						// 'https://api.tildacdn.info/v1/getpage/?publickey=h6wlwdtglx70dzkz1fnn&secretkey=cz7a318b3jpkqm6nzz4l&pageid=' + item.id,
 						'https://tilda.carrotquest.io/page_' + item.id + '.json'
-					)
-					try {
+					).then( response => {
 						let tildaPath = ''
 						if ( item.alias ) {
 							tildaPath = '/' + item.alias
 						} else {
 							tildaPath = '/' + item.filename
 						}
-						let pageHTML = data.result.html
-						//Carrot-quest
-						pageHTML = pageHTML.split('Carrot quest').join('Carrot&nbsp;quest')
 						createPage({
 							path: tildaPath,
 							component: './src/templates/Tilda.vue',
@@ -107,15 +86,20 @@ module.exports = function (api) {
 								description: item.descr,
 								cover: item.img,
 								slug: item.alias,
-								html: tp.execute(data.result.html),
-								date: item.date
+								html: renderText (response.data.result.html),
+								date: item.date,
+								files: {
+									js: tildaFiles.js,
+									css: tildaFiles.css,
+								}
 							}
 						})
-					} catch {
-						console.log('Ошибка в тильде: ' + item.id)
-					}
+						// console.log('Tilda - ' + item.title + ' - ' + item.id + ' - готова!')
+					}).catch(function (error) {
+						console.log('Ошибка в тильде: ' + item.id + ' - ' + error)
+					})
 				}
-				// console.log('Tilda - ' + item.title + ' - готова!')
+				
 			}
 		})
 	})

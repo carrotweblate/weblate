@@ -17,21 +17,6 @@
 	</Layout>
 </template>
 
-
-<page-query>
-	query {
-		allTildaFiles {
-			edges {
-				node {
-					css
-					js
-				}
-			}
-		}
-	}
-</page-query>
-
-
 <script>
 	import { BEmbed } 		from 'bootstrap-vue'
 
@@ -41,18 +26,16 @@
 		},
 		//Делаем в HEAD
 		metaInfo() {
-			let tildaLink = [
-				{
-					rel: 'canonical',
-					href: 'https://www.carrotquest.io/' + this.$context.slug
-				}
-			]
+			let tildaLink = [{
+				rel: 'canonical', href: 'https://www.carrotquest.io/' + this.$context.slug
+			}]
 			let tildaScripts = []
-			for ( var value of this.$page.allTildaFiles.edges.reverse() ) {
-				if (value.node.css) {
-					tildaLink.push({ rel: 'stylesheet' , href: value.node.css })
-				} else {
-					tildaScripts.push({ src: value.node.js , defer: 'defer' })
+			for ( var file of this.$context.files.css ) {
+				tildaLink.push({ rel: 'stylesheet' , href: file })
+			}
+			for ( var file of this.$context.files.js ) {
+				if (file !== 'https://static.tildacdn.com/js/jquery-1.10.2.min.js') {
+					tildaScripts.push({ src: file , defer: 'defer' , async: false })
 				}
 			}
 			return {
@@ -89,6 +72,9 @@
 			}
 		},
 		mounted() {
+			window.$ = require('jquery')
+			window.jQuery = require('jquery')
+
 			// Ищем ссылки для открытия видео
 			if ( document.querySelector('a[href*="#open-modal-video"]') ) {
 				document.querySelectorAll('a[href*="#open-modal-video"]').forEach(function(item) {
