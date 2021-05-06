@@ -18,11 +18,13 @@
 </template>
 
 <script>
+	import { $ , jQuery }	from 'jquery'
 	import { BEmbed } 		from 'bootstrap-vue'
 
 	export default {
 		components: {
-			BEmbed
+			BEmbed,
+			$, jQuery
 		},
 		//Делаем в HEAD
 		metaInfo() {
@@ -70,10 +72,6 @@
 			}
 		},
 		mounted() {
-			//Фиксим тильду
-			window.$ = require('jquery')
-			window.jQuery = require('jquery')
-
 			// Ищем ссылки для открытия видео
 			if ( document.querySelector('a[href*="#open-modal-video"]') ) {
 				document.querySelectorAll('a[href*="#open-modal-video"]').forEach(function(item) {
@@ -87,10 +85,7 @@
 		},
 		updated() {
 			//Фиксим тильду
-			window.$ = require('jquery')
-			window.jQuery = require('jquery')
 			location.reload()
-			// this.$forceUpdate()
 		},
 	}
 </script>
