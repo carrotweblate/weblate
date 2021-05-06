@@ -72,8 +72,17 @@
 			}
 		},
 		mounted() {
+			//Фиксим тильду
 			window.$ = require('jquery')
 			window.jQuery = require('jquery')
+			if (localStorage.getItem('reloaded')) {
+				localStorage.removeItem('reloaded');
+			} else {
+				window.addEventListener("load", function(event) {
+					localStorage.setItem('reloaded', '1');
+					location.reload();
+				});
+			}
 
 			// Ищем ссылки для открытия видео
 			if ( document.querySelector('a[href*="#open-modal-video"]') ) {
@@ -84,16 +93,12 @@
 					}.bind(this))
 				}.bind(this))
 			}
-			if (localStorage.getItem('reloaded')) {
-				localStorage.removeItem('reloaded');
-			} else {
-				window.addEventListener("load", function(event) {
-					localStorage.setItem('reloaded', '1');
-					location.reload();
-				});
-			}
+			
 		},
 		updated() {
+			//Фиксим тильду
+			window.$ = require('jquery')
+			window.jQuery = require('jquery')
 			if (localStorage.getItem('reloaded')) {
 				localStorage.removeItem('reloaded');
 			} else {
