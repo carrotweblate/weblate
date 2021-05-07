@@ -87,9 +87,12 @@ module.exports = {
 					cacheName: 'nf-v1',
 					fileTypes: [
 						"document",
+						"script",
 						"image",
 						"video",
 						"style",
+						"font",
+						"embed"
 					],
 				},
 			},
