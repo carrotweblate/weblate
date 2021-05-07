@@ -9,8 +9,7 @@
 			<Footer v-if="footer" />
 
 			<Balcony />
-
-			<Modals />
+			<ConsultationModal />
 			
 		<!-- </b-overlay> -->
 	</div>
@@ -19,17 +18,17 @@
 
 
 <script>
-	import Header 		from '~/components/Header.vue'
-	import Footer 		from '~/components/Footer.vue'
-	import Balcony 		from '~/components/Balcony.vue'
-	import Modals 		from '~/components/Modals/All.vue'
+	import Header 				from '~/components/Header.vue'
+	import Footer 				from '~/components/Footer.vue'
+	import Balcony 				from '~/components/Balcony.vue'
+	import ConsultationModal 	from '~/components/Modals/ConsultationModal.vue'
 
 	export default {
 		components: {
 			Header,
 			Footer,
 			Balcony,
-			Modals
+			ConsultationModal
 		},
 		props: ['header' , 'footer'],
 		data: function() {

@@ -203,12 +203,12 @@
 			В ближайшее время мы свяжемся с вами
 		</b-modal>
 
+		<Consultation />
+
     </div>
 </template>
 
 <script>
-    import Modals 		from '~/components/Modals/Consultation.vue'
-
     export default {
         data: function() {
 			return {
@@ -372,7 +372,7 @@
 			},
         },
         mounted() {
-            // Ищем ссылки для открытия модалок на Демо
+            	// Ищем ссылки для открытия модалок на Демо
 				if ( document.querySelector('a[href*="#open-modal-demo"]') ) {
 					document.querySelectorAll('a[href*="#open-modal-demo"]').forEach(function(item) {
 						item.addEventListener('click', function(e) {

@@ -12,6 +12,7 @@
 							Комплекс продуктов для общения с клиентами, сбора лидов, уменьшения количества брошенных корзин и возвращения пользователей
 						</p>
 						<RegistrationForm text="14 дней бесплатно. Регистрируйтесь" />
+						<a href="#open-modal-consultation">Заказать консультацию</a>
 					</b-col>
 				</b-row>
 			</b-container>
@@ -19,6 +20,8 @@
 				<g-image src="@/assets/images/ecommerce/hero.png" width="3000" quality="100" alt="Hero" />
 			</div>
 		</section>
+
+		
 
 		<section class="numbers">
 			<b-container>
