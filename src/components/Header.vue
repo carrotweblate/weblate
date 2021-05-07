@@ -5,7 +5,7 @@
 
 			<!-- Логотип -->
 			<g-link v-if="!isBlog" to="/">
-				<img src="@/assets/images/components/logo.svg" width="193" height="40" class="logo ml-2 ml-md-3" alt="Carrot quest" />
+				<img src="@/assets/images/components/logo.svg" width="178" height="40" class="logo ml-2 ml-md-3" alt="Carrot quest" />
 			</g-link>
 			<g-link v-else to="/blog/">
 				<img src="@/assets/images/components/logo-blog.svg" width="236" height="40" class="logo ml-2 ml-md-3" alt="Carrot quest Blog" />
