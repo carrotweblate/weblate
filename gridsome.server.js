@@ -48,7 +48,7 @@ function saveScript (name , data) {
 
 module.exports = function (api) {
 	// API from Tilda
-	api.loadSource(async actions => {
+	api.loadSource(async () => {
 		// Files
 		let tildaFiles = []
 		await axios.get(
@@ -57,16 +57,14 @@ module.exports = function (api) {
 		).then( response => {
 			tildaFiles = response.data.result
 		})
-
 		// Список страниц
 		const { data } = await axios.get(
 			// 'https://api.tildacdn.info/v1/getpageslist/?publickey=h6wlwdtglx70dzkz1fnn&secretkey=cz7a318b3jpkqm6nzz4l&projectid=62329',
 			'https://tilda.carrotquest.io/pages_list.json'
 		)
-		const collection = actions.addCollection('Tilda')
 		api.createManagedPages(async ({ createPage }) => {
 			for (const item of data.result) {
-				if ( item.id != '309741' && !!item.published ) {
+				if ( item.id != '309741' && !!item.published && item.alias.indexOf('vacancy')==-1 && item.title.indexOf('Вакансия')==-1 && item.title.indexOf('cases')==-1 && item.title.indexOf('Кейс')==-1 ) {
 					await axios.get(
 						// 'https://api.tildacdn.info/v1/getpage/?publickey=h6wlwdtglx70dzkz1fnn&secretkey=cz7a318b3jpkqm6nzz4l&pageid=' + item.id,
 						'https://tilda.carrotquest.io/page_' + item.id + '.json'
@@ -107,6 +105,7 @@ module.exports = function (api) {
 	// API Wordpress - создаём Посты
 	api.loadSource(async actions => {
 		const { data } = await axios.get(
+			// 'https://wp.carrotquest.io/blog/wp-json/wp/v2/posts?&per_page=999&_embed'
 			'https://wp.carrotquest.io/blog/wp-json/wp/v2/posts?&per_page=999'
 		)
 		// Данные для вывода статей
@@ -124,6 +123,7 @@ module.exports = function (api) {
 				author: item.author,
 				featured_media: renderURL(item.featured_media_medium),
 				featured_media_large: item.featured_media_large[0],
+				// featuredmedia: item._embedded['wp:featuredmedia'][0].media_details,
 				content: tp.execute(item.content.rendered),
 				sticky: item.sticky,
 				page_views: item.meta.wpb_post_views_count,
@@ -156,6 +156,7 @@ module.exports = function (api) {
 					
 					//Тело статьи
 					featured_media: item.featured_media_large,
+					// featuredmedia: item._embedded['wp:featuredmedia'][0].media_details,
 					title: renderText(item.title.rendered),
 					description: renderText(item.excerpt.rendered),
 					content: renderText(item.content.rendered)

@@ -18,13 +18,13 @@
 </template>
 
 <script>
-	import { $ , jQuery }	from 'jquery'
+	import $ 				from 'jquery'
 	import { BEmbed } 		from 'bootstrap-vue'
 
 	export default {
 		components: {
 			BEmbed,
-			$, jQuery
+			$
 		},
 		//Делаем в HEAD
 		metaInfo() {
@@ -81,7 +81,8 @@
 					}.bind(this))
 				}.bind(this))
 			}
-			
+			//Фиксим тильду
+			window.$ = window.jQuery = require('jquery')
 		},
 		updated() {
 			//Фиксим тильду

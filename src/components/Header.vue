@@ -5,7 +5,7 @@
 
 			<!-- Логотип -->
 			<g-link to="/">
-				<img src="@/assets/images/components/logo.svg" width="193" height="40" class="logo ml-2 ml-md-3" alt="Carrot quest" />
+				<img src="@/assets/images/components/logo.svg" width="178" height="40" class="logo ml-2 ml-md-3" alt="Carrot quest" />
 			</g-link>
 
 			<!-- Мобильное меню гамбургер -->
