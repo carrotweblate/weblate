@@ -105,7 +105,8 @@ module.exports = function (api) {
 	// API Wordpress - создаём Посты
 	api.loadSource(async actions => {
 		const { data } = await axios.get(
-			'https://wp.carrotquest.io/blog/wp-json/wp/v2/posts?&per_page=99'
+			// 'https://wp.carrotquest.io/blog/wp-json/wp/v2/posts?&per_page=999&_embed'
+			'https://wp.carrotquest.io/blog/wp-json/wp/v2/posts?&per_page=999'
 		)
 		// Данные для вывода статей
 		const collection = actions.addCollection('post')
@@ -122,6 +123,7 @@ module.exports = function (api) {
 				author: item.author,
 				featured_media: renderURL(item.featured_media_medium),
 				featured_media_large: item.featured_media_large[0],
+				// featuredmedia: item._embedded['wp:featuredmedia'][0].media_details,
 				content: tp.execute(item.content.rendered),
 				sticky: item.sticky,
 				page_views: item.meta.wpb_post_views_count,
@@ -154,6 +156,7 @@ module.exports = function (api) {
 					
 					//Тело статьи
 					featured_media: item.featured_media_large,
+					// featuredmedia: item._embedded['wp:featuredmedia'][0].media_details,
 					title: renderText(item.title.rendered),
 					description: renderText(item.excerpt.rendered),
 					content: renderText(item.content.rendered)
