@@ -47,60 +47,60 @@ function saveScript (name , data) {
 
 
 module.exports = function (api) {
-	// // API from Tilda
-	// api.loadSource(async () => {
-	// 	// Files
-	// 	let tildaFiles = []
-	// 	await axios.get(
-	// 		// 'https://api.tildacdn.info/v1/getproject/?publickey=h6wlwdtglx70dzkz1fnn&secretkey=cz7a318b3jpkqm6nzz4l&projectid=62329',
-	// 		'https://tilda.carrotquest.io/files_list.json'
-	// 	).then( response => {
-	// 		tildaFiles = response.data.result
-	// 	})
-	// 	// Список страниц
-	// 	const { data } = await axios.get(
-	// 		// 'https://api.tildacdn.info/v1/getpageslist/?publickey=h6wlwdtglx70dzkz1fnn&secretkey=cz7a318b3jpkqm6nzz4l&projectid=62329',
-	// 		'https://tilda.carrotquest.io/pages_list.json'
-	// 	)
-	// 	api.createManagedPages(async ({ createPage }) => {
-	// 		for (const item of data.result) {
-	// 			if ( item.id != '309741' && !!item.published && item.alias.indexOf('vacancy')==-1 && item.title.indexOf('Вакансия')==-1 && item.title.indexOf('cases')==-1 && item.title.indexOf('Кейс')==-1 ) {
-	// 				await axios.get(
-	// 					// 'https://api.tildacdn.info/v1/getpage/?publickey=h6wlwdtglx70dzkz1fnn&secretkey=cz7a318b3jpkqm6nzz4l&pageid=' + item.id,
-	// 					'https://tilda.carrotquest.io/page_' + item.id + '.json'
-	// 				).then( response => {
-	// 					let tildaPath = ''
-	// 					if ( item.alias ) {
-	// 						tildaPath = '/' + item.alias
-	// 					} else {
-	// 						tildaPath = '/' + item.filename
-	// 					}
-	// 					createPage({
-	// 						path: tildaPath,
-	// 						component: './src/templates/Tilda.vue',
-	// 						context: {
-	// 							id: item.id,
-	// 							title: item.title,
-	// 							description: item.descr,
-	// 							cover: item.img,
-	// 							slug: item.alias,
-	// 							html: renderText (response.data.result.html),
-	// 							date: item.date,
-	// 							files: {
-	// 								js: tildaFiles.js,
-	// 								css: tildaFiles.css,
-	// 							}
-	// 						}
-	// 					})
-	// 					// console.log('Tilda - ' + item.title + ' - ' + item.id + ' - готова!')
-	// 				}).catch(function (error) {
-	// 					console.log('Ошибка в тильде: ' + item.id + ' - ' + error)
-	// 				})
-	// 			}
+	// API from Tilda
+	api.loadSource(async () => {
+		// Files
+		let tildaFiles = []
+		await axios.get(
+			// 'https://api.tildacdn.info/v1/getproject/?publickey=h6wlwdtglx70dzkz1fnn&secretkey=cz7a318b3jpkqm6nzz4l&projectid=62329',
+			'https://tilda.carrotquest.io/files_list.json'
+		).then( response => {
+			tildaFiles = response.data.result
+		})
+		// Список страниц
+		const { data } = await axios.get(
+			// 'https://api.tildacdn.info/v1/getpageslist/?publickey=h6wlwdtglx70dzkz1fnn&secretkey=cz7a318b3jpkqm6nzz4l&projectid=62329',
+			'https://tilda.carrotquest.io/pages_list.json'
+		)
+		api.createManagedPages(async ({ createPage }) => {
+			for (const item of data.result) {
+				if ( item.id != '309741' && !!item.published && item.alias.indexOf('vacancy')==-1 && item.title.indexOf('Вакансия')==-1 && item.title.indexOf('cases')==-1 && item.title.indexOf('Кейс')==-1 ) {
+					await axios.get(
+						// 'https://api.tildacdn.info/v1/getpage/?publickey=h6wlwdtglx70dzkz1fnn&secretkey=cz7a318b3jpkqm6nzz4l&pageid=' + item.id,
+						'https://tilda.carrotquest.io/page_' + item.id + '.json'
+					).then( response => {
+						let tildaPath = ''
+						if ( item.alias ) {
+							tildaPath = '/' + item.alias
+						} else {
+							tildaPath = '/' + item.filename
+						}
+						createPage({
+							path: tildaPath,
+							component: './src/templates/Tilda.vue',
+							context: {
+								id: item.id,
+								title: item.title,
+								description: item.descr,
+								cover: item.img,
+								slug: item.alias,
+								html: renderText (response.data.result.html),
+								date: item.date,
+								files: {
+									js: tildaFiles.js,
+									css: tildaFiles.css,
+								}
+							}
+						})
+						// console.log('Tilda - ' + item.title + ' - ' + item.id + ' - готова!')
+					}).catch(function (error) {
+						console.log('Ошибка в тильде: ' + item.id + ' - ' + error)
+					})
+				}
 				
-	// 		}
-	// 	})
-	// })
+			}
+		})
+	})
 
 	// API Wordpress - создаём Посты
 	api.loadSource(async actions => {
