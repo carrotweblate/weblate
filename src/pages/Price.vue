@@ -22,11 +22,11 @@
 								</p>
 							</div>
 							<div class="calc__select__lids font20px d-none d-md-block mb-3">
-								<b v-if="billingIndex<(billing.length-1)">
-									до {{ billing[billingIndex].number.toLocaleString('ru') }}
+								<b v-if="billingIndex < ( billing.length - 1 )">
+									до {{ billing[billingIndex].toLocaleString('ru') }}
 								</b>
 								<b v-else>
-									более 500 000
+									более 2 500 000
 								</b>
 								<br>
 								уников в месяц
@@ -71,27 +71,27 @@
 						</div>
 						<div class="calc__rate">
 							<div class="row row__box">
-								<div class="col-12 col-lg-8 automatization">
+								<div class="col-12 col-lg-4 automatization">
 									<div class="calc__top">
 										<g-image src="@/assets/images/components/small-5.png" fit="contain" background="transparent" position="left" height="66" alt="business" />
 										<div class="h5 my-3">
-											Бизнес-чат и Автоматизация
+											Бизнес-чат
 										</div>
 										<div class="font14px grey-text">
-											Персональное общение с клиентами, автоматизация общения, увеличение конверсии сайта и удержание клиентов
+											Лучше всего подходит для общения: продажи на сайте, поддержка в продукте
 										</div>
 									</div>
 									<div class="calc__rate__price font20px">
-										<template v-if="billingIndex<(billing.length-1)">
+										<template v-if="billingIndex < (billing.length-1)">
 											<span id="price_before_sale" v-if="ratioIndex != 0">
-												{{ billing[billingIndex].price.toLocaleString('ru') }}
+												{{ buisness[billingIndex].price.toLocaleString('ru') }}
 											</span>
 											<b><span id="price">
-												{{ ( billing[billingIndex].price * ratio[ratioIndex] ).toLocaleString('ru') }}
+												{{ ( buisness[billingIndex].price * ratio[ratioIndex] ).toLocaleString('ru') }}
 											</span>₽ в месяц</b>
 											<div class="calc__rate__emails font14px grey-text">
 												<span class="emails">
-													{{ billing[billingIndex].emails.toLocaleString('ru') }}
+													{{ buisness[billingIndex].emails.toLocaleString('ru') }}
 												</span> писем в месяц
 											</div>
 										</template>
@@ -99,22 +99,22 @@
 											<a href="#" class="open-chat" v-on:click.prevent>Связаться с нами в чате</a>
 										</template>
 									</div>
-									<b-button :href="'/panel/register/?cq_event=clickedOnStartTrial&cq_event_plan=busineschat&cq_event_traffic=' + billing[billingIndex].number" variant="primary" class="font14px">
-										Попробовать 14 дней бесплатно
+									<b-button :href="'/panel/register/?cq_event=clickedOnStartTrial&cq_event_plan=busineschat&cq_event_traffic=' + billing[billingIndex].number" variant="primary" class="font14px w-100">
+										Выбрать этот тариф
 									</b-button>
 									<a href="#" class="show d-md-none mt-4" v-on:click="showMoreAutomatization=!showMoreAutomatization">
 										Подробнее
 									</a>
 									<b-row class=" d-md-flex mt-4" :class="{ 'd-none' : !showMoreAutomatization }">
-										<b-col md="6" class="font14px text">
+										<b-col class="font14px text">
 											<p>
 												<b>
-													Общение с клиентами
+													Основные особенности:
 												</b>
 											</p>
 											<ul>
 												<li>
-													Чат на сайте или в приложении
+													Чат на сайте и в вашем приложении
 												</li>
 												<li>
 													Соцсети, мессенджеры и почта в одном окне
@@ -164,7 +164,7 @@
 												</li>
 											</ul>
 										</b-col>
-										<b-col md="6" class="font14px text">
+										<b-col class="font14px text">
 											<p>
 												<b>Сбор и квалификация лидов</b>
 											</p>
@@ -259,10 +259,11 @@
 											Премиум
 										</div>
 										<div class="calc__rate__description font14px grey-text">
-											Максимум возможностей сервиса и персональные консультации от нашего эксперта
+											Получите экспертную поддержку наших специалистов по внедрению — они помогут вам настроить продвинутую коммуникацию
 										</div>
 									</div>
 									<div class="calc__rate__price font20px">
+										Индивидуальная цена
 										<b>+7 (495) 105-91-69</b>
 									</div>
 									<b-button href="#" variant="outline-primary" v-on:click.prevent class="open-chat font14px">
@@ -587,61 +588,61 @@
 				ratio:  [ 1 , 0.9 , 0.85 , 0.8 ],
 				ratioIndex: 3,
 				billing: [
-					{
-						number: 1000,
-						emails: 500,
-						price: 1000
-					},
-					{
-						number: 10000,
-						emails: 2500,
-						price: 3000
-					},
-					{
-						number: 30000,
-						emails: 10000,
-						price: 6000
-					},
-					{
-						number: 60000,
-						emails: 15000,
-						price: 10000
-					},
-					{
-						number: 100000,
-						emails: 20000,
-						price: 15000
-					},
-					{
-						number: 150000,
-						emails: 30000,
-						price: 20000
-					},
-					{
-						number: 200000,
-						emails: 40000,
-						price: 26000
-					},
-					{
-						number: 300000,
-						emails: 50000,
-						price: 36000
-					},
-					{
-						number: 400000,
-						emails: 60000,
-						price: 48000
-					},
-					{
-						number: 500000,
-						emails: 80000,
-						price: 55000
-					},
-					{
-						number: 0,
-						emails: 0,
-						price: 0
-					}
+					1000,
+					10000,
+					30000,
+					60000,
+					100000,
+					150000,
+					200000,
+					300000,
+					400000,
+					500000,
+					700000,
+					900000,
+					1000000,
+					1500000,
+					2000000,
+					2500000,
+					0
+				],
+				buisness: [
+					{ emails: 250, 		price: 1000 	},
+					{ emails: 1250, 	price: 2100 	},
+					{ emails: 5000, 	price: 4200 	},
+					{ emails: 7500, 	price: 7000 	},
+					{ emails: 10000, 	price: 10500 	},
+					{ emails: 15000, 	price: 14000 	},
+					{ emails: 20000, 	price: 18200 	},
+					{ emails: 25000, 	price: 25200 	},
+					{ emails: 30000, 	price: 33600 	},
+					{ emails: 40000, 	price: 38500 	},
+					{ emails: 50000, 	price: 49000 	},
+					{ emails: 60000, 	price: 63000 	},
+					{ emails: 70000, 	price: 70000 	},
+					{ emails: 95000, 	price: 105000 	},
+					{ emails: 125000, 	price: 140000 	},
+					{ emails: 160000, 	price: 175000 	},
+					{ emails: 0, 		price: 0 		}
+				],
+				automatisation: [
+					{ emails: 500, 		price: 1500 	},
+					{ emails: 2500, 	price: 45000 	},
+					{ emails: 10000, 	price: 9000 	},
+					{ emails: 15000, 	price: 15000 	},
+					{ emails: 20000, 	price: 22500 	},
+					{ emails: 30000, 	price: 30000 	},
+					{ emails: 40000, 	price: 39000 	},
+					{ emails: 50000, 	price: 54000 	},
+					{ emails: 60000, 	price: 72000 	},
+					{ emails: 80000, 	price: 82500 	},
+					{ emails: 100000, 	price: 105000 	},
+					{ emails: 120000, 	price: 135000 	},
+					{ emails: 140000, 	price: 150000 	},
+					{ emails: 190000, 	price: 225000 	},
+					{ emails: 250000, 	price: 300000 	},
+					{ emails: 320000, 	price: 375000 	},
+					{ emails: 0, 		price: 0 		}
 				],
 				billingIndex: 1,
 				showMoreAutomatization: false,
