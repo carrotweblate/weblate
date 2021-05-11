@@ -2,7 +2,7 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>https://www.carrotquest.io/blog/</loc>
-		<lastmod>2021-05-11T07:52:19+00:00</lastmod>
+		<lastmod>2021-05-11T11:13:27+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://www.carrotquest.io/blog/test-na-kogo-podpisatsya/</loc>
@@ -11157,120 +11157,6 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://www.carrotquest.io/blog/kak-ne-popast-v-spam/</loc>
-		<lastmod>2021-05-04T09:33:15+00:00</lastmod>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2018/02/ne-popast-v-spam-1-scaled.jpg</image:loc>
-			<image:title><![CDATA[ne popast v spam]]></image:title>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2018/02/mastershop.png</image:loc>
-			<image:caption><![CDATA[Собирайте email базу сами]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2018/02/image6-1.png</image:loc>
-			<image:caption><![CDATA[double opt-in]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/06/Screenshot_1.jpg</image:loc>
-			<image:caption><![CDATA[форма отписки]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/04/ne-popast-v-spam-7.png</image:loc>
-			<image:caption><![CDATA[Письмо для прогрева]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/04/ne-popast-v-spam-8.png</image:loc>
-			<image:caption><![CDATA[Проверяйте репутацию отправителя, чтобы не попасть в спам]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/04/ne-popast-v-spam-21.png</image:loc>
-			<image:caption><![CDATA[MxToolBox]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/04/ne-popast-v-spam-2.png</image:loc>
-			<image:caption><![CDATA[Статистика рассылок]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/04/ne-popast-v-spam-3.png</image:loc>
-			<image:caption><![CDATA[Жалобы на спам]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/04/ne-popast-v-spam-26.jpg</image:loc>
-			<image:caption><![CDATA[спам-тема - халява]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/04/ne-popast-v-spam-28.jpg</image:loc>
-			<image:caption><![CDATA[спам тема срочность]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/04/ne-popast-v-spam-31.png</image:loc>
-			<image:caption><![CDATA[спам тема замена букв]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/04/ne-popast-v-spam-32.jpg</image:loc>
-			<image:caption><![CDATA[спам тема капс]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/04/ne-popast-v-spam-23.png</image:loc>
-			<image:caption><![CDATA[спам тема синтаксис]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/04/ne-popast-v-spam-12.png</image:loc>
-			<image:caption><![CDATA[спам письмо оформление]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/04/ne-popast-v-spam-6.png</image:loc>
-			<image:caption><![CDATA[спам письмо верстка]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/04/ne-popast-v-spam-25.png</image:loc>
-			<image:caption><![CDATA[персонализация поля from ]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/04/ne-popast-v-spam-24.jpg</image:loc>
-			<image:caption><![CDATA[спам поле from]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/04/ne-popast-v-spam-22.png</image:loc>
-			<image:caption><![CDATA[фишинговое письмо]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/04/ne-popast-v-spam-27.jpg</image:loc>
-			<image:caption><![CDATA[подмена адреса]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/04/ne-popast-v-spam-17.png</image:loc>
-			<image:caption><![CDATA[слишком тяжелое письмо спам]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/06/%D0%9E%D0%B1%D0%BB%D0%B5%D0%B3%D1%87%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9-%D1%88%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD.png</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/04/ne-popast-v-spam-9.png</image:loc>
-			<image:caption><![CDATA[письмо только из ссылок спам]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/04/ne-popast-v-spam-1.png</image:loc>
-			<image:caption><![CDATA[письмо с вложением спам]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/04/ne-popast-v-spam-30-1.png</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/04/ne-popast-v-spam-18.png</image:loc>
-			<image:caption><![CDATA[письмо со ссылкой]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/04/ne-popast-v-spam-5.png</image:loc>
-			<image:caption><![CDATA[письмо со ссылкой спам]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/04/ne-popast-v-spam-4.jpg</image:loc>
-			<image:caption><![CDATA[спам-тестер]]></image:caption>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://www.carrotquest.io/blog/distributed-team/</loc>
 		<lastmod>2021-05-04T09:33:16+00:00</lastmod>
 		<image:image>
@@ -14176,22 +14062,6 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://www.carrotquest.io/blog/8-support-secrets/</loc>
-		<lastmod>2021-05-07T13:33:17+00:00</lastmod>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2018/12/8-%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB-%D0%B8%D0%B4%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B9-%D0%BF%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%BA%D0%B8.jpg</image:loc>
-			<image:title><![CDATA[8-правил-идеальной-поддержки]]></image:title>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/09/8-support-secrets-3-1.png</image:loc>
-			<image:caption><![CDATA[раздел FAQ]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/09/8-support-secrets-4-1.png</image:loc>
-			<image:caption><![CDATA[база знаний]]></image:caption>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://www.carrotquest.io/blog/scenarii-pop-apov/</loc>
 		<lastmod>2021-05-11T07:52:19+00:00</lastmod>
 		<image:image>
@@ -14253,6 +14123,136 @@
 		<image:image>
 			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2018/12/konstruktor-popapov-8-scenariev-14-min.gif</image:loc>
 			<image:caption><![CDATA[конструктор поп-апов]]></image:caption>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://www.carrotquest.io/blog/8-support-secrets/</loc>
+		<lastmod>2021-05-11T09:39:37+00:00</lastmod>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2018/12/8-%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB-%D0%B8%D0%B4%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B9-%D0%BF%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%BA%D0%B8.jpg</image:loc>
+			<image:title><![CDATA[8-правил-идеальной-поддержки]]></image:title>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/09/8-support-secrets-3-1.png</image:loc>
+			<image:caption><![CDATA[раздел FAQ]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/09/8-support-secrets-4-1.png</image:loc>
+			<image:caption><![CDATA[база знаний]]></image:caption>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://www.carrotquest.io/blog/kak-ne-popast-v-spam/</loc>
+		<lastmod>2021-05-11T11:13:27+00:00</lastmod>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2018/02/ne-popast-v-spam-1-scaled.jpg</image:loc>
+			<image:title><![CDATA[ne popast v spam]]></image:title>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2018/02/mastershop.png</image:loc>
+			<image:caption><![CDATA[Собирайте email базу сами]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2021/05/Screenshot_1-2.png</image:loc>
+			<image:caption><![CDATA[как не попасть в спам]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/06/Screenshot_1.jpg</image:loc>
+			<image:caption><![CDATA[форма отписки]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/04/ne-popast-v-spam-7.png</image:loc>
+			<image:caption><![CDATA[Письмо для прогрева]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/04/ne-popast-v-spam-8.png</image:loc>
+			<image:caption><![CDATA[Проверяйте репутацию отправителя, чтобы не попасть в спам]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/04/ne-popast-v-spam-21.png</image:loc>
+			<image:caption><![CDATA[MxToolBox]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2021/05/%D1%81%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0-%D1%81%D0%BE%D0%BE%D0%B1%D1%89%D0%B5%D0%BD%D0%B8%D1%8F.png</image:loc>
+			<image:caption><![CDATA[статистика рассылок]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2021/05/%D0%BF%D1%80%D0%BE-%D1%81%D0%BF%D0%B0%D0%BC.png</image:loc>
+			<image:caption><![CDATA[как не попасть в спам]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/04/ne-popast-v-spam-26.jpg</image:loc>
+			<image:caption><![CDATA[спам-тема - халява]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/04/ne-popast-v-spam-28.jpg</image:loc>
+			<image:caption><![CDATA[спам тема срочность]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/04/ne-popast-v-spam-31.png</image:loc>
+			<image:caption><![CDATA[спам тема замена букв]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/04/ne-popast-v-spam-32.jpg</image:loc>
+			<image:caption><![CDATA[спам тема капс]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/04/ne-popast-v-spam-23.png</image:loc>
+			<image:caption><![CDATA[спам тема синтаксис]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/04/ne-popast-v-spam-12.png</image:loc>
+			<image:caption><![CDATA[спам письмо оформление]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/04/ne-popast-v-spam-6.png</image:loc>
+			<image:caption><![CDATA[спам письмо верстка]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/04/ne-popast-v-spam-25.png</image:loc>
+			<image:caption><![CDATA[персонализация поля from ]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/04/ne-popast-v-spam-24.jpg</image:loc>
+			<image:caption><![CDATA[спам поле from]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/04/ne-popast-v-spam-22.png</image:loc>
+			<image:caption><![CDATA[фишинговое письмо]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/04/ne-popast-v-spam-27.jpg</image:loc>
+			<image:caption><![CDATA[подмена адреса]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/04/ne-popast-v-spam-17.png</image:loc>
+			<image:caption><![CDATA[слишком тяжелое письмо спам]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/06/%D0%9E%D0%B1%D0%BB%D0%B5%D0%B3%D1%87%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9-%D1%88%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/04/ne-popast-v-spam-9.png</image:loc>
+			<image:caption><![CDATA[письмо только из ссылок спам]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/04/ne-popast-v-spam-1.png</image:loc>
+			<image:caption><![CDATA[письмо с вложением спам]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/04/ne-popast-v-spam-30-1.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/04/ne-popast-v-spam-18.png</image:loc>
+			<image:caption><![CDATA[письмо со ссылкой]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/04/ne-popast-v-spam-5.png</image:loc>
+			<image:caption><![CDATA[письмо со ссылкой спам]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/04/ne-popast-v-spam-4.jpg</image:loc>
+			<image:caption><![CDATA[спам-тестер]]></image:caption>
 		</image:image>
 	</url>
 </urlset>

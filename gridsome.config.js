@@ -80,23 +80,23 @@ module.exports = {
 				lang: 'ru',
 			},
 		},
-		{
-			use: 'gridsome-plugin-service-worker',
-			options: {
-				networkFirst: {
-					cacheName: 'nf-v1',
-					fileTypes: [
-						"document",
-						"script",
-						"image",
-						"video",
-						"style",
-						"font",
-						"embed"
-					],
-				},
-			},
-		}
+		// {
+		// 	use: 'gridsome-plugin-service-worker',
+		// 	options: {
+		// 		networkFirst: {
+		// 			cacheName: 'nf-v1',
+		// 			fileTypes: [
+		// 				"document",
+		// 				"script",
+		// 				"image",
+		// 				"video",
+		// 				"style",
+		// 				"font",
+		// 				"embed"
+		// 			],
+		// 		},
+		// 	},
+		// }
 	],
 	
 	
