@@ -70,8 +70,9 @@
 							</p>
 						</div>
 						<div class="calc__rate">
-							<div class="row row__box">
-								<div class="col-12 col-lg-4 automatization">
+							<b-row class="row row__box">
+								<!-- Бизнес-чат -->
+								<b-col lg="4" class="buisness">
 									<div class="calc__top">
 										<g-image src="@/assets/images/components/small-5.png" fit="contain" background="transparent" position="left" height="66" alt="business" />
 										<div class="h5 my-3">
@@ -99,14 +100,14 @@
 											<a href="#" class="open-chat" v-on:click.prevent>Связаться с нами в чате</a>
 										</template>
 									</div>
-									<b-button :href="'/panel/register/?cq_event=clickedOnStartTrial&cq_event_plan=busineschat&cq_event_traffic=' + billing[billingIndex].number" variant="primary" class="font14px w-100">
+									<b-button :href="'/panel/register/?cq_event=clickedOnStartTrial&cq_event_plan=busineschat&cq_event_traffic=' + billing[billingIndex].number" variant="outline-primary" class="font14px w-100">
 										Выбрать этот тариф
 									</b-button>
 									<a href="#" class="show d-md-none mt-4" v-on:click="showMoreAutomatization=!showMoreAutomatization">
 										Подробнее
 									</a>
-									<b-row class=" d-md-flex mt-4" :class="{ 'd-none' : !showMoreAutomatization }">
-										<b-col class="font14px text">
+									<b-row class="d-md-flex mt-4" :class="{ 'd-none' : !showMoreAutomatization }">
+										<!-- <b-col class="font14px text">
 											<p>
 												<b>
 													Основные особенности:
@@ -163,8 +164,6 @@
 													Приложения iOS, Android, Windows
 												</li>
 											</ul>
-										</b-col>
-										<b-col class="font14px text">
 											<p>
 												<b>Сбор и квалификация лидов</b>
 											</p>
@@ -249,9 +248,54 @@
 													Дружелюбная техническая поддержка
 												</b>
 											</p>
+										</b-col> -->
+									</b-row>
+								</b-col>
+								<!-- Автоматизация -->
+								<b-col lg="4" class="automatization">
+									<div class="calc__top">
+										<g-image src="@/assets/images/components/small-8.png" fit="contain" background="transparent" position="left" height="66" alt="business" />
+										<div class="h5 my-3">
+											Автоматизация
+										</div>
+										<div class="font14px grey-text">
+											Лучше всего подходит для общения: продажи на сайте, поддержка в продукте
+										</div>
+									</div>
+									<div class="calc__rate__price font20px">
+										<template v-if="billingIndex < (billing.length-1)">
+											<span id="price_before_sale" v-if="ratioIndex != 0">
+												{{ automatisation[billingIndex].price.toLocaleString('ru') }}
+											</span>
+											<b><span id="price">
+												{{ ( automatisation[billingIndex].price * ratio[ratioIndex] ).toLocaleString('ru') }}
+											</span>₽ в месяц</b>
+											<div class="calc__rate__emails font14px grey-text">
+												<span class="emails">
+													{{ automatisation[billingIndex].emails.toLocaleString('ru') }}
+												</span> писем в месяц
+											</div>
+										</template>
+										<template v-else>
+											<a href="#" class="open-chat" v-on:click.prevent>Связаться с нами в чате</a>
+										</template>
+									</div>
+									<b-button :href="'/panel/register/?cq_event=clickedOnStartTrial&cq_event_plan=busineschat&cq_event_traffic=' + billing[billingIndex].number" variant="primary" class="font14px w-100">
+										Выбрать этот тариф
+									</b-button>
+									<a href="#" class="show d-md-none mt-4" v-on:click="showMoreAutomatization=!showMoreAutomatization">
+										Подробнее
+									</a>
+									<b-row class="d-md-flex mt-4" :class="{ 'd-none' : !showMoreAutomatization }">
+										<b-col class="font14px text">
+											<p>
+												<b>
+													Основные особенности:
+												</b>
+											</p>
 										</b-col>
 									</b-row>
-								</div>
+								</b-col>
 								<b-col cols="12" lg="4" class="premium">
 									<div class="calc__top">
 										<g-image src="@/assets/images/components/small-47.png" fit="contain" background="transparent" position="left"  height="66" alt="premium" />
@@ -292,7 +336,7 @@
 										</p>
 									</div>
 								</b-col>
-							</div>
+							</b-row>
 						</div>
 					</b-col>
 				</b-row>
@@ -627,7 +671,7 @@
 				],
 				automatisation: [
 					{ emails: 500, 		price: 1500 	},
-					{ emails: 2500, 	price: 45000 	},
+					{ emails: 2500, 	price: 4500 	},
 					{ emails: 10000, 	price: 9000 	},
 					{ emails: 15000, 	price: 15000 	},
 					{ emails: 20000, 	price: 22500 	},
@@ -777,7 +821,7 @@
 							left: -10%;
 						}
 					}
-					.premium::before {
+					.automatization::before , .premium::before {
 						content: " ";
 						display: block;
 						position: absolute;
