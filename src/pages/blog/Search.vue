@@ -47,6 +47,8 @@
 
 
 <script>
+	import Layout from '~/layouts/Blog.vue'
+
 	import algoliasearch from 'algoliasearch/lite'
 	import PostCard from '~/components/PostCard.vue'
 
@@ -56,6 +58,7 @@
 
 	export default {
 		components: {
+			Layout,
 			//Для поиска
 			AisInstantSearch: () =>
 				import ('vue-instantsearch')

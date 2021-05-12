@@ -11,7 +11,7 @@ import {
 } from 'bootstrap-vue' 
 
 //Общие стили
-import '~/assets/scss/app.scss'
+import '~/assets/scss/base.scss'
 
 //Базовая разметка
 import DefaultLayout from '~/layouts/Default.vue'

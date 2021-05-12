@@ -98,6 +98,14 @@ module.exports = {
 		// 	},
 		// }
 	],
+
+	// css: {
+	// 	loaderOptions: {
+	// 		scss: {
+	// 			prependData: '@import "./src/assets/scss/base.scss";'
+	// 		}
+	// 	}
+	// }
 	
 	
 	// chainWebpack: config => {		

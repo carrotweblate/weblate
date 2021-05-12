@@ -2,7 +2,7 @@
 	<div>
 		<!-- <b-overlay :show="showOverlay" v-on:click="showOverlay = false"> -->
 
-			<Header v-if="header" v-on:overlay-show="overlay" v-on:overlay-close="overlayClose" />
+			<HeaderBlog v-if="header" v-on:overlay-show="overlay" v-on:overlay-close="overlayClose" />
 
 			<slot />
 
@@ -11,60 +11,6 @@
 			<Balcony />
 			
 		<!-- </b-overlay> -->
-
-		<!-- Модалка для скачивания файлов -->
-		<b-modal ref="open-modal-demo" hide-footer :title="modalTitle">
-			<b-form v-on:submit.prevent="modalDemo">
-				<b-form-input 
-					placeholder="Имя" 
-					type="text" 
-					name="name"
-					required
-					v-model="modalName"
-					class="px-3 py-4"
-				/>
-				<b-form-input 
-					placeholder="Телефон" 
-					type="text" 
-					pattern="^[^A-zА-я]{5,}"
-					name="phone"
-					required
-					v-model="modalPhone"
-					class="px-3 py-4 mt-3"
-				/>
-				<b-form-input 
-					placeholder="Email" 
-					type="email" 
-					name="email"
-					required
-					v-model="modalEmail"
-					class="px-3 py-4 mt-3"
-				/>
-				<b-form-input 
-					placeholder="Должность" 
-					type="text"
-					name="role"
-					required
-					v-model="modalRole"
-					class="px-3 py-4 mt-3"
-				/>
-				<b-form-input 
-					placeholder="URL вашего сайта" 
-					type="text"
-					pattern=".+\.+.+"
-					name="site"
-					required
-					v-model="modalSite"
-					class="px-3 py-4 mt-3"
-				/>
-				<b-button 
-					type="submit" 
-					variant="primary" 
-					class="px-3 py-2 mt-4">
-					Получить консультацию
-				</b-button>
-			</b-form>
-		</b-modal>
 
 		<!-- Модалка для скачивания файлов -->
 		<b-modal ref="open-modal-download" hide-footer :title="modalTitle">
@@ -158,16 +104,8 @@
 				<b-button 
 					type="submit" 
 					variant="primary" 
-					class="px-3 py-2 mt-4 mr-3">
-					Получить на почту
-				</b-button>
-				<b-button
-					v-if="modalOpenUrl != ''" 
-					type="submit" 
-					variant="primary" 
-					class="px-3 py-2 mt-4"
-					v-on:click="openTelegram = !openTelegram">
-					Получить в Телеграме
+					class="px-3 py-2 mt-4">
+					Отправить
 				</b-button>
 			</b-form>
 		</b-modal>
@@ -210,22 +148,20 @@
 			Проверьте свой email: {{modalEmail}}
 		</b-modal>
 
-		<b-modal ref="suсcessDemo" hide-footer title="Всё успешно отправлено">
-			В ближайшее время мы свяжемся с вами
-		</b-modal>
-
 	</div>
 	
 </template>
 
+
+
 <script>
-	import Header from '~/components/Header.vue'
+	import HeaderBlog from '~/components/HeaderBlog.vue'
 	import Footer from '~/components/Footer.vue'
 	import Balcony from '~/components/Balcony.vue'
 
 	export default {
 		components: {
-			Header,
+			HeaderBlog,
 			Footer,
 			Balcony
 		},
@@ -243,7 +179,6 @@
 				modealSend: false,
 
 				showOverlay: false,
-				openTelegram: false
 			};
 		},
 		methods: {
@@ -265,20 +200,6 @@
 						item.addEventListener('click', function(e) {
 							e.preventDefault()
 							carrotquest.track('Записаться на демо через поп-ап');
-						}.bind(this))
-					}.bind(this))
-				}
-
-				// Ищем ссылки для открытия модалок на Демо
-				if ( document.querySelector('a[href*="#open-modal-demo"]') ) {
-					document.querySelectorAll('a[href*="#open-modal-demo"]').forEach(function(item) {
-						item.addEventListener('click', function(e) {
-							e.preventDefault()
-							this.$refs['open-modal-demo'].show()
-
-							let addr = new URL(e.srcElement.href.replace('#open-modal-demo' , ''))
-
-							this.modalTitle = addr.searchParams.get('title')
 						}.bind(this))
 					}.bind(this))
 				}
@@ -342,43 +263,6 @@
 				}
 			},
 
-			//Демо
-			modalDemo () {
-				carrotquest.track("Заказал консультацию", {
-					'Телефон': this.modalPhone,
-					'Имя': this.modalName,
-					'Email': this.modalEmail,
-					'Должность': this.modalRole,
-					'Адрес сайта': this.modalSite,
-					'url': location.host + location.pathname
-				});
-				carrotquest.identify([
-					{"op": "update_or_create", "key": "$phone", "value": this.modalPhone},
-					{"op": "update_or_create", "key": "$name", "value": this.modalName},
-					{"op": "update_or_create", "key": "$email", "value": this.modalEmail},
-					{"op": "update_or_create", "key": "Должность", "value": this.modalRole},
-					{"op": "update_or_create", "key": "Адрес сайта", "value": this.modalSite}
-				]);
-
-				dataLayer.push({ event: 'UAevent', eventCategory: 'leads', eventAction: 'phone', eventLabel: location.host + location.pathname })
-				fbq('trackCustom', 'get_demo', {page: location.pathname})
-
-				carrotquest.track("Заполнил форму на демо", {
-					'Телефон': this.modalPhone,
-					'Имя': this.modalName,
-					'Email': this.modalEmail,
-					'Должность': this.modalRole,
-					'Адрес сайта': this.modalSite,
-					'url': location.host + location.pathname
-				});
-
-				this.$refs['open-modal-demo'].hide()
-				this.$refs['suсcessDemo'].show()
-				setTimeout(() => {
-					this.$refs['suсcessDemo'].hide()
-				}, 7000);
-			},
-
 			//Скачивание файлов
 			modalDownload () {
 				carrotquest.identify([
@@ -420,27 +304,6 @@
 			//Открытие страницы (книга)
 			modalUrl () {
 				if (!this.modealSend) {
-					if (!this.openTelegram) {
-						carrotquest.track(this.modalEvent, {
-							'Телефон': this.modalPhone,
-							'Имя': this.modalName,
-							'Email': this.modalEmail,
-							'Адрес сайта': this.modalSite,
-							'Должность': this.modalRole,
-							'url': location.host + location.pathname
-						})
-						this.modealSend = !this.modealSend
-						this.$refs['open-modal-url'].hide()
-						this.$refs['suсcessDownload'].show()
-						setTimeout(() => {
-							this.$refs['suсcessDownload'].hide()
-						}, 7000);
-					} else {
-						this.openTelegram = false
-						this.$refs['open-modal-url'].hide()
-						window.open( this.modalOpenUrl )
-					}
-
 					carrotquest.identify([
 						{"op": "update_or_create", "key": "$phone", "value": this.modalPhone},
 						{"op": "update_or_create", "key": "$name", "value": this.modalName},
@@ -457,10 +320,26 @@
 						'Должность': this.modalRole,
 						'url': location.host + location.pathname
 					})
-					
+					carrotquest.track(this.modalEvent, {
+						'Телефон': this.modalPhone,
+						'Имя': this.modalName,
+						'Email': this.modalEmail,
+						'Адрес сайта': this.modalSite,
+						'Должность': this.modalRole,
+						'url': location.host + location.pathname
+					})
+
 					dataLayer.push({ event: 'UAevent', eventCategory: 'leads', eventAction: 'phone', eventLabel: location.host + location.pathname })
 					fbq('trackCustom', 'get_lead', {page: location.pathname})
+
+					this.modealSend = !this.modealSend
 				}
+
+				this.$refs['open-modal-url'].hide()
+				this.$refs['suсcessDownload'].show()
+				setTimeout(() => {
+					this.$refs['suсcessDownload'].hide()
+				}, 7000);
 			},
 			
 			//Регистрация на вебинар
@@ -543,14 +422,14 @@
 					// Подключаем Open sans
 					{
 						rel: 'preload',
-						href: 'https://www.carrotquest.io/assets/font/OpenSans-Regular.woff2',
+						href: 'https://cdn-www.carrotquest.io/assets/font/OpenSans-Regular.woff2',
 						as: 'font', 
 						type: 'font/woff2', 
 						crossorigin: 'anonymous'
 					},
 					{
 						rel: 'preload',
-						href: 'https://www.carrotquest.io/assets/font/OpenSans-Bold.woff2',
+						href: 'https://cdn-www.carrotquest.io/assets/font/OpenSans-Bold.woff2',
 						as: 'font', 
 						type: 'font/woff2', 
 						crossorigin: 'anonymous'
@@ -558,7 +437,7 @@
 					// Подключаем Stag sans
 					{
 						rel: 'preload',
-						href: 'https://www.carrotquest.io/assets/font/Stag-Sans-Medium-Web.woff2',
+						href: 'https://cdn-www.carrotquest.io/assets/font/Stag-Sans-Medium-Web.woff2',
 						as: 'font', 
 						type: 'font/woff2', 
 						crossorigin: 'anonymous'
