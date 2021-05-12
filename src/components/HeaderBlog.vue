@@ -5,7 +5,7 @@
 
 			<!-- Логотип -->
 			<g-link to="/blog/">
-				<img src="@/assets/images/components/blogLogo.svg" width="190" height="40" class="logo ml-2 ml-md-3" alt="Carrot quest Blog" />
+				<img src="@/assets/images/components/logo-blog.svg" width="236" height="40" class="logo ml-2 ml-md-3" alt="Carrot quest Blog" />
 			</g-link>
 			<!-- Мобильное меню гамбургер -->
 			<b-navbar-toggle target="nav_collapse" class="pr-0" />
@@ -93,29 +93,14 @@
 			},
 			hideSearchForm() {
 				this.showSearch = false
-			},
-			openMegamenu(el) {
-				if (el.srcElement.parentElement.ariaExpanded == 'false') {
-					this.$emit('overlay-show')
-				} else {
-					this.$emit('overlay-close')
-				}
 			}
-		},
-		mounted () {
-			this.ready = false
 		},
 		data() {
 			return {
-				ready: true,
 				lastPosition: 0,
 				limitPosition: 500,
 				scrolled: false,
 				hideHeader: false,
-
-				//Навигация для блога
-				isBlog: false,
-				isSearchBlog: false,
 
 				//Поиск по блогу
 				showSearch: false,
