@@ -8,7 +8,7 @@
 						type="text" 
 						required
 						v-model="name"
-						class="p-4 mb-3 mb-xl-0"
+						class="px-3 py-4 mb-3 mb-xl-0"
 					/>
 				</b-col>
 				<b-col cols="12" md="6" xl="3">
@@ -17,16 +17,16 @@
 						type="text" 
 						required
 						v-model="phone"
-						class="p-4 mb-3 mb-xl-0"
+						class="px-3 py-4 mb-3 mb-xl-0"
 					/>
 				</b-col>
 				<b-col cols="12" md="6" xl="3">
 					<b-form-input 
-						placeholder="Email" 
+						placeholder="Почта" 
 						type="email" 
 						required
 						v-model="email"
-						class="p-4 mb-3 mb-xl-0"
+						class="px-3 py-4 mb-3 mb-xl-0"
 					/>
 				</b-col>
 				<b-col cols="12" md="6" xl="3">

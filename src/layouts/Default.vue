@@ -33,7 +33,7 @@
 					class="px-3 py-4 mt-3"
 				/>
 				<b-form-input 
-					placeholder="Email" 
+					placeholder="Почта" 
 					type="email" 
 					name="email"
 					required
@@ -85,7 +85,7 @@
 					class="px-3 py-4 mt-3"
 				/>
 				<b-form-input 
-					placeholder="Email" 
+					placeholder="Почта" 
 					type="email" 
 					required
 					v-model="modalEmail"
@@ -134,7 +134,7 @@
 					class="px-3 py-4 mt-3"
 				/>
 				<b-form-input 
-					placeholder="Email" 
+					placeholder="Почта" 
 					type="email" 
 					required
 					v-model="modalEmail"
@@ -191,7 +191,7 @@
 					class="px-3 py-4 mt-3"
 				/>
 				<b-form-input 
-					placeholder="Email" 
+					placeholder="Почта" 
 					type="email" 
 					required
 					v-model="modalEmail"

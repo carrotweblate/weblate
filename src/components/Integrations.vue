@@ -19,63 +19,63 @@
 						<b-tab title="CMS и CRM" active lazy>
 							<b-row class="mt-4">
 								<b-col class="d-flex flex-wrap">
-									<g-link to="/integration/1C_bitrix/" class="Integrations__logo bitrix1c"></g-link>
-									<g-link to="/integration/insales/" class="Integrations__logo insales"></g-link>
-									<g-link to="/integration/opencart/" class="Integrations__logo opencart"></g-link>
-									<g-link to="/integration/prestashop/" class="Integrations__logo prestashop"></g-link>
-									<g-link to="/integration/wordpress/" class="Integrations__logo wordpress"></g-link>
-									<g-link to="/integration/amocrm/" class="Integrations__logo amocrm"></g-link>
-									<g-link to="/integration/bitrix24/" class="Integrations__logo bitrix24"></g-link>
-									<g-link to="/integration/retailcrm/" class="Integrations__logo retailcrm"></g-link>
+									<g-link to="/integration/1c-bitrix/" class="Integrations__logo bitrix1c" alt="1c-bitrix"></g-link>
+									<g-link to="/integration/insales/" class="Integrations__logo insales" alt="insales"></g-link>
+									<g-link to="/integration/opencart/" class="Integrations__logo opencart" alt="opencart"></g-link>
+									<g-link to="/integration/prestashop/" class="Integrations__logo prestashop" alt="prestashop"></g-link>
+									<g-link to="/integration/wordpress/" class="Integrations__logo wordpress" alt="wordpress"></g-link>
+									<g-link to="/integration/amocrm/" class="Integrations__logo amocrm" alt="amocrm"></g-link>
+									<g-link to="/integration/bitrix24/" class="Integrations__logo bitrix24" alt="bitrix24"></g-link>
+									<g-link to="/integration/retailcrm/" class="Integrations__logo retailcrm" alt="retailcrm"></g-link>
 								</b-col>
 							</b-row>
 						</b-tab>
 						<b-tab title="Коммуникации" lazy>
 							<b-row class="mt-4">
 								<b-col class="d-flex flex-wrap">
-									<a href="https://help.carrotquest.io/article/171" class="Integrations__logo email"></a>
-									<g-link to="/integration/facebook/" class="Integrations__logo facebook"></g-link>
-									<g-link to="/integration/yandex_dialogs/" class="Integrations__logo yandex_dialogs"></g-link>
-									<g-link to="/integration/vk/" class="Integrations__logo vk"></g-link>
-									<g-link to="/integration/telegram/" class="Integrations__logo telegram"></g-link>
-									<g-link to="/integration/viber/" class="Integrations__logo viber"></g-link>
-									<g-link to="/integration/slack/" class="Integrations__logo slack_chat"></g-link>
-									<g-link href="https://help.carrotquest.io/article/158/" class="Integrations__logo zendesk"></g-link>
-									<g-link href="https://help.carrotquest.io/article/166/" class="Integrations__logo omnidesk"></g-link>
-									<g-link href="https://help.carrotquest.io/article/163/" class="Integrations__logo usedesk"></g-link>
-									<g-link href="https://help.carrotquest.io/article/1129/" class="Integrations__logo calendly"></g-link>
+									<a href="https://help.carrotquest.io/article/171" class="Integrations__logo email" alt="email"></a>
+									<g-link to="/integration/facebook/" class="Integrations__logo facebook" alt="facebook"></g-link>
+									<g-link to="/integration/yandex_dialogs/" class="Integrations__logo yandex_dialogs" alt="yandex_dialogs"></g-link>
+									<g-link to="/integration/vk/" class="Integrations__logo vk" alt="vk"></g-link>
+									<g-link to="/integration/telegram/" class="Integrations__logo telegram" alt="telegram"></g-link>
+									<g-link to="/integration/viber/" class="Integrations__logo viber" alt="viber"></g-link>
+									<g-link to="/integration/slack/" class="Integrations__logo slack_chat" alt="slack_chat"></g-link>
+									<g-link href="https://help.carrotquest.io/article/158/" class="Integrations__logo zendesk" alt="zendesk"></g-link>
+									<g-link href="https://help.carrotquest.io/article/166/" class="Integrations__logo omnidesk" alt="omnidesk"></g-link>
+									<g-link href="https://help.carrotquest.io/article/163/" class="Integrations__logo usedesk" alt="usedesk"></g-link>
+									<g-link href="https://help.carrotquest.io/article/1129/" class="Integrations__logo calendly" alt="calendly"></g-link>
 								</b-col>
 							</b-row>
 						</b-tab>
 						<b-tab title="Аналитика" lazy>
 							<b-row class="mt-4">
 								<b-col class="d-flex flex-wrap">
-									<a href="https://help.carrotquest.io/article/147" class="Integrations__logo google_analytics"></a>
-									<a href="https://help.carrotquest.io/article/146" class="Integrations__logo mixpanel"></a>
-									<a href="https://help.carrotquest.io/article/145" class="Integrations__logo roistat"></a>
-									<a href="https://help.carrotquest.io/article/144" class="Integrations__logo yandex_metrica"></a>
+									<a href="https://help.carrotquest.io/article/147" class="Integrations__logo google_analytics" alt="google_analytics"></a>
+									<a href="https://help.carrotquest.io/article/146" class="Integrations__logo mixpanel" alt="mixpanel"></a>
+									<a href="https://help.carrotquest.io/article/145" class="Integrations__logo roistat" alt="roistat"></a>
+									<a href="https://help.carrotquest.io/article/144" class="Integrations__logo yandex_metrica" alt="yandex_metrica"></a>
 								</b-col>
 							</b-row>
 						</b-tab>
 						<b-tab title="Лиды из лидформ" lazy>
 							<b-row class="mt-4">
 								<b-col class="d-flex flex-wrap">
-									<a class="Integrations__logo facebook_leads"></a>
-									<a class="Integrations__logo mytarget"></a>
-									<a href="https://help.carrotquest.io/article/141/" class="Integrations__logo sendsay"></a>
-									<a class="Integrations__logo vk_forms"></a>
+									<a class="Integrations__logo facebook_leads" alt="facebook_leads"></a>
+									<a class="Integrations__logo mytarget" alt="mytarget"></a>
+									<a href="https://help.carrotquest.io/article/141/" class="Integrations__logo sendsay" alt="sendsay"></a>
+									<a class="Integrations__logo vk_forms" alt="vk_forms"></a>
 								</b-col>
 							</b-row>
 						</b-tab>
 						<b-tab title="Своими руками" lazy>
 							<b-row class="mt-4">
 								<b-col class="d-flex flex-wrap">
-									<g-link href="https://developers.carrotquest.io/" class="Integrations__logo api"></g-link>
-									<a class="Integrations__logo dialogflow"></a>
-									<a class="Integrations__logo lambdascript"></a>
-									<a class="Integrations__logo jsscript"></a>
-									<a class="Integrations__logo webhook"></a>
-									<a href="https://help.carrotquest.io/article/361/" class="Integrations__logo zapier"></a>
+									<g-link href="https://developers.carrotquest.io/" class="Integrations__logo api" alt="api"></g-link>
+									<a class="Integrations__logo dialogflow" alt="dialogflow"></a>
+									<a class="Integrations__logo lambdascript" alt="lambdascript"></a>
+									<a class="Integrations__logo jsscript" alt="jsscript"></a>
+									<a class="Integrations__logo webhook" alt="webhook"></a>
+									<a href="https://help.carrotquest.io/article/361/" class="Integrations__logo zapier" alt="zapier"></a>
 								</b-col>
 							</b-row>
 						</b-tab>

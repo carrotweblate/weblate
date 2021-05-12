@@ -241,7 +241,7 @@
 		<b-modal ref="open-modal-resource" hide-footer title="Получить материал на email">
 			<b-form v-on:submit.prevent="modalDownloadResource">
 				<b-form-input 
-					placeholder="Email" 
+					placeholder="Почта" 
 					type="email" 
 					required
 					v-model="modalEmail"

@@ -31,7 +31,7 @@
 					class="px-3 py-4 mt-3"
 				/>
 				<b-form-input 
-					placeholder="Email" 
+					placeholder="Почта" 
 					type="email" 
 					required
 					v-model="modalEmail"
@@ -80,7 +80,7 @@
 					class="px-3 py-4 mt-3"
 				/>
 				<b-form-input 
-					placeholder="Email" 
+					placeholder="Почта" 
 					type="email" 
 					required
 					v-model="modalEmail"
@@ -129,7 +129,7 @@
 					class="px-3 py-4 mt-3"
 				/>
 				<b-form-input 
-					placeholder="Email" 
+					placeholder="Почта" 
 					type="email" 
 					required
 					v-model="modalEmail"
@@ -422,14 +422,14 @@
 					// Подключаем Open sans
 					{
 						rel: 'preload',
-						href: 'https://cdn-www.carrotquest.io/assets/font/OpenSans-Regular.woff2',
+						href: 'https://www.carrotquest.io/assets/font/OpenSans-Regular.woff2',
 						as: 'font', 
 						type: 'font/woff2', 
 						crossorigin: 'anonymous'
 					},
 					{
 						rel: 'preload',
-						href: 'https://cdn-www.carrotquest.io/assets/font/OpenSans-Bold.woff2',
+						href: 'https://www.carrotquest.io/assets/font/OpenSans-Bold.woff2',
 						as: 'font', 
 						type: 'font/woff2', 
 						crossorigin: 'anonymous'
@@ -437,7 +437,7 @@
 					// Подключаем Stag sans
 					{
 						rel: 'preload',
-						href: 'https://cdn-www.carrotquest.io/assets/font/Stag-Sans-Medium-Web.woff2',
+						href: 'https://www.carrotquest.io/assets/font/Stag-Sans-Medium-Web.woff2',
 						as: 'font', 
 						type: 'font/woff2', 
 						crossorigin: 'anonymous'

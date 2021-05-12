@@ -8,7 +8,7 @@
 						type="email" 
 						required
 						v-model="email"
-						class="p-4"
+						class="px-3 py-4"
 					/>
 					<b-input-group-append>
 						<b-button type="submit" variant="primary" class="px-4">
