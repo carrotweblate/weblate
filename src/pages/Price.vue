@@ -4,7 +4,7 @@
 		<div class="calculate">
 			<b-container>
 				<b-row>
-					<b-col lg="8" xl="6">
+					<b-col lg="9" xl="7">
 						<div class="h2 mt-5 mb-3 mb-lg-5">
 							Мы помогаем онлайн-бизнесу общаться с клиентами и увеличивать их число
 						</div>
@@ -39,7 +39,7 @@
 								<b-form-input v-model="billingIndex" type="range" min="0" :max="billing.length-1"></b-form-input>
 							</div>
 							<div class="d-block d-md-none">
-								<select name="select" v-model="billingIndex" class="calc__select__mobile w-100 p-2">
+								<select name="select" v-model="billingIndex" class="calc__select__mobile w-100 mt-3 p-2">
 									<option value="0">до 1 000 посетителей в месяц</option>
 									<option value="1">до 10 000 посетителей в месяц</option>
 									<option value="2">до 30 000 посетителей в месяц</option>
@@ -79,7 +79,7 @@
 									</div>
 								</b-col>
 								<b-col cols="12" md="6" xl="12">
-									<div class="add-ons font14px my-4">
+									<div class="add-ons font14px mb-4">
 										<p class="mb-2">
 											Дополнительные модули:
 										</p>
@@ -135,7 +135,7 @@
 												<a href="#" class="open-chat" v-on:click.prevent>Связаться с нами в чате</a>
 											</template>
 										</div>
-										<b-button :href="'/panel/register/?cq_event=clickedOnStartTrial&cq_event_plan=busineschat&cq_event_traffic=' + billing[billingIndex].number" variant="outline-primary" class="font14px py-2 mb-lg-4 w-100">
+										<b-button :href="'/panel/register/?cq_event=clickedOnStartTrial&cq_event_plan=busineschat&cq_event_traffic=' + billing[billingIndex]" variant="outline-primary" class="font14px py-2 mb-lg-4 w-100">
 											Выбрать этот тариф
 										</b-button>
 										<a href="#" class="show d-lg-none my-4" v-on:click="showMoreBuisness=!showMoreBuisness">
@@ -247,7 +247,7 @@
 												<a href="#" class="open-chat" v-on:click.prevent>Связаться с нами в чате</a>
 											</template>
 										</div>
-										<b-button :href="'/panel/register/?cq_event=clickedOnStartTrial&cq_event_plan=busineschat&cq_event_traffic=' + billing[billingIndex].number" variant="primary" class="font14px py-2 mb-lg-4 w-100">
+										<b-button :href="'/panel/register/?cq_event=clickedOnStartTrial&cq_event_plan=automatization&cq_event_traffic=' + billing[billingIndex]" variant="primary" class="font14px py-2 mb-lg-4 w-100">
 											Выбрать этот тариф
 										</b-button>
 										<a href="#" class="show d-lg-none my-4" v-on:click="showMoreAutomatization=!showMoreAutomatization">
@@ -360,7 +360,7 @@
 												+7 (495) 105-91-69
 											</div>
 										</div>
-										<b-button href="#" variant="outline-primary" v-on:click.prevent class="open-chat font14px py-2 mb-lg-4 w-100">
+										<b-button :href="'/panel/register/?cq_event=clickedOnStartTrial&cq_event_plan=premium&cq_event_traffic=' + billing[billingIndex]" variant="outline-primary" v-on:click.prevent class="open-chat font14px py-2 mb-lg-4 w-100">
 											Связаться с нами
 										</b-button>
 										<a href="#" class="show d-lg-none my-4" v-on:click="showMorePremium=!showMorePremium">
@@ -967,7 +967,7 @@
 									</svg>
 									<b-tooltip target="all_features-12-1" placement="top">
 										<div class="font12px text-left">
-											Свойства: имя, email, email, местоположение, UTM-метки. События: зашел на сайт, написал в чат, сделал заказ и оплатил.
+											Свойства: имя, email, email, местоположение, UTM-метки. События: зашел на сайт, написал в чат, сделал заказ и оплатил
 										</div>
 									</b-tooltip>
 								</b-col>
@@ -979,7 +979,7 @@
 									</svg>
 									<b-tooltip target="all_features-12-2" placement="top">
 										<div class="font12px text-left">
-											Абсолютно любые свойства и события. Например: сумма покупок клиента, имя менеджера, клик на любой элемент, регистрация на вашем сайте и другие.
+											Абсолютно любые свойства и события. Например: сумма покупок клиента, имя менеджера, клик на любой элемент, регистрация на вашем сайте и другие
 										</div>
 									</b-tooltip>
 								</b-col>
@@ -991,7 +991,7 @@
 									</svg>
 									<b-tooltip target="all_features-12-3" placement="top">
 										<div class="font12px text-left">
-											Абсолютно любые свойства и события. Например: сумма покупок клиента, имя менеджера, клик на любой элемент, регистрация на вашем сайте и другие.
+											Абсолютно любые свойства и события. Например: сумма покупок клиента, имя менеджера, клик на любой элемент, регистрация на вашем сайте и другие
 										</div>
 									</b-tooltip>
 								</b-col>
@@ -1338,7 +1338,7 @@
 								</span>
 								<b-tooltip target="all_features-18" placement="top">
 									<div class="font12px text-left">
-										Создайте и настройте рассылку заранее — она отправится в нужное время автоматически.
+										Создайте и настройте рассылку заранее — она отправится в нужное время автоматически
 									</div>
 								</b-tooltip>
 							</div>
@@ -1407,7 +1407,7 @@
 										</svg>
 										<b-tooltip target="all_features-20-1" placement="top">
 											<div class="font12px text-left">
-												В квоту писем входят ручные рассылки, дублирование сообщений пользователям на почту и уведомления операторам. После превышения квоты каждое следующее письмо будет стоить 0,05 рубля.
+												В квоту писем входят ручные рассылки, дублирование сообщений пользователям на почту и уведомления операторам. После превышения квоты каждое следующее письмо будет стоить 0,05 рубля
 											</div>
 										</b-tooltip>
 									</template>
@@ -1424,7 +1424,7 @@
 										</svg>
 										<b-tooltip target="all_features-20-2" placement="top">
 											<div class="font12px text-left">
-												В квоту писем входят ручные рассылки, дублирование сообщений пользователям на почту и уведомления операторам. После превышения квоты каждое следующее письмо будет стоить 0,05 рубля.
+												В квоту писем входят ручные рассылки, дублирование сообщений пользователям на почту и уведомления операторам. После превышения квоты каждое следующее письмо будет стоить 0,05 рубля
 											</div>
 										</b-tooltip>
 									</template>
@@ -1439,29 +1439,594 @@
 						</b-col>
 					</b-row>
 
+					<b-row class="line color">
+						<b-col cols="5" class="d-flex align-items-center">
+							<div class="line__pic d-none d-lg-block mr-3">
+								<g-image src="@/assets/images/components/small-10.png" fit="contain" background="transparent" position="left" width="45" height="45" alt="business" />
+							</div>
+							<div>
+								<b>Знайте о действиях ваших клиентов</b>
+							</div>
+						</b-col>
+						<b-col cols="7">
+							<b-row class="grey-text align-items-center">
+								<b-col cols="4">
+									<b>Бизнес-чат</b>
+								</b-col>
+								<b-col cols="4">
+									<b>Автоматизация</b>
+								</b-col>
+								<b-col cols="4">
+									<b>Премиум</b>
+								</b-col>
+							</b-row>
+						</b-col>
+					</b-row>
+					<b-row class="line bordered">
+						<b-col cols="5" class="d-flex align-items-center">
+							<div class="dashed-underline line__title">
+								<span id="all_features-21">
+									Сбор данных о поведении пользователей
+								</span>
+								<b-tooltip target="all_features-21" placement="top">
+									<div class="font12px text-left">
+										Отслеживайте, какие события совершали посетители вашего сайта: какие страницы посещали, на что кликали, где оставляли данные, и так далее
+									</div>
+								</b-tooltip>
+							</div>
+						</b-col>
+						<b-col cols="7">
+							<b-row class="grey-text align-items-center">
+								<b-col cols="4">
+									Базовые данные
+									<svg id="all_features-21-1" class="ml-2" width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<circle cx="8.5" cy="10.5" r="8" stroke="#C4C4C4"></circle>
+										<path d="M7.69336 12.6387V12.3223C7.69336 11.8652 7.76367 11.4902 7.9043 11.1973C8.04492 10.9004 8.30664 10.5879 8.68945 10.2598C9.2207 9.81055 9.55469 9.47266 9.69141 9.24609C9.83203 9.01953 9.90234 8.74609 9.90234 8.42578C9.90234 8.02734 9.77344 7.7207 9.51562 7.50586C9.26172 7.28711 8.89453 7.17773 8.41406 7.17773C8.10547 7.17773 7.80469 7.21484 7.51172 7.28906C7.21875 7.35938 6.88281 7.49023 6.50391 7.68164L6.1582 6.89062C6.89648 6.50391 7.66797 6.31055 8.47266 6.31055C9.21875 6.31055 9.79883 6.49414 10.2129 6.86133C10.627 7.22852 10.834 7.74609 10.834 8.41406C10.834 8.69922 10.7949 8.95117 10.7168 9.16992C10.6426 9.38477 10.5312 9.58984 10.3828 9.78516C10.2344 9.97656 9.91406 10.2871 9.42188 10.7168C9.02734 11.0527 8.76562 11.332 8.63672 11.5547C8.51172 11.7773 8.44922 12.0742 8.44922 12.4453V12.6387H7.69336ZM7.40625 14.3789C7.40625 13.8477 7.64062 13.582 8.10938 13.582C8.33594 13.582 8.50977 13.6504 8.63086 13.7871C8.75586 13.9238 8.81836 14.1211 8.81836 14.3789C8.81836 14.6289 8.75586 14.8242 8.63086 14.9648C8.50586 15.1016 8.33203 15.1699 8.10938 15.1699C7.90625 15.1699 7.73828 15.1094 7.60547 14.9883C7.47266 14.8633 7.40625 14.6602 7.40625 14.3789Z" fill="#717171"></path>
+									</svg>
+									<b-tooltip target="all_features-21-1" placement="top">
+										<div class="font12px text-left">
+											Сегментировать можно по базовым свойствам и событиям: имя, телефон, email, последняя активность, источник захода на сайт, количество сессий, количество диалогов
+										</div>
+									</b-tooltip>
+								</b-col>
+								<b-col cols="4">
+									Любые данные
+									<svg id="all_features-21-2" class="ml-2" width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<circle cx="8.5" cy="10.5" r="8" stroke="#C4C4C4"></circle>
+										<path d="M7.69336 12.6387V12.3223C7.69336 11.8652 7.76367 11.4902 7.9043 11.1973C8.04492 10.9004 8.30664 10.5879 8.68945 10.2598C9.2207 9.81055 9.55469 9.47266 9.69141 9.24609C9.83203 9.01953 9.90234 8.74609 9.90234 8.42578C9.90234 8.02734 9.77344 7.7207 9.51562 7.50586C9.26172 7.28711 8.89453 7.17773 8.41406 7.17773C8.10547 7.17773 7.80469 7.21484 7.51172 7.28906C7.21875 7.35938 6.88281 7.49023 6.50391 7.68164L6.1582 6.89062C6.89648 6.50391 7.66797 6.31055 8.47266 6.31055C9.21875 6.31055 9.79883 6.49414 10.2129 6.86133C10.627 7.22852 10.834 7.74609 10.834 8.41406C10.834 8.69922 10.7949 8.95117 10.7168 9.16992C10.6426 9.38477 10.5312 9.58984 10.3828 9.78516C10.2344 9.97656 9.91406 10.2871 9.42188 10.7168C9.02734 11.0527 8.76562 11.332 8.63672 11.5547C8.51172 11.7773 8.44922 12.0742 8.44922 12.4453V12.6387H7.69336ZM7.40625 14.3789C7.40625 13.8477 7.64062 13.582 8.10938 13.582C8.33594 13.582 8.50977 13.6504 8.63086 13.7871C8.75586 13.9238 8.81836 14.1211 8.81836 14.3789C8.81836 14.6289 8.75586 14.8242 8.63086 14.9648C8.50586 15.1016 8.33203 15.1699 8.10938 15.1699C7.90625 15.1699 7.73828 15.1094 7.60547 14.9883C7.47266 14.8633 7.40625 14.6602 7.40625 14.3789Z" fill="#717171"></path>
+									</svg>
+									<b-tooltip target="all_features-21-2" placement="top">
+										<div class="font12px text-left">
+											Абсолютно любые свойства и события. Например: сумма покупок клиента, имя менеджера, клик на любой элемент, регистрация на вашем сайте и другие
+										</div>
+									</b-tooltip>
+								</b-col>
+								<b-col cols="4">
+									Любые данные
+									<svg id="all_features-21-3" class="ml-2" width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<circle cx="8.5" cy="10.5" r="8" stroke="#C4C4C4"></circle>
+										<path d="M7.69336 12.6387V12.3223C7.69336 11.8652 7.76367 11.4902 7.9043 11.1973C8.04492 10.9004 8.30664 10.5879 8.68945 10.2598C9.2207 9.81055 9.55469 9.47266 9.69141 9.24609C9.83203 9.01953 9.90234 8.74609 9.90234 8.42578C9.90234 8.02734 9.77344 7.7207 9.51562 7.50586C9.26172 7.28711 8.89453 7.17773 8.41406 7.17773C8.10547 7.17773 7.80469 7.21484 7.51172 7.28906C7.21875 7.35938 6.88281 7.49023 6.50391 7.68164L6.1582 6.89062C6.89648 6.50391 7.66797 6.31055 8.47266 6.31055C9.21875 6.31055 9.79883 6.49414 10.2129 6.86133C10.627 7.22852 10.834 7.74609 10.834 8.41406C10.834 8.69922 10.7949 8.95117 10.7168 9.16992C10.6426 9.38477 10.5312 9.58984 10.3828 9.78516C10.2344 9.97656 9.91406 10.2871 9.42188 10.7168C9.02734 11.0527 8.76562 11.332 8.63672 11.5547C8.51172 11.7773 8.44922 12.0742 8.44922 12.4453V12.6387H7.69336ZM7.40625 14.3789C7.40625 13.8477 7.64062 13.582 8.10938 13.582C8.33594 13.582 8.50977 13.6504 8.63086 13.7871C8.75586 13.9238 8.81836 14.1211 8.81836 14.3789C8.81836 14.6289 8.75586 14.8242 8.63086 14.9648C8.50586 15.1016 8.33203 15.1699 8.10938 15.1699C7.90625 15.1699 7.73828 15.1094 7.60547 14.9883C7.47266 14.8633 7.40625 14.6602 7.40625 14.3789Z" fill="#717171"></path>
+									</svg>
+									<b-tooltip target="all_features-21-3" placement="top">
+										<div class="font12px text-left">
+											Абсолютно любые свойства и события. Например: сумма покупок клиента, имя менеджера, клик на любой элемент, регистрация на вашем сайте и другие
+										</div>
+									</b-tooltip>
+								</b-col>
+							</b-row>
+						</b-col>
+					</b-row>
+					<b-row class="line bordered">
+						<b-col cols="5" class="d-flex align-items-center">
+							<div class="line__title">
+								Настройка сбора данных без помощи разработчиков
+							</div>
+						</b-col>
+						<b-col cols="7">
+							<b-row class="grey-text align-items-center">
+								<b-col cols="4">
+									
+								</b-col>
+								<b-col cols="4">
+									<svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 6.5L6 11.5L16 1.5" stroke="#717171" stroke-width="2"></path>
+									</svg>
+								</b-col>
+								<b-col cols="4">
+									<svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 6.5L6 11.5L16 1.5" stroke="#717171" stroke-width="2"></path>
+									</svg>
+								</b-col>
+							</b-row>
+						</b-col>
+					</b-row>
+					<b-row class="line bordered">
+						<b-col cols="5" class="d-flex align-items-center">
+							<div class="dashed-underline line__title">
+								<span id="all_features-22">
+									Воронка сайта
+								</span>
+								<b-tooltip target="all_features-22" placement="top">
+									<div class="font12px text-left">
+										Разбивайте текущие процессы на этапы, визуализируйте и отслеживайте где провалы конверсии и есть узкие места
+									</div>
+								</b-tooltip>
+							</div>
+						</b-col>
+						<b-col cols="7">
+							<b-row class="grey-text align-items-center">
+								<b-col cols="4">
+									
+								</b-col>
+								<b-col cols="4">
+									<svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 6.5L6 11.5L16 1.5" stroke="#717171" stroke-width="2"></path>
+									</svg>
+								</b-col>
+								<b-col cols="4">
+									<svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 6.5L6 11.5L16 1.5" stroke="#717171" stroke-width="2"></path>
+									</svg>
+								</b-col>
+							</b-row>
+						</b-col>
+					</b-row>
+					<b-row class="line bordered">
+						<b-col cols="5" class="d-flex align-items-center">
+							<div class="dashed-underline line__title">
+								<span id="all_features-23">
+									График частоты совершения событий
+								</span>
+								<b-tooltip target="all_features-23" placement="top">
+									<div class="font12px text-left">
+										Отслеживайте, сколько раз совершалось то или иное событие по часам, дням, неделям для определения популярности разделов или функций
+									</div>
+								</b-tooltip>
+							</div>
+						</b-col>
+						<b-col cols="7">
+							<b-row class="grey-text align-items-center">
+								<b-col cols="4">
+									
+								</b-col>
+								<b-col cols="4">
+									<svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 6.5L6 11.5L16 1.5" stroke="#717171" stroke-width="2"></path>
+									</svg>
+								</b-col>
+								<b-col cols="4">
+									<svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 6.5L6 11.5L16 1.5" stroke="#717171" stroke-width="2"></path>
+									</svg>
+								</b-col>
+							</b-row>
+						</b-col>
+					</b-row>
 
-					<b-row class="line color registration">
-						<div class="line__col1">
-							<div class="h4 bold">
+					<b-row class="line color">
+						<b-col cols="5" class="d-flex align-items-center">
+							<div class="line__pic d-none d-lg-block mr-3">
+								<g-image src="@/assets/images/components/small-9.png" fit="contain" background="transparent" position="left" width="45" height="45" alt="business" />
+							</div>
+							<div>
+								<b>Интегрируйте Carrot quest в свою экосистему</b>
+							</div>
+						</b-col>
+						<b-col cols="7">
+							<b-row class="grey-text align-items-center">
+								<b-col cols="4">
+									<b>Бизнес-чат</b>
+								</b-col>
+								<b-col cols="4">
+									<b>Автоматизация</b>
+								</b-col>
+								<b-col cols="4">
+									<b>Премиум</b>
+								</b-col>
+							</b-row>
+						</b-col>
+					</b-row>
+					<b-row class="line bordered">
+						<b-col cols="5" class="d-flex align-items-center">
+							<div class="dashed-underline line__title">
+								<span id="all_features-24">
+									Интеграция с почтой
+								</span>
+								<b-tooltip target="all_features-24" placement="top">
+									<div class="font12px text-left">
+										Получайте и отвечайте на письма из вашей корпоративной почты прямо в разделе Диалоги
+									</div>
+								</b-tooltip>
+							</div>
+						</b-col>
+						<b-col cols="7">
+							<b-row class="grey-text align-items-center">
+								<b-col cols="4">
+									<svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 6.5L6 11.5L16 1.5" stroke="#717171" stroke-width="2"></path>
+									</svg>
+								</b-col>
+								<b-col cols="4">
+									<svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 6.5L6 11.5L16 1.5" stroke="#717171" stroke-width="2"></path>
+									</svg>
+								</b-col>
+								<b-col cols="4">
+									<svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 6.5L6 11.5L16 1.5" stroke="#717171" stroke-width="2"></path>
+									</svg>
+								</b-col>
+							</b-row>
+						</b-col>
+					</b-row>
+					<b-row class="line bordered">
+						<b-col cols="5" class="d-flex align-items-center">
+							<div class="dashed-underline line__title">
+								<span id="all_features-25">
+									Соцсети: Facebook, ВКонтакте
+								</span>
+								<b-tooltip target="all_features-25" placement="top">
+									<div class="font12px text-left">
+										Подключите ваши страницы в соцсетях и отвечайте на сообщения из них в разделе Диалоги
+									</div>
+								</b-tooltip>
+							</div>
+						</b-col>
+						<b-col cols="7">
+							<b-row class="grey-text align-items-center">
+								<b-col cols="4">
+									<svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 6.5L6 11.5L16 1.5" stroke="#717171" stroke-width="2"></path>
+									</svg>
+								</b-col>
+								<b-col cols="4">
+									<svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 6.5L6 11.5L16 1.5" stroke="#717171" stroke-width="2"></path>
+									</svg>
+								</b-col>
+								<b-col cols="4">
+									<svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 6.5L6 11.5L16 1.5" stroke="#717171" stroke-width="2"></path>
+									</svg>
+								</b-col>
+							</b-row>
+						</b-col>
+					</b-row>
+					<b-row class="line bordered">
+						<b-col cols="5" class="d-flex align-items-center">
+							<div class="dashed-underline line__title">
+								<span id="all_features-26">
+									Мессенджеры: Viber, Telegram
+								</span>
+								<b-tooltip target="all_features-26" placement="top">
+									<div class="font12px text-left">
+										Отвечайте на сообщения из Telegram или Viber в разделе Диалоги
+									</div>
+								</b-tooltip>
+							</div>
+						</b-col>
+						<b-col cols="7">
+							<b-row class="grey-text align-items-center">
+								<b-col cols="4">
+									<svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 6.5L6 11.5L16 1.5" stroke="#717171" stroke-width="2"></path>
+									</svg>
+								</b-col>
+								<b-col cols="4">
+									<svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 6.5L6 11.5L16 1.5" stroke="#717171" stroke-width="2"></path>
+									</svg>
+								</b-col>
+								<b-col cols="4">
+									<svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 6.5L6 11.5L16 1.5" stroke="#717171" stroke-width="2"></path>
+									</svg>
+								</b-col>
+							</b-row>
+						</b-col>
+					</b-row>
+					<b-row class="line bordered">
+						<b-col cols="5" class="d-flex align-items-center">
+							<div class="line__title">
+								Zoom, Calendly, Slack, Яндекс Диалоги
+							</div>
+						</b-col>
+						<b-col cols="7">
+							<b-row class="grey-text align-items-center">
+								<b-col cols="4">
+									<svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 6.5L6 11.5L16 1.5" stroke="#717171" stroke-width="2"></path>
+									</svg>
+								</b-col>
+								<b-col cols="4">
+									<svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 6.5L6 11.5L16 1.5" stroke="#717171" stroke-width="2"></path>
+									</svg>
+								</b-col>
+								<b-col cols="4">
+									<svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 6.5L6 11.5L16 1.5" stroke="#717171" stroke-width="2"></path>
+									</svg>
+								</b-col>
+							</b-row>
+						</b-col>
+					</b-row>
+					<b-row class="line bordered">
+						<b-col cols="5" class="d-flex align-items-center">
+							<div class="dashed-underline line__title">
+								<span id="all_features-28">
+									CMS: 1С-Битрикс, InSales, OpenCart, PrestaShop, WordPress
+								</span>
+								<b-tooltip target="all_features-28" placement="top">
+									<div class="font12px text-left">
+										Собирайте всю информацию о действиях клиентов вашего интернет-магазина без дополнительных настроек
+									</div>
+								</b-tooltip>
+							</div>
+						</b-col>
+						<b-col cols="7">
+							<b-row class="grey-text align-items-center">
+								<b-col cols="4">
+									<svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 6.5L6 11.5L16 1.5" stroke="#717171" stroke-width="2"></path>
+									</svg>
+								</b-col>
+								<b-col cols="4">
+									<svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 6.5L6 11.5L16 1.5" stroke="#717171" stroke-width="2"></path>
+									</svg>
+								</b-col>
+								<b-col cols="4">
+									<svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 6.5L6 11.5L16 1.5" stroke="#717171" stroke-width="2"></path>
+									</svg>
+								</b-col>
+							</b-row>
+						</b-col>
+					</b-row>
+					<b-row class="line bordered">
+						<b-col cols="5" class="d-flex align-items-center">
+							<div class="dashed-underline line__title">
+								<span id="all_features-29">
+									CRM: amoCRM, Битрикс24, retailCRM
+								</span>
+								<b-tooltip target="all_features-29" placement="top">
+									<div class="font12px text-left">
+										Синхронизируйте данные о контактах и сделках между вашей CRM и Carrot quest
+									</div>
+								</b-tooltip>
+							</div>
+						</b-col>
+						<b-col cols="7">
+							<b-row class="grey-text align-items-center">
+								<b-col cols="4">
+									
+								</b-col>
+								<b-col cols="4">
+									<svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 6.5L6 11.5L16 1.5" stroke="#717171" stroke-width="2"></path>
+									</svg>
+								</b-col>
+								<b-col cols="4">
+									<svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 6.5L6 11.5L16 1.5" stroke="#717171" stroke-width="2"></path>
+									</svg>
+								</b-col>
+							</b-row>
+						</b-col>
+					</b-row>
+					<b-row class="line bordered">
+						<b-col cols="5" class="d-flex align-items-center">
+							<div class="dashed-underline line__title">
+								<span id="all_features-30">
+									Аналитика: Mixpanel, Roistat, Яндекс Метрика, Google Analytics
+								</span>
+								<b-tooltip target="all_features-30" placement="top">
+									<div class="font12px text-left">
+										Отправляйте данные о событиях пользователей из Carrot quest для более удобного анализа
+									</div>
+								</b-tooltip>
+							</div>
+						</b-col>
+						<b-col cols="7">
+							<b-row class="grey-text align-items-center">
+								<b-col cols="4">
+									
+								</b-col>
+								<b-col cols="4">
+									<svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 6.5L6 11.5L16 1.5" stroke="#717171" stroke-width="2"></path>
+									</svg>
+								</b-col>
+								<b-col cols="4">
+									<svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 6.5L6 11.5L16 1.5" stroke="#717171" stroke-width="2"></path>
+									</svg>
+								</b-col>
+							</b-row>
+						</b-col>
+					</b-row>
+					<b-row class="line bordered">
+						<b-col cols="5" class="d-flex align-items-center">
+							<div class="dashed-underline line__title">
+								<span id="all_features-31">
+									Тикетные системы: Zendesk, Omnidesk, Usedesk
+								</span>
+								<b-tooltip target="all_features-31" placement="top">
+									<div class="font12px text-left">
+										Создавайте тикеты прямо из раздела Диалоги
+									</div>
+								</b-tooltip>
+							</div>
+						</b-col>
+						<b-col cols="7">
+							<b-row class="grey-text align-items-center">
+								<b-col cols="4">
+									
+								</b-col>
+								<b-col cols="4">
+									<svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 6.5L6 11.5L16 1.5" stroke="#717171" stroke-width="2"></path>
+									</svg>
+								</b-col>
+								<b-col cols="4">
+									<svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 6.5L6 11.5L16 1.5" stroke="#717171" stroke-width="2"></path>
+									</svg>
+								</b-col>
+							</b-row>
+						</b-col>
+					</b-row>
+					<b-row class="line bordered">
+						<b-col cols="5" class="d-flex align-items-center">
+							<div class="dashed-underline line__title">
+								<span id="all_features-32">
+									API
+								</span>
+								<b-tooltip target="all_features-32" placement="top">
+									<div class="font12px text-left">
+										Используйте API Carrot quest, чтобы настраивать более сложные интеграции с бэкендом вашего сервиса или сайта
+									</div>
+								</b-tooltip>
+							</div>
+						</b-col>
+						<b-col cols="7">
+							<b-row class="grey-text align-items-center">
+								<b-col cols="4">
+									
+								</b-col>
+								<b-col cols="4">
+									<svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 6.5L6 11.5L16 1.5" stroke="#717171" stroke-width="2"></path>
+									</svg>
+								</b-col>
+								<b-col cols="4">
+									<svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 6.5L6 11.5L16 1.5" stroke="#717171" stroke-width="2"></path>
+									</svg>
+								</b-col>
+							</b-row>
+						</b-col>
+					</b-row>
+					
+					<b-row class="line color">
+						<b-col cols="5" class="d-flex align-items-center">
+							<div class="line__pic d-none d-lg-block mr-3">
+								<g-image src="@/assets/images/components/small-49.png" fit="contain" background="transparent" position="left" width="45" height="45" alt="business" />
+							</div>
+							<div>
+								<b>Поддержка, помощь и другие услуги</b>
+							</div>
+						</b-col>
+						<b-col cols="7">
+							<b-row class="grey-text align-items-center">
+								<b-col cols="4">
+									<b>Бизнес-чат</b>
+								</b-col>
+								<b-col cols="4">
+									<b>Автоматизация</b>
+								</b-col>
+								<b-col cols="4">
+									<b>Премиум</b>
+								</b-col>
+							</b-row>
+						</b-col>
+					</b-row>
+					<b-row class="line bordered">
+						<b-col cols="5" class="d-flex align-items-center">
+							<div class="line__title">
+								Дружелюбная поддержка в чате
+							</div>
+						</b-col>
+						<b-col cols="7">
+							<b-row class="grey-text align-items-center">
+								<b-col cols="4">
+									<svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 6.5L6 11.5L16 1.5" stroke="#717171" stroke-width="2"></path>
+									</svg>
+								</b-col>
+								<b-col cols="4">
+									<svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 6.5L6 11.5L16 1.5" stroke="#717171" stroke-width="2"></path>
+									</svg>
+								</b-col>
+								<b-col cols="4">
+									<svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 6.5L6 11.5L16 1.5" stroke="#717171" stroke-width="2"></path>
+									</svg>
+								</b-col>
+							</b-row>
+						</b-col>
+					</b-row>
+					<b-row class="line bordered">
+						<b-col cols="5" class="d-flex align-items-center">
+							<div class="line__title">
+								Анализ вашего сайта и предложение гипотез роста от эксперта
+							</div>
+						</b-col>
+						<b-col cols="7">
+							<b-row class="grey-text align-items-center">
+								<b-col cols="4">
+									
+								</b-col>
+								<b-col cols="4">
+									
+								</b-col>
+								<b-col cols="4">
+									<svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 6.5L6 11.5L16 1.5" stroke="#717171" stroke-width="2"></path>
+									</svg>
+								</b-col>
+							</b-row>
+						</b-col>
+					</b-row>
+					<b-row class="line bordered">
+						<b-col cols="5" class="d-flex align-items-center">
+							<div class="line__title">
+								Персональная помощь в настройке сервиса
+							</div>
+						</b-col>
+						<b-col cols="7">
+							<b-row class="grey-text align-items-center">
+								<b-col cols="4">
+									
+								</b-col>
+								<b-col cols="4">
+									
+								</b-col>
+								<b-col cols="4">
+									<svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 6.5L6 11.5L16 1.5" stroke="#717171" stroke-width="2"></path>
+									</svg>
+								</b-col>
+							</b-row>
+						</b-col>
+					</b-row>
+					
+
+
+
+					<b-row class="registration">
+						<b-col cols="5">
+							<div class="h4">
 								Зарегистрируетесь и попробуйте сервис бесплатно
 							</div>
 							Заплатите только если сервис понравится. Банковская карта не требуется.
-						</div>
-						<div class="line__col2">
+						</b-col>
+						<b-col cols="7">
 							<div class="row">
 								<b-col cols="4">
 									<p>
-										Business chat
+										Бизнес-чат
 									</p>
-									<p class="calc_less">
-										<b>from $<span class="price">16</span>/month</b>
-									</p>
-									<p class="calc_more">
-										<a href="#" class="open-chat"><b>Chat with us</b></a>
-									</p>
-									<a href="/panel/register/?cq_event=clickedOnStartTrial&amp;cq_event_plan=businesschat&amp;cq_event_traffic=1000" class="link-button rate__button button_busineschat">
-										Start 7-day free trial
-									</a>
+									<template v-if="billingIndex < (billing.length-1)">
+										<b>
+											{{ ( buisness[billingIndex].price * ratio[ratioIndex] + parseInt(noBranding) ).toLocaleString('ru') }} ₽ в месяц
+										</b>
+									</template>
+									<template v-else>
+										<a href="#" class="open-chat" v-on:click.prevent>Связаться с нами в чате</a>
+									</template>
 								</b-col>
 								<b-col cols="4" class="automatization">
 									<p>
@@ -1489,7 +2054,7 @@
 									</a>
 								</b-col>
 							</div>
-						</div>
+						</b-col>
 					</b-row>
 				</b-col>
 			</b-row>
@@ -1802,9 +2367,51 @@
 						text-align: center;
 					}
 				}
-				@media (max-width: 575.98px) {
+				
+				@media (min-width: 1320px) {
+					&__top {
+						height: 220px;
+					}
 					&__select {
-						padding: 0;
+						width: 310px;
+						float: left;
+					}
+					&__rate {
+						float: right;
+						width: 940px;
+						padding-right: 20px;
+					}
+				}
+				@media (max-width: 1319.98px) {
+					&__top {
+						height: 220px;
+					}
+					&__select {
+						width: 310px;
+						float: left;
+					}
+					&__rate {
+						float: right;
+						width: 900px;
+						padding-right: 20px;
+					}
+				}
+				@media (max-width: 1199.98px) {
+					&__select {
+						width: 100%;
+						float: none;
+						&__lids {
+							margin-top: 16px;
+							br {
+								display: none;
+							}
+						}
+					}
+					&__rate {
+						width: 100%;
+						float: none;
+						padding-left: 20px;
+						padding-right: 20px;
 					}
 				}
 				@media (max-width: 991.98px) {
@@ -1839,36 +2446,9 @@
 						}
 					}
 				}
-				@media (max-width: 1199.98px) {
+				@media (max-width: 575.98px) {
 					&__select {
-						&__lids {
-							margin-top: 16px;
-							br {
-								display: none;
-							}
-						}
-					}
-					&__rate {
-						margin-top: 32px;
-						padding-left: 20px;
-						padding-right: 20px;
-						.calc__top {
-							height: 220px;
-						}
-					}
-				}
-				@media (min-width: 1320px) {
-					&__top {
-						height: 220px;
-					}
-					&__select {
-						width: 310px;
-						float: left;
-					}
-					&__rate {
-						float: right;
-						width: 940px;
-						padding-right: 20px;
+						padding: 0;
 					}
 				}
 			}
