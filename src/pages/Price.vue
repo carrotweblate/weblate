@@ -16,7 +16,7 @@
 							<h5>
 								Цена тарифа зависит от количества уникальных посетителей сайта в месяц
 							</h5>
-							<div class="calc__select__lids font20px d-none d-md-block my-4">
+							<div class="calc__select__lids font24px d-none d-md-block my-4">
 								<b v-if="billingIndex < ( billing.length - 1 )">
 									до {{ billing[billingIndex].toLocaleString('ru') }}
 								</b>
@@ -96,7 +96,7 @@
 											</div>
 										</b-tooltip>
 									</div>
-									<p class="peace">
+									<p class="peace font14px">
 										✌️ <i>Количество подключенных операторов не влияет на цену подписки</i>
 									</p>
 								</b-col>
@@ -120,9 +120,9 @@
 											<template v-if="billingIndex < (billing.length-1)">
 												<span>
 													<b class="font20px">
-														{{ ( buisness[billingIndex].price * ratio[ratioIndex] + parseInt(noBranding) ).toLocaleString('ru') }}
+														{{ ( buisness[billingIndex].price * ratio[ratioIndex] + parseInt(noBranding) ).toLocaleString('ru') }} ₽
 													</b>
-													₽ в месяц
+													в месяц
 												</span>
 												<span v-if="parseInt(ratioIndex)" class="calc__rate__price__beforeSale grey-text ml-2">
 													{{ buisness[billingIndex].price.toLocaleString('ru') }} ₽
@@ -225,16 +225,16 @@
 												Автоматизация
 											</div>
 											<div class="font14px grey-text">
-												Идеально подходит для продвинутого общения: квалификация лидов, адаптация кампаний, консультацияи аналитика
+												Идеально подходит для продвинутого общения: квалификация лидов, адаптация кампании, консультация и аналитика
 											</div>
 										</div>
 										<div class="calc__rate__price mb-4">
 											<template v-if="billingIndex < (billing.length-1)">
 												<span>
 													<b class="font20px">
-														{{ ( automatisation[billingIndex].price * ratio[ratioIndex] + parseInt(noBranding) ).toLocaleString('ru') }}
+														{{ ( automatisation[billingIndex].price * ratio[ratioIndex] + parseInt(noBranding) ).toLocaleString('ru') }} ₽
 													</b>
-													₽ в месяц
+													в месяц
 												</span>
 												<span v-if="parseInt(ratioIndex)" class="calc__rate__price__beforeSale grey-text ml-2">
 													{{ automatisation[billingIndex].price.toLocaleString('ru') }} ₽
@@ -378,7 +378,7 @@
 													Персональная поддержка в интеграции сервиса
 												</li>
 												<li>
-													Персональная поддержка в интеграции сервиса
+													Обучение работе с сервисом для вашей команды
 												</li>
 												<li>
 													Ежемесячный разбор результатов и рекомендации от эксперта
@@ -555,10 +555,10 @@
 									Последние 3 месяца
 								</b-col>
 								<b-col cols="4">
-									Последние 3 месяца
+									Без ограничений
 								</b-col>
 								<b-col cols="4">
-									Последние 3 месяца
+									Без ограничений
 								</b-col>
 							</b-row>
 						</b-col>
@@ -692,7 +692,7 @@
 								</span>
 								<b-tooltip target="all_features-6" placement="top">
 									<div class="font12px text-left">
-										Общайтесь с пользователями, совершайте продажи и собирайте запросы при помощи чата на сайте и в вашем приложении через SDK
+										Создавайте шаблоны ответов для быстрой реакции операторов на частые вопросы клиентов
 									</div>
 								</b-tooltip>
 							</div>
@@ -806,7 +806,7 @@
 									</svg>
 									<b-tooltip target="all_features-9-1" placement="top">
 										<div class="font12px text-left">
-											Соберите все инструкции и ответы на вопросы по вашему сайту в одном месте и отправляйте статьи в чате, чтобы уменьшить нагрузку на операторов
+											Только 30 статей, возможность размещения на собственном домене и в вашем фирменном стиле
 										</div>
 									</b-tooltip>
 								</b-col>
@@ -1261,9 +1261,7 @@
 						<b-col cols="7">
 							<b-row class="grey-text align-items-center">
 								<b-col cols="4">
-									<svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M1 6.5L6 11.5L16 1.5" stroke="#717171" stroke-width="2"></path>
-									</svg>
+									
 								</b-col>
 								<b-col cols="4">
 									<svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1489,7 +1487,7 @@
 									</svg>
 									<b-tooltip target="all_features-21-1" placement="top">
 										<div class="font12px text-left">
-											Сегментировать можно по базовым свойствам и событиям: имя, телефон, email, последняя активность, источник захода на сайт, количество сессий, количество диалогов
+											Свойства: имя, email, email, местоположение, UTM-метки. События: зашел на сайт, написал в чат, сделал заказ и оплатил.
 										</div>
 									</b-tooltip>
 								</b-col>
@@ -1804,7 +1802,9 @@
 						<b-col cols="7">
 							<b-row class="grey-text align-items-center">
 								<b-col cols="4">
-									
+									<svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 6.5L6 11.5L16 1.5" stroke="#717171" stroke-width="2"></path>
+									</svg>
 								</b-col>
 								<b-col cols="4">
 									<svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2011,7 +2011,7 @@
 					<b-row class="color registration">
 						<b-col cols="5">
 							<div class="h4">
-								Зарегистрируетесь и попробуйте сервис бесплатно
+								Зарегистрируйтесь и попробуйте сервис бесплатно
 							</div>
 							Заплатите только если сервис понравится. Банковская карта не требуется.
 						</b-col>
@@ -2068,8 +2068,8 @@
 		</b-container>
 
 		<Consultation 
-			title="Запишись на консультацию по тарифам и демонстрацию сервиса" 
-			text="За 30 минут мы расскажем в чем ключевые отличия тарифов и расскажем  как решить вашу задачу"
+			title="Запишитесь на консультацию по тарифам и демонстрацию сервиса" 
+			text="За 30 минут мы расскажем, в чем ключевые отличия тарифов и расскажем, как решить вашу задачу"
 			pic="medium-8.png"
 			alt="Есть идеи!"
 			bg="#fff3e6"

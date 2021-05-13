@@ -107,7 +107,7 @@ module.exports = function (api) {
 		const { data } = await axios.get(
 			// 'https://wp.carrotquest.io/blog/wp-json/wp/v2/posts?&per_page=999&_embed'
 			// 'https://wp.carrotquest.io/blog/wp-json/wp/v2/posts?&per_page=300'
-			'https://wp.carrotquest.io/blog/wp-json/wp/v2/posts?&per_page=999&_fields=id,slug,modified'
+			'https://wp.carrotquest.io/blog/wp-json/wp/v2/posts?&per_page=50&_fields=id,slug,modified'
 		)
 		// Данные для вывода статей
 		let pageContext = []

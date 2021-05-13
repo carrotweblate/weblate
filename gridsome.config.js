@@ -43,21 +43,24 @@ const collections = [{
 },];
 
 module.exports = {
+	siteUrl: 'https://wp.carrotquest.io',
+	pathPrefix: '/test3',
+
 	siteName: 'Carrot quest',
 	titleTemplate: '%s',
 
 	prefetch: { mask: '^$' },
 
 	plugins: [
-		//GTM
-		{
-			use: 'gridsome-plugin-gtm',
-			options: {
-				id: 'GTM-PHNG63V',
-				enabled: true,
-				debug: false
-			}
-		},
+		// //GTM
+		// {
+		// 	use: 'gridsome-plugin-gtm',
+		// 	options: {
+		// 		id: 'GTM-PHNG63V',
+		// 		enabled: true,
+		// 		debug: false
+		// 	}
+		// },
 		{
 			use: `gridsome-plugin-algolia`,
 			options: {
@@ -80,23 +83,20 @@ module.exports = {
 				lang: 'ru',
 			},
 		},
-		// {
-		// 	use: 'gridsome-plugin-service-worker',
-		// 	options: {
-		// 		networkFirst: {
-		// 			cacheName: 'nf-v1',
-		// 			fileTypes: [
-		// 				"document",
-		// 				"script",
-		// 				"image",
-		// 				"video",
-		// 				"style",
-		// 				"font",
-		// 				"embed"
-		// 			],
-		// 		},
-		// 	},
-		// }
+		{
+			use: 'gridsome-plugin-service-worker',
+			options: {
+				networkFirst: {
+					cacheName: 'nf-v1',
+					fileTypes: [
+						"image",
+						"video",
+						"font",
+						"embed"
+					],
+				},
+			},
+		}
 	],
 
 	// css: {
