@@ -46,7 +46,7 @@ module.exports = {
 	siteName: 'Carrot quest',
 	titleTemplate: '%s',
 
-	// prefetch: { mask: '^$' },
+	prefetch: { mask: '^$' },
 
 	plugins: [
 		//GTM
