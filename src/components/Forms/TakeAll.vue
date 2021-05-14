@@ -50,12 +50,12 @@
 					email:  '',
 					site:   '',
 					role:   '',
-					// Тестовое
-					name:   '123',
-					phone:	'3213123',
-					email:  'addonion@gmail.com',
-					site:   'test.ru',
-					role:   'Котик',
+					// // Тестовое
+					// name:   '123',
+					// phone:	'3213123',
+					// email:  'addonion@gmail.com',
+					// site:   'test.ru',
+					// role:   'Котик',
 				}
 			};
 		},

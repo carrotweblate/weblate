@@ -1,11 +1,12 @@
 <template>
-	<b-modal ref="open-modal-consultation" size="lg" hide-footer :title="modalData.title">
+	<b-modal content-class="universalModal" ref="open-modal-consultation" size="lg" hide-header hide-footer>
 		<b-container>
 			<b-row>
-				<b-col col="6">
-					123
-				</b-col>
-				<b-col col="6">
+				<b-col col="6" class="left" />
+				<b-col col="6" class="pt-3 pb-4">
+
+					<div class="h3 mb-4" v-html="modalData.title" />
+
 					<b-form v-on:submit.prevent="Consultation">
 						<TakeAll @newdata="handleData($event)" />
 						{{ modalData.name }}
@@ -16,6 +17,7 @@
 							Заказать
 						</b-button>
 					</b-form>
+
 				</b-col>
 			</b-row>
 		</b-container>
