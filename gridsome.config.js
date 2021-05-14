@@ -43,31 +43,34 @@ const collections = [{
 },];
 
 module.exports = {
+	siteUrl: 'https://wp.carrotquest.io',
+	pathPrefix: '/test3',
+
 	siteName: 'Carrot quest',
 	titleTemplate: '%s',
 
 	prefetch: { mask: '^$' },
 
 	plugins: [
-		//GTM
-		{
-			use: 'gridsome-plugin-gtm',
-			options: {
-				id: 'GTM-PHNG63V',
-				enabled: true,
-				debug: false
-			}
-		},
-		{
-			use: `gridsome-plugin-algolia`,
-			options: {
-				appId: '7Y1P83X4M1',
-				apiKey: 'e268d391762ad62104c571742cfd1afa',
-				collections,
-				chunkSize: 10000, // default: 1000
-				enablePartialUpdates: true, // default: false
-			},
-		},
+		// //GTM
+		// {
+		// 	use: 'gridsome-plugin-gtm',
+		// 	options: {
+		// 		id: 'GTM-PHNG63V',
+		// 		enabled: true,
+		// 		debug: false
+		// 	}
+		// },
+		// {
+		// 	use: `gridsome-plugin-algolia`,
+		// 	options: {
+		// 		appId: '7Y1P83X4M1',
+		// 		apiKey: 'e268d391762ad62104c571742cfd1afa',
+		// 		collections,
+		// 		chunkSize: 10000, // default: 1000
+		// 		enablePartialUpdates: true, // default: false
+		// 	},
+		// },
 		{
 			use: 'gridsome-plugin-manifest',
 			options: {
@@ -80,87 +83,29 @@ module.exports = {
 				lang: 'ru',
 			},
 		},
-		{
-			use: 'gridsome-plugin-service-worker',
-			options: {
-				networkFirst: {
-					cacheName: 'nf-v1',
-					fileTypes: [
-						"document",
-						"script",
-						"image",
-						"video",
-						"style",
-						"font",
-						"embed"
-					],
-				},
-			},
-		},
 		// {
-		// 	use: 'gridsome-plugin-pwa',
+		// 	use: 'gridsome-plugin-service-worker',
 		// 	options: {
-		// 		manifestPath: 'manifest.json',
-		// 		title: 'Carrot quest',
-		// 		description: 'Инструменты для увеличения продаж на сайтах без привлечения нового трафика',
-		// 		shortName: 'CQ',
-		// 		startUrl: '/',
-		// 		display: 'standalone',
-		// 		statusBarStyle: 'default',
-		// 		themeColor: '#FF7C16',
-		// 		backgroundColor: '#ffffff',
-		// 		icon: './static/favicon.png',
-		// 		maskableIcon: true,
-		// 		svgFavicon: 'https://www.carrotquest.io/favicon.svg',
-		// 	}
-		// },
-		// {
-		// 	use: '@allanchain/gridsome-plugin-pwa',
-		// 	options: {
-		// 		manifestOptions: {
-		// 			title: 'Carrot quest',
-		// 			short_name: 'CQ',
-		// 			description: 'Инструменты для увеличения продаж на сайтах без привлечения нового трафика',
-		// 			display: 'standalone',
-		// 			categories: ['utilities'],
-		// 			lang: 'ru-RU',
-		// 		},
-		// 		themeColor: '#FF7C16',
-		// 		appleMobileWebAppStatusBarStyle: 'default',
-		// 		appleMaskIconColor: '#ffffff',
-		// 		manifestPath: 'manifest.json',
-		// 		icon: {
-		// 			androidChrome: [
-		// 				{
-		// 					src: './static/favicon.png',
-		// 					sizes: [512, 384, 192],
-		// 					purpose: 'maskable'
-		// 				},
-		// 				{
-		// 					sizes: [144],
-		// 					purpose: 'any'
-		// 				},
-		// 				{
-		// 					urls: [
-		// 						'/gridsome/assets/static/favicon.png'
-		// 					],
-		// 					sizes: [512]
-		// 				}
+		// 		networkFirst: {
+		// 			cacheName: 'nf-v1',
+		// 			fileTypes: [
+		// 				"image",
+		// 				"video",
+		// 				"font",
+		// 				"embed"
 		// 			],
-		// 			appleMaskIcon: { url: './favicon.svg' }
 		// 		},
-		// 		msTileColor: '#00a672',
-		// 		appShellPath: 'offline/index.html',
-		// 		workboxOptions: {
-		// 			cacheId: 'cq-pwa',
-		// 			globPatterns: ['assets/@(js|css)/*', 'offline/index.html'],
-		// 			navigateFallback: '/gridsome/offline/index.html',
-		// 			navigateFallbackAllowlist: [/\/$/],
-		// 			skipWaiting: true
-		// 		}
-		// 	}
-		// },
+		// 	},
+		// }
 	],
+
+	// css: {
+	// 	loaderOptions: {
+	// 		scss: {
+	// 			prependData: '@import "./src/assets/scss/base.scss";'
+	// 		}
+	// 	}
+	// }
 	
 	
 	// chainWebpack: config => {		

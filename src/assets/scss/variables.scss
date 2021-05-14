@@ -1,0 +1,17 @@
+//Колонки
+// $container-max-widths: (
+//   xl: 1320px
+// );
+//Растояние между колонками
+$grid-gutter-width: 2.5rem;
+
+//Оформление кнопок и ссылок
+$primary: #FF7C16;
+.btn-primary {
+	color: #fff !important;
+}
+$link-hover-decoration: none;
+
+//Цвета базовые
+$grey-text: #717171;
+$light-grey: #C4C4C4;

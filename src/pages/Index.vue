@@ -67,9 +67,9 @@
 					</b-col>
 					<b-col col-12 lg="5" xl="4">
 						<div class="video-numbers__box p-4 h-100 text-lg-center">
-							<h3 class="h4 mb-4">
+							<div class="h4 mb-4">
 								Наши клиенты получили:
-							</h3>
+							</div>
 			
 							<p class="h2 mb-1 counter">
 								758 464 786
@@ -124,15 +124,15 @@
 							href: '/online-consultant/', 
 							text: 'Подробнее про онлайн‑консультант'
 						}"
-						text="
+						text='
 							<p>
 								«147% — прирост конверсии в оплату благодаря общению с пользователями и автоматизации в веб-сервисе Instaplus.me» <a href=/blog/kejs-instaplus/>Читать кейс</a>
 							</p>
 							<p>
 								Михаил Ермачков <br>
-								CEO <a href=https://instaplus.me/ rel=nofollow target=_blank>Instaplus.me</a>
+								CEO <a href=https://instaplus.me/ rel="nofollow noopener noreferrer" target=_blank>Instaplus.me</a>
 							</p>
-						"
+						'
 					/>
 
 					<!-- Чат-бот сделает половину работы менеджеров -->
@@ -156,16 +156,16 @@
 							href:'/chatbot/', 
 							text:'Подробнее про лид-бота'
 						}"
-						text="
+						text='
 							<p>
 								«У нас выросли продажи на 29,61% за счет замены менеджеров на автоматизацию»
 								<a href=/blog/yagla-prodazhi/>Читать кейс</a>
 							</p>
 							<p>
 								Александр Алимов <br>
-								CEO & Founder в <a href=https://yagla.ru/ rel=nofollow target=_blank>yagla.ru</a>
+								CEO & Founder в <a href=https://yagla.ru/ rel="nofollow noopener noreferrer" target=_blank>yagla.ru</a>
 							</p>
-						"
+						'
 					/>
 
 					<!-- Поп-ап окна, чат-бот и триггерные письма -->
@@ -185,16 +185,16 @@
 							href:'/automation-marketing/', 
 							text:'Подробнее про автоматизацию'
 						}"
-						text="
+						text='
 							<p>
 								«Дом.ru увеличил конверсию сайта на 30% благодаря автоматизации и экспериментам» 
 								<a href=/blog/case-dom-ru-konversii/>Читать кейс</a>
 							</p>
 							<p>
 								Андрей Шубин <br>
-								Руководитель <a href=https://domru.ru/ target=_blank>Дом.ru Digital</a>
+								Руководитель <a href=https://domru.ru/ rel="noopener noreferrer" target=_blank>Дом.ru Digital</a>
 							</p>
-						"
+						'
 					/>
 
 					<!-- Не потеряйте ни одного клиента в суматохе нового времени -->

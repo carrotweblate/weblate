@@ -48,7 +48,7 @@ function saveScript (name , data) {
 
 module.exports = function (api) {
 	// API from Tilda
-	api.loadSource(async actions => {
+	api.loadSource(async () => {
 		// Files
 		let tildaFiles = []
 		await axios.get(
@@ -105,33 +105,36 @@ module.exports = function (api) {
 	// API Wordpress - создаём Посты
 	api.loadSource(async actions => {
 		const { data } = await axios.get(
-			'https://wp.carrotquest.io/blog/wp-json/wp/v2/posts?&per_page=999'
+			// 'https://wp.carrotquest.io/blog/wp-json/wp/v2/posts?&per_page=999&_embed'
+			// 'https://wp.carrotquest.io/blog/wp-json/wp/v2/posts?&per_page=300'
+			'https://wp.carrotquest.io/blog/wp-json/wp/v2/posts?&per_page=50&_fields=id,slug,modified'
 		)
 		// Данные для вывода статей
+		let pageContext = []
 		const collection = actions.addCollection('post')
 		for (const item of data) {
-			collection.addNode({
-				id: item.id,
-				slug: item.slug,
-				title: tp.execute(item.title.rendered),
-				meta: JSON.stringify(item.yoast_meta),
-				date: item.date,
-				modified: item.modified,
-				categories: item.categories,
-				authors: item.acf.post__authors,
-				author: item.author,
-				featured_media: renderURL(item.featured_media_medium),
-				featured_media_large: item.featured_media_large[0],
-				content: tp.execute(item.content.rendered),
-				sticky: item.sticky,
-				page_views: item.meta.wpb_post_views_count,
-				tags: item.tags,
-			})
-		}
-		// Делаем страницы статей
-		api.createManagedPages(async ({ createPage }) => {
-			for (const item of data) {
-				pageContext = {
+			await axios.get(
+				'https://wp.carrotquest.io/blog/wp-json/wp/v2/posts/' + item.id
+			).then( response => {
+				collection.addNode({
+					id: item.id,
+					slug: item.slug,
+					title: tp.execute(response.data.title.rendered),
+					meta: JSON.stringify(response.data.yoast_meta),
+					date: response.data.date,
+					modified: response.data.modified,
+					categories: response.data.categories,
+					authors: response.data.acf.post__authors,
+					author: response.data.author,
+					featured_media: renderURL(response.data.featured_media_medium),
+					featured_media_large: response.data.featured_media_large[0],
+					// featuredmedia: response.data._embedded['wp:featuredmedia'][0].media_details,
+					content: tp.execute(response.data.content.rendered),
+					sticky: response.data.sticky,
+					page_views: response.data.meta.wpb_post_views_count,
+					tags: response.data.tags,
+				})
+				pageContext[item.id] = {
 					id: item.id,
 					slug: item.slug,
 
@@ -141,39 +144,44 @@ module.exports = function (api) {
 						url: ''
 					},
 					seo: {
-						title: item.yoast_title,
-						meta: item.yoast_meta,
-						json_ld: item.yoast_json_ld
+						title: response.data.yoast_title,
+						meta: response.data.yoast_meta,
+						json_ld: response.data.yoast_json_ld
 					},
 					
 					//Информация
-					author: item.author,
-					date: item.formatted_date,
-					category: item.categories,
-					modified: item.modified,
+					author: response.data.author,
+					date: response.data.formatted_date,
+					category: response.data.categories,
+					modified: response.data.modified,
 					
 					//Тело статьи
-					featured_media: item.featured_media_large,
-					title: renderText(item.title.rendered),
-					description: renderText(item.excerpt.rendered),
-					content: renderText(item.content.rendered)
+					featured_media: response.data.featured_media_large,
+					// featuredmedia: response.data._embedded['wp:featuredmedia'][0].media_details,
+					title: renderText(response.data.title.rendered),
+					description: renderText(response.data.excerpt.rendered),
+					content: renderText(response.data.content.rendered)
 				}
-				
+			})
+		}
+		// Делаем страницы статей
+		api.createManagedPages(async ({ createPage }) => {
+			for (const item of data) {
 				createPage({
 					path: `/blog/${item.slug}/`,
 					component: './src/templates/Post.vue',
-					context: pageContext
+					context: pageContext[item.id]
 				})
 				// console.log('Пост - ' + item.id + ' - готов!')
 
 				// Сило для Лид-бота
 				if ( item.id == '26546' || item.id == '23996' || item.id == '25965' || item.id == '22648' || item.id == '24191' || item.id == '25798' || item.id == '24623' || item.id == '23719' || item.id == '24292' || item.id == '23543' || item.id == '25761' || item.id == '25194' || item.id == '22882' || item.id == '24730' ) {
-					pageContext.breadcrumb.title = 'Лид-бот'
-					pageContext.breadcrumb.url = '/chatbot/'
+					pageContext[item.id].breadcrumb.title = 'Лид-бот'
+					pageContext[item.id].breadcrumb.url = '/chatbot/'
 					createPage({
 						path: `/chatbot/${item.slug}/`,
 						component: './src/templates/Post.vue',
-						context: pageContext,
+						context: pageContext[item.id],
 					})
 				}
 

@@ -40,27 +40,27 @@
 						<b-nav-text class="d-lg-none">
 							Читайте и смотрите нас:
 						</b-nav-text>
-						<b-nav-item class="p-1" href="https://vk.com/carrotquest" target="_blank" rel="noopener noreferrer">
+						<b-nav-item class="p-1" href="https://vk.com/carrotquest" target="_blank" rel="noopener noreferrer" alt="vk">
 							<svg width="24" height="14" viewBox="0 0 24 14" xmlns="http://www.w3.org/2000/svg">
 								<path d="M23 0.9C23.2 0.4 23 0 22.3 0H19.7C19 0 18.7 0.3 18.6 0.7C18.6 0.7 17.3 3.9 15.4 6C14.8 6.6 14.5 6.8 14.2 6.8C14 6.8 13.8 6.6 13.8 6.1V0.9C13.8 0.3 13.6 0 13 0H9C8.6 0 8.3 0.3 8.3 0.6C8.3 1.2 9.2 1.4 9.3 3.1V6.9C9.3 7.7 9.1 7.9 8.8 7.9C8 7.9 5.9 4.7 4.6 1C4.4 0.3 4.1 0 3.5 0H0.9C0.1 0 0 0.3 0 0.7C0 1.4 0.9 4.8 4.1 9.3C6.2 12.4 9.2 14 12 14C13.6 14 13.8 13.6 13.8 13V10.7C13.8 10 14 9.8 14.5 9.8C14.9 9.8 15.5 10 17.1 11.5C18.8 13.2 19.1 14 20.1 14H22.7C23.4 14 23.8 13.6 23.6 12.9C23.4 12.2 22.5 11.1 21.4 9.9C20.8 9.2 19.9 8.4 19.6 8C19.2 7.5 19.3 7.3 19.6 6.9C19.6 6.9 22.7 2.5 23 0.9Z" fill="#333333"/>
 							</svg>
 						</b-nav-item>
-						<b-nav-item class="p-1" href="https://www.facebook.com/carrotquest/" target="_blank" rel="noopener noreferrer">
+						<b-nav-item class="p-1" href="https://www.facebook.com/carrotquest/" target="_blank" rel="noopener noreferrer" alt="facebook">
 							<svg width="11" height="21" viewBox="0 0 11 21" xmlns="http://www.w3.org/2000/svg">
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M0 7.3532H3.08256V4.744C3.08256 1.6604 4.98275 0 7.71428 0C8.63014 0 9.48763 0.058291 10.0003 0.0931415C10.2189 0.108002 10.3748 0.1186 10.4458 0.1186V3.3208H8.54562C7.00171 3.3208 6.76418 4.0324 6.76418 5.0998V7.3532H10.327L9.852 10.9112H6.76418V20.178H3.08256V10.9112H0V7.3532Z" fill="#333333"/>
 							</svg>
 						</b-nav-item>
-						<b-nav-item class="p-1" href="https://t.me/carrot_automation/" target="_blank" rel="noopener noreferrer">
+						<b-nav-item class="p-1" href="https://t.me/carrot_automation/" target="_blank" rel="noopener noreferrer" alt="telegram">
 							<svg width="21" height="17" viewBox="0 0 21 17" xmlns="http://www.w3.org/2000/svg">
 								<path d="M17.1 15.8999L20.1 1.59993C20.2 0.999935 20.2 0.599935 19.9 0.299935C19.6 -6.5431e-05 19.3 -6.5431e-05 18.9 0.199935L0.9 6.99993C0.6 7.19993 0.3 7.29993 0.1 7.49993C0 7.79993 0 7.89993 0 8.09993C0.1 8.19993 0.3 8.39993 0.7 8.49993L5.3 9.89993L16 3.09993C16.3 2.89993 16.5 2.89993 16.7 2.99993C16.8 3.09993 16.8 3.09993 16.6 3.29993L8 11.1999L7.6 15.9999C7.9 15.9999 8.2 15.8999 8.6 15.5999L10.8 13.3999L15.4 16.7999C16.3 17.2999 16.8 16.9999 17.1 15.8999Z" fill="#333333"/>
 							</svg>
 						</b-nav-item>
-						<b-nav-item class="p-1" href="https://www.youtube.com/channel/UCd10-psu5GF3neJYCQ7fkVg/featured" target="_blank" rel="noopener noreferrer">
+						<b-nav-item class="p-1" href="https://www.youtube.com/channel/UCd10-psu5GF3neJYCQ7fkVg/featured" target="_blank" rel="noopener noreferrer" alt="youtube">
 							<svg width="22" height="16" viewBox="0 0 22 16" xmlns="http://www.w3.org/2000/svg">
 								<path d="M11.2302 0C11.2302 0 4.73732 -9.0155e-06 2.96653 0.590254C2.00146 1 1.50146 1.5 1.19572 2.36106C0.60546 4.13185 0.605469 7.67344 0.605469 7.67344C0.605469 7.67344 0.60546 11.215 1.19572 12.9858C1.50146 14 2.50146 14.5 2.96653 14.7566C4.73732 15.3468 11.2302 15.3468 11.2302 15.3468C11.2302 15.3468 17.7231 15.3468 19.4939 14.7566C20.5015 14.5 21.0187 13.7236 21.2647 12.9858C21.8549 11.215 21.8549 7.67344 21.8549 7.67344C21.8549 7.67344 21.8549 4.13185 21.2647 2.36106C20.9472 1.40847 20.5015 1 19.4939 0.590254C18.3134 -9.0155e-06 11.2302 0 11.2302 0ZM9.45942 4L14.5015 7.5L9.50147 11L9.45942 4Z" fill="#333333"/>
 							</svg>
 						</b-nav-item>
-						<b-nav-item class="p-1" href="https://www.instagram.com/carrotquest/" target="_blank" rel="noopener noreferrer">
+						<b-nav-item class="p-1" href="https://www.instagram.com/carrotquest/" target="_blank" rel="noopener noreferrer" alt="instagram">
 							<svg width="21" height="21" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
 								<path d="M10.1 1.80039C12.8 1.80039 13.1 1.80039 14.2 1.90039C15.2 1.90039 15.7 2.10039 16.1 2.20039C16.6 2.40039 16.9 2.60039 17.3 3.00039C17.7 3.40039 17.9 3.70039 18.1 4.20039C18.1 4.50039 18.3 5.00039 18.3 6.00039C18.3 7.10039 18.4 7.40039 18.4 10.1004C18.4 12.8004 18.4 13.1004 18.3 14.2004C18.3 15.2004 18.1 15.7004 18 16.1004C17.8 16.6004 17.6 16.9004 17.2 17.3004C16.8 17.7004 16.5 17.9004 16 18.1004C15.6 18.2004 15.1 18.4004 14.1 18.4004C13 18.4004 12.7 18.5004 10 18.5004C7.3 18.5004 7 18.5004 5.9 18.4004C4.9 18.4004 4.4 18.2004 4 18.1004C3.5 17.9004 3.2 17.7004 2.8 17.3004C2.4 16.9004 2.2 16.6004 2 16.1004C1.9 15.7004 1.7 15.2004 1.7 14.2004C1.7 13.1004 1.6 12.8004 1.6 10.1004C1.6 7.40039 1.6 7.10039 1.7 6.00039C1.7 5.00039 1.9 4.50039 2 4.10039C2.4 3.70039 2.6 3.30039 3 3.00039C3.4 2.70039 3.7 2.40039 4.2 2.20039C4.5 2.10039 5 1.90039 6 1.90039C7.1 1.80039 7.4 1.80039 10.1 1.80039ZM10.1 0.000390626C7.4 0.000390626 7 0.000390626 5.9 0.100391C4.8 0.100391 4.1 0.300391 3.4 0.600391C2.8 0.800391 2.3 1.10039 1.7 1.70039C1.1 2.30039 0.8 2.80039 0.5 3.50039C0.3 4.10039 0.1 4.90039 0.1 5.90039C0 7.00039 0 7.40039 0 10.1004C0 12.8004 0 13.2004 0.1 14.3004C0.1 15.4004 0.3 16.1004 0.6 16.8004C0.9 17.5004 1.2 18.0004 1.8 18.6004C2.4 19.2004 2.9 19.5004 3.6 19.8004C4.2 20.0004 5 20.2004 6.1 20.3004C7.2 20.3004 7.5 20.4004 10.3 20.4004C13.1 20.4004 13.4 20.4004 14.5 20.3004C15.6 20.3004 16.3 20.1004 17 19.8004C17.7 19.5004 18.2 19.2004 18.8 18.6004C19.4 18.0004 19.7 17.5004 20 16.8004C20.2 16.2004 20.4 15.4004 20.5 14.3004C20.5 13.2004 20.6 12.9004 20.6 10.1004C20.6 7.30039 20.6 7.00039 20.5 5.90039C20.5 4.80039 20.3 4.10039 20 3.40039C19.7 2.70039 19.4 2.20039 18.8 1.60039C18.2 1.00039 17.7 0.700391 17 0.400391C16.4 0.200391 15.6 0.000390626 14.5 -0.0996094C13.2 0.000390626 12.9 0.000390626 10.1 0.000390626ZM10.1 4.90039C7.2 4.90039 4.9 7.20039 4.9 10.1004C4.9 13.0004 7.2 15.3004 10.1 15.3004C13 15.3004 15.3 13.0004 15.3 10.1004C15.3 7.20039 13 4.90039 10.1 4.90039ZM10.1 13.5004C8.2 13.5004 6.7 12.0004 6.7 10.1004C6.7 8.20039 8.2 6.70039 10.1 6.70039C12 6.70039 13.5 8.20039 13.5 10.1004C13.5 12.0004 12 13.5004 10.1 13.5004ZM16.7 4.70039C16.7 5.40039 16.2 5.90039 15.5 5.90039C14.8 5.90039 14.3 5.40039 14.3 4.70039C14.3 4.00039 14.8 3.50039 15.5 3.50039C16.2 3.50039 16.7 4.00039 16.7 4.70039Z" fill="#333333"/>
 							</svg>
@@ -73,7 +73,7 @@
 						<b-nav-text class="mr-4">
 							Скачайте приложение:
 						</b-nav-text>
-						<b-nav-item class="p-1 windows" href="https://files.carrotquest.io/desktop-app/carrotquest.exe" target="_blank" rel="noopener noreferrer">
+						<b-nav-item class="p-1 windows" href="https://files.carrotquest.io/desktop-app/carrotquest.exe" target="_blank" rel="noopener noreferrer" alt="windows">
 							<svg class="mr-1 mb-1" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M0 3.4L9.8 2V11.5H0V3.4Z" fill="#333333"/>
 								<path d="M9.8 12.6V22L0 20.7V12.5L9.8 12.6Z" fill="#333333"/>
@@ -82,7 +82,7 @@
 							</svg>
 							Windows
 						</b-nav-item>
-						<b-nav-item class="p-1 chrome" href="https://chrome.google.com/webstore/detail/carrotquest-online-%D0%BA%D0%BE%D0%BD%D1%81%D1%83%D0%BB/pkmalcdhoiaoolepcjchioofcilihpjc" target="_blank" rel="noopener noreferrer">
+						<b-nav-item class="p-1 chrome" href="https://chrome.google.com/webstore/detail/carrotquest-online-%D0%BA%D0%BE%D0%BD%D1%81%D1%83%D0%BB/pkmalcdhoiaoolepcjchioofcilihpjc" target="_blank" rel="noopener noreferrer" alt="chrome">
 							<svg class="mr-1 mb-1" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M12.0336 17.1004C14.298 17.1004 16.1336 15.2648 16.1336 13.0004C16.1336 10.736 14.298 8.90039 12.0336 8.90039C9.76923 8.90039 7.93359 10.736 7.93359 13.0004C7.93359 15.2648 9.76923 17.1004 12.0336 17.1004Z" fill="#333333"/>
 								<path d="M13.9322 17.9008C12.1322 18.6008 10.1322 18.4008 8.53219 17.1008C7.53219 16.3008 8.23219 17.2008 2.03219 6.30078C-1.66781 11.8008 -0.167814 19.2008 5.33219 22.9008C6.73219 23.9008 8.23219 24.5008 9.93219 24.7008L13.9322 17.9008Z" fill="#333333"/>
@@ -91,7 +91,7 @@
 							</svg>
 							Chrome
 						</b-nav-item>
-						<b-nav-item class="p-1 android" href="https://play.google.com/store/apps/details?id=carrotquest.mobil.inkov.carrotquest" target="_blank" rel="noopener noreferrer">
+						<b-nav-item class="p-1 android" href="https://play.google.com/store/apps/details?id=carrotquest.mobil.inkov.carrotquest" target="_blank" rel="noopener noreferrer" alt="Android">
 							<svg class="mr-1 mb-1" width="21" height="25" viewBox="0 0 21 25" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M20.5998 10.6988C20.5998 9.89883 19.8998 9.29883 19.1998 9.29883C18.4998 9.29883 17.7998 9.99883 17.7998 10.6988V16.4988C17.7998 17.2988 18.4998 17.8988 19.1998 17.8988C19.8998 17.8988 20.5998 17.1988 20.5998 16.4988V10.6988Z" fill="#333333"/>
 								<path d="M2.9 10.6988C2.9 9.89883 2.2 9.29883 1.5 9.29883C0.8 9.29883 0 9.89883 0 10.6988V16.4988C0 17.3988 0.7 17.9988 1.4 17.9988C2.1 17.9988 2.8 17.2988 2.8 16.5988L2.9 10.6988Z" fill="#333333"/>
@@ -100,7 +100,7 @@
 							</svg>
 							Android
 						</b-nav-item>
-						<b-nav-item class="p-1 ios" href="https://apps.apple.com/us/app/carrot-quest/id1259157795" target="_blank" rel="noopener noreferrer">
+						<b-nav-item class="p-1 ios" href="https://apps.apple.com/us/app/carrot-quest/id1259157795" target="_blank" rel="noopener noreferrer" alt="ios">
 							<svg class="mr-1 mb-1" width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M16.2889 12.6996C16.2889 16.2996 19.4889 17.5996 19.4889 17.5996C19.4889 17.6996 18.9889 19.2996 17.8889 20.9996C16.8889 22.3996 15.7889 23.8996 14.1889 23.8996C12.5889 23.8996 12.0889 22.8996 10.1889 22.8996C8.38889 22.8996 7.78889 23.7996 6.28889 23.8996C4.68889 23.9996 3.48889 22.2996 2.48889 20.8996C0.488889 17.9996 -1.11111 12.4996 0.988889 8.89963C1.98889 7.09963 3.88889 5.89963 5.88889 5.79963C7.48889 5.79963 8.88889 6.79963 9.88889 6.79963C10.8889 6.79963 12.5889 5.49963 14.4889 5.69963C15.2889 5.69963 17.3889 5.99963 18.8889 8.09963C18.6889 8.19963 16.1889 9.69963 16.2889 12.6996Z" fill="#333333"/>
 								<path d="M13.1875 3.8C13.9875 2.8 14.5875 1.4 14.3875 0C13.1875 0.1 11.6875 0.8 10.7875 1.8C9.98747 2.7 9.38747 4.1 9.48747 5.5C10.9875 5.6 12.3875 4.9 13.1875 3.8Z" fill="#333333"/>
@@ -253,3 +253,59 @@
 		}),
 	}
 </script>
+
+
+<style lang="scss">
+	@import "~/assets/scss/variables.scss";
+	footer {
+		margin-top: 3rem;
+		color: #333;
+		.container {
+			margin-bottom: 0 !important;
+		}
+		.footer-nav {
+			border-bottom: 1px solid #F2F2F2;
+		}
+		.apps-nav { 
+			svg {
+				position: relative;
+			}
+			.windows svg , .android svg {
+				top: -1px;
+			}
+			.ios svg {
+				top: -2px;
+			}
+		}
+		.navbar-text {
+			font-weight: bold;
+		}
+		.nav-link {
+			padding: .25rem 0;
+			color: #333;
+
+			&:hover, &:hover path {
+				color: $primary;
+				fill: $primary;
+			}
+		}
+		a::after {
+			display: none !important;
+		}
+		@media (max-width: 575.98px) {
+			.social-nav .navbar-text , .apps-nav .navbar-text {
+				width: 100%;
+			}
+			.apps-nav svg {
+				display: block;
+				width: 100%;
+			}
+		}
+		@media (min-width: 1200px) {
+			.social-nav {
+				position: relative;
+				left: -0.25rem;
+			}
+		}
+	}
+</style>
