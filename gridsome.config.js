@@ -44,7 +44,7 @@ const collections = [{
 
 module.exports = {
 	siteUrl: 'https://wp.carrotquest.io',
-	pathPrefix: '/no-gtm-no-cq',
+	pathPrefix: '/test3',
 
 	siteName: 'Carrot quest',
 	titleTemplate: '%s',
