@@ -125,7 +125,7 @@
 													</b>
 													в месяц
 												</span>
-												<span v-if="parseInt(ratioIndex)" class="calc__rate__price__beforeSale grey-text ml-2">
+												<span v-if="parseInt(ratioIndex)" class="beforeSale grey-text ml-2">
 													{{ buisness[billingIndex].price.toLocaleString('ru') }} ₽
 												</span>
 												<div class="font14px">
@@ -237,7 +237,7 @@
 													</b>
 													в месяц
 												</span>
-												<span v-if="parseInt(ratioIndex)" class="calc__rate__price__beforeSale grey-text ml-2">
+												<span v-if="parseInt(ratioIndex)" class="beforeSale grey-text ml-2">
 													{{ automatisation[billingIndex].price.toLocaleString('ru') }} ₽
 												</span>
 												<div class="font14px">
@@ -2026,6 +2026,9 @@
 										<b>
 											{{ ( buisness[billingIndex].price * ratio[ratioIndex] + parseInt(noBranding) ).toLocaleString('ru') }} ₽ в месяц
 										</b>
+										<span v-if="parseInt(ratioIndex)" class="beforeSale grey-text ml-2">
+											{{ buisness[billingIndex].price.toLocaleString('ru') }} ₽
+										</span>
 									</template>
 									<template v-else>
 										<a href="#" class="open-chat" v-on:click.prevent>Связаться с нами в чате</a>
@@ -2042,6 +2045,9 @@
 										<b>
 											{{ ( automatisation[billingIndex].price * ratio[ratioIndex] + parseInt(noBranding) ).toLocaleString('ru') }} ₽ в месяц
 										</b>
+										<span v-if="parseInt(ratioIndex)" class="beforeSale grey-text ml-2">
+											{{ automatisation[billingIndex].price.toLocaleString('ru') }} ₽
+										</span>
 									</template>
 									<template v-else>
 										<a href="#" class="open-chat" v-on:click.prevent>Связаться с нами в чате</a>
@@ -2117,7 +2123,7 @@
 				metaTitle: 'Тарифы | Стоимость сервиса Carrot quest. 20% скидки при оплате за год',
 				metaDescription: 'Полный комплект сервисов по автоматизации маркетинга и коммуникаций с пользователями от 800 ₽ в месяц',
 				metaCanonical: 'https://www.carrotquest.io/price/',
-				metaImage: 'https://www.carrotquest.io/assets/images/cover/price.png',
+				metaImage: 'https://www.carrotquest.io/assets/images/cover/price.jpg',
 
 				//Калькулятор
 				ratio:  [ 1 , 0.9 , 0.85 , 0.8 ],
@@ -2267,6 +2273,9 @@
 				}
 			}
 		}
+		.beforeSale {
+			text-decoration: line-through;
+		}
 		.calculate {
 			background-color: #F3F3FF;
 			.container {
@@ -2333,9 +2342,6 @@
 					&__price {
 						height: 50px;
 						margin-bottom: 1rem;
-						&__beforeSale {
-							text-decoration: line-through;
-						}
 					}
 					.automatization::before , .premium::before {
 						content: " ";
