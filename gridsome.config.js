@@ -80,22 +80,15 @@ module.exports = {
 				lang: 'ru',
 			},
 		},
-		{
-			use: 'gridsome-plugin-service-worker',
-			options: {
-				networkFirst: {
-					cacheName: 'nf-v1',
-					routes: ["/"],
-					fileTypes: [
-						"image",
-						"video",
-						"style",
-						"font",
-						"embed"
-					],
-				},
-			},
-		}
+		// {
+		// 	use: 'gridsome-plugin-service-worker',
+		// 	options: {
+		// 		networkFirst: {
+		// 			cacheName: 'nf-v1',
+		// 			routes: ["/", /\.(js|css|png)/],
+		// 		},
+		// 	},
+		// }
 	],
 	
 	
