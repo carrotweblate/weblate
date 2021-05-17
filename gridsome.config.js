@@ -43,31 +43,34 @@ const collections = [{
 },];
 
 module.exports = {
+	siteUrl: 'https://wp.carrotquest.io',
+	pathPrefix: '/test3',
+
 	siteName: 'Carrot quest',
 	titleTemplate: '%s',
 
 	prefetch: { mask: '^$' },
 
 	plugins: [
-		//GTM
-		{
-			use: 'gridsome-plugin-gtm',
-			options: {
-				id: 'GTM-PHNG63V',
-				enabled: true,
-				debug: false
-			}
-		},
-		{
-			use: `gridsome-plugin-algolia`,
-			options: {
-				appId: '7Y1P83X4M1',
-				apiKey: 'e268d391762ad62104c571742cfd1afa',
-				collections,
-				chunkSize: 10000, // default: 1000
-				enablePartialUpdates: true, // default: false
-			},
-		},
+		// //GTM
+		// {
+		// 	use: 'gridsome-plugin-gtm',
+		// 	options: {
+		// 		id: 'GTM-PHNG63V',
+		// 		enabled: true,
+		// 		debug: false
+		// 	}
+		// },
+		// {
+		// 	use: `gridsome-plugin-algolia`,
+		// 	options: {
+		// 		appId: '7Y1P83X4M1',
+		// 		apiKey: 'e268d391762ad62104c571742cfd1afa',
+		// 		collections,
+		// 		chunkSize: 10000, // default: 1000
+		// 		enablePartialUpdates: true, // default: false
+		// 	},
+		// },
 		{
 			use: 'gridsome-plugin-manifest',
 			options: {
@@ -90,6 +93,14 @@ module.exports = {
 		// 	},
 		// }
 	],
+
+	// css: {
+	// 	loaderOptions: {
+	// 		scss: {
+	// 			prependData: '@import "./src/assets/scss/base.scss";'
+	// 		}
+	// 	}
+	// }
 	
 	
 	// chainWebpack: config => {		
