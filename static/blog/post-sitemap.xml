@@ -2,7 +2,7 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>https://www.carrotquest.io/blog/</loc>
-		<lastmod>2021-05-12T09:33:45+00:00</lastmod>
+		<lastmod>2021-05-14T12:12:12+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://www.carrotquest.io/blog/test-na-kogo-podpisatsya/</loc>
@@ -11476,88 +11476,6 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://www.carrotquest.io/blog/case-westfalika/</loc>
-		<lastmod>2021-05-04T09:33:28+00:00</lastmod>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/07/%D0%92%D0%B5%D1%81%D1%82%D1%84%D0%B0%D0%BB%D0%B8%D0%BA%D0%B01-1.jpg</image:loc>
-			<image:title><![CDATA[Вестфалика1 (1)]]></image:title>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/07/%D0%9A%D0%BE%D0%BD%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%8F-%D0%B2-%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7-5.jpg</image:loc>
-			<image:caption><![CDATA[окупаемость инструментов]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/07/%D0%9E-%D0%BA%D0%BB%D0%B8%D0%B5%D0%BD%D1%82%D0%B5-1.jpg</image:loc>
-			<image:caption><![CDATA[о клиенте
-]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/07/%D0%A1%D0%BA%D1%80%D0%B8%D0%BD-%C2%AB%D0%A1%D0%BA%D1%80%D0%B8%D0%BD-007%C2%BB_1-1.jpg</image:loc>
-			<image:caption><![CDATA[блок с похожими товарами на сайте]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/07/%D0%92%D0%B0%D0%BB%D0%B5%D1%80%D0%B8%D1%8F.jpg</image:loc>
-			<image:caption><![CDATA[форма подписки на рассылку]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/07/%D0%BA%D0%BE%D0%BD%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%8F-%D0%B2-%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7_1-4.jpg</image:loc>
-			<image:caption><![CDATA[конверсия в заказ до Carrot quest]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/07/Frame-50.jpg</image:loc>
-			<image:caption><![CDATA[путь пользователя
-]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/07/%D1%86%D0%B5%D0%BB%D0%B8%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B8-2.jpg</image:loc>
-			<image:caption><![CDATA[цели и задачи ]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/07/Frame-51.jpg</image:loc>
-			<image:caption><![CDATA[путь пользователя с Carrot quest]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/07/Group-165.jpg</image:loc>
-			<image:caption><![CDATA[поп-ап с подпиской на уведомления]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/07/Group-146-1.jpg</image:loc>
-			<image:caption><![CDATA[поп-ап со сбором email]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/07/Rectangle-60-1.jpg</image:loc>
-			<image:caption><![CDATA[письмо с просмотренными товарами]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/07/Group-138-1.jpg</image:loc>
-			<image:caption><![CDATA[поп-ап для тех, кто не завершил покупку]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/07/Group-164.jpg</image:loc>
-			<image:caption><![CDATA[сообщение из чата]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/07/Group-136-1.jpg</image:loc>
-			<image:caption><![CDATA[уведомление о распродаже]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/07/Group-144-1.jpg</image:loc>
-			<image:caption><![CDATA[уведомление со ссылкой на каталог]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/07/%D0%9A%D0%BE%D0%BD%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%8F-%D0%B2-%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7_2.jpg</image:loc>
-			<image:caption><![CDATA[итоговая конверсия]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/07/%D1%80%D0%BE%D0%B8-1.jpg</image:loc>
-			<image:caption><![CDATA[ROI]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/07/Frame-58-1.jpg</image:loc>
-			<image:caption><![CDATA[Виктория, интернет-маркетолог Westfalika]]></image:caption>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://www.carrotquest.io/blog/formula-roi/</loc>
 		<lastmod>2021-05-04T09:33:29+00:00</lastmod>
 		<image:image>
@@ -11756,53 +11674,6 @@
 			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/08/%D0%9A%D0%B5%D0%B9%D1%81-2.jpg</image:loc>
 			<image:title><![CDATA[Кейс-2]]></image:title>
 			<image:caption><![CDATA[обложка кейса]]></image:caption>
-		</image:image>
-	</url>
-	<url>
-		<loc>https://www.carrotquest.io/blog/case-avtomir/</loc>
-		<lastmod>2021-05-04T09:33:37+00:00</lastmod>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/09/image-22.png</image:loc>
-			<image:title><![CDATA[image (22)]]></image:title>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/09/%D0%9A%D0%BD%D0%BE%D0%BF%D0%BA%D0%B0.jpg</image:loc>
-			<image:caption><![CDATA[изменение конверсии в заявку]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/09/Frame-45.jpg</image:loc>
-			<image:caption><![CDATA[как изменение конверсии меняет выручку]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/09/Group-108.png</image:loc>
-			<image:caption><![CDATA[действующая форма сбора заявок]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/09/unnamed.png</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/09/Group-126.jpg</image:loc>
-			<image:caption><![CDATA[7,6% оставили заявку на оценку автомобиля]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/09/Group-124.jpg</image:loc>
-			<image:caption><![CDATA[3,15% оставили заявку на продажу авто]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/09/Group-121.jpg</image:loc>
-			<image:caption><![CDATA[0,7% оставили заявку на консультацию]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/09/Group-111.jpg</image:loc>
-			<image:caption><![CDATA[0,23% оставили заявку на подбор автомобиля]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/09/Group-101.jpg</image:loc>
-			<image:caption><![CDATA[0,3% оставили заявку на обратный звонок]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/09/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%B0-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0.jpg</image:loc>
-			<image:caption><![CDATA[команда проекта]]></image:caption>
 		</image:image>
 	</url>
 	<url>
@@ -14255,12 +14126,141 @@
 			<image:caption><![CDATA[Ltv]]></image:caption>
 		</image:image>
 	</url>
+	<url>
+		<loc>https://www.carrotquest.io/blog/case-avtomir/</loc>
+		<lastmod>2021-05-14T06:59:45+00:00</lastmod>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/09/image-22.png</image:loc>
+			<image:title><![CDATA[image (22)]]></image:title>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/09/%D0%9A%D0%BD%D0%BE%D0%BF%D0%BA%D0%B0.jpg</image:loc>
+			<image:caption><![CDATA[изменение конверсии в заявку]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/09/Frame-45.jpg</image:loc>
+			<image:caption><![CDATA[как изменение конверсии меняет выручку]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/09/Group-108.png</image:loc>
+			<image:caption><![CDATA[действующая форма сбора заявок]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/09/unnamed.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/09/Group-126.jpg</image:loc>
+			<image:caption><![CDATA[7,6% оставили заявку на оценку автомобиля]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/09/Group-124.jpg</image:loc>
+			<image:caption><![CDATA[3,15% оставили заявку на продажу авто]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/09/Group-121.jpg</image:loc>
+			<image:caption><![CDATA[0,7% оставили заявку на консультацию]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/09/Group-111.jpg</image:loc>
+			<image:caption><![CDATA[0,23% оставили заявку на подбор автомобиля]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/09/Group-101.jpg</image:loc>
+			<image:caption><![CDATA[0,3% оставили заявку на обратный звонок]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/09/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%B0-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0.jpg</image:loc>
+			<image:caption><![CDATA[команда проекта]]></image:caption>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://www.carrotquest.io/blog/case-westfalika/</loc>
+		<lastmod>2021-05-14T12:12:12+00:00</lastmod>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/07/%D0%92%D0%B5%D1%81%D1%82%D1%84%D0%B0%D0%BB%D0%B8%D0%BA%D0%B01-1.jpg</image:loc>
+			<image:title><![CDATA[Вестфалика1 (1)]]></image:title>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/07/%D0%9A%D0%BE%D0%BD%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%8F-%D0%B2-%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7-5.jpg</image:loc>
+			<image:caption><![CDATA[окупаемость инструментов]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/07/%D0%9E-%D0%BA%D0%BB%D0%B8%D0%B5%D0%BD%D1%82%D0%B5-1.jpg</image:loc>
+			<image:caption><![CDATA[о клиенте
+]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/07/%D0%A1%D0%BA%D1%80%D0%B8%D0%BD-%C2%AB%D0%A1%D0%BA%D1%80%D0%B8%D0%BD-007%C2%BB_1-1.jpg</image:loc>
+			<image:caption><![CDATA[блок с похожими товарами на сайте]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/07/%D0%92%D0%B0%D0%BB%D0%B5%D1%80%D0%B8%D1%8F.jpg</image:loc>
+			<image:caption><![CDATA[форма подписки на рассылку]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/07/%D0%BA%D0%BE%D0%BD%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%8F-%D0%B2-%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7_1-4.jpg</image:loc>
+			<image:caption><![CDATA[конверсия в заказ до Carrot quest]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/07/Frame-50.jpg</image:loc>
+			<image:caption><![CDATA[путь пользователя
+]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/07/%D1%86%D0%B5%D0%BB%D0%B8%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B8-2.jpg</image:loc>
+			<image:caption><![CDATA[цели и задачи ]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/07/Frame-51.jpg</image:loc>
+			<image:caption><![CDATA[путь пользователя с Carrot quest]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/07/Group-165.jpg</image:loc>
+			<image:caption><![CDATA[поп-ап с подпиской на уведомления]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/07/Group-146-1.jpg</image:loc>
+			<image:caption><![CDATA[поп-ап со сбором email]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/07/Rectangle-60-1.jpg</image:loc>
+			<image:caption><![CDATA[письмо с просмотренными товарами]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/07/Group-138-1.jpg</image:loc>
+			<image:caption><![CDATA[поп-ап для тех, кто не завершил покупку]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/07/Group-164.jpg</image:loc>
+			<image:caption><![CDATA[сообщение из чата]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/07/Group-136-1.jpg</image:loc>
+			<image:caption><![CDATA[уведомление о распродаже]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/07/Group-144-1.jpg</image:loc>
+			<image:caption><![CDATA[уведомление со ссылкой на каталог]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/07/%D0%9A%D0%BE%D0%BD%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%8F-%D0%B2-%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7_2.jpg</image:loc>
+			<image:caption><![CDATA[итоговая конверсия]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/07/%D1%80%D0%BE%D0%B8-1.jpg</image:loc>
+			<image:caption><![CDATA[ROI]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/07/Frame-58-1.jpg</image:loc>
+			<image:caption><![CDATA[Виктория, интернет-маркетолог Westfalika]]></image:caption>
+		</image:image>
+	</url>
 </urlset>
 <!-- XML Sitemap generated by Yoast SEO -->
 <!--
 Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
 
-Object Caching 844/16110 objects using disk
+Object Caching 5010/9902 objects using disk
 
-Served from: www.carrotquest.io @ 2021-05-13 20:21:19 by W3 Total Cache
+Served from: www.carrotquest.io @ 2021-05-17 11:16:41 by W3 Total Cache
 -->

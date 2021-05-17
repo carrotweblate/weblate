@@ -2121,7 +2121,7 @@
 			return {
 				//Делаем в HEAD
 				metaTitle: 'Тарифы | Стоимость сервиса Carrot quest. 20% скидки при оплате за год',
-				metaDescription: 'Полный комплект сервисов по автоматизации маркетинга и коммуникаций с пользователями от 800 ₽ в месяц',
+				metaDescription: 'Превращайте ваш трафик в лидов. Лидов в продажи. Продажи в повторные продажи.',
 				metaCanonical: 'https://www.carrotquest.io/price/',
 				metaImage: 'https://www.carrotquest.io/assets/images/cover/price.jpg',
 
