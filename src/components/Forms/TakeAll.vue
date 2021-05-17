@@ -70,8 +70,8 @@
 					site:   '',
 					role:   '',
 					// Тестовое
-					name:   '123',
-					phone:	'3213123',
+					name:   'Николай',
+					phone:	'+79223502719',
 					email:  'addonion@gmail.com',
 					site:   'test.ru',
 					role:   'Котик',

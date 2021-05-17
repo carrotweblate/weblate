@@ -8,9 +8,7 @@
 				<b-col lg="6" class="leftCol d-none d-lg-block" style="background-image: url(https://ik.imagekit.io/0nyjr4jxhmg/tr:w-494/components/10.png?ik-sdk-version=vuejs-1.0.9);" />
 				<b-col lg="6" class="rightCol">
 
-					<div class="h3 mb-4" v-html="modalData.title" />
-
-					{{ this.send }}
+					<div class="h3 mb-4" v-html="modalData.title" :class="{ 'hide' : this.send }" />
 
 					<b-form v-on:submit.prevent="Consultation" class="mb-4" :class="{ 'hide' : this.send }">
 						<TakeAll @newdata="handleData($event)" />
@@ -21,6 +19,15 @@
 							Отправить
 						</b-button>
 					</b-form>
+
+					<div class="afterSend row align-items-center" :class="{ 'd-none' : !this.send }">
+						<b-col>
+							<div class="h3 mb-3">Спасибо</div>
+							<p>
+								Ксения позвонит вам с номера +7 (495) 105-91-69. Если что, мы отвечаем в чате 😉
+							</p>
+						</b-col>
+					</div>
 
 					<ContactsHrefs />
 
@@ -49,8 +56,8 @@
 					name:   '',
 					phone:	'',
 					email:  '',
-					site:   '',
 					role:   '',
+					site:   '',
 				},
 
 				send: 		false
@@ -89,32 +96,29 @@
 
 			//Отправка формы
 			Consultation() {
-				this.send=true
-			// 	carrotquest.identify([
-			// 		{"op": "update_or_create", "key": "$phone", "value": this.phone},
-			// 		{"op": "update_or_create", "key": "$name", "value": this.name},
-			// 		{"op": "update_or_create", "key": "$email", "value": this.email}
-			// 	]);
+				carrotquest.identify([
+					{"op": "update_or_create", "key": "$phone", "value": this.modalData.name},
+					{"op": "update_or_create", "key": "$name", 	"value": this.modalData.phone},
+					{"op": "update_or_create", "key": "$email", "value": this.modalData.email},
+					{"op": "update_or_create", "key": "$email", "value": this.modalData.role},
+					{"op": "update_or_create", "key": "$email", "value": this.modalData.site}
+				]);
+				dataLayer.push({ event: 'UAevent', eventCategory: 'leads', eventAction: 'phone', eventLabel: location.host + location.pathname })
+				fbq('trackCustom', 'get_demo', {page: location.pathname})
+				carrotquest.track("Заполнил форму на демо", {
+					'Имя': 			this.modalData.name,
+					'Телефон': 		this.modalData.phone,
+					'Email': 		this.modalData.email,
+					'Должность': 	this.modalData.role,
+					'Сайт': 		this.modalData.site,
+					'type': 		'form',
+					'url': 			location.host + location.pathname
+				});
 
-			// 	dataLayer.push({ event: 'UAevent', eventCategory: 'leads', eventAction: 'phone', eventLabel: location.host + location.pathname })
-			// 	fbq('trackCustom', 'get_demo', {page: location.pathname})
-
-			// 	carrotquest.track("Заполнил форму на демо", {
-			// 		'phone': this.phone,
-			// 		'email': this.email,
-			// 		'type': 'form',
-			// 		'url': location.host + location.pathname
-			// 	});
-				
-			// 	this.name = ""
-			// 	this.phone = ""
-			// 	this.email = ""
-
-			// 	this.$refs['modalConsultation'].hide()
-			// 	this.$refs['suсcessDownload'].show()
-			// 	setTimeout(() => {
-			// 		this.$refs['suсcessDownload'].hide()
-			// 	}, 7000);
+				this.send = true
+				setTimeout(() => {
+					this.hideModal()
+				}, 7000);
 			}
 		}
 	}
@@ -122,7 +126,15 @@
 
 <style lang="scss">
 	.universalModal {
-		form.hide {opacity: 0;}
+		.h3.hide , form.hide {
+			transition: all 150ms cubic-bezier(0, 0, 0.2, 1);
+			opacity: 0;
+		}
+		.afterSend {
+			position: absolute;
+			top: 0;
+			bottom: 6rem;
+		}
 		.ContactsHrefs {
 			flex-wrap: wrap;
 			&__phone {
