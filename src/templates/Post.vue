@@ -103,8 +103,6 @@
 
 			</ClientOnly>
 
-			<!-- <BannerSobirayte /> -->
-
 		</b-container>
 
 		<VideoRegistration />
@@ -168,8 +166,7 @@
 	
 	import '~/assets/scss/post.scss'
 	import { BBreadcrumb , BBreadcrumbItem } from 'bootstrap-vue'
-	import VideoRegistration from '~/components/VideoRegistration.vue'
-	import BannerSobirayte from '~/components/BannerSobirayte/BannerSobirayte.vue'
+	import VideoRegistration from '~/components/Ads/VideoRegistration.vue'
 	import axios from 'axios'
 	import { Disqus } from 'vue-disqus'
 	import PostCard from '~/components/PostCard.vue'

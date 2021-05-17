@@ -6,7 +6,7 @@
 			<b-container>
 				<b-row class="align-items-center">
 					<b-col col-12 lg="6">
-						<g-image class="BannerSobirayte__bg" src="~/components/BannerSobirayte/bg.png" width="680" alt="Видео" />
+						<g-image class="BannerSobirayte__bg" src="~/components/Ads/BannerSobirayte/bg.png" width="680" alt="Видео" />
 					</b-col>
 					<b-col col-12 lg="6">
 						<div class="h1 mt-4 mt-md-5 mt-lg-0">Собирайте больше лидов с&nbsp;сайта с&nbsp;помощью лид&#8209;бота, бизнес&#8209;чата и&nbsp;поп&#8209;ап окошек</div>
@@ -23,7 +23,7 @@
 </template>
 
 <script>
-	import '~/components/BannerSobirayte/BannerSobirayte.scss'
+	import '~/components/BannerSobirayte/Ads/BannerSobirayte.scss'
 	export default {
 	
 	}

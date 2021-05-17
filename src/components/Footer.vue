@@ -241,7 +241,7 @@
 						},
 						{
 							title: 'Оферта и политика',
-							to: 'https://www.carrotquest.io/terms-and-policies/'
+							to: '/terms-and-policies/'
 						},
 						{
 							title: 'Партнерам',

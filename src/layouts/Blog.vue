@@ -157,7 +157,7 @@
 <script>
 	import HeaderBlog from '~/components/HeaderBlog.vue'
 	import Footer from '~/components/Footer.vue'
-	import Balcony from '~/components/Balcony.vue'
+	import Balcony from '~/components/Ads/Balcony.vue'
 
 	export default {
 		components: {
