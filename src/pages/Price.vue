@@ -6,7 +6,7 @@
 				<b-row>
 					<b-col>
 						<div class="h2 mt-5 mb-3 mb-lg-5">
-							Мы правращаем ваш трафик в лидов. <br>
+							Мы превращаем ваш трафик в лидов. <br>
 							Лидов в продажи. Продажи в повторные продажи
 						</div>
 					</b-col>
@@ -1867,7 +1867,9 @@
 						<b-col cols="7">
 							<b-row class="grey-text align-items-center">
 								<b-col cols="4">
-									
+									<svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 6.5L6 11.5L16 1.5" stroke="#717171" stroke-width="2"></path>
+									</svg>
 								</b-col>
 								<b-col cols="4">
 									<svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1898,7 +1900,9 @@
 						<b-col cols="7">
 							<b-row class="grey-text align-items-center">
 								<b-col cols="4">
-									
+									<svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 6.5L6 11.5L16 1.5" stroke="#717171" stroke-width="2"></path>
+									</svg>
 								</b-col>
 								<b-col cols="4">
 									<svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
