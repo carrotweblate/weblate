@@ -114,10 +114,16 @@
 				height: 235px;
 			}
 		}
+		.t-zoomer__wrapper {
+		    display: block;
+		}
 	}
 	header , footer , .modal-dialog {
 		* , :before , :after {
 			box-sizing: border-box !important;
 		}
+	}
+	.t-zoomer__wrapper {
+		display: none;
 	}
 </style>
