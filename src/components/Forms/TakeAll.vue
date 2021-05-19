@@ -1,6 +1,6 @@
 <template>
-	<div class="TakeAll">
-		<b-form-group class="TakeAll__group" label="Имя:" label-class="font12px lightgrey-text">
+	<div class="TakeMe">
+		<b-form-group class="TakeMe__group" label="Имя:" label-class="font12px lightgrey-text">
 			<b-form-input
 				autofocus
 				autocomplete="on"
@@ -12,7 +12,7 @@
 				class="px-3 py-4"
 			/>
 		</b-form-group>
-		<b-form-group class="TakeAll__group" label="Телефон:" label-class="font12px lightgrey-text">
+		<b-form-group class="TakeMe__group" label="Телефон:" label-class="font12px lightgrey-text">
 			<b-form-input
 				autocomplete="on"
 				name="phone"
@@ -23,7 +23,7 @@
 				class="px-3 py-4"
 			/>
 		</b-form-group>
-		<b-form-group class="TakeAll__group" label="Email:" label-class="font12px lightgrey-text">
+		<b-form-group class="TakeMe__group" label="Email:" label-class="font12px lightgrey-text">
 			<b-form-input
 				autocomplete="on"
 				name="email"
@@ -34,7 +34,7 @@
 				class="px-3 py-4"
 			/>
 		</b-form-group>
-		<b-form-group class="TakeAll__group" label="Должность:" label-class="font12px lightgrey-text">
+		<b-form-group class="TakeMe__group" label="Должность:" label-class="font12px lightgrey-text">
 			<b-form-input
 				autocomplete="on"
 				name="role"
@@ -45,7 +45,7 @@
 				class="px-3 py-4"
 			/>
 		</b-form-group>
-		<b-form-group class="TakeAll__group mb-0" label="URL вашего сайта:" label-class="font12px lightgrey-text">
+		<b-form-group class="TakeMe__group mb-0" label="URL вашего сайта:" label-class="font12px lightgrey-text">
 			<b-form-input
 				autocomplete="on"
 				name="site"
@@ -69,12 +69,12 @@
 					email:  '',
 					site:   '',
 					role:   '',
-					// Тестовое
-					name:   'Николай',
-					phone:	'+79223502719',
-					email:  'addonion@gmail.com',
-					site:   'test.ru',
-					role:   'Котик',
+					// // Тестовое
+					// name:   'Николай',
+					// phone:	'+79223502719',
+					// email:  'addonion@gmail.com',
+					// site:   'test.ru',
+					// role:   'Котик',
 				}
 			};
 		},
@@ -90,7 +90,7 @@
 </script>
 
 <style lang="scss">
-	.TakeAll {
+	.TakeMe {
 		&__group {
 			position: relative;
 			border-radius: 5px;

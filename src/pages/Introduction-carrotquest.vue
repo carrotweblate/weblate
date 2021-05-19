@@ -12,7 +12,7 @@
 							<p class="py-3">
 								Разработаем и&nbsp;реализуем стратегии коммуникации с&nbsp;вашими пользователями. Увеличим конверсию на&nbsp;каждом этапе воронки
 							</p>
-							<b-button v-on:click="showModal" href="#" variant="primary" class="px-4">Отправить заявку на&nbsp;внедрение</b-button>
+							<b-button href="#open-modal-consultation?title=Оставить заявку на внедрение" variant="primary" class="px-4">Отправить заявку на&nbsp;внедрение</b-button>
 						</b-col>
 					</b-row>
 					<g-image class="hero__pic d-none d-lg-block" src="@/assets/images/introduction-carrotquest/hero.png" width="872" quality="100" alt="Hero" style="max-width: 436px;" />
@@ -89,10 +89,11 @@
 			</b-row>
 		</b-container>
 
-		<Contacts 
-			title="Хотите обсудить свой проект? Свяжитесь с нами"
+		<ConsultationMini 
+			title="Хотите обсудить свой проект? <br>Свяжитесь с нами"
+			pic="medium-9.png"
+			alt="Девочка, живущая в сети"
 			bg="#FFF3E6"
-			consultation
 		/>
 
 		<!-- Как мы решаем эти задачи -->
@@ -256,10 +257,11 @@
 			</b-row>
 		</b-container>
 
-		<Contacts 
-			title="Хотите обсудить свой проект? Свяжитесь с нами"
+		<ConsultationMini 
+			title="Хотите обсудить свой проект? <br>Свяжитесь с нами"
+			pic="medium-12.png"
+			alt="Девочка, живущая в сети"
 			bg="#FFF3E6"
-			consultation
 		/>
 
 		<Pipeline title="Автоворонка увеличивает конверсию на каждом этапе" />
@@ -613,10 +615,11 @@
 		
 		<Logos />
 
-		<Contacts 
-			title="Хотите обсудить свой проект? Свяжитесь с нами"
+		<ConsultationMini 
+			title="Хотите обсудить свой проект? <br>Свяжитесь с нами"
+			pic="medium-13.png"
+			alt="Девочка, живущая в сети"
 			bg="#FFF3E6"
-			consultation
 		/>
 
 		<!-- Модалка для заявки на внедрение -->
@@ -669,7 +672,7 @@
 <script>
 	import Pipeline 			from '~/components/Pipeline.vue'
 	import Case 				from '~/components/Cases/Case.vue'
-	import Contacts 			from '~/components/Contacts.vue'
+	import ConsultationMini 	from '~/components/ConsultationMini.vue'
 	import Cases 				from '~/components/Cases/Cases.vue'
 	import Study 				from '~/components/Study.vue'
 	import Logos 				from '~/components/Logos.vue'
@@ -678,7 +681,7 @@
 		components: {
 			Pipeline,
 			Case,
-			Contacts,
+			ConsultationMini,
 			Cases,
 			Study,
 			Logos

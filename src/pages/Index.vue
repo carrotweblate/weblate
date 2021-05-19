@@ -236,7 +236,7 @@
 		<Consultation 
 			title="Запишитесь на бесплатную демонстрацию сервиса" 
 			text="Мы познакомимся, определим ваши задачи, за 30 минут обучим продукту и&nbsp;🎁&nbsp;бесплатно настроим базовый сценарий сбора лидов на вашем сайте"
-			pic="medium-2.png"
+			pic="medium-15.png"
 			alt="Девочка, живущая в сети"
 			bg="#fff3e6"
 		/>
@@ -317,7 +317,7 @@
 		<b-container>
 			<b-col class="p-4" style="background-color: #fff3e6; border-radius: 5px;">
 				<b-row class="align-items-center justify-content-center">
-					<b-col lg="6">
+					<b-col lg="6" class="d-none d-lg-block">
 						<!-- <g-image src="@/assets/images/components/10.png" width="494" alt="Регистрация в сервисе" title="Поехали!"  style="max-width: 100%" /> -->
 						<ik-image
 							path="/components/10.png"

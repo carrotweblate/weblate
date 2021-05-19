@@ -167,7 +167,6 @@
 	import '~/assets/scss/post.scss'
 	import { BBreadcrumb , BBreadcrumbItem } from 'bootstrap-vue'
 	import VideoRegistration from '~/components/Ads/VideoRegistration.vue'
-	import axios from 'axios'
 	import { Disqus } from 'vue-disqus'
 	import PostCard from '~/components/PostCard.vue'
 
@@ -181,7 +180,6 @@
 					.catch(),
 			BBreadcrumb, BBreadcrumbItem,
 			VideoRegistration,
-			BannerSobirayte,
 			Disqus,
 			PostCard
 		},

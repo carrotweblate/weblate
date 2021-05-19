@@ -1,5 +1,6 @@
 <template>
 	<b-modal content-class="universalModal" ref="open-modal-consultation" size="lg" hide-header hide-footer>
+		<!-- Кнопка закрытия модалки -->
 		<b-button @click="hideModal" class="universalModal__close font12px">
 			<span>Закрыть</span>
 		</b-button>
@@ -7,9 +8,9 @@
 			<b-row>
 				<b-col lg="6" class="leftCol d-none d-lg-block" style="background-image: url(https://ik.imagekit.io/0nyjr4jxhmg/tr:w-494/components/10.png?ik-sdk-version=vuejs-1.0.9);" />
 				<b-col lg="6" class="rightCol">
-
+					<!-- Заголовок модалки -->
 					<div class="h3 mb-4" v-html="modalData.title" :class="{ 'hide' : this.send }" />
-
+					<!-- Форма для сбора данных -->
 					<b-form v-on:submit.prevent="Consultation" class="mb-4" :class="{ 'hide' : this.send }">
 						<TakeAll @newdata="handleData($event)" />
 						<b-button 
@@ -19,7 +20,7 @@
 							Отправить
 						</b-button>
 					</b-form>
-
+					<!-- Текст после отправки -->
 					<div class="afterSend row align-items-center" :class="{ 'd-none' : !this.send }">
 						<b-col>
 							<div class="h3 mb-3">Спасибо</div>
@@ -28,9 +29,10 @@
 							</p>
 						</b-col>
 					</div>
-
-					<ContactsHrefs />
-
+					<!-- Контактная информация -->
+					<div class="font14px">
+						<ContactsHrefs />
+					</div>
 				</b-col>
 			</b-row>
 		</b-container>
@@ -52,7 +54,7 @@
 				event:     '',
 
 				modalData: {
-					title:	'Оставить заявку на внедрение',
+					title:	'Оставить заявку на консультацию',
 					name:   '',
 					phone:	'',
 					email:  '',
@@ -64,27 +66,28 @@
 			};
 		},
 		mounted () {
-			this.searchHrefs()
+			// Ищем ссылки для открытия модалок для записи на демо
+			if ( document.querySelector('a[href*="#open-modal-consultation"]') ) {
+				document.querySelectorAll('a[href*="#open-modal-consultation"]').forEach(function(item) {
+					item.addEventListener('click', function(e) {
+						e.preventDefault()
+						this.$refs['open-modal-consultation'].show()
+						gtag('event' , 'lead form' , {
+							'category'     	: 'demo',
+							'subject'      	: 'finished fill the form',
+							'page_title' 	: document.title,
+							'page_location' : location.host + location.pathname
+						})
+						let addr = new URL(e.srcElement.href.replace('#open-modal-consultation' , ''))
+						//Заголовок
+						if (!!addr.searchParams.get('title')) {
+							this.modalData.title = addr.searchParams.get('title')
+						}
+					}.bind(this))
+				}.bind(this))
+			}
 		},
 		methods: {
-			// Ищем ссылки на страницах
-			searchHrefs() {
-				// Ищем ссылки для открытия модалок на скачивание файлов
-				if ( document.querySelector('a[href*="#open-modal-consultation"]') ) {
-					document.querySelectorAll('a[href*="#open-modal-consultation"]').forEach(function(item) {
-						item.addEventListener('click', function(e) {
-							e.preventDefault()
-							this.$refs['open-modal-consultation'].show()
-							let addr = new URL(e.srcElement.href.replace('#open-modal-consultation' , ''))
-							//Заголовок
-							if (!!addr.searchParams.get('title')) {
-								this.modalData = addr.searchParams.get('title')
-							}
-						}.bind(this))
-					}.bind(this))
-				}
-			},
-
 			hideModal() {
 				this.$refs['open-modal-consultation'].hide()
 			},
@@ -97,15 +100,17 @@
 			//Отправка формы
 			Consultation() {
 				carrotquest.identify([
-					{"op": "update_or_create", "key": "$phone", "value": this.modalData.name},
-					{"op": "update_or_create", "key": "$name", 	"value": this.modalData.phone},
-					{"op": "update_or_create", "key": "$email", "value": this.modalData.email},
-					{"op": "update_or_create", "key": "$email", "value": this.modalData.role},
-					{"op": "update_or_create", "key": "$email", "value": this.modalData.site}
+					{'op': 'update_or_create', 'key': '$name', 	'value': this.modalData.name},
+					{'op': 'update_or_create', 'key': '$phone', 'value': this.modalData.phone},
+					{'op': 'update_or_create', 'key': '$email', 'value': this.modalData.email},
+					{'op': 'update_or_create', 'key': '$email', 'value': this.modalData.role},
+					{'op': 'update_or_create', 'key': '$email', 'value': this.modalData.site},
+					{'op': 'update_or_create', 'key': 'Тип заявки', 'value': 'Заполнил форму на демо'},
+					{'op': 'update_or_create', 'key': 'Источник заявки', 'value': location.host + location.pathname}
 				]);
 				dataLayer.push({ event: 'UAevent', eventCategory: 'leads', eventAction: 'phone', eventLabel: location.host + location.pathname })
 				fbq('trackCustom', 'get_demo', {page: location.pathname})
-				carrotquest.track("Заполнил форму на демо", {
+				carrotquest.track('Заполнил форму на демо', {
 					'Имя': 			this.modalData.name,
 					'Телефон': 		this.modalData.phone,
 					'Email': 		this.modalData.email,
@@ -139,24 +144,9 @@
 			flex-wrap: wrap;
 			&__phone {
 				width: 100%;
-				margin-bottom: 0 !important;
-			}
-			&__icons {
-				flex-wrap: wrap;
-				br {
-					display: none;
-				}
 			}
 			&__icon {
-				margin-top: 1rem;
-				a {
-					margin-right: 0.5rem;
-				}
-			}
-			@media (min-width: 768px) {
-				&__icon {
-					margin-top: 1rem;
-				}
+				margin-top: 1rem !important;
 			}
 		}
 	}

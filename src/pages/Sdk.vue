@@ -104,10 +104,9 @@
 			</b-container>
 		</section>
 
-		<Contacts 
-			title="Хотите обсудить свой проект? Свяжитесь с нами"
+		<ConsultationMini 
+			title="Хотите обсудить свой проект? <br>Свяжитесь с нами"
 			bg="#FFF3E6"
-			consultation
 		/>
 
 		<!-- Качественная поддержка пользователей прямо в вашем мобильном приложении -->
@@ -180,7 +179,7 @@
 
 
 <script>
-	import Contacts 		from '~/components/Contacts.vue'
+	import ConsultationMini 		from '~/components/ConsultationMini.vue'
 	import Consultation 	from '~/components/Consultation.vue'
 	import Cases 			from '~/components/Cases/Cases.vue'
 	import Logos 			from '~/components/Logos.vue'
@@ -188,7 +187,7 @@
 
 	export default {
 		components: {
-			Contacts,
+			ConsultationMini,
 			Consultation,
 			Cases,
 			Logos,

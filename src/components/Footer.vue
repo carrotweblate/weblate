@@ -256,7 +256,6 @@
 
 
 <style lang="scss">
-	@import "~/assets/scss/variables.scss";
 	footer {
 		margin-top: 3rem;
 		color: #333;

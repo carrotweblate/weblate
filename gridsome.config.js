@@ -8,6 +8,20 @@
 // const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
 //   .BundleAnalyzerPlugin
 
+
+// Подсключение глобальных стилей
+const path = require('path')
+function addStyleResource (rule) {
+  rule.use('style-resource')
+    .loader('style-resources-loader')
+    .options({
+      patterns: [
+        path.resolve(__dirname, './src/assets/scss/variables.scss')
+      ],
+    })
+}
+
+// Выгрузка страниц блога в поиск Algolia
 const collections = [{
 	query: `{
 		allPost {
@@ -44,6 +58,7 @@ const collections = [{
 
 module.exports = {
 	siteUrl: 'https://www.carrotquest.io',
+	pathPrefix: '/test3',
 
 	siteName: 'Carrot quest',
 	titleTemplate: '%s',
@@ -60,16 +75,16 @@ module.exports = {
 				debug: false
 			}
 		},
-		{
-			use: `gridsome-plugin-algolia`,
-			options: {
-				appId: '7Y1P83X4M1',
-				apiKey: 'e268d391762ad62104c571742cfd1afa',
-				collections,
-				chunkSize: 10000, // default: 1000
-				enablePartialUpdates: true, // default: false
-			},
-		},
+		// {
+		// 	use: `gridsome-plugin-algolia`,
+		// 	options: {
+		// 		appId: '7Y1P83X4M1',
+		// 		apiKey: 'e268d391762ad62104c571742cfd1afa',
+		// 		collections,
+		// 		chunkSize: 10000, // default: 1000
+		// 		enablePartialUpdates: true, // default: false
+		// 	},
+		// },
 		{
 			use: 'gridsome-plugin-manifest',
 			options: {
@@ -92,20 +107,18 @@ module.exports = {
 		// 	},
 		// }
 	],
+	
+	
+	chainWebpack: config => {
+		// Подсключение глобальных стилей
+		const types = ['vue-modules', 'vue', 'normal-modules', 'normal']
+		types.forEach(type => {
+			addStyleResource(config.module.rule('scss').oneOf(type))
+		})
 
-	// css: {
-	// 	loaderOptions: {
-	// 		scss: {
-	// 			prependData: '@import "./src/assets/scss/base.scss";'
-	// 		}
-	// 	}
-	// }
-	
-	
-	// chainWebpack: config => {		
-	// 	// Анализ размера билда
-	// 	config
-	// 		.plugin('BundleAnalyzerPlugin')
-	// 		.use(BundleAnalyzerPlugin, [{ analyzerMode: 'static' }])
-	// }
+		// 	// Анализ размера билда
+		// 	config
+		// 		.plugin('BundleAnalyzerPlugin')
+		// 		.use(BundleAnalyzerPlugin, [{ analyzerMode: 'static' }])
+	}
 }

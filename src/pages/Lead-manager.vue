@@ -289,7 +289,7 @@
 			.hero {
 				&__pic {
 					top: 0;
-					left: 40%;
+					left: 50%;
 				}
 			}
 		}
