@@ -40,11 +40,13 @@
 </page-query>
 
 <script>
+	import Layout from '~/layouts/Blog.vue'
 	import PostCard from '~/components/PostCard.vue'
 	import { Pager } from 'gridsome'
 
 	export default {
 		components: {
+			Layout,
 			PostCard,
 			Pager
 		},
