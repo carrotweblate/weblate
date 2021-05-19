@@ -100,7 +100,6 @@
 						<Disqus shortname="carrotquest" :identifier="$context.id + ' https://www.carrotquest.io/blog/?p=' + $context.id" lang="ru" />
 					</b-col>
 				</b-row>
-
 			</ClientOnly>
 
 		</b-container>

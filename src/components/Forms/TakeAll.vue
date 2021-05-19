@@ -69,12 +69,12 @@
 					email:  '',
 					site:   '',
 					role:   '',
-					// // Тестовое
-					// name:   'Николай',
-					// phone:	'+79223502719',
-					// email:  'addonion@gmail.com',
-					// site:   'test.ru',
-					// role:   'Котик',
+					// Тестовое
+					name:   'Николай',
+					phone:	'+79223502719',
+					email:  'addonion@gmail.com',
+					site:   'test.ru',
+					role:   'Котик',
 				}
 			};
 		},

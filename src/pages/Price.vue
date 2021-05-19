@@ -2314,7 +2314,7 @@
 					}
 					.show {
 						text-decoration: none;
-						border-bottom: 1px dashed #FF7C16;
+						border-bottom: 1px dashed $primary;
 						position: relative;
 						display: inline-block;
 						&::after {

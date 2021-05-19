@@ -832,7 +832,7 @@
 					scroll-snap-align: start;
 				}
 				.number {
-					color: #FF7C16;
+					color: $primary;
 				}
 				.logo {
 					text-align: right;
@@ -844,7 +844,7 @@
 				.link {
 					position: absolute;
 					bottom: 1.5rem;
-					color: #FF7C16;
+					color: $primary;
 				}
 			}
 		}

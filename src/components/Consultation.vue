@@ -27,9 +27,7 @@
 									</b-col>
 								</b-row>
 								<b-row class="mt-4 mb-5">
-									<b-col>
-										<ConsultationForm />
-									</b-col>
+									<ConsultationForm :button="button" />
 								</b-row>
 								<b-row>
 									<b-col>
@@ -54,7 +52,7 @@
 			ConsultationForm,
 			ContactsHrefs
 		},
-		props: [ 'title' , 'text' , 'pic' , 'alt' , 'bg' ]
+		props: [ 'title' , 'text' , 'button' , 'pic' , 'alt' , 'bg' ]
 	}
 </script>
 
@@ -63,6 +61,9 @@
 		&__box {
 			border-radius: 5px;
 			padding: 2rem 0 4.5rem;
+			form {
+				max-width: 100%;
+			}
 			@media (max-width: 1199.98px) {
 				padding: 2rem 20px;
 			}

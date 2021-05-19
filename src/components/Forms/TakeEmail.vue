@@ -1,6 +1,6 @@
 <template>
-	<div class="TakeMe TakeMe--email mr-3">
-		<b-form-group class="TakeMe__group mb-lg-0" label="Email:" label-class="font12px lightgrey-text">
+	<div class="TakeMe TakeMe--email mr-md-3">
+		<b-form-group class="TakeMe__group mb-md-0" label="Email:" label-class="font12px lightgrey-text">
 			<b-form-input
 				autocomplete="on"
 				name="email"

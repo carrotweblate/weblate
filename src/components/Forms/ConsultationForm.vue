@@ -1,83 +1,84 @@
 <template>
 	<div class="ConsultationForm">
-		<b-form v-on:submit.prevent="consultation">
-			<b-form-row>
-				<b-col cols="12" md="6" xl="3">
-					<b-form-input 
-						placeholder="Имя" 
-						type="text" 
-						required
-						v-model="name"
-						class="px-3 py-4 mb-3 mb-xl-0"
-					/>
-				</b-col>
-				<b-col cols="12" md="6" xl="3">
-					<b-form-input 
-						placeholder="Телефон" 
-						type="text" 
-						required
-						v-model="phone"
-						class="px-3 py-4 mb-3 mb-xl-0"
-					/>
-				</b-col>
-				<b-col cols="12" md="6" xl="3">
-					<b-form-input 
-						placeholder="Почта" 
-						type="email" 
-						required
-						v-model="email"
-						class="px-3 py-4 mb-3 mb-xl-0"
-					/>
-				</b-col>
-				<b-col cols="12" md="6" xl="3">
-					<b-button type="submit" variant="primary">Заказать консультацию</b-button>
-				</b-col>
-			</b-form-row>
+		{{ this.send }}
+		<!-- Форма для сбора данных -->
+		<b-form v-on:submit.prevent="Consultation" :class="{ 'hide' : this.send }">
+			<TakeAll @newdata="handleData($event)" />
+			<b-button 
+				type="submit" 
+				variant="primary" 
+				class="px-3 py-2 mt-4 w-100"
+				v-html="button"
+			/>
 		</b-form>
+		<!-- Текст после отправки -->
+		<div class="afterSend row align-items-center" :class="{ 'd-none' : !this.send }">
+			<b-col>
+				<div class="h3 mb-3">Спасибо</div>
+				<p>
+					Ксения позвонит вам с номера +7 (495) 105-91-69. Если что, мы отвечаем в чате 😉
+				</p>
+			</b-col>
+		</div>
 	</div>
 </template>
 
 
 
 <script>
+	import TakeAll 			from '~/components/Forms/TakeAll.vue'
+
 	export default {
-		props: [
-			'text'
-		],
+		components: { 
+			TakeAll
+		},
+		props: {
+			button: {
+				default: 'Отправить',
+				type: String
+			}
+		},
 		data: function() {
 			return {
-				name: '',
-				phone: '',
-				email: ''
+				name:   '',
+				phone:	'',
+				email:  '',
+				role:   '',
+				site:   '',
+
+				send:	false
 			};
 		},
 		methods: {
-			consultation () {
-				carrotquest.track("Заказал консультацию", {
-					'Телефон': this.phone,
-					'Имя': this.name,
-					'Email': this.email,
-					'url': location.host + location.pathname
-				});
-				carrotquest.identify([
-					{"op": "update_or_create", "key": "$phone", "value": this.phone},
-					{"op": "update_or_create", "key": "$name", "value": this.name},
-					{"op": "update_or_create", "key": "$email", "value": this.email}
-				]);
+			//Данные из формы
+			handleData: function(e) {
+				[ this.name, this.phone, this.email, this.role, this.site ] = e;
+			},
 
-				dataLayer.push({ event: 'UAevent', eventCategory: 'leads', eventAction: 'phone', eventLabel: location.host + location.pathname })
-				fbq('trackCustom', 'get_demo', {page: location.pathname})
-
-				carrotquest.track("Заполнил форму на демо", {
-					'phone': this.phone,
-					'email': this.email,
-					'type': 'form',
-					'url': location.host + location.pathname
-				});
-				
-				this.name = ""
-				this.phone = ""
-				this.email = ""
+			//Отправка формы
+			Consultation() {
+				alert(this.name)
+				// carrotquest.identify([
+				// 	{'op': 'update_or_create', 'key': '$name', 	'value': this.name},
+				// 	{'op': 'update_or_create', 'key': '$phone', 'value': this.phone},
+				// 	{'op': 'update_or_create', 'key': '$email', 'value': this.email},
+				// 	{'op': 'update_or_create', 'key': '$email', 'value': this.role},
+				// 	{'op': 'update_or_create', 'key': '$email', 'value': this.site},
+				// 	{'op': 'update_or_create', 'key': 'Тип заявки', 'value': 'Заполнил форму на демо'},
+				// 	{'op': 'update_or_create', 'key': 'Источник заявки', 'value': location.host + location.pathname}
+				// ]);
+				// dataLayer.push({ event: 'UAevent', eventCategory: 'leads', eventAction: 'phone', eventLabel: location.host + location.pathname })
+				// fbq('trackCustom', 'get_demo', {page: location.pathname})
+				// carrotquest.track('Заполнил форму на демо', {
+				// 	'Имя': 			this.name,
+				// 	'Телефон': 		this.phone,
+				// 	'Email': 		this.email,
+				// 	'Должность': 	this.role,
+				// 	'Сайт': 		this.site,
+				// 	'type': 		'form',
+				// 	'url': 			location.host + location.pathname
+				// });
+				this.send = true
 			}
 		}
 	}
@@ -88,6 +89,16 @@
 <style lang="scss">
 	.ConsultationForm {
 		width: 100%;
+		position: relative;
+		form.hide {
+			transition: all 150ms cubic-bezier(0, 0, 0.2, 1);
+			opacity: 0;
+		}
+		.afterSend {
+			position: absolute;
+			top: 0;
+			bottom: 6rem;
+		}
 		.btn {
 			width: 100%;
 			height: 50px;

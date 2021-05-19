@@ -214,7 +214,7 @@
 			margin-bottom: 1rem;
 		}
 		span {
-			color: #FF7C16;
+			color: $primary;
 		}
 	}
 	.right-article { 
@@ -401,7 +401,7 @@
 			display: inline-block;
 			padding: 0.5rem 1.5rem;
 			color: #fff;
-			background-color: #FF7C16;
+			background-color: $primary;
 			border-radius: 5px;
 		}
 	}

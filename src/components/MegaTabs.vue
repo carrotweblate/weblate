@@ -184,19 +184,19 @@
 					color: #000;
 					transition: all 150ms cubic-bezier(0, 0, 0.2, 1);
 					span {
-						border-bottom: 1px dashed #FF7C16;
+						border-bottom: 1px dashed $primary;
 					}
 					&:hover {
-						color: #FF7C16;
+						color: $primary;
 						span {
 							border-bottom: 1px dashed #fff;
 						}
 					}
 					&.active {
-						background-color: #FF7C16;
+						background-color: $primary;
 						color: #fff;
 						span {
-							border-bottom: 1px dashed #FF7C16;
+							border-bottom: 1px dashed $primary;
 						}
 					}
 					@media (min-width: 1200px) {
@@ -241,7 +241,7 @@
 				border-radius: 5px;
 				transition: all 150ms cubic-bezier(0, 0, 0.2, 1);
 				&:hover {
-					background-color: #FF7C16;
+					background-color: $primary;
 					color: #fff;
 				}
 			}
@@ -268,7 +268,7 @@
 				}
 				i {
 					font-style: normal;
-					color: #FF7C16;
+					color: $primary;
 				}
 				@media (max-width: 575.98px) {
 					font-size: 0.875rem;

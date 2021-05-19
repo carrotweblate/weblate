@@ -36,6 +36,12 @@
 		methods: {
 			//Перебрасываем в админку и передаём введённый email
 			registration () {
+				gtag('event' , 'lead form' , {
+					'category'     	: 'reg',
+					'subject'      	: 'started fill the form',
+					'page_title' 	: document.title,
+					'page_location' : location.host + location.pathname
+				})
 				window.open("https://carrotquest.io/panel/register/?email=" + this.email);
 				this.email = ""
 			},
@@ -49,8 +55,16 @@
 
 <style lang="scss">
 	.Registration {
-		.TakeMe__group {
-			border: 1px solid $grey-text;
+		@media (max-width: 767.98px) {
+			form {
+				flex-wrap: wrap;
+				.TakeMe--email {
+					width: 100%;
+				}
+				.btn {
+					margin-top: 0;
+				}
+			}
 		}
 	}
 </style>

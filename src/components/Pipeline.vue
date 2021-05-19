@@ -460,7 +460,7 @@
 			position: relative;
 			
 			&__number {
-				color: #FF7C16;
+				color: $primary;
 				font-size: 32px;
 				line-height: 1.8rem;
 			}

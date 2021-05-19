@@ -112,7 +112,7 @@
 				margin-top: 0;
 				margin-bottom: 40px;
 				b {
-					color: #FF7C16;
+					color: $primary;
 					font-weight: normal;
 				}
 			}
@@ -126,14 +126,14 @@
 				left: 50%;
 				width: 400px;
 				margin-left: -200px;
-				border: 1px solid #FF7C16;
+				border: 1px solid $primary;
 				background-color: #fff;
 				border-radius: 5px;
 				height: 10px;
 				.in {
 					animation: fill 10s cubic-bezier(.55,1.09,.7,-0.02);
 					height: 100%;
-					background-color: #FF7C16;
+					background-color: $primary;
 				}
 			}
 			@keyframes fill {

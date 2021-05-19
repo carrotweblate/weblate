@@ -159,7 +159,7 @@
 				padding: 16px 24px !important;
 			}
 			.input-field::placeholder {
-				color: #C4C4C4 !important;
+				color: $light-grey !important;
 			}
 			@media (max-width: 991.98px) {
 				.input-field,
