@@ -2,7 +2,11 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>https://www.carrotquest.io/blog/author/guest/</loc>
-		<lastmod>2021-04-28T08:08:35+00:00</lastmod>
+		<lastmod>2021-05-19T06:20:14+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://www.carrotquest.io/blog/author/makarova-e/</loc>
+		<lastmod>2021-05-19T06:17:53+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://www.carrotquest.io/blog/author/s-kamenskih/</loc>
@@ -31,10 +35,6 @@
 	<url>
 		<loc>https://www.carrotquest.io/blog/author/polina/</loc>
 		<lastmod>2020-10-06T11:02:42+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://www.carrotquest.io/blog/author/makarova-e/</loc>
-		<lastmod>2020-07-27T05:04:36+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://www.carrotquest.io/blog/author/strunkina/</loc>
@@ -101,7 +101,7 @@
 <!--
 Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
 
-Object Caching 62/169 objects using disk
+Object Caching 70/147 objects using disk
 
-Served from: www.carrotquest.io @ 2021-05-17 11:16:44 by W3 Total Cache
+Served from: www.carrotquest.io @ 2021-05-19 11:26:02 by W3 Total Cache
 -->
