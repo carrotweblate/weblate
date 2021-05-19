@@ -1,8 +1,8 @@
 <template>
-	<b-col md="6" lg="4" class="post-card mb-4 mb-md-5">
+	<b-col md="6" lg="4" class="post-card mb-4 mb-md-5" v-b-visible.once="callback">
 		<g-link :to="parentPage + node.slug + '/'" class="post__box box-shadow box h-100 d-block">
 			<!-- Изображение -->
-			<div class="post__box__pic mb-3" :style="'background-image: url(' + node.featured_media + ')'"></div>
+			<div v-if="visible" class="post__box__pic mb-3" :style="'background-image: url(' + node.featured_media + ')'"></div>
 			
 			<!-- Категории -->
 			<div v-if="!categoryPage" class="post__box__categories px-3 mb-3">
@@ -32,7 +32,15 @@
 		},
 		data() {
 			return {
-				index: 1
+				index: 1,
+				visible: false
+			}
+		},
+		methods: {
+			callback(visible) {
+				if (visible) {
+					this.visible = true
+				}
 			}
 		}
 	};
