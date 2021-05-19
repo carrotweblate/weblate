@@ -2,7 +2,7 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>https://www.carrotquest.io/blog/</loc>
-		<lastmod>2021-05-18T13:30:41+00:00</lastmod>
+		<lastmod>2021-05-19T10:11:16+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://www.carrotquest.io/blog/test-na-kogo-podpisatsya/</loc>
@@ -14030,51 +14030,6 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://www.carrotquest.io/blog/lead-qualification-guide/</loc>
-		<lastmod>2021-05-17T12:16:41+00:00</lastmod>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/04/%D0%BE%D0%B1%D0%BB%D0%BE%D0%B6%D0%BA%D0%B0-2-%D1%87%D0%B0%D1%81%D1%82%D1%8C.jpg</image:loc>
-			<image:title><![CDATA[обложка 2 часть]]></image:title>
-			<image:caption><![CDATA[Обложка 2 часть]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/04/%D1%81%D1%85%D0%B5%D0%BC%D0%B0-1.png</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/04/%D0%B1%D0%BE%D1%821.png</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/04/%D0%B1%D0%BE%D1%822.png</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/04/%D0%B1%D0%BE%D1%823.png</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/04/%D0%B1%D0%BE%D1%824.png</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/04/%D0%B1%D0%BE%D1%825.png</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/04/%D0%B1%D0%BE%D1%826.png</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/04/%D0%B1%D0%BE%D1%827.png</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/04/1-1.png</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/04/00.png</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/04/3.png</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/04/4.png</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://www.carrotquest.io/blog/online-chat-overview/</loc>
 		<lastmod>2021-05-18T04:07:17+00:00</lastmod>
 		<image:image>
@@ -14255,12 +14210,105 @@
 			<image:caption><![CDATA[Типы клиентов: идеальные]]></image:caption>
 		</image:image>
 	</url>
+	<url>
+		<loc>https://www.carrotquest.io/blog/lead-qualification-guide/</loc>
+		<lastmod>2021-05-19T08:17:52+00:00</lastmod>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/04/%D0%BE%D0%B1%D0%BB%D0%BE%D0%B6%D0%BA%D0%B0-2-%D1%87%D0%B0%D1%81%D1%82%D1%8C.jpg</image:loc>
+			<image:title><![CDATA[обложка 2 часть]]></image:title>
+			<image:caption><![CDATA[Обложка 2 часть]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/04/%D1%81%D1%85%D0%B5%D0%BC%D0%B0-1.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/04/%D0%B1%D0%BE%D1%821.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/04/%D0%B1%D0%BE%D1%822.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/04/%D0%B1%D0%BE%D1%823.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/04/%D0%B1%D0%BE%D1%824.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/04/%D0%B1%D0%BE%D1%825.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/04/%D0%B1%D0%BE%D1%826.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/04/%D0%B1%D0%BE%D1%827.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/04/1-1.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/04/00.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/04/3.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/04/4.png</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://www.carrotquest.io/blog/hundred-years-war-marketing-vs-sales/</loc>
+		<lastmod>2021-05-19T10:11:16+00:00</lastmod>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2021/05/IMG_1074.jpg</image:loc>
+			<image:title><![CDATA[IMG_1074]]></image:title>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2021/05/%D0%92%D0%BE%D1%80%D0%BE%D0%BD%D0%BA%D0%B0-%D0%BA%D0%B2%D0%B0%D0%BB%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%86%D0%B8%D0%B8-%D0%B8-%D1%81%D0%BA%D0%BE%D1%80%D0%B8%D0%BD%D0%B3%D0%B0-%D0%BB%D0%B8%D0%B4%D0%BE%D0%B2.png</image:loc>
+			<image:caption><![CDATA[воронка квалификации и скоринга лидов]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2021/05/%D0%A4%D1%80%D0%B0%D0%B3%D0%BC%D0%B5%D0%BD%D1%82-%D0%B2%D0%BE%D1%80%D0%BE%D0%BD%D0%BA%D0%B8-%D0%BF%D0%BE-%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D0%BE%D0%B9-%D0%B4%D0%B2%D0%B8%D0%B3%D0%B0%D0%B5%D1%82%D1%81%D1%8F-%D0%BA%D0%BB%D0%B8%D0%B5%D0%BD%D1%82.jpg</image:loc>
+			<image:caption><![CDATA[воронка пользователя Carrot quest]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2021/05/%D1%87%D0%B5%D0%BA-%D0%BB%D0%B8%D1%81%D1%82-%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%D0%B0%D1%87%D0%B8-%D0%BB%D0%B8%D0%B4%D0%BE%D0%B2.jpg</image:loc>
+			<image:caption><![CDATA[чек-лист передачи лидов из маркетинга в продажи]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2021/05/%D0%94%D0%B0%D1%88%D0%B1%D0%BE%D1%80%D0%B4-%D0%BA%D0%BE%D0%BC%D0%B8%D1%82%D0%B5%D1%82%D0%B0-%D1%80%D0%B0%D0%B7%D0%B1%D0%BE%D1%80%D0%B0-%D0%BB%D0%B8%D0%B4%D0%BE%D0%B2.jpg</image:loc>
+			<image:caption><![CDATA[дашборд разбора лидов]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2021/05/%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B5%D0%B2%D0%B0%D1%8E%D1%89%D0%B5%D0%B5-%D0%BF%D0%B8%D1%81%D1%8C%D0%BC%D0%BE-%D0%BE%D1%82-MDR-%D0%BA%D0%BB%D0%B8%D0%B5%D0%BD%D1%82%D1%83.png</image:loc>
+			<image:caption><![CDATA[прогревающее письмо]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2021/05/%D0%92%D1%81%D0%B5-%D1%81%D0%BE%D0%B1%D1%80%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5-%D0%BB%D0%B8%D0%B4%D1%8B.jpg</image:loc>
+			<image:caption><![CDATA[alt - собранные лиды в Carrot quest]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2021/05/%D0%9E%D1%82%D1%81%D0%BA%D0%BE%D1%80%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5-%D0%BB%D0%B8%D0%B4%D1%8B.jpg</image:loc>
+			<image:caption><![CDATA[отскоренные лиды в Carrot quest]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2021/05/%D0%9E%D0%BA%D0%BD%D0%BE-%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B8-%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D1%86%D0%B8%D0%B8-%D1%81-amoCRM.jpg</image:loc>
+			<image:caption><![CDATA[интеграция amoCRM в Carrot quest]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2021/05/%D0%A4%D0%B8%D0%BB%D1%8C%D1%82%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D0%B1%D0%B0%D0%B7%D1%8B-%D0%BB%D0%B8%D0%B4%D0%BE%D0%B2-%D0%B4%D0%BB%D1%8F-%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%D0%B0%D1%87%D0%B8-%D0%B2-amoCRM.jpg</image:loc>
+			<image:caption><![CDATA[интеграция amoCRM в Carrot quest]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2021/05/%D1%81%D0%BA%D1%80%D0%B8%D0%BD-%D0%BF%D1%80%D0%B5%D0%B7%D1%8B-%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6.jpg</image:loc>
+			<image:caption><![CDATA[презентация продаж с болями клиента]]></image:caption>
+		</image:image>
+	</url>
 </urlset>
 <!-- XML Sitemap generated by Yoast SEO -->
 <!--
 Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
 
-Object Caching 4451/10810 objects using disk
+Object Caching 3268/12729 objects using disk
 
-Served from: www.carrotquest.io @ 2021-05-19 11:26:02 by W3 Total Cache
+Served from: www.carrotquest.io @ 2021-05-19 16:27:36 by W3 Total Cache
 -->
