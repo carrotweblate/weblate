@@ -15,7 +15,7 @@
 						<p>
 							Подпишитесь, чтобы получать еженедельный дайджест Carrot&nbsp;quest
 						</p>
-						<SubscribeForm event="Подписался на библиотеку" />
+						<LidsMiniForm event="Подписался на библиотеку" />
 					</b-col> 
 				</b-row>
 
@@ -264,11 +264,11 @@
 
 <script>
 	import axios from 'axios'
-	import SubscribeForm from '~/components/Forms/SubscribeForm.vue'
+	import LidsMiniForm from '~/components/Forms/LidsMiniForm.vue'
 
 	export default {
 		components: {
-			SubscribeForm
+			LidsMiniForm
 		},
 		data() {
 			return {

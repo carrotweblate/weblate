@@ -6,33 +6,20 @@
 		</b-button>
 		<b-container>
 			<b-row>
-				<b-col lg="6" class="leftCol d-none d-lg-block" style="background-image: url(https://ik.imagekit.io/0nyjr4jxhmg/tr:w-494/components/10.png?ik-sdk-version=vuejs-1.0.9);" />
+				<b-col lg="6" class="leftCol d-none d-lg-block" :style="pic" />
 				<b-col lg="6" class="rightCol">
+
 					<!-- Заголовок модалки -->
-					<div class="h3 mb-4" v-html="modalData.title" :class="{ 'hide' : this.send }" />
+					<div class="h3 mb-4" v-html="title" :class="{ 'hide' : this.send }" />
+
 					<!-- Форма для сбора данных -->
-					<b-form v-on:submit.prevent="Consultation" class="mb-4" :class="{ 'hide' : this.send }">
-						<TakeAll @newdata="handleData($event)" />
-						<b-button 
-							type="submit" 
-							variant="primary" 
-							class="px-3 py-2 mt-4 w-100">
-							Отправить
-						</b-button>
-					</b-form>
-					<!-- Текст после отправки -->
-					<div class="afterSend row align-items-center" :class="{ 'd-none' : !this.send }">
-						<b-col>
-							<div class="h3 mb-3">Спасибо</div>
-							<p>
-								Ксения позвонит вам с номера +7 (495) 105-91-69. Если что, мы отвечаем в чате 😉
-							</p>
-						</b-col>
-					</div>
+					<ConsultationForm @newdata="handleData($event)" button="Отправить" />
+
 					<!-- Контактная информация -->
-					<div class="font14px">
+					<div class="mt-4 font14px">
 						<ContactsHrefs />
 					</div>
+
 				</b-col>
 			</b-row>
 		</b-container>
@@ -41,86 +28,60 @@
 
 
 <script>
-	import TakeAll 			from '~/components/Forms/TakeAll.vue'
-	import ContactsHrefs 	from '~/components/ContactsHrefs.vue'
+	import ConsultationForm 	from '~/components/Forms/ConsultationForm.vue'
+	import ContactsHrefs 		from '~/components/ContactsHrefs.vue'
 	
 	export default {
 		components: {
-			TakeAll,
+			ConsultationForm,
 			ContactsHrefs
 		},
 		data: function() {
 			return {
-				event:     '',
-
-				modalData: {
-					title:	'Оставить заявку на консультацию',
-					name:   '',
-					phone:	'',
-					email:  '',
-					role:   '',
-					site:   '',
-				},
-
-				send: 		false
+				title:	'Оставить заявку на консультацию',
+				pic: 	'background-image: url(https://ik.imagekit.io/0nyjr4jxhmg/tr:w-494/components/medium-12.png?ik-sdk-version=vuejs-1.0.9);',
+				send: 	false
 			};
 		},
 		mounted () {
 			// Ищем ссылки для открытия модалок для записи на демо
-			if ( document.querySelector('a[href*="#open-modal-consultation"]') ) {
-				document.querySelectorAll('a[href*="#open-modal-consultation"]').forEach(function(item) {
+			if ( document.querySelector('a[href*="#open-modal-consultation"],a[href*="#open-demo-pop-up"]') ) {
+				document.querySelectorAll('a[href*="#open-modal-consultation"],a[href*="#open-demo-pop-up"]').forEach(function(item) {
 					item.addEventListener('click', function(e) {
 						e.preventDefault()
 						this.$refs['open-modal-consultation'].show()
-						gtag('event' , 'lead form' , {
-							'category'     	: 'demo',
-							'subject'      	: 'finished fill the form',
-							'page_title' 	: document.title,
+						gtag('event' , 'lead form' ,
+							{'category': 'demo',
+							'subject': 'started fill the form',
+							'page_title' : document.title,
 							'page_location' : location.host + location.pathname
 						})
-						let addr = new URL(e.srcElement.href.replace('#open-modal-consultation' , ''))
+						let addr = new URL(e.srcElement.href.replace('#open-modal-consultation' , '').replace('#open-demo-pop-up' , ''))
 						//Заголовок
 						if (!!addr.searchParams.get('title')) {
-							this.modalData.title = addr.searchParams.get('title')
+							this.title = addr.searchParams.get('title')
+						}
+						//Изображения
+						if (!!addr.searchParams.get('pic')) {
+							this.pic = 'background-image: url(https://ik.imagekit.io/0nyjr4jxhmg/tr:w-494/components/' + addr.searchParams.get('pic') + '?ik-sdk-version=vuejs-1.0.9);'
 						}
 					}.bind(this))
 				}.bind(this))
 			}
 		},
 		methods: {
+			// Закрытие модалки
 			hideModal() {
 				this.$refs['open-modal-consultation'].hide()
 			},
-
-			//Данные из формы
+			// Данные из формы
 			handleData: function(e) {
-				[ this.modalData.name, this.modalData.phone, this.modalData.email, this.modalData.role, this.modalData.site ] = e;
+				this.send = e;
 			},
-
-			//Отправка формы
-			Consultation() {
-				carrotquest.identify([
-					{'op': 'update_or_create', 'key': '$name', 	'value': this.modalData.name},
-					{'op': 'update_or_create', 'key': '$phone', 'value': this.modalData.phone},
-					{'op': 'update_or_create', 'key': '$email', 'value': this.modalData.email},
-					{'op': 'update_or_create', 'key': '$email', 'value': this.modalData.role},
-					{'op': 'update_or_create', 'key': '$email', 'value': this.modalData.site},
-					{'op': 'update_or_create', 'key': 'Тип заявки', 'value': 'Заполнил форму на демо'},
-					{'op': 'update_or_create', 'key': 'Источник заявки', 'value': location.host + location.pathname}
-				]);
-				dataLayer.push({ event: 'UAevent', eventCategory: 'leads', eventAction: 'phone', eventLabel: location.host + location.pathname })
-				fbq('trackCustom', 'get_demo', {page: location.pathname})
-				carrotquest.track('Заполнил форму на демо', {
-					'Имя': 			this.modalData.name,
-					'Телефон': 		this.modalData.phone,
-					'Email': 		this.modalData.email,
-					'Должность': 	this.modalData.role,
-					'Сайт': 		this.modalData.site,
-					'type': 		'form',
-					'url': 			location.host + location.pathname
-				});
-
-				this.send = true
+		},
+		watch: {
+			// Что делать после отправки формы
+			send:  function () {
 				setTimeout(() => {
 					this.hideModal()
 				}, 7000);

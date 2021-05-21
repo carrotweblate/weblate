@@ -79,7 +79,7 @@
 					<b-col class="text-lg-center">
 						<div class="h1">Вы ещё не подписаны?</div>
 						<p class="mt-3 mb-4">Присылаем статьи и кейсы, которые помогают бизнесам расти. Польза и ничего кроме!</p>
-						<SubscribeForm event="Подписался на рассылку из блога" />
+						<LidsMiniForm event="Подписался на рассылку из блога" />
 					</b-col>
 				</b-row>
 			</b-container>
@@ -146,7 +146,7 @@
 					<b-col class="text-lg-center">
 						<div class="h1">Крутая книга</div>
 						<p class="mt-3 mb-4">Получите бесплатно книгу «Коммуникации и управление воронкой пользователя в e−commerce»</p>
-						<SubscribeForm event="Блог - Получить книгу" button="Получить книгу" />
+						<LidsMiniForm event="Блог - Получить книгу" button="Получить книгу" />
 					</b-col>
 				</b-row>
 
@@ -266,14 +266,14 @@
 	import Layout from '~/layouts/Blog.vue'
 
 	import PostCard from '~/components/PostCard.vue'
-	import SubscribeForm from '~/components/Forms/SubscribeForm.vue'
+	import LidsMiniForm from '~/components/Forms/LidsMiniForm.vue'
 	import { Pager } from 'gridsome'
 
 	export default {
 		components: {
 			Layout,
 			PostCard,
-			SubscribeForm,
+			LidsMiniForm,
 			Pager
 		},
 		data() {

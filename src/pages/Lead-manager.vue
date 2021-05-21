@@ -168,14 +168,14 @@
 
 		<!-- Регистрация -->
 		<b-container>
-			<b-col class="p-4" style="background-color: #FFF3E6; border-radius: 5px;">
+			<b-col class="p-4 p-lg-5" style="background-color: #FFF3E6; border-radius: 5px;">
 				<b-row class="align-items-center justify-content-center">
-					<b-col lg="6">
-						<div class="h1 mb-4">Зарегистрируйтесь и&nbsp;получите 14&nbsp;дней бесплатно</div>
+					<b-col lg="8">
+						<div class="h2 mb-4">Зарегистрируйтесь и&nbsp;получите 14&nbsp;дней бесплатно</div>
 						<RegistrationForm button="Зарегистрироваться" />
 					</b-col>
-					<b-col lg="6">
-						<g-image src="@/assets/images/components/medium-2.png" width="494" alt="Регистрация в сервисе" title="Поехали!" style="max-width: 100%" />
+					<b-col lg="4">
+						<g-image src="@/assets/images/components/medium-12.png" width="494" alt="Регистрация в сервисе" title="Поехали!" class="mw-100" />
 					</b-col>
 				</b-row>
 			</b-col>
@@ -216,6 +216,11 @@
 <style lang="scss">
 	.lead-manager-page {
 		.hero {
+			.Registration {
+				.TakeMe__group {
+					border: 1px solid $light-grey;
+				}
+			}
 			&__pic {
 				position: absolute;
 				top: -50px;

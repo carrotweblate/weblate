@@ -8,7 +8,7 @@
 					<div class="h3 mb-4" v-html="title" />
 					<!-- Кнопка для вызова модалки -->
 					<b-button 
-						href="#open-modal-consultation"
+						:href="'#open-modal-consultation?title=Оставить заявку на консультацию&pic=' + pic"
 						variant="primary" 
 						class="px-3 py-2 mb-4">
 						Заказать консультацию

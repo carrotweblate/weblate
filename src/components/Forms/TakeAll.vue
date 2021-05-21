@@ -2,7 +2,6 @@
 	<div class="TakeMe">
 		<b-form-group class="TakeMe__group" label="Имя:" label-class="font12px lightgrey-text">
 			<b-form-input
-				autofocus
 				autocomplete="on"
 				name="name"
 				placeholder="Имя*"
@@ -16,6 +15,7 @@
 			<b-form-input
 				autocomplete="on"
 				name="phone"
+				pattern="^[^A-zА-я]{5,}"
 				placeholder="Телефон*"
 				type="text" 
 				required
@@ -49,6 +49,7 @@
 			<b-form-input
 				autocomplete="on"
 				name="site"
+				pattern=".+\.+.+"
 				placeholder="URL вашего сайта*"
 				type="text" 
 				required
@@ -56,11 +57,23 @@
 				class="px-3 py-4"
 			/>
 		</b-form-group>
+		<b-button 
+			type="submit" 
+			variant="primary" 
+			class="px-3 py-2 mt-4 w-100"
+			v-html="button"
+		/>
 	</div>
 </template>
 
 <script>
 	export default {
+		props: {
+			button: {
+				default: 'Отправить',
+				type: String
+			}
+		},
 		data: function() {
 			return {
 				formData: {
@@ -100,6 +113,7 @@
 				z-index: 1;
 				top: 0.4rem;
 				left: 1rem;
+				text-align: left;
 			}
 			input {
 				position: relative;

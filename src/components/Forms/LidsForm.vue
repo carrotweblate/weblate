@@ -1,7 +1,7 @@
 <template>
-	<div class="ConsultationForm">
+	<div class="LidsForm">
 		<!-- Форма для сбора данных -->
-		<b-form v-on:submit.prevent="Consultation" :class="{ 'hide' : this.send }">
+		<b-form v-on:submit.prevent="Lidgeneration" :class="{ 'hide' : this.send }">
 			<TakeAll @newdata="handleData($event)" :button="button" />
 		</b-form>
 		<!-- Текст после отправки -->
@@ -25,10 +25,17 @@
 			TakeAll
 		},
 		props: {
+			after: {
+				default: 'Спасибо. Всё успешно отправлено, проверьте свой email',
+				type: String
+			},
+			before: String,
 			button: {
 				default: 'Отправить',
 				type: String
-			}
+			},
+			event: String,
+			sale: Boolean
 		},
 		data: function() {
 			return {
@@ -37,6 +44,7 @@
 				email:  '',
 				role:   '',
 				site:   '',
+				sale: 	false,
 
 				send:	false
 			};
@@ -44,22 +52,22 @@
 		methods: {
 			//Данные из формы
 			handleData: function(e) {
-				[ this.name, this.phone, this.email, this.role, this.site ] = e;
+				[ this.name, this.phone, this.email, this.role, this.site , this.sale ] = e;
 			},
 
 			//Отправка формы
-			Consultation() {
+			Lidgeneration() {
 				carrotquest.identify([
 					{'op': 'update_or_create', 'key': '$name', 				'value': this.name },
 					{'op': 'update_or_create', 'key': '$phone', 			'value': this.phone },
 					{'op': 'update_or_create', 'key': '$email', 			'value': this.email },
 					{'op': 'update_or_create', 'key': '$email', 			'value': this.role },
 					{'op': 'update_or_create', 'key': '$email', 			'value': this.site },
-					{'op': 'update_or_create', 'key': 'Тип заявки', 		'value': 'Заполнил форму на демо' },
+					{'op': 'update_or_create', 'key': 'Тип заявки', 		'value': document.title },
 					{'op': 'update_or_create', 'key': 'Источник заявки', 	'value': location.host + location.pathname }
-				]);
+				])
 				carrotquest.track(
-					'Заполнил форму на демо', {
+					this.event, {
 						'Имя': 			this.name,
 						'Телефон': 		this.phone,
 						'Email': 		this.email,
@@ -68,17 +76,36 @@
 						'type': 		'form',
 						'url': 			location.host + location.pathname
 					}
-				);
+				)
+				if (this.sale) {
+					carrotquest.track(
+						'Скачал лид-магнит', {
+							'Имя': 			this.name,
+							'Телефон': 		this.phone,
+							'Email': 		this.email,
+							'Должность': 	this.role,
+							'Сайт': 		this.site,
+							'type': 		'form',
+							'url': 			location.host + location.pathname
+						}
+					)
+					carrotquest.identify([
+						{'op': 'update_or_create', 'key': 'Тип заявки', 		'value': 'Скачал лид-магнит' },
+						{'op': 'update_or_create', 'key': 'Источник заявки', 	'value': location.host + location.pathname }
+					])
+					dataLayer.push({ event: 'UAevent', eventCategory: 'leads', eventAction: 'phone', eventLabel: location.host + location.pathname })
+					fbq('trackCustom', 'get_demo', {page: location.pathname})
+					gtag('event' , 'lead form' ,
+						{'category': 'phone, bottom of funnel',
+						'subject': 'started fill the form',
+						'page_title' : document.title,
+						'page_location' : location.host + location.pathname
+					})
+				} else {
+					dataLayer.push({ event: 'UAevent', eventCategory: 'leads', eventAction: 'phone', eventLabel: location.host + location.pathname })
+					fbq('trackCustom', 'get_lead', {page: location.pathname})
+				}
 
-				dataLayer.push({ event: 'UAevent', eventCategory: 'leads', eventAction: 'phone', eventLabel: location.host + location.pathname })
-				gtag('event' , 'lead form' ,
-					{'category': 'demo',
-					'subject': 'finished fill the form',
-					'page_title' : document.title,
-					'page_location' : location.host + location.pathname
-				})
-				fbq('trackCustom', 'get_demo', {page: location.pathname})
-				
 				this.send = true
 			}
 		},

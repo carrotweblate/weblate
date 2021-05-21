@@ -16,7 +16,7 @@ function addStyleResource (rule) {
     .loader('style-resources-loader')
     .options({
       patterns: [
-        path.resolve(__dirname, './src/assets/scss/variables.scss')
+        path.resolve(__dirname, './src/assets/scss/variables.scss'),
       ],
     })
 }
@@ -57,7 +57,7 @@ const collections = [{
 },];
 
 module.exports = {
-	siteUrl: 'https://www.carrotquest.io',
+	siteUrl: 'https://www.carrotquest.io/test3',
 	pathPrefix: '/test3',
 
 	siteName: 'Carrot quest',
@@ -97,15 +97,15 @@ module.exports = {
 				lang: 'ru',
 			},
 		},
-		// {
-		// 	use: 'gridsome-plugin-service-worker',
-		// 	options: {
-		// 		networkFirst: {
-		// 			cacheName: 'nf-v1',
-		// 			routes: ["/", /\.(js|css|png)/],
-		// 		},
-		// 	},
-		// }
+		{
+			use: 'gridsome-plugin-service-worker',
+			options: {
+				networkFirst: {
+					cacheName: 'nf-v1',
+					routes: ["/", /\.(js|css|png|jpg|mp4|webm)/],
+				},
+			},
+		}
 	],
 	
 	

@@ -1,15 +1,7 @@
 <template>
 	<div class="Registration">
-		<b-form v-on:submit.prevent="registration" class="d-flex">
-				<TakeEmail @newdata="handleData($event)" />
-				<b-button type="submit" variant="primary" class="px-4">
-					<template v-if="button">
-						{{ button }}
-					</template>
-					<template v-else>
-						Начать бесплатно
-					</template>
-				</b-button>
+		<b-form v-on:submit.prevent="registration">
+			<TakeEmail @newdata="handleData($event)" :button="button" />
 		</b-form>
 		<p v-if="text" class="mt-3">
 			{{ text }}
@@ -21,10 +13,15 @@
 	import TakeEmail 			from '~/components/Forms/TakeEmail.vue'
 
 	export default {
-		props: [
-			'button',
-			'text'
-		],
+		props: {
+			button: {
+				default: 'Начать бесплатно',
+				type: String
+			},
+			text: {
+				type: String
+			}
+		},
 		components: { 
 			TakeEmail
 		},
@@ -52,19 +49,3 @@
 		}
 	}
 </script>
-
-<style lang="scss">
-	.Registration {
-		@media (max-width: 767.98px) {
-			form {
-				flex-wrap: wrap;
-				.TakeMe--email {
-					width: 100%;
-				}
-				.btn {
-					margin-top: 0;
-				}
-			}
-		}
-	}
-</style>

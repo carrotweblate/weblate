@@ -311,7 +311,7 @@
 
 		<!-- Сравните сервисы для email‑рассылок -->
 		<section >
-			<b-container style="background-color: #FFF3E6; border-radius: 5px;">
+			<b-container style="background-color: #CAC9FA; border-radius: 5px;">
 				<b-col class="p-4 pb-lg-0">
 					<b-row class="align-items-center justify-content-center">
 						<b-col lg="4" class="d-none d-lg-block">
@@ -319,7 +319,7 @@
 						</b-col>
 						<b-col lg="8">
 							<div class="h3 mb-4">Сравните сервисы для email‑рассылок</div>
-							<b-button href="#open-modal-download?title=Скачать файл сравнения&amp;cqe=Скачал обзор сервисов рассылок" variant="primary">
+							<b-button href="#open-modal-mini?title=Получить файл сравнения на email&cqe=Скачал обзор сервисов рассылок" variant="primary">
 								Скачать файл сравнения
 							</b-button>
 						</b-col>
@@ -695,6 +695,11 @@
 			.airplane--3 {
 				top: 70%;
 				right: 260px;
+			}
+			.Registration {
+				max-width: 480px;
+				margin-left: auto;
+				margin-right: auto;
 			}
 			@media (min-width: 1200px) {
 				p {

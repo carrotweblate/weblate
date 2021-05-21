@@ -208,20 +208,17 @@
 
 		<!-- Карта автоматизации в SaaS и eCom с использованием чат-бота на сайте -->
 		<b-container class="maps">
-			<b-col class="p-4 px-lg-4 py-lg-5" style="background-color: #fff3e6; border-radius: 5px;">
+			<b-col class="p-4 px-lg-5 py-lg-5" style="background-color: #fff3e6; border-radius: 5px;">
 				<b-row class="align-items-center justify-content-center">
 					<b-col lg="4" class="d-none d-lg-block maps__pics">
 						<g-image class="maps__pic maps__pic-1" src="@/assets/images/components/map-saas.png" width="400" alt="Для онлайн-сервисов" />
 						<g-image class="maps__pic maps__pic-2" src="@/assets/images/components/map-ecom-bot.png" width="400" alt="Для интернет-магазинов с использованием чат-бота на сайте" />
 					</b-col>
 					<b-col lg="8">
-						<div class="h2">
+						<div class="h2 mb-4">
 							Карта автоматизации в SaaS и eCom с использованием лид-бота на сайте
 						</div>
-						<p>
-							Оставьте email, чтобы получить карту
-						</p>
-						<SubscribeForm title="Карты отправлены" event="Скачал карты SaaS и ecom для лид-бота" button="Скачать" />
+						<LidsMiniForm before="Оставьте email, чтобы получить карты" event="Скачал карты SaaS и ecom для лид-бота" />
 					</b-col>
 				</b-row>
 			</b-col>
@@ -316,7 +313,7 @@
 	import FAQ 					from '~/components/FAQ.vue'
 	import Study 				from '~/components/Study.vue'
 	import PostCard 			from '~/components/PostCard.vue'
-	import SubscribeForm		from '~/components/Forms/SubscribeForm.vue'
+	import LidsMiniForm		from '~/components/Forms/LidsMiniForm.vue'
 	import { BBadge } 			from 'bootstrap-vue'
 
 	export default {
@@ -326,7 +323,7 @@
 			Study,
 			PostCard,
 			BBadge,
-			SubscribeForm
+			LidsMiniForm
 		},
 		metaInfo() {
 			return {

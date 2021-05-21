@@ -1,7 +1,6 @@
 <template>
 	<div>
-		<!-- <b-overlay :show="showOverlay" v-on:click="showOverlay = false"> -->
-
+		<b-overlay :show="showOverlay" v-on:click="showOverlay = false">
 			<Header v-if="header" v-on:overlay-show="overlay" v-on:overlay-close="overlayClose" />
 
 			<slot />
@@ -10,23 +9,30 @@
 
 			<Balcony />
 			<ConsultationModal />
-			
-		<!-- </b-overlay> -->
+			<DownloadMiniModal />
+			<DownloadModal />
+		</b-overlay>
 	</div>
 </template>
 
 <script>
 	import Header 				from '~/components/Header.vue'
 	import Footer 				from '~/components/Footer.vue'
+	import { BOverlay } 		from 'bootstrap-vue'
 	import Balcony 				from '~/components/Ads/Balcony.vue'
 	import ConsultationModal 	from '~/components/Modals/ConsultationModal.vue'
-
+	import DownloadMiniModal 	from '~/components/Modals/DownloadMiniModal.vue'
+	import DownloadModal 		from '~/components/Modals/DownloadModal.vue'
+	
 	export default {
 		components: {
 			Header,
 			Footer,
+			BOverlay,
 			Balcony,
-			ConsultationModal
+			ConsultationModal,
+			DownloadMiniModal,
+			DownloadModal
 		},
 		props: ['header' , 'footer'],
 		data: function() {

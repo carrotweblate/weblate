@@ -278,14 +278,15 @@ a.box {
 
 //Формы
 form:not(.nav_search) {
-	max-width: 480px;
+	width: 480px;
 	.form-control {
 		min-height: 3rem;
 	}
 	@media (max-width: 767.98px) {
+		width: auto;
 		.input-group {
 			display: block;
-			max-width: 100%;
+			width: 100%;
 			.form-control {
 				width: 100% !important;
 			}
@@ -365,6 +366,7 @@ header {
 		}
 	}
 	.blur {
+		top: -20px;
 		background-color: rgba(255, 255, 255, 0.90);
 		backdrop-filter: blur(10px);
 		@-moz-document url-prefix() { 
@@ -374,7 +376,10 @@ header {
 		border-bottom: 1px solid #f3f3f3;
 		z-index: 99;
 		div {
-			height: 40px;
+			height: 60px;
+		}
+		&.hideHeader {
+			top: -80px;
 		}
 	}
 	.navbar {
@@ -640,11 +645,9 @@ header {
 		border: none;
 		background-color: #FFD3AE;
 	}
-    
 	.modal-body {
 		padding: 0;
 	}
-
 	&__close {
 		position: absolute;
 		top: -2.5rem;
@@ -668,7 +671,6 @@ header {
 			margin-right: 0.5rem;
 		}
 	}
-
 	.leftCol {
 		background-size: contain;
 		background-position: 50% 40%;
@@ -677,7 +679,9 @@ header {
 	.rightCol {
 		background-color: rgba(255, 255, 255, 0.5);
 		border-radius: 0 5px 5px 0;
-		
+		form {
+			width: 100%;
+		}
 		@media (min-width: 992px) {
 			padding: 1.5rem 2rem 2.5rem;
 		}

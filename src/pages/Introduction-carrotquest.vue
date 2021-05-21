@@ -113,7 +113,7 @@
 					<p>
 						В&nbsp;специальной CRM для онлайн-бизнеса в&nbsp;реальном времени сохраняется каждый лид с&nbsp;вашего сайта, со&nbsp;всей историей его действий и&nbsp;коммуникаций с&nbsp;ним, используйте это для дальнейшего общения
 					</p>
-					<b-button v-on:click="showModal" href="#" variant="primary" class="px-4">Хочу решить эту задачу</b-button>
+					<b-button href="#open-modal-consultation?title=Оставить заявку на внедрение&pic=medium-10.png" variant="primary" class="px-4">Хочу решить эту задачу</b-button>
 				</b-col>
 				<b-col lg="8" class="order-lg-2">
 					<g-image src="@/assets/images/introduction-carrotquest/1.png" width="1440" quality="100" alt="Собираем данные о пользователях" />
@@ -131,7 +131,7 @@
 						<li>Проводим А/Б тесты офферов в&nbsp;поп-апах, чтобы увеличить конверсию</li>
 						<li>Стилизуем под ваш дизайн</li>
 					</ul>
-					<b-button v-on:click="showModal" href="#" variant="primary" class="px-4">Хочу решить эту задачу</b-button>
+					<b-button href="#open-modal-consultation?title=Оставить заявку на внедрение&pic=medium-14.png" variant="primary" class="px-4">Хочу решить эту задачу</b-button>
 				</b-col>
 				<b-col lg="8" class="order-lg-1">
 					<g-image src="@/assets/images/introduction-carrotquest/2.png" width="1440" quality="100" alt="Увеличиваемконверсиюна 20-100% с помощью поп-апов" />
@@ -147,7 +147,7 @@
 						<li>Вставляем в&nbsp;письма блоки с&nbsp;похожими/рекомендованными товарами при наличии их&nbsp;на&nbsp;сайте</li>
 						<li>Увеличиваем выручку от&nbsp;email-канала за&nbsp;счет тестирования разных гипотез и&nbsp;А/Б тестов</li>
 					</ul>
-					<b-button v-on:click="showModal" href="#" variant="primary" class="px-4">Хочу решить эту задачу</b-button>
+					<b-button href="#open-modal-consultation?title=Оставить заявку на внедрение&pic=medium-15.png" variant="primary" class="px-4">Хочу решить эту задачу</b-button>
 				</b-col>
 				<b-col lg="8" class="order-lg-2">
 					<g-image src="@/assets/images/introduction-carrotquest/3.png" width="1440" quality="100" alt="Поднимаем ретеншн и повторные визиты с помощью триггерных рассылок" />
@@ -166,7 +166,7 @@
 						<li>Используем триггерные сообщения в&nbsp;чате для повышения конверсии в&nbsp;начало диалога</li>
 						<li>Консультируем по&nbsp;внедрению чата в&nbsp;компанию, учитывая бизнес-процессы</li>
 					</ul>
-					<b-button v-on:click="showModal" href="#" variant="primary" class="px-4">Хочу решить эту задачу</b-button>
+					<b-button href="#open-modal-consultation?title=Оставить заявку на внедрение&pic=medium-14.png" variant="primary" class="px-4">Хочу решить эту задачу</b-button>
 				</b-col>
 				<b-col lg="8" class="order-lg-1">
 					<g-image src="@/assets/images/introduction-carrotquest/4.png" width="1440" quality="100" alt="Настраиваем бизнес-чат на вашем сайте и обучаем команду менеджеров" />
@@ -181,7 +181,7 @@
 						<li>Увеличиваем конверсию в&nbsp;лида на&nbsp;20-100% в&nbsp;зависимости от&nbsp;ниши (по&nbsp;аналогии с&nbsp;поп-апами)</li>
 						<li>Настраиваем лид-бот кампанию для квалификации по&nbsp;различным сегментам</li>
 					</ul>
-					<b-button v-on:click="showModal" href="#" variant="primary" class="px-4">Хочу решить эту задачу</b-button>
+					<b-button href="#open-modal-consultation?title=Оставить заявку на внедрение&pic=medium-13.png" variant="primary" class="px-4">Хочу решить эту задачу</b-button>
 				</b-col>
 				<b-col lg="8" class="order-lg-2">
 					<g-image src="@/assets/images/introduction-carrotquest/5.png" width="1440" quality="100" alt="Увеличиваем количество качественных лидов с помощью квалифицирующего лид-бота" />
@@ -495,7 +495,7 @@
 					<b-col></b-col>
 					<b-col class="text-center">
 						<p>
-							<b-button v-on:click="showModal" href="#" variant="primary" class="px-4">Отправить заявку</b-button>
+							<b-button href="#open-modal-consultation?title=Оставить заявку на внедрение&pic=medium-11.png" variant="outline-primary" class="px-4">Отправить заявку</b-button>
 						</p>
 						<p>
 							<b>Над проектом будут работать:</b> <br>
@@ -504,7 +504,7 @@
 					</b-col>
 					<b-col class="text-center">
 						<p>
-							<b-button v-on:click="showModal" href="#" variant="primary" class="px-4">Отправить заявку</b-button>
+							<b-button href="#open-modal-consultation?title=Оставить заявку на внедрение&pic=medium-10.png" variant="primary" class="px-4">Отправить заявку</b-button>
 						</p>
 						<p>
 							<b>Над проектом будут работать:</b> <br>
@@ -622,50 +622,6 @@
 			bg="#FFF3E6"
 		/>
 
-		<!-- Модалка для заявки на внедрение -->
-		<b-modal ref="open-modal-client" hide-footer title="Оставить заявку на внедрение">
-			<b-form v-on:submit.prevent="modalClient">
-				<b-form-input 
-					placeholder="Имя" 
-					type="text" 
-					required
-					v-model="modalName"
-					class="px-3 py-4"
-				/>
-				<b-form-input 
-					placeholder="Телефон" 
-					type="text" 
-					required
-					v-model="modalPhone"
-					class="px-3 py-4 mt-3"
-				/>
-				<b-form-input 
-					placeholder="Почта" 
-					type="email" 
-					required
-					v-model="modalEmail"
-					class="px-3 py-4 mt-3"
-				/>
-				<b-form-input 
-					placeholder="Ваш сайт" 
-					type="text" 
-					required
-					v-model="modalSite"
-					class="px-3 py-4 mt-3"
-				/>
-				<b-button 
-					type="submit" 
-					variant="primary" 
-					class="px-3 py-2 mt-4">
-					Отправить
-				</b-button>
-			</b-form>
-		</b-modal>
-
-		<b-modal ref="suсcess" hide-header hide-footer>
-			Заявка отправлена, в&nbsp;ближайшее время мы&nbsp;свяжемся с&nbsp;вами.
-		</b-modal>
-
 	</Layout>
 </template>
 
@@ -739,40 +695,6 @@
 						href: '/blog/case-nagorniy/' 
 					}
 				],
-
-				//Модалки для скачивания файлов
-				modalName: '',
-				modalPhone: '',
-				modalEmail: '',
-				modalSite: '',
-			}
-		},
-
-		methods: {
-			showModal() {
-				// e.preventDefault()
-				this.$refs['open-modal-client'].show()
-			},
-			modalClient () {
-				carrotquest.identify([
-					{'op': 'update_or_create', 'key': '$phone', 'value': this.modalPhone},
-					{'op': 'update_or_create', 'key': '$name', 'value': this.modalName},
-					{'op': 'update_or_create', 'key': '$email', 'value': this.modalEmail},
-					{'op': 'update_or_create', 'key': 'Адрес сайта', 'value': this.modalSite},
-					{"op": "update_or_create", "key": "Заявка", "value": "внедрение"}
-				])
-				carrotquest.track('Отправил заявку на внедрение' , {
-					'Email': this.modalEmail,
-					'Адрес сайта': this.modalSite,
-					'Имя': this.modalName,
-					'Телефон': this.modalPhone
-				})
-
-				this.$refs['open-modal-client'].hide()
-				this.$refs['suсcess'].show()
-				setTimeout(() => {
-					this.$refs['suсcess'].hide()
-				}, 7000);
 			}
 		},
 
