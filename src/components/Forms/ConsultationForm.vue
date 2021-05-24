@@ -71,11 +71,11 @@
 				);
 
 				dataLayer.push({ event: 'UAevent', eventCategory: 'leads', eventAction: 'phone', eventLabel: location.host + location.pathname })
-				gtag('event' , 'lead form' ,
-					{'category': 'demo',
-					'subject': 'finished fill the form',
-					'page_title' : document.title,
-					'page_location' : location.host + location.pathname
+				gtag('event' , 			'lead form' ,
+					{'category': 		'demo',
+					'subject': 			'finished fill the form',
+					'page_title': 		document.title,
+					'page_location': 	location.host + location.pathname
 				})
 				fbq('trackCustom', 'get_demo', {page: location.pathname})
 				

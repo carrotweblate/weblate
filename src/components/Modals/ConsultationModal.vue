@@ -50,21 +50,22 @@
 					item.addEventListener('click', function(e) {
 						e.preventDefault()
 						this.$refs['open-modal-consultation'].show()
-						gtag('event' , 'lead form' ,
-							{'category': 'demo',
-							'subject': 'started fill the form',
-							'page_title' : document.title,
-							'page_location' : location.host + location.pathname
-						})
 						let addr = new URL(e.srcElement.href.replace('#open-modal-consultation' , '').replace('#open-demo-pop-up' , ''))
-						//Заголовок
+						// Заголовок
 						if (!!addr.searchParams.get('title')) {
 							this.title = addr.searchParams.get('title')
 						}
-						//Изображения
+						// Изображения
 						if (!!addr.searchParams.get('pic')) {
 							this.pic = 'background-image: url(https://ik.imagekit.io/0nyjr4jxhmg/tr:w-494/components/' + addr.searchParams.get('pic') + '?ik-sdk-version=vuejs-1.0.9);'
 						}
+
+						gtag('event' , 			'lead form' ,
+							{'category': 		'demo',
+							'subject': 			'started fill the form',
+							'page_title': 		document.title,
+							'page_location': 	location.host + location.pathname
+						})
 					}.bind(this))
 				}.bind(this))
 			}

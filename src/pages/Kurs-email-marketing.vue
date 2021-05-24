@@ -14,7 +14,7 @@
 						<p class="mb-5">
 							Новые уроки 2 раза в неделю у вас в почте. Бесплатно!
 						</p>
-						<b-button href="#open-modal-download?title=Получить курс «Email-маркетинг за 8 шагов»&amp;cqe=Записался на email-курс с лэндинга" variant="primary" class="py-3 px-5">
+						<b-button href="#open-modal-download?title=Получить курс «Email-маркетинг за 8 шагов»&cqe=Записался на email-курс с лэндинга&sale=" variant="primary" class="py-3 px-5">
 							Получить курс
 						</b-button>
 					</b-col>
@@ -51,7 +51,7 @@
 				</b-row>
 				<b-row>
 					<b-col>
-						<b-button href="#open-modal-download?title=Получить курс «Email-маркетинг за 8 шагов»&amp;cqe=Записался на email-курс с лэндинга" variant="primary" class="py-3 px-5">
+						<b-button href="#open-modal-download?title=Получить курс «Email-маркетинг за 8 шагов»&cqe=Записался на email-курс с лэндинга" variant="primary" class="py-3 px-5">
 							Получить курс
 						</b-button>
 					</b-col>

@@ -15,7 +15,7 @@
 							<div class="h3 mb-4" v-html="title" :class="{ 'd-none' : this.send }" />
 
 							<!-- Форма для сбора данных -->
-							<LidsForm @newdata="handleData($event)" :event="event" :before="before" :after="after" :button="button" />
+							<LidsForm @newdata="handleData($event)" :event="event" :before="before" :after="after" :button="button" :sale="sale" />
 
 						</b-col>
 					</b-row>
@@ -35,13 +35,14 @@
 		},
 		data: function() {
 			return {
-				title:		'Получить материал на email',
-				before: 	'',
 				after: 		'Спасибо. Всё успешно отправлено, проверьте свой email',
+				before: 	'',
 				button:		'Отправить',
 				event: 		'',
 				pic: 		'background-image: url(https://ik.imagekit.io/0nyjr4jxhmg//tr:w-400,h-400,cm-pad_resize/components/medium-17.png?ik-sdk-version=vuejs-1.0.9);',
 				sale: 		false,
+				title:		'Получить материал на email',
+
 				send: 		false
 			};
 		},
@@ -81,11 +82,11 @@
 						// Отправлять в продажи
 						if (!!addr.searchParams.get('sale')) {
 							this.sale = true
-							gtag('event' , 'lead form' ,{
-								'category': 'phone, bottom of funnel',
-								'subject': 'started fill the form',
-								'page_title' : document.title,
-								'page_location' : location.host + location.pathname
+							gtag('event' , 			'lead form',
+								{'category': 		'phone, bottom of funnel',
+								'subject': 			'started fill the form',
+								'page_title': 		document.title,
+								'page_location': 	location.host + location.pathname
 							})
 						}
 					}.bind(this))

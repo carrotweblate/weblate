@@ -63,8 +63,6 @@
 					{'op': 'update_or_create', 'key': '$email', 			'value': this.email },
 					{'op': 'update_or_create', 'key': '$email', 			'value': this.role },
 					{'op': 'update_or_create', 'key': '$email', 			'value': this.site },
-					{'op': 'update_or_create', 'key': 'Тип заявки', 		'value': document.title },
-					{'op': 'update_or_create', 'key': 'Источник заявки', 	'value': location.host + location.pathname }
 				])
 				carrotquest.track(
 					this.event, {
@@ -77,6 +75,7 @@
 						'url': 			location.host + location.pathname
 					}
 				)
+				alert('Отправили форму')
 				if (this.sale) {
 					carrotquest.track(
 						'Скачал лид-магнит', {
@@ -93,16 +92,23 @@
 						{'op': 'update_or_create', 'key': 'Тип заявки', 		'value': 'Скачал лид-магнит' },
 						{'op': 'update_or_create', 'key': 'Источник заявки', 	'value': location.host + location.pathname }
 					])
+
 					dataLayer.push({ event: 'UAevent', eventCategory: 'leads', eventAction: 'phone', eventLabel: location.host + location.pathname })
-					fbq('trackCustom', 'get_demo', {page: location.pathname})
 					gtag('event' , 'lead form' ,
 						{'category': 'phone, bottom of funnel',
 						'subject': 'started fill the form',
 						'page_title' : document.title,
 						'page_location' : location.host + location.pathname
 					})
+					fbq('trackCustom', 'get_demo', {page: location.pathname})
 				} else {
 					dataLayer.push({ event: 'UAevent', eventCategory: 'leads', eventAction: 'phone', eventLabel: location.host + location.pathname })
+					gtag('event' , 			'lead form' ,
+						{'category': 		'phone, top of funnel',
+						'subject': 			'started fill the form',
+						'page_title' : 		document.title,
+						'page_location' : 	location.host + location.pathname
+					})
 					fbq('trackCustom', 'get_lead', {page: location.pathname})
 				}
 

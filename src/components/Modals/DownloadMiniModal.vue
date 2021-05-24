@@ -76,6 +76,13 @@
 						if (!!addr.searchParams.get('pic')) {
 							this.pic = 'background-image: url(https://ik.imagekit.io/0nyjr4jxhmg/tr:w-494/components/' + addr.searchParams.get('pic') + '?ik-sdk-version=vuejs-1.0.9);'
 						}
+
+						gtag('event' , 			'lead form' ,
+							{'category': 		'email, top of funnel',
+							'subject': 			'started fill the form',
+							'page_title': 		document.title,
+							'page_location': 	location.host + location.pathname
+						})
 					}.bind(this))
 				}.bind(this))
 			}

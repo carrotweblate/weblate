@@ -57,7 +57,13 @@
 					carrotquest.track(this.event)
 				}
 
-				dataLayer.push({ event: 'UAevent', eventCategory: 'leads', eventAction: 'email', eventLabel: location.host + location.pathname });
+				dataLayer.push({ event: 'UAevent', eventCategory: 'leads', eventAction: 'email', eventLabel: location.host + location.pathname })
+				gtag('event' , 			'lead form' ,
+					{'category': 		'email, top of funnel',
+					'subject': 			'started fill the form',
+					'page_title': 		document.title,
+					'page_location': 	location.host + location.pathname
+				})
 				fbq('trackCustom', 'get_lead', {page: location.pathname})
 				
 				this.send = true
