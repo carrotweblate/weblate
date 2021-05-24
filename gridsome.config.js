@@ -57,8 +57,8 @@ const collections = [{
 },];
 
 module.exports = {
-	siteUrl: 'https://www.carrotquest.io/test3',
-	pathPrefix: '/test3',
+	siteUrl: 'https://www.carrotquest.io/1320/',
+	pathPrefix: '/1320',
 
 	siteName: 'Carrot quest',
 	titleTemplate: '%s',
