@@ -1,7 +1,7 @@
 <template>
-	<header>
+	<header @click="openMegamenu">
 		
-		<b-navbar toggleable="lg" :class="{'pt-2 pb-2': scrolled, 'pt-2 pb-2 pt-md-4 pb-md-4': !scrolled, 'hideHeader': hideHeader, '': !hideHeader}" v-scroll="handleScroll" >
+		<b-navbar toggleable="lg" :class="{'pt-2 pb-2': scrolled, 'pt-2 pb-2 pt-md-4 pb-md-4': !scrolled, 'hideHeader': hideHeader, '': !hideHeader}" v-scroll="handleScroll">
 
 			<!-- Логотип -->
 			<g-link to="/">
@@ -9,7 +9,7 @@
 			</g-link>
 
 			<!-- Мобильное меню гамбургер -->
-			<b-navbar-toggle target="nav_collapse" class="pr-0" />
+			<b-navbar-toggle target="nav_collapse" class="pr-0" @click.stop="openMegamenu" />
 			
 			<!-- Обычное меню -->
 			<b-collapse is-nav id="nav_collapse">
@@ -217,6 +217,7 @@
 				this.scrolled = window.scrollY > this.limitPosition;
 			},
 			openMegamenu(el) {
+				console.log(el)
 				if (el.srcElement.parentElement.ariaExpanded == 'false') {
 					this.$emit('overlay-show')
 				} else {
