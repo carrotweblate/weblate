@@ -1,6 +1,5 @@
 <template>
 	<div class="LidsForm">
-		{{this.sale}}
 		<!-- Форма для сбора данных -->
 		<b-form v-on:submit.prevent="Lidgeneration" :class="{ 'hide' : this.send }">
 			<TakeAll @newdata="handleData($event)" :button="button" />
