@@ -36,7 +36,7 @@
 				before: 	'',
 				button:		'Отправить',
 				event: 		'',
-				pic: 		'background-image: url(https://ik.imagekit.io/0nyjr4jxhmg//tr:w-400,h-400,cm-pad_resize/components/medium-17.png?ik-sdk-version=vuejs-1.0.9);',
+				pic: 		'background-image: url(https://ik.imagekit.io/0nyjr4jxhmg//tr:w-400,h-400,cm-pad_resize/components/medium-15.png?ik-sdk-version=vuejs-1.0.9);',
 				sale: 		false,
 				title:		'Получить материал на email',
 
