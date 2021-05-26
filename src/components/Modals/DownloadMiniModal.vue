@@ -120,7 +120,7 @@
 <style lang="scss">
 	.universalModal--mini {
 		.leftCol {
-			min-height: 19rem !important;
+			min-height: 18rem !important;
 		}
 		.TakeMe--email {
 			flex-wrap: wrap;

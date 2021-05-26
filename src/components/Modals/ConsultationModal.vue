@@ -45,8 +45,8 @@
 		},
 		mounted () {
 			// Ищем ссылки для открытия модалок для записи на демо
-			if ( document.querySelector('a[href*="#open-modal-consultation"],a[href*="#open-demo-pop-up"]') ) {
-				document.querySelectorAll('a[href*="#open-modal-consultation"],a[href*="#open-demo-pop-up"]').forEach(function(item) {
+			if ( document.querySelector('a[href*="#open-modal-consultation"],a[href*="#open-demo-pop-up"],a[href*="#open-modal-demo"]') ) {
+				document.querySelectorAll('a[href*="#open-modal-consultation"],a[href*="#open-demo-pop-up"],a[href*="#open-modal-demo"]').forEach(function(item) {
 					item.addEventListener('click', function(e) {
 						e.preventDefault()
 						this.$refs['open-modal-consultation'].show()

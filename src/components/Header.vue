@@ -239,50 +239,50 @@
 						subLinks: [
 							{
 								title: 'Онлайн-консультант',
-								href: '/test3/online-consultant/',
+								href: '/online-consultant/',
 								job: 'Повышайте продажи на сайте и улучшайте поддержку ваших клиентов',
 								order: 1
 							},
 							{
 								title: 'Лид-бот',
-								href: '/test3/chatbot/',
+								href: '/chatbot/',
 								job: 'Собирайте больше квалифицированных лидов с сайта без дополнительной нагрузки на ваших сотрудников',
 								order: 3
 							},
 							
 							{
 								title: 'Автоматизация воронки',
-								href: '/test3/automation-marketing/',
+								href: '/automation-marketing/',
 								job: 'Увеличивайте конверсию воронки сайта с помощью цепочек сообщений (чат, чат-бот, поп-ап, письма)',
 								order: 5
 							},
 							{
 								title: 'База знаний',
-								href: '/test3/knowledge-base/',
+								href: '/knowledge-base/',
 								job: 'Сокращает время ответа на вопрос и систематизирует для клиентов знания о вашем продукте',
 								order: 7
 							},
 							{
 								title: 'Email-маркетинг',
-								href: '/test3/email-marketing/',
+								href: '/email-marketing/',
 								job: 'Повышает эффективность рассылок за счет гибкой сегментации пользователей',
 								order: 2
 							},
 							{
 								title: 'SDK для Android и iOS',
-								href: '/test3/sdk/',
+								href: '/sdk/',
 								job: 'Добавляет функционал Carrot quest в ваше клиентское мобильное приложение',
 								order: 4
 							},
 							{
 								title: 'Трекинг пользователей',
-								href: '/test3/lead-manager/',
+								href: '/lead-manager/',
 								job: 'Собирает все данные о каждом пользователе, его действиях, заказах и коммуникациях',
 								order: 6
 							},
 							{
 								title: 'Поп-ап окна',
-								href: '/test3/pop-up/',
+								href: '/pop-up/',
 								job: 'Собирайте больше лидов и продаж благодаря гиперсегментации аудитории',
 								order: 7
 							},
@@ -294,19 +294,19 @@
 						subLinks: [
 							{
 								title: 'Для продуктовых компаний',
-								href: '/test3/saas/',
+								href: '/saas/',
 								job: 'saas/онлайн-сервисы <br>Сервис помогает продакт-менеджерам, маркетологам и поддержке лучше взаимодействовать с пользователями и улучшать результаты команды и метрики продукта',
 								order: 1
 							},
 							{
 								title: 'Для eCommerce',
-								href: '/test3/ecommerce/',
+								href: '/ecommerce/',
 								job: 'Сервис помогает маркетологам и менеджерам по продажам увеличивать ROI своей работы',
 								order: 2
 							},
 							{
 								title: 'Внедрение крупным компаниям',
-								href: '/test3/introduction-carrotquest/',
+								href: '/introduction-carrotquest/',
 								job: 'Выделенная команда внедрения поможет вашей команде быстро настроить сервис, запустить сценарии автоматизации маркетинга и измерить результат',
 								order: 3
 							}
@@ -329,7 +329,7 @@
 								},
 								{
 									title: 'Интеграции',
-									href: '/test3/integration/',
+									href: '/integration/',
 									job: 'Более 30 готовых интеграций с CMS, CRM, аналитикой, мессенджерами, соц.сетями и другими сервисами'
 								},
 								{
@@ -339,14 +339,14 @@
 								},
 								{
 									title: 'Видеокурс',
-									href: '/test3/videocourse-online-sales/',
+									href: '/videocourse-online-sales/',
 									job: 'Как увеличить продажи на том же трафике, используя инструменты Carrot quest'
 								},
 							],
 							content: [
 								{
 									title: 'Блог',
-									href: '/test3/blog/',
+									href: '/blog/',
 									job: 'О маркетинге, продажах и управлении продуктом'
 								},
 								{
@@ -356,17 +356,17 @@
 								},
 								{
 									title: 'Библиотека',
-									href: '/test3/library/',
+									href: '/library/',
 									job: 'Книги, гайды, чек листы, видеокурсы. Скачивайте бесплатно'
 								},
 								{
 									title: 'Наши книги',
-									href: '/test3/library/#books',
+									href: '/library/#books',
 									job: 'Подробная экспертиза от команды carrot quest (dashly)'
 								},
 								{
 									title: 'Вебинары и подкасты',
-									href: '/test3/webinars/',
+									href: '/webinars/',
 									job: 'Более 30&nbsp;вебинаров и&nbsp;подкастов на&nbsp;темы про создание продуктов, маркетинг и&nbsp;growth hacking'
 								}
 							]
@@ -378,7 +378,7 @@
 							},
 							{
 								title: 'Интеграции',
-								href: '/test3/integration/'
+								href: '/integration/'
 							},
 							{
 								title: 'API',
@@ -398,7 +398,7 @@
 							},
 							{
 								title: 'Библиотека',
-								href: '/test3/library/'
+								href: '/library/'
 							},
 							{
 								title: 'Наши книги',
@@ -417,7 +417,7 @@
 					},
 					{
 						title: 'Партнерам',
-						href: '/test3/partner/'
+						href: '/partner/'
 					}
 				]
 			}
