@@ -57,8 +57,7 @@ const collections = [{
 },];
 
 module.exports = {
-	siteUrl: 'https://www.carrotquest.io/test3',
-	pathPrefix: '/test3',
+	siteUrl: 'https://www.carrotquest.io',
 
 	siteName: 'Carrot quest',
 	titleTemplate: '%s',
@@ -75,16 +74,16 @@ module.exports = {
 				debug: false
 			}
 		},
-		// {
-		// 	use: `gridsome-plugin-algolia`,
-		// 	options: {
-		// 		appId: '7Y1P83X4M1',
-		// 		apiKey: 'e268d391762ad62104c571742cfd1afa',
-		// 		collections,
-		// 		chunkSize: 10000, // default: 1000
-		// 		enablePartialUpdates: true, // default: false
-		// 	},
-		// },
+		{
+			use: `gridsome-plugin-algolia`,
+			options: {
+				appId: '7Y1P83X4M1',
+				apiKey: 'e268d391762ad62104c571742cfd1afa',
+				collections,
+				chunkSize: 10000, // default: 1000
+				enablePartialUpdates: true, // default: false
+			},
+		},
 		{
 			use: 'gridsome-plugin-manifest',
 			options: {

@@ -83,11 +83,11 @@
 					site:   '',
 					role:   '',
 					// Тестовое
-					name:   'Николай',
-					phone:	'+79223502719',
-					email:  'addonion@gmail.com',
-					site:   'test.ru',
-					role:   'Котик',
+					// name:   'Николай',
+					// phone:	'+79223502719',
+					// email:  'addonion@gmail.com',
+					// site:   'test.ru',
+					// role:   'Котик',
 				}
 			};
 		},
