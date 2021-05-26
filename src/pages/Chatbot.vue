@@ -148,6 +148,7 @@
 								</span>
 							</div>
 							<p class="font20px" v-html="script.title" />
+							<b-button variant="outline-primary">Посмотреть сценарий</b-button>
 						</g-link>
 					</b-col>
 					<b-col md="6" lg="4">
@@ -455,6 +456,10 @@
 							color: #3F80FF;
 						}
 					}
+				}
+				.btn {
+					position: absolute;
+					bottom: 1.5rem;
 				}
 			}
 			img {
