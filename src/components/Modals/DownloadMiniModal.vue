@@ -79,7 +79,11 @@
 							}
 							// Изображения
 							if (!!addr.searchParams.get('pic')) {
-								this.pic = 'background-image: url(https://ik.imagekit.io/0nyjr4jxhmg/tr:w-494/components/' + addr.searchParams.get('pic') + '?ik-sdk-version=vuejs-1.0.9);'
+								if ( this.pic.indexOf('https') == -1 )
+									this.pic = 'background-image: url(https://ik.imagekit.io/0nyjr4jxhmg/tr:w-494/components/' + addr.searchParams.get('pic') + '?ik-sdk-version=vuejs-1.0.9);'
+								else {
+									this.pic = 'background-image: url(' + addr.searchParams.get('pic') + ';'
+								}
 							}
 
 							gtag('event' , 			'lead form' ,
@@ -115,6 +119,9 @@
 
 <style lang="scss">
 	.universalModal--mini {
+		.leftCol {
+    		background-size: auto 80% !important;
+		}
 		.TakeMe--email {
 			flex-wrap: wrap;
 			.TakeMe__group {

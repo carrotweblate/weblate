@@ -56,7 +56,7 @@
 							<p class="font20px">
 								Как проводить исследования, результаты которых пойдут в бэклог, а не в стол<br><br>
 							</p>
-							<span>Посмотреть главу из книги</span>
+							<span>Скачать несколько глав</span>
 							<g-image src="~/assets/images/library/book_product-research.png" width="380" quality="100" alt="Полное руководство по коммуникациям и автоматизации воронки пользователей в интернет-магазинах" />
 						</g-link>
 					</b-col>
@@ -212,7 +212,7 @@
 		</section>
 
 		<!-- Полезные материалы -->
-		<!-- <section class="resources">
+		<section class="resources">
 			<b-container>
 				<b-row>
 					<b-col>
@@ -220,20 +220,20 @@
 					</b-col>
 				</b-row>
 				<b-row class="resources__row">
-					<template v-for="resource in results">
-						<b-col cols="6" lg="4"  class="resource" :key="resource.index">
-							<div class="resource__wrapper" v-on:click="modalResource(resource.event)">
-								<p class="tag grey-text mb-0" v-html=resource.type />
-								<div class="pic__wraper">
-									<img :if="resource.pic.url" :src="resource.pic.url" :alt="resource.title" loading="lazy">
-								</div>
-								<p class="title" v-html=resource.title />
+					<template v-for="{ node } in $static.allLibrary.edges">
+						<b-col cols="6" lg="4"  class="resource" :key="node.index">
+							<div class="resource__wrapper">
+								<p class="tag grey-text mb-0" v-html="node.type" />
+								<a :href="'#open-modal-mini?cqe=' + node.event + '&pic=' + node.pic" class="pic__wraper">
+									<img :if="node.pic" :src="node.pic" :alt="node.title" loading="lazy">
+								</a>
+								<p class="title" v-html="node.title" />
 							</div>
 						</b-col>
 					</template>
 				</b-row>
 			</b-container>
-		</section> -->
+		</section>
 
 	</Layout>
 </template>
@@ -241,12 +241,14 @@
 
 <static-query>
 	query {
-		recent: allPost (limit: 3) {
+		allLibrary {
 			edges {
 				node {
+					id
+					type
+					pic
 					title
-					slug
-					featured_media
+					event
 				}
 			}
 		}
@@ -268,9 +270,6 @@
 				metaDescription: 'Книги, шаблоны, карты и чек-листы, а также инсайты от экспертов Carrot quest для маркетологов и СЕО онлайн-продуктов. Подпишитесь, чтобы получать на почту',
 				metaCanonical: 'https://www.carrotquest.io/library/',
 				metaImage: 'https://www.carrotquest.io/assets/images/cover/library.gif',
-
-				//Загрузка ресурсов
-				// results: Array,
 
 				//Email
 				modalEmail: ''

@@ -4,7 +4,7 @@
 			<b-form-input
 				autocomplete="on"
 				name="email"
-				placeholder="Email*"
+				placeholder="Email"
 				type="text" 
 				required
 				v-model="formData.email"
