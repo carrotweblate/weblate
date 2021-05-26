@@ -1,5 +1,6 @@
 <template>
 	<div class="LidsForm">
+		{{this.sale}}
 		<!-- Форма для сбора данных -->
 		<b-form v-on:submit.prevent="Lidgeneration" :class="{ 'hide' : this.send }">
 			<TakeAll @newdata="handleData($event)" :button="button" />
@@ -8,9 +9,7 @@
 		<div class="afterSend row align-items-center" :class="{ 'd-none' : !this.send }">
 			<b-col>
 				<div class="h3 mb-3">Спасибо</div>
-				<p>
-					{{ after }}
-				</p>
+				<p v-html="after" />
 			</b-col>
 		</div>
 	</div>
@@ -74,7 +73,7 @@
 						'url': 			location.host + location.pathname
 					}
 				)
-				if (!!this.sale) {
+				if (this.sale == true) {
 					carrotquest.track(
 						'Скачал лид-магнит', {
 							'Имя': 			this.name,
