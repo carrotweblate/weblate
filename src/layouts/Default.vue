@@ -161,14 +161,6 @@
 					class="px-3 py-2 mt-4 mr-3">
 					Получить на почту
 				</b-button>
-				<b-button
-					v-if="modalOpenUrl != ''" 
-					type="submit" 
-					variant="primary" 
-					class="px-3 py-2 mt-4"
-					v-on:click="openTelegram = !openTelegram">
-					Получить в Телеграме
-				</b-button>
 			</b-form>
 		</b-modal>
 
