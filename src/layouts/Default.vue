@@ -8,10 +8,210 @@
 			<Footer v-if="footer" />
 
 			<Balcony />
+<<<<<<< HEAD
 			<ConsultationModal />
 			<DownloadMiniModal />
 			<DownloadModal />
 		</b-overlay>
+=======
+			
+		<!-- </b-overlay> -->
+
+		<!-- Модалка для скачивания файлов -->
+		<b-modal ref="open-modal-demo" hide-footer :title="modalTitle">
+			<b-form v-on:submit.prevent="modalDemo">
+				<b-form-input 
+					placeholder="Имя" 
+					type="text" 
+					name="name"
+					required
+					v-model="modalName"
+					class="px-3 py-4"
+				/>
+				<b-form-input 
+					placeholder="Телефон" 
+					type="text" 
+					pattern="^[^A-zА-я]{5,}"
+					name="phone"
+					required
+					v-model="modalPhone"
+					class="px-3 py-4 mt-3"
+				/>
+				<b-form-input 
+					placeholder="Почта" 
+					type="email" 
+					name="email"
+					required
+					v-model="modalEmail"
+					class="px-3 py-4 mt-3"
+				/>
+				<b-form-input 
+					placeholder="Должность" 
+					type="text"
+					name="role"
+					required
+					v-model="modalRole"
+					class="px-3 py-4 mt-3"
+				/>
+				<b-form-input 
+					placeholder="URL вашего сайта" 
+					type="text"
+					pattern=".+\.+.+"
+					name="site"
+					required
+					v-model="modalSite"
+					class="px-3 py-4 mt-3"
+				/>
+				<b-button 
+					type="submit" 
+					variant="primary" 
+					class="px-3 py-2 mt-4">
+					Получить консультацию
+				</b-button>
+			</b-form>
+		</b-modal>
+
+		<!-- Модалка для скачивания файлов -->
+		<b-modal ref="open-modal-download" hide-footer :title="modalTitle">
+			<b-form v-on:submit.prevent="modalDownload">
+				<b-form-input 
+					placeholder="Имя" 
+					type="text" 
+					required
+					v-model="modalName"
+					class="px-3 py-4"
+				/>
+				<b-form-input 
+					placeholder="Телефон" 
+					type="text" 
+					pattern="^[^A-zА-я]{5,}"
+					required
+					v-model="modalPhone"
+					class="px-3 py-4 mt-3"
+				/>
+				<b-form-input 
+					placeholder="Почта" 
+					type="email" 
+					required
+					v-model="modalEmail"
+					class="px-3 py-4 mt-3"
+				/>
+				<b-form-input 
+					placeholder="Должность" 
+					type="text"
+					required
+					v-model="modalRole"
+					class="px-3 py-4 mt-3"
+				/>
+				<b-form-input 
+					placeholder="URL вашего сайта" 
+					type="text"
+					pattern=".+\.+.+"
+					required
+					v-model="modalSite"
+					class="px-3 py-4 mt-3"
+				/>
+				<b-button 
+					type="submit" 
+					variant="primary" 
+					class="px-3 py-2 mt-4">
+					Отправить
+				</b-button>
+			</b-form>
+		</b-modal>
+
+		<!-- Модалка для ссылок и файлов -->
+		<b-modal ref="open-modal-url" hide-footer :title="modalTitle">
+			<b-form v-on:submit.prevent="modalUrl">
+				<b-form-input 
+					placeholder="Имя" 
+					type="text" 
+					required
+					v-model="modalName"
+					class="px-3 py-4"
+				/>
+				<b-form-input 
+					placeholder="Телефон" 
+					type="text" 
+					pattern="^[^A-zА-я]{5,}"
+					required
+					v-model="modalPhone"
+					class="px-3 py-4 mt-3"
+				/>
+				<b-form-input 
+					placeholder="Почта" 
+					type="email" 
+					required
+					v-model="modalEmail"
+					class="px-3 py-4 mt-3"
+				/>
+				<b-form-input 
+					placeholder="Должность" 
+					type="text"
+					required
+					v-model="modalRole"
+					class="px-3 py-4 mt-3"
+				/>
+				<b-form-input 
+					placeholder="URL вашего сайта" 
+					type="text"
+					pattern=".+\.+.+"
+					required
+					v-model="modalSite"
+					class="px-3 py-4 mt-3"
+				/>
+				<b-button 
+					type="submit" 
+					variant="primary" 
+					class="px-3 py-2 mt-4 mr-3">
+					Получить на почту
+				</b-button>
+			</b-form>
+		</b-modal>
+
+		<!-- Модалка для Вебинаров -->
+		<b-modal ref="open-modal-webinar" hide-footer title="Регистрация на вебинар">
+			<b-form v-on:click.once="modalWebinarStart" v-on:submit.prevent="modalWebinar">
+				<b-form-input 
+					placeholder="Имя" 
+					type="text" 
+					required
+					v-model="modalName"
+					class="px-3 py-4"
+				/>
+				<b-form-input 
+					placeholder="Телефон" 
+					type="text" 
+					pattern="^[^A-zА-я]{5,}"
+					required
+					v-model="modalPhone"
+					class="px-3 py-4 mt-3"
+				/>
+				<b-form-input 
+					placeholder="Почта" 
+					type="email" 
+					required
+					v-model="modalEmail"
+					class="px-3 py-4 mt-3"
+				/>
+				<b-button 
+					type="submit" 
+					variant="primary" 
+					class="px-3 py-2 mt-4">
+					Принять участие
+				</b-button>
+			</b-form>
+		</b-modal>
+
+		<b-modal ref="suсcessDownload" hide-footer title="Всё успешно отправлено">
+			Проверьте свой email: {{modalEmail}}
+		</b-modal>
+
+		<b-modal ref="suсcessDemo" hide-footer title="Всё успешно отправлено">
+			В ближайшее время мы свяжемся с вами
+		</b-modal>
+
+>>>>>>> main
 	</div>
 </template>
 
