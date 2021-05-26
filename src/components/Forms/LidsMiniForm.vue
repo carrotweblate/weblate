@@ -9,6 +9,7 @@
 		<!-- Текст после отправки -->
 		<div class="afterSend row align-items-center" :class="{ 'd-none' : !this.send }">
 			<b-col>
+				<div class="h3 mb-3">Спасибо</div>
 				<p v-html="after" />
 			</b-col>
 		</div>
@@ -30,7 +31,7 @@
 				type: String
 			},
 			after: {
-				default: 'Спасибо. Всё успешно отправлено, проверьте свой email',
+				default: 'Всё успешно отправлено, проверьте свой email',
 				type: String
 			}
 		},
@@ -48,19 +49,18 @@
 
 			//Отправка формы
 			Subscribe() {
+				if ( this.event != '' ) {
+					carrotquest.track(this.event)
+				}
 				carrotquest.identify([
 					{"op": "update_or_create", "key": "$email", "value": this.email},
 					{ doubleSubscribe: true } // Включение подписки, если отписывался ранее
 				])
-				// Отправка события
-				if ( this.event != '' ) {
-					carrotquest.track(this.event)
-				}
 
 				dataLayer.push({ event: 'UAevent', eventCategory: 'leads', eventAction: 'email', eventLabel: location.host + location.pathname })
 				gtag('event' , 			'lead form' ,
 					{'category': 		'email, top of funnel',
-					'subject': 			'started fill the form',
+					'subject': 			'finished fill the form',
 					'page_title': 		document.title,
 					'page_location': 	location.host + location.pathname
 				})

@@ -291,6 +291,14 @@
 
 <style lang="scss">
 	.blog-index {
+		.LidsMiniForm {
+			max-width: 480px;
+			margin-left: auto;
+			margin-right: auto;
+			.TakeMe__group {
+				border: 1px solid $light-grey;
+			}
+		}
 		.text-lg-center .input-group {
 			@media (min-width: 992px) {
 				margin: 0 auto;

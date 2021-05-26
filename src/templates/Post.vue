@@ -385,7 +385,7 @@
 								doubleSubscribe: true
 							})
 							dataLayer.push({ event: 'UAevent', eventCategory: 'leads', eventAction: 'email', eventLabel: location.host + location.pathname })
-							fbq('trackCustom', 'get_email', {page: location.pathname});
+							fbq('trackCustom', 'get_lead', {page: location.pathname});
 							window.open(file, '_blank')
 
 							document.querySelector('.download_map .before').classList = 'd-none'

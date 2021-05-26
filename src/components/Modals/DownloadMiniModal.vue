@@ -36,7 +36,7 @@
 			return {
 				title:		'Получить материал на email',
 				before: 	'',
-				after: 		'Спасибо. Всё успешно отправлено, проверьте свой email',
+				after: 		'Всё успешно отправлено, <br>проверьте свой email',
 				button:		'Отправить',
 				event: 		'',
 				pic: 		'background-image: url(https://ik.imagekit.io/0nyjr4jxhmg//tr:w-300,h-300,cm-pad_resize/components/medium-10.png?ik-sdk-version=vuejs-1.0.9);',
@@ -120,7 +120,7 @@
 <style lang="scss">
 	.universalModal--mini {
 		.leftCol {
-    		background-size: auto 80% !important;
+    		background-size: auto calc(max(250px)) !important;
 		}
 		.TakeMe--email {
 			flex-wrap: wrap;

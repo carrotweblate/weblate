@@ -217,7 +217,6 @@
 				this.scrolled = window.scrollY > this.limitPosition;
 			},
 			openMegamenu(el) {
-				console.log(el)
 				if (el.srcElement.parentElement.ariaExpanded == 'false') {
 					this.$emit('overlay-show')
 				} else {

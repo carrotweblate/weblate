@@ -112,7 +112,6 @@
 				iframe.style.height = '10px'
 				iframe.style.opacity = '0'
 				document.getElementById('fit__silent').appendChild(iframe)
-				console.log(this.openUrl)
 				this.site = ''
 			}
 		},

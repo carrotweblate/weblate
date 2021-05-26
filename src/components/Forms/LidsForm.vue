@@ -9,8 +9,7 @@
 			<b-col>
 				<div class="h3 mb-3">Спасибо</div>
 				<p>
-					Ксения позвонит вам с номера <NOBR>+7 (495) 105-91-69</NOBR>.<br>
-					Если что, мы отвечаем в чате 😉
+					{{ after }}
 				</p>
 			</b-col>
 		</div>
@@ -26,7 +25,7 @@
 		},
 		props: {
 			after: {
-				default: 'Спасибо. Всё успешно отправлено, проверьте свой email',
+				default: 'Всё успешно отправлено, проверьте свой email',
 				type: String
 			},
 			before: String,
@@ -61,8 +60,8 @@
 					{'op': 'update_or_create', 'key': '$name', 				'value': this.name },
 					{'op': 'update_or_create', 'key': '$phone', 			'value': this.phone },
 					{'op': 'update_or_create', 'key': '$email', 			'value': this.email },
-					{'op': 'update_or_create', 'key': '$email', 			'value': this.role },
-					{'op': 'update_or_create', 'key': '$email', 			'value': this.site },
+					{'op': 'update_or_create', 'key': 'Должность', 			'value': this.role },
+					{'op': 'update_or_create', 'key': 'Адрес сайта', 		'value': this.site },
 				])
 				carrotquest.track(
 					this.event, {
@@ -75,8 +74,7 @@
 						'url': 			location.host + location.pathname
 					}
 				)
-				alert('Отправили форму')
-				if (this.sale) {
+				if (!!this.sale) {
 					carrotquest.track(
 						'Скачал лид-магнит', {
 							'Имя': 			this.name,
@@ -94,18 +92,18 @@
 					])
 
 					dataLayer.push({ event: 'UAevent', eventCategory: 'leads', eventAction: 'phone', eventLabel: location.host + location.pathname })
-					gtag('event' , 'lead form' ,
-						{'category': 'phone, bottom of funnel',
-						'subject': 'started fill the form',
-						'page_title' : document.title,
-						'page_location' : location.host + location.pathname
+					gtag('event' , 			'lead form' ,
+						{'category': 		'phone, bottom of funnel',
+						'subject': 			'finished fill the form',
+						'page_title': 		document.title,
+						'page_location': 	location.host + location.pathname
 					})
-					fbq('trackCustom', 'get_demo', {page: location.pathname})
+					fbq('trackCustom', 'get_lead', {page: location.pathname})
 				} else {
 					dataLayer.push({ event: 'UAevent', eventCategory: 'leads', eventAction: 'phone', eventLabel: location.host + location.pathname })
 					gtag('event' , 			'lead form' ,
 						{'category': 		'phone, top of funnel',
-						'subject': 			'started fill the form',
+						'subject': 			'finished fill the form',
 						'page_title' : 		document.title,
 						'page_location' : 	location.host + location.pathname
 					})
