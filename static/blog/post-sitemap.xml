@@ -2,11 +2,7 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>https://www.carrotquest.io/blog/</loc>
-<<<<<<< HEAD
-		<lastmod>2021-05-26T06:19:03+00:00</lastmod>
-=======
-		<lastmod>2021-05-26T06:13:44+00:00</lastmod>
->>>>>>> main
+		<lastmod>2021-05-26T07:15:25+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://www.carrotquest.io/blog/test-na-kogo-podpisatsya/</loc>
@@ -14285,11 +14281,7 @@
 	</url>
 	<url>
 		<loc>https://www.carrotquest.io/blog/carrot-changes/</loc>
-<<<<<<< HEAD
-		<lastmod>2021-05-26T06:19:03+00:00</lastmod>
-=======
-		<lastmod>2021-05-26T06:14:54+00:00</lastmod>
->>>>>>> main
+		<lastmod>2021-05-26T07:15:25+00:00</lastmod>
 		<image:image>
 			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/12/IMG_0854.JPG-1.jpg</image:loc>
 			<image:title><![CDATA[IMG_0854.JPG (1)]]></image:title>
@@ -14309,13 +14301,7 @@
 <!--
 Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
 
-<<<<<<< HEAD
-Object Caching 7064/7252 objects using disk
+Object Caching 841/16181 objects using disk
 
-Served from: www.carrotquest.io @ 2021-05-26 11:57:07 by W3 Total Cache
-=======
-Object Caching 617/16545 objects using disk
-
-Served from: www.carrotquest.io @ 2021-05-26 11:15:15 by W3 Total Cache
->>>>>>> main
+Served from: www.carrotquest.io @ 2021-05-26 13:07:15 by W3 Total Cache
 -->

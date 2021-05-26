@@ -224,7 +224,7 @@
 						<b-col cols="6" lg="4"  class="resource" :key="node.index">
 							<div class="resource__wrapper">
 								<p class="tag grey-text mb-0" v-html="node.type" />
-								<a :href="'#open-modal-mini?cqe=' + node.event + '&pic=' + node.pic" class="pic__wraper">
+								<a :href="'#open-modal-mini?cqe=' + node.event + '&pic=' + node.pic + '&before=' + node.title" class="pic__wraper">
 									<img :if="node.pic" :src="node.pic" :alt="node.title" loading="lazy">
 								</a>
 								<p class="title" v-html="node.title" />

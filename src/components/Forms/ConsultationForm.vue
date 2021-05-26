@@ -78,6 +78,8 @@
 					'page_location': 	location.host + location.pathname
 				})
 				fbq('trackCustom', 'get_demo', {page: location.pathname})
+				ym(25430054,'reachGoal','get_demo')
+				VK.Goal('get_demo')
 				
 				this.send = true
 			}

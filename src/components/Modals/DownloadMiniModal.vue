@@ -120,7 +120,7 @@
 <style lang="scss">
 	.universalModal--mini {
 		.leftCol {
-    		background-size: auto calc(max(250px)) !important;
+			min-height: 19rem !important;
 		}
 		.TakeMe--email {
 			flex-wrap: wrap;

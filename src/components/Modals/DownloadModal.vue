@@ -130,7 +130,7 @@
 			background-color: #CAC9FA !important;
 		}
 		.leftCol {
-			min-height: 18rem;
+			min-height: 32rem;
 		}
 		.h3.hide , form.hide {
 			transition: all 150ms cubic-bezier(0, 0, 0.2, 1);
