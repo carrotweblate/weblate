@@ -115,10 +115,10 @@
 		watch: {
 			// Что делать после отправки формы
 			send:  function () {
-				// setTimeout(() => {
-				// 	this.hideModal()
-				// 	this.send = false
-				// }, 7000);
+				setTimeout(() => {
+					this.hideModal()
+					this.send = false
+				}, 7000);
 			}
 		}
 	}
