@@ -102,6 +102,7 @@
 
 				//Поиск по блогу
 				showSearch: false,
+				isSearchBlog: false,
 				searchBlog: '',
 
 				//Верхнее меню
@@ -120,6 +121,11 @@
 					}
 				]
 			}
-		}
+		},
+		mounted() {
+			if (location.href.indexOf('/search/') > 0) {
+				this.isSearchBlog = true
+			}
+ 		}
 	}
 </script>

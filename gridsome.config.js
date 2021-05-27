@@ -31,7 +31,7 @@ const collections = [{
 					title
 					slug
 					modified
-					featured_media
+					featured_media_medium
 					meta
 					categories
 					content
@@ -47,7 +47,7 @@ const collections = [{
 			title: item.title,
 			slug: item.slug,
 			modified: String(item.modified),
-			featured_media: item.featured_media,
+			featured_media: item.featured_media_medium,
 			meta: item.meta,
 			categories: item.categories,
 			content: item.content.substr(0,7000)

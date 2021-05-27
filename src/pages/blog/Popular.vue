@@ -30,7 +30,7 @@
 					title
 					slug
 					categories
-					featured_media
+					featured_media_medium
 				}
 			}
 			pageInfo {

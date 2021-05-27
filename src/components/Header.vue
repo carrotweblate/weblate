@@ -119,7 +119,7 @@
 											<ul>
 												<li v-for="{ node } in $static.recent.edges" :key="node.id"  class="mb-3">
 													<a :href="'/blog/' + node.slug + '/'" class="megamenu__post">
-														<span :style="'background-image: url(' + node.featured_media + ')'" class="megamenu__post__pic d-block mr-3" />
+														<span :style="'background-image: url(' + node.featured_media_medium + ')'" class="megamenu__post__pic d-block mr-3" />
 														<span v-html="node.title" class="megamenu__post__title font14px" />
 													</a>
 												</li>
@@ -182,7 +182,7 @@
 				node {
 					title
 					slug
-					featured_media
+					featured_media_medium
 				}
 			}
 		}

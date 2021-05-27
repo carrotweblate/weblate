@@ -125,7 +125,7 @@ module.exports = function (api) {
 					categories: response.data.categories,
 					authors: response.data.acf.post__authors,
 					author: response.data.author,
-					featured_media: renderURL(response.data.featured_media_medium),
+					featured_media_medium: renderURL(response.data.featured_media_medium),
 					featured_media_large: response.data.featured_media_large[0],
 					// featuredmedia: response.data._embedded['wp:featuredmedia'][0].media_details,
 					content: tp.execute(response.data.content.rendered),
@@ -155,7 +155,8 @@ module.exports = function (api) {
 					modified: response.data.modified,
 					
 					//Тело статьи
-					featured_media: response.data.featured_media_large,
+					featured_media_medium: renderURL(response.data.featured_media_medium),
+					featured_media_large: response.data.featured_media_large,
 					// featuredmedia: response.data._embedded['wp:featuredmedia'][0].media_details,
 					title: renderText(response.data.title.rendered),
 					description: renderText(response.data.excerpt.rendered),

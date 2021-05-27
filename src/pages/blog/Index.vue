@@ -43,7 +43,7 @@
 							<b-col md="6" lg="12" class="post-card mb-4 mb-md-5">
 								<g-link :to="'/blog/' + $page.recent.edges[1].node.slug + '/'" class="post__box box-shadow box h-100 d-block">
 									<!-- Изображение -->
-									<div class="post__box__pic mb-3" :style="'background-image: url(' + $page.recent.edges[1].node.featured_media + ')'"></div>
+									<div class="post__box__pic mb-3" :style="'background-image: url(' + $page.recent.edges[1].node.featured_media_medium + ')'"></div>
 									<!-- Категории -->
 									<div class="post__box__categories px-3 mb-3">
 										<template v-for="edges in $page.allCategories.edges" >
@@ -59,7 +59,7 @@
 							<b-col md="6" lg="12" class="post-card mb-4 mb-md-5 mb-lg-0">
 								<g-link :to="'/blog/' + $page.recent.edges[2].node.slug + '/'" class="post__box box-shadow box h-100 d-block">
 									<!-- Изображение -->
-									<div class="post__box__pic mb-3" :style="'background-image: url(' + $page.recent.edges[2].node.featured_media + ')'"></div>
+									<div class="post__box__pic mb-3" :style="'background-image: url(' + $page.recent.edges[2].node.featured_media_medium + ')'"></div>
 									<!-- Категории -->
 									<div class="post__box__categories px-3 mb-3">
 										<template v-for="edges in $page.allCategories.edges" >
@@ -104,7 +104,7 @@
 							<b-col md="6" lg="12" class="post-card mb-4 mb-md-5">
 								<g-link :to="'/blog/' + $page.cases.edges[1].node.slug + '/'" class="post__box box-shadow box h-100 d-block">
 									<!-- Изображение -->
-									<div class="post__box__pic mb-3" :style="'background-image: url(' + $page.cases.edges[1].node.featured_media + ')'"></div>
+									<div class="post__box__pic mb-3" :style="'background-image: url(' + $page.cases.edges[1].node.featured_media_medium + ')'"></div>
 									<!-- Заголовок -->
 									<div class="post__box__title  px-3  pb-4" v-html="$page.cases.edges[1].node.title" />
 								</g-link>
@@ -112,7 +112,7 @@
 							<b-col md="6" lg="12" class="post-card mb-4 mb-md-5 mb-lg-0">
 								<g-link :to="'/blog/' + $page.cases.edges[2].node.slug + '/'" class="post__box box-shadow box h-100 d-block">
 									<!-- Изображение -->
-									<div class="post__box__pic mb-3" :style="'background-image: url(' + $page.cases.edges[2].node.featured_media + ')'"></div>
+									<div class="post__box__pic mb-3" :style="'background-image: url(' + $page.cases.edges[2].node.featured_media_medium + ')'"></div>
 									<!-- Заголовок -->
 									<div class="post__box__title  px-3  pb-4" v-html="$page.cases.edges[2].node.title" />
 								</g-link>
@@ -202,7 +202,7 @@
 					title
 					slug
 					categories
-					featured_media
+					featured_media_medium
 					featured_media_large
 				}
 			}
@@ -213,7 +213,7 @@
 					title
 					slug
 					categories
-					featured_media
+					featured_media_medium
 					featured_media_large
 				}
 			}
@@ -224,7 +224,7 @@
 					title
 					slug
 					categories
-					featured_media
+					featured_media_medium
 					sticky
 				}
 			}
@@ -235,7 +235,7 @@
 					title
 					slug
 					categories
-					featured_media
+					featured_media_medium
 				}
 			}
 		}
@@ -245,7 +245,7 @@
 					title
 					slug
 					categories
-					featured_media
+					featured_media_medium
 					page_views
 				}
 			}
