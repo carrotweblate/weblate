@@ -56,10 +56,19 @@
 			</b-row>
 			
 			<!-- Изображение записи -->
-			<b-row v-if="$context.featured_media != '0'">
+			<b-row v-if="$context.featured_media_large != '0'">
 				<b-col col cols="12" class="post__image mt-4 mb-5">
-					<img v-if="$context.featured_media[2] != 274 " :src="$context.featured_media[0].split('wp.carrotquest.io').join('www.carrotquest.io')" :width="$context.featured_media[1]" :height="$context.featured_media[2]" />
-					<img v-else :src="$context.featured_media[0].split('wp.carrotquest.io').join('www.carrotquest.io')" :width="($context.featured_media[1] * 1.71875)" :height="( $context.featured_media[2] * 1.71875)" />
+					<img 
+						:srcset="
+							$context.featured_media_medium + ' 440w,' +
+							$context.featured_media_large[0].split('wp.carrotquest.io').join('www.carrotquest.io') + ' 1100w'
+						"
+						sizes="(max-width: 440px) 440px, 1100px"
+						:src="$context.featured_media_large[0].split('wp.carrotquest.io').join('www.carrotquest.io')" 
+						:width="$context.featured_media_large[1]" 
+						:height="$context.featured_media_large[2]" 
+						:alt="$context.title"
+					/>
 				</b-col>
 			</b-row>
 
@@ -126,7 +135,7 @@
 					title
 					slug
 					categories
-					featured_media
+					featured_media_medium
 					sticky
 				}
 			}

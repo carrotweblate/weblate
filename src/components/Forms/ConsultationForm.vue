@@ -79,7 +79,7 @@
 				})
 				fbq('trackCustom', 'get_demo', {page: location.pathname})
 				ym(25430054,'reachGoal','get_demo')
-				VK.Goal('get_demo')
+				VK.Goal('conversion')
 				
 				this.send = true
 			}

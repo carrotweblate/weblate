@@ -2,7 +2,7 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>https://www.carrotquest.io/blog/</loc>
-		<lastmod>2021-05-26T08:49:11+00:00</lastmod>
+		<lastmod>2021-05-27T10:11:12+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://www.carrotquest.io/blog/test-na-kogo-podpisatsya/</loc>
@@ -2072,39 +2072,6 @@
 		<image:image>
 			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2021/03/pasted-image-0-3.png</image:loc>
 			<image:caption><![CDATA[Возможности лид-бота]]></image:caption>
-		</image:image>
-	</url>
-	<url>
-		<loc>https://www.carrotquest.io/blog/trigger-campaigns-saas/</loc>
-		<lastmod>2021-04-15T10:26:17+00:00</lastmod>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/01/%D0%9A%D0%B0%D1%80%D1%82%D0%B0-%D1%82%D1%80%D0%B8%D0%B3%D0%B3%D0%B5%D1%80%D0%BD%D1%8B%D1%85-%D1%81%D1%86%D0%B5%D0%BD%D0%B0%D1%80%D0%B8%D0%B5%D0%B2-%D0%BE%D0%B1%D0%BB%D0%BE%D0%B6%D0%BA%D0%B0.png</image:loc>
-			<image:title><![CDATA[Карта триггерных сценариев - обложка]]></image:title>
-		</image:image>
-	</url>
-	<url>
-		<loc>https://www.carrotquest.io/blog/karta-ecommerce/</loc>
-		<lastmod>2021-04-15T10:26:45+00:00</lastmod>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/03/Image-from-iOS.jpg</image:loc>
-			<image:title><![CDATA[Image from iOS]]></image:title>
-		</image:image>
-	</url>
-	<url>
-		<loc>https://www.carrotquest.io/blog/triggernye-scenarii-dlya-sajtov-po-prodazhe-nedvizhimosti/</loc>
-		<lastmod>2021-04-15T10:27:01+00:00</lastmod>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2021/02/IMG_0932.jpg</image:loc>
-			<image:title><![CDATA[IMG_0932]]></image:title>
-		</image:image>
-	</url>
-	<url>
-		<loc>https://www.carrotquest.io/blog/support-guide/</loc>
-		<lastmod>2021-04-15T10:27:47+00:00</lastmod>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/05/%D0%BE%D0%B1%D0%BB%D0%BE%D0%B6%D0%BA%D0%B0-%D0%BF%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%BA.jpg</image:loc>
-			<image:title><![CDATA[обложка поддержка]]></image:title>
-			<image:caption><![CDATA[Support team]]></image:caption>
 		</image:image>
 	</url>
 	<url>
@@ -9010,14 +8977,6 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://www.carrotquest.io/blog/trigger-map-ecom-remote/</loc>
-		<lastmod>2021-05-04T09:33:09+00:00</lastmod>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/04/cover-trigger-map-ecom-remote-1.png</image:loc>
-			<image:title><![CDATA[cover-trigger-map-ecom-remote]]></image:title>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://www.carrotquest.io/blog/case-oy-li/</loc>
 		<lastmod>2021-05-04T09:33:09+00:00</lastmod>
 		<image:image>
@@ -14296,12 +14255,53 @@
 			<image:caption><![CDATA[eyetracking]]></image:caption>
 		</image:image>
 	</url>
+	<url>
+		<loc>https://www.carrotquest.io/blog/trigger-campaigns-saas/</loc>
+		<lastmod>2021-05-27T10:07:57+00:00</lastmod>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/01/%D0%9A%D0%B0%D1%80%D1%82%D0%B0-%D1%82%D1%80%D0%B8%D0%B3%D0%B3%D0%B5%D1%80%D0%BD%D1%8B%D1%85-%D1%81%D1%86%D0%B5%D0%BD%D0%B0%D1%80%D0%B8%D0%B5%D0%B2-%D0%BE%D0%B1%D0%BB%D0%BE%D0%B6%D0%BA%D0%B0.png</image:loc>
+			<image:title><![CDATA[Карта триггерных сценариев - обложка]]></image:title>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://www.carrotquest.io/blog/karta-ecommerce/</loc>
+		<lastmod>2021-05-27T10:09:26+00:00</lastmod>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/03/Image-from-iOS.jpg</image:loc>
+			<image:title><![CDATA[Image from iOS]]></image:title>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://www.carrotquest.io/blog/triggernye-scenarii-dlya-sajtov-po-prodazhe-nedvizhimosti/</loc>
+		<lastmod>2021-05-27T10:09:43+00:00</lastmod>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2021/02/IMG_0932.jpg</image:loc>
+			<image:title><![CDATA[IMG_0932]]></image:title>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://www.carrotquest.io/blog/support-guide/</loc>
+		<lastmod>2021-05-27T10:10:31+00:00</lastmod>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/05/%D0%BE%D0%B1%D0%BB%D0%BE%D0%B6%D0%BA%D0%B0-%D0%BF%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%BA.jpg</image:loc>
+			<image:title><![CDATA[обложка поддержка]]></image:title>
+			<image:caption><![CDATA[Support team]]></image:caption>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://www.carrotquest.io/blog/trigger-map-ecom-remote/</loc>
+		<lastmod>2021-05-27T10:11:12+00:00</lastmod>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/04/cover-trigger-map-ecom-remote-1.png</image:loc>
+			<image:title><![CDATA[cover-trigger-map-ecom-remote]]></image:title>
+		</image:image>
+	</url>
 </urlset>
 <!-- XML Sitemap generated by Yoast SEO -->
 <!--
 Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
 
-Object Caching 1325/15510 objects using disk
+Object Caching 1563/15140 objects using disk
 
-Served from: www.carrotquest.io @ 2021-05-27 14:09:15 by W3 Total Cache
+Served from: www.carrotquest.io @ 2021-05-27 15:17:57 by W3 Total Cache
 -->
