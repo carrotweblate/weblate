@@ -39,10 +39,12 @@
 	//Обложка
 	&__image img {
 		border-radius: 5px;
-		width: auto;
 		height: auto;
 		max-width: 100%;
-		max-height: 500px
+		max-height: 500px;
+		@media (min-width: 576px) {
+			width: auto;
+		}
 	}
 
 	//Оглавление и авторы
