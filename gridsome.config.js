@@ -74,6 +74,15 @@ module.exports = {
 				debug: false
 			}
 		},
+		// Critical
+		{
+			use: '@gridsome/plugin-critical',
+			options: {
+				paths: ['/'],
+				width: 1300,
+				height: 900
+			}
+		},
 		// Поиск по блогу
 		{
 			use: `gridsome-plugin-algolia`,
@@ -85,6 +94,7 @@ module.exports = {
 				enablePartialUpdates: true, // default: false
 			},
 		},
+		// PWA
 		{
 			use: 'gridsome-plugin-manifest',
 			options: {
