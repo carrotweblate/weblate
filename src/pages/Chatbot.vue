@@ -140,67 +140,21 @@
 					</b-col>
 				</b-row>
 				<b-row>
-					<b-col md="6" lg="4" xl="3">
-						<g-link to="/chatbot/collect-qualify-lead-use-questions/" class="scripts__box box h-100">
-							<p class="font17px">Собирайте и квалифицируйте лидов на вашем сайте</p>
-							<div class="badges">
-								<b-badge class="font14px">Маркетологу</b-badge>
+					<b-col md="6" lg="4" v-for="script in scripts" :key="script">
+						<g-link :to="script.to" class="scripts__box box box-shadow h-100">
+							<div class="badges text-uppercase font12px mb-2">
+								<span v-for="badge in script.badges" :key="badge" :class="{ green: badge == 'Продакту' , hightblue: badge == 'Руководителю продаж' }" class="mr-2">
+									{{badge}} 
+								</span>
 							</div>
+							<p class="font20px" v-html="script.title" />
+							<b-button variant="outline-primary">Посмотреть сценарий</b-button>
 						</g-link>
 					</b-col>
-					<b-col md="6" lg="4" xl="3">
-						<g-link to="/chatbot/automatic-collect-lead-at-night/" class="scripts__box box h-100">
-							<p class="font17px">Не теряйте лиды даже ночью, когда все менеджеры спят</p>
-							<div class="badges">
-								<b-badge class="font14px">Маркетологу</b-badge>
-							</div>
-						</g-link>
-					</b-col>
-					<b-col md="6" lg="4" xl="3">
-						<g-link to="/chatbot/collect-user-feedback/" class="scripts__box box h-100">
-							<p class="font17px">Собирайте обратную связь с пользователей</p>
-							<div class="badges">
-								<b-badge class="font14px green">Продакту</b-badge>
-							</div>
-						</g-link>
-					</b-col>
-					<b-col md="6" lg="4" xl="3">
-						<g-link to="/chatbot/close-duplicate-questions/" class="scripts__box box h-100">
-							<p class="font17px">Проактивно закрывайте повторяющиеся вопросы до того, как пользователь задал их в чат</p>
-							<div class="badges">
-								<b-badge class="font14px yellow">Руководителю продаж</b-badge>
-							</div>
-						</g-link>
-					</b-col>
-					<b-col md="6" lg="4" xl="3">
-						<g-link to="/chatbot/increase-efficiency-sales-manager-calls/" class="scripts__box box h-100">
-							<p class="font17px">Увеличьте эффективность звонков менеджера по продажам</p>
-							<div class="badges">
-								<b-badge class="font14px">Маркетологу</b-badge>
-								<b-badge class="font14px yellow mt-2">Руководителю продаж</b-badge>
-							</div>
-						</g-link>
-					</b-col>
-					<b-col md="6" lg="4" xl="3">
-						<g-link to="/chatbot/share-features-with-desired-segment/" class="scripts__box box h-100">
-							<p class="font17px">Рассказывайте о новых фичах нужному сегменту аудитории</p>
-							<div class="badges">
-								<b-badge class="font14px green">Продакту</b-badge>
-							</div>
-						</g-link>
-					</b-col>
-					<b-col md="6" lg="4" xl="3">
-						<g-link to="/chatbot/offer-products-for-specific-user/" class="scripts__box box h-100">
-							<p class="font17px">Предлагайте товары под задачи конкретного пользователя</p>
-							<div class="badges">
-								<b-badge class="font14px">Маркетологу</b-badge>
-							</div>
-						</g-link>
-					</b-col>
-					<b-col md="6" lg="4" xl="3">
-						<div class="scripts__box box h-100 text-center d-flex align-items-center">
-							<p class="font17px w-100">Еще больше сценариев совсем скоро</p>
-						</div>
+					<b-col md="6" lg="4">
+						<a class="scripts__box box box-shadow h-100 text-center d-flex align-items-center">
+							<p class="font20px w-100">Еще больше сценариев совсем скоро</p>
+						</a>
 					</b-col>
 				</b-row>
 			</b-container>
@@ -313,8 +267,7 @@
 	import FAQ 					from '~/components/FAQ.vue'
 	import Study 				from '~/components/Study.vue'
 	import PostCard 			from '~/components/PostCard.vue'
-	import LidsMiniForm		from '~/components/Forms/LidsMiniForm.vue'
-	import { BBadge } 			from 'bootstrap-vue'
+	import LidsMiniForm			from '~/components/Forms/LidsMiniForm.vue'
 
 	export default {
 		components: {
@@ -322,7 +275,6 @@
 			FAQ,
 			Study,
 			PostCard,
-			BBadge,
 			LidsMiniForm
 		},
 		metaInfo() {
@@ -350,6 +302,45 @@
 				
 				//Сценарии, переключение
 				solutionIndex: 0,
+
+				//Готовые сценарии лид-ботов
+				scripts: [
+					{
+						badges: ['Маркетологу'],
+						title: 'Собирайте и квалифицируйте лидов на вашем сайте',
+						to: '/chatbot/collect-qualify-lead-use-questions/'
+					},
+					{
+						badges: ['Маркетологу'],
+						title: 'Не теряйте лиды даже ночью, когда все менеджеры спят',
+						to: '/chatbot/automatic-collect-lead-at-night/'
+					},
+					{
+						badges: ['Продакту'],
+						title: 'Собирайте обратную связь с пользователей',
+						to: '/chatbot/collect-user-feedback/'
+					},
+					{
+						badges: ['Руководителю продаж'],
+						title: 'Проактивно закрывайте повторяющиеся вопросы до того, как пользователь задал их в чат',
+						to: '/chatbot/close-duplicate-questions/'
+					},
+					{
+						badges: ['Маркетологу','Руководителю продаж'],
+						title: 'Увеличьте эффективность звонков менеджера по продажам',
+						to: '/chatbot/increase-efficiency-sales-manager-calls/'
+					},
+					{
+						badges: ['Продакту'],
+						title: 'Рассказывайте о новых фичах нужному сегменту аудитории',
+						to: '/chatbot/share-features-with-desired-segment/'
+					},
+					{
+						badges: ['Маркетологу'],
+						title: 'Предлагайте товары под задачи конкретного пользователя',
+						to: '/chatbot/offer-products-for-specific-user/'
+					}
+				],
 
 				//FAQ
 				faq: [
@@ -452,27 +443,23 @@
 			}
 			&__box {
 				color: #000;
-				background: #F3F3FF;
 				border-radius: 5px;
 				padding: 20px;
 				min-height: 260px;
 				.badges {
-					position: absolute;
-					left: 20px;
-					right: 20px;
-					bottom: 20px;
-					.badge {
-						display: inline-block;
-						padding: 0.3rem 1rem;
-						border-radius: 1.5rem;
-						background-color: #FFE0D9;
+					span {
+						color: #FF7878;
 						&.green {
-							background-color: #C4F67C;
+							color: #53CD66;
 						}
-						&.yellow {
-							background-color: #FFF27A;
+						&.hightblue {
+							color: #3F80FF;
 						}
 					}
+				}
+				.btn {
+					position: absolute;
+					bottom: 1.5rem;
 				}
 			}
 			img {
