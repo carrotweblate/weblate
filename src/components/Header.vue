@@ -362,7 +362,7 @@
 								{
 									title: 'Наши книги',
 									href: '/library/#books',
-									job: 'Подробная экспертиза от команды carrot quest (dashly)'
+									job: 'Подробная экспертиза от команды Carrot quest'
 								},
 								{
 									title: 'Вебинары и подкасты',
