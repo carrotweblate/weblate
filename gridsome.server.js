@@ -24,16 +24,18 @@ function renderURL (data) {
 	}
 }
 function renderText (data) {
-	let pageHTML = renderURL(data)
+	let pageHTML = data
 	//Lazyload
 	pageHTML = pageHTML.split('<img src').join('<img loading="lazy" src')
 	//Видео
 	pageHTML = pageHTML.split('<video ').join('<video autoplay loop muted playsinline ')
 	pageHTML = pageHTML.split('controls').join('')
-	//Carrot-quest
-	pageHTML = pageHTML.split('Carrot quest').join('Carrot&nbsp;quest')
+	
 	//Типографируем
 	pageHTML = tp.execute(pageHTML)
+
+	//Carrot-quest
+	pageHTML = pageHTML.split('Carrot quest').join('Carrot&nbsp;quest')
 
 	return pageHTML
 }
