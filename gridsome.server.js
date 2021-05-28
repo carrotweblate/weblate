@@ -24,7 +24,7 @@ function renderURL (data) {
 	}
 }
 function renderText (data) {
-	let pageHTML = data
+	let pageHTML = renderURL(data)
 	//Lazyload
 	pageHTML = pageHTML.split('<img src').join('<img loading="lazy" src')
 	//Видео

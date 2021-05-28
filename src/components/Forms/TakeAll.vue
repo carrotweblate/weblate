@@ -83,7 +83,7 @@
 					site:   '',
 					role:   '',
 					// Тестовое
-					// name:   'Николай',
+					// name:   'Тест',
 					// phone:	'+79223502719',
 					// email:  'addonion@gmail.com',
 					// site:   'test.ru',
