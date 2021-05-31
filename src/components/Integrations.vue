@@ -5,8 +5,8 @@
 			<b-row >
 				<b-col col-12 lg="9">
 					<div class="h2 mb-4">
-						Сервисы должны работать вместе. <br>
-						<g-link to="/integration/">Интегрируйте</g-link> их с Carrot quest
+						Безболезненно <g-link to="/integration/">интегрируемся</g-link> с вашими<br> 
+						самыми любимыми и полезными сервисами
 					</div>
 					<p>
 						Более 30 готовых интеграций. Открытый API для web, iOS и Android

@@ -342,6 +342,11 @@
 									href: '/videocourse-online-sales/',
 									job: 'Как увеличить продажи на том же трафике, используя инструменты Carrot quest'
 								},
+								{
+									title: 'Партнерская программа',
+									href: '/partner/',
+									job: 'Зарабатывайте за каждое внедрение Carrot quest'
+								},
 							],
 							content: [
 								{
@@ -416,8 +421,8 @@
 						href: '/blog/'
 					},
 					{
-						title: 'Партнерам',
-						href: '/partner/'
+						title: 'Кейсы',
+						href: '/cases/'
 					}
 				]
 			}
