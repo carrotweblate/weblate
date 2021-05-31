@@ -4,7 +4,7 @@
 			<b-form-input
 				autocomplete="on"
 				name="name"
-				placeholder="Имя*"
+				placeholder="Имя"
 				type="text" 
 				required
 				v-model="formData.name"
@@ -16,7 +16,7 @@
 				autocomplete="on"
 				name="phone"
 				pattern="^[^A-zА-я]{5,}"
-				placeholder="Телефон*"
+				placeholder="Телефон"
 				type="text" 
 				required
 				v-model="formData.phone"
@@ -27,7 +27,7 @@
 			<b-form-input
 				autocomplete="on"
 				name="email"
-				placeholder="Email*"
+				placeholder="Email"
 				type="text" 
 				required
 				v-model="formData.email"
@@ -38,7 +38,7 @@
 			<b-form-input
 				autocomplete="on"
 				name="role"
-				placeholder="Должность*"
+				placeholder="Должность"
 				type="text" 
 				required
 				v-model="formData.role"
@@ -50,7 +50,7 @@
 				autocomplete="on"
 				name="site"
 				pattern=".+\.+.+"
-				placeholder="URL вашего сайта*"
+				placeholder="URL вашего сайта"
 				type="text" 
 				required
 				v-model="formData.site"
@@ -83,11 +83,11 @@
 					site:   '',
 					role:   '',
 					// Тестовое
-					name:   'Николай',
-					phone:	'+79223502719',
-					email:  'addonion@gmail.com',
-					site:   'test.ru',
-					role:   'Котик',
+					// name:   'Тест',
+					// phone:	'+79223502719',
+					// email:  'addonion@gmail.com',
+					// site:   'test.ru',
+					// role:   'Котик',
 				}
 			};
 		},

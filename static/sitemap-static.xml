@@ -6,10 +6,6 @@
         <priority>1.00</priority>
     </url>
     <url>
-        <loc>https://www.carrotquest.io/academy/usecases</loc>
-        <priority>1.00</priority>
-    </url>
-    <url>
         <loc>https://www.carrotquest.io/integration/</loc>
         <priority>1.00</priority>
     </url>
@@ -82,10 +78,6 @@
         <priority>0.95</priority>
     </url>
     <url>
-        <loc>https://www.carrotquest.io/academy/usecase/podderzhka-polzovateley</loc>
-        <priority>0.95</priority>
-    </url>
-    <url>
         <loc>https://www.carrotquest.io/minicase-firstsale/</loc>
         <priority>0.95</priority>
     </url>
@@ -151,10 +143,6 @@
         <priority>0.83</priority>
     </url>
     <url>
-        <loc>https://www.carrotquest.io/academy/usecase/izuchaem-povedenie-klientov-na-sajte</loc>
-        <priority>0.81</priority>
-    </url>
-    <url>
         <loc>https://www.carrotquest.io/transformsales-course-part2</loc>
         <priority>0.81</priority>
     </url>
@@ -175,33 +163,12 @@
         <priority>0.78</priority>
     </url>
     <url>
-        <loc>https://www.carrotquest.io/academy/usecase/kak-ocenit-rabotu-sluzhby-podderzhki</loc>
-        <priority>0.76</priority>
-    </url>
-    <url>
-        <loc>https://www.carrotquest.io/academy/usecase/kvalificiruem-lidov</loc>
-        <priority>0.76</priority>
-    </url>
-    <url>
         <loc>https://www.carrotquest.io/email-deliverability</loc>
         <priority>0.76</priority>
     </url>
     <url>
-        <loc>https://www.carrotquest.io/academy/usecase/sbor-lidov-s-sayta</loc>
-        <priority>0.73</priority>
-    </url>
-
-    <url>
-        <loc>https://www.carrotquest.io/academy/usecase/kak-provesti-a-b-test</loc>
-        <priority>0.70</priority>
-    </url>
-    <url>
         <loc>https://www.carrotquest.io/book-saas</loc>
         <priority>0.66</priority>
-    </url>
-    <url>
-        <loc>https://www.carrotquest.io/academy/usecase/rasskazyvaem-ob-obnovleniyah-v-servise</loc>
-        <priority>0.56</priority>
     </url>
     <url>
         <loc>https://www.carrotquest.io/kurs-email-marketing/</loc>
@@ -210,10 +177,6 @@
     <url>
         <loc>https://www.carrotquest.io/marketing-course/</loc>
         <priority>0.54</priority>
-    </url>
-    <url>
-        <loc>https://www.carrotquest.io/academy/usecase/delaem-povtornye-prodazhi</loc>
-        <priority>0.51</priority>
     </url>
     <url>
         <loc>https://www.carrotquest.io/bots-beta/</loc>

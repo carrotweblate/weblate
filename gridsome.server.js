@@ -30,10 +30,12 @@ function renderText (data) {
 	//Видео
 	pageHTML = pageHTML.split('<video ').join('<video autoplay loop muted playsinline ')
 	pageHTML = pageHTML.split('controls').join('')
-	//Carrot-quest
-	pageHTML = pageHTML.split('Carrot quest').join('Carrot&nbsp;quest')
+	
 	//Типографируем
 	pageHTML = tp.execute(pageHTML)
+
+	//Carrot-quest
+	pageHTML = pageHTML.split('Carrot quest').join('Carrot&nbsp;quest')
 
 	return pageHTML
 }
@@ -106,8 +108,7 @@ module.exports = function (api) {
 	api.loadSource(async actions => {
 		const { data } = await axios.get(
 			// 'https://wp.carrotquest.io/blog/wp-json/wp/v2/posts?&per_page=999&_embed'
-			// 'https://wp.carrotquest.io/blog/wp-json/wp/v2/posts?&per_page=300'
-			'https://wp.carrotquest.io/blog/wp-json/wp/v2/posts?&per_page=99&_fields=id,slug,modified'
+			'https://wp.carrotquest.io/blog/wp-json/wp/v2/posts?&per_page=999&_fields=id,slug,modified'
 		)
 		// Данные для вывода статей
 		let pageContext = []
@@ -126,7 +127,7 @@ module.exports = function (api) {
 					categories: response.data.categories,
 					authors: response.data.acf.post__authors,
 					author: response.data.author,
-					featured_media: renderURL(response.data.featured_media_medium),
+					featured_media_medium: renderURL(response.data.featured_media_medium),
 					featured_media_large: response.data.featured_media_large[0],
 					// featuredmedia: response.data._embedded['wp:featuredmedia'][0].media_details,
 					content: tp.execute(response.data.content.rendered),
@@ -156,7 +157,8 @@ module.exports = function (api) {
 					modified: response.data.modified,
 					
 					//Тело статьи
-					featured_media: response.data.featured_media_large,
+					featured_media_medium: renderURL(response.data.featured_media_medium),
+					featured_media_large: response.data.featured_media_large,
 					// featuredmedia: response.data._embedded['wp:featuredmedia'][0].media_details,
 					title: renderText(response.data.title.rendered),
 					description: renderText(response.data.excerpt.rendered),
@@ -328,6 +330,23 @@ module.exports = function (api) {
 		})
 	})
 
+
+	// Ресурсы библиотеки
+	api.loadSource(async actions => {
+		const collection = actions.addCollection('library')
+		let refs = ''
+		await axios.get('https://carrotquest.cdn.prismic.io/api/v2').then( response => { refs = response.data.refs[0].ref})
+		const { data } = await axios.get('https://carrotquest.cdn.prismic.io/api/v2/documents/search?ref=' + refs + '&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22X0ZSlRIAAPalRttu%22%29+%5D%5D')
+		// Данные для вывода ресурсов
+		for (const item of data.results[0].data.body[0].items.reverse()) {
+			collection.addNode({
+				title: item.title,
+				type: item.type,
+				event: item.event,
+				pic: item.pic.url
+			})
+		}
+	})
   
 	api.loadSource(({ addCollection }) => {
 	// Use the Data Store API here: https://gridsome.org/docs/data-store-api/

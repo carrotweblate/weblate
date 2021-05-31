@@ -56,7 +56,7 @@
 							<p class="font20px">
 								Как проводить исследования, результаты которых пойдут в бэклог, а не в стол<br><br>
 							</p>
-							<span>Посмотреть главу из книги</span>
+							<span>Скачать несколько глав</span>
 							<g-image src="~/assets/images/library/book_product-research.png" width="380" quality="100" alt="Полное руководство по коммуникациям и автоматизации воронки пользователей в интернет-магазинах" />
 						</g-link>
 					</b-col>
@@ -220,14 +220,14 @@
 					</b-col>
 				</b-row>
 				<b-row class="resources__row">
-					<template v-for="resource in results">
-						<b-col cols="6" lg="4"  class="resource" :key="resource.index">
-							<div class="resource__wrapper" v-on:click="modalResource(resource.event)">
-								<p class="tag grey-text mb-0" v-html=resource.type />
-								<div class="pic__wraper">
-									<img :if="resource.pic.url" :src="resource.pic.url" :alt="resource.title" loading="lazy">
-								</div>
-								<p class="title" v-html=resource.title />
+					<template v-for="{ node } in $static.allLibrary.edges">
+						<b-col cols="6" lg="4"  class="resource" :key="node.index">
+							<div class="resource__wrapper">
+								<p class="tag grey-text mb-0" v-html="node.type" />
+								<a :href="'#open-modal-mini?cqe=' + node.event + '&pic=' + node.pic + '&before=' + node.title" class="pic__wraper">
+									<img :if="node.pic" :src="node.pic" :alt="node.title" loading="lazy">
+								</a>
+								<p class="title" v-html="node.title" />
 							</div>
 						</b-col>
 					</template>
@@ -235,35 +235,28 @@
 			</b-container>
 		</section>
 
-
-
-		<!-- Модалка для скачивания материалов -->
-		<b-modal ref="open-modal-resource" hide-footer title="Получить материал на email">
-			<b-form v-on:submit.prevent="modalDownloadResource">
-				<b-form-input 
-					placeholder="Почта" 
-					type="email" 
-					required
-					v-model="modalEmail"
-					class="px-3 py-4 mt-3"
-				/>
-				<b-button 
-					type="submit" 
-					variant="primary" 
-					class="px-3 py-2 mt-4">
-					Получить
-				</b-button>
-			</b-form>
-		</b-modal>
-		<b-modal ref="suсcessDownload" hide-footer title="Всё успешно отправлено">
-			Проверьте свой email: {{modalEmail}}
-		</b-modal>
-
 	</Layout>
 </template>
 
+
+<static-query>
+	query {
+		allLibrary {
+			edges {
+				node {
+					id
+					type
+					pic
+					title
+					event
+				}
+			}
+		}
+	}
+</static-query>
+
+
 <script>
-	import axios from 'axios'
 	import LidsMiniForm from '~/components/Forms/LidsMiniForm.vue'
 
 	export default {
@@ -278,48 +271,8 @@
 				metaCanonical: 'https://www.carrotquest.io/library/',
 				metaImage: 'https://www.carrotquest.io/assets/images/cover/library.gif',
 
-				//Загрузка ресурсов
-				results: Array,
-
 				//Email
 				modalEmail: ''
-			}
-		},
-		async mounted() {
-			try {
-				axios.get('https://carrotquest.cdn.prismic.io/api/v2').then(ref => {
-					axios.get('https://carrotquest.cdn.prismic.io/api/v2/documents/search?ref=' + ref.data.refs[0].ref + '&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22X0ZSlRIAAPalRttu%22%29+%5D%5D').then(response => {
-						this.results = response.data.results[0].data.body[0].items.reverse()
-					})
-				})
-			} catch (error) {
-				console.log(error)
-			}
-		},
-		methods: {
-			modalResource (event) {
-				this.$refs['open-modal-resource'].show()
-				this.modalEvent = event
-			},
-			modalDownloadResource () {
-				carrotquest.identify([
-					{"op": "update_or_create", "key": "$email", "value": this.modalEmail},
-					{ doubleSubscribe: true }
-				]);
-				carrotquest.track("Заполнил форму на скачивание файлов", {
-					'Email': this.modalEmail,
-					'url': location.host + location.pathname
-				})
-				carrotquest.track('Скачал лид-магнит')
-				carrotquest.track(this.modalEvent, {
-					'source' : 'Библиотека'
-				})
-
-				this.$refs['open-modal-resource'].hide()
-				this.$refs['suсcessDownload'].show()
-				setTimeout(() => {
-					this.$refs['suсcessDownload'].hide()
-				}, 7000);
 			}
 		}
 	}
@@ -328,7 +281,10 @@
 <style lang="scss">
 	.page-library {
 		.hero {
-			.row {
+			.TakeMe__group {
+				border: 1px solid $light-grey;
+			}
+			.row:not(.afterSend) {
 				position: relative;
 				z-index: 2;
 			}

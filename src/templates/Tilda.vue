@@ -117,6 +117,14 @@
 		.t-zoomer__wrapper {
 		    display: block;
 		}
+		@media screen and (max-width: 960px) {
+			.t-col {
+				padding-left: 0;
+				.t-col {
+					padding-left: 10px;
+				}
+			}
+		}
 	}
 	header , footer , .modal-dialog {
 		* , :before , :after {

@@ -84,7 +84,6 @@
 					}
 				}
 				//Открываем сайт в айфрэйм
-				console.log(this.openUrl)
 				let iframe = document.createElement('iframe') 
 				iframe.id = 'fit__site__iframe'
 				iframe.src = 'https://www.carrotquest.io/testdrive/frame/?site='  + this.openUrl

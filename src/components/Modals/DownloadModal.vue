@@ -10,13 +10,10 @@
 				<b-col lg="6" class="rightCol">
 					<b-row class="h-100 align-items-center">
 						<b-col>
-
 							<!-- Заголовок модалки -->
 							<div class="h3 mb-4" v-html="title" :class="{ 'd-none' : this.send }" />
-
 							<!-- Форма для сбора данных -->
 							<LidsForm @newdata="handleData($event)" :event="event" :before="before" :after="after" :button="button" :sale="sale" />
-
 						</b-col>
 					</b-row>
 				</b-col>
@@ -35,11 +32,11 @@
 		},
 		data: function() {
 			return {
-				after: 		'Спасибо. Всё успешно отправлено, проверьте свой email',
+				after: 		'Всё успешно отправлено, <br>проверьте свой email',
 				before: 	'',
 				button:		'Отправить',
 				event: 		'',
-				pic: 		'background-image: url(https://ik.imagekit.io/0nyjr4jxhmg//tr:w-400,h-400,cm-pad_resize/components/medium-17.png?ik-sdk-version=vuejs-1.0.9);',
+				pic: 		'background-image: url(https://ik.imagekit.io/0nyjr4jxhmg//tr:w-400,h-400,cm-pad_resize/components/medium-15.png?ik-sdk-version=vuejs-1.0.9);',
 				sale: 		false,
 				title:		'Получить материал на email',
 
@@ -63,6 +60,24 @@
 						if (!!addr.searchParams.get('cqe')) {
 							this.event = addr.searchParams.get('cqe')
 						}
+						// Отправлять в продажи
+						if (!!addr.searchParams.get('sale')) {
+							this.sale = true
+							this.after = 'Ксения позвонит вам с номера <NOBR>+7 (495) 105-91-69</NOBR>.<br>Если что, мы отвечаем в чате 😉'
+							gtag('event' , 			'lead form',
+								{'category': 		'phone, bottom of funnel',
+								'subject': 			'started fill the form',
+								'page_title': 		document.title,
+								'page_location': 	location.host + location.pathname
+							})
+						} else {
+							gtag('event' , 			'lead form' ,
+								{'category': 		'phone, top of funnel',
+								'subject': 			'started fill the form',
+								'page_title': 		document.title,
+								'page_location': 	location.host + location.pathname
+							})
+						}
 						// Текст перед отправкой
 						if (!!addr.searchParams.get('before')) {
 							this.before = addr.searchParams.get('before')
@@ -77,17 +92,11 @@
 						}
 						// Изображения
 						if (!!addr.searchParams.get('pic')) {
-							this.pic = 'background-image: url(https://ik.imagekit.io/0nyjr4jxhmg/tr:w-494/components/' + addr.searchParams.get('pic') + '?ik-sdk-version=vuejs-1.0.9);'
-						}
-						// Отправлять в продажи
-						if (!!addr.searchParams.get('sale')) {
-							this.sale = true
-							gtag('event' , 			'lead form',
-								{'category': 		'phone, bottom of funnel',
-								'subject': 			'started fill the form',
-								'page_title': 		document.title,
-								'page_location': 	location.host + location.pathname
-							})
+							if ( addr.searchParams.get('pic').indexOf('https') == -1 )
+								this.pic = 'background-image: url(https://ik.imagekit.io/0nyjr4jxhmg/tr:w-494/components/' + addr.searchParams.get('pic') + '?ik-sdk-version=vuejs-1.0.9);'
+							else {
+								this.pic = 'background-image: url(' + addr.searchParams.get('pic') + ';'
+							}
 						}
 					}.bind(this))
 				}.bind(this))
@@ -121,7 +130,7 @@
 			background-color: #CAC9FA !important;
 		}
 		.leftCol {
-			min-height: 18rem;
+			min-height: 30rem;
 		}
 		.h3.hide , form.hide {
 			transition: all 150ms cubic-bezier(0, 0, 0.2, 1);

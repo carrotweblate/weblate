@@ -400,10 +400,8 @@
 <style lang="scss">
 	.page-index {
 		.hero {
-			.Registration {
-				.TakeMe__group {
-					border: 1px solid $light-grey;
-				}
+			.TakeMe__group {
+				border: 1px solid $light-grey;
 			}
 			@keyframes h1_1st {
 				0%  { top: 0px; opacity:1; z-index:0;}

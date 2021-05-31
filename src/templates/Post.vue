@@ -56,10 +56,19 @@
 			</b-row>
 			
 			<!-- Изображение записи -->
-			<b-row v-if="$context.featured_media != '0'">
+			<b-row v-if="$context.featured_media_large != '0'">
 				<b-col col cols="12" class="post__image mt-4 mb-5">
-					<img v-if="$context.featured_media[2] != 274 " :src="$context.featured_media[0].split('wp.carrotquest.io').join('www.carrotquest.io')" :width="$context.featured_media[1]" :height="$context.featured_media[2]" />
-					<img v-else :src="$context.featured_media[0].split('wp.carrotquest.io').join('www.carrotquest.io')" :width="($context.featured_media[1] * 1.71875)" :height="( $context.featured_media[2] * 1.71875)" />
+					<img 
+						:srcset="
+							$context.featured_media_medium + ' 440w,' +
+							$context.featured_media_large[0].split('wp.carrotquest.io').join('www.carrotquest.io') + ' 1100w'
+						"
+						sizes="(max-width: 440px) 440px, 1100px"
+						:src="$context.featured_media_large[0].split('wp.carrotquest.io').join('www.carrotquest.io')" 
+						:width="$context.featured_media_large[1]" 
+						:height="$context.featured_media_large[2]" 
+						:alt="$context.title"
+					/>
 				</b-col>
 			</b-row>
 
@@ -126,7 +135,7 @@
 					title
 					slug
 					categories
-					featured_media
+					featured_media_medium
 					sticky
 				}
 			}
@@ -306,54 +315,23 @@
 
 							//Переменные формы
 							let event = item.dataset.event
-							let site = 'нет'
-							let email = ''
-							let phone = ''
-
-							//Определяем, скачивается ли файл
-							if (event.indexOf('скач') + event.indexOf('Скач') + event.indexOf('в лид-форме') + event.indexOf('-лист') + 4) {
-								carrotquest.track('Скачал лид-магнит')
-							}
-
-							if (!!item.querySelector('input[name="site"]')) {
-								site = item.querySelector('input[name="site"]').value
-							}
-							if (!!item.querySelector('input[name="email"]')) {
-								email = item.querySelector('input[name="email"]').value
-								carrotquest.track(event, {
-									'Email': email,
-									'Сайт:': site
-								})
-								carrotquest.identify({
-									'$email': email
-								},{ 
-									doubleSubscribe: true
-								})
-							}
-							if (!!item.querySelector('input[name="phone"]')) {
-								phone = item.querySelector('input[name="phone"]').value
-								carrotquest.track(event, {
-									'Телефон:': phone,
-									'Сайт:': site
-								})
-								carrotquest.identify({
-									'$phone': phone
-								})
-							}
-							
-							//Записался на демо или нет
-							if (event == 'Запрос на консультацию') {
-								carrotquest.track("Заполнил форму на демо", {
-									'phone': phone,
-									'type': 'form',
-									'url': location.host + location.pathname
-								})
-								dataLayer.push({ event: 'UAevent', eventCategory: 'leads', eventAction: 'phone', eventLabel: location.host + location.pathname })
-								fbq('trackCustom', 'get_demo', {page: location.pathname})
-							} else {
-								dataLayer.push({ event: 'UAevent', eventCategory: 'leads', eventAction: 'email', eventLabel: location.host + location.pathname })
-								fbq('trackCustom', 'get_lead', {page: location.pathname})
-							}
+							let email = item.querySelector('input[name="email"]').value
+							carrotquest.track(event, {
+								'Email': email,
+							})
+							carrotquest.identify({
+								'$email': email
+							},{ 
+								doubleSubscribe: true
+							})
+							dataLayer.push({ event: 'UAevent', eventCategory: 'leads', eventAction: 'email', eventLabel: location.host + location.pathname })
+							gtag('event' , 			'lead form' ,
+								{'category': 		'email, top of funnel',
+								'subject': 			'finished fill the form',
+								'page_title': 		document.title,
+								'page_location': 	location.host + location.pathname
+							})
+							fbq('trackCustom', 'get_lead', {page: location.pathname})
 							
 							item.classList = 'd-none'
 							document.getElementById(item.id.replace('form-begin_' , 'form-done_')).classList = document.getElementById(item.id.replace('form-begin_' , 'form-done_')).classList + ' d-block'
@@ -370,12 +348,7 @@
 							//Переменные формы
 							let event = item.dataset.event
 							let file = item.dataset.file
-							let email = ''
-
-							if (!!item.querySelector('input[name="email"]')) {
-								email = item.querySelector('input[name="email"]').value
-							}
-							carrotquest.track('Скачал лид-магнит')
+							let email = item.querySelector('input[name="email"]').value
 							carrotquest.track(event, {
 								'source' : 'Блог'
 							})
@@ -385,7 +358,13 @@
 								doubleSubscribe: true
 							})
 							dataLayer.push({ event: 'UAevent', eventCategory: 'leads', eventAction: 'email', eventLabel: location.host + location.pathname })
-							fbq('trackCustom', 'get_email', {page: location.pathname});
+							gtag('event' , 			'lead form' ,
+								{'category': 		'email, top of funnel',
+								'subject': 			'finished fill the form',
+								'page_title': 		document.title,
+								'page_location': 	location.host + location.pathname
+							})
+							fbq('trackCustom', 'get_lead', {page: location.pathname});
 							window.open(file, '_blank')
 
 							document.querySelector('.download_map .before').classList = 'd-none'

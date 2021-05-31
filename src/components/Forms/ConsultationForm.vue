@@ -53,8 +53,8 @@
 					{'op': 'update_or_create', 'key': '$name', 				'value': this.name },
 					{'op': 'update_or_create', 'key': '$phone', 			'value': this.phone },
 					{'op': 'update_or_create', 'key': '$email', 			'value': this.email },
-					{'op': 'update_or_create', 'key': '$email', 			'value': this.role },
-					{'op': 'update_or_create', 'key': '$email', 			'value': this.site },
+					{'op': 'update_or_create', 'key': 'Должность', 			'value': this.role },
+					{'op': 'update_or_create', 'key': 'Адрес сайта', 		'value': this.site },
 					{'op': 'update_or_create', 'key': 'Тип заявки', 		'value': 'Заполнил форму на демо' },
 					{'op': 'update_or_create', 'key': 'Источник заявки', 	'value': location.host + location.pathname }
 				]);
@@ -78,6 +78,8 @@
 					'page_location': 	location.host + location.pathname
 				})
 				fbq('trackCustom', 'get_demo', {page: location.pathname})
+				ym(25430054,'reachGoal','get_demo')
+				VK.Goal('conversion')
 				
 				this.send = true
 			}

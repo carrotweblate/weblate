@@ -1,7 +1,7 @@
 <template>
-	<header>
+	<header @click="openMegamenu">
 		
-		<b-navbar toggleable="lg" :class="{'pt-2 pb-2': scrolled, 'pt-2 pb-2 pt-md-4 pb-md-4': !scrolled, 'hideHeader': hideHeader, '': !hideHeader}" v-scroll="handleScroll" >
+		<b-navbar toggleable="lg" :class="{'pt-2 pb-2': scrolled, 'pt-2 pb-2 pt-md-4 pb-md-4': !scrolled, 'hideHeader': hideHeader, '': !hideHeader}" v-scroll="handleScroll">
 
 			<!-- Логотип -->
 			<g-link to="/">
@@ -9,7 +9,7 @@
 			</g-link>
 
 			<!-- Мобильное меню гамбургер -->
-			<b-navbar-toggle target="nav_collapse" class="pr-0" />
+			<b-navbar-toggle target="nav_collapse" class="pr-0" @click.stop="openMegamenu" />
 			
 			<!-- Обычное меню -->
 			<b-collapse is-nav id="nav_collapse">
@@ -119,7 +119,7 @@
 											<ul>
 												<li v-for="{ node } in $static.recent.edges" :key="node.id"  class="mb-3">
 													<a :href="'/blog/' + node.slug + '/'" class="megamenu__post">
-														<span :style="'background-image: url(' + node.featured_media + ')'" class="megamenu__post__pic d-block mr-3" />
+														<span :style="'background-image: url(' + node.featured_media_medium + ')'" class="megamenu__post__pic d-block mr-3" />
 														<span v-html="node.title" class="megamenu__post__title font14px" />
 													</a>
 												</li>
@@ -182,7 +182,7 @@
 				node {
 					title
 					slug
-					featured_media
+					featured_media_medium
 				}
 			}
 		}
@@ -362,7 +362,7 @@
 								{
 									title: 'Наши книги',
 									href: '/library/#books',
-									job: 'Подробная экспертиза от команды carrot quest (dashly)'
+									job: 'Подробная экспертиза от команды Carrot quest'
 								},
 								{
 									title: 'Вебинары и подкасты',
