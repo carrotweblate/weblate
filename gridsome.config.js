@@ -47,7 +47,7 @@ const collections = [{
 			title: item.title,
 			slug: item.slug,
 			modified: String(item.modified),
-			featured_media: item.featured_media_medium,
+			featured_media_medium: item.featured_media_medium,
 			meta: item.meta,
 			categories: item.categories,
 			content: item.content.substr(0,7000)
