@@ -1,5 +1,7 @@
 <template>
 	<div class="ConsultationForm">
+		<!-- Текст перед отправкой -->
+		<p v-html="before" :class="{ 'hide' : this.send }" />
 		<!-- Форма для сбора данных -->
 		<b-form v-on:submit.prevent="Consultation" :class="{ 'hide' : this.send }">
 			<TakeAll @newdata="handleData($event)" :button="button" />
@@ -25,6 +27,7 @@
 			TakeAll
 		},
 		props: {
+			before: String,
 			button: {
 				default: 'Отправить',
 				type: String

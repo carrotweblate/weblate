@@ -5,76 +5,141 @@
 			<b-container>
 				<b-row>
 					<b-col lg="9" xl="7">
-						<div class="h1">Готовые решения для разных типов бизнеса</div>
+						<div class="h1 mb-4">
+							Внедрим проверенные решения для каждого типа бизнеса
+						</div>
 					</b-col>
 				</b-row>
 				<b-row>
 					<b-col lg="4">
 						<div class="box h-100">
-							<!-- <g-image src="@/assets/images/components/small-15.png" fit="contain" background="transparent" height="222" alt="Для интернет магазинов" class="mb-4" /> -->
-							<ik-image
-								path="/components/small-15.png"
-								:transformation="[{height:222}]"
-								:lqip="{active:true, quality: 40, blur: 10}"
-								width="198"
-								height="111"
-								loading="lazy"
-								alt="Для интернет магазинов"
-								class="mb-4"
-							/>
-							<div class="h5 mb-3">Для интернет-магазинов</div>
+							<a href="/ecommerce/" class="d-flex align-items-center mb-4">
+								<!-- <g-image src="@/assets/images/components/small-15.png" fit="contain" background="transparent" height="222" alt="Для интернет магазинов" class="mb-4" /> -->
+								<ik-image
+									path="/components/small-15.png"
+									:transformation="[{width:78,height:68,cropMode:'pad_resize'}]"
+									:lqip="{active:true, quality: 40, blur: 10}"
+									width="78"
+									height="68"
+									loading="lazy"
+									alt="Для интернет магазинов"
+									class="mr-3"
+								/>
+								<div class="h5 mb-0">Интернет-магазинам</div>
+							</a>
 							<ul>
 								<li>Увеличение количества лидов на&nbsp;том&nbsp;же трафике</li>
-								<li>Борьба с&nbsp;брошенными корзинами</li>
-								<li>Возвращение уходящих пользователей</li>
-								<li>Увеличение повторных продаж</li>
+								<li>Снизим количество брошенных корзин</li>
+								<li>Вернем уходящих пользователей</li>
+								<li>Увеличим повторные продажи</li>
 							</ul>
+							<b-container class="ready__logos">
+								<b-row class="align-items-center">
+									<b-col cols="6" md="4" lg="6">
+										<div class="ready__logos__box">
+											<img src="/assets/images/logos/maria.svg" alt="maria" width="138" height="32" />
+										</div>
+									</b-col>
+									<b-col cols="6" md="4" lg="6">
+										<div class="ready__logos__box">
+											<img src="/assets/images/logos/westfalika.svg" alt="westfalika" width="138" height="28" />
+										</div>
+									</b-col>
+									<b-col cols="6" md="4" lg="6">
+										<div class="ready__logos__box">
+											<img src="/assets/images/logos/loreal.svg" alt="loreal" width="138" height="25" />
+										</div>
+									</b-col>
+								</b-row>
+							</b-container>
 							<b-button href="/ecommerce/" variant="primary">Подробнее</b-button>
 						</div>
 					</b-col>
 					<b-col lg="4">
 						<div class="box h-100">
-							<!-- <g-image src="@/assets/images/components/small-24.png" fit="contain" background="transparent" height="222" alt="Для интернет сервисов (SaaS)" class="mb-4" /> -->
-							<ik-image
-								path="/components/small-24.png"
-								:transformation="[{height:222}]"
-								:lqip="{active:true, quality: 40, blur: 10}"
-								width="175"
-								height="111"
-								loading="lazy"
-								alt="Для интернет сервисов (SaaS)"
-								class="mb-4"
-							/>
-							<div class="h5 mb-3">Для онлайн-сервисов (SaaS)</div>
+							<a href="/saas/" class="d-flex align-items-center mb-4">
+								<!-- <g-image src="@/assets/images/components/small-24.png" fit="contain" background="transparent" height="222" alt="Для интернет сервисов (SaaS)" class="mb-4" /> -->
+								<ik-image
+									path="/components/small-24.png"
+									:transformation="[{width:78,height:68,cropMode:'pad_resize'}]"
+									:lqip="{active:true, quality: 40, blur: 10}"
+									width="78"
+									height="68"
+									loading="lazy"
+									alt="Для интернет сервисов (SaaS)"
+									class="mr-3"
+								/>
+								<div class="h5 mb-0">Онлайн-сервисам</div>
+							</a>
 							<ul>
-								<li>Увеличение количества лидов на&nbsp;том&nbsp;же трафике сайта</li>
-								<li>Организация поддержки пользователей</li>
-								<li>Вовлечение и&nbsp;удержание пользователей в&nbsp;продукте</li>
-								<li>Аналитика поведения пользователей в&nbsp;продукте и&nbsp;использования фичей</li>
+								<li>Увеличение количества лидов на том же трафике сайта</li>
+								<li>Снизим нагрузку на службу поддержки</li>
+								<li>Улучшим C1 и retention</li>
+								<li>Настроим аналитику пользовательского поведения и исследуем использование фичей</li>
 							</ul>
+							<b-container class="ready__logos">
+								<b-row class="align-items-center">
+									<b-col cols="6" md="4" lg="6">
+										<div class="ready__logos__box">
+											<img src="/assets/images/logos/geekbrains.svg" alt="geekbrains" width="138" height="24" />
+										</div>
+									</b-col>
+									<b-col cols="6" md="4" lg="6">
+										<div class="ready__logos__box">
+											<img src="/assets/images/logos/kontur.svg" alt="kontur" width="138" height="32" />
+										</div>
+									</b-col>
+									<b-col cols="6" md="4" lg="6">
+										<div class="ready__logos__box">
+											<img src="/assets/images/logos/timepad.svg" alt="timepad" width="138" height="16" />
+										</div>
+									</b-col>
+								</b-row>
+							</b-container>
 							<b-button href="/saas/" variant="primary">Подробнее</b-button>
 						</div>
 					</b-col>
 					<b-col lg="4">
 						<div class="box h-100">
-							<!-- <g-image src="@/assets/images/components/small-25.png" fit="contain" background="transparent" height="222" alt="Для крупных компаний" class="mb-4" /> -->
-							<ik-image
-								path="/components/small-25.png"
-								:transformation="[{height:222}]"
-								:lqip="{active:true, quality: 40, blur: 10}"
-								width="190"
-								height="111"
-								loading="lazy"
-								alt="Для крупных компаний"
-								class="mb-4"
-							/>
-							<div class="h5 mb-3">Для крупных компаний</div>
+							<a href="/introduction-carrotquest/" class="d-flex align-items-center mb-4">
+								<!-- <g-image src="@/assets/images/components/small-25.png" fit="contain" background="transparent" height="222" alt="Для крупных компаний" class="mb-4" /> -->
+								<ik-image
+									path="/components/small-25.png"
+									:transformation="[{width:78,height:68,cropMode:'pad_resize'}]"
+									:lqip="{active:true, quality: 40, blur: 10}"
+									width="78"
+									height="68"
+									loading="lazy"
+									alt="Крупным компаниям"
+									class="mr-3"
+								/>
+								<div class="h5 mb-0">Крупным компаниям</div>
+							</a>
 							<ul>
-								<li>Весь сервис без ограничений</li>
-								<li>Подключим нашего эксперта</li>
-								<li>Поделимся экспертизой по&nbsp;автоматизации маркетинга и&nbsp;построению процесса тестирования гипотез</li>
-								<li>Запустим гипотезы на&nbsp;увеличение конверсии на&nbsp;вашем сайте (на&nbsp;сбор лидов, на&nbsp;удержание клиентов, на&nbsp;возвращение клиентов)</li>
+								<li>Проведем аудит лидогенерации и подскажем точки роста</li>
+								<li>Поделимся экспертизой и кейсами из вашей отрасли</li>
+								<li>Автоматизируем маркетинговую рутину</li>
+								<li>Настроим процесс тестирования гипотез и научим растить нужные метрики</li>
 							</ul>
+							<b-container class="ready__logos">
+								<b-row class="align-items-center">
+									<b-col cols="6" md="4" lg="6">
+										<div class="ready__logos__box">
+											<img src="/assets/images/logos/samolet.svg" alt="samolet" />
+										</div>
+									</b-col>
+									<b-col cols="6" md="4" lg="6">
+										<div class="ready__logos__box py-2">
+											<img src="/assets/images/logos/domru.svg" alt="domru" style="max-height: 2.5rem" />
+										</div>
+									</b-col>
+									<b-col cols="6" md="4" lg="6">
+										<div class="ready__logos__box">
+											<img src="/assets/images/logos/bank-spb.svg" alt="bank-spb" />
+										</div>
+									</b-col>
+								</b-row>
+							</b-container>
 							<b-button href="/introduction-carrotquest/" variant="primary">Подробнее</b-button>
 						</div>
 					</b-col>
@@ -92,21 +157,15 @@
 			border-radius: 5px;
 			padding: 1.5rem 1.25rem;
 		}
-		img {
-			display: block;
-			margin: -5rem auto 0;
-			width: auto;
-			height: 111px;
-		}
-		.h1 {
-			margin-bottom: 5rem;
+		a {
+			color: #000;
 		}
 		ul {
 			padding: 0;
-			margin-bottom: 3.5rem;
+			margin-bottom: 2rem;
 			li {
 				margin: 0;
-				margin-bottom: 8px;
+				margin-bottom: 1rem;
 				padding-left: 1.5rem !important;
 				position: relative;
 				list-style: none;
@@ -118,9 +177,37 @@
 				position: absolute;
 			}
 		}
+		&__logos {
+			margin-bottom: 4rem !important;
+			.row {
+				margin: 0 -30px;
+				.col-6 {
+					padding-right: 0.625rem;
+    				padding-left: 0.625rem;
+					height: 100%;
+				}
+			}
+			&__box {
+				text-align: center;
+				height: 100%;
+				background-color: $blue;
+				border-radius: 5px;
+				padding: 1rem;
+				margin-bottom: 1.25rem;
+				img {
+					max-width: 100%;
+					max-height: 1.7rem;
+					transition: all 150ms cubic-bezier(0, 0, 0.2, 1);
+					filter: grayscale(100%);
+					&:hover {
+						filter: grayscale(0);
+					}
+				}
+			}
+		}
 		.btn {
 			position: absolute;
-			bottom: 20px;
+			bottom: 1.5rem;
 		}
 		@media (max-width: 991.98px) {
 			.col-lg-4 {

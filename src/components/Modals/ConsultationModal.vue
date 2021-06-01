@@ -13,7 +13,7 @@
 					<div class="h3 mb-4" v-html="title" :class="{ 'hide' : this.send }" />
 
 					<!-- Форма для сбора данных -->
-					<ConsultationForm @newdata="handleData($event)" button="Отправить" />
+					<ConsultationForm @newdata="handleData($event)" :before="before" :button="button" />
 
 					<!-- Контактная информация -->
 					<div class="mt-4 font14px">
@@ -38,9 +38,11 @@
 		},
 		data: function() {
 			return {
-				title:	'Оставить заявку на консультацию',
-				pic: 	'background-image: url(https://ik.imagekit.io/0nyjr4jxhmg/tr:w-494/components/medium-12.png?ik-sdk-version=vuejs-1.0.9);',
-				send: 	false
+				title:		'Оставить заявку на консультацию',
+				before: 	'',
+				button:		'Отправить',
+				pic: 		'background-image: url(https://ik.imagekit.io/0nyjr4jxhmg/tr:w-494/components/medium-12.png?ik-sdk-version=vuejs-1.0.9);',
+				send: 		false
 			};
 		},
 		mounted () {
@@ -55,9 +57,21 @@
 						if (!!addr.searchParams.get('title')) {
 							this.title = addr.searchParams.get('title')
 						}
+						// Текст перед отправкой
+						if (!!addr.searchParams.get('before')) {
+							this.before = addr.searchParams.get('before')
+						}
+						// Текст кнопки
+						if (!!addr.searchParams.get('button')) {
+							this.button = addr.searchParams.get('button')
+						}
 						// Изображения
 						if (!!addr.searchParams.get('pic')) {
-							this.pic = 'background-image: url(https://ik.imagekit.io/0nyjr4jxhmg/tr:w-494/components/' + addr.searchParams.get('pic') + '?ik-sdk-version=vuejs-1.0.9);'
+							if ( this.pic.indexOf('https') == -1 )
+								this.pic = 'background-image: url(https://ik.imagekit.io/0nyjr4jxhmg/tr:w-494/components/' + addr.searchParams.get('pic') + '?ik-sdk-version=vuejs-1.0.9);'
+							else {
+								this.pic = 'background-image: url(' + addr.searchParams.get('pic') + ';'
+							}
 						}
 
 						gtag('event' , 			'lead form' ,
@@ -78,7 +92,7 @@
 			// Данные из формы
 			handleData: function(e) {
 				this.send = e;
-			},
+			}
 		},
 		watch: {
 			// Что делать после отправки формы

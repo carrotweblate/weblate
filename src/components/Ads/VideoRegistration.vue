@@ -6,16 +6,9 @@
 				<b-row >
 					<b-col col-12 lg="6">
 						<a v-b-modal.youtubeCQ class="VideoRegistration__play">
-							<g-image class="VideoRegistration__bg" src="@/assets/images/components/VideoAbout.png" width="680" alt="Видео" />
+							<g-image class="VideoRegistration__bg" src="@/assets/images/components/VideoAbout.png" width="530" alt="Видео" />
 						</a>
-						<b-modal id="youtubeCQ" size="xl" hide-header hide-footer>
-							<b-embed
-								type="iframe"
-								aspect="16by9"
-								src="https://www.youtube.com/embed/RNOS-68LaSk?autoplay=1"
-								allowfullscreen
-							></b-embed>
-						</b-modal>
+						<VideoModal />
 					</b-col>
 					<b-col col-12 lg="6">
 						<div class="h1 mt-4 mt-md-5 mt-lg-0">Продавайте больше на&nbsp;том&nbsp;же объеме трафика с&nbsp;помощью онлайн-чата и&nbsp;автоматизации</div>
@@ -34,13 +27,13 @@
 
 
 <script>
-	import RegistrationForm from '~/components/Forms/RegistrationForm.vue'
-	import { BEmbed } 		from 'bootstrap-vue'
+	import RegistrationForm 	from '~/components/Forms/RegistrationForm.vue'
+	import VideoModal 			from '~/components/Modals/VideoModal.vue'
 
 	export default {
 		components: {
 			RegistrationForm,
-			BEmbed
+			VideoModal
 		},
 	}
 </script>
@@ -51,6 +44,10 @@
 	.VideoRegistration {
 		background: #F8F8FF;
 		padding: 6rem 0;
+
+		.TakeMe__group {
+			border: 1px solid $light-grey;
+		}
 
 		&__bg {
 			border-radius: 5px;

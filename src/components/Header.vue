@@ -5,7 +5,7 @@
 
 			<!-- Логотип -->
 			<g-link to="/">
-				<img src="@/assets/images/components/logo.svg" width="178" height="40" class="logo ml-2 ml-md-3" alt="Carrot quest" />
+				<img src="@/assets/images/components/logo.svg" width="178" height="40" class="logo ml-2 ml-md-3" alt="Carrot&nbsp;quest" />
 			</g-link>
 
 			<!-- Мобильное меню гамбургер -->
@@ -271,7 +271,7 @@
 							{
 								title: 'SDK для Android и iOS',
 								href: '/sdk/',
-								job: 'Добавляет функционал Carrot quest в ваше клиентское мобильное приложение',
+								job: 'Добавляет функционал Carrot&nbsp;quest в ваше клиентское мобильное приложение',
 								order: 4
 							},
 							{
@@ -335,12 +335,17 @@
 								{
 									title: 'API',
 									href: 'https://developers.carrotquest.io/',
-									job: 'О том, как разработчику интегрировать Carrot quest на сайт'
+									job: 'О том, как разработчику интегрировать Carrot&nbsp;quest на сайт'
 								},
 								{
 									title: 'Видеокурс',
 									href: '/videocourse-online-sales/',
-									job: 'Как увеличить продажи на том же трафике, используя инструменты Carrot quest'
+									job: 'Как увеличить продажи на том же трафике, используя инструменты Carrot&nbsp;quest'
+								},
+								{
+									title: 'Партнерская программа',
+									href: '/partner/',
+									job: 'Зарабатывайте за каждое внедрение Carrot&nbsp;quest. Реферальная программа'
 								},
 							],
 							content: [
@@ -362,7 +367,7 @@
 								{
 									title: 'Наши книги',
 									href: '/library/#books',
-									job: 'Подробная экспертиза от команды Carrot quest'
+									job: 'Подробная экспертиза от команды Carrot&nbsp;quest'
 								},
 								{
 									title: 'Вебинары и подкасты',
@@ -416,8 +421,8 @@
 						href: '/blog/'
 					},
 					{
-						title: 'Партнерам',
-						href: '/partner/'
+						title: 'Кейсы',
+						href: '/cases/'
 					}
 				]
 			}

@@ -47,7 +47,7 @@ const collections = [{
 			title: item.title,
 			slug: item.slug,
 			modified: String(item.modified),
-			featured_media: item.featured_media_medium,
+			featured_media_medium: item.featured_media_medium,
 			meta: item.meta,
 			categories: item.categories,
 			content: item.content.substr(0,7000)
@@ -74,17 +74,27 @@ module.exports = {
 				debug: false
 			}
 		},
-		// Поиск по блогу
+		// Critical
 		{
-			use: `gridsome-plugin-algolia`,
+			use: '@gridsome/plugin-critical',
 			options: {
-				appId: '7Y1P83X4M1',
-				apiKey: 'e268d391762ad62104c571742cfd1afa',
-				collections,
-				chunkSize: 10000, // default: 1000
-				enablePartialUpdates: true, // default: false
-			},
+				paths: ['/'],
+				width: 1300,
+				height: 900
+			}
 		},
+		// // Поиск по блогу
+		// {
+		// 	use: `gridsome-plugin-algolia`,
+		// 	options: {
+		// 		appId: '7Y1P83X4M1',
+		// 		apiKey: 'e268d391762ad62104c571742cfd1afa',
+		// 		collections,
+		// 		chunkSize: 10000, // default: 1000
+		// 		enablePartialUpdates: true, // default: false
+		// 	},
+		// },
+		// PWA
 		{
 			use: 'gridsome-plugin-manifest',
 			options: {
