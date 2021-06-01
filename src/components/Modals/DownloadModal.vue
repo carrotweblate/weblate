@@ -45,11 +45,62 @@
 		},
 		mounted () {
 			// Ищем ссылки для открытия модалок для записи на демо
-			this.findHrefs()
-		},
-		updated () {
-			// Ищем ссылки для открытия модалок для записи на демо
-			this.findHrefs()
+			if ( document.querySelector('a[href*="#open-modal-download"],a[href*="#open-modal-url"]') ) {
+				document.querySelectorAll('a[href*="#open-modal-download"],a[href*="#open-modal-url"]').forEach(function(item) {
+					item.addEventListener('click', function(e) {
+						e.preventDefault()
+						this.$refs['open-modal-download'].show()
+						
+						let addr = new URL(e.srcElement.href.replace('#open-modal-download' , '').replace('#open-modal-url' , ''))
+						// Заголовок
+						if (!!addr.searchParams.get('title')) {
+							this.title = addr.searchParams.get('title')
+						}
+						// Событие
+						if (!!addr.searchParams.get('cqe')) {
+							this.event = addr.searchParams.get('cqe')
+						}
+						// Отправлять в продажи
+						if (!!addr.searchParams.get('sale')) {
+							this.sale = true
+							this.after = 'Ксения позвонит вам с номера <NOBR>+7 (495) 105-91-69</NOBR>.<br>Если что, мы отвечаем в чате 😉'
+							gtag('event' , 			'lead form',
+								{'category': 		'phone, bottom of funnel',
+								'subject': 			'started fill the form',
+								'page_title': 		document.title,
+								'page_location': 	location.host + location.pathname
+							})
+						} else {
+							gtag('event' , 			'lead form' ,
+								{'category': 		'phone, top of funnel',
+								'subject': 			'started fill the form',
+								'page_title': 		document.title,
+								'page_location': 	location.host + location.pathname
+							})
+						}
+						// Текст перед отправкой
+						if (!!addr.searchParams.get('before')) {
+							this.before = addr.searchParams.get('before')
+						}
+						// Текст после отправки
+						if (!!addr.searchParams.get('after')) {
+							this.after = addr.searchParams.get('after')
+						}
+						// Текст кнопки
+						if (!!addr.searchParams.get('button')) {
+							this.button = addr.searchParams.get('button')
+						}
+						// Изображения
+						if (!!addr.searchParams.get('pic')) {
+							if ( addr.searchParams.get('pic').indexOf('https') == -1 )
+								this.pic = 'background-image: url(https://ik.imagekit.io/0nyjr4jxhmg/tr:w-494/components/' + addr.searchParams.get('pic') + '?ik-sdk-version=vuejs-1.0.9);'
+							else {
+								this.pic = 'background-image: url(' + addr.searchParams.get('pic') + ';'
+							}
+						}
+					}.bind(this))
+				}.bind(this))
+			}
 		},
 		methods: {
 			// Закрытие модалки
@@ -59,66 +110,7 @@
 			// Данные из формы
 			handleData: function(e) {
 				this.send = e;
-			},
-			// Ищем ссылки для открытия модалок для записи на демо
-			findHrefs() {
-				if ( document.querySelector('a[href*="#open-modal-download"],a[href*="#open-modal-url"]') ) {
-					document.querySelectorAll('a[href*="#open-modal-download"],a[href*="#open-modal-url"]').forEach(function(item) {
-						item.addEventListener('click', function(e) {
-							e.preventDefault()
-							this.$refs['open-modal-download'].show()
-							
-							let addr = new URL(e.srcElement.href.replace('#open-modal-download' , '').replace('#open-modal-url' , ''))
-							// Заголовок
-							if (!!addr.searchParams.get('title')) {
-								this.title = addr.searchParams.get('title')
-							}
-							// Событие
-							if (!!addr.searchParams.get('cqe')) {
-								this.event = addr.searchParams.get('cqe')
-							}
-							// Отправлять в продажи
-							if (!!addr.searchParams.get('sale')) {
-								this.sale = true
-								this.after = 'Ксения позвонит вам с номера <NOBR>+7 (495) 105-91-69</NOBR>.<br>Если что, мы отвечаем в чате 😉'
-								gtag('event' , 			'lead form',
-									{'category': 		'phone, bottom of funnel',
-									'subject': 			'started fill the form',
-									'page_title': 		document.title,
-									'page_location': 	location.host + location.pathname
-								})
-							} else {
-								gtag('event' , 			'lead form' ,
-									{'category': 		'phone, top of funnel',
-									'subject': 			'started fill the form',
-									'page_title': 		document.title,
-									'page_location': 	location.host + location.pathname
-								})
-							}
-							// Текст перед отправкой
-							if (!!addr.searchParams.get('before')) {
-								this.before = addr.searchParams.get('before')
-							}
-							// Текст после отправки
-							if (!!addr.searchParams.get('after')) {
-								this.after = addr.searchParams.get('after')
-							}
-							// Текст кнопки
-							if (!!addr.searchParams.get('button')) {
-								this.button = addr.searchParams.get('button')
-							}
-							// Изображения
-							if (!!addr.searchParams.get('pic')) {
-								if ( addr.searchParams.get('pic').indexOf('https') == -1 )
-									this.pic = 'background-image: url(https://ik.imagekit.io/0nyjr4jxhmg/tr:w-494/components/' + addr.searchParams.get('pic') + '?ik-sdk-version=vuejs-1.0.9);'
-								else {
-									this.pic = 'background-image: url(' + addr.searchParams.get('pic') + ';'
-								}
-							}
-						}.bind(this))
-					}.bind(this))
-				}
-			} 
+			}
 		},
 		watch: {
 			// Что делать после отправки формы

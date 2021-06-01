@@ -18,8 +18,32 @@
 						<b-form-input id="title" v-model="title" placeholder="" class="mb-4"></b-form-input>
 
 						<template v-if="href != '#open-modal-consultation'">
-							<label :for="cqe">Событие лидформы:</label>
+							<label :for="cqe">Событие лидформы (если пусто, то просто подписка):</label>
 							<b-form-input id="cqe" v-model="cqe" placeholder="" class="mb-4"></b-form-input>
+						</template>
+
+						<label :for="before">Текст перед формой:</label>
+						<b-form-input id="before" v-model="before" placeholder="" class="mb-4"></b-form-input>
+
+						<template v-if="href != '#open-modal-consultation'">
+							<label :for="after">Текст после отправки:</label>
+							<b-form-input id="after" v-model="after" placeholder="" class="mb-4"></b-form-input>
+						</template>
+
+						<label :for="pic">Изображение (до 500×500 пикселей):</label>
+						<b-form-input id="pic" v-model="pic" placeholder="" class="mb-4"></b-form-input>
+
+						<label :for="button">Текст кнопки:</label>
+						<b-form-input id="button" v-model="button" placeholder="" class="mb-4"></b-form-input>
+
+						<template v-if="href != '#open-modal-consultation' && href != '#open-modal-mini' ">
+							<b-form-checkbox
+								id="sale"
+								v-model="sale"
+								value="true"
+								>
+								Отправлять в продажи
+							</b-form-checkbox>
 						</template>
 
 						<b-button type="submit" variant="primary" class="px-3 py-2 mt-4 w-100">
@@ -42,11 +66,11 @@
 </template>
 
 <script>
-	import { BFormSelect } from 'bootstrap-vue'
+	import { BFormSelect , BFormCheckbox } from 'bootstrap-vue'
 
 	export default {
 		components: {
-			BFormSelect
+			BFormSelect , BFormCheckbox
 		},
 		data() {
 			return {
@@ -72,7 +96,31 @@
 				this.finalHref = this.href
 
 				if (this.title != '') {
-					this.finalHref = this.href + '?title=' + this.title
+					this.finalHref = this.finalHref + '?title=' + this.title
+				}
+
+				if (this.cqe != '') {
+					this.finalHref = this.finalHref + '?cqe=' + this.cqe
+				}
+
+				if (this.before != '') {
+					this.finalHref = this.finalHref + '?before=' + this.before
+				}
+
+				if (this.after != '') {
+					this.finalHref = this.finalHref + '?after=' + this.after
+				}
+
+				if (this.pic != '') {
+					this.finalHref = this.finalHref + '?pic=' + this.pic
+				}
+
+				if (this.button != '') {
+					this.finalHref = this.finalHref + '?button=' + this.button
+				}
+
+				if (this.sale != '') {
+					this.finalHref = this.finalHref + '?sale=true'
 				}
 			},
 			copy() {
