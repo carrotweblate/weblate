@@ -45,30 +45,11 @@
 		},
 		mounted () {
 			// Ищем ссылки для открытия модалок для записи на демо
-			if ( document.querySelector('a[href*="#open-modal-consultation"],a[href*="#open-demo-pop-up"],a[href*="#open-modal-demo"]') ) {
-				document.querySelectorAll('a[href*="#open-modal-consultation"],a[href*="#open-demo-pop-up"],a[href*="#open-modal-demo"]').forEach(function(item) {
-					item.addEventListener('click', function(e) {
-						e.preventDefault()
-						this.$refs['open-modal-consultation'].show()
-						let addr = new URL(e.srcElement.href.replace('#open-modal-consultation' , '').replace('#open-demo-pop-up' , ''))
-						// Заголовок
-						if (!!addr.searchParams.get('title')) {
-							this.title = addr.searchParams.get('title')
-						}
-						// Изображения
-						if (!!addr.searchParams.get('pic')) {
-							this.pic = 'background-image: url(https://ik.imagekit.io/0nyjr4jxhmg/tr:w-494/components/' + addr.searchParams.get('pic') + '?ik-sdk-version=vuejs-1.0.9);'
-						}
-
-						gtag('event' , 			'lead form' ,
-							{'category': 		'demo',
-							'subject': 			'started fill the form',
-							'page_title': 		document.title,
-							'page_location': 	location.host + location.pathname
-						})
-					}.bind(this))
-				}.bind(this))
-			}
+			findHrefs()
+		},
+		updated () {
+			// Ищем ссылки для открытия модалок для записи на демо
+			findHrefs()
 		},
 		methods: {
 			// Закрытие модалки
@@ -79,6 +60,33 @@
 			handleData: function(e) {
 				this.send = e;
 			},
+			// Ищем ссылки для открытия модалок для записи на демо
+			findHrefs() {
+				if ( document.querySelector('a[href*="#open-modal-consultation"],a[href*="#open-demo-pop-up"],a[href*="#open-modal-demo"]') ) {
+					document.querySelectorAll('a[href*="#open-modal-consultation"],a[href*="#open-demo-pop-up"],a[href*="#open-modal-demo"]').forEach(function(item) {
+						item.addEventListener('click', function(e) {
+							e.preventDefault()
+							this.$refs['open-modal-consultation'].show()
+							let addr = new URL(e.srcElement.href.replace('#open-modal-consultation' , '').replace('#open-demo-pop-up' , ''))
+							// Заголовок
+							if (!!addr.searchParams.get('title')) {
+								this.title = addr.searchParams.get('title')
+							}
+							// Изображения
+							if (!!addr.searchParams.get('pic')) {
+								this.pic = 'background-image: url(https://ik.imagekit.io/0nyjr4jxhmg/tr:w-494/components/' + addr.searchParams.get('pic') + '?ik-sdk-version=vuejs-1.0.9);'
+							}
+
+							gtag('event' , 			'lead form' ,
+								{'category': 		'demo',
+								'subject': 			'started fill the form',
+								'page_title': 		document.title,
+								'page_location': 	location.host + location.pathname
+							})
+						}.bind(this))
+					}.bind(this))
+				}
+			}
 		},
 		watch: {
 			// Что делать после отправки формы
