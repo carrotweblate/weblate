@@ -384,12 +384,7 @@
 				metaTitle: 'Инструменты для увеличения продаж на сайтах без привлечения нового трафика',
 				metaDescription: 'Carrot quest — сервис для увеличения продаж, автоматизации маркетинга, улучшения коммуникации с клиентами ✔️онлайн-консультант ✔️чат-боты ✔️поп-ап окна ✔️триггерные письма ✔️eCRM',
 				metaCanonical: 'https://www.carrotquest.io/',
-				metaImage: 'https://www.carrotquest.io/assets/images/cover/index.gif',
-
-				//Бегущие числа
-				carrotNumbersCommunications: 758464786,
-				carrotNumbersLids: 94324071,
-				carrotNumbersSites: 9325,
+				metaImage: 'https://www.carrotquest.io/assets/images/cover/index.jpeg',
 
 				visible: false
 			};
