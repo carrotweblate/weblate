@@ -17,7 +17,7 @@
 						<g-image src="@/assets/images/knowledge-base/right-book.svg" quality="100" class="hero__book hero__book-right d-none d-lg-block" alt="Правая книга" />
 
 					</b-col>
-					<g-image src="@/assets/images/knowledge-base/hero.png" quality="100" class="hero__pic mw-100 d-none d-lg-block" alt="Разгрузите техподдержку: создайте базу знаний для вашего сайта" />
+					<g-image src="@/assets/images/knowledge-base/hero.png" width="800" height="606" quality="100" class="hero__pic mw-100 d-none d-lg-block" alt="Разгрузите техподдержку: создайте базу знаний для вашего сайта" />
 				</b-row>
 			</b-container>
 		</section>

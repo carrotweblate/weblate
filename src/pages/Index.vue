@@ -172,7 +172,7 @@
 			<!-- Инструменты -->
 			<b-container class="instruments">
 				<b-row>
-					<b-col md="6" xl="4">
+					<b-col md="6" xl="4" class="mb-5 h-100">
 						<g-link to="/online-consultant/" class="d-block font24px withbg first">
 							<span>Онлайн-консультант</span>
 							<ik-image
@@ -184,6 +184,129 @@
 								loading="lazy"
 								alt="Онлайн-консультант"
 								class="mw-100"
+							/>
+						</g-link>
+					</b-col>
+					<b-col md="6" xl="4" class="mb-5 h-100">
+						<g-link to="/chatbot/" class="d-block font24px withbg second">
+							<span>Чат-боты для сайта</span>
+							<ik-image
+								path="/components/medium-22.png"
+								:transformation="[{width:330,height:340}]"
+								:lqip="{active:true, quality: 40, blur: 10}"
+								width="330"
+								height="340"
+								loading="lazy"
+								alt="Чат-боты для сайта"
+								class="mw-100"
+							/>
+						</g-link>
+					</b-col>
+					<b-col md="6" xl="4" class="mb-5 h-100">
+						<g-link to="/pop-up/" class="d-block font24px withbg third">
+							<span>Pop-up окна</span>
+							<ik-image
+								path="/components/medium-23.png"
+								:transformation="[{width:300,height:370}]"
+								:lqip="{active:true, quality: 40, blur: 10}"
+								width="300"
+								height="370"
+								loading="lazy"
+								alt="Pop-up окна"
+								class="mw-100"
+							/>
+						</g-link>
+					</b-col>
+					<b-col md="6" xl="8" class="mb-5 h-100">
+						<g-link to="/lead-manager/" class="d-block font24px">
+							<span>Трекинг данных о пользователях</span>
+							<!-- Для мобилки -->
+							<ik-image
+								path="/components/video-about.png"
+								:transformation="[{width:374,height:185}]"
+								:lqip="{active:true, quality: 40, blur: 10}"
+								width="354"
+								height="430"
+								loading="lazy"
+								alt="Трекинг данных о пользователях"
+								class="mw-100 mt-4 d-md-none"
+								style="border-radius: 5px;"
+							/>
+							<!-- Для десктопа -->
+							<ik-image
+								path="/components/video-about.png"
+								:transformation="[{width:868,height:430}]"
+								:lqip="{active:true, quality: 40, blur: 10}"
+								width="868"
+								height="430"
+								loading="lazy"
+								alt="Трекинг данных о пользователях"
+								class="mw-100 mt-4 d-none d-md-block"
+								style="border-radius: 5px;"
+							/>
+						</g-link>
+					</b-col>
+					<b-col md="6" xl="4" class="mb-5 h-100">
+						<g-link to="/email-marketing/" class="d-block font24px">
+							<span>Триггерные e-mail-кампании</span>
+							<ik-image
+								path="/components/medium-24.png"
+								:transformation="[{width:354,height:430}]"
+								:lqip="{active:true, quality: 40, blur: 10}"
+								width="354"
+								height="430"
+								loading="lazy"
+								alt="Триггерные e-mail-кампании"
+								class="mw-100 mt-4"
+								style="border-radius: 5px;"
+							/>
+						</g-link>
+					</b-col>
+					<b-col md="6" xl="4" class="mb-5 h-100">
+						<g-link to="/knowledge-base/" class="d-block font24px">
+							<span>База знаний<br> для вашего сайта</span>
+							<ik-image
+								path="/components/medium-25.png"
+								:transformation="[{width:412,height:312}]"
+								:lqip="{active:true, quality: 40, blur: 10}"
+								width="412"
+								height="312"
+								loading="lazy"
+								alt="База знаний для вашего сайта"
+								class="mw-100 mt-4"
+								style="border-radius: 5px;"
+							/>
+						</g-link>
+					</b-col>
+					<b-col md="6" xl="4" class="mb-5 h-100">
+						<g-link href="https://developers.carrotquest.io/" class="d-block font24px">
+							<span>API</span>
+							<ik-image
+								path="/components/medium-26.png"
+								:transformation="[{width:412,height:312}]"
+								:lqip="{active:true, quality: 40, blur: 10}"
+								width="412"
+								height="312"
+								loading="lazy"
+								alt="API"
+								class="mw-100 mt-4"
+								style="border-radius: 5px;"
+							/>
+						</g-link>
+					</b-col>
+					<b-col md="6" xl="4" class="mb-5 h-100">
+						<g-link to="/sdk/" class="d-block font24px">
+							<span>Чат и push в мобильных приложениях</span>
+							<ik-image
+								path="/components/medium-27.png"
+								:transformation="[{width:412,height:311}]"
+								:lqip="{active:true, quality: 40, blur: 10}"
+								width="412"
+								height="311"
+								loading="lazy"
+								alt="Чат и push в мобильных приложениях"
+								class="mw-100 mt-4"
+								style="border-radius: 5px;"
 							/>
 						</g-link>
 					</b-col>
@@ -459,13 +582,16 @@
 			.instruments {
 				a {
 					position: relative;
+					
 					span {
 						color: #000;
 						border-bottom: 1px solid $primary;
 					}
 					img {
+						display: block;
 						position: relative;
 						z-index: 2;
+						height: auto;
 					}
 					&:hover {
 						span {
@@ -473,9 +599,10 @@
 						}
 					}
 					&.withbg {
+						overflow: hidden;
+						padding-bottom: 2rem;
 						img {
-							display: block;
-							margin: 3.5rem auto 0;
+							width: 200px;
 						}
 						&::before {
 							content: " ";
@@ -486,11 +613,12 @@
 							bottom: 0;
 							left: 0;
 							right: 0;
-							height: 520px;
-							
 						}
 					}
 					&.first {
+						img {
+							margin: 3.5rem auto 0;
+						}
 						&::before {
 							background: 
 								linear-gradient(0deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), 
@@ -498,11 +626,53 @@
 							border-radius: 0px 0px 50px 0px;
 						}
 					}
+					&.second {
+						img {
+							margin: 10.25rem auto 0;
+						}
+						&::before {
+							background: 
+								linear-gradient(0deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), 
+								linear-gradient(320.63deg, #FFFFFF 3.76%, rgba(255, 255, 255, 0) 89.73%);
+							border-radius: 0px 0px 50px 0px;
+						}
+					}
+					&.third {
+						img {
+							margin: 3.5rem auto 0;
+						}
+						&::before {
+							background: 
+								linear-gradient(0deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), 
+								linear-gradient(218.04deg, #FFFFFF 17.83%, rgba(255, 255, 255, 0) 72.44%);
+							border-radius: 0px 50px 0px 0px;
+						}
+					}
 				}
 				@media (min-width: 1200px) {
 					a {
+						&.withbg {
+							height: 36.25rem;
+						}
 						&.first {
 							img {
+								width: 298px;
+								float: right;
+								margin-top: 3.5rem;
+								margin-right: 1.5rem;
+							}
+						}
+						&.second {
+							img {
+								width: 330px;
+								float: right;
+								margin-top: 11rem;
+								margin-right: 1.5rem;
+							}
+						}
+						&.third {
+							img {
+								width: 300px;
 								float: right;
 								margin-top: 3.5rem;
 								margin-right: 1.5rem;
