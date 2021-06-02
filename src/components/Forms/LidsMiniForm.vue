@@ -65,6 +65,8 @@
 					'page_location': 	location.host + location.pathname
 				})
 				fbq('trackCustom', 'get_lead', {page: location.pathname})
+				VK.Goal('contact')
+				ym(25430054,'reachGoal','get_email')
 				
 				this.send = true
 			}

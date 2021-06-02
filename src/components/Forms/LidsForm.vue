@@ -107,6 +107,8 @@
 					})
 					fbq('trackCustom', 'get_lead', {page: location.pathname})
 				}
+				VK.Goal('lead')
+				ym(25430054,'reachGoal','get_lead')
 
 				this.send = true
 			}
