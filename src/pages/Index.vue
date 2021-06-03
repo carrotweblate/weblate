@@ -82,10 +82,10 @@
 								width="130"
 								height="80"
 								loading="lazy"
-								alt="Для маркетологов"
+								alt="Маркетологам"
 								class="mb-4"
 							/>
-							<div class="h4 mb-4">Для маркетологов</div>
+							<div class="h4 mb-4">Маркетологам</div>
 							<ul>
 								<li>Поможем собрать больше лидов и передать в продажи только качественные</li>
 								<li>Прогреем холодных лидов триггерными рассылками и доведем до покупки</li>
@@ -204,7 +204,7 @@
 					</b-col>
 					<b-col md="6" xl="4" class="mb-5 h-100">
 						<g-link to="/pop-up/" class="d-block font24px withbg third">
-							<span>Pop-up окна</span>
+							<span>Поп-ап окна</span>
 							<ik-image
 								path="/components/medium-23.png"
 								:transformation="[{width:300,height:370}]"
@@ -212,7 +212,7 @@
 								width="300"
 								height="370"
 								loading="lazy"
-								alt="Pop-up окна"
+								alt="Поп-ап окна"
 								class="mw-100"
 							/>
 						</g-link>
@@ -248,7 +248,7 @@
 					</b-col>
 					<b-col md="6" xl="4" class="mb-5 h-100">
 						<g-link to="/email-marketing/" class="d-block font24px">
-							<span>Триггерные e-mail-кампании</span>
+							<span>Триггерные e-mail кампании</span>
 							<ik-image
 								path="/components/medium-24.png"
 								:transformation="[{width:354,height:430}]"
@@ -256,7 +256,7 @@
 								width="354"
 								height="430"
 								loading="lazy"
-								alt="Триггерные e-mail-кампании"
+								alt="Триггерные e-mail кампании"
 								class="mw-100 mt-4"
 								style="border-radius: 5px;"
 							/>
@@ -279,7 +279,7 @@
 						</g-link>
 					</b-col>
 					<b-col md="6" xl="4" class="mb-5 h-100">
-						<g-link href="https://developers.carrotquest.io/" class="d-block font24px">
+						<g-link href="https://developers.carrotquest.io/" class="d-block font24px api">
 							<span>API</span>
 							<ik-image
 								path="/components/medium-26.png"
@@ -289,7 +289,7 @@
 								height="312"
 								loading="lazy"
 								alt="API"
-								class="mw-100 mt-4"
+								class="mw-100"
 								style="border-radius: 5px;"
 							/>
 						</g-link>
@@ -317,8 +317,8 @@
 		<Ready />
 
 		<Consultation 
-			title="Запишитесь на бесплатную демонстрацию сервиса" 
-			text="Мы познакомимся, определим ваши задачи, за 30 минут обучим продукту и&nbsp;🎁&nbsp;бесплатно настроим базовый сценарий сбора лидов на вашем сайте"
+			title="Запишитесь на бесплатную консультацию" 
+			text="Мы познакомимся, определим ваши задачи и предложим варианты их решения. За 30 минут обучим продукту и бесплатно настроим сценарий квалификации лидов на вашем сайте"
 			button="Заказать консультацию"
 			pic="medium-12.png"
 			alt="Девочка, живущая в сети"
@@ -643,6 +643,12 @@
 							border-radius: 0px 50px 0px 0px;
 						}
 					}
+					&.api {
+						img {
+							position: relative;
+							top: 1.5rem;
+						}
+					}
 				}
 				@media (min-width: 1200px) {
 					a {
@@ -671,6 +677,11 @@
 								float: right;
 								margin-top: 3.5rem;
 								margin-right: 1.5rem;
+							}
+						}
+						&.api {
+							img {
+								top: 3.5rem;
 							}
 						}
 					}
