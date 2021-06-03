@@ -218,7 +218,7 @@
 				position: absolute;
 				left: 1.25rem;
 				bottom: 1rem;
-				width: calc(100% - 3rem)
+				width: calc(100% - 2.5rem) !important;
 			}
 		}
 		@media (max-width: 991.98px) {
