@@ -298,6 +298,7 @@ module.exports = function (api) {
 
 	//Забираем sitemaps из блога, скрипты аналитики и пикселей
 	api.loadSource(async actions => {
+		// Sitemaps
 		let blogSitemaps = [
 			'post-sitemap.xml',
 			'page-sitemap.xml',
@@ -307,6 +308,10 @@ module.exports = function (api) {
 			const { data } = await axios.get('https://wp.carrotquest.io/blog/' + element)
 			fs.writeFile('./static/blog/' + element, data.split('wp.carrotquest.io').join('www.carrotquest.io') , 'utf8' , function (err) {if (err) return console.log(err)})
 		})
+		// Яндекс.турбо
+		const { data } = await axios.get('https://wp.carrotquest.io/blog/feed/turbo/')
+		fs.writeFile('./static/blog/turbo.xml', data.split('wp.carrotquest.io').join('www.carrotquest.io') , 'utf8' , function (err) {if (err) return console.log(err)})
+		// Скрипты
 		let scripts = [
 			{
 				name: 'renta-analytics.js',
@@ -323,7 +328,7 @@ module.exports = function (api) {
 			{
 				name: 'openapi.js',
 				url: 'https://vk.com/js/api/openapi.js?154'
-			},
+			}
 		]
 		scripts.forEach(async element => {
 			await axios.get(element.url).then(response => saveScript( element.name , response.data ))

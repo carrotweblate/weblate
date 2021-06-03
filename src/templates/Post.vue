@@ -295,9 +295,6 @@
 			this.$page.allPost.edges = this.$page.allPost.edges.sort(function (a, b) {return Math.random() - 0.5;}).slice(0, 3)
 			this.wpLogined()
 		},
-		updated() {
-			this.searchLeadForms()
-		},
 		methods: {
 			wpLogined: function(e) {
 				if (document.cookie.indexOf('wp-settings-') !== -1) {
