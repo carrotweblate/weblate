@@ -125,17 +125,17 @@
 								<b-row class="align-items-center">
 									<b-col cols="6" md="4" lg="6">
 										<div class="ready__logos__box">
-											<img src="/assets/images/logos/samolet.svg" alt="samolet" />
+											<img src="/assets/images/logos/samolet.svg" alt="samolet" width="116" height="18" />
 										</div>
 									</b-col>
 									<b-col cols="6" md="4" lg="6">
 										<div class="ready__logos__box py-2">
-											<img src="/assets/images/logos/domru.svg" alt="domru" style="max-height: 2.5rem" />
+											<img src="/assets/images/logos/domru.svg" alt="domru" width="40" height="40" style="max-height: 2.5rem" />
 										</div>
 									</b-col>
 									<b-col cols="6" md="4" lg="6">
 										<div class="ready__logos__box">
-											<img src="/assets/images/logos/bank-spb.svg" alt="bank-spb" />
+											<img src="/assets/images/logos/bank-spb.svg" alt="bank-spb" width="145" height="28" />
 										</div>
 									</b-col>
 								</b-row>

@@ -16,21 +16,7 @@
 			<b-row>
 				<b-col>
 					<b-tabs pills class="mt-3 mt-lg-4 mb-3">
-						<b-tab title="CMS и CRM" active lazy>
-							<b-row class="mt-4">
-								<b-col class="d-flex flex-wrap">
-									<g-link to="/integration/1c-bitrix/" class="Integrations__logo bitrix1c" alt="1c-bitrix"></g-link>
-									<g-link to="/integration/insales/" class="Integrations__logo insales" alt="insales"></g-link>
-									<g-link to="/integration/opencart/" class="Integrations__logo opencart" alt="opencart"></g-link>
-									<g-link to="/integration/prestashop/" class="Integrations__logo prestashop" alt="prestashop"></g-link>
-									<g-link to="/integration/wordpress/" class="Integrations__logo wordpress" alt="wordpress"></g-link>
-									<g-link to="/integration/amocrm/" class="Integrations__logo amocrm" alt="amocrm"></g-link>
-									<g-link to="/integration/bitrix24/" class="Integrations__logo bitrix24" alt="bitrix24"></g-link>
-									<g-link to="/integration/retailcrm/" class="Integrations__logo retailcrm" alt="retailcrm"></g-link>
-								</b-col>
-							</b-row>
-						</b-tab>
-						<b-tab title="Коммуникации" lazy>
+						<b-tab title="Коммуникации" active lazy>
 							<b-row class="mt-4">
 								<b-col class="d-flex flex-wrap">
 									<a href="https://help.carrotquest.io/article/171" class="Integrations__logo email" alt="email"></a>
@@ -47,13 +33,17 @@
 								</b-col>
 							</b-row>
 						</b-tab>
-						<b-tab title="Аналитика" lazy>
+						<b-tab title="CMS и CRM" lazy>
 							<b-row class="mt-4">
 								<b-col class="d-flex flex-wrap">
-									<a href="https://help.carrotquest.io/article/147" class="Integrations__logo google_analytics" alt="google_analytics"></a>
-									<a href="https://help.carrotquest.io/article/146" class="Integrations__logo mixpanel" alt="mixpanel"></a>
-									<a href="https://help.carrotquest.io/article/145" class="Integrations__logo roistat" alt="roistat"></a>
-									<a href="https://help.carrotquest.io/article/144" class="Integrations__logo yandex_metrica" alt="yandex_metrica"></a>
+									<g-link to="/integration/1c-bitrix/" class="Integrations__logo bitrix1c" alt="1c-bitrix"></g-link>
+									<g-link to="/integration/insales/" class="Integrations__logo insales" alt="insales"></g-link>
+									<g-link to="/integration/opencart/" class="Integrations__logo opencart" alt="opencart"></g-link>
+									<g-link to="/integration/prestashop/" class="Integrations__logo prestashop" alt="prestashop"></g-link>
+									<g-link to="/integration/wordpress/" class="Integrations__logo wordpress" alt="wordpress"></g-link>
+									<g-link to="/integration/amocrm/" class="Integrations__logo amocrm" alt="amocrm"></g-link>
+									<g-link to="/integration/bitrix24/" class="Integrations__logo bitrix24" alt="bitrix24"></g-link>
+									<g-link to="/integration/retailcrm/" class="Integrations__logo retailcrm" alt="retailcrm"></g-link>
 								</b-col>
 							</b-row>
 						</b-tab>
@@ -76,6 +66,16 @@
 									<a class="Integrations__logo jsscript" alt="jsscript"></a>
 									<a class="Integrations__logo webhook" alt="webhook"></a>
 									<a href="https://help.carrotquest.io/article/361/" class="Integrations__logo zapier" alt="zapier"></a>
+								</b-col>
+							</b-row>
+						</b-tab>
+						<b-tab title="Аналитика" lazy>
+							<b-row class="mt-4">
+								<b-col class="d-flex flex-wrap">
+									<a href="https://help.carrotquest.io/article/147" class="Integrations__logo google_analytics" alt="google_analytics"></a>
+									<a href="https://help.carrotquest.io/article/146" class="Integrations__logo mixpanel" alt="mixpanel"></a>
+									<a href="https://help.carrotquest.io/article/145" class="Integrations__logo roistat" alt="roistat"></a>
+									<a href="https://help.carrotquest.io/article/144" class="Integrations__logo yandex_metrica" alt="yandex_metrica"></a>
 								</b-col>
 							</b-row>
 						</b-tab>

@@ -226,7 +226,7 @@
 								:transformation="[{width:374,height:185}]"
 								:lqip="{active:true, quality: 40, blur: 10}"
 								width="354"
-								height="430"
+								height="185"
 								loading="lazy"
 								alt="Трекинг данных о пользователях"
 								class="mw-100 mt-4 d-md-none"
@@ -456,7 +456,7 @@
 					top: 0; bottom: 0; left: 0; right: 0;
 					background-color: rgba(0, 0, 0, 0.05);
 					border-radius: 5px;
-					transition: all 150ms cubic-bezier(0, 0, 0.2, 1);
+					transition: background-color 150ms cubic-bezier(0, 0, 0.2, 1);
 				}
 				&:hover {
 					&::before {
@@ -482,7 +482,7 @@
 					border: none;
 					border-radius: 4rem;
 					box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
-					transition: all 150ms cubic-bezier(0, 0, 0.2, 1);
+					transition: margin-top 150ms cubic-bezier(0, 0, 0.2, 1);
 					&::before {
 						content: " ";
 						display: inline-block;
