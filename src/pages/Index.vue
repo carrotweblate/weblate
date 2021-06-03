@@ -330,7 +330,7 @@
 		<Cases />
 
 		<b-container>
-			<b-col class="px-5 py-4" style="background-color: #FFEAD7; border-radius: 5px;">
+			<b-col class="px-lg-5 py-4" style="background-color: #FFEAD7; border-radius: 5px;">
 				<b-row class="align-items-center justify-content-center">
 					<b-col lg="8">
 						<div class="h2 mb-4">Регистрируйтесь и пользуйтесь полной версией 14 дней бесплатно</div>
@@ -648,6 +648,11 @@
 							position: relative;
 							top: 1.5rem;
 						}
+					}
+				}
+				@media (max-width: 575.98px) {
+					a.api img {
+						top: 0;
 					}
 				}
 				@media (min-width: 1200px) {
