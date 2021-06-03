@@ -11,7 +11,7 @@
 					</b-col>
 				</b-row>
 				<b-row>
-					<b-col lg="4">
+					<b-col xl="4">
 						<div class="box h-100">
 							<a href="/ecommerce/" class="d-flex align-items-center mb-4">
 								<!-- <g-image src="@/assets/images/components/small-15.png" fit="contain" background="transparent" height="222" alt="Для интернет магазинов" class="mb-4" /> -->
@@ -35,17 +35,17 @@
 							</ul>
 							<b-container class="ready__logos">
 								<b-row class="align-items-center">
-									<b-col cols="6" md="4" lg="6">
+									<b-col cols="6" md="4" xl="6">
 										<div class="ready__logos__box">
 											<img src="/assets/images/logos/maria.svg" alt="maria" width="138" height="32" />
 										</div>
 									</b-col>
-									<b-col cols="6" md="4" lg="6">
+									<b-col cols="6" md="4" xl="6">
 										<div class="ready__logos__box">
 											<img src="/assets/images/logos/westfalika.svg" alt="westfalika" width="138" height="28" />
 										</div>
 									</b-col>
-									<b-col cols="6" md="4" lg="6">
+									<b-col cols="6" md="4" xl="6">
 										<div class="ready__logos__box">
 											<img src="/assets/images/logos/loreal.svg" alt="loreal" width="138" height="25" />
 										</div>
@@ -55,7 +55,7 @@
 							<b-button href="/ecommerce/" variant="primary">Подробнее</b-button>
 						</div>
 					</b-col>
-					<b-col lg="4">
+					<b-col xl="4">
 						<div class="box h-100">
 							<a href="/saas/" class="d-flex align-items-center mb-4">
 								<!-- <g-image src="@/assets/images/components/small-24.png" fit="contain" background="transparent" height="222" alt="Для интернет сервисов (SaaS)" class="mb-4" /> -->
@@ -69,27 +69,27 @@
 									alt="Для интернет сервисов (SaaS)"
 									class="mr-3"
 								/>
-								<div class="h5 mb-0">Интернет-сервисам (SaaS)</div>
+								<div class="h5 mb-0">Онлайн-сервисам (SaaS)</div>
 							</a>
 							<ul>
-								<li>Увеличение количества лидов на том же трафике сайта</li>
+								<li>Увеличим количества лидов на том же трафике сайта</li>
 								<li>Снизим нагрузку на службу поддержки</li>
 								<li>Улучшим C1 и retention</li>
 								<li>Настроим аналитику пользовательского поведения и исследуем использование фичей</li>
 							</ul>
 							<b-container class="ready__logos">
 								<b-row class="align-items-center">
-									<b-col cols="6" md="4" lg="6">
+									<b-col cols="6" md="4" xl="6">
 										<div class="ready__logos__box">
 											<img src="/assets/images/logos/geekbrains.svg" alt="geekbrains" width="138" height="24" />
 										</div>
 									</b-col>
-									<b-col cols="6" md="4" lg="6">
+									<b-col cols="6" md="4" xl="6">
 										<div class="ready__logos__box">
 											<img src="/assets/images/logos/kontur.svg" alt="kontur" width="138" height="32" />
 										</div>
 									</b-col>
-									<b-col cols="6" md="4" lg="6">
+									<b-col cols="6" md="4" xl="6">
 										<div class="ready__logos__box">
 											<img src="/assets/images/logos/timepad.svg" alt="timepad" width="138" height="16" />
 										</div>
@@ -99,7 +99,7 @@
 							<b-button href="/saas/" variant="primary">Подробнее</b-button>
 						</div>
 					</b-col>
-					<b-col lg="4">
+					<b-col xl="4">
 						<div class="box h-100">
 							<a href="/introduction-carrotquest/" class="d-flex align-items-center mb-4">
 								<!-- <g-image src="@/assets/images/components/small-25.png" fit="contain" background="transparent" height="222" alt="Для крупных компаний" class="mb-4" /> -->
@@ -123,17 +123,17 @@
 							</ul>
 							<b-container class="ready__logos">
 								<b-row class="align-items-center">
-									<b-col cols="6" md="4" lg="6">
+									<b-col cols="6" md="4" xl="6">
 										<div class="ready__logos__box">
 											<img src="/assets/images/logos/samolet.svg" alt="samolet" width="116" height="18" />
 										</div>
 									</b-col>
-									<b-col cols="6" md="4" lg="6">
+									<b-col cols="6" md="4" xl="6">
 										<div class="ready__logos__box py-2">
 											<img src="/assets/images/logos/domru.svg" alt="domru" width="40" height="40" style="max-height: 2.5rem" />
 										</div>
 									</b-col>
-									<b-col cols="6" md="4" lg="6">
+									<b-col cols="6" md="4" xl="6">
 										<div class="ready__logos__box">
 											<img src="/assets/images/logos/bank-spb.svg" alt="bank-spb" width="145" height="28" />
 										</div>
@@ -209,8 +209,20 @@
 			position: absolute;
 			bottom: 1.5rem;
 		}
+		@media (min-width: 1200px) {
+			.box {
+				position: relative;
+				padding-bottom: 15rem;
+			}
+			&__logos {
+				position: absolute;
+				left: 1.25rem;
+				bottom: 1rem;
+				width: calc(100% - 3rem)
+			}
+		}
 		@media (max-width: 991.98px) {
-			.col-lg-4 {
+			.col-xl-4 {
 				margin-bottom: 5rem;
 				&:last-child {
 					margin-bottom: 0;

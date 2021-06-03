@@ -6,7 +6,7 @@
 				<b-row class="align-items-center">
 					<b-col lg="10">
 						<h1 class="mb-4 mb-lg-5">
-							Поможем онлайн-бизнесу увеличить продажи на том же трафике, удержим клиентов и превратим спящих в платящих <span>при помощи 💬 чата на сайте, 💌️ триггерных e-mail кампаний, 🏷 ️поп-ап окон и 🤖 чат-бота</span>
+							Поможем онлайн-бизнесу увеличить продажи на том же трафике, удержим клиентов и превратим спящих в платящих <span>при помощи 💬 чата на сайте, 💌️ триггерных email-кампаний, 🏷 ️поп-ап окон и 🤖 чат-бота</span>
 						</h1>
 						<RegistrationForm text="14 дней бесплатно. Регистрируйтесь" />
 					</b-col>
@@ -248,7 +248,7 @@
 					</b-col>
 					<b-col md="6" xl="4" class="mb-5 h-100">
 						<g-link to="/email-marketing/" class="d-block font24px">
-							<span>Триггерные e-mail кампании</span>
+							<span>Триггерные email-кампании</span>
 							<ik-image
 								path="/components/medium-24.png"
 								:transformation="[{width:354,height:430}]"
@@ -256,7 +256,7 @@
 								width="354"
 								height="430"
 								loading="lazy"
-								alt="Триггерные e-mail кампании"
+								alt="Триггерные email-кампании"
 								class="mw-100 mt-4"
 								style="border-radius: 5px;"
 							/>
@@ -587,6 +587,7 @@
 						position: relative;
 						z-index: 2;
 						height: auto;
+						margin: auto;
 					}
 					&:hover {
 						span {

@@ -27,20 +27,20 @@
 <li>Увеличила продажи <strong>на&nbsp;31%.</strong></li>
 <li>Увеличила количество решенных запросов в&nbsp;поддержку <strong>в&nbsp;2&nbsp;раза</strong>, разгрузила операторов и&nbsp;освободила время для тестирования гипотез и&nbsp;развития продукта.</li>
 </ul>
-<div id="quote_1800855656" class="cq-block-quote  ">
+<div id="quote_1974352296" class="cq-block-quote  ">
 <div class="cq-block-quote__text  ">
 <p>У Carrot quest есть версия на английском языке, которая покоряет международный рынок. Она называется Dashly. Это история клиента, который использует эту версию нашего продукта.</p>
 </p>
 </div>
 </div>
 <style>
-	#quote_1800855656 .cq-block-quote__text {
+	#quote_1974352296 .cq-block-quote__text {
 		background: linear-gradient(-5deg, #FFFFFF -100px, #F1F1FD 100%);
 	}
-	#quote_1800855656.cq-block-quote-author .cq-block-quote__text {
+	#quote_1974352296.cq-block-quote-author .cq-block-quote__text {
 		background: transparent;
 	}
-	#quote_1800855656 svg path {
+	#quote_1974352296 svg path {
 		fill: #F1F1FD;
 	}
 </style>
@@ -58,7 +58,7 @@
 <li><a href="https://www.carrotquest.io/online-consultant/" target="_blank" rel="noreferrer noopener">чат</a>, чтобы быстрее обрабатывать запросы пользователей из&nbsp;разных каналов,</li>
 <li><a href="https://www.carrotquest.io/chatbot/" target="_blank" rel="noreferrer noopener">лид-бота</a>, чтобы проактивно решать проблемы пользователей без привлечения операторов.</li>
 </ul>
-<div id="quote_1437880318" class="cq-block-quote cq-block-quote-author ">
+<div id="quote_978125362" class="cq-block-quote cq-block-quote-author ">
 <p>	<svg width="44" height="38" viewBox="0 0 44 38" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M34.5349 0C37.1783 0 39.3953 1.05909 41.186 3.17726C43.062 5.21071 44 7.92196 44 11.311C44 16.0557 42.4225 21.0123 39.2674 26.1806C36.1124 31.3489 32.1046 35.2887 27.2442 38L23.5349 30.2475C25.6667 28.3835 27.5 26.6466 29.0349 25.0368C30.5698 23.3423 31.6357 21.1394 32.2326 18.4281C30.6977 18.4281 29.1202 17.4961 27.5 15.6321C25.8798 13.7681 25.0698 11.6923 25.0698 9.40468C25.0698 7.20178 25.9651 5.08361 27.7558 3.05017C29.6318 1.01672 31.8915 0 34.5349 0ZM10.7442 0C13.3876 0 15.6473 1.05909 17.5233 3.17726C19.4845 5.21071 20.4651 7.92196 20.4651 11.311C20.4651 16.0557 18.845 21.0123 15.6047 26.1806C12.4496 31.3489 8.44186 35.2887 3.58139 38L0 30.2475C2.13178 28.3835 3.92248 26.6466 5.37209 25.0368C6.90698 23.3423 7.97287 21.1394 8.56977 18.4281C7.12015 18.4281 5.54264 17.4961 3.83721 15.6321C2.21705 13.7681 1.40698 11.6923 1.40698 9.40468C1.40698 7.20178 2.30233 5.08361 4.09302 3.05017C5.88372 1.01672 8.10077 0 10.7442 0Z" fill="#FF6600"/></svg></p>
 <div class="cq-block-quote__text font24px ">
 <p>Чат на сайте  —  это стандарт для онлайн-сервисов, даже если бизнес находится на начальном этапе развития.</p>
@@ -73,38 +73,38 @@
 </div>
 </div>
 <style>
-	#quote_1437880318 .cq-block-quote__text {
+	#quote_978125362 .cq-block-quote__text {
 		background: linear-gradient(-5deg, #FFFFFF -100px, #DDC1FF 100%);
 	}
-	#quote_1437880318.cq-block-quote-author .cq-block-quote__text {
+	#quote_978125362.cq-block-quote-author .cq-block-quote__text {
 		background: transparent;
 	}
-	#quote_1437880318 svg path {
+	#quote_978125362 svg path {
 		fill: #DDC1FF;
 	}
 </style>
 <p>Кристофер запустил <a href="https://www.carrotquest.io/chatbot/" target="_blank" rel="noreferrer noopener">лид-бота</a> на&nbsp;странице справочного центра. Пользователи, которые хотят найти решение своей проблемы, видят квалифицирующее сообщение про тип запроса. Бот предлагает девять вариантов ответа, в&nbsp;которых собраны все часто задаваемые вопросы. После выбора варианта пользователь получает подробный ответ с&nbsp;ссылками на&nbsp;релевантные страницы, видео или статьи. Если проблема не&nbsp;решилась, пользователь перенаправляется на&nbsp;оператора.</p>
 <figure><img src="https://www.carrotquest.io/blog/wp-content/uploads/2021/06/leadgenapp-case-1.png" /><figcaption>Лид-бот на&nbsp;странице справочного центра LeadGen App</figcaption></figure>
 <p>В&nbsp;результате пользователи быстрее получают решение своей проблемы, а&nbsp;операторы не&nbsp;тратят время на&nbsp;обработку однотипных запросов. К&nbsp;тому&nbsp;же, пользователям легче нажимать на&nbsp;кнопки бота, чем писать в&nbsp;поддержку. </p>
-<div id="quote_1347302508" class="cq-block-quote  ">
+<div id="quote_330488414" class="cq-block-quote  ">
 <div class="cq-block-quote__text  ">
 <p>За месяц работы лид-бота <b>41% пользователей</b>, у которых возникла проблема с использованием сервиса, пообщались с лид-ботом и получили решение. Это <b>в два раза больше</b> в сравнении с предыдущим месяцем, когда <b>22% пользователей</b> ответили на триггерное сообщение с предложением написать в поддержку.</p>
 </p>
 </div>
 </div>
 <style>
-	#quote_1347302508 .cq-block-quote__text {
+	#quote_330488414 .cq-block-quote__text {
 		background: linear-gradient(-5deg, #FFFFFF -100px, #F1F1FD 100%);
 	}
-	#quote_1347302508.cq-block-quote-author .cq-block-quote__text {
+	#quote_330488414.cq-block-quote-author .cq-block-quote__text {
 		background: transparent;
 	}
-	#quote_1347302508 svg path {
+	#quote_330488414 svg path {
 		fill: #F1F1FD;
 	}
 </style>
 <p>Количество запросов в&nbsp;поддержку увеличилось, но&nbsp;количество диалогов с&nbsp;операторами осталось прежним. Благодаря лид-боту больше пользователей получили помощь без увеличения нагрузки на&nbsp;операторов.</p>
-<div id="quote_286363694" class="cq-block-quote cq-block-quote-author ">
+<div id="quote_594067177" class="cq-block-quote cq-block-quote-author ">
 <p>	<svg width="44" height="38" viewBox="0 0 44 38" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M34.5349 0C37.1783 0 39.3953 1.05909 41.186 3.17726C43.062 5.21071 44 7.92196 44 11.311C44 16.0557 42.4225 21.0123 39.2674 26.1806C36.1124 31.3489 32.1046 35.2887 27.2442 38L23.5349 30.2475C25.6667 28.3835 27.5 26.6466 29.0349 25.0368C30.5698 23.3423 31.6357 21.1394 32.2326 18.4281C30.6977 18.4281 29.1202 17.4961 27.5 15.6321C25.8798 13.7681 25.0698 11.6923 25.0698 9.40468C25.0698 7.20178 25.9651 5.08361 27.7558 3.05017C29.6318 1.01672 31.8915 0 34.5349 0ZM10.7442 0C13.3876 0 15.6473 1.05909 17.5233 3.17726C19.4845 5.21071 20.4651 7.92196 20.4651 11.311C20.4651 16.0557 18.845 21.0123 15.6047 26.1806C12.4496 31.3489 8.44186 35.2887 3.58139 38L0 30.2475C2.13178 28.3835 3.92248 26.6466 5.37209 25.0368C6.90698 23.3423 7.97287 21.1394 8.56977 18.4281C7.12015 18.4281 5.54264 17.4961 3.83721 15.6321C2.21705 13.7681 1.40698 11.6923 1.40698 9.40468C1.40698 7.20178 2.30233 5.08361 4.09302 3.05017C5.88372 1.01672 8.10077 0 10.7442 0Z" fill="#FF6600"/></svg></p>
 <div class="cq-block-quote__text font24px ">
 <p>После запуска лид-бота наша команда может сфокусироваться на росте, а не на рутинных задачах.</p>
@@ -119,13 +119,13 @@
 </div>
 </div>
 <style>
-	#quote_286363694 .cq-block-quote__text {
+	#quote_594067177 .cq-block-quote__text {
 		background: linear-gradient(-5deg, #FFFFFF -100px, #DDC1FF 100%);
 	}
-	#quote_286363694.cq-block-quote-author .cq-block-quote__text {
+	#quote_594067177.cq-block-quote-author .cq-block-quote__text {
 		background: transparent;
 	}
-	#quote_286363694 svg path {
+	#quote_594067177 svg path {
 		fill: #DDC1FF;
 	}
 </style>
@@ -143,7 +143,7 @@
 <p>На&nbsp;страницах отдельных фичей лид-бот собирает емейлы пользователей, чтобы Кристофер мог связаться с&nbsp;ними позже, отправлять персонализированные сообщения и&nbsp;довести до&nbsp;покупки.</p>
 <figure><img src="https://www.carrotquest.io/blog/wp-content/uploads/2021/06/leadgenapp-case-3.png" /><figcaption>Лид-бот квалифицирует пользователей на страницах отдельных фичей и собирает емейлы</figcaption></figure>
 <p>В&nbsp;итоге количество квалифицированных лидов и&nbsp;регистраций увеличилось. </p>
-<div id="quote_1317990737" class="cq-block-quote cq-block-quote-author ">
+<div id="quote_1485209699" class="cq-block-quote cq-block-quote-author ">
 <p>	<svg width="44" height="38" viewBox="0 0 44 38" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M34.5349 0C37.1783 0 39.3953 1.05909 41.186 3.17726C43.062 5.21071 44 7.92196 44 11.311C44 16.0557 42.4225 21.0123 39.2674 26.1806C36.1124 31.3489 32.1046 35.2887 27.2442 38L23.5349 30.2475C25.6667 28.3835 27.5 26.6466 29.0349 25.0368C30.5698 23.3423 31.6357 21.1394 32.2326 18.4281C30.6977 18.4281 29.1202 17.4961 27.5 15.6321C25.8798 13.7681 25.0698 11.6923 25.0698 9.40468C25.0698 7.20178 25.9651 5.08361 27.7558 3.05017C29.6318 1.01672 31.8915 0 34.5349 0ZM10.7442 0C13.3876 0 15.6473 1.05909 17.5233 3.17726C19.4845 5.21071 20.4651 7.92196 20.4651 11.311C20.4651 16.0557 18.845 21.0123 15.6047 26.1806C12.4496 31.3489 8.44186 35.2887 3.58139 38L0 30.2475C2.13178 28.3835 3.92248 26.6466 5.37209 25.0368C6.90698 23.3423 7.97287 21.1394 8.56977 18.4281C7.12015 18.4281 5.54264 17.4961 3.83721 15.6321C2.21705 13.7681 1.40698 11.6923 1.40698 9.40468C1.40698 7.20178 2.30233 5.08361 4.09302 3.05017C5.88372 1.01672 8.10077 0 10.7442 0Z" fill="#FF6600"/></svg></p>
 <div class="cq-block-quote__text font24px ">
 <p>Лид-бот помогает решиться на покупку, потому что пользователи получают ответы и понимают, что делать дальше.</p>
@@ -158,31 +158,31 @@
 </div>
 </div>
 <style>
-	#quote_1317990737 .cq-block-quote__text {
+	#quote_1485209699 .cq-block-quote__text {
 		background: linear-gradient(-5deg, #FFFFFF -100px, #DDC1FF 100%);
 	}
-	#quote_1317990737.cq-block-quote-author .cq-block-quote__text {
+	#quote_1485209699.cq-block-quote-author .cq-block-quote__text {
 		background: transparent;
 	}
-	#quote_1317990737 svg path {
+	#quote_1485209699 svg path {
 		fill: #DDC1FF;
 	}
 </style>
 <p>За&nbsp;месяц работы лид-бота количество людей, которые обратились в&nbsp;поддержку и&nbsp;пообщались с&nbsp;ботом, увеличилось в&nbsp;<strong>2&nbsp;раза</strong> в&nbsp;сравнении с&nbsp;триггерным сообщением в&nbsp;чат. Для сравнения, <strong>15% пользователей</strong> ответили лид-боту на&nbsp;странице тарифов, когда на&nbsp;триггерное сообщение в&nbsp;чат ответили всего <strong>7%</strong>.</p>
-<div id="quote_1212360472" class="cq-block-quote  ">
+<div id="quote_757819025" class="cq-block-quote  ">
 <div class="cq-block-quote__text  ">
 <p>Механика с чат-ботом на странице тарифов помогла <b>увеличить продажи на 31%</b> за месяц.</p>
 </p>
 </div>
 </div>
 <style>
-	#quote_1212360472 .cq-block-quote__text {
+	#quote_757819025 .cq-block-quote__text {
 		background: linear-gradient(-5deg, #FFFFFF -100px, #F1F1FD 100%);
 	}
-	#quote_1212360472.cq-block-quote-author .cq-block-quote__text {
+	#quote_757819025.cq-block-quote-author .cq-block-quote__text {
 		background: transparent;
 	}
-	#quote_1212360472 svg path {
+	#quote_757819025 svg path {
 		fill: #F1F1FD;
 	}
 </style>
@@ -199,7 +199,7 @@
 <li>настроить интеграцию рекламных кампаний с&nbsp;Carrot quest, чтобы видеть всю информацию в&nbsp;одном месте и&nbsp;легче анализировать результаты кампаний.</li>
 </ul>
 <div class="banner-universal-container">
-<div id="banner-universal_303054892" class="banner-universal">
+<div id="banner-universal_334296258" class="banner-universal">
 <div class="row align-items-center">
 <div class="col-12 
 				col-lg-9			"></p>
@@ -217,10 +217,10 @@
 </div>
 </div>
 <style>
-	#banner-universal_303054892 {
+	#banner-universal_334296258 {
 		background-color: #F1F1FD;
 	}
-	#banner-universal_303054892 .h3 , #banner-universal_303054892 .form-begin {
+	#banner-universal_334296258 .h3 , #banner-universal_334296258 .form-begin {
 		color: #000000;
 	}
 </style>
@@ -256,7 +256,7 @@
 <li>ориентируемся на&nbsp;боли клиентов → лучше доносим ценность продукта → больше продаем на&nbsp;большие чеки;</li>
 <li>быстрее учим новых менеджеров.</li>
 </ul>
-<div id="quote_152153371" class="cq-block-quote cq-block-quote-author ">
+<div id="quote_1477984100" class="cq-block-quote cq-block-quote-author ">
 <p>	<svg width="44" height="38" viewBox="0 0 44 38" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M34.5349 0C37.1783 0 39.3953 1.05909 41.186 3.17726C43.062 5.21071 44 7.92196 44 11.311C44 16.0557 42.4225 21.0123 39.2674 26.1806C36.1124 31.3489 32.1046 35.2887 27.2442 38L23.5349 30.2475C25.6667 28.3835 27.5 26.6466 29.0349 25.0368C30.5698 23.3423 31.6357 21.1394 32.2326 18.4281C30.6977 18.4281 29.1202 17.4961 27.5 15.6321C25.8798 13.7681 25.0698 11.6923 25.0698 9.40468C25.0698 7.20178 25.9651 5.08361 27.7558 3.05017C29.6318 1.01672 31.8915 0 34.5349 0ZM10.7442 0C13.3876 0 15.6473 1.05909 17.5233 3.17726C19.4845 5.21071 20.4651 7.92196 20.4651 11.311C20.4651 16.0557 18.845 21.0123 15.6047 26.1806C12.4496 31.3489 8.44186 35.2887 3.58139 38L0 30.2475C2.13178 28.3835 3.92248 26.6466 5.37209 25.0368C6.90698 23.3423 7.97287 21.1394 8.56977 18.4281C7.12015 18.4281 5.54264 17.4961 3.83721 15.6321C2.21705 13.7681 1.40698 11.6923 1.40698 9.40468C1.40698 7.20178 2.30233 5.08361 4.09302 3.05017C5.88372 1.01672 8.10077 0 10.7442 0Z" fill="#FF6600"/></svg></p>
 <div class="cq-block-quote__text font24px ">
 <p>Не надо продавать всем, нужно сфокусироваться на целевых клиентах. Ideal customer profile помогает это сделать. Мы работаем с определенными сегментами с нужными характеристиками, вместо того чтобы бомбить всех подряд. В результате закрываем больше сделок с большим средним чеком. </p>
@@ -271,13 +271,13 @@
 </div>
 </div>
 <style>
-	#quote_152153371 .cq-block-quote__text {
+	#quote_1477984100 .cq-block-quote__text {
 		background: linear-gradient(-5deg, #FFFFFF -100px, #DDC1FF 100%);
 	}
-	#quote_152153371.cq-block-quote-author .cq-block-quote__text {
+	#quote_1477984100.cq-block-quote-author .cq-block-quote__text {
 		background: transparent;
 	}
-	#quote_152153371 svg path {
+	#quote_1477984100 svg path {
 		fill: #DDC1FF;
 	}
 </style>
@@ -295,7 +295,7 @@
 <li>Объем трафика на&nbsp;сайте.</li>
 <li>Размер клиентской базы компании. </li>
 </ul>
-<div id="quote_1183141095" class="cq-block-quote  ">
+<div id="quote_736947276" class="cq-block-quote  ">
 <div class="cq-block-quote__text  ">
 <p>Совет:<br />
 Необязательно учитывать все пункты: достаточно тех, которые влияют на то, купят продукт или нет. </p>
@@ -303,13 +303,13 @@
 </div>
 </div>
 <style>
-	#quote_1183141095 .cq-block-quote__text {
+	#quote_736947276 .cq-block-quote__text {
 		background: linear-gradient(-5deg, #FFFFFF -100px, #DDC1FF 100%);
 	}
-	#quote_1183141095.cq-block-quote-author .cq-block-quote__text {
+	#quote_736947276.cq-block-quote-author .cq-block-quote__text {
 		background: transparent;
 	}
-	#quote_1183141095 svg path {
+	#quote_736947276 svg path {
 		fill: #DDC1FF;
 	}
 </style>
@@ -354,7 +354,7 @@
 <li><strong>Лучше решать задачи клиентов</strong></li>
 </ul>
 <p>Команды продукта и&nbsp;поддержки концентрируются на&nbsp;целевых клиентах и&nbsp;делают продукт и&nbsp;поддержку для них. Это повышает лояльность клиентов, которую можно измерить с&nbsp;помощью <a href="https://www.carrotquest.io/blog/index-nps/" target="_blank" rel="noreferrer noopener">NPS</a>. </p>
-<div id="quote_289040819" class="cq-block-quote cq-block-quote-author ">
+<div id="quote_1897158867" class="cq-block-quote cq-block-quote-author ">
 <p>	<svg width="44" height="38" viewBox="0 0 44 38" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M34.5349 0C37.1783 0 39.3953 1.05909 41.186 3.17726C43.062 5.21071 44 7.92196 44 11.311C44 16.0557 42.4225 21.0123 39.2674 26.1806C36.1124 31.3489 32.1046 35.2887 27.2442 38L23.5349 30.2475C25.6667 28.3835 27.5 26.6466 29.0349 25.0368C30.5698 23.3423 31.6357 21.1394 32.2326 18.4281C30.6977 18.4281 29.1202 17.4961 27.5 15.6321C25.8798 13.7681 25.0698 11.6923 25.0698 9.40468C25.0698 7.20178 25.9651 5.08361 27.7558 3.05017C29.6318 1.01672 31.8915 0 34.5349 0ZM10.7442 0C13.3876 0 15.6473 1.05909 17.5233 3.17726C19.4845 5.21071 20.4651 7.92196 20.4651 11.311C20.4651 16.0557 18.845 21.0123 15.6047 26.1806C12.4496 31.3489 8.44186 35.2887 3.58139 38L0 30.2475C2.13178 28.3835 3.92248 26.6466 5.37209 25.0368C6.90698 23.3423 7.97287 21.1394 8.56977 18.4281C7.12015 18.4281 5.54264 17.4961 3.83721 15.6321C2.21705 13.7681 1.40698 11.6923 1.40698 9.40468C1.40698 7.20178 2.30233 5.08361 4.09302 3.05017C5.88372 1.01672 8.10077 0 10.7442 0Z" fill="#FF6600"/></svg></p>
 <div class="cq-block-quote__text font24px ">
 <p>Интуитивно мы и раньше понимали, кто наши идеальные клиенты, в основном ориентировались на трафик и задачи. Мы это подтвердили и зафиксировали в профилях идеальных клиентов, чтобы легче и быстрее расширять команду продаж. </p>
@@ -369,18 +369,18 @@
 </div>
 </div>
 <style>
-	#quote_289040819 .cq-block-quote__text {
+	#quote_1897158867 .cq-block-quote__text {
 		background: linear-gradient(-5deg, #FFFFFF -100px, #DDC1FF 100%);
 	}
-	#quote_289040819.cq-block-quote-author .cq-block-quote__text {
+	#quote_1897158867.cq-block-quote-author .cq-block-quote__text {
 		background: transparent;
 	}
-	#quote_289040819 svg path {
+	#quote_1897158867 svg path {
 		fill: #DDC1FF;
 	}
 </style>
 <div class="banner-universal-container">
-<div id="banner-universal_2116356902" class="banner-universal">
+<div id="banner-universal_939841521" class="banner-universal">
 <div class="row align-items-center">
 <div class="col-12 
 				col-lg-9			"></p>
@@ -398,10 +398,10 @@
 </div>
 </div>
 <style>
-	#banner-universal_2116356902 {
+	#banner-universal_939841521 {
 		background-color: #F1F1FD;
 	}
-	#banner-universal_2116356902 .h3 , #banner-universal_2116356902 .form-begin {
+	#banner-universal_939841521 .h3 , #banner-universal_939841521 .form-begin {
 		color: #000000;
 	}
 </style>
@@ -411,7 +411,7 @@
 <p>Мы&nbsp;остановились для начала на&nbsp;двух сегментах&nbsp;— SaaS и&nbsp;ecommerce.</p>
 <h4><strong># 2&nbsp;Выберите ключевых клиентов из&nbsp;каждого сегмента и&nbsp;проанализируйте их</strong></h4>
 <p>После того, как вы&nbsp;определились с&nbsp;сегментами, выберите 5-10 ключевых клиентов из&nbsp;каждого. </p>
-<div id="quote_1365037350" class="cq-block-quote cq-block-quote-author ">
+<div id="quote_324040030" class="cq-block-quote cq-block-quote-author ">
 <p>	<svg width="44" height="38" viewBox="0 0 44 38" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M34.5349 0C37.1783 0 39.3953 1.05909 41.186 3.17726C43.062 5.21071 44 7.92196 44 11.311C44 16.0557 42.4225 21.0123 39.2674 26.1806C36.1124 31.3489 32.1046 35.2887 27.2442 38L23.5349 30.2475C25.6667 28.3835 27.5 26.6466 29.0349 25.0368C30.5698 23.3423 31.6357 21.1394 32.2326 18.4281C30.6977 18.4281 29.1202 17.4961 27.5 15.6321C25.8798 13.7681 25.0698 11.6923 25.0698 9.40468C25.0698 7.20178 25.9651 5.08361 27.7558 3.05017C29.6318 1.01672 31.8915 0 34.5349 0ZM10.7442 0C13.3876 0 15.6473 1.05909 17.5233 3.17726C19.4845 5.21071 20.4651 7.92196 20.4651 11.311C20.4651 16.0557 18.845 21.0123 15.6047 26.1806C12.4496 31.3489 8.44186 35.2887 3.58139 38L0 30.2475C2.13178 28.3835 3.92248 26.6466 5.37209 25.0368C6.90698 23.3423 7.97287 21.1394 8.56977 18.4281C7.12015 18.4281 5.54264 17.4961 3.83721 15.6321C2.21705 13.7681 1.40698 11.6923 1.40698 9.40468C1.40698 7.20178 2.30233 5.08361 4.09302 3.05017C5.88372 1.01672 8.10077 0 10.7442 0Z" fill="#FF6600"/></svg></p>
 <div class="cq-block-quote__text font24px ">
 <p>Найдите, что общего у 20% ваших ключевых клиентов.</p>
@@ -426,13 +426,13 @@
 </div>
 </div>
 <style>
-	#quote_1365037350 .cq-block-quote__text {
+	#quote_324040030 .cq-block-quote__text {
 		background: linear-gradient(-5deg, #FFFFFF -100px, #DDC1FF 100%);
 	}
-	#quote_1365037350.cq-block-quote-author .cq-block-quote__text {
+	#quote_324040030.cq-block-quote-author .cq-block-quote__text {
 		background: transparent;
 	}
-	#quote_1365037350 svg path {
+	#quote_324040030 svg path {
 		fill: #DDC1FF;
 	}
 </style>
@@ -443,7 +443,7 @@
 <li>Какие клиенты помогают вам развиваться?</li>
 <li>Кто с&nbsp;вами дольше всех?</li>
 </ul>
-<div id="quote_159489333" class="cq-block-quote cq-block-quote-author ">
+<div id="quote_62545363" class="cq-block-quote cq-block-quote-author ">
 <p>	<svg width="44" height="38" viewBox="0 0 44 38" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M34.5349 0C37.1783 0 39.3953 1.05909 41.186 3.17726C43.062 5.21071 44 7.92196 44 11.311C44 16.0557 42.4225 21.0123 39.2674 26.1806C36.1124 31.3489 32.1046 35.2887 27.2442 38L23.5349 30.2475C25.6667 28.3835 27.5 26.6466 29.0349 25.0368C30.5698 23.3423 31.6357 21.1394 32.2326 18.4281C30.6977 18.4281 29.1202 17.4961 27.5 15.6321C25.8798 13.7681 25.0698 11.6923 25.0698 9.40468C25.0698 7.20178 25.9651 5.08361 27.7558 3.05017C29.6318 1.01672 31.8915 0 34.5349 0ZM10.7442 0C13.3876 0 15.6473 1.05909 17.5233 3.17726C19.4845 5.21071 20.4651 7.92196 20.4651 11.311C20.4651 16.0557 18.845 21.0123 15.6047 26.1806C12.4496 31.3489 8.44186 35.2887 3.58139 38L0 30.2475C2.13178 28.3835 3.92248 26.6466 5.37209 25.0368C6.90698 23.3423 7.97287 21.1394 8.56977 18.4281C7.12015 18.4281 5.54264 17.4961 3.83721 15.6321C2.21705 13.7681 1.40698 11.6923 1.40698 9.40468C1.40698 7.20178 2.30233 5.08361 4.09302 3.05017C5.88372 1.01672 8.10077 0 10.7442 0Z" fill="#FF6600"/></svg></p>
 <div class="cq-block-quote__text font24px ">
 <p>Мы ориентировались на клиентов, которые платят столько, сколько мы хотим зарабатывать. Плюс, учитывали их <a href="https://www.carrotquest.io/blog/ltv-lifetime-value-schitaem/" target="_blank" rel="noreferrer noopener">LTV</a> и сложность продажи. Сравнили их по трафику, наличию разных ролей внутри. Соотнесли их задачи с теми, которые решает наш сервис.</p>
@@ -458,13 +458,13 @@
 </div>
 </div>
 <style>
-	#quote_159489333 .cq-block-quote__text {
+	#quote_62545363 .cq-block-quote__text {
 		background: linear-gradient(-5deg, #FFFFFF -100px, #DDC1FF 100%);
 	}
-	#quote_159489333.cq-block-quote-author .cq-block-quote__text {
+	#quote_62545363.cq-block-quote-author .cq-block-quote__text {
 		background: transparent;
 	}
-	#quote_159489333 svg path {
+	#quote_62545363 svg path {
 		fill: #DDC1FF;
 	}
 </style>
@@ -490,7 +490,7 @@
 <li>бюджет на&nbsp;аналогичные сервисы; </li>
 <li>возраст компании.</li>
 </ul>
-<div id="quote_405412387" class="cq-block-quote cq-block-quote-author ">
+<div id="quote_1728595901" class="cq-block-quote cq-block-quote-author ">
 <p>	<svg width="44" height="38" viewBox="0 0 44 38" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M34.5349 0C37.1783 0 39.3953 1.05909 41.186 3.17726C43.062 5.21071 44 7.92196 44 11.311C44 16.0557 42.4225 21.0123 39.2674 26.1806C36.1124 31.3489 32.1046 35.2887 27.2442 38L23.5349 30.2475C25.6667 28.3835 27.5 26.6466 29.0349 25.0368C30.5698 23.3423 31.6357 21.1394 32.2326 18.4281C30.6977 18.4281 29.1202 17.4961 27.5 15.6321C25.8798 13.7681 25.0698 11.6923 25.0698 9.40468C25.0698 7.20178 25.9651 5.08361 27.7558 3.05017C29.6318 1.01672 31.8915 0 34.5349 0ZM10.7442 0C13.3876 0 15.6473 1.05909 17.5233 3.17726C19.4845 5.21071 20.4651 7.92196 20.4651 11.311C20.4651 16.0557 18.845 21.0123 15.6047 26.1806C12.4496 31.3489 8.44186 35.2887 3.58139 38L0 30.2475C2.13178 28.3835 3.92248 26.6466 5.37209 25.0368C6.90698 23.3423 7.97287 21.1394 8.56977 18.4281C7.12015 18.4281 5.54264 17.4961 3.83721 15.6321C2.21705 13.7681 1.40698 11.6923 1.40698 9.40468C1.40698 7.20178 2.30233 5.08361 4.09302 3.05017C5.88372 1.01672 8.10077 0 10.7442 0Z" fill="#FF6600"/></svg></p>
 <div class="cq-block-quote__text font24px ">
 <p>Например, если чуваки вкладывают в рекламу от 200 до 500 тысяч, они уже думают о том, как эффективнее обрабатывать входящий трафик. Такие компании готовы рассматривать продукты вроде нашего. Если ребята не инвестируют в рекламу, продажа будет сложнее.</p>
@@ -505,13 +505,13 @@
 </div>
 </div>
 <style>
-	#quote_405412387 .cq-block-quote__text {
+	#quote_1728595901 .cq-block-quote__text {
 		background: linear-gradient(-5deg, #FFFFFF -100px, #DDC1FF 100%);
 	}
-	#quote_405412387.cq-block-quote-author .cq-block-quote__text {
+	#quote_1728595901.cq-block-quote-author .cq-block-quote__text {
 		background: transparent;
 	}
-	#quote_405412387 svg path {
+	#quote_1728595901 svg path {
 		fill: #DDC1FF;
 	}
 </style>
@@ -563,13 +563,13 @@
 </table>
 
 <section class="lidform-universal-container">
-<div id="lidform-universal_198962229" class="lidform-universal">
+<div id="lidform-universal_2042101518" class="lidform-universal">
 <div class="row align-items-center">
 <div class="col-12 col-lg-9">
 <div class="h3 mb-4">Скачайте этот и ещё 2 шаблона ICP: <br /> базовый, ICP + Buyer persona для SaaS B2B и для B2C</div>
-<form id="form-begin_198962229" class="form-begin pb-2 onsubmit="return false" data-event="скачал шаблон ICP">
+<form id="form-begin_2042101518" class="form-begin pb-2 onsubmit="return false" data-event="скачал шаблон ICP">
 					<input class="input p-4 mr-md-3 form-control" required type="email" name="email" placeholder="Email"><input class="btn btn-primary px-4" value="Скачать" type="submit">				</form>
-<p id="form-done_198962229" class="lidform-universal-p-2 form-done">
+<p id="form-done_2042101518" class="lidform-universal-p-2 form-done">
 					Спасибо! Мы уже отправили всё на почту				</p>
 </p>
 </div>
@@ -579,10 +579,10 @@
 </div>
 </section>
 <style>
-	#lidform-universal_198962229 {
+	#lidform-universal_2042101518 {
 		background-color: #FEE6EC;
 	}
-	#lidform-universal_198962229 .h3 , #lidform-universal_198962229 .form-done {
+	#lidform-universal_2042101518 .h3 , #lidform-universal_2042101518 .form-done {
 		color: #000000;
 	}
 </style>
@@ -590,7 +590,7 @@
 <p>В&nbsp;первую очередь профиль идеального клиента помогает наладить процессы в&nbsp;команде продаж, но&nbsp;мы&nbsp;используем Ideal customer profile ещё в&nbsp;командах маркетинга и&nbsp;продукта. Процессы, которые мы&nbsp;улучшили:</p>
 <p><strong>1. При поиске потенциальных клиентов</strong></p>
 <p>Ideal customer profile помогает менеджеру быстрее находить компании, которые с&nbsp;большей вероятностью купят продукт.</p>
-<div id="quote_2066989515" class="cq-block-quote cq-block-quote-author ">
+<div id="quote_610740295" class="cq-block-quote cq-block-quote-author ">
 <p>	<svg width="44" height="38" viewBox="0 0 44 38" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M34.5349 0C37.1783 0 39.3953 1.05909 41.186 3.17726C43.062 5.21071 44 7.92196 44 11.311C44 16.0557 42.4225 21.0123 39.2674 26.1806C36.1124 31.3489 32.1046 35.2887 27.2442 38L23.5349 30.2475C25.6667 28.3835 27.5 26.6466 29.0349 25.0368C30.5698 23.3423 31.6357 21.1394 32.2326 18.4281C30.6977 18.4281 29.1202 17.4961 27.5 15.6321C25.8798 13.7681 25.0698 11.6923 25.0698 9.40468C25.0698 7.20178 25.9651 5.08361 27.7558 3.05017C29.6318 1.01672 31.8915 0 34.5349 0ZM10.7442 0C13.3876 0 15.6473 1.05909 17.5233 3.17726C19.4845 5.21071 20.4651 7.92196 20.4651 11.311C20.4651 16.0557 18.845 21.0123 15.6047 26.1806C12.4496 31.3489 8.44186 35.2887 3.58139 38L0 30.2475C2.13178 28.3835 3.92248 26.6466 5.37209 25.0368C6.90698 23.3423 7.97287 21.1394 8.56977 18.4281C7.12015 18.4281 5.54264 17.4961 3.83721 15.6321C2.21705 13.7681 1.40698 11.6923 1.40698 9.40468C1.40698 7.20178 2.30233 5.08361 4.09302 3.05017C5.88372 1.01672 8.10077 0 10.7442 0Z" fill="#FF6600"/></svg></p>
 <div class="cq-block-quote__text font24px ">
 <p>Профиль идеального клиента помогает сократить путь до завершения сделки, потому что мы продаем целевым и понимаем, как им продавать. Сделки закрываются значительно проще. Например, ecom-проектам с трафиком 150–350 тысяч уникальных пользователей мы продаем лучше и дольше работаем с ними. Они получают ценность, у них есть потребность и люди, которые отвечают за использование нашего продукта.</p>
@@ -605,19 +605,19 @@
 </div>
 </div>
 <style>
-	#quote_2066989515 .cq-block-quote__text {
+	#quote_610740295 .cq-block-quote__text {
 		background: linear-gradient(-5deg, #FFFFFF -100px, #DDC1FF 100%);
 	}
-	#quote_2066989515.cq-block-quote-author .cq-block-quote__text {
+	#quote_610740295.cq-block-quote-author .cq-block-quote__text {
 		background: transparent;
 	}
-	#quote_2066989515 svg path {
+	#quote_610740295 svg path {
 		fill: #DDC1FF;
 	}
 </style>
 <p><strong>2. На&nbsp;этапе демонстрации продукта </strong></p>
 <p>Раньше менеджеры рассказывали про возможности продукта с&nbsp;помощью общей презентации. Сейчас мы&nbsp;сделали несколько персонализированных презентаций под каждый сегмент и&nbsp;buyer-персоны внутри каждого сегмента.</p>
-<div id="quote_645042439" class="cq-block-quote cq-block-quote-author ">
+<div id="quote_691397567" class="cq-block-quote cq-block-quote-author ">
 <p>	<svg width="44" height="38" viewBox="0 0 44 38" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M34.5349 0C37.1783 0 39.3953 1.05909 41.186 3.17726C43.062 5.21071 44 7.92196 44 11.311C44 16.0557 42.4225 21.0123 39.2674 26.1806C36.1124 31.3489 32.1046 35.2887 27.2442 38L23.5349 30.2475C25.6667 28.3835 27.5 26.6466 29.0349 25.0368C30.5698 23.3423 31.6357 21.1394 32.2326 18.4281C30.6977 18.4281 29.1202 17.4961 27.5 15.6321C25.8798 13.7681 25.0698 11.6923 25.0698 9.40468C25.0698 7.20178 25.9651 5.08361 27.7558 3.05017C29.6318 1.01672 31.8915 0 34.5349 0ZM10.7442 0C13.3876 0 15.6473 1.05909 17.5233 3.17726C19.4845 5.21071 20.4651 7.92196 20.4651 11.311C20.4651 16.0557 18.845 21.0123 15.6047 26.1806C12.4496 31.3489 8.44186 35.2887 3.58139 38L0 30.2475C2.13178 28.3835 3.92248 26.6466 5.37209 25.0368C6.90698 23.3423 7.97287 21.1394 8.56977 18.4281C7.12015 18.4281 5.54264 17.4961 3.83721 15.6321C2.21705 13.7681 1.40698 11.6923 1.40698 9.40468C1.40698 7.20178 2.30233 5.08361 4.09302 3.05017C5.88372 1.01672 8.10077 0 10.7442 0Z" fill="#FF6600"/></svg></p>
 <div class="cq-block-quote__text font24px ">
 <p>Мы знаем, с какими болями сталкиваются наши клиенты, и под эти боли сформировали презентации для сейлзов. В начале разговора менеджеры квалифицируют пользователя: показывают список болей и выясняют, какие из них актуальны для клиента. На основе этого менеджер дальше рассказывает про инструменты, которые решат проблему пользователя. Так легче донести пользу и продемонстрировать возможности сервиса.</p>
@@ -632,13 +632,13 @@
 </div>
 </div>
 <style>
-	#quote_645042439 .cq-block-quote__text {
+	#quote_691397567 .cq-block-quote__text {
 		background: linear-gradient(-5deg, #FFFFFF -100px, #DDC1FF 100%);
 	}
-	#quote_645042439.cq-block-quote-author .cq-block-quote__text {
+	#quote_691397567.cq-block-quote-author .cq-block-quote__text {
 		background: transparent;
 	}
-	#quote_645042439 svg path {
+	#quote_691397567 svg path {
 		fill: #DDC1FF;
 	}
 </style>
@@ -648,7 +648,7 @@
 <p>В&nbsp;маркетинге профиль идеального клиента помогает запускать рекламные кампании на&nbsp;нужную аудиторию и&nbsp;с&nbsp;верным посылом. Такие кампании лучше работают и&nbsp;приносят более целевых лидов с&nbsp;меньшими вложениями. Контентная стратегия тоже изменилась&nbsp;— теперь мы&nbsp;пишем кейсы и&nbsp;статьи, ориентируясь на&nbsp;боли и&nbsp;задачи клиентов из&nbsp;нужного нам сегмента. Ещё Ideal customer profile помог нам наладить процесс <a href="https://www.carrotquest.io/blog/marketing-and-sales/" target="_blank" rel="noreferrer noopener">передачи качественных лидов из&nbsp;маркетинга в&nbsp;продажи</a> и&nbsp;увеличить продажи <a href="https://www.carrotquest.io/introduction-carrotquest/" target="_blank" rel="noreferrer noopener">внедрения</a>.</p>
 <p><strong>5. В&nbsp;разработке продуктовой стратегии</strong></p>
 <p>Мы&nbsp;скорректировали также продуктовый роадмап, когда поняли, какие задачи нужно решать клиентам, которые приносят нам больше прибыли. </p>
-<div id="quote_2092757341" class="cq-block-quote cq-block-quote-author ">
+<div id="quote_2086034005" class="cq-block-quote cq-block-quote-author ">
 <p>	<svg width="44" height="38" viewBox="0 0 44 38" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M34.5349 0C37.1783 0 39.3953 1.05909 41.186 3.17726C43.062 5.21071 44 7.92196 44 11.311C44 16.0557 42.4225 21.0123 39.2674 26.1806C36.1124 31.3489 32.1046 35.2887 27.2442 38L23.5349 30.2475C25.6667 28.3835 27.5 26.6466 29.0349 25.0368C30.5698 23.3423 31.6357 21.1394 32.2326 18.4281C30.6977 18.4281 29.1202 17.4961 27.5 15.6321C25.8798 13.7681 25.0698 11.6923 25.0698 9.40468C25.0698 7.20178 25.9651 5.08361 27.7558 3.05017C29.6318 1.01672 31.8915 0 34.5349 0ZM10.7442 0C13.3876 0 15.6473 1.05909 17.5233 3.17726C19.4845 5.21071 20.4651 7.92196 20.4651 11.311C20.4651 16.0557 18.845 21.0123 15.6047 26.1806C12.4496 31.3489 8.44186 35.2887 3.58139 38L0 30.2475C2.13178 28.3835 3.92248 26.6466 5.37209 25.0368C6.90698 23.3423 7.97287 21.1394 8.56977 18.4281C7.12015 18.4281 5.54264 17.4961 3.83721 15.6321C2.21705 13.7681 1.40698 11.6923 1.40698 9.40468C1.40698 7.20178 2.30233 5.08361 4.09302 3.05017C5.88372 1.01672 8.10077 0 10.7442 0Z" fill="#FF6600"/></svg></p>
 <div class="cq-block-quote__text font24px ">
 <p>Например, задачу «передавать больше качественных лидов из маркетинга в продажи» решает <a href="https://www.carrotquest.io/chatbot/" target="_blank" rel="noreferrer noopener">лид-бот</a> и мы развиваем его.</p>
@@ -663,18 +663,18 @@
 </div>
 </div>
 <style>
-	#quote_2092757341 .cq-block-quote__text {
+	#quote_2086034005 .cq-block-quote__text {
 		background: linear-gradient(-5deg, #FFFFFF -100px, #DDC1FF 100%);
 	}
-	#quote_2092757341.cq-block-quote-author .cq-block-quote__text {
+	#quote_2086034005.cq-block-quote-author .cq-block-quote__text {
 		background: transparent;
 	}
-	#quote_2092757341 svg path {
+	#quote_2086034005 svg path {
 		fill: #DDC1FF;
 	}
 </style>
 <p><a class="banner-universal-container" href="#open-modal-consultation" style="display: block; cursor: pointer">	</p>
-<div id="banner-universal_1589859529" class="banner-universal">
+<div id="banner-universal_463687270" class="banner-universal">
 <div class="row align-items-center">
 <div class="col-12 
 				col-lg-9			"></p>
@@ -688,10 +688,10 @@
 </div>
 <p></a></p>
 <style>
-	#banner-universal_1589859529 {
+	#banner-universal_463687270 {
 		background-color: #FFF1E5;
 	}
-	#banner-universal_1589859529 .h3 , #banner-universal_1589859529 .form-begin {
+	#banner-universal_463687270 .h3 , #banner-universal_463687270 .form-begin {
 		color: #000000;
 	}
 </style>                                                ]]></turbo:content>
@@ -711,7 +711,7 @@
 <p>Мы поговорили с <strong>growth-маркетологом Carrot quest Полиной Захаровой-Щукиной</strong> и <strong>Head of Sales Пашей Соковниным</strong>. Они поделились, какие ошибки нашли во взаимодействии команд и как им удалось их исправить. В итоге команды наладили совместную работу вместо того, чтобы раздувать штат продаж и впустую тратить деньги на рекламу. По итогам первого месяца после перестройки процессов мы уже видим, что продажи <a href="/introduction-carrotquest/" target="_blank" rel="noreferrer noopener">внедрения сервиса</a> увеличились в 2 раза.</p>
 <h2>Ошибка №1: игнорировать происходящее с клиентом на других этапах воронки</h2>
 <p>Маркетинг обычно отвечает за <a href="https://www.carrotquest.io/blog/igra-v-lidogeneraciyu/" target="_blank" rel="noreferrer noopener">генерацию лидов</a>. Собранных лидов маркетологи передают в продажи. Но обе команды не знают, что происходит с клиентом на других этапах. Продажи не знают, каких лидов им приносит маркетинг: холодных или горячих, с какой рекламной кампании, с какими ожиданиями. А маркетинг не знает, что происходит дальше в продажах, поэтому продолжает запускать рекламные кампании и собирать некачественных лидов, которые в итоге ничего не покупают.</p>
-<div id="quote_1869990348" class="cq-block-quote cq-block-quote-author ">
+<div id="quote_690118682" class="cq-block-quote cq-block-quote-author ">
 <p>	<svg width="44" height="38" viewBox="0 0 44 38" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M34.5349 0C37.1783 0 39.3953 1.05909 41.186 3.17726C43.062 5.21071 44 7.92196 44 11.311C44 16.0557 42.4225 21.0123 39.2674 26.1806C36.1124 31.3489 32.1046 35.2887 27.2442 38L23.5349 30.2475C25.6667 28.3835 27.5 26.6466 29.0349 25.0368C30.5698 23.3423 31.6357 21.1394 32.2326 18.4281C30.6977 18.4281 29.1202 17.4961 27.5 15.6321C25.8798 13.7681 25.0698 11.6923 25.0698 9.40468C25.0698 7.20178 25.9651 5.08361 27.7558 3.05017C29.6318 1.01672 31.8915 0 34.5349 0ZM10.7442 0C13.3876 0 15.6473 1.05909 17.5233 3.17726C19.4845 5.21071 20.4651 7.92196 20.4651 11.311C20.4651 16.0557 18.845 21.0123 15.6047 26.1806C12.4496 31.3489 8.44186 35.2887 3.58139 38L0 30.2475C2.13178 28.3835 3.92248 26.6466 5.37209 25.0368C6.90698 23.3423 7.97287 21.1394 8.56977 18.4281C7.12015 18.4281 5.54264 17.4961 3.83721 15.6321C2.21705 13.7681 1.40698 11.6923 1.40698 9.40468C1.40698 7.20178 2.30233 5.08361 4.09302 3.05017C5.88372 1.01672 8.10077 0 10.7442 0Z" fill="#FF6600"/></svg></p>
 <div class="cq-block-quote__text font24px ">
 <p>‎Если в продажи приходят некачественные лиды, и менеджер набрал 100 номеров, а поговорил с 5 людьми — это психологически тяжело, это демотивирует. Менеджер просто тратит свою жизнь на ожидание гудков. Чтобы такого не было, командам маркетинга и продаж важно общаться. Продажи должны давать маркетингу обратную связь после прозвона лидов. Это поможет делать эффективные рекламные кампании и увеличивать продажи, не раздувая затраты на команду sales-менеджеров.</p>
@@ -726,24 +726,24 @@
 </div>
 </div>
 <style>
-	#quote_1869990348 .cq-block-quote__text {
+	#quote_690118682 .cq-block-quote__text {
 		background: linear-gradient(-5deg, #FFFFFF -100px, #DDC1FF 100%);
 	}
-	#quote_1869990348.cq-block-quote-author .cq-block-quote__text {
+	#quote_690118682.cq-block-quote-author .cq-block-quote__text {
 		background: transparent;
 	}
-	#quote_1869990348 svg path {
+	#quote_690118682 svg path {
 		fill: #DDC1FF;
 	}
 </style>
 <section class="lidform-universal-container">
-<div id="lidform-universal_1642399140" class="lidform-universal">
+<div id="lidform-universal_1792085807" class="lidform-universal">
 <div class="row align-items-center">
 <div class="col-12 col-lg-9">
 <div class="h3 mb-4">Получите гайд, как квалифицировать и отправлять <br />только качественных лидов в продажи</div>
-<form id="form-begin_1642399140" class="form-begin pb-2 onsubmit="return false" data-event="скачал гайд по квалификации">
+<form id="form-begin_1792085807" class="form-begin pb-2 onsubmit="return false" data-event="скачал гайд по квалификации">
 					<input class="input p-4 mr-md-3 form-control" required type="email" name="email" placeholder="Введите email"><input class="btn btn-primary px-4" value="Скачать" type="submit">				</form>
-<p id="form-done_1642399140" class="lidform-universal-p-2 form-done">
+<p id="form-done_1792085807" class="lidform-universal-p-2 form-done">
 					Спасибо! Мы уже отправили всё на почту				</p>
 </p>
 </div>
@@ -753,10 +753,10 @@
 </div>
 </section>
 <style>
-	#lidform-universal_1642399140 {
+	#lidform-universal_1792085807 {
 		background-color: #FFF1E5;
 	}
-	#lidform-universal_1642399140 .h3 , #lidform-universal_1642399140 .form-done {
+	#lidform-universal_1792085807 .h3 , #lidform-universal_1792085807 .form-done {
 		color: #000000;
 	}
 </style>
@@ -767,7 +767,7 @@
 <h3>Как исправили:</h3>
 <p>Построили текущую воронку в маркетинге и в продажах: на доске в <a href="https://miro.com/" target="_blank" rel="noreferrer noopener">Miro</a> описали, как трафик конвертируется в заявки на демо или регистрации, что на каждом из этапов делают менеджеры. На каждом этапе измерили текущую конверсию.</p>
 <figure><img src="https://www.carrotquest.io/blog/wp-content/uploads/2021/05/Фрагмент-воронки-по-которой-двигается-клиент-1100x570.jpg" /><figcaption>Фрагмент воронки, по которой двигается пользователь из маркетинга в продажи</figcaption></figure>
-<div id="quote_885636952" class="cq-block-quote cq-block-quote-author ">
+<div id="quote_187983361" class="cq-block-quote cq-block-quote-author ">
 <p>	<svg width="44" height="38" viewBox="0 0 44 38" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M34.5349 0C37.1783 0 39.3953 1.05909 41.186 3.17726C43.062 5.21071 44 7.92196 44 11.311C44 16.0557 42.4225 21.0123 39.2674 26.1806C36.1124 31.3489 32.1046 35.2887 27.2442 38L23.5349 30.2475C25.6667 28.3835 27.5 26.6466 29.0349 25.0368C30.5698 23.3423 31.6357 21.1394 32.2326 18.4281C30.6977 18.4281 29.1202 17.4961 27.5 15.6321C25.8798 13.7681 25.0698 11.6923 25.0698 9.40468C25.0698 7.20178 25.9651 5.08361 27.7558 3.05017C29.6318 1.01672 31.8915 0 34.5349 0ZM10.7442 0C13.3876 0 15.6473 1.05909 17.5233 3.17726C19.4845 5.21071 20.4651 7.92196 20.4651 11.311C20.4651 16.0557 18.845 21.0123 15.6047 26.1806C12.4496 31.3489 8.44186 35.2887 3.58139 38L0 30.2475C2.13178 28.3835 3.92248 26.6466 5.37209 25.0368C6.90698 23.3423 7.97287 21.1394 8.56977 18.4281C7.12015 18.4281 5.54264 17.4961 3.83721 15.6321C2.21705 13.7681 1.40698 11.6923 1.40698 9.40468C1.40698 7.20178 2.30233 5.08361 4.09302 3.05017C5.88372 1.01672 8.10077 0 10.7442 0Z" fill="#FF6600"/></svg></p>
 <div class="cq-block-quote__text font24px ">
 <p>Я понимаю, как устроена воронка и как мои действия влияют на то, сколько заработает компания. Когда я знаю, что происходит с лидами, которых я привожу, я могу дальше планировать свои действия: что стоит делать, а что нет. Какие действия приводят к успеху, а какие нет.</p>
@@ -782,13 +782,13 @@
 </div>
 </div>
 <style>
-	#quote_885636952 .cq-block-quote__text {
+	#quote_187983361 .cq-block-quote__text {
 		background: linear-gradient(-5deg, #FFFFFF -100px, #DDC1FF 100%);
 	}
-	#quote_885636952.cq-block-quote-author .cq-block-quote__text {
+	#quote_187983361.cq-block-quote-author .cq-block-quote__text {
 		background: transparent;
 	}
-	#quote_885636952 svg path {
+	#quote_187983361 svg path {
 		fill: #DDC1FF;
 	}
 </style>
@@ -802,7 +802,7 @@
 <p>Составили чек-лист в <a href="https://www.notion.so/" target="_blank" rel="noreferrer noopener">Notion</a>:</p>
 <figure><img src="https://www.carrotquest.io/blog/wp-content/uploads/2021/05/чек-лист-передачи-лидов.jpg" /><figcaption>Лиды в amoCRM передают через <a href="https://www.carrotquest.io/integration/amocrm/" target="_blank" rel="noreferrer noopener">стандартную интеграцию</a> с Carrot quest<br /></figcaption></figure>
 <p>В команде продаж тоже перестроили часть процессов. Назначили MDR — менеджера, который проводит предквалификацию лидов. Если пользователь указал реальный номер телефона, менеджер звонит, выясняет задачи, объем трафика, должность в компании. Если у пользователя есть задачи для нашего сервиса — MDR назначает демо и передает лида другому менеджеру продаж для детального разговора.</p>
-<div id="quote_129718752" class="cq-block-quote cq-block-quote-author ">
+<div id="quote_920317010" class="cq-block-quote cq-block-quote-author ">
 <p>	<svg width="44" height="38" viewBox="0 0 44 38" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M34.5349 0C37.1783 0 39.3953 1.05909 41.186 3.17726C43.062 5.21071 44 7.92196 44 11.311C44 16.0557 42.4225 21.0123 39.2674 26.1806C36.1124 31.3489 32.1046 35.2887 27.2442 38L23.5349 30.2475C25.6667 28.3835 27.5 26.6466 29.0349 25.0368C30.5698 23.3423 31.6357 21.1394 32.2326 18.4281C30.6977 18.4281 29.1202 17.4961 27.5 15.6321C25.8798 13.7681 25.0698 11.6923 25.0698 9.40468C25.0698 7.20178 25.9651 5.08361 27.7558 3.05017C29.6318 1.01672 31.8915 0 34.5349 0ZM10.7442 0C13.3876 0 15.6473 1.05909 17.5233 3.17726C19.4845 5.21071 20.4651 7.92196 20.4651 11.311C20.4651 16.0557 18.845 21.0123 15.6047 26.1806C12.4496 31.3489 8.44186 35.2887 3.58139 38L0 30.2475C2.13178 28.3835 3.92248 26.6466 5.37209 25.0368C6.90698 23.3423 7.97287 21.1394 8.56977 18.4281C7.12015 18.4281 5.54264 17.4961 3.83721 15.6321C2.21705 13.7681 1.40698 11.6923 1.40698 9.40468C1.40698 7.20178 2.30233 5.08361 4.09302 3.05017C5.88372 1.01672 8.10077 0 10.7442 0Z" fill="#FF6600"/></svg></p>
 <div class="cq-block-quote__text font24px ">
 <p>Для меня был прикольный момент — осознание: в продажах есть какая-то жизнь, там что-то происходит с клиентами! Вместе с этим пришло осознание, что большую часть денег мы получаем потому, что продажи продают внедрение. И если у них не получается продать, то все равно люди лучше конвертируются в регистрацию и покупку после взаимодействия с продажами. Поэтому классно проводить людей через продажи.</p>
@@ -817,19 +817,19 @@
 </div>
 </div>
 <style>
-	#quote_129718752 .cq-block-quote__text {
+	#quote_920317010 .cq-block-quote__text {
 		background: linear-gradient(-5deg, #FFFFFF -100px, #DDC1FF 100%);
 	}
-	#quote_129718752.cq-block-quote-author .cq-block-quote__text {
+	#quote_920317010.cq-block-quote-author .cq-block-quote__text {
 		background: transparent;
 	}
-	#quote_129718752 svg path {
+	#quote_920317010 svg path {
 		fill: #DDC1FF;
 	}
 </style>
 <h2>Ошибка №2: не формулировать совместные гипотезы</h2>
 <p>Когда между маркетингом и продажами нет синхронизации, команды ставят перед собой разные цели. Маркетинг запускает рекламные кампании и собирает лиды, а продажи пытаются превратить лиды в сделки. Если в итоге компания не зарабатывает достаточно денег, возникает вопрос: sales-менеджеры плохо продают или маркетологи собирают некачественных лидов?</p>
-<div id="quote_368418187" class="cq-block-quote cq-block-quote-author ">
+<div id="quote_1978897628" class="cq-block-quote cq-block-quote-author ">
 <p>	<svg width="44" height="38" viewBox="0 0 44 38" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M34.5349 0C37.1783 0 39.3953 1.05909 41.186 3.17726C43.062 5.21071 44 7.92196 44 11.311C44 16.0557 42.4225 21.0123 39.2674 26.1806C36.1124 31.3489 32.1046 35.2887 27.2442 38L23.5349 30.2475C25.6667 28.3835 27.5 26.6466 29.0349 25.0368C30.5698 23.3423 31.6357 21.1394 32.2326 18.4281C30.6977 18.4281 29.1202 17.4961 27.5 15.6321C25.8798 13.7681 25.0698 11.6923 25.0698 9.40468C25.0698 7.20178 25.9651 5.08361 27.7558 3.05017C29.6318 1.01672 31.8915 0 34.5349 0ZM10.7442 0C13.3876 0 15.6473 1.05909 17.5233 3.17726C19.4845 5.21071 20.4651 7.92196 20.4651 11.311C20.4651 16.0557 18.845 21.0123 15.6047 26.1806C12.4496 31.3489 8.44186 35.2887 3.58139 38L0 30.2475C2.13178 28.3835 3.92248 26.6466 5.37209 25.0368C6.90698 23.3423 7.97287 21.1394 8.56977 18.4281C7.12015 18.4281 5.54264 17.4961 3.83721 15.6321C2.21705 13.7681 1.40698 11.6923 1.40698 9.40468C1.40698 7.20178 2.30233 5.08361 4.09302 3.05017C5.88372 1.01672 8.10077 0 10.7442 0Z" fill="#FF6600"/></svg></p>
 <div class="cq-block-quote__text font24px ">
 <p>‎У команд маркетинга и продаж должны быть общие гипотезы, чтобы sales-менеджеры могли более качественно подготовиться, понять цель запускаемой гипотезы. Важно, чтобы маркетинг и продажи прислушивались друг к другу, и продажи не просто занимались прозвоном, а чтобы вовремя могли дать обратную связь маркетингу по тому что из гипотез сработало, а что нет</p>
@@ -844,13 +844,13 @@
 </div>
 </div>
 <style>
-	#quote_368418187 .cq-block-quote__text {
+	#quote_1978897628 .cq-block-quote__text {
 		background: linear-gradient(-5deg, #FFFFFF -100px, #DDC1FF 100%);
 	}
-	#quote_368418187.cq-block-quote-author .cq-block-quote__text {
+	#quote_1978897628.cq-block-quote-author .cq-block-quote__text {
 		background: transparent;
 	}
-	#quote_368418187 svg path {
+	#quote_1978897628 svg path {
 		fill: #DDC1FF;
 	}
 </style>
@@ -859,7 +859,7 @@
 <h3>Как исправили:</h3>
 <p>Стали по-другому подходить к запуску рекламных кампаний.&nbsp;</p>
 <p>Чтобы планировать маркетинговый бюджет, нужно понимать всю воронку, по которой движется пользователь. У команд появилась юнит-экономика: к каждой кампании стали относиться как к гипотезе. Маркетинг понимает, какие метрики будут на каждом этапе, и сколько людей конвертируются в покупку. Исходя из этого решаем, что какие-то кампании не стоит даже пробовать запускать, потому что они не окупятся. А какие-то стоит запускать, только если лиды пройдут через команду продаж.</p>
-<div id="quote_1039094526" class="cq-block-quote  ">
+<div id="quote_536241230" class="cq-block-quote  ">
 <div class="cq-block-quote__text  ">
 <p><strong>Пример гипотезы:</strong></p>
 <p>ЕСЛИ мы в Facebook Ads в ретаргет запустим рекламу с оффером «‎узнайте, как увеличить количество качественных лидов с сайта с помощью Carrot quest»‎ и будем собирать заявки на демо через лид-форму Facebook в автоматических плейсментах, используя статичное изображение, ТО получим 5 демо дешевле 500 рублей.</p>
@@ -867,13 +867,13 @@
 </div>
 </div>
 <style>
-	#quote_1039094526 .cq-block-quote__text {
+	#quote_536241230 .cq-block-quote__text {
 		background: linear-gradient(-5deg, #FFFFFF -100px, #DDC1FF 100%);
 	}
-	#quote_1039094526.cq-block-quote-author .cq-block-quote__text {
+	#quote_536241230.cq-block-quote-author .cq-block-quote__text {
 		background: transparent;
 	}
-	#quote_1039094526 svg path {
+	#quote_536241230 svg path {
 		fill: #DDC1FF;
 	}
 </style>
@@ -882,7 +882,7 @@
 <h3>Как было:&nbsp;</h3>
 <p>Маркетинг передавал лидов в продажи, но это происходило стихийно: провели вебинар → посмотрели, сколько людей после вебинара зарегистрировались в сервисе → увидели, что мало → что с ними дальше сделать?&nbsp;</p>
 <p>Решили передавать таких лидов в продажи для прозвона. Но sales-менеджеры говорили, что лиды с вебинаров «‎плохие»‎.</p>
-<div id="quote_1008810370" class="cq-block-quote cq-block-quote-author ">
+<div id="quote_1110501023" class="cq-block-quote cq-block-quote-author ">
 <p>	<svg width="44" height="38" viewBox="0 0 44 38" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M34.5349 0C37.1783 0 39.3953 1.05909 41.186 3.17726C43.062 5.21071 44 7.92196 44 11.311C44 16.0557 42.4225 21.0123 39.2674 26.1806C36.1124 31.3489 32.1046 35.2887 27.2442 38L23.5349 30.2475C25.6667 28.3835 27.5 26.6466 29.0349 25.0368C30.5698 23.3423 31.6357 21.1394 32.2326 18.4281C30.6977 18.4281 29.1202 17.4961 27.5 15.6321C25.8798 13.7681 25.0698 11.6923 25.0698 9.40468C25.0698 7.20178 25.9651 5.08361 27.7558 3.05017C29.6318 1.01672 31.8915 0 34.5349 0ZM10.7442 0C13.3876 0 15.6473 1.05909 17.5233 3.17726C19.4845 5.21071 20.4651 7.92196 20.4651 11.311C20.4651 16.0557 18.845 21.0123 15.6047 26.1806C12.4496 31.3489 8.44186 35.2887 3.58139 38L0 30.2475C2.13178 28.3835 3.92248 26.6466 5.37209 25.0368C6.90698 23.3423 7.97287 21.1394 8.56977 18.4281C7.12015 18.4281 5.54264 17.4961 3.83721 15.6321C2.21705 13.7681 1.40698 11.6923 1.40698 9.40468C1.40698 7.20178 2.30233 5.08361 4.09302 3.05017C5.88372 1.01672 8.10077 0 10.7442 0Z" fill="#FF6600"/></svg></p>
 <div class="cq-block-quote__text font24px ">
 <p>‎Это не информативная обратная связь: из 400 лидов не все окажутся плохими. Но более качественную обратную связь маркетингу получить не удавалось</p>
@@ -897,19 +897,19 @@
 </div>
 </div>
 <style>
-	#quote_1008810370 .cq-block-quote__text {
+	#quote_1110501023 .cq-block-quote__text {
 		background: linear-gradient(-5deg, #FFFFFF -100px, #DDC1FF 100%);
 	}
-	#quote_1008810370.cq-block-quote-author .cq-block-quote__text {
+	#quote_1110501023.cq-block-quote-author .cq-block-quote__text {
 		background: transparent;
 	}
-	#quote_1008810370 svg path {
+	#quote_1110501023 svg path {
 		fill: #DDC1FF;
 	}
 </style>
 <h3>Как исправили:</h3>
 <p>Чтобы команды получали качественную обратную связь друг от друга, создали ритуал. В шутку мы назвали его «‎комитет»‎ по разбору лидов. На эти встречи приходят ребята из маркетинга, которые запускали кампании, и ребята из продаж. Продажи готовят отчет с данными обо всех лидах, которых передал маркетинг в продажи за 1-2 недели. Команды обсуждают, сколько лидов на определенном этапе воронки, сколько ушли в отказ, сколько сделок закрыто, и решают, что делать с оставшимися лидами.</p>
-<div id="quote_793560834" class="cq-block-quote cq-block-quote-author ">
+<div id="quote_220515016" class="cq-block-quote cq-block-quote-author ">
 <p>	<svg width="44" height="38" viewBox="0 0 44 38" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M34.5349 0C37.1783 0 39.3953 1.05909 41.186 3.17726C43.062 5.21071 44 7.92196 44 11.311C44 16.0557 42.4225 21.0123 39.2674 26.1806C36.1124 31.3489 32.1046 35.2887 27.2442 38L23.5349 30.2475C25.6667 28.3835 27.5 26.6466 29.0349 25.0368C30.5698 23.3423 31.6357 21.1394 32.2326 18.4281C30.6977 18.4281 29.1202 17.4961 27.5 15.6321C25.8798 13.7681 25.0698 11.6923 25.0698 9.40468C25.0698 7.20178 25.9651 5.08361 27.7558 3.05017C29.6318 1.01672 31.8915 0 34.5349 0ZM10.7442 0C13.3876 0 15.6473 1.05909 17.5233 3.17726C19.4845 5.21071 20.4651 7.92196 20.4651 11.311C20.4651 16.0557 18.845 21.0123 15.6047 26.1806C12.4496 31.3489 8.44186 35.2887 3.58139 38L0 30.2475C2.13178 28.3835 3.92248 26.6466 5.37209 25.0368C6.90698 23.3423 7.97287 21.1394 8.56977 18.4281C7.12015 18.4281 5.54264 17.4961 3.83721 15.6321C2.21705 13.7681 1.40698 11.6923 1.40698 9.40468C1.40698 7.20178 2.30233 5.08361 4.09302 3.05017C5.88372 1.01672 8.10077 0 10.7442 0Z" fill="#FF6600"/></svg></p>
 <div class="cq-block-quote__text font24px ">
 <p>‎Мы долго притирались. На одном из “комитетов” мы просто обсуждали, как будем использовать результаты, решали, чего не хватает в проекте отчета, и до сих пор это делаем. У нас появилось понимание, что нужно в воронке, что нужно сделать для достижения цели, есть взаимосвязь. Обе команды стали понимать, что должен сделать маркетинг, чтобы доставить качественных лидов в продажи</p>
@@ -924,20 +924,20 @@
 </div>
 </div>
 <style>
-	#quote_793560834 .cq-block-quote__text {
+	#quote_220515016 .cq-block-quote__text {
 		background: linear-gradient(-5deg, #FFFFFF -100px, #DDC1FF 100%);
 	}
-	#quote_793560834.cq-block-quote-author .cq-block-quote__text {
+	#quote_220515016.cq-block-quote-author .cq-block-quote__text {
 		background: transparent;
 	}
-	#quote_793560834 svg path {
+	#quote_220515016 svg path {
 		fill: #DDC1FF;
 	}
 </style>
 <p>Например, если 80% лидов с рекламной кампании не прошли на этап демо, потому что у тех не было сайтов, значит, не стоит масштабировать эту рекламную кампанию — с нее приходят нецелевые лиды.&nbsp;</p>
 <p>А если лиды пока не готовы на демо, их стоит «догреть». Маркетинг подключается на этом этапе: например, пишет персональные письма под каждый сегмент.</p>
 <figure><img src="https://www.carrotquest.io/blog/wp-content/uploads/2021/05/Дашборд-комитета-разбора-лидов.jpg" /><figcaption>Фрагмент таблицы с разбором лидов для «‎комитета»</figcaption></figure>
-<div id="quote_1645067609" class="cq-block-quote  ">
+<div id="quote_674428663" class="cq-block-quote  ">
 <div class="cq-block-quote__text  ">
 <p><strong>Кейс от Полины:</strong></p>
 <p>У меня была ситуация с лидами из мессенджеров. Если смотреть на метрики, которые показывает платформа для рассылок, они не суперкрутые. С рассылки было 11% переходов, и из них мы получили 15 заявок на демо. На первый взгляд, это немного. </p>
@@ -947,13 +947,13 @@
 </div>
 </div>
 <style>
-	#quote_1645067609 .cq-block-quote__text {
+	#quote_674428663 .cq-block-quote__text {
 		background: linear-gradient(-5deg, #FFFFFF -100px, #DDC1FF 100%);
 	}
-	#quote_1645067609.cq-block-quote-author .cq-block-quote__text {
+	#quote_674428663.cq-block-quote-author .cq-block-quote__text {
 		background: transparent;
 	}
-	#quote_1645067609 svg path {
+	#quote_674428663 svg path {
 		fill: #DDC1FF;
 	}
 </style>
@@ -983,7 +983,7 @@
 <figure><img src="https://www.carrotquest.io/blog/wp-content/uploads/2021/05/Окно-настройки-интеграции-с-amoCRM.jpg" /><figcaption>Окно настройки интеграции с amoCRM</figcaption></figure>
 <p>На странице интеграции можно выбрать, каких именно лидов нужно отправить в amoCRM:</p>
 <figure><img src="https://www.carrotquest.io/blog/wp-content/uploads/2021/05/Фильтрация-базы-лидов-для-передачи-в-amoCRM.jpg" /><figcaption>Фильтрация базы лидов для передачи в amoCRM</figcaption></figure>
-<div id="quote_407042070" class="cq-block-quote  ">
+<div id="quote_883552489" class="cq-block-quote  ">
 <div class="cq-block-quote__text  ">
 <p><strong>Кейс от Паши:</strong></p>
 <p>Из рекламной кампании лиды поступают к нам. Если они подходят по объему трафика и хотят общаться, мы назначаем демо. Мы поняли, что нам не нужно продавать вручную слишком маленьким бизнесам, их стоит направлять по self-service воронке. За счет этого мы сэкономим время команды на звонки более перспективным лидам. Значит, нужна предквалификация. Но при этом маркетинг должен понимать, что эта рекламная кампания рабочая: из нее можно привести хороших лидов и докручивать их в воронке. Клиентов с сайтами с большим трафиком мы ведем на демо и предлагаем им дополнительные услуги.</p>
@@ -991,13 +991,13 @@
 </div>
 </div>
 <style>
-	#quote_407042070 .cq-block-quote__text {
+	#quote_883552489 .cq-block-quote__text {
 		background: linear-gradient(-5deg, #FFFFFF -100px, #DDC1FF 100%);
 	}
-	#quote_407042070.cq-block-quote-author .cq-block-quote__text {
+	#quote_883552489.cq-block-quote-author .cq-block-quote__text {
 		background: transparent;
 	}
-	#quote_407042070 svg path {
+	#quote_883552489 svg path {
 		fill: #DDC1FF;
 	}
 </style>
@@ -1016,7 +1016,7 @@
 <p>Чаще всего мы ориентируемся на ICP в холодных продажах при поиске клиентов. Есть четкий план, какие компании нужно искать: у нас есть для них кейсы, мы знаем как решить их потребности. Когда в базу попадает лид из компании, которая подходит под ICP, мы соотносим роль человека, с которым будем разговаривать, с портретами ключевых buyer-персон. Это помогает понять, какие задачи у клиента и что ему предложить. Когда менеджеры приходят на встречу, они проговаривают задачи, знают боли клиента на основе аналогичных кейсов. Если клиент это подтверждает, то они рассказывают, как наша компания может решить его проблемы.</p>
 <p>Маркетингу эта модель помогает выстраивать кампании и формулировать офферы для привлечения новых клиентов.</p>
 <figure><img src="https://www.carrotquest.io/blog/wp-content/uploads/2021/05/скрин-презы-продаж.jpg" /><figcaption>Фрагмент презентации продаж с болями, которые решает Carrot quest</figcaption></figure>
-<div id="quote_1965316795" class="cq-block-quote cq-block-quote-author ">
+<div id="quote_803451324" class="cq-block-quote cq-block-quote-author ">
 <p>	<svg width="44" height="38" viewBox="0 0 44 38" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M34.5349 0C37.1783 0 39.3953 1.05909 41.186 3.17726C43.062 5.21071 44 7.92196 44 11.311C44 16.0557 42.4225 21.0123 39.2674 26.1806C36.1124 31.3489 32.1046 35.2887 27.2442 38L23.5349 30.2475C25.6667 28.3835 27.5 26.6466 29.0349 25.0368C30.5698 23.3423 31.6357 21.1394 32.2326 18.4281C30.6977 18.4281 29.1202 17.4961 27.5 15.6321C25.8798 13.7681 25.0698 11.6923 25.0698 9.40468C25.0698 7.20178 25.9651 5.08361 27.7558 3.05017C29.6318 1.01672 31.8915 0 34.5349 0ZM10.7442 0C13.3876 0 15.6473 1.05909 17.5233 3.17726C19.4845 5.21071 20.4651 7.92196 20.4651 11.311C20.4651 16.0557 18.845 21.0123 15.6047 26.1806C12.4496 31.3489 8.44186 35.2887 3.58139 38L0 30.2475C2.13178 28.3835 3.92248 26.6466 5.37209 25.0368C6.90698 23.3423 7.97287 21.1394 8.56977 18.4281C7.12015 18.4281 5.54264 17.4961 3.83721 15.6321C2.21705 13.7681 1.40698 11.6923 1.40698 9.40468C1.40698 7.20178 2.30233 5.08361 4.09302 3.05017C5.88372 1.01672 8.10077 0 10.7442 0Z" fill="#FF6600"/></svg></p>
 <div class="cq-block-quote__text font24px ">
 <p>‎Нам было интересно начать теснее работать с продажами, потому что мы провели JTBD-исследование и поняли, как лучше продавать. Но продавать должны продажи, поэтому им нужно было рассказать, что мы узнали, и помочь разобраться. По итогам первого месяца после перестройки процессов мы уже видим, что продажи внедрения увеличились в 2 раза.</p>
@@ -1031,18 +1031,18 @@
 </div>
 </div>
 <style>
-	#quote_1965316795 .cq-block-quote__text {
+	#quote_803451324 .cq-block-quote__text {
 		background: linear-gradient(-5deg, #FFFFFF -100px, #DDC1FF 100%);
 	}
-	#quote_1965316795.cq-block-quote-author .cq-block-quote__text {
+	#quote_803451324.cq-block-quote-author .cq-block-quote__text {
 		background: transparent;
 	}
-	#quote_1965316795 svg path {
+	#quote_803451324 svg path {
 		fill: #DDC1FF;
 	}
 </style>
 <div class="banner-universal-container">
-<div id="banner-universal_834796075" class="banner-universal">
+<div id="banner-universal_2058078032" class="banner-universal">
 <div class="row align-items-center">
 <div class="col-12 
 				col-lg-9			"></p>
@@ -1060,10 +1060,10 @@
 </div>
 </div>
 <style>
-	#banner-universal_834796075 {
+	#banner-universal_2058078032 {
 		background-color: #8381F5;
 	}
-	#banner-universal_834796075 .h3 , #banner-universal_834796075 .form-begin {
+	#banner-universal_2058078032 .h3 , #banner-universal_2058078032 .form-begin {
 		color: #ffffff;
 	}
 </style>
@@ -1076,7 +1076,7 @@
 <li>Найдите активных лидов — например, тех, кто прочитал несколько писем. Из них выберите тех, кто заходил на ваш сайт. В итоге получился список самых перспективных — в первую очередь, и менее перспективных лидов —&nbsp; на потом.&nbsp;</li>
 <li>Соберите обратную связь от продаж. На основе нее принимайте решения по рекламной кампании — на основе метрик, которые «‎ближе к деньгам»‎, то есть к концу воронки, а не метрик из рекламного кабинета.</li>
 </ol>
-<div id="quote_1294187630" class="cq-block-quote  ">
+<div id="quote_69364317" class="cq-block-quote  ">
 <div class="cq-block-quote__text  ">
 <p><strong>Совет от Паши:</strong></p>
 <p>Объединяйтесь, чтобы больше продавать. Это хорошо для бизнеса. Даже небольшая команда продаж может продавать больше. Если им будут приходить качественные лиды, которые квалифицирует маркетинг. Не нужно раздувать штат. Общайтесь и автоматизируйте процессы квалификации и передачи лидов в продажи.</p>
@@ -1084,13 +1084,13 @@
 </div>
 </div>
 <style>
-	#quote_1294187630 .cq-block-quote__text {
+	#quote_69364317 .cq-block-quote__text {
 		background: linear-gradient(-5deg, #FFFFFF -100px, #DDC1FF 100%);
 	}
-	#quote_1294187630.cq-block-quote-author .cq-block-quote__text {
+	#quote_69364317.cq-block-quote-author .cq-block-quote__text {
 		background: transparent;
 	}
-	#quote_1294187630 svg path {
+	#quote_69364317 svg path {
 		fill: #DDC1FF;
 	}
 </style>                                                ]]></turbo:content>
@@ -1116,7 +1116,7 @@
 <p><strong>Целевая аудитория:</strong> C-level, фаундеры, инвесторы, продакты, аналитики, маркетологи, бизнес-девелоперы</p>
 <p><strong>Трафик в&nbsp;месяц:</strong> 75&nbsp;000 посетителей</p>
 <p>СЕО онлайн-сервиса AppMagic Максим Саморуков начал работать с&nbsp;Carrot quest, чтобы подключить инструменты для увеличения конверсии и&nbsp;консультироваться с&nbsp;экспертами из&nbsp;<a href="http://introduction-carrotquest/" target="_blank" rel="noreferrer noopener">команды внедрения</a>. </p>
-<div id="quote_1780324167" class="cq-block-quote cq-block-quote-author ">
+<div id="quote_1262121840" class="cq-block-quote cq-block-quote-author ">
 <p>	<svg width="44" height="38" viewBox="0 0 44 38" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M34.5349 0C37.1783 0 39.3953 1.05909 41.186 3.17726C43.062 5.21071 44 7.92196 44 11.311C44 16.0557 42.4225 21.0123 39.2674 26.1806C36.1124 31.3489 32.1046 35.2887 27.2442 38L23.5349 30.2475C25.6667 28.3835 27.5 26.6466 29.0349 25.0368C30.5698 23.3423 31.6357 21.1394 32.2326 18.4281C30.6977 18.4281 29.1202 17.4961 27.5 15.6321C25.8798 13.7681 25.0698 11.6923 25.0698 9.40468C25.0698 7.20178 25.9651 5.08361 27.7558 3.05017C29.6318 1.01672 31.8915 0 34.5349 0ZM10.7442 0C13.3876 0 15.6473 1.05909 17.5233 3.17726C19.4845 5.21071 20.4651 7.92196 20.4651 11.311C20.4651 16.0557 18.845 21.0123 15.6047 26.1806C12.4496 31.3489 8.44186 35.2887 3.58139 38L0 30.2475C2.13178 28.3835 3.92248 26.6466 5.37209 25.0368C6.90698 23.3423 7.97287 21.1394 8.56977 18.4281C7.12015 18.4281 5.54264 17.4961 3.83721 15.6321C2.21705 13.7681 1.40698 11.6923 1.40698 9.40468C1.40698 7.20178 2.30233 5.08361 4.09302 3.05017C5.88372 1.01672 8.10077 0 10.7442 0Z" fill="#FF6600"/></svg></p>
 <div class="cq-block-quote__text font24px ">
 <p>Сначала у нас была потребность в чате поддержки. Потом мы начали исследовать путь пользователя в продукте и поняли, что у нас на сайте много нецелевого трафика. Это влияет на продажи, потому что нецелевые пользователи отвлекают от работы с целевыми. </p>
@@ -1132,13 +1132,13 @@
 </div>
 </div>
 <style>
-	#quote_1780324167 .cq-block-quote__text {
+	#quote_1262121840 .cq-block-quote__text {
 		background: linear-gradient(-5deg, #FFFFFF -100px, #EC4FE8 100%);
 	}
-	#quote_1780324167.cq-block-quote-author .cq-block-quote__text {
+	#quote_1262121840.cq-block-quote-author .cq-block-quote__text {
 		background: transparent;
 	}
-	#quote_1780324167 svg path {
+	#quote_1262121840 svg path {
 		fill: #EC4FE8;
 	}
 </style>
@@ -1161,13 +1161,13 @@
 <li>понять, где целевые пользователи сталкиваются с&nbsp;проблемами в&nbsp;продукте.</li>
 </ul>
 <section class="lidform-universal-container">
-<div id="lidform-universal_825781452" class="lidform-universal">
+<div id="lidform-universal_1460887115" class="lidform-universal">
 <div class="row align-items-center">
 <div class="col-12 col-lg-9">
 <div class="h3 mb-4">Скачайте 16 готовых сценариев для настройки лид-бота в&nbsp;онлайн-сервисе</div>
-<form id="form-begin_825781452" class="form-begin pb-2 onsubmit="return false" data-event="Скачал карту SaaS для лид-бота">
+<form id="form-begin_1460887115" class="form-begin pb-2 onsubmit="return false" data-event="Скачал карту SaaS для лид-бота">
 					<input class="input p-4 mr-md-3 form-control" required type="email" name="email" placeholder="Введите email"><input class="btn btn-primary px-4" value="Скачать" type="submit">				</form>
-<p id="form-done_825781452" class="lidform-universal-p-2 form-done">
+<p id="form-done_1460887115" class="lidform-universal-p-2 form-done">
 					Спасибо! Мы уже отправили всё на почту				</p>
 </p>
 </div>
@@ -1177,10 +1177,10 @@
 </div>
 </section>
 <style>
-	#lidform-universal_825781452 {
+	#lidform-universal_1460887115 {
 		background-color: #EDEDFD;
 	}
-	#lidform-universal_825781452 .h3 , #lidform-universal_825781452 .form-done {
+	#lidform-universal_1460887115 .h3 , #lidform-universal_1460887115 .form-done {
 		color: #000000;
 	}
 </style>
@@ -1198,7 +1198,7 @@
 <figure><img src="https://www.carrotquest.io/blog/wp-content/uploads/2021/05/Screenshot_1-720x179.png" /><figcaption>Пример диалога с&nbsp;нецелевым пользователем</figcaption></figure>
 <p>На&nbsp;сайте AppMagic можно залогиниться только через соцсети. Когда пользователь логинится в&nbsp;сервисе, его email попадает в&nbsp;базу. До&nbsp;интеграции с&nbsp;Carrot quest целевых пользователей определяли по&nbsp;их&nbsp;email адресу: если email содержит домен игровой студии, значит пользователь целевой. Остальные почты проверяются по&nbsp;«черному списку» с&nbsp;помощью алгоритма.</p>
 <p>Путь пользователя в&nbsp;продукте пробовали проследить с&nbsp;помощью внутренней аналитики. Смотрели время и&nbsp;количество сессий, локации.</p>
-<div id="quote_9981801" class="cq-block-quote cq-block-quote-author ">
+<div id="quote_885700903" class="cq-block-quote cq-block-quote-author ">
 <p>	<svg width="44" height="38" viewBox="0 0 44 38" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M34.5349 0C37.1783 0 39.3953 1.05909 41.186 3.17726C43.062 5.21071 44 7.92196 44 11.311C44 16.0557 42.4225 21.0123 39.2674 26.1806C36.1124 31.3489 32.1046 35.2887 27.2442 38L23.5349 30.2475C25.6667 28.3835 27.5 26.6466 29.0349 25.0368C30.5698 23.3423 31.6357 21.1394 32.2326 18.4281C30.6977 18.4281 29.1202 17.4961 27.5 15.6321C25.8798 13.7681 25.0698 11.6923 25.0698 9.40468C25.0698 7.20178 25.9651 5.08361 27.7558 3.05017C29.6318 1.01672 31.8915 0 34.5349 0ZM10.7442 0C13.3876 0 15.6473 1.05909 17.5233 3.17726C19.4845 5.21071 20.4651 7.92196 20.4651 11.311C20.4651 16.0557 18.845 21.0123 15.6047 26.1806C12.4496 31.3489 8.44186 35.2887 3.58139 38L0 30.2475C2.13178 28.3835 3.92248 26.6466 5.37209 25.0368C6.90698 23.3423 7.97287 21.1394 8.56977 18.4281C7.12015 18.4281 5.54264 17.4961 3.83721 15.6321C2.21705 13.7681 1.40698 11.6923 1.40698 9.40468C1.40698 7.20178 2.30233 5.08361 4.09302 3.05017C5.88372 1.01672 8.10077 0 10.7442 0Z" fill="#FF6600"/></svg></p>
 <div class="cq-block-quote__text font24px ">
 <p>Это не позволяло увидеть полную картину: было сложно квалифицировать пользователей и отличать целевых от нецелевых. В FullStory была возможность посмотреть записи сессий, но это было достаточно дорого и особой ценности не давало. С квалификацией это не помогло.</p>
@@ -1213,13 +1213,13 @@
 </div>
 </div>
 <style>
-	#quote_9981801 .cq-block-quote__text {
+	#quote_885700903 .cq-block-quote__text {
 		background: linear-gradient(-5deg, #FFFFFF -100px, #EC4FE8 100%);
 	}
-	#quote_9981801.cq-block-quote-author .cq-block-quote__text {
+	#quote_885700903.cq-block-quote-author .cq-block-quote__text {
 		background: transparent;
 	}
-	#quote_9981801 svg path {
+	#quote_885700903 svg path {
 		fill: #EC4FE8;
 	}
 </style>
@@ -1249,7 +1249,7 @@
 <figure><video><source src="https://www.carrotquest.io/blog/wp-content/uploads/2021/05/ezgif.com-gif-maker-3.mp4" type="video/mp4" /></video><img src="https://www.carrotquest.io/blog/wp-content/plugins/rss-for-yandex-turbo/img/video.png" /></figure>
 <h2>Результаты</h2>
 <p>AppMagic внедрили в&nbsp;работу идеи, предложенные менеджером Carrot quest, многие из&nbsp;них оставили для дальнейшей реализации.</p>
-<div id="quote_563144631" class="cq-block-quote cq-block-quote-author ">
+<div id="quote_2001405801" class="cq-block-quote cq-block-quote-author ">
 <p>	<svg width="44" height="38" viewBox="0 0 44 38" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M34.5349 0C37.1783 0 39.3953 1.05909 41.186 3.17726C43.062 5.21071 44 7.92196 44 11.311C44 16.0557 42.4225 21.0123 39.2674 26.1806C36.1124 31.3489 32.1046 35.2887 27.2442 38L23.5349 30.2475C25.6667 28.3835 27.5 26.6466 29.0349 25.0368C30.5698 23.3423 31.6357 21.1394 32.2326 18.4281C30.6977 18.4281 29.1202 17.4961 27.5 15.6321C25.8798 13.7681 25.0698 11.6923 25.0698 9.40468C25.0698 7.20178 25.9651 5.08361 27.7558 3.05017C29.6318 1.01672 31.8915 0 34.5349 0ZM10.7442 0C13.3876 0 15.6473 1.05909 17.5233 3.17726C19.4845 5.21071 20.4651 7.92196 20.4651 11.311C20.4651 16.0557 18.845 21.0123 15.6047 26.1806C12.4496 31.3489 8.44186 35.2887 3.58139 38L0 30.2475C2.13178 28.3835 3.92248 26.6466 5.37209 25.0368C6.90698 23.3423 7.97287 21.1394 8.56977 18.4281C7.12015 18.4281 5.54264 17.4961 3.83721 15.6321C2.21705 13.7681 1.40698 11.6923 1.40698 9.40468C1.40698 7.20178 2.30233 5.08361 4.09302 3.05017C5.88372 1.01672 8.10077 0 10.7442 0Z" fill="#FF6600"/></svg></p>
 <div class="cq-block-quote__text font24px ">
 <p>Бэклог у нас сейчас забит под завязку. Мы обязательно продолжим работу с командой внедрения, когда проверим уже придуманные гипотезы.</p>
@@ -1264,13 +1264,13 @@
 </div>
 </div>
 <style>
-	#quote_563144631 .cq-block-quote__text {
+	#quote_2001405801 .cq-block-quote__text {
 		background: linear-gradient(-5deg, #FFFFFF -100px, #85D9F5 100%);
 	}
-	#quote_563144631.cq-block-quote-author .cq-block-quote__text {
+	#quote_2001405801.cq-block-quote-author .cq-block-quote__text {
 		background: transparent;
 	}
-	#quote_563144631 svg path {
+	#quote_2001405801 svg path {
 		fill: #85D9F5;
 	}
 </style>
@@ -1281,7 +1281,7 @@
 </ul>
 <p><strong>Так как минимальная цена версии premium&nbsp;— 2 480$, можно посчитать, что AppMagic за&nbsp;три месяца заработали дополнительно как минимум 86 800$, или 6&nbsp;569&nbsp;250&nbsp;рублей.</strong></p>
 <div class="banner-universal-container">
-<div id="banner-universal_1961637623" class="banner-universal">
+<div id="banner-universal_1360435679" class="banner-universal">
 <div class="row align-items-center">
 <div class="col-12 
 				col-lg-9			"></p>
@@ -1299,10 +1299,10 @@
 </div>
 </div>
 <style>
-	#banner-universal_1961637623 {
+	#banner-universal_1360435679 {
 		background-color: #EDEDFD;
 	}
-	#banner-universal_1961637623 .h3 , #banner-universal_1961637623 .form-begin {
+	#banner-universal_1360435679 .h3 , #banner-universal_1360435679 .form-begin {
 		color: #000000;
 	}
 </style>
@@ -1331,13 +1331,13 @@
 <p>Мы&nbsp;поговорили о&nbsp;том, что и&nbsp;когда лучше работает, с&nbsp;<a href="https://www.facebook.com/aleksandr.miller.566" target="_blank" rel="noreferrer noopener"><strong>Александром Миллером</strong></a>, Head of&nbsp;Targeting,<strong> </strong><a href="https://qmrktng.com/" target="_blank" rel="noreferrer noopener nofollow"><strong>Qmarketing Agency</strong></a> и&nbsp;<a href="https://www.facebook.com/d.lesnevsky" target="_blank" rel="noreferrer noopener"><strong>Димитрием Лесневским</strong></a>, партнёром<strong> </strong><a href="https://vinou.ru/" target="_blank" rel="noreferrer noopener nofollow"><strong>агентства Виноу</strong></a>, сооснователем<a href="http://optia.ai/" target="_blank" rel="noreferrer noopener nofollow"><strong> Optia.ai</strong></a>. И&nbsp;рассказываем, как сами принимаем решения о&nbsp;запуске таргетированной рекламы.</p>
 <p>Актуальны&nbsp;ли look-alike аудитории или уже можно про них забыть&nbsp;— в&nbsp;этом материале.</p>
 <section class="lidform-universal-container">
-<div id="lidform-universal_1889587464" class="lidform-universal">
+<div id="lidform-universal_939565566" class="lidform-universal">
 <div class="row align-items-center">
 <div class="col-12 col-lg-9">
 <div class="h3 mb-4">Подпишитесь на письма от Полины из&nbsp;Carrot&nbsp;quest: статьи,&nbsp;кейсы и видео о маркетинге, продажах и&nbsp;управлении продуктом раз в неделю </div>
-<form id="form-begin_1889587464" class="form-begin pb-2 onsubmit="return false" data-event="">
+<form id="form-begin_939565566" class="form-begin pb-2 onsubmit="return false" data-event="">
 					<input class="input p-4 mr-md-3 form-control" required type="email" name="email" placeholder="Email"><input class="btn btn-primary px-4" value="Подписаться" type="submit">				</form>
-<p id="form-done_1889587464" class="lidform-universal-p-2 form-done">
+<p id="form-done_939565566" class="lidform-universal-p-2 form-done">
 					Спасибо! Полина уже готовит свежий дайджест				</p>
 </p>
 </div>
@@ -1347,10 +1347,10 @@
 </div>
 </section>
 <style>
-	#lidform-universal_1889587464 {
+	#lidform-universal_939565566 {
 		background-color: #CAC9FA;
 	}
-	#lidform-universal_1889587464 .h3 , #lidform-universal_1889587464 .form-done {
+	#lidform-universal_939565566 .h3 , #lidform-universal_939565566 .form-done {
 		color: #333333;
 	}
 </style>
@@ -1363,7 +1363,7 @@
 <p>Может показаться, что look-alike&nbsp;— это единственный способ запускать рекламу и&nbsp;получать 100% целевую аудиторию в&nbsp;Facebook, которая точно заинтересуется предложением. </p>
 <p>Есть несколько мнений на&nbsp;этот счет: кто-то запускает рекламные кампании на&nbsp;широкую аудиторию с&nbsp;четкими рекламными креативами и&nbsp;добивается лучших результатов, чем при запуске таргетинга на&nbsp;основе look-alike. </p>
 <p>Главное, что нужно понимать при запуске таргетинга,&nbsp;— всегда надо тестировать. Потому что любая аудитория, даже самая широкая, выгорает, и&nbsp;ее&nbsp;нужно оптимизировать.</p>
-<div id="quote_1868959347" class="cq-block-quote cq-block-quote-author ">
+<div id="quote_612777169" class="cq-block-quote cq-block-quote-author ">
 <p>	<svg width="44" height="38" viewBox="0 0 44 38" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M34.5349 0C37.1783 0 39.3953 1.05909 41.186 3.17726C43.062 5.21071 44 7.92196 44 11.311C44 16.0557 42.4225 21.0123 39.2674 26.1806C36.1124 31.3489 32.1046 35.2887 27.2442 38L23.5349 30.2475C25.6667 28.3835 27.5 26.6466 29.0349 25.0368C30.5698 23.3423 31.6357 21.1394 32.2326 18.4281C30.6977 18.4281 29.1202 17.4961 27.5 15.6321C25.8798 13.7681 25.0698 11.6923 25.0698 9.40468C25.0698 7.20178 25.9651 5.08361 27.7558 3.05017C29.6318 1.01672 31.8915 0 34.5349 0ZM10.7442 0C13.3876 0 15.6473 1.05909 17.5233 3.17726C19.4845 5.21071 20.4651 7.92196 20.4651 11.311C20.4651 16.0557 18.845 21.0123 15.6047 26.1806C12.4496 31.3489 8.44186 35.2887 3.58139 38L0 30.2475C2.13178 28.3835 3.92248 26.6466 5.37209 25.0368C6.90698 23.3423 7.97287 21.1394 8.56977 18.4281C7.12015 18.4281 5.54264 17.4961 3.83721 15.6321C2.21705 13.7681 1.40698 11.6923 1.40698 9.40468C1.40698 7.20178 2.30233 5.08361 4.09302 3.05017C5.88372 1.01672 8.10077 0 10.7442 0Z" fill="#FF6600"/></svg></p>
 <div class="cq-block-quote__text font24px ">
 <p>Раньше мы использовали look-alike аудиторию в Facebook для рекламы, но она показывала плохие результаты. Я проконсультировался с менеджером Facebook и узнал, что алгоритм соцсети обучается и ищет подходящих людей, даже если реклама настроена на широкую аудиторию. </p>
@@ -1379,19 +1379,19 @@
 </div>
 </div>
 <style>
-	#quote_1868959347 .cq-block-quote__text {
+	#quote_612777169 .cq-block-quote__text {
 		background: linear-gradient(-5deg, #FFFFFF -100px, #FFB97F 100%);
 	}
-	#quote_1868959347.cq-block-quote-author .cq-block-quote__text {
+	#quote_612777169.cq-block-quote-author .cq-block-quote__text {
 		background: transparent;
 	}
-	#quote_1868959347 svg path {
+	#quote_612777169 svg path {
 		fill: #FFB97F;
 	}
 </style>
 <p>Мы&nbsp;в&nbsp;Carrot quest чаще запускаем рекламу на&nbsp;широкую аудиторию с&nbsp;точечными креативами под каждый сегмент ЦА&nbsp;— у&nbsp;нас так лучше результат. С&nbsp;такой рекламы мы&nbsp;получаем больше заявок, а&nbsp;цена за&nbsp;совершение целевого действия получается ниже. </p>
 <p>Мы&nbsp;узнали мнение экспертов в&nbsp;таргетинге о&nbsp;том, в&nbsp;каком случае лучше работает широкая аудитория, а&nbsp;в&nbsp;каком однозначный победитель&nbsp;— look-alike. Кратко&nbsp;— look-alike точно не&nbsp;стоит списывать со&nbsp;счетов 🙂 </p>
-<div id="quote_1871355812" class="cq-block-quote cq-block-quote-author ">
+<div id="quote_256260979" class="cq-block-quote cq-block-quote-author ">
 <p>	<svg width="44" height="38" viewBox="0 0 44 38" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M34.5349 0C37.1783 0 39.3953 1.05909 41.186 3.17726C43.062 5.21071 44 7.92196 44 11.311C44 16.0557 42.4225 21.0123 39.2674 26.1806C36.1124 31.3489 32.1046 35.2887 27.2442 38L23.5349 30.2475C25.6667 28.3835 27.5 26.6466 29.0349 25.0368C30.5698 23.3423 31.6357 21.1394 32.2326 18.4281C30.6977 18.4281 29.1202 17.4961 27.5 15.6321C25.8798 13.7681 25.0698 11.6923 25.0698 9.40468C25.0698 7.20178 25.9651 5.08361 27.7558 3.05017C29.6318 1.01672 31.8915 0 34.5349 0ZM10.7442 0C13.3876 0 15.6473 1.05909 17.5233 3.17726C19.4845 5.21071 20.4651 7.92196 20.4651 11.311C20.4651 16.0557 18.845 21.0123 15.6047 26.1806C12.4496 31.3489 8.44186 35.2887 3.58139 38L0 30.2475C2.13178 28.3835 3.92248 26.6466 5.37209 25.0368C6.90698 23.3423 7.97287 21.1394 8.56977 18.4281C7.12015 18.4281 5.54264 17.4961 3.83721 15.6321C2.21705 13.7681 1.40698 11.6923 1.40698 9.40468C1.40698 7.20178 2.30233 5.08361 4.09302 3.05017C5.88372 1.01672 8.10077 0 10.7442 0Z" fill="#FF6600"/></svg></p>
 <div class="cq-block-quote__text font24px ">
 <p>Широкие аудитории в Facebook Ads действительно отлично работают. На практике у нас получалось привлекать пользователей c сохранением целевой стоимости качественного лида в Edtech-проекте со средним чеком в 530 000 рублей. </p>
@@ -1412,19 +1412,19 @@
 </div>
 </div>
 <style>
-	#quote_1871355812 .cq-block-quote__text {
+	#quote_256260979 .cq-block-quote__text {
 		background: linear-gradient(-5deg, #FFFFFF -100px, #FEDE98 100%);
 	}
-	#quote_1871355812.cq-block-quote-author .cq-block-quote__text {
+	#quote_256260979.cq-block-quote-author .cq-block-quote__text {
 		background: transparent;
 	}
-	#quote_1871355812 svg path {
+	#quote_256260979 svg path {
 		fill: #FEDE98;
 	}
 </style>
 <p>Часть таргетологов крупных бизнесов, с&nbsp;которыми мы&nbsp;пообщались, считают, что реклама на&nbsp;широкую аудиторию с&nbsp;хорошим УТП и&nbsp;креативами работает, но&nbsp;нельзя использовать ее&nbsp;как единственный прием. Это всего лишь один из&nbsp;рабочих инструментов. Look-alike работает только в&nbsp;том случае, если изначальная база аудитории качественная. </p>
 <p>Небольшому бизнесу действительно может быть выгоднее запускать рекламу на&nbsp;широкую, но&nbsp;крупным компаниям часто нужна реклама на&nbsp;основе look-alike, так как широкая аудитория выгорает, как и&nbsp;все остальные.</p>
-<div id="quote_1381724982" class="cq-block-quote cq-block-quote-author ">
+<div id="quote_1744010087" class="cq-block-quote cq-block-quote-author ">
 <p>	<svg width="44" height="38" viewBox="0 0 44 38" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M34.5349 0C37.1783 0 39.3953 1.05909 41.186 3.17726C43.062 5.21071 44 7.92196 44 11.311C44 16.0557 42.4225 21.0123 39.2674 26.1806C36.1124 31.3489 32.1046 35.2887 27.2442 38L23.5349 30.2475C25.6667 28.3835 27.5 26.6466 29.0349 25.0368C30.5698 23.3423 31.6357 21.1394 32.2326 18.4281C30.6977 18.4281 29.1202 17.4961 27.5 15.6321C25.8798 13.7681 25.0698 11.6923 25.0698 9.40468C25.0698 7.20178 25.9651 5.08361 27.7558 3.05017C29.6318 1.01672 31.8915 0 34.5349 0ZM10.7442 0C13.3876 0 15.6473 1.05909 17.5233 3.17726C19.4845 5.21071 20.4651 7.92196 20.4651 11.311C20.4651 16.0557 18.845 21.0123 15.6047 26.1806C12.4496 31.3489 8.44186 35.2887 3.58139 38L0 30.2475C2.13178 28.3835 3.92248 26.6466 5.37209 25.0368C6.90698 23.3423 7.97287 21.1394 8.56977 18.4281C7.12015 18.4281 5.54264 17.4961 3.83721 15.6321C2.21705 13.7681 1.40698 11.6923 1.40698 9.40468C1.40698 7.20178 2.30233 5.08361 4.09302 3.05017C5.88372 1.01672 8.10077 0 10.7442 0Z" fill="#FF6600"/></svg></p>
 <div class="cq-block-quote__text font24px ">
 <p>Концептуально look-alike-аудитории – прекрасная вещь. Если описывать аудиторию стандартным небольшим набором характеристик — пол, возраст, интересы — в выборку попадают очень разные люди. Модель, которая учитывает весь вектор признаков, сможет описать пользователя точнее. Значит, эффективнее сработает.</p>
@@ -1440,17 +1440,16 @@
 </div>
 </div>
 <style>
-	#quote_1381724982 .cq-block-quote__text {
+	#quote_1744010087 .cq-block-quote__text {
 		background: linear-gradient(-5deg, #FFFFFF -100px, #FA85A1 100%);
 	}
-	#quote_1381724982.cq-block-quote-author .cq-block-quote__text {
+	#quote_1744010087.cq-block-quote-author .cq-block-quote__text {
 		background: transparent;
 	}
-	#quote_1381724982 svg path {
+	#quote_1744010087 svg path {
 		fill: #FA85A1;
 	}
 </style>
-<figure><img src="blob:https://www.carrotquest.io/e9fa34b3-f7e6-44f7-8812-76becc76a2df" /></figure>
 <h2>Откуда брать данные для сбора и&nbsp;сколько данных нужно</h2>
 <p>Для исходной аудитории используются разные источники, объединяет их&nbsp;одно&nbsp;— данные уже есть и&nbsp;они сегментированы определенным образом. </p>
 <p>Это могут быть пользователи, которые:</p>
@@ -1481,7 +1480,7 @@
 <li>После того, как наберется нужное количество посетителей сайта, совершивших определенное действие, вы&nbsp;можете выгрузить список этих людей в&nbsp;Excel и&nbsp;загрузить в&nbsp;рекламный кабинет Facebook.</li>
 </ol>
 <div class="banner-universal-container">
-<div id="banner-universal_239290901" class="banner-universal">
+<div id="banner-universal_1884943885" class="banner-universal">
 <div class="row align-items-center">
 <div class="col-12 
 							"></p>
@@ -1497,10 +1496,10 @@
 </div>
 </div>
 <style>
-	#banner-universal_239290901 {
+	#banner-universal_1884943885 {
 		background-color: #CAC9FA;
 	}
-	#banner-universal_239290901 .h3 , #banner-universal_239290901 .form-begin {
+	#banner-universal_1884943885 .h3 , #banner-universal_1884943885 .form-begin {
 		color: #000000;
 	}
 </style>
@@ -1621,13 +1620,13 @@
 <li><strong>Понимание поведенческих факторов.</strong> Вы сможете настраивать коммуникацию с клиентом на сайте в зависимости от величины коэффициента ltv и понимать, что именно подталкивает его к покупке.&nbsp;</li>
 </ul>
 <section class="lidform-universal-container">
-<div id="lidform-universal_1928923163" class="lidform-universal">
+<div id="lidform-universal_1307692753" class="lidform-universal">
 <div class="row align-items-center">
 <div class="col-12 col-lg-9">
 <div class="h3 mb-4">Хочу скачать калькулятор для расчета LTV</div>
-<form id="form-begin_1928923163" class="form-begin pb-2 onsubmit="return false" data-event="Подписался в лидформе: Шаблон для расчета LTV">
+<form id="form-begin_1307692753" class="form-begin pb-2 onsubmit="return false" data-event="Подписался в лидформе: Шаблон для расчета LTV">
 					<input class="input p-4 mr-md-3 form-control" required type="email" name="email" placeholder="Email"><input class="btn btn-primary px-4" value="Скачать" type="submit">				</form>
-<p id="form-done_1928923163" class="lidform-universal-p-2 form-done">
+<p id="form-done_1307692753" class="lidform-universal-p-2 form-done">
 					Спасибо! Мы уже отправили всё на почту				</p>
 </p>
 </div>
@@ -1637,10 +1636,10 @@
 </div>
 </section>
 <style>
-	#lidform-universal_1928923163 {
+	#lidform-universal_1307692753 {
 		background-color: #4F4CF1;
 	}
-	#lidform-universal_1928923163 .h3 , #lidform-universal_1928923163 .form-done {
+	#lidform-universal_1307692753 .h3 , #lidform-universal_1307692753 .form-done {
 		color: #ffffff;
 	}
 </style>
@@ -1810,13 +1809,13 @@
 <p>Когда пользователь обращается в&nbsp;техподдержку, он&nbsp;уже в&nbsp;растерянности. В&nbsp;большинстве случаев он&nbsp;пытается разобраться в&nbsp;сервисе или приложении, но&nbsp;не&nbsp;может сделать это интуитивно. Возможно, продукт слишком сложный, чтобы быть понятным сразу на&nbsp;100%, или какие-то функции недостаточно удобные в&nbsp;использовании. Возможно, он&nbsp;наткнулся на&nbsp;баг или недостающую функцию. </p>
 <p>Как только пользователю нужен ответ, он&nbsp;начинает искать ссылку на&nbsp;техподдержку. И&nbsp;если он&nbsp;не&nbsp;сможет найти как связаться с&nbsp;техподдержкой в&nbsp;течение 5-10&nbsp;секунд, высока вероятность, что пользователь уйдет. Случалось&nbsp;ли вам сталкиваться с&nbsp;сервисами, которые так умело прятали свою кнопку службы поддержки, что требовалось перерыть весь сайт, чтобы найти&nbsp;её? Вряд&nbsp;ли вы&nbsp;все еще ими пользуетесь.</p>
 <section class="lidform-universal-container">
-<div id="lidform-universal_1167331878" class="lidform-universal">
+<div id="lidform-universal_893021794" class="lidform-universal">
 <div class="row align-items-center">
 <div class="col-12 col-lg-9">
 <div class="h3 mb-4">Скачайте чек-лист с главными метриками</div>
-<form id="form-begin_1167331878" class="form-begin pb-2 onsubmit="return false" data-event="скачал чек-лист Метрики поддержки">
+<form id="form-begin_893021794" class="form-begin pb-2 onsubmit="return false" data-event="скачал чек-лист Метрики поддержки">
 					<input class="input p-4 mr-md-3 form-control" required type="email" name="email" placeholder="Email"><input class="btn btn-primary px-4" value="Скачать" type="submit">				</form>
-<p id="form-done_1167331878" class="lidform-universal-p-2 form-done">
+<p id="form-done_893021794" class="lidform-universal-p-2 form-done">
 					Спасибо! Мы уже отправили всё на почту				</p>
 </p>
 </div>
@@ -1826,10 +1825,10 @@
 </div>
 </section>
 <style>
-	#lidform-universal_1167331878 {
+	#lidform-universal_893021794 {
 		background-color: #a8a5f6;
 	}
-	#lidform-universal_1167331878 .h3 , #lidform-universal_1167331878 .form-done {
+	#lidform-universal_893021794 .h3 , #lidform-universal_893021794 .form-done {
 		color: #000000;
 	}
 </style>
@@ -1838,20 +1837,20 @@
 <div class="wp-block-image outline-bordered radius-5px">
 <figure><img src="https://www.carrotquest.io/blog/wp-content/uploads/2020/09/8-support-secrets-1.png" /></figure>
 </div>
-<div id="quote_564499393" class="cq-block-quote  ">
+<div id="quote_1576644503" class="cq-block-quote  ">
 <div class="cq-block-quote__text  ">
 <p>Позаботьтесь о&nbsp;том, чтобы поддержка была доступна для всех пользователей. Даже для тех, кто полностью запретил <a href="https://www.carrotquest.io/blog/carrotquest-vs-adblock/">сбор данных о&nbsp;себе. </a></p>
 </p>
 </div>
 </div>
 <style>
-	#quote_564499393 .cq-block-quote__text {
+	#quote_1576644503 .cq-block-quote__text {
 		background: linear-gradient(-5deg, #FFFFFF -100px, #feebc1 100%);
 	}
-	#quote_564499393.cq-block-quote-author .cq-block-quote__text {
+	#quote_1576644503.cq-block-quote-author .cq-block-quote__text {
 		background: transparent;
 	}
-	#quote_564499393 svg path {
+	#quote_1576644503 svg path {
 		fill: #feebc1;
 	}
 </style>
@@ -1863,20 +1862,20 @@
 </div>
 <h2>3. Убедитесь, что FAQ или база знаний действительно помогают пользователям</h2>
 <p>Модель общения с&nbsp;пользователями совершенно изменилась. Раньше, если пользователь отвлекался и&nbsp;уходил с&nbsp;сайта, история общения с&nbsp;ним сразу&nbsp;же терялась. Когда клиент приходил на&nbsp;сайт и&nbsp;обращался в&nbsp;поддержку снова, ему приходилось повторять вопрос. Это раздражало.</p>
-<div id="quote_1754634088" class="cq-block-quote  ">
+<div id="quote_2112613811" class="cq-block-quote  ">
 <div class="cq-block-quote__text  ">
 <p>Информация о&nbsp;пользователях и&nbsp;контекст очень важны для службы поддержки сервиса SureTask. Как это помогло поднять конверсию в регистрацию на 31%, читайте в&nbsp;<a href="https://www.carrotquest.io/blog/dashly-suretask-case/">кейсе.</a></p>
 </p>
 </div>
 </div>
 <style>
-	#quote_1754634088 .cq-block-quote__text {
+	#quote_2112613811 .cq-block-quote__text {
 		background: linear-gradient(-5deg, #FFFFFF -100px, #FEEBC1 100%);
 	}
-	#quote_1754634088.cq-block-quote-author .cq-block-quote__text {
+	#quote_2112613811.cq-block-quote-author .cq-block-quote__text {
 		background: transparent;
 	}
-	#quote_1754634088 svg path {
+	#quote_2112613811 svg path {
 		fill: #FEEBC1;
 	}
 </style>
@@ -1908,7 +1907,7 @@
 <p>Если вы&nbsp;решите не&nbsp;внедрять функцию (например, она не&nbsp;соответствует вашим планам), в&nbsp;крайнем случае создайте раздел в&nbsp;FAQ, предлагающий альтернативные решения. </p>
 <p>Если вы&nbsp;действительно хотите получать меньше обращений в&nbsp;службу поддержки, категория, которой вы&nbsp;должны уделить максимум внимания,&nbsp;— это <strong>непонятные и&nbsp;спрятанные функции</strong>. Непонятные функции&nbsp;— это&nbsp;те, которые ваши пользователи заметили, но&nbsp;не&nbsp;смогли понять, что с&nbsp;ними делать. Спрятанные&nbsp;— те, которые у&nbsp;вас на&nbsp;самом деле есть, но&nbsp;пользователи о&nbsp;них не&nbsp;знают. Хороший способ помочь пользователям найти их&nbsp;и&nbsp;разобраться&nbsp;— показать небольшие подсказки в&nbsp;сервисе.</p>
 <p><a class="banner-universal-container" href="https://www.carrotquest.io/online-consultant/" style="display: block; cursor: pointer">	</p>
-<div id="banner-universal_128839910" class="banner-universal">
+<div id="banner-universal_1241452625" class="banner-universal">
 <div class="row align-items-center">
 <div class="col-12 
 				col-lg-9			"></p>
@@ -1922,10 +1921,10 @@
 </div>
 <p></a></p>
 <style>
-	#banner-universal_128839910 {
+	#banner-universal_1241452625 {
 		background-color: #605DF2;
 	}
-	#banner-universal_128839910 .h3 , #banner-universal_128839910 .form-begin {
+	#banner-universal_1241452625 .h3 , #banner-universal_1241452625 .form-begin {
 		color: #ffffff;
 	}
 </style>
@@ -1946,20 +1945,20 @@
 <p>Чтобы операторы не&nbsp;пропускали сообщения и&nbsp;всегда были в&nbsp;курсе контекста, объедините все каналы связи с&nbsp;техподдержкой в&nbsp;одном интерфейсе.</p>
 <figure><img src="https://www.carrotquest.io/blog/wp-content/uploads/2020/09/8-support-secrets-6-2.png" /><figcaption>Так выглядит раздел Диалоги, в&nbsp;котором объединены все сообщения из&nbsp;разных каналов</figcaption></figure>
 <p>Попробуйте сервис Carrot quest, и&nbsp;все ваши коммуникации будут в&nbsp;одном месте. Пользователь задал вопрос в&nbsp;чате, но&nbsp;затем ушёл с&nbsp;сайта? Как только оператор техподдержки даст ответ, он&nbsp;вместе с&nbsp;частью переписки придёт пользователю на&nbsp;почту. Все действия пользователя&nbsp;— написал в&nbsp;чат, ввёл информацию во&nbsp;всплывающем окне, ответил на&nbsp;письмо и&nbsp;т.д. —&nbsp;отображаются для оператора техподдержки в&nbsp;одном окне чата. Это очень удобно. Кроме того, вы&nbsp;можете настроить интеграцию с&nbsp;социальными сетями, чтобы чтобы точно все сообщения поступали в&nbsp;одно место. Можно собирать сообщения из&nbsp;Facebook, Telegram и&nbsp;Вконтакте. А&nbsp;уведомления о&nbsp;важных действиях пользователей на&nbsp;вашем сайте можно получать в&nbsp;Slack.</p>
-<div id="quote_108968924" class="cq-block-quote  ">
+<div id="quote_892044212" class="cq-block-quote  ">
 <div class="cq-block-quote__text  ">
 <p>Общение с&nbsp;пользователями в&nbsp;одной админке сделало жизнь лучше операторам поддержки четырех агрегаторов авиабилетов. Подробнее мы&nbsp;рассказали в&nbsp;<a href="https://www.carrotquest.io/blog/fly-high-with-dashly/">кейсе.</a></p>
 </p>
 </div>
 </div>
 <style>
-	#quote_108968924 .cq-block-quote__text {
+	#quote_892044212 .cq-block-quote__text {
 		background: linear-gradient(-5deg, #FFFFFF -100px, #FEEBC1 100%);
 	}
-	#quote_108968924.cq-block-quote-author .cq-block-quote__text {
+	#quote_892044212.cq-block-quote-author .cq-block-quote__text {
 		background: transparent;
 	}
-	#quote_108968924 svg path {
+	#quote_892044212 svg path {
 		fill: #FEEBC1;
 	}
 </style>
@@ -1979,20 +1978,20 @@
 <li>знает, какие проблемы у&nbsp;них возникают чаще всего,</li>
 <li>может предложить усовершенствования, которые улучшат пользовательский опыт.</li>
 </ul>
-<div id="quote_674488092" class="cq-block-quote  ">
+<div id="quote_550622135" class="cq-block-quote  ">
 <div class="cq-block-quote__text  ">
 <p>С&nbsp;помощью чата можно продавать больше. В&nbsp;этом убедились наши клиенты и&nbsp;105 зарубежных компаний, а&nbsp;мы&nbsp;рассказали об&nbsp;их&nbsp;опыте в&nbsp;этом <a href="https://www.carrotquest.io/blog/online-chat-insights/"> материале.</a></p>
 </p>
 </div>
 </div>
 <style>
-	#quote_674488092 .cq-block-quote__text {
+	#quote_550622135 .cq-block-quote__text {
 		background: linear-gradient(-5deg, #FFFFFF -100px, #FEEBC1 100%);
 	}
-	#quote_674488092.cq-block-quote-author .cq-block-quote__text {
+	#quote_550622135.cq-block-quote-author .cq-block-quote__text {
 		background: transparent;
 	}
-	#quote_674488092 svg path {
+	#quote_550622135 svg path {
 		fill: #FEEBC1;
 	}
 </style>
@@ -2053,20 +2052,20 @@
 </tbody>
 </table>
 
-<div id="quote_609457208" class="cq-block-quote  ">
+<div id="quote_1558254599" class="cq-block-quote  ">
 <div class="cq-block-quote__text  ">
 <p>Подробнее про KPI для технической поддержки читайте в&nbsp;нашем материале: <a href="/blog/metriki-tekhpodderzhki/">Ключевые метрики службы поддержки и&nbsp;чата, которые стоит начать измерять уже сегодня.</a></p>
 </p>
 </div>
 </div>
 <style>
-	#quote_609457208 .cq-block-quote__text {
+	#quote_1558254599 .cq-block-quote__text {
 		background: linear-gradient(-5deg, #FFFFFF -100px, #FEEBC1 100%);
 	}
-	#quote_609457208.cq-block-quote-author .cq-block-quote__text {
+	#quote_1558254599.cq-block-quote-author .cq-block-quote__text {
 		background: transparent;
 	}
-	#quote_609457208 svg path {
+	#quote_1558254599 svg path {
 		fill: #FEEBC1;
 	}
 </style>
@@ -2120,13 +2119,13 @@
 <p>На&nbsp;сайт приходят разные пользователи, ⅔ из&nbsp;них&nbsp;— нецелевой трафик, оставшаяся ⅓ — потенциальные покупатели. Сегментация клиентов в&nbsp;воронке продаж означает приоритизацию командного времени и&nbsp;экономию ресурсов. Если вы&nbsp;не&nbsp;знаете, кто ваша целевая аудитория, какие инструменты они используют, какие задачи решают и&nbsp;чего хотят от&nbsp;вашего продукта, то&nbsp;запросто можете потратить все ресурсы на&nbsp;нецелевых лидов. </p>
 <p>Вести всех потенциальных покупателей по&nbsp;одной общей воронке продаж&nbsp;— нецелесообразно. Вы&nbsp;будете тратить время и&nbsp;деньги зря&nbsp;— предлагать не&nbsp;то&nbsp;и&nbsp;не&nbsp;тем. Конверсия такой воронки будет стремиться к&nbsp;нулю и&nbsp;вы&nbsp;будете терять потенциальных покупателей. </p>
 <section class="lidform-universal-container">
-<div id="lidform-universal_1795605960" class="lidform-universal">
+<div id="lidform-universal_22349092" class="lidform-universal">
 <div class="row align-items-center">
 <div class="col-12 col-lg-9">
 <div class="h3 mb-4">Скачайте гайд с полным списком вопросов для сегментации клиентов</div>
-<form id="form-begin_1795605960" class="form-begin pb-2 onsubmit="return false" data-event="скачал вопросы для кастдева">
+<form id="form-begin_22349092" class="form-begin pb-2 onsubmit="return false" data-event="скачал вопросы для кастдева">
 					<input class="input p-4 mr-md-3 form-control" required type="email" name="email" placeholder="Email"><input class="btn btn-primary px-4" value="Скачать" type="submit">				</form>
-<p id="form-done_1795605960" class="lidform-universal-p-2 form-done">
+<p id="form-done_22349092" class="lidform-universal-p-2 form-done">
 					Спасибо! Мы уже отправили всё на почту				</p>
 </p>
 </div>
@@ -2136,10 +2135,10 @@
 </div>
 </section>
 <style>
-	#lidform-universal_1795605960 {
+	#lidform-universal_22349092 {
 		background-color: #A7A5F8;
 	}
-	#lidform-universal_1795605960 .h3 , #lidform-universal_1795605960 .form-done {
+	#lidform-universal_22349092 .h3 , #lidform-universal_22349092 .form-done {
 		color: #ffffff;
 	}
 </style>
@@ -2302,7 +2301,7 @@
 
 <p>Когда вы&nbsp;определите ключевые работы, которые совершают клиенты с&nbsp;помощью вашего продукта, сегментируйте их&nbsp;по&nbsp;этим работам и&nbsp;дополните фирмографическими данными. По&nbsp;нашему опыту, необходимо провести не&nbsp;менее десяти качественных интервью с&nbsp;клиентами на&nbsp;выявление ключевых работ.</p>
 <p><a class="banner-universal-container" href="/product-research-book/" style="display: block; cursor: pointer">	</p>
-<div id="banner-universal_171953048" class="banner-universal">
+<div id="banner-universal_491375711" class="banner-universal">
 <div class="row align-items-center">
 <div class="col-12 
 				col-lg-9			"></p>
@@ -2316,10 +2315,10 @@
 </div>
 <p></a></p>
 <style>
-	#banner-universal_171953048 {
+	#banner-universal_491375711 {
 		background-color:  #1F1F1F;
 	}
-	#banner-universal_171953048 .h3 , #banner-universal_171953048 .form-begin {
+	#banner-universal_491375711 .h3 , #banner-universal_491375711 .form-begin {
 		color: #ffffff;
 	}
 </style>
@@ -2404,7 +2403,7 @@
 
 <p>Сегментация по&nbsp;User Journey поможет разделить пользователей в&nbsp;зависимости от&nbsp;их&nbsp;путей в&nbsp;продукте и&nbsp;основных функций, с&nbsp;которыми они работают, но&nbsp;для полноценной картины о&nbsp;сегментах необходимо использовать все три фреймворка для качественного разделения клиентов по&nbsp;группам. </p>
 <p><a class="banner-universal-container" href="https://www.carrotquest.io/panel/register/" style="display: block; cursor: pointer">	</p>
-<div id="banner-universal_1542277008" class="banner-universal">
+<div id="banner-universal_278447715" class="banner-universal">
 <div class="row align-items-center">
 <div class="col-12 
 				col-lg-9			"></p>
@@ -2418,10 +2417,10 @@
 </div>
 <p></a></p>
 <style>
-	#banner-universal_1542277008 {
+	#banner-universal_278447715 {
 		background-color: #b6bbfa;
 	}
-	#banner-universal_1542277008 .h3 , #banner-universal_1542277008 .form-begin {
+	#banner-universal_278447715 .h3 , #banner-universal_278447715 .form-begin {
 		color: #000000;
 	}
 </style>
@@ -2433,7 +2432,7 @@
 <!--
 Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
 
-Object Caching 233/267 objects using disk
+Object Caching 69/436 objects using disk
 
-Served from: www.carrotquest.io @ 2021-06-03 11:33:47 by W3 Total Cache
+Served from: www.carrotquest.io @ 2021-06-03 17:04:54 by W3 Total Cache
 -->
