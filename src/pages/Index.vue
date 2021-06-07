@@ -187,7 +187,7 @@
 								alt="Онлайн-консультант"
 								class="mw-100"
 							/>
-							<span class="d-block instruments__about font14px">
+							<span class="d-none d-md-block instruments__about font14px">
 								Соберет вопросы пользователей из разных чатов в одно окно. Бережно сохранит историю и бесшовно переключит диалоги между операторами. Запланирует встречу и проведет аудио — и видеозвонок.
 							</span>
 						</g-link>
@@ -207,7 +207,7 @@
 								alt="Чат-боты для сайта"
 								class="mw-100"
 							/>
-							<span class="d-block instruments__about font14px">
+							<span class="d-none d-md-block instruments__about font14px">
 								Соберет и квалифицирует лиды ночью и в выходные. Передаст в отдел продаж только целевых клиентов. Вежливо и компетентно ответит на вопросы пользователей и разгрузит поддержку.
 							</span>
 						</g-link>
@@ -227,7 +227,7 @@
 								alt="Поп-ап окна"
 								class="mw-100"
 							/>
-							<span class="d-block instruments__about font14px">
+							<span class="d-none d-md-block instruments__about font14px">
 								Соберут лидов, удержат уходящих пользователей, расскажут про акции и новое в продукте или интерфейсе. Проведут опрос и помогут с прохождением шагов регистрации.
 							</span>
 						</g-link>
@@ -261,7 +261,7 @@
 								class="mw-100 mt-4 d-none d-md-block"
 								style="border-radius: 5px;"
 							/>
-							<span class="d-block instruments__about font14px">
+							<span class="d-none d-md-block instruments__about font14px">
 								Трекинг данных пользователей. Сбор данных пользователей. Мастер сбора данных. <br>
 								Сохранит в одном месте всю информацию о лидах, их действиях и покупках. Поможет сегментировать базу по свойствам и событиям и запустить триггерные рассылки.
 							</span>
@@ -283,7 +283,7 @@
 								class="mw-100 mt-4"
 								style="border-radius: 5px;"
 							/>
-							<span class="d-block instruments__about font14px">
+							<span class="d-none d-md-block instruments__about font14px">
 								Персонализированные цепочки писем проведут знакомство, расскажут об акциях и новинках, увеличат средний чек, доведут до продажи брошенные корзины и подогреют холодную аудиторию.
 							</span>
 						</g-link>
@@ -304,7 +304,7 @@
 								class="mw-100 mt-4"
 								style="border-radius: 5px;"
 							/>
-							<span class="d-block instruments__about font14px">
+							<span class="d-none d-md-block instruments__about font14px">
 								Обучит пользователей, снимет нагрузку со службы поддержки, улучшит SEO сайта.
 							</span>
 						</g-link>
@@ -325,7 +325,7 @@
 								class="mw-100"
 								style="border-radius: 5px;"
 							/>
-							<span class="d-block instruments__about font14px">
+							<span class="d-none d-md-block instruments__about font14px">
 								Поможет интегрировать Carrot quest с чем угодно
 							</span>
 						</g-link>
@@ -346,7 +346,7 @@
 								class="mw-100 mt-4"
 								style="border-radius: 5px;"
 							/>
-							<span class="d-block instruments__about font14px">
+							<span class="d-none d-md-block instruments__about font14px">
 								Встроятся в мобильное приложение и помогут пользователям задать вопрос, разобраться с интерфейсом, оповестят об акциях и статусе заказа.
 							</span>
 						</g-link>
