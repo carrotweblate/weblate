@@ -2,7 +2,7 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>https://www.carrotquest.io/blog/</loc>
-		<lastmod>2021-06-03T10:14:52+00:00</lastmod>
+		<lastmod>2021-06-07T06:46:33+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://www.carrotquest.io/blog/test-na-kogo-podpisatsya/</loc>
@@ -7767,207 +7767,6 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://www.carrotquest.io/blog/pravila-po-sozdaniy-temy-pisma/</loc>
-		<lastmod>2021-05-04T09:32:41+00:00</lastmod>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/email.gif</image:loc>
-			<image:title><![CDATA[email]]></image:title>
-			<image:caption><![CDATA[email sending]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/Dante-Alighieri.jpg</image:loc>
-			<image:caption><![CDATA[Dante Alighieri illustration]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/first-rule.png</image:loc>
-			<image:caption><![CDATA[first rule about email theme]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/second-rule.png</image:loc>
-			<image:caption><![CDATA[second rule about email theme]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/third-rule.png</image:loc>
-			<image:caption><![CDATA[third rule about email theme]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/email-matrix.jpg</image:loc>
-			<image:caption><![CDATA[email theme with the word "how"]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/secret.jpg</image:loc>
-			<image:caption><![CDATA[email theme with "how many"]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/batenka.jpg</image:loc>
-			<image:caption><![CDATA[question 'Where" in email theme]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/Victoria-frii.jpg</image:loc>
-			<image:caption><![CDATA[question "who", "why" and others in theme]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/selection.jpg</image:loc>
-			<image:caption><![CDATA[email theme with selection]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/friday-gorkiy.jpg</image:loc>
-			<image:caption><![CDATA[email theme with digest]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/strange-themes.jpg</image:loc>
-			<image:caption><![CDATA[email theme with current event]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/tinkoff.jpg</image:loc>
-			<image:caption><![CDATA[general question in email theme]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/travelling.jpg</image:loc>
-			<image:caption><![CDATA[gamification in email theme]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/mediabitch.jpg</image:loc>
-			<image:caption><![CDATA[tell about everything in email theme]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/digest.jpg</image:loc>
-			<image:caption><![CDATA[the best of the period in email theme ]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/garage-museum.jpg</image:loc>
-			<image:caption><![CDATA[only one theme in email]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/s7-airlines.jpg</image:loc>
-			<image:caption><![CDATA[discounts in email theme]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/detskiy-mir.jpg</image:loc>
-			<image:caption><![CDATA[discounts in email theme]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/clever-.jpg</image:loc>
-			<image:caption><![CDATA[hurry effect in email theme]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/detskiy-mir-distribution-1.jpg</image:loc>
-			<image:caption><![CDATA[hurry effect in email theme]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/netology.jpg</image:loc>
-			<image:caption><![CDATA[presents in email theme]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/email-soldiers.jpg</image:loc>
-			<image:caption><![CDATA[insights in email theme]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/all-you-need.jpg</image:loc>
-			<image:caption><![CDATA[persuasion in email theme]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/glavred.jpg</image:loc>
-			<image:caption><![CDATA[course announcement in email theme]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/pushkin-museum.jpg</image:loc>
-			<image:caption><![CDATA[course announcement in email]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/nice-and-easy.jpg</image:loc>
-			<image:caption><![CDATA[course announcement in email]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/texterra.jpg</image:loc>
-			<image:caption><![CDATA[numbering in email theme]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/zhenya-lepekhin.jpg</image:loc>
-			<image:caption><![CDATA[numbering in email theme]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/dedmorozim.jpg</image:loc>
-			<image:caption><![CDATA[brevity in email theme]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/kinoteatr.jpg</image:loc>
-			<image:caption><![CDATA[questions in email theme]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/invitation.jpg</image:loc>
-			<image:caption><![CDATA[invitations in email theme]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/amediateka-power.jpg</image:loc>
-			<image:caption><![CDATA[provocation in email theme]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/analytics.jpg</image:loc>
-			<image:caption><![CDATA[giving hope in email theme]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/skyscanner.jpg</image:loc>
-			<image:caption><![CDATA[mystery in email theme]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/IKRA.jpg</image:loc>
-			<image:caption><![CDATA[mystery in email theme]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/proekt-1.jpg</image:loc>
-			<image:caption><![CDATA[strange email themes]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/poison-drop.jpg</image:loc>
-			<image:caption><![CDATA[well-known names in email theme]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/synchronization.jpg</image:loc>
-			<image:caption><![CDATA[quotation in email theme]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/skillbox.jpg</image:loc>
-			<image:caption><![CDATA[emoji in email theme]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/same-emoji.jpg</image:loc>
-			<image:caption><![CDATA[the same emoji in all emails]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/afisha-daily.jpg</image:loc>
-			<image:caption><![CDATA[the same emoji in all emails]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/amediateka-1.jpg</image:loc>
-			<image:caption><![CDATA[common phrases in email theme]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/winzavod.jpg</image:loc>
-			<image:caption><![CDATA[poetry in email theme]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/litres.jpg</image:loc>
-			<image:caption><![CDATA[play on words in email theme]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/bergdorf-goodman.jpg</image:loc>
-			<image:caption><![CDATA[rhyme in email theme]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/carrot-quest.jpg</image:loc>
-			<image:caption><![CDATA[love to subscribers in email theme]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/dont-be-late.jpg</image:loc>
-			<image:caption><![CDATA[love to subscribers in email theme]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/arzamas-academy.jpg</image:loc>
-			<image:caption><![CDATA[love to subscribers in email theme]]></image:caption>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://www.carrotquest.io/blog/12-pravil-konversionnogo-pisma/</loc>
 		<lastmod>2021-05-04T09:32:44+00:00</lastmod>
 		<image:image>
@@ -14206,54 +14005,6 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://www.carrotquest.io/blog/marketing-and-sales/</loc>
-		<lastmod>2021-06-01T10:56:42+00:00</lastmod>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2021/05/IMG_1074.jpg</image:loc>
-			<image:title><![CDATA[IMG_1074]]></image:title>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2021/05/%D0%92%D0%BE%D1%80%D0%BE%D0%BD%D0%BA%D0%B0-%D0%BA%D0%B2%D0%B0%D0%BB%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%86%D0%B8%D0%B8-%D0%B8-%D1%81%D0%BA%D0%BE%D1%80%D0%B8%D0%BD%D0%B3%D0%B0-%D0%BB%D0%B8%D0%B4%D0%BE%D0%B2.png</image:loc>
-			<image:caption><![CDATA[воронка квалификации и скоринга лидов]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2021/05/%D0%A4%D1%80%D0%B0%D0%B3%D0%BC%D0%B5%D0%BD%D1%82-%D0%B2%D0%BE%D1%80%D0%BE%D0%BD%D0%BA%D0%B8-%D0%BF%D0%BE-%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D0%BE%D0%B9-%D0%B4%D0%B2%D0%B8%D0%B3%D0%B0%D0%B5%D1%82%D1%81%D1%8F-%D0%BA%D0%BB%D0%B8%D0%B5%D0%BD%D1%82.jpg</image:loc>
-			<image:caption><![CDATA[воронка пользователя Carrot quest]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2021/05/%D1%87%D0%B5%D0%BA-%D0%BB%D0%B8%D1%81%D1%82-%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%D0%B0%D1%87%D0%B8-%D0%BB%D0%B8%D0%B4%D0%BE%D0%B2.jpg</image:loc>
-			<image:caption><![CDATA[чек-лист передачи лидов из маркетинга в продажи]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2021/05/%D0%94%D0%B0%D1%88%D0%B1%D0%BE%D1%80%D0%B4-%D0%BA%D0%BE%D0%BC%D0%B8%D1%82%D0%B5%D1%82%D0%B0-%D1%80%D0%B0%D0%B7%D0%B1%D0%BE%D1%80%D0%B0-%D0%BB%D0%B8%D0%B4%D0%BE%D0%B2.jpg</image:loc>
-			<image:caption><![CDATA[дашборд разбора лидов]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2021/05/%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B5%D0%B2%D0%B0%D1%8E%D1%89%D0%B5%D0%B5-%D0%BF%D0%B8%D1%81%D1%8C%D0%BC%D0%BE-%D0%BE%D1%82-MDR-%D0%BA%D0%BB%D0%B8%D0%B5%D0%BD%D1%82%D1%83.png</image:loc>
-			<image:caption><![CDATA[прогревающее письмо]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2021/05/%D0%92%D1%81%D0%B5-%D1%81%D0%BE%D0%B1%D1%80%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5-%D0%BB%D0%B8%D0%B4%D1%8B.jpg</image:loc>
-			<image:caption><![CDATA[alt - собранные лиды в Carrot quest]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2021/05/%D0%9E%D1%82%D1%81%D0%BA%D0%BE%D1%80%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5-%D0%BB%D0%B8%D0%B4%D1%8B.jpg</image:loc>
-			<image:caption><![CDATA[отскоренные лиды в Carrot quest]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2021/05/%D0%9E%D0%BA%D0%BD%D0%BE-%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B8-%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D1%86%D0%B8%D0%B8-%D1%81-amoCRM.jpg</image:loc>
-			<image:caption><![CDATA[интеграция amoCRM в Carrot quest]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2021/05/%D0%A4%D0%B8%D0%BB%D1%8C%D1%82%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D0%B1%D0%B0%D0%B7%D1%8B-%D0%BB%D0%B8%D0%B4%D0%BE%D0%B2-%D0%B4%D0%BB%D1%8F-%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%D0%B0%D1%87%D0%B8-%D0%B2-amoCRM.jpg</image:loc>
-			<image:caption><![CDATA[интеграция amoCRM в Carrot quest]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2021/05/%D1%81%D0%BA%D1%80%D0%B8%D0%BD-%D0%BF%D1%80%D0%B5%D0%B7%D1%8B-%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6.jpg</image:loc>
-			<image:caption><![CDATA[презентация продаж с болями клиента]]></image:caption>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://www.carrotquest.io/blog/leadgenapp-case/</loc>
 		<lastmod>2021-06-02T09:41:40+00:00</lastmod>
 		<image:image>
@@ -14332,12 +14083,260 @@
 			<image:caption><![CDATA[Результаты конверсии с инструментами Carrot quest]]></image:caption>
 		</image:image>
 	</url>
+	<url>
+		<loc>https://www.carrotquest.io/blog/pravila-po-sozdaniy-temy-pisma/</loc>
+		<lastmod>2021-06-07T05:15:08+00:00</lastmod>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/1-3.jpg</image:loc>
+			<image:title><![CDATA[1]]></image:title>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/Dante-Alighieri.jpg</image:loc>
+			<image:caption><![CDATA[Dante Alighieri illustration]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/first-rule.png</image:loc>
+			<image:caption><![CDATA[first rule about email theme]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/second-rule.png</image:loc>
+			<image:caption><![CDATA[second rule about email theme]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/third-rule.png</image:loc>
+			<image:caption><![CDATA[third rule about email theme]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/email-matrix.jpg</image:loc>
+			<image:caption><![CDATA[email theme with the word "how"]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/secret.jpg</image:loc>
+			<image:caption><![CDATA[email theme with "how many"]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/batenka.jpg</image:loc>
+			<image:caption><![CDATA[question 'Where" in email theme]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/Victoria-frii.jpg</image:loc>
+			<image:caption><![CDATA[question "who", "why" and others in theme]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/selection.jpg</image:loc>
+			<image:caption><![CDATA[email theme with selection]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/friday-gorkiy.jpg</image:loc>
+			<image:caption><![CDATA[email theme with digest]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/strange-themes.jpg</image:loc>
+			<image:caption><![CDATA[email theme with current event]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/tinkoff.jpg</image:loc>
+			<image:caption><![CDATA[general question in email theme]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/travelling.jpg</image:loc>
+			<image:caption><![CDATA[gamification in email theme]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/mediabitch.jpg</image:loc>
+			<image:caption><![CDATA[tell about everything in email theme]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/digest.jpg</image:loc>
+			<image:caption><![CDATA[the best of the period in email theme ]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/garage-museum.jpg</image:loc>
+			<image:caption><![CDATA[only one theme in email]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/s7-airlines.jpg</image:loc>
+			<image:caption><![CDATA[discounts in email theme]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/detskiy-mir.jpg</image:loc>
+			<image:caption><![CDATA[discounts in email theme]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/clever-.jpg</image:loc>
+			<image:caption><![CDATA[hurry effect in email theme]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/detskiy-mir-distribution-1.jpg</image:loc>
+			<image:caption><![CDATA[hurry effect in email theme]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/netology.jpg</image:loc>
+			<image:caption><![CDATA[presents in email theme]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/email-soldiers.jpg</image:loc>
+			<image:caption><![CDATA[insights in email theme]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/all-you-need.jpg</image:loc>
+			<image:caption><![CDATA[persuasion in email theme]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/glavred.jpg</image:loc>
+			<image:caption><![CDATA[course announcement in email theme]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/pushkin-museum.jpg</image:loc>
+			<image:caption><![CDATA[course announcement in email]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/nice-and-easy.jpg</image:loc>
+			<image:caption><![CDATA[course announcement in email]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/texterra.jpg</image:loc>
+			<image:caption><![CDATA[numbering in email theme]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/zhenya-lepekhin.jpg</image:loc>
+			<image:caption><![CDATA[numbering in email theme]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/dedmorozim.jpg</image:loc>
+			<image:caption><![CDATA[brevity in email theme]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/kinoteatr.jpg</image:loc>
+			<image:caption><![CDATA[questions in email theme]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/invitation.jpg</image:loc>
+			<image:caption><![CDATA[invitations in email theme]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/amediateka-power.jpg</image:loc>
+			<image:caption><![CDATA[provocation in email theme]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/analytics.jpg</image:loc>
+			<image:caption><![CDATA[giving hope in email theme]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/skyscanner.jpg</image:loc>
+			<image:caption><![CDATA[mystery in email theme]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/IKRA.jpg</image:loc>
+			<image:caption><![CDATA[mystery in email theme]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/proekt-1.jpg</image:loc>
+			<image:caption><![CDATA[strange email themes]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/poison-drop.jpg</image:loc>
+			<image:caption><![CDATA[well-known names in email theme]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/synchronization.jpg</image:loc>
+			<image:caption><![CDATA[quotation in email theme]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/skillbox.jpg</image:loc>
+			<image:caption><![CDATA[emoji in email theme]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/same-emoji.jpg</image:loc>
+			<image:caption><![CDATA[the same emoji in all emails]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/afisha-daily.jpg</image:loc>
+			<image:caption><![CDATA[the same emoji in all emails]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/amediateka-1.jpg</image:loc>
+			<image:caption><![CDATA[common phrases in email theme]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/winzavod.jpg</image:loc>
+			<image:caption><![CDATA[poetry in email theme]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/litres.jpg</image:loc>
+			<image:caption><![CDATA[play on words in email theme]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/bergdorf-goodman.jpg</image:loc>
+			<image:caption><![CDATA[rhyme in email theme]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/carrot-quest.jpg</image:loc>
+			<image:caption><![CDATA[love to subscribers in email theme]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/dont-be-late.jpg</image:loc>
+			<image:caption><![CDATA[love to subscribers in email theme]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2019/10/arzamas-academy.jpg</image:loc>
+			<image:caption><![CDATA[love to subscribers in email theme]]></image:caption>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://www.carrotquest.io/blog/marketing-and-sales/</loc>
+		<lastmod>2021-06-07T06:46:33+00:00</lastmod>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2021/05/IMG_1074.jpg</image:loc>
+			<image:title><![CDATA[IMG_1074]]></image:title>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2021/05/%D0%92%D0%BE%D1%80%D0%BE%D0%BD%D0%BA%D0%B0-%D0%BA%D0%B2%D0%B0%D0%BB%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%86%D0%B8%D0%B8-%D0%B8-%D1%81%D0%BA%D0%BE%D1%80%D0%B8%D0%BD%D0%B3%D0%B0-%D0%BB%D0%B8%D0%B4%D0%BE%D0%B2.png</image:loc>
+			<image:caption><![CDATA[воронка квалификации и скоринга лидов]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2021/05/%D0%A4%D1%80%D0%B0%D0%B3%D0%BC%D0%B5%D0%BD%D1%82-%D0%B2%D0%BE%D1%80%D0%BE%D0%BD%D0%BA%D0%B8-%D0%BF%D0%BE-%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D0%BE%D0%B9-%D0%B4%D0%B2%D0%B8%D0%B3%D0%B0%D0%B5%D1%82%D1%81%D1%8F-%D0%BA%D0%BB%D0%B8%D0%B5%D0%BD%D1%82.jpg</image:loc>
+			<image:caption><![CDATA[воронка пользователя Carrot quest]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2021/05/%D1%87%D0%B5%D0%BA-%D0%BB%D0%B8%D1%81%D1%82-%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%D0%B0%D1%87%D0%B8-%D0%BB%D0%B8%D0%B4%D0%BE%D0%B2.jpg</image:loc>
+			<image:caption><![CDATA[чек-лист передачи лидов из маркетинга в продажи]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2021/05/%D0%94%D0%B0%D1%88%D0%B1%D0%BE%D1%80%D0%B4-%D0%BA%D0%BE%D0%BC%D0%B8%D1%82%D0%B5%D1%82%D0%B0-%D1%80%D0%B0%D0%B7%D0%B1%D0%BE%D1%80%D0%B0-%D0%BB%D0%B8%D0%B4%D0%BE%D0%B2.jpg</image:loc>
+			<image:caption><![CDATA[дашборд разбора лидов]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2021/05/%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B5%D0%B2%D0%B0%D1%8E%D1%89%D0%B5%D0%B5-%D0%BF%D0%B8%D1%81%D1%8C%D0%BC%D0%BE-%D0%BE%D1%82-MDR-%D0%BA%D0%BB%D0%B8%D0%B5%D0%BD%D1%82%D1%83.png</image:loc>
+			<image:caption><![CDATA[прогревающее письмо]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2021/05/%D0%92%D1%81%D0%B5-%D1%81%D0%BE%D0%B1%D1%80%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5-%D0%BB%D0%B8%D0%B4%D1%8B.jpg</image:loc>
+			<image:caption><![CDATA[alt - собранные лиды в Carrot quest]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2021/05/%D0%9E%D1%82%D1%81%D0%BA%D0%BE%D1%80%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5-%D0%BB%D0%B8%D0%B4%D1%8B.jpg</image:loc>
+			<image:caption><![CDATA[отскоренные лиды в Carrot quest]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2021/05/%D0%9E%D0%BA%D0%BD%D0%BE-%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B8-%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D1%86%D0%B8%D0%B8-%D1%81-amoCRM.jpg</image:loc>
+			<image:caption><![CDATA[интеграция amoCRM в Carrot quest]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2021/05/%D0%A4%D0%B8%D0%BB%D1%8C%D1%82%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D0%B1%D0%B0%D0%B7%D1%8B-%D0%BB%D0%B8%D0%B4%D0%BE%D0%B2-%D0%B4%D0%BB%D1%8F-%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%D0%B0%D1%87%D0%B8-%D0%B2-amoCRM.jpg</image:loc>
+			<image:caption><![CDATA[интеграция amoCRM в Carrot quest]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2021/05/%D1%81%D0%BA%D1%80%D0%B8%D0%BD-%D0%BF%D1%80%D0%B5%D0%B7%D1%8B-%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6.jpg</image:loc>
+			<image:caption><![CDATA[презентация продаж с болями клиента]]></image:caption>
+		</image:image>
+	</url>
 </urlset>
 <!-- XML Sitemap generated by Yoast SEO -->
 <!--
 Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
 
-Object Caching 5055/10003 objects using disk
+Object Caching 445/16793 objects using disk
 
-Served from: www.carrotquest.io @ 2021-06-03 17:43:38 by W3 Total Cache
+Served from: www.carrotquest.io @ 2021-06-07 11:55:03 by W3 Total Cache
 -->

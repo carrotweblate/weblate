@@ -11,7 +11,7 @@
 									<div class="h2 mb-4" v-html="title" />
 									<p v-html="text" />
 								</b-col>
-								<b-col cols="8" lg="6" class="mb-5 d-none d-lg-block">
+								<b-col cols="8" lg="6" class="d-none d-lg-block">
 									<ik-image
 										:path="'/components/' + pic"
 										:transformation="[{width:475,height:300,cropMode:'pad_resize'}]"
@@ -25,7 +25,7 @@
 									/>
 								</b-col>
 							</b-row>
-							<b-row class="mt-4 mb-5">
+							<b-row class="mt-3 mb-5">
 								<b-col>
 									<ConsultationForm :button="button" />
 								</b-col>

@@ -6,7 +6,7 @@
 				<b-row class="align-items-center">
 					<b-col lg="10">
 						<h1 class="mb-4 mb-lg-5">
-							Поможем онлайн-бизнесу увеличить продажи на том же трафике, удержим клиентов и превратим спящих в платящих <span>при помощи 💬 чата на сайте, 💌️ триггерных email-кампаний, 🏷 ️поп-ап окон и 🤖 чат-бота</span>
+							Поможем онлайн-бизнесу увеличить продажи на том же трафике, удержим клиентов и превратим спящих в платящих <span>при помощи 💬 чата на сайте, 💌️ триггерных email-кампаний, 🧲 поп-ап окон и 🤖 чат‑бота</span>
 						</h1>
 						<RegistrationForm text="14 дней бесплатно. Регистрируйтесь" />
 					</b-col>
@@ -173,8 +173,10 @@
 			<b-container class="instruments">
 				<b-row>
 					<b-col md="6" xl="4" class="mb-5 h-100">
-						<g-link to="/online-consultant/" class="d-block font24px withbg first">
-							<span>Онлайн-консультант</span>
+						<g-link to="/online-consultant/" class="d-block withbg first">
+							<span class="instruments__title font24px">
+								Онлайн-консультант
+							</span>
 							<ik-image
 								path="/components/medium-21.png"
 								:transformation="[{width:298,height:470}]"
@@ -185,11 +187,16 @@
 								alt="Онлайн-консультант"
 								class="mw-100"
 							/>
+							<span class="d-block instruments__about font14px">
+								Соберет вопросы пользователей из разных чатов в одно окно. Бережно сохранит историю и бесшовно переключит диалоги между операторами. Запланирует встречу и проведет аудио — и видеозвонок.
+							</span>
 						</g-link>
 					</b-col>
 					<b-col md="6" xl="4" class="mb-5 h-100">
 						<g-link to="/chatbot/" class="d-block font24px withbg second">
-							<span>Чат-боты для сайта</span>
+							<span class="instruments__title font24px">
+								Чат-боты для сайта
+							</span>
 							<ik-image
 								path="/components/medium-22.png"
 								:transformation="[{width:330,height:340}]"
@@ -200,11 +207,16 @@
 								alt="Чат-боты для сайта"
 								class="mw-100"
 							/>
+							<span class="d-block instruments__about font14px">
+								Соберет и квалифицирует лиды ночью и в выходные. Передаст в отдел продаж только целевых клиентов. Вежливо и компетентно ответит на вопросы пользователей и разгрузит поддержку.
+							</span>
 						</g-link>
 					</b-col>
 					<b-col md="6" xl="4" class="mb-5 h-100">
 						<g-link to="/pop-up/" class="d-block font24px withbg third">
-							<span>Поп-ап окна</span>
+							<span class="instruments__title font24px">
+								Поп-ап окна
+							</span>
 							<ik-image
 								path="/components/medium-23.png"
 								:transformation="[{width:300,height:370}]"
@@ -215,11 +227,16 @@
 								alt="Поп-ап окна"
 								class="mw-100"
 							/>
+							<span class="d-block instruments__about font14px">
+								Соберут лидов, удержат уходящих пользователей, расскажут про акции и новое в продукте или интерфейсе. Проведут опрос и помогут с прохождением шагов регистрации.
+							</span>
 						</g-link>
 					</b-col>
 					<b-col md="6" xl="8" class="mb-5 h-100">
 						<g-link to="/lead-manager/" class="d-block font24px">
-							<span>Трекинг данных о пользователях</span>
+							<span class="instruments__title font24px">
+								Трекинг данных о пользователях
+							</span>
 							<!-- Для мобилки -->
 							<ik-image
 								path="/components/video-about.png"
@@ -244,11 +261,17 @@
 								class="mw-100 mt-4 d-none d-md-block"
 								style="border-radius: 5px;"
 							/>
+							<span class="d-block instruments__about font14px">
+								Трекинг данных пользователей. Сбор данных пользователей. Мастер сбора данных. <br>
+								Сохранит в одном месте всю информацию о лидах, их действиях и покупках. Поможет сегментировать базу по свойствам и событиям и запустить триггерные рассылки.
+							</span>
 						</g-link>
 					</b-col>
 					<b-col md="6" xl="4" class="mb-5 h-100">
 						<g-link to="/email-marketing/" class="d-block font24px">
-							<span>Триггерные email-кампании</span>
+							<span class="instruments__title font24px">
+								Триггерные email-кампании
+							</span>
 							<ik-image
 								path="/components/medium-24.png"
 								:transformation="[{width:354,height:430}]"
@@ -260,11 +283,16 @@
 								class="mw-100 mt-4"
 								style="border-radius: 5px;"
 							/>
+							<span class="d-block instruments__about font14px">
+								Персонализированные цепочки писем проведут знакомство, расскажут об акциях и новинках, увеличат средний чек, доведут до продажи брошенные корзины и подогреют холодную аудиторию.
+							</span>
 						</g-link>
 					</b-col>
 					<b-col md="6" xl="4" class="mb-5 h-100">
 						<g-link to="/knowledge-base/" class="d-block font24px">
-							<span>База знаний<br> для вашего сайта</span>
+							<span class="instruments__title font24px">
+								База знаний<br> для вашего сайта
+							</span>
 							<ik-image
 								path="/components/medium-25.png"
 								:transformation="[{width:412,height:312}]"
@@ -276,11 +304,16 @@
 								class="mw-100 mt-4"
 								style="border-radius: 5px;"
 							/>
+							<span class="d-block instruments__about font14px">
+								Обучит пользователей, снимет нагрузку со службы поддержки, улучшит SEO сайта.
+							</span>
 						</g-link>
 					</b-col>
 					<b-col md="6" xl="4" class="mb-5 h-100">
 						<g-link href="https://developers.carrotquest.io/" class="d-block font24px api">
-							<span>API</span>
+							<span class="instruments__title font24px">
+								API
+							</span>
 							<ik-image
 								path="/components/medium-26.png"
 								:transformation="[{width:412,height:312}]"
@@ -292,11 +325,16 @@
 								class="mw-100"
 								style="border-radius: 5px;"
 							/>
+							<span class="d-block instruments__about font14px">
+								Поможет интегрировать Carrot quest с чем угодно
+							</span>
 						</g-link>
 					</b-col>
 					<b-col md="6" xl="4" class="mb-5 h-100">
 						<g-link to="/sdk/" class="d-block font24px">
-							<span>Чат и push в мобильных приложениях</span>
+							<span class="instruments__title font24px">
+								Чат и push в мобильных приложениях
+							</span>
 							<ik-image
 								path="/components/medium-27.png"
 								:transformation="[{width:412,height:311}]"
@@ -308,6 +346,9 @@
 								class="mw-100 mt-4"
 								style="border-radius: 5px;"
 							/>
+							<span class="d-block instruments__about font14px">
+								Встроятся в мобильное приложение и помогут пользователям задать вопрос, разобраться с интерфейсом, оповестят об акциях и статусе заказа.
+							</span>
 						</g-link>
 					</b-col>
 				</b-row>
@@ -381,8 +422,8 @@
 		data() {
 			return {
 				//Делаем в HEAD
-				metaTitle: 'Инструменты для увеличения продаж на сайтах без привлечения нового трафика',
-				metaDescription: 'Carrot quest — сервис для увеличения продаж, автоматизации маркетинга, улучшения коммуникации с клиентами ✔️онлайн-консультант ✔️чат-боты ✔️поп-ап окна ✔️триггерные письма ✔️eCRM',
+				metaTitle: 'Увеличение продаж на сайте на текущем трафике',
+				metaDescription: 'Carrot quest — сервис для увеличения продаж на том же трафике, удержания клиентов и превращения спящих в платящих',
 				metaCanonical: 'https://www.carrotquest.io/',
 				metaImage: 'https://www.carrotquest.io/assets/images/cover/index.jpeg',
 
@@ -482,7 +523,7 @@
 					border: none;
 					border-radius: 4rem;
 					box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
-					transition: margin-top 150ms cubic-bezier(0, 0, 0.2, 1);
+					transition: margin 150ms cubic-bezier(0, 0, 0.2, 1);
 					&::before {
 						content: " ";
 						display: inline-block;
@@ -540,7 +581,7 @@
 
 		.blue {
 			margin-top: -14rem;
-			margin-bottom: 10rem;
+			margin-bottom: 7rem;
 			padding-top: 25rem;
 			padding-bottom: 1px;
 			background-color: #F3F3FF;
@@ -575,10 +616,10 @@
 			}
 
 			.instruments {
+				margin-bottom: 5rem;
 				a {
 					position: relative;
-					
-					span {
+					.instruments__title {
 						color: #000;
 						border-bottom: 1px solid $primary;
 					}
@@ -589,9 +630,29 @@
 						height: auto;
 						margin: auto;
 					}
+					.instruments__about {
+						position: absolute;
+						z-index: 2;
+						width: 100%;
+						bottom: 0;
+						opacity: 0;
+						padding: 1.25rem;
+						background-color: rgba(0, 0, 0, 0.7);
+						color: #fff;
+						transition: opacity 150ms cubic-bezier(0, 0, 0.2, 1);
+						&::after {
+							content: "Подробнее";
+							display: block;
+							margin-top: 0.5rem;
+							color: $primary;
+						}
+					}
 					&:hover {
-						span {
+						.instruments__title {
 							border-bottom: 1px solid $blue;
+						}
+						.instruments__about {
+							opacity: 1;
 						}
 					}
 					&.withbg {
@@ -646,14 +707,13 @@
 					}
 					&.api {
 						img {
-							position: relative;
-							top: 1.5rem;
+							margin-top: 1.5rem;
 						}
 					}
 				}
 				@media (max-width: 575.98px) {
 					a.api img {
-						top: 0;
+						margin-top: 0;
 					}
 				}
 				@media (min-width: 1200px) {
@@ -687,7 +747,7 @@
 						}
 						&.api {
 							img {
-								top: 3.5rem;
+								margin-top: 3.5rem;
 							}
 						}
 					}
