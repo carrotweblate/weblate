@@ -2,7 +2,7 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>https://www.carrotquest.io/blog/</loc>
-		<lastmod>2021-06-07T06:46:33+00:00</lastmod>
+		<lastmod>2021-06-07T09:25:06+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://www.carrotquest.io/blog/test-na-kogo-podpisatsya/</loc>
@@ -5839,78 +5839,6 @@
 		<image:image>
 			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2015/09/Zakaz-mashiny.png</image:loc>
 			<image:caption><![CDATA[триггерные рассылки - письмо для доп продаж]]></image:caption>
-		</image:image>
-	</url>
-	<url>
-		<loc>https://www.carrotquest.io/blog/obzor-servisov-po-avtomatizacii-marketinga/</loc>
-		<lastmod>2021-05-04T09:32:11+00:00</lastmod>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2018/03/Untitled-1-2.jpg</image:loc>
-			<image:title><![CDATA[Обзор сервисов по автоматизации маркетинга и работе с клиентами]]></image:title>
-			<image:caption><![CDATA[Обзор сервисов по автоматизации маркетинга и работе с клиентами]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2018/03/image9-2.png</image:loc>
-			<image:caption><![CDATA[сервисы автоматизации маркетинга - HubSpot]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2018/03/image3-1.png</image:loc>
-			<image:caption><![CDATA[сервисы автоматизации маркетинга - HubSpot]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2018/03/image10-3.png</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2018/03/girl.jpg</image:loc>
-			<image:caption><![CDATA[сервисы автоматизации маркетинга - Carrot quest]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2018/03/abtest1-1.gif</image:loc>
-			<image:caption><![CDATA[сервисы автоматизации маркетинга - carrot quest аб тесты]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2018/03/image7-3.png</image:loc>
-			<image:caption><![CDATA[Carrot quest - интеграции]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2018/03/Screenshot_1-1.png</image:loc>
-			<image:caption><![CDATA[Интеграции Carrot quest]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2018/03/image4-2.png</image:loc>
-			<image:caption><![CDATA[сервисы автоматизации маркетинга - Klaviyo]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2018/03/image2.jpg</image:loc>
-			<image:caption><![CDATA[сервисы автоматизации маркетинга - Autopilot]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2018/03/image7-2.png</image:loc>
-			<image:caption><![CDATA[сервисы автоматизации маркетинга - Autopilot сценарии]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2018/03/image5-2.png</image:loc>
-			<image:caption><![CDATA[сервисы автоматизации маркетинга - Act-on]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2018/03/image6-2.png</image:loc>
-			<image:caption><![CDATA[сервисы автоматизации маркетинга - Act on аудит]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2018/03/image8-3.png</image:loc>
-			<image:caption><![CDATA[сервисы автоматизации маркетинга - Sharpspring]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2018/03/image10-2.png</image:loc>
-			<image:caption><![CDATA[сервисы автоматизации маркетинга - Sharpspring CRM]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2018/03/image1-2.png</image:loc>
-			<image:caption><![CDATA[сервисы автоматизации маркетинга - SharpSpring Жизненный цикл клиента]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2018/03/Screenshot_1.png</image:loc>
-			<image:caption><![CDATA[сводная таблица с основными фичами разных сервисов]]></image:caption>
 		</image:image>
 	</url>
 	<url>
@@ -11857,150 +11785,6 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://www.carrotquest.io/blog/obzor-servisov-email-rassylok/</loc>
-		<lastmod>2021-05-17T11:21:06+00:00</lastmod>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/02/%D0%A1%D0%B5%D1%80%D0%B2%D0%B8%D1%81%D1%8B-%D0%B4%D0%BB%D1%8F-%D1%80%D0%B0%D1%81%D1%81%D1%8B%D0%BB%D0%BE%D0%BA_01.gif</image:loc>
-			<image:title><![CDATA[Сервисы-для-рассылок_01]]></image:title>
-			<image:caption><![CDATA[обзор сервисов email-рассылок]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/02/Mandrill.png</image:loc>
-			<image:caption><![CDATA[Mandrill от MailChimp]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/02/Unione.png</image:loc>
-			<image:caption><![CDATA[UniOne от Unisender]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/02/Leadersend.png</image:loc>
-			<image:caption><![CDATA[Leadersend​ от Mailigen]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/02/Amazon-SES.jpg</image:loc>
-			<image:caption><![CDATA[Amazon SES
-]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/02/Mailgun.png</image:loc>
-			<image:caption><![CDATA[Mailgun
-]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/02/Postmark.jpg</image:loc>
-			<image:caption><![CDATA[Postmark
-]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/02/Piperdrive.png</image:loc>
-			<image:caption><![CDATA[Piperdrive]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/02/plain-text-email.jpg</image:loc>
-			<image:caption><![CDATA[plain text email
-]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/02/%D1%8E%D0%BD%D0%B8%D1%81%D0%B5%D0%BD%D0%B4.png</image:loc>
-			<image:caption><![CDATA[Unisender
-]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/02/%D1%8E%D0%BD%D0%B8%D1%81%D0%B5%D0%BD%D0%B4%D0%B5%D1%80-%D1%81%D1%86%D0%B5%D0%BD%D0%B0%D1%80%D0%B8%D0%B8.jpg</image:loc>
-			<image:caption><![CDATA[шаблоны цепочек в Unisender
-]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/02/%D0%B5%D1%81%D0%BF%D1%83%D1%82%D0%BD%D0%B8%D0%BA.png</image:loc>
-			<image:caption><![CDATA[панель в е-спутнике
-]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/02/%D0%B5%D1%81%D0%BF%D1%83%D1%82%D0%BD%D0%B8%D0%BA1.png</image:loc>
-			<image:caption><![CDATA[приветственное письмо е-спутника
-]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/02/%D0%B5%D1%81%D0%BF%D1%83%D1%82%D0%BD%D0%B8%D0%BA-%D1%81%D1%86%D0%B5%D0%BD%D0%B0%D1%80%D0%B8%D0%B8.jpg</image:loc>
-			<image:caption><![CDATA[сценарии в е-спутнике
-]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/02/carrot-quest-%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D1%8B%D0%B5-%D1%81%D1%86%D0%B5%D0%BD%D0%B0%D1%80%D0%B8%D0%B8.png</image:loc>
-			<image:caption><![CDATA[шаблоны писем в Carrot quest
-]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/02/%D1%81%D0%B5%D0%BD%D0%B4%D0%BF%D1%83%D0%BB%D1%8C%D1%81-%D1%88%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD%D1%8B.png</image:loc>
-			<image:caption><![CDATA[сценарии в сендпульс
-]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/02/%D0%B3%D0%B5%D1%82%D1%80%D0%B5%D1%81%D0%BF%D0%BE%D0%BD%D1%81-%D1%81%D1%86%D0%B5%D0%BD%D0%B0%D1%80%D0%B8%D0%B8.png</image:loc>
-			<image:caption><![CDATA[сценарии в Getresponse
- ]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/02/%D1%88%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD%D1%8B-%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F-%D0%BC%D1%8D%D0%B9%D0%BB%D0%B8%D0%B3%D0%B5%D0%BD.png</image:loc>
-			<image:caption><![CDATA[автоматизация в Mailigen
-]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/02/%D1%8D%D0%BA%D1%81%D0%BF%D0%B5%D1%80%D1%82%D1%81%D0%B5%D0%BD%D0%B4%D0%B5%D1%80.png</image:loc>
-			<image:caption><![CDATA[Expert Sender
-]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/02/%D1%8D%D1%81%D1%82%D0%B8%D0%BC%D1%8D%D0%B9%D0%BB-%D1%88%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD%D1%8B.png</image:loc>
-			<image:caption><![CDATA[шаблоны Estismail
-]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/02/%D1%81%D0%B5%D0%BD%D0%B4%D1%81%D1%8D%D0%B9-%D1%81%D0%B5%D1%80%D0%B8%D0%B8.png</image:loc>
-			<image:caption><![CDATA[автоматизация в Sendsay
-]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/02/%D1%81%D0%B5%D0%BD%D0%B4%D0%B8%D0%BD%D0%B1%D0%BB%D1%8E.png</image:loc>
-			<image:caption><![CDATA[sendinblue
-]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/02/CM-templates.png</image:loc>
-			<image:caption><![CDATA[шаблоны Campaign Monitor
-]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/02/%D0%B0%D0%B2%D0%B5%D0%B1%D0%B5%D1%80.png</image:loc>
-			<image:caption><![CDATA[AWeber
-]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/02/%D0%B4%D1%80%D0%B8%D0%BF.png</image:loc>
-			<image:caption><![CDATA[Drip
-]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/02/%D0%BA%D0%BE%D0%BD%D1%81%D1%82%D0%B0%D0%BD%D1%82-%D0%BA%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82.png</image:loc>
-			<image:caption><![CDATA[Constant Contact
-]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/02/%D0%BA%D0%BE%D0%BD%D0%B2%D0%B5%D1%80%D1%82-%D0%BA%D0%B8%D1%82.png</image:loc>
-			<image:caption><![CDATA[переключение в ConvertKit
-]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/02/%D0%BA%D0%BE%D0%BD%D0%B2%D0%B5%D1%80%D1%82-%D0%BA%D0%B8%D1%82-2-1.png</image:loc>
-			<image:caption><![CDATA[сценарии автоматизации в ConvertKit
-]]></image:caption>
-		</image:image>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/02/%D0%BA%D0%BE%D0%BD%D0%B2%D0%B5%D1%80%D1%82-%D0%BA%D0%B8%D1%82-3.png</image:loc>
-			<image:caption><![CDATA[авторизация аккаунта в ConvertKit]]></image:caption>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://www.carrotquest.io/blog/multikanalnuya-podderzhka/</loc>
 		<lastmod>2021-05-17T11:21:16+00:00</lastmod>
 		<image:image>
@@ -13978,14 +13762,6 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://www.carrotquest.io/blog/online-chat-overview/</loc>
-		<lastmod>2021-06-01T07:33:30+00:00</lastmod>
-		<image:image>
-			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/09/%D0%BE%D0%B1%D0%B7%D0%BE%D1%80-%D0%BE%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD-%D1%87%D0%B0%D1%82%D0%BE%D0%B2-1.jpg</image:loc>
-			<image:title><![CDATA[обзор-онлайн-чатов]]></image:title>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://www.carrotquest.io/blog/ideal-customer-profile/</loc>
 		<lastmod>2021-06-01T09:45:51+00:00</lastmod>
 		<image:image>
@@ -14331,12 +14107,236 @@
 			<image:caption><![CDATA[презентация продаж с болями клиента]]></image:caption>
 		</image:image>
 	</url>
+	<url>
+		<loc>https://www.carrotquest.io/blog/online-chat-overview/</loc>
+		<lastmod>2021-06-07T09:05:29+00:00</lastmod>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/09/%D0%BE%D0%B1%D0%B7%D0%BE%D1%80-%D0%BE%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD-%D1%87%D0%B0%D1%82%D0%BE%D0%B2-1.jpg</image:loc>
+			<image:title><![CDATA[обзор-онлайн-чатов]]></image:title>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://www.carrotquest.io/blog/obzor-servisov-email-rassylok/</loc>
+		<lastmod>2021-06-07T09:10:20+00:00</lastmod>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/02/%D0%A1%D0%B5%D1%80%D0%B2%D0%B8%D1%81%D1%8B-%D0%B4%D0%BB%D1%8F-%D1%80%D0%B0%D1%81%D1%81%D1%8B%D0%BB%D0%BE%D0%BA_01.gif</image:loc>
+			<image:title><![CDATA[Сервисы-для-рассылок_01]]></image:title>
+			<image:caption><![CDATA[обзор сервисов email-рассылок]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/02/Mandrill.png</image:loc>
+			<image:caption><![CDATA[Mandrill от MailChimp]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/02/Unione.png</image:loc>
+			<image:caption><![CDATA[UniOne от Unisender]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/02/Leadersend.png</image:loc>
+			<image:caption><![CDATA[Leadersend​ от Mailigen]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/02/Amazon-SES.jpg</image:loc>
+			<image:caption><![CDATA[Amazon SES
+]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/02/Mailgun.png</image:loc>
+			<image:caption><![CDATA[Mailgun
+]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/02/Postmark.jpg</image:loc>
+			<image:caption><![CDATA[Postmark
+]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/02/Piperdrive.png</image:loc>
+			<image:caption><![CDATA[Piperdrive]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/02/plain-text-email.jpg</image:loc>
+			<image:caption><![CDATA[plain text email
+]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/02/%D1%8E%D0%BD%D0%B8%D1%81%D0%B5%D0%BD%D0%B4.png</image:loc>
+			<image:caption><![CDATA[Unisender
+]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/02/%D1%8E%D0%BD%D0%B8%D1%81%D0%B5%D0%BD%D0%B4%D0%B5%D1%80-%D1%81%D1%86%D0%B5%D0%BD%D0%B0%D1%80%D0%B8%D0%B8.jpg</image:loc>
+			<image:caption><![CDATA[шаблоны цепочек в Unisender
+]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/02/%D0%B5%D1%81%D0%BF%D1%83%D1%82%D0%BD%D0%B8%D0%BA.png</image:loc>
+			<image:caption><![CDATA[панель в е-спутнике
+]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/02/%D0%B5%D1%81%D0%BF%D1%83%D1%82%D0%BD%D0%B8%D0%BA1.png</image:loc>
+			<image:caption><![CDATA[приветственное письмо е-спутника
+]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/02/%D0%B5%D1%81%D0%BF%D1%83%D1%82%D0%BD%D0%B8%D0%BA-%D1%81%D1%86%D0%B5%D0%BD%D0%B0%D1%80%D0%B8%D0%B8.jpg</image:loc>
+			<image:caption><![CDATA[сценарии в е-спутнике
+]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/02/carrot-quest-%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D1%8B%D0%B5-%D1%81%D1%86%D0%B5%D0%BD%D0%B0%D1%80%D0%B8%D0%B8.png</image:loc>
+			<image:caption><![CDATA[шаблоны писем в Carrot quest
+]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/02/%D1%81%D0%B5%D0%BD%D0%B4%D0%BF%D1%83%D0%BB%D1%8C%D1%81-%D1%88%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD%D1%8B.png</image:loc>
+			<image:caption><![CDATA[сценарии в сендпульс
+]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/02/%D0%B3%D0%B5%D1%82%D1%80%D0%B5%D1%81%D0%BF%D0%BE%D0%BD%D1%81-%D1%81%D1%86%D0%B5%D0%BD%D0%B0%D1%80%D0%B8%D0%B8.png</image:loc>
+			<image:caption><![CDATA[сценарии в Getresponse
+ ]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/02/%D1%88%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD%D1%8B-%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F-%D0%BC%D1%8D%D0%B9%D0%BB%D0%B8%D0%B3%D0%B5%D0%BD.png</image:loc>
+			<image:caption><![CDATA[автоматизация в Mailigen
+]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/02/%D1%8D%D0%BA%D1%81%D0%BF%D0%B5%D1%80%D1%82%D1%81%D0%B5%D0%BD%D0%B4%D0%B5%D1%80.png</image:loc>
+			<image:caption><![CDATA[Expert Sender
+]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/02/%D1%8D%D1%81%D1%82%D0%B8%D0%BC%D1%8D%D0%B9%D0%BB-%D1%88%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD%D1%8B.png</image:loc>
+			<image:caption><![CDATA[шаблоны Estismail
+]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/02/%D1%81%D0%B5%D0%BD%D0%B4%D1%81%D1%8D%D0%B9-%D1%81%D0%B5%D1%80%D0%B8%D0%B8.png</image:loc>
+			<image:caption><![CDATA[автоматизация в Sendsay
+]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/02/%D1%81%D0%B5%D0%BD%D0%B4%D0%B8%D0%BD%D0%B1%D0%BB%D1%8E.png</image:loc>
+			<image:caption><![CDATA[sendinblue
+]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/02/CM-templates.png</image:loc>
+			<image:caption><![CDATA[шаблоны Campaign Monitor
+]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/02/%D0%B0%D0%B2%D0%B5%D0%B1%D0%B5%D1%80.png</image:loc>
+			<image:caption><![CDATA[AWeber
+]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/02/%D0%B4%D1%80%D0%B8%D0%BF.png</image:loc>
+			<image:caption><![CDATA[Drip
+]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/02/%D0%BA%D0%BE%D0%BD%D1%81%D1%82%D0%B0%D0%BD%D1%82-%D0%BA%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82.png</image:loc>
+			<image:caption><![CDATA[Constant Contact
+]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/02/%D0%BA%D0%BE%D0%BD%D0%B2%D0%B5%D1%80%D1%82-%D0%BA%D0%B8%D1%82.png</image:loc>
+			<image:caption><![CDATA[переключение в ConvertKit
+]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/02/%D0%BA%D0%BE%D0%BD%D0%B2%D0%B5%D1%80%D1%82-%D0%BA%D0%B8%D1%82-2-1.png</image:loc>
+			<image:caption><![CDATA[сценарии автоматизации в ConvertKit
+]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2020/02/%D0%BA%D0%BE%D0%BD%D0%B2%D0%B5%D1%80%D1%82-%D0%BA%D0%B8%D1%82-3.png</image:loc>
+			<image:caption><![CDATA[авторизация аккаунта в ConvertKit]]></image:caption>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://www.carrotquest.io/blog/obzor-servisov-po-avtomatizacii-marketinga/</loc>
+		<lastmod>2021-06-07T09:25:06+00:00</lastmod>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2018/03/Untitled-1-2.jpg</image:loc>
+			<image:title><![CDATA[Обзор сервисов по автоматизации маркетинга и работе с клиентами]]></image:title>
+			<image:caption><![CDATA[Обзор сервисов по автоматизации маркетинга и работе с клиентами]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2018/03/image9-2.png</image:loc>
+			<image:caption><![CDATA[сервисы автоматизации маркетинга - HubSpot]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2018/03/image3-1.png</image:loc>
+			<image:caption><![CDATA[сервисы автоматизации маркетинга - HubSpot]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2018/03/image10-3.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2018/03/girl.jpg</image:loc>
+			<image:caption><![CDATA[сервисы автоматизации маркетинга - Carrot quest]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2018/03/abtest1-1.gif</image:loc>
+			<image:caption><![CDATA[сервисы автоматизации маркетинга - carrot quest аб тесты]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2018/03/image7-3.png</image:loc>
+			<image:caption><![CDATA[Carrot quest - интеграции]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2018/03/Screenshot_1-1.png</image:loc>
+			<image:caption><![CDATA[Интеграции Carrot quest]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2018/03/image4-2.png</image:loc>
+			<image:caption><![CDATA[сервисы автоматизации маркетинга - Klaviyo]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2018/03/image2.jpg</image:loc>
+			<image:caption><![CDATA[сервисы автоматизации маркетинга - Autopilot]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2018/03/image7-2.png</image:loc>
+			<image:caption><![CDATA[сервисы автоматизации маркетинга - Autopilot сценарии]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2018/03/image5-2.png</image:loc>
+			<image:caption><![CDATA[сервисы автоматизации маркетинга - Act-on]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2018/03/image6-2.png</image:loc>
+			<image:caption><![CDATA[сервисы автоматизации маркетинга - Act on аудит]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2018/03/image8-3.png</image:loc>
+			<image:caption><![CDATA[сервисы автоматизации маркетинга - Sharpspring]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2018/03/image10-2.png</image:loc>
+			<image:caption><![CDATA[сервисы автоматизации маркетинга - Sharpspring CRM]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2018/03/image1-2.png</image:loc>
+			<image:caption><![CDATA[сервисы автоматизации маркетинга - SharpSpring Жизненный цикл клиента]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.carrotquest.io/blog/wp-content/uploads/2018/03/Screenshot_1.png</image:loc>
+			<image:caption><![CDATA[сводная таблица с основными фичами разных сервисов]]></image:caption>
+		</image:image>
+	</url>
 </urlset>
 <!-- XML Sitemap generated by Yoast SEO -->
 <!--
 Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
 
-Object Caching 445/16793 objects using disk
+Object Caching 3985/11630 objects using disk
 
-Served from: www.carrotquest.io @ 2021-06-07 11:55:03 by W3 Total Cache
+Served from: www.carrotquest.io @ 2021-06-07 15:07:46 by W3 Total Cache
 -->
