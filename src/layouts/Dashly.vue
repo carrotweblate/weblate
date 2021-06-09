@@ -21,7 +21,7 @@
 
 <script>
 import Header from "~/components/HeaderDashly.vue";
-import Footer from "~/components/Footer.vue";
+import Footer from "~/components/FooterDashly.vue";
 import { BOverlay } from "bootstrap-vue";
 import Balcony from "~/components/Ads/Balcony.vue";
 import ConsultationModal from "~/components/Modals/ConsultationModal.vue";

@@ -36,7 +36,7 @@ export default function (Vue, { head }) {
   Vue.use(ButtonGroupPlugin);
   Vue.use(ModalPlugin);
 
-  if (process.env.GRIDSOME_SITE == "carrotquest.io") {
+  if (process.env.GRIDSOME_SITE === "carrotquest.io") {
     //Общая для всех страниц META
     head.meta.push(
       {
