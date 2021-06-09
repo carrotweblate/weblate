@@ -3,10 +3,10 @@
   "private": true,
   "scripts": {
     "build": "gridsome build",
-    "build:carrot": "bash rename.sh ; mv ./src/carrotquest-pages/ ./src/pages/ ; gridsome build",
-    "build:dashly": "bash rename.sh ; mv ./src/dashly-pages/ ./src/pages/ ; gridsome build",
+    "build:cq": "export SITE=carrotquest.io ; bash rename.sh ; gridsome build",
+    "build:dashly": "export SITE=dashly.io ; bash rename.sh ; gridsome build",
     "develop": "gridsome develop",
-    "develop:carrot": "export SITE=carrotquest.io ; bash rename.sh ; gridsome develop",
+    "develop:cq": "export SITE=carrotquest.io ; bash rename.sh ; gridsome develop",
     "develop:dashly": "export SITE=dashly.io ; bash rename.sh ; gridsome develop",
     "explore": "gridsome explore"
   },

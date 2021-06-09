@@ -5,9 +5,14 @@
         <b-row class="align-items-center">
           <b-col lg="10">
             <h1 class="mb-4 mb-lg-5">
-              Get more sales from your website’s traffic
+              Поможем онлайн-бизнесу увеличить продажи на том же трафике,
+              удержим клиентов и превратим спящих в платящих
+              <span
+                >при помощи 💬 чата на сайте, 💌️ триггерных email-кампаний, 🧲
+                поп-ап окон и 🤖 чат‑бота</span
+              >
             </h1>
-            <RegistrationForm button="Start for Free" text="7 day free trial" />
+            <RegistrationForm text="14 дней бесплатно. Регистрируйтесь" />
           </b-col>
         </b-row>
       </b-container>
@@ -498,8 +503,7 @@
 </template>
 
 <script>
-import Layout from "~/layouts/Dashly.vue";
-
+import Layout from "~/layouts/Default.vue";
 import VideoModal from "~/components/Modals/VideoModal.vue";
 import Ready from "~/components/Ready.vue";
 import Consultation from "~/components/Consultation.vue";
@@ -522,11 +526,10 @@ export default {
   data() {
     return {
       //Делаем в HEAD
-      metaTitle:
-        "Conversational platform to increase sales from websites — Dashly",
+      metaTitle: "Увеличение продаж на сайте на текущем трафике",
       metaDescription:
-        "Get more sales with trigger pop-ups, emails, chatbots and live chat. Deliver personalized customer support on your site with Dashly",
-      metaCanonical: "https://www.dashly.io/",
+        "Carrot quest — сервис для увеличения продаж на том же трафике, удержания клиентов и превращения спящих в платящих",
+      metaCanonical: "https://www.carrotquest.io/",
       metaImage: "https://www.carrotquest.io/assets/images/cover/ru/index.jpeg",
 
       visible: false,

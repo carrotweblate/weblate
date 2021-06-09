@@ -13,7 +13,7 @@
       <!-- Логотип -->
       <g-link to="/">
         <img
-          src="@/assets/images/components/logo.svg"
+          src="@/assets/images/components/en/logo.svg"
           width="178"
           height="40"
           class="logo ml-2 ml-md-3"
@@ -171,31 +171,7 @@
                       <p class="text-uppercase lightgrey-text mb-3">
                         Последние статьи из блога
                       </p>
-                      <ul>
-                        <li
-                          v-for="{ node } in $static.recent.edges"
-                          :key="node.id"
-                          class="mb-3"
-                        >
-                          <a
-                            :href="'/blog/' + node.slug + '/'"
-                            class="megamenu__post"
-                          >
-                            <span
-                              :style="
-                                'background-image: url(' +
-                                node.featured_media_medium +
-                                ')'
-                              "
-                              class="megamenu__post__pic d-block mr-3"
-                            />
-                            <span
-                              v-html="node.title"
-                              class="megamenu__post__title font14px"
-                            />
-                          </a>
-                        </li>
-                      </ul>
+
                       <p>
                         <a href="/blog/"> Все статьи </a>
                       </p>
@@ -248,21 +224,21 @@
             px-xl-4
           "
         >
-          Зарегистрироваться
+          START FOR FREE
         </b-button>
         <b-button
           variant="outline"
           href="/panel/login/"
           class="mt-3 mt-lg-0 d-none d-md-inline-block"
         >
-          Войти
+          Sign in
         </b-button>
         <b-button
           variant="outline-primary"
           href="/panel/login/"
           class="mb-4 mb-md-0 mt-3 mt-lg-0 d-md-none"
         >
-          Войти
+          Sign in
         </b-button>
       </b-collapse>
     </b-navbar>
@@ -282,21 +258,6 @@
     </div>
   </header>
 </template>
-
-
-<static-query>
-	query {
-		recent: allPost (limit: 3) {
-			edges {
-				node {
-					title
-					slug
-					featured_media_medium
-				}
-			}
-		}
-	}
-</static-query>
 
 
 <script>
@@ -430,114 +391,12 @@ export default {
           jobs: true,
         },
         {
-          title: "Тарифы",
-          href: "/price/",
-        },
-        {
-          title: "Ресурсы",
-          subBlocks: {
-            aboutProduct: [
-              {
-                title: "База знаний о продукте",
-                href: "https://help.carrotquest.io/",
-                job: "Сокращает время ответа на вопрос и систематизирует для клиентов знания о вашем продукте",
-              },
-              {
-                title: "Интеграции",
-                href: "/integration/",
-                job: "Более 30 готовых интеграций с CMS, CRM, аналитикой, мессенджерами, соц.сетями и другими сервисами",
-              },
-              {
-                title: "API",
-                href: "https://developers.carrotquest.io/",
-                job: "О том, как разработчику интегрировать Carrot&nbsp;quest на сайт",
-              },
-              {
-                title: "Видеокурс",
-                href: "/videocourse-online-sales/",
-                job: "Как увеличить продажи на том же трафике, используя инструменты Carrot&nbsp;quest",
-              },
-              {
-                title: "Партнерская программа",
-                href: "/partner/",
-                job: "Зарабатывайте за каждое внедрение Carrot&nbsp;quest. Реферальная программа",
-              },
-            ],
-            content: [
-              {
-                title: "Блог",
-                href: "/blog/",
-                job: "О маркетинге, продажах и управлении продуктом",
-              },
-              {
-                title: "Кейсы",
-                href: "https://www.carrotquest.io/cases/",
-                job: "Более 60&nbsp;историй успеха наших клиентов",
-              },
-              {
-                title: "Библиотека",
-                href: "/library/",
-                job: "Книги, гайды, чек листы, видеокурсы. Скачивайте бесплатно",
-              },
-              {
-                title: "Наши книги",
-                href: "/library/#books",
-                job: "Подробная экспертиза от команды Carrot&nbsp;quest",
-              },
-              {
-                title: "Вебинары и подкасты",
-                href: "/webinars/",
-                job: "Более 30&nbsp;вебинаров и&nbsp;подкастов на&nbsp;темы про создание продуктов, маркетинг и&nbsp;growth hacking",
-              },
-            ],
-          },
-          subLinks: [
-            {
-              title: "База знаний о продукте",
-              href: "https://help.carrotquest.io/",
-            },
-            {
-              title: "Интеграции",
-              href: "/integration/",
-            },
-            {
-              title: "API",
-              href: "https://developers.carrotquest.io/",
-            },
-            {
-              title: "Видеокурс",
-              href: "/videocourse-online-sales/",
-            },
-            {
-              title: "Блог",
-              href: "/blog/",
-            },
-            {
-              title: "Кейсы",
-              href: "https://www.carrotquest.io/cases/",
-            },
-            {
-              title: "Библиотека",
-              href: "/library/",
-            },
-            {
-              title: "Наши книги",
-              href: "/library/#books",
-            },
-            {
-              title: "Вебинары и подкасты",
-              href: "/webinars/",
-            },
-          ],
-          jobs: true,
-        },
-        {
-          title: "Блог",
+          title: "Blog",
           href: "/blog/",
         },
         {
-          title: "Кейсы",
-          href: "/cases/",
+          title: "Pricing",
+          href: "/pricing/",
         },
       ],
     };

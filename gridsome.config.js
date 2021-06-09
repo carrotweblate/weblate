@@ -8,10 +8,6 @@
 // const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
 //   .BundleAnalyzerPlugin
 
-// Переменные окружения
-const site = process.env.SITE;
-console.log(site);
-
 // Подсключение глобальных стилей
 const path = require("path");
 function addStyleResource(rule) {
@@ -60,81 +56,67 @@ const collections = [
   },
 ];
 
-let siteExports = {};
+module.exports = {
+  siteUrl: "https://www." + process.env.GRIDSOME_SITE + "",
 
-if (site === "carrotquest.io") {
-  siteExports = {
-    siteUrl: "https://www.carrotquest.io",
+  siteName: process.env.GRIDSOME_NAME,
+  titleTemplate: "%s",
 
-    siteName: "Carrot quest",
-    titleTemplate: "%s",
+  prefetch: { mask: "^$" },
 
-    prefetch: { mask: "^$" },
-
-    plugins: [
-      //GTM
-      {
-        use: "gridsome-plugin-gtm",
-        options: {
-          id: "GTM-PHNG63V",
-          enabled: true,
-          debug: false,
+  plugins: [
+    //GTM
+    {
+      use: "gridsome-plugin-gtm",
+      options: {
+        id: process.env.GRIDSOME_GTM,
+        enabled: true,
+        debug: false,
+      },
+    },
+    // Critical
+    {
+      use: "@gridsome/plugin-critical",
+      options: {
+        paths: ["/"],
+        width: 1300,
+        height: 900,
+      },
+    },
+    // // Поиск по блогу
+    // {
+    // 	use: `gridsome-plugin-algolia`,
+    // 	options: {
+    // 		appId: '7Y1P83X4M1',
+    // 		apiKey: 'e268d391762ad62104c571742cfd1afa',
+    // 		collections,
+    // 		chunkSize: 10000, // default: 1000
+    // 		enablePartialUpdates: true, // default: false
+    // 	},
+    // },
+    // PWA
+    {
+      use: "gridsome-plugin-manifest",
+      options: {
+        start_url: "/",
+        background_color: "#fff",
+        icon_path: "./static/favicon.png",
+        name: process.env.GRIDSOME_NAME,
+        theme_color: "#FF7C16",
+        lang: process.env.GRIDSOME_LANG,
+      },
+    },
+    {
+      use: "gridsome-plugin-service-worker",
+      options: {
+        networkFirst: {
+          cacheName: "nf-v1",
+          routes: ["/", /\.(js|css|png|jpg|mp4|webm)/],
         },
       },
-      // Critical
-      {
-        use: "@gridsome/plugin-critical",
-        options: {
-          paths: ["/"],
-          width: 1300,
-          height: 900,
-        },
-      },
-      // // Поиск по блогу
-      // {
-      // 	use: `gridsome-plugin-algolia`,
-      // 	options: {
-      // 		appId: '7Y1P83X4M1',
-      // 		apiKey: 'e268d391762ad62104c571742cfd1afa',
-      // 		collections,
-      // 		chunkSize: 10000, // default: 1000
-      // 		enablePartialUpdates: true, // default: false
-      // 	},
-      // },
-      // PWA
-      {
-        use: "gridsome-plugin-manifest",
-        options: {
-          start_url: "/",
-          background_color: "#fff",
-          icon_path: "./static/favicon.png",
-          name: "Carrot quest",
-          short_name: "CQ",
-          theme_color: "#FF7C16",
-          lang: "ru",
-        },
-      },
-      {
-        use: "gridsome-plugin-service-worker",
-        options: {
-          networkFirst: {
-            cacheName: "nf-v1",
-            routes: ["/", /\.(js|css|png|jpg|mp4|webm)/],
-          },
-        },
-      },
-    ],
-  };
-} else {
-  siteExports = {
-    siteUrl: "https://www.dashly.io",
-
-    siteName: "Dashly",
-    titleTemplate: "%s",
-
-    prefetch: { mask: "^$" },
-  };
-}
+    },
+  ],
+};
 
 module.exports = {
   chainWebpack: (config) => {

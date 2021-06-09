@@ -498,8 +498,6 @@
 </template>
 
 <script>
-import Layout from "~/layouts/Dashly.vue";
-
 import VideoModal from "~/components/Modals/VideoModal.vue";
 import Ready from "~/components/Ready.vue";
 import Consultation from "~/components/Consultation.vue";
@@ -510,7 +508,6 @@ import Study from "~/components/Study.vue";
 
 export default {
   components: {
-    Layout,
     VideoModal,
     Ready,
     Consultation,

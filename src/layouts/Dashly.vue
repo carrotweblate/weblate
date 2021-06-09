@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import Header from "~/components/Header.vue";
+import Header from "~/components/HeaderDashly.vue";
 import Footer from "~/components/Footer.vue";
 import { BOverlay } from "bootstrap-vue";
 import Balcony from "~/components/Ads/Balcony.vue";
